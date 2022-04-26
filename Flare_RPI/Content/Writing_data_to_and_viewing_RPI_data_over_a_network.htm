@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1"><a name="Write_Data_To_Network"></a>Write Data To and View RPI Data Over A Network</h1>
+                    <p><span class="span_7">Note</span>: This feature cannot work in conjunction with RPM.</p>
+                    <h2 class="Heading2"><a name="Writing_data_to_a"></a>Write Data To A Network Drive</h2>
+                    <p>The RPI software can be configured to write the collected data (oven files, process windows, profiles and historical VP data) to a network drive location.  This would allow data from one or even multiple systems to be stored in one centralized location (Server/Shared Hard Drive).</p>
+                    <p>&#160;</p>
+                    <p class="p_6">The first step necessary is to map a network drive from the PC running the RPI software to the desired network location.  Due to the multiple varieties of OS and network configurations, KIC cannot detail this step.  We recommend you contact your IT/Network administrator for setting this up.  Below is a typical example of this setup.  See Figure 155.</p>
+                    <p class="p_60">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000104.png" style="width: 499px;height: 255px;" />
+                    </p>
+                    <p class="Caption">Figure 155: Example Network with RPI</p>
+                    <p>&#160;</p>
+                    <p class="p_6">Once you have mapped the drive, create a folder on the network drive and copy in the following folders from the C:\RPI directory – Ovens, Process Specs, and Profiles. Once completed, follow the steps below on the PC where the RPI software is installed:</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListBullet2">Ensure the KIC software is closed, open Windows Explorer, and locate the file:</li>
+                    </ol>
+                    <p class="PlainText_1">C:\RPI\Log\KIC2000DataPath.kiccfg</p>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_1">
+                        <li class="ListBullet2_9">The <span class="PlainTextChar_1">KIC2000DataPath.kiccfg</span> file will open up in Notepad:&#160; See Figure 156.</li>
+                    </ol>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000105.png" style="width: 454px;height: 181px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 156</p>
+                    <ol start="3" class="ol_1">
+                        <li class="ListBullet2_9">Change the line <span class="PlainTextChar_1">AllowUserToManuallyChangeWorkingDataPathInThisIniFile=0</span> to the value <span class="PlainTextChar_1">=1</span>:&#160; See Figure 157.</li>
+                    </ol>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000106.png" style="height: 183px;width: 457px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 157</p>
+                    <p class="Caption">&#160;</p>
+                    <ol start="4" class="ol_1">
+                        <li class="ListBullet2_9">Change the line shown below to = the desired network location. <span class="span_12">Note</span><span class="span_12">:</span> This will be the main network folder you created and copied the Log, Ovens, Process Spec, and Profiles folders into.  See Figure 158.</li>
+                    </ol>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000107.png" style="height: 184px;width: 459px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 158</p>
+                    <p>&#160;</p>
+                    <ol start="5" class="ol_1">
+                        <li class="ListBullet2">Once the DataPath.kiccfg file has been modified with the new locations, choose File/Save from the drop-down menu to save the changes.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="6" class="ol_1">
+                        <li class="ListBullet2">Close Notepad and start the software.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="7" class="ol_1">
+                        <li class="ListBullet2_9">With the software open, go to the Profile Explorer:</li>
+                    </ol>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000108a.png" />
+                    </p>
+                    <p class="Caption">Figure 159</p>
+                    <p>&#160;</p>
+                    <blockquote>
+                        <p>Your new network drive should be displayed in the upper right-hand corner of the screen as the Current Data Path.  See Figure 159.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Note</span>: The Network path will be grayed out and cannot be changed from inside of Profile Explorer.</p>
+                        <p>&#160;</p>
+                        <p>All data collected in this RPI application will now be written to the network folder chosen.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Note</span>: If you have multiple RPI systems, you will need to create a separate folder on the Network drive for each system – e.g. KIC Line 1, KIC Line 2, etc.</p>
+                        <p>&#160;</p>
+                        <p>If the network is unavailable when accessing various areas of the software (Define/Edit Process Window, Run A Profile, Profile Explorer), a message will appear alerting you to the issue:</p>
+                        <p>&#160;</p>
+                        <p style="text-align: center;">
+                            <img src="Resources/Images/image136.png" style="width: 343px;height: 123px;" />
+                        </p>
+                        <p>&#160;</p>
+                        <p>When this occurs, you are still able to use the software but only working with files (ovens, Process Windows, profiles) that are located in the local directory. It will temporarily reset back to the local install directory and any new files generated or updated will be saved in the local directory (C:\RPI). If the network connection is re-established, the RPI software must be restarted to begin writing directly to the network directory again.</p>
+                        <p>&#160;</p>
+                        <p>Any data that was collected while the software was offline will be moved to the network directory after the connection has been re-established and the RPI software is restarted.</p>
+                    </blockquote>
+                    <h2 class="Heading2"><a name="Viewing_historical_data2"></a>View Historical Data </h2>
+                    <p>You can also view all collected data over the network from any computer that has the RPI software installed.</p>
+                    <p>&#160;</p>
+                    <p class="p_26">Use the following steps to view historical data over the network:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListBullet2">From your <u>remote</u> computer, start the RPI software and click on the “I am not going to run profiles or live RPI” button.  See Figure 160.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Caution</span>: Do not choose this button when working at the PC where the RPI hardware is installed.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000109a.png" style="width: 370px;height: 243px;" />
+                    </p>
+                    <p class="Caption">Figure 160</p>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_1">
+                        <li class="ListBullet2_6">The software will open up normally.  When the main screen appears, click the Profile Explorer button.</li>
+                    </ol>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300010A.png" style="width: 504px;height: 384px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 161</p>
+                    <p>&#160;</p>
+                    <ol start="3" class="ol_1">
+                        <li class="ListBullet2">A <b>Browse</b> button is enabled in the upper right hand corner of the screen:  See Figure 161.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="ListContinue">You can now click the Browse button and point to the directory where your profiles are.&#160; Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.</p>
+                    <p>&#160;</p>
+                    <p class="ListContinue">For example:&#160; If the profiles are in the folder&#160; <span class="PlainTextChar_1">F:\</span><span class="PlainTextChar_1">RPI</span><span class="PlainTextChar_1">\</span><span class="PlainTextChar_1">Profiles\Board</span><span class="PlainTextChar_1">&#160;</span><span class="PlainTextChar_1">A</span><span class="PlainTextChar_1">,</span> you would direct it only to the folder&#160; <span class="PlainTextChar_1">F:\</span><span class="PlainTextChar_1">RPI</span><span class="PlainTextChar_1">\</span></p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h1 class="Heading1"><a name="Communicating_with_oven_controllers"></a>Communicate with Oven Controllers
+                    </h1>
+                    <p>Because RPI can interface directly with the oven controllers on many reflow oven models, several leading manufactures act as Value Added Resellers (VARs) for KIC software.  RPI can automatically send setpoints and other recipe data to these oven controller systems, eliminating the need for separate data entry:</p>
+                    <p>&#160;</p>
+                    <p>The table below lists the oven manufacturers that support communication</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/1axa2.png" />
+                    </p>
+                    <p class="Figure">Figure 162: RPI Supported Oven Controller Communications</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Confirming_oven_communications"></a>Confirm Oven Communications
+</h2>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/1ar.png" style="width: 413px;height: 347px;" />
+                    </p>
+                    <p class="Figure">Figure 163: Hardware Status – Oven Controller Communication</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p>Once you’ve installed the system on a communication-capable oven, your first task is to check the Hardware Status screen to see if the software recognizes the oven controller.</p>
+                    <p>&#160;</p>
+                    <p>If the appropriate system isn’t identified in the Oven Controller, field check the following:</p>
+                    <p>&#160;</p>
+                    <ul>
+                        <li>Verify that the software is installed on the same PC and hard drive as the manufacturer’s oven controller software.</li>
+                        <li>Exit the software and run the <i>ConfigurationProgram.exe</i> found in the RPI root folder.  The Hardware tab lists a selection of ovens and oven models.</li>
+                        <li>Contact KIC or the oven manufacturer to make sure the version of oven controller software and firmware is compatible for oven communications.</li>
+                        <li>Make sure that the latest versions of the correct drivers are properly installed.  (Contact KIC or the oven manufacturer for details.)<br /><br /></li>
+                    </ul>
+                    <h2 class="Heading2"><a name="Configuring_software_for_oven_communication"></a>Configure Software For Oven Communication
+                    </h2>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>There are two items you have to set in the Global Preferences screen when configuring the software for use with oven communications. See Figure 164.</p>
+                                <p>&#160;</p>
+                                <p>1.	Enter an oven name and zone lengths and zone limit data.</p>
+                                <p>&#160;</p>
+                                <p>2.	Check Use Oven Base Recipe.  (Optional.)</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/1ap.png" style="width: 399px;height: 324px;" />
+                                </p>
+                                <p class="Caption">Figure 164</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Using_a_Base_Oven_Recipe_with_oven_communication"></a>Use a Base Oven Recipe With Oven Communication
+                    </h2>
+                    <p>The operating parameters of a reflow oven are specified by the manufacturer in the oven controller.  These parameters may include zone setpoint temperatures, conveyor speed, fan speed, Nitrogen On/Off, conveyor width, etc.  Taken together, these parameters form a Base Oven Recipe, which RPI uses as a set of default values.</p>
+                    <p>RPI can set/load the zone setpoint temperatures and the conveyor speed parameters, adjusting them from the default values in the Base Oven Recipe.</p>
+                    <p>&#160;</p>
+                    <p>In order for the engineer to specify the other parameters, a Base Oven Recipe must be created.  This oven recipe has all the oven parameters except the zone set point temperatures and conveyor speed set correctly.  When you load a Virtual Profile for a given product, this software will modify the set points and conveyor speed in the Base Oven Recipe, and then load the Base Oven Recipe into the oven controller.  In this way, the oven will be setup exactly as it was during the Baseline Profile.</p>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>When the Use Oven Base Recipe option is selected, nothing will happen until a Virtual Profile is loaded from the Profile Explorer.  Then the software will present the Browse dialog in order to select the Base Oven recipe.</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p style="text-align: left;">
+                                    <img src="Resources/Images/1as.png" style="width: 314px;height: 211px;" />
+                                </p>
+                                <p class="Figure" style="text-align: left;">Figure 165: Browse window for selecting the Base <i>Oven Recipe</i></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Running_a_profile_using_oven_communication"></a>Run A Profile Using Oven Communication
+                    </h2>
+                    <p>When running profiles with oven communications, be aware of the following differences when compared to regular operations:</p>
+                    <p>&#160;</p>
+                    <ol>
+                        <li>When running a profile and going through the sequence of screens leading up to the Select Thermocouple screen, you will not see a pull-down menu for the oven since there can be only one.  You will also not see the screen for the oven settings since this was taken care of in Global Preferences.<br /><br /></li>
+                        <li>When you are running the software with oven communication, the software sends data to the oven’s PC control software.  This communication seems transparent at first, but once you gain more experience you will see certain signs that the KIC software and the oven controller are communicating.  One of the first things you might notice is that the recipe name loaded on the oven controller software will be KICPROFILE.  Loading the KICPROFILE recipe provides the benefit of giving the KIC software a vehicle to update oven settings without having to call a specific recipe file name and location of an oven controller recipe.<br /><br /></li>
+                        <li>When running a profile, the software uses a Base Oven Recipe as a starting point for the oven recipe then changes the name to KICPROFILE and will/can only change the zone setpoints and conveyor speed settings thereafter.  This gives the software the flexibility to change setpoints and conveyor speed on the fly without having you manually rename or save the recipe file.<br /><br /></li>
+                        <li>For your first profile, load appropriate temperature and conveyor speed settings in the oven control software.  Once you have run your first profile or have loaded an existing profile from the Profile Explorer zone setpoints, you can make conveyor speed adjustments manually while viewing the profile or let it happen automatically if you have the Navigator software option installed.<br /><br />Once you choose to run a profile using the predicted setpoints and conveyor speed?, the software automatically sends these new settings to the oven controller software to be loaded.  When the new settings are loaded, watch for the following:<br /><br /></li>
+                    </ol>
+                    <ul style="list-style-type: square;">
+                        <li>With some oven controllers there may be an audio warning, indicating that the oven is going to change settings.  Some of the audio indicators are also accompanied by a timer that will not allow the oven to load the new setpoints until the programmed time has elapsed.  These timers can be reduced or turned off at the customer’s discretion.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li>The software will display the message “Waiting for the oven controller to acknowledge recipe change”.  There is a time delay displayed for an estimated period for the oven to acknowledge the changes and that all conditions are right to set the oven to these new setpoints.  See Figure 166.</li>
+                                </ul>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p style="text-align: left;">
+                                    <img src="Resources/Images/1aw.png" />
+                                </p>
+                                <p class="Figure" style="text-align: left;">Figure 166: Waiting for Oven Controller to Acknowledge Recipe Change</p>
+                                <p style="text-align: center;">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li>You may notice with some ovens that it takes longer than others, you’ll have to get a feel for this as you go but if you feel the change is taking too long then switch over to the oven software and try to ascertain if there is some kind of disturbance that would cause the oven controller not to load the new setpoints.</li>
+                                </ul>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p style="text-align: left;">
+                                    <img src="Resources/Images/1aq.png" />
+                                </p>
+                                <p class="Figure" style="text-align: left;">&#160;Figure 167: Recipe Copy Successful</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <ol start="5">
+                        <li>If you are starting a profile and the software tells you that the oven’s actual zone temperatures are not within 2 degrees of the of the setpoint value, and you know that you have waited long enough (possibly even answered that they are still changing), but now you know they are not, then you will have to answer <i>No</i> and follow the instructions. This information is outlined in the user manual, but what happens next may be a little confusing to a first time user. Here is a list of what takes place and why<br /><br /></li>
+                    </ol>
+                    <ul style="list-style-type: square;">
+                        <li>You answer <b style="font-style: italic;">No</b> the temperatures are not getting closer and the system then asks you to change the Setpoint values to that of the Actual. What the system is doing by this is finding out what the oven will actually control to in certain zones.  It then takes the differences and uses them to update the oven.ini file so the next time the system optimizes for a profile it will take the zone delta limitations that it learned and apply it to the next profile.  The software will use the new zone delta limits until the values change again by a set of oven setpoints that can’t be maintained by the oven are chosen. Remember that it is very important that you are sure that the oven can’t achieve the original setpoints before you answer <b style="font-style: italic;">No</b>. Once the new delta limits are established this will affect the capability of the Navigator to optimize your profiles.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li>Next the system will take you to the Verify Minimum and Maximum Setpoint Temperature screen.  This is to verify that we have not allowed the KIC software to choose setpoint values that the oven is not capable of controlling to.  See Figure 168.</li>
+                                </ul>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p style="text-align: left;">
+                                    <img src="Resources/Images/1au.png" style="width: 358px;height: 292px;" />
+                                </p>
+                                <p class="Figure" style="text-align: center;">Figure 168: Verify Setpoints</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <ul style="list-style-type: square;">
+                        <li>Next the software will prompt you that it will calculate new setpoints.  When you click on OK, the screen will change to a profile graph that has calculated new oven setpoints for the oven to load in order to produce the optimized profile results.  This works the same even if you don’t have the Navigator  option.  If you entered the new setpoints manually the software will automatically find new setpoints like the Navigator would when you get to this point.  Be patient you may have to go through this cycle of the oven not controlling to setpoint values a few times before the proper combination of acceptable setpoints and profile optimization can be found.  In worst case scenarios you may have to change the 2.0 degrees delta between setpoint and actual because the oven is just simply not capable of getting within 2 degrees C of the setpoint no matter what the temperature.  Please contact KIC Tech support if this is the case.<br /><br /></li>
+                    </ul>
+                    <p><b>Note:</b> If you get into a situation where you are having to adjust too many times and are still not getting setpoints that the oven will control to, but you are or you will be in spec by manually changing predicted setpoints, then go into the Optimization Tab and turn off “Allow Zone Setpoints To Change”.  The next time around the KIC software will not change any of the zone values but you can go in and change them manually to exactly what the actual values are and run the profile.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Starting_a_Virtual_Profile_with_oven_communications"></a>Start a Virtual Profile With Oven Communication
+                    </h2>
+                    <p>&#160;</p>
+                    <p>Before running a Virtual Profile with oven communications, review the following:</p>
+                    <p>&#160;</p>
+                    <ol>
+                        <li>You have Use Base Oven Recipe checked in Global Preferences but the software did not ask you to select it when you started the VP.  If you have just run your baseline profile and start a VP immediately, without exiting that product, then the VP will start without asking you to choose a Base Oven Recipe.  The system assumes since you just ran a successful baseline profile that all of the oven settings are correct, and in turn, the Base Oven Recipe settings are correct.<br /><br /></li>
+                        <li>You setup your product and have a baseline profile now but you do not have an oven recipe to match it.  What recipe will you load when you want to run production on this product?  Remember that even though you originally loaded a specific oven recipe file, the software took over and loaded the KICPROFILE recipe on your oven and did not save any subsequent zone setpoints and conveyor speed changes to that original oven recipe.<br /><br />You can save any changes made to the original recipe while profiling if you want to create a recipe that can be run on the oven controller without the software running.  If you choose not to save the changes, when you load this product under the software it will load the proper recipe parameters for that product.<br /><br /></li>
+                    </ol>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <ol start="3">
+                                    <li><span style="font-size: 10pt;">When starting a Virtual Profile from the Profile Explorer, the software prompts you to select your Base Oven Recipe.  The <i>Select the Base Oven Recipe to be loaded</i> screen appears, letting you to browse your PC and point to the location and file name of the Base Oven Recipe you want to use for this product.  See Figure 169.<br /><br />Remember it should be the same one you choose when you originally ran your baseline profiles.  If you choose the wrong Base Oven Recipe, you could have boards fall off the conveyor or never even make it in because the Base Oven Recipe you chose does not match the width of the original file you loaded.</span><![CDATA[
+                
+                ]]></li>
+                                </ol>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p style="text-align: left;">
+                                    <img src="Resources/Images/1at.png" style="width: 332px;height: 224px;" />
+                                </p>
+                                <p class="Figure" style="text-align: center;"> Figure 169: Select the Base Oven Recipe to be Loaded</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <ol start="4">
+                        <li>When you have selected and opened the Base Oven Recipe the KIC software will load that recipe on the oven.  All of the parameters in this recipe are correct for this product except the zone setpoints and conveyor speed.  With some ovens, you may hear and audio warning, you may see the light tower change to an amber state, you may even see the conveyor stop momentarily and then start again indicating that the oven is loading the Base Oven Recipe.  Seconds later you may hear or see one or all of these signs again as the software sends just the zone setpoints and conveyor speed settings to the oven controller.<br /><br /></li>
+                    </ol>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <ol start="5">
+                                    <li>If you have already loaded a VP and selected a Base Oven Recipe then you will not see the <i>Select the Base Oven Recipe to be loaded</i> screen, instead you will see the screen shown in Figure 170.  Click <b>Yes</b> to verify that you are loading the correct Base Oven Recipe.  If you choose <b>No</b> then the Select the <i>Base Oven Recipe to Be loaded</i> screen appears.</li>
+                                </ol>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p style="text-align: left;">
+                                    <img src="Resources/Images/1ay.png" style="width: 329px;height: 86px;" />
+                                </p>
+                                <p class="Figure">Figure 170</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> If you feel that the system is taking too long to load the Base Oven Recipe or the setpoints, switch over to the oven control software and see if you can detect a reason why the oven is not accepting the changes.</p>
+                    <p>&#160;</p>
+                    <p><span style="font-family: Arial; font-size: 16pt; font-weight: bold;"><a name="Base_oven_recipe_automatic_verification"></a>Base Oven Recipe Automatic Verification</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>For Base Oven Recipe compatible ovens, users can automatically verify the correct Base Oven Recipe before beginning a Virtual Profile.  This feature is especially useful for users that have multiple production products using multiple Base Oven Recipes.  The system lets you select the Base Oven Recipe and if the selected recipe does not match, the Virtual Profile cannot begin.</p>
+                    <p>&#160;</p>
+                    <p><span style="font-family: Arial; font-size: 12pt; text-decoration: none;">Enable the Base Oven Recipe Automatic Verification:</span>
+                    </p>
+                    <p>&#160;</p>
+                    <ol>
+                        <li>Close the software if open.<br /><br /></li>
+                        <li>Find and open the file: C:\software root directory\Log\KIC2000UserSettings.kiccfg<br /><br /></li>
+                        <li>In the [PROPHET] section find and edit the line:<br /> AllowNotChangeRecipeAuto=1<br /><br /></li>
+                        <li>Save and then exit the file.<br /><br /></li>
+                        <li>Open the software.<br /><br /></li>
+                        <li>On the Global Preferences screen Global tab, select the Use Oven Baseline Recipe check box.<br /><br /></li>
+                    </ol>
+                    <table>
+                        <col style="width: 399px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>The next time a Virtual Profile is started a dialog box appears, prompting you to verify the correct Base Oven Recipe, or select a different one.  See Figure 171.</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/1ao.png" style="width: 300px;height: 81px;" />
+                                </p>
+                                <p class="Figure">Figure 171</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>Select the “Yes” button to continue.  Select the “No” button to choose a different Base Oven Recipe.  See Figure 172.</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/1aj.png" style="width: 326px;height: 227px;" />
+                                </p>
+                                <p class="Figure">Figure 172</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>If the selected Base Oven Recipe does not match, a yellow dialog box appears.</p>
+                                <p>&#160;</p>
+                                <p>To select a different recipe select the Continue button.</p>
+                                <p>&#160;</p>
+                                <p>When the correct recipe is selected, the software goes directly to the Virtual Profile display:</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/1av.png" style="width: 274px;height: 204px;" />
+                                </p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/1az.png" style="width: 465px;height: 267px;" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

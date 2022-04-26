@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-110 ARM User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1"><a name="Footprint_(Optional)"></a>Footprint</h1>
+        <p>This <i>optional</i> feature enables you to view actual oven temperature and conveyor speed measurements in real-time, or when viewing historical data. This tool can be helpful in confirming the stability of a machine or being able to observe the drift of temperature and/or speed under various conditions.</p>
+        <p>&#160;</p>
+        <p>The functionality is activated whenever a <i>Virtual Profile</i> is running, which means there is no additional configuration or programming necessary to utilize this feature, so you can begin seeing information as soon as a <i>VP</i> is started.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Live_Viewing"></a>Live Viewing</h2>
+        <p>When the option is present and a <i>Virtual Profile</i> is running, an additional <i>Footprint</i> tab will be available in the upper left of the screen.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="Resources/Images/FTM00012.png" style="width: 1138px;height: 610px;" />
+        </p>
+        <p>&#160;</p>
+        <p>The left side of the screen displays the following temperature related information:</p>
+        <ul>
+            <li class="li_1">Current (green dot) – the current live temperature of each of the 30 installed probe thermocouples</li>
+            <li class="li_1">Footprint (gray area) – a representation of the range of temperatures each of the probe thermocouples have measured since starting <i>VP</i></li>
+            <li class="li_1">Oven Setpoint (dotted line) – the setpoint temperature specified for each individual zone (NOTE: This information is for reference only. It is not unusual for the probe thermocouple temperature to be slightly lower than the zone setpoint temperature.)</li>
+        </ul>
+        <p>The right side of the screen displays similar information for the conveyor speed.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="Resources/Images/FTM00013.png" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" style="float: left;left: 10px;top: 1290px;margin-left: 4px;margin-right: 4px;padding-left: 4px;padding-right: 4px;width: 71px;height: 37px;" />
+        </p>
+        <p>The <i>Reset Footprint</i> button will temporarily erase the gray footprint area on the screen for both the temperature and speed information. A new display of the <i>Footprint</i> will begin after using the reset function. </p>
+        <p>NOTE: The actual variation will still be available when viewing historical data.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2" style="text-align: left;"><a name="Historical_Viewing"></a>Historical Viewing</h2>
+        <p>When viewing historical <i>VP</i> data, you can access the <i>Footprint</i> data that was recorded during that time period.</p>
+        <p>&#160;</p>
+        <p>
+            <img src="Resources/Images/FTM00014.png" style="width: 1142px;height: 616px;" />
+        </p>
+        <p>&#160;</p>
+        <p>In addition to the capabilities described under ‘Live Viewing’, the following additional functions are available in Historical Viewing:</p>
+        <ul>
+            <li class="li_1">Date/Time stamp display on graph – updates as data is replayed</li>
+            <li class="li_1">Play button <img src="Resources/Images/FTM00015.png" style="width: 18px;height: 27px;" />  toggles between 1x and 10x replay speed</li>
+            <li class="li_1">Pause button <img src="Resources/Images/FTM00016.png" style="width: 18px;height: 29px;" />  to stop replay</li>
+            <li class="li_1">Timeline – black colored bar at the bottom of the zone display representing the entire timeline for this VP:</li>
+        </ul>
+        <ul style="list-style-type: circle;">
+            <li class="li_8">Start – when the <i>VP</i> was started</li>
+            <li class="li_8">Stop – when the <i>VP</i> was stopped</li>
+            <li class="li_8">Alarm Events – red vertical lines indicate when a system alarm occurred</li>
+            <li class="li_8">Timeline indicator – small triangle under timeline bar; moves with replay; click and hold to move to specific part of timeline</li>
+        </ul>
+        <p>&#160;</p>
+        <table style="width: 100%;">
+            <col style="width: 787px;" />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p>In either live or historical view, you can hold your cursor over an individual probe TC and a pop-up window will appear showing:</p>
+                        <ul>
+                            <li class="li_1">The probe TC number</li>
+                            <li class="li_1">Current = current temperature read </li>
+                            <li class="li_1">Min = lowest temperature read</li>
+                            <li class="li_1">Max = highest temperature read</li>
+                        </ul>
+                        <p>When the cursor is held over the <i>Conveyor Footprint</i> area it will display:</p>
+                        <ul>
+                            <li class="li_1">Current speed</li>
+                            <li class="li_1">Slowest speed</li>
+                            <li class="li_1">Fastest speed</li>
+                        </ul>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/FTM00017.png" style="width: 296px;height: 163px;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

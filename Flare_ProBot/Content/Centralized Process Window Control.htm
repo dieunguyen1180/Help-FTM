@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col with="width: 1000px" />
+            <tr>
+                <td>
+                    <h1 class="Heading1"><a name="Centralized_Process_Window_Control"></a>Centralized Process Window Control</h1>
+                    <p>This optional feature enables a customer to ensure that every instance of the software is always using the same Process Window files and prevents unauthorized editing of specifications.</p>
+                    <p>Many factories may have multiple systems and the same Process Windows may need to be used at any one of those systems. This can lead to mistakes being made when transferring files from one machine to another. Or someone may make a change to a specification on one machine, and the change may not be made on others or the updated file is not copied to all other software. This can lead to varying profile results depending on which PC the data is collected in.</p>
+                    <p>&#160;</p>
+                    <p>This feature eliminates these situations by ‘centralizing’ the creation and editing of Process Window files through the use of a separate application, accessible only by authorized personnel. All Process Window files reside in a specified central directory, and each instance of the automatic system software gets their Process Windows from this location. Additionally, all creation and editing functions of the Process Window within the automatic system software are disabled. This ensures that no matter who is running the profile or at which location, the correct, approved Process Window specifications are the only ones available.</p>
+                    <p>&#160;</p>
+                    <p><b>Note</b>: For the Centralized Process Window Control to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. You can verify if you have the optional feature by viewing the Software Key panel in the Hardware Status screen.</p>
+                    <p>Additionally, each instance of the automatic system software that you want to use this option on must be connected to your company network and have access to the directory where the Process Windows are saved.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="KIC_File_Administrator"></a>KIC File Administrator</h2>
+                    <p>
+                        <img src="Resources/Images/image2260.png" style="width: 784px;height: 482px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>The <i>KIC File Administrator</i> is the application that will be used for creating and editing Process Windows for use with the Centralized Process Window Control option.</p>
+                    <p>&#160;</p>
+                    <p><b>Note</b>: For the <i>KIC File Administrator (or KFA)</i> to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. Only authorized users should be allowed to have access to this application.</p>
+                    <table style="width: 80%;">
+                        <col style="width: 350px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>As an added protection, this application requires a password for use. The default password is <i>Admin</i>, but can be changed in the <i>Settings</i> menu after logging in.</p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/image2262.png" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image2263.png" style="width: 831px;height: 509px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p><b style="font-style: italic;">Drop-down menu</b> – Displays list of currently available Process Window files. User can also type in a new name if creating a new Process Window.</p>
+                    <p><b style="font-style: italic;">Solder Paste button</b> – Displays list of manufacturers solder paste formulations with specifications.</p>
+                    <p><b style="font-style: italic;">Process Window Type</b> – You will need to choose <i>Automatic System</i> when creating Process Window files for the automatic system software.</p>
+                    <p><b style="font-style: italic;">Working Directory</b> – This is the network location where you will be saving/storing the Process Window files. By default, it will show the path where the KFA application is located. Use the <i>Browse</i> button to point to the desired network directory.</p>
+                    <p><b style="font-style: italic;">Convert Old PW files</b> – This section is used for updating existing Process Window files for compatibility* with the <i>Centralized Process Window Control</i> option.</p>
+                    <p><b style="font-style: italic;">Login/Logout</b> – Allows you to display or deactivate all areas of the application.</p>
+                    <p><b style="font-style: italic;">Change Specs Name</b> – Allows a user to change the name of a specification. <i>See Change Specs Name section below for details.</i></p>
+                    <p><b style="font-style: italic;">Settings</b> – Used for setting units of measure (for this application), changing password, inactivity time-out, etc.</p>
+                    <p><b style="font-style: italic;">OK</b> – Saves any changes and closes application</p>
+                    <p><b style="font-style: italic;">Cancel</b> – Ignores any changes made and closes application</p>
+                    <p><b style="font-style: italic;">Apply</b> – Saves changes and keeps open the application</p>
+                    <p>&#160;</p>
+                    <p>*The <i>Centralized Process Window Contro</i>l option uses a unique file format for Process Windows. When the option is in use, the software will only read Process Window files that were created or converted using the <i>KIC File Administrator</i> application. ‘Standard’ Process Window files will not be recognized by the software when this option is enabled.</p>
+                    <p style="font-weight: bold;font-style: italic;">&#160;</p>
+                    <p style="font-weight: bold;font-style: italic;"><span style="font-size: 14pt;">Working Directory</span>
+                    </p>
+                    <p>
+                        <img src="Resources/Images/image2264.png" />
+                    </p>
+                    <p>As this is the network location where the Process Window files will be stored, and ALL software installations will need to access this directory, you may need to contact your IT department to identify a proper location for this directory.</p>
+                    <p>Once a network directory is identified, click on the <i>Browse</i> button to select the location. Click <i>OK</i> in the selection window, then click <i>Apply</i> to save the change. Two subfolders named <i>Ovens</i> and <i>ProcessSpecs</i> will automatically be generated in the specified directory. All new Process Windows created, and any existing ones that are converted to the compatible format, will be saved into the <i>ProcessSpecs</i> folder of this <i>Working Directory</i> location.</p>
+                    <p>&#160;</p>
+                    <p><b style="font-style: italic; font-size: 14pt;">Convert Old PW files</b>
+                    </p>
+                    <p>
+                        <img src="Resources/Images/image2265.png" />
+                    </p>
+                    <p>This section enables you to easily convert any existing Process Window files you already have into the updated format so they can be used with the <i>Centralized Process Window Control</i> option. To update existing files:</p>
+                    <p>&#160;</p>
+                    <p>Click on the <i>Browse</i> button and point to the <i>ProcessSpecs</i> sub-folder of the software directory (C:\ProBot\ProcessSpecs). Click the <i>Apply</i> button. All Process Windows files (.KIC247ProcessSpec) will be automatically copied, converted into the new format (.ASCentralProcessSpec), and then pasted into the <i>ProcessSpecs</i> folder of the <i>Working Directory</i> on the network. To ensure all of your Process Windows are updated and available, repeat these same steps for each PC where you have the automatic system software installed.</p>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col style="width: 276px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><i style="font-weight: bold; font-size: 14pt;">Change Spec Name</i>
+                                    </p>
+                                    <p>This functionality is available for users who need to customize the name of a given specification to meet their internal naming conventions for process specifications. The updated name is what will display in the Process Windows.</p>
+                                    <p>If you need to change a specification, check the <i>Use Change Specs Name</i> checkbox. From the left side columns (greyed out), locate the specification names you want to modify and type the new name into the corresponding right side column. Click <i>Save</i> then <i>Exit</i> when you’ve completed your changes.</p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/image2266.png" style="width: 519px;height: 395px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Configuration_of_RPI_software"></a>Configuration of software</h2>
+                    <p>To use the <i>Centralized Process Window Control</i> option in the software, a selection needs to be made during the software installation. This will automatically configure the software to use this function. A message will appear on the screen to plug in your USB dongle:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image2267.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>When a valid key with the option included is detected, an additional prompt will appear allowing you to ‘disable’ the CPWC function, or continue with including the CPWC configuration:</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image2268.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>After installation of the software is completed, you will also need to specify the network directory where the Process Window files will be retrieved from. This will be done through the <i>ConfigurationProgram.exe</i> utility:</p>
+                    <table style="width: 100%;">
+                        <col style="width: 283px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <ol>
+                                        <li>Shut down the software</li>
+                                        <li>Browse to the C:\ProBot directory</li>
+                                        <li>Run the <i>ConfigurationProgram.exe</i> file</li>
+                                        <li>In the Process Window Directory section, click <i>Browse</i> and select the <i>ProcessSpecs</i> folder in the network drive previously specified in the <i>KFA</i> utility</li>
+                                        <li>Click <i>Apply</i> and <i>OK</i> to save the changes and close the utility</li>
+                                    </ol>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/image2269.png" style="width: 589px;height: 520px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Operation_of_RPI_software"></a>Operation of software</h2>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image2270.png" style="width: 690px;height: 548px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>When the <i>Centralized Process Window</i> option is in use, the software will populate the drop-down menu at the top of the screen with <b style="font-style: italic;">only</b> the Process Window files from the specified network directory. All edit and naming functions are removed. The user can only view the Process Window files.</p>
+                    <p>The Process Window files will automatically be downloaded into the local software directory from the specified network location. This ensures that whenever a Process Window needs to be accessed – either from opening the Process Window screen, or from the Run a Profile screen – the most up-to-date version of the Process Windows are always being used.</p>
+                    <p><b>Note</b>: For the Centralized Process Window Control to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. You can verify if you have the optional feature by viewing the Software Key panel in the Hardware Status screen.</p>
+                    <p>Additionally, each instance of the software that you want to use this option on must be connected to your company network and have access to the directory where the Process Windows are saved.</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

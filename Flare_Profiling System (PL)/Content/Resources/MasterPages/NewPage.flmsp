@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px">
+            <col style="width: 1000px" />
+            <tr>
+                <td>
+                    <div>
+                        <p class="Header"><span style="font-family: Arial; color: #a9a9a9;">Profiling System User Manual - <span style="font-size: 9pt;">Version 3.9</span></span>
+                        </p>
+                    </div>
+                    <MadCap:bodyProxy />
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

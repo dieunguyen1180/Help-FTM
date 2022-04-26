@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="2866.333" MadCap:lastWidth="1303">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 505px">
+            <tr>
+                <td with="width: 505px">
+					<h1 class="Heading1">Status Messages and Alarms with the Basic System</h1>
+					<p>The software communicates system status through messages that it displays on the monitor.&#160; Some simply report an operating condition, some provide a warning that process parameters are changing, and still others, called <span class="span_12">alarms</span><span class="span_12">,</span> announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.&#160; </p>
+					<p>&#160;</p>
+					<table class="table_1">
+						<col style="width: 311pt;" />
+						<col style="width: 157pt;" />
+						<tr>
+							<td class="td_13">
+								<p>Alarm messages typically appear in red.&#160; An alarm status may accompany a signal from the eTPU to the optional alarm relay, which, in turn, may trigger hardware-related events such as sounding audible alarms, lighting signal towers, or stopping infeed conveyors.</p>
+								<p>&#160;</p>
+								<p>&#160;</p>
+							</td>
+							<td class="td_13">
+								<p>
+									<img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0600009E.png" style="height: 87px;width: 137px;" class="img_1" />
+								</p>
+							</td>
+						</tr>
+					</table>
+					<p>&#160;</p>
+					<p>Some status messages and alarms are specific to different functions of the software.&#160; Some may appear when you are first running profiles to establish a baseline.&#160; Others appear only when you begin Virtual Profiling.</p>
+					<h2 class="Heading2"><a name="Acknowledging_alarms"></a>Acknowledge Alarms</h2>
+					<table class="table_1">
+						<col style="width: 361pt;" />
+						<col style="width: 118pt;" />
+						<tr>
+							<td class="td_14">
+								<p>Once displayed on the monitor, an operator needs to acknowledge the alarm, clicking on it to notify the software that the message has been received and make the displayed panel disappear.&#160; </p>
+							</td>
+							<td class="td_14">
+								<p>
+									<img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300009F.png" style="height: 87px;width: 137px;" class="img_1" />
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="td_15">
+								<p>You can use password protection to limit the ability to acknowledge alarms.&#160; To do so, you first need to specify the following value in the KIC2000UserSettings.kiccfg file:</p>
+								<p class="p_15">&#160;</p>
+								<p class="p_15">[HOST]</p>
+								<p class="p_17">UsingPasswordwithRedAlarm=1</p>
+								<p class="p_17">Next, you need to specify a password on the Global Preferences screen <span class="span_12">Engineer Password</span> option.&#160; Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.</p>
+							</td>
+							<td class="td_16">
+								<p class="p_17">&#160;</p>
+								<p class="p_17">&#160;</p>
+								<p class="p_17">&#160;</p>
+								<p class="p_17">
+									<img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A0.png" style="height: 29px;width: 150px;" class="img_1" />
+								</p>
+							</td>
+						</tr>
+					</table>
+					<p class="p_15">&#160;</p>
+					<p class="p_19">
+						<img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A1.png" style="height: 194px;width: 301px;" class="img_1" />
+					</p>
+					<p>&#160;</p>
+					<p><span class="span_11">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
+					<h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
+					<p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.&#160; Below is a table of messages that you might see during this process:&#160; See Table 2.</p>
+					<p>&#160;</p>
+					<table align="center" class="table_2">
+						<col style="width: 104pt;" />
+						<col style="width: 342pt;" />
+						<tr style="height: 22pt;">
+							<td class="td_17">
+								<p class="p_46">Message Alarms</p>
+							</td>
+							<td class="td_17">
+								<p class="p_46">Message Description</p>
+							</td>
+						</tr>
+						<tr style="height: 22pt;">
+							<td class="td_18">
+								<p class="p_47">Message, High PWI</p>
+							</td>
+							<td class="td_18">
+								<p class="p_48">Recent profile of xxx%, PWI must be 90%</p>
+							</td>
+						</tr>
+						<tr style="height: 22pt;">
+							<td class="td_18">
+								<p class="p_47">Message Alarm H1</p>
+							</td>
+							<td class="td_18">
+								<p><span class="span_31">e</span><span class="span_31">TPU Communication Failure - wait 5 seconds and try again</span>
+								</p>
+							</td>
+						</tr>
+						<tr style="height: 22pt;">
+							<td class="td_18">
+								<p class="p_47">Message Alarm H7</p>
+							</td>
+							<td class="td_18">
+								<p class="p_49">Conveyor has stopped or encoder has been disconnected Virtual Profiling cannot be started.</p>
+							</td>
+						</tr>
+					</table>
+					<p class="Caption"><a name="_Ref187211045"></a>Table 2: Profiling System Alarms System message alarms</p>
+					<h2 class="Heading2"><a name="System_message_alarms"></a>System Messages and Alarms</h2>
+					<h3 class="Heading3"><a name="Message_High_PWI"></a>Message, High PWI</h3>
+					<table class="table_1">
+						<col style="width: 193pt;" />
+						<col style="width: 286pt;" />
+						<tr>
+							<td class="td_19">
+								<p>If the verification profile PWI is &gt;= 100%, you will receive this message when starting the VP.</p>
+								<p>If there was a problem with the most recent profile, it can be deleted and the system will try to use the next most recent profile as the baseline profile.&#160; Otherwise, you are advised to run another profile.&#160; See Figure 86.</p>
+							</td>
+							<td class="td_19">
+								<p class="p_19">
+									<img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A2.png" style="height: 104px;width: 252px;" class="img_2" />
+								</p>
+								<p class="p_19"><a name="_Ref468168397"></a><span class="span_18">Figure </span><span class="span_18">86</span><span class="span_18">: Message High PWI</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+					<p>&#160;</p>
+					<h3 class="Heading3"><a name="Alarm_Message_H1"></a>Alarm Message H1</h3>
+					<table class="table_1">
+						<col style="width: 193pt;" />
+						<col style="width: 286pt;" />
+						<tr>
+							<td class="td_19">
+								<p>No communication.&#160; (After software launched and did not have time for eTPU to communicate with computer.)&#160; This message will usually appear if the eTPU was connected after the software was launched.&#160; This is because a connection to the eTPU has not been established yet.&#160; Waiting 5 seconds allows a connection to the eTPU to be established.&#160;See Figure 87.</p>
+							</td>
+							<td class="td_19">
+								<p>&#160;</p>
+								<p>
+									<img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A3.png" style="height: 141px;width: 365px;" class="img_2" />
+								</p>
+								<p class="p_19"><a name="_Ref468168399"></a><span class="span_18">Figure </span><span class="span_18">87</span><span class="span_18">: Alarm H1</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+					<p>&#160;</p>
+					<h3 class="Heading3"><a name="Alarm_H7"></a>Alarm H7</h3>
+					<table class="table_1">
+						<col style="width: 193pt;" />
+						<col style="width: 286pt;" />
+						<tr>
+							<td class="td_19">
+								<p>This alarm will appear when trying to start a Virtual Profile from the Profile Explorer.&#160; The oven conveyor must be running and set to the correct speed settings in order to start Virtual profiling.&#160;See Figure 88.</p>
+								<p>&#160;</p>
+							</td>
+							<td class="td_19">
+								<p>&#160;</p>
+								<p>
+									<img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A4.png" style="height: 104px;width: 364px;" class="img_2" />
+								</p>
+								<p class="p_19"><a name="_Ref468168398"></a><span class="span_18">Figure </span><span class="span_18">88</span><span class="span_18">: Alarm H7</span>
+								</p>
+							</td>
+						</tr>
+					</table>
+					<p>&#160;</p>
+					<h2 class="Heading2"><a name="Virtual_Profiling1"></a>Alarms and Messages During Virtual Profiling</h2>
+					<p>The software incorporates the use of Warning and Alarm dialog screens to let you know if there is a problem and the cause for that problem.&#160; Below is a partial list of the Warning and Alarm dialog screens with explanations.&#160; These Alarms are active only when Virtual profiling is running.</p>
+					<p>&#160;</p>
+					<table align="center" class="table_2">
+						<col style="width: 85pt;" />
+						<col style="width: 293pt;" />
+						<col style="width: 76pt;" />
+						<tr style="height: 36pt;">
+							<td class="td_20">
+								<p class="p_50">Process Alarms</p>
+							</td>
+							<td class="td_21">
+								<p class="p_50">Description</p>
+							</td>
+							<td class="td_21">
+								<p class="p_50">Activates Alarm Relay</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Alarm # 1</p>
+							</td>
+							<td class="td_23">
+								<p class="p_52">PWI=x% - Process is out of spec</p>
+							</td>
+							<td class="td_23">
+								<p class="p_51">Yes</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Alarm # 8</p>
+							</td>
+							<td class="td_23">
+								<p class="p_52">The length of the current product does not match the length of the product during the baseline profile.</p>
+							</td>
+							<td class="td_23">
+								<p class="p_51">No</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Alarm # 10</p>
+							</td>
+							<td class="td_23">
+								<p class="p_52">This alarm only occurs when the software and the oven control software are communicating and indicates that the oven is not set to the baseline profile recipe.</p>
+							</td>
+							<td class="td_23">
+								<p class="p_51">Yes</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Alarm # 11</p>
+							</td>
+							<td class="td_23">
+								<p class="p_52">The speed sensor has detected that the conveyor speed has changed significantly since the baseline.</p>
+							</td>
+							<td class="td_23">
+								<p class="p_51">Yes</p>
+							</td>
+						</tr>
+					</table>
+					<p class="Caption">Table 3: Virtual Profiling – Process Alarms</p>
+					<p>&#160;</p>
+					<p>&#160;</p>
+					<table align="center" class="table_2">
+						<col style="width: 85pt;" />
+						<col style="width: 293pt;" />
+						<col style="width: 76pt;" />
+						<tr style="height: 36pt;">
+							<td class="td_20">
+								<p class="p_50">Hardware Alarms</p>
+							</td>
+							<td class="td_21">
+								<p class="p_50">Description</p>
+							</td>
+							<td class="td_21">
+								<p class="p_50">Activates Alarm Relay</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Alarm H1</p>
+							</td>
+							<td class="td_23">
+								<p><span class="span_27">e</span><span class="span_27">TPU Communication Failure (happened after Alarm H2)</span>
+								</p>
+							</td>
+							<td class="td_23">
+								<p class="p_51">Yes</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Alarm H2</p>
+							</td>
+							<td class="td_23">
+								<p><span class="span_27">e</span><span class="span_27">TPU Lost Communication with PC.</span>
+								</p>
+								<p><span class="span_27">Note: This Alarm condition </span><span class="span_27">can</span><span class="span_27"> activate the </span><span class="span_27">Alarm Relay that </span><span class="span_27">is controlled by </span><span class="span_27">e</span><span class="span_27">TPU</span><span class="span_27">.</span>
+								</p>
+							</td>
+							<td class="td_23">
+								<p class="p_51">Yes or No</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Alarm H7</p>
+							</td>
+							<td class="td_23">
+								<p class="p_52">Conveyor Stopped or Speed Encoder broken or not connected properly.</p>
+							</td>
+							<td class="td_23">
+								<p class="p_53">Yes</p>
+							</td>
+						</tr>
+					</table>
+					<p class="Caption">Table 4: Virtual Profiling – Hardware Alarms</p>
+					<p>&#160;</p>
+					<p>&#160;</p>
+					<table align="center" class="table_2">
+						<col style="width: 85pt;" />
+						<col style="width: 293pt;" />
+						<col style="width: 76pt;" />
+						<tr style="height: 36pt;">
+							<td class="td_24">
+								<p class="p_50">Warnings</p>
+							</td>
+							<td class="td_25">
+								<p class="p_50">Description</p>
+							</td>
+							<td class="td_25">
+								<p class="p_50">Activates Alarm Relay</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Warning # 2</p>
+							</td>
+							<td class="td_23">
+								<p class="p_52">This process is likely to go out of spec soon.</p>
+							</td>
+							<td class="td_23">
+								<p class="p_51">No</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Warning # 3</p>
+							</td>
+							<td class="td_23">
+								<p class="p_52">The last profile was out of spec.</p>
+							</td>
+							<td class="td_23">
+								<p class="p_51">No</p>
+							</td>
+						</tr>
+						<tr style="height: 13pt;">
+							<td class="td_22">
+								<p class="p_51">Warning # 4</p>
+							</td>
+							<td class="td_23">
+								<p class="p_52">Oven temps have changed significantly since baseline.</p>
+							</td>
+							<td class="td_23">
+								<p class="p_53">No</p>
+							</td>
+						</tr>
+					</table>
+					<p class="Caption">Table 5: Virtual Profiling – Warnings</p>
+					<p>&#160;</p>
+					<p>&#160;</p>
+					<h2 class="Heading2"><a name="eTPU_Communication"></a>eTPU Communication</h2>
+					<h3 class="Heading3"><a name="Communication_Troubleshooting_for_the_eTPU"></a>Communication Troubleshooting for the eTPU</h3>
+					<ul class="ul_3">
+						<li class="ListParagraph_2"><span class="span_11">If the Yellow </span><span class="span_11">LED</span> <span class="span_11">(AC Power) is not on, then there is no power present.</span></li>
+					</ul>
+					<p class="p_16">To correct this, make sure the eTPU power supply is properly connected to the eTPU and connected to an AC power source.&#160; Use only a factory-supplied power supply.</p>
+					<p>&#160;</p>
+					<ul class="ul_3">
+						<li class="ListParagraph_2"><span class="span_11">If the g</span><span class="span_11">reen LED</span> <span class="span_11">(Network communication)</span><span class="span_11"> is not </span><span class="span_11">on, then there is no </span><span class="span_11">Ethernet communication.</span></li>
+					</ul>
+					<p class="p_16">To correct this, ensure the dedicated Ethernet adapter is configured properly.&#160; Also make sure the correct IP address class is used, and that the subnet mask is entered correctly.</p>
+					<p>&#160;</p>
+					<ul class="ul_3">
+						<li class="ListParagraph_2"><span class="span_11">If</span><span class="span_11"> you open the software and the r</span><span class="span_11">ed </span><span class="span_11">LED </span><span class="span_11">does not begin blinking (slow blink), then the </span><span class="span_11">SitePlayer</span><span class="span_11"> IP address</span> <span class="span_11">may</span><span class="span_11"> not </span><span class="span_11">be </span><span class="span_11">configured properly.</span></li>
+					</ul>
+					<p class="p_16">To correct this, exit the software and then open the file:</p>
+					<p class="p_16"><span class="span_16">C:\</span><span class="span_16">software root directory</span><span class="span_16">\</span><span class="span_16">Log\KIC2000Hardware.kiccfg</span>
+					</p>
+					<p class="p_16">&#160;</p>
+					<p class="p_16">Edit the line:</p>
+					<p class="p_16"><span class="span_16">SitePlayer</span><span class="span_16">IPA</span><span class="span_16">d</span><span class="span_16">dress=</span>
+					</p>
+					<p class="p_16">&#160;</p>
+					<p class="p_16">Enter the IP address of your eTPU-SitePlayer.</p>
+					<p class="p_16">If still not working, then use Internet Explorer to access the eTPU SitePlayer and use the manual switch.</p>
+					<p>&#160;</p>
+					<ul class="ul_3">
+						<li class="ListParagraph_2"><span class="span_11">If you cannot connect to the </span><span class="span_11">SitePlayer</span><span class="span_11"> using </span><span class="span_11">Internet</span><span class="span_11"> Explorer, t</span><span class="span_11">hen the </span><span class="span_11">SitePlayer</span><span class="span_11"> IP address is</span> <span class="span_11">typed</span> <span class="span_11">incorrect</span><span class="span_11">ly</span><span class="span_11"> or the address is </span><span class="span_11">unknown</span><span class="span_11">.</span></li>
+					</ul>
+					<p class="p_16">To correct this, enter the correct IP address for the SitePlayer.&#160; As long as the SitePlayer is not damaged, you can connect.&#160; If you are unsure of the correct IP address of the SitePlayer, remove the cover and read the IP address from the eTPU configuration label.&#160; If the IP address is unrecoverable, then the eTPU must be returned to your system supplier for reprogramming.</p>
+					<p>&#160;</p>
+					<ul class="ul_3">
+						<li class="ListParagraph_2"><span class="span_11">If communication with the eTPU is lost, (i.e. eTPU Ethernet cable unplugged, or the power disconnected) the syst</span><span class="span_11">em may not recover on its own.</span>
+						</li>
+					</ul>
+					<p class="p_16">To correct this, close the software and then open it again.&#160; This should reset the eTPU SitePlayer.&#160; In some situations, it may require a PC reboot to regain communication with the eTPU.&#160; (green and red LEDs)</p>
+					<p>&#160;</p>
+					<p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

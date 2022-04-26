@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="Microsoft HTML Help Target"
+  Type="HtmlHelp"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  DefaultUrl="/Content/User_Manual.htm"
+  DisableAutoSync="false"
+  GetLatestBeforeCompile="false"
+  Skin="/Project/Skins/Default.flskn"
+  MasterPage="/Content/Resources/MasterPages/NewPage.flmsp">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="true"
+    GenerateGlossaryProxy="true" />
+</CatapultTarget>

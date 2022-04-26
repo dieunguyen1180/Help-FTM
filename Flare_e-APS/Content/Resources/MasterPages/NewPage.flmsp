@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <table style="width: 1000px">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <div>
+                        <p class="Header"><span style="font-family: Arial;"><span style="color: #a9a9a9;">e-APS User Manual - <span style="font-size: 9pt;">Version 3.8</span></span></span>
+                        </p>
+                    </div>
+                    <MadCap:bodyProxy />
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

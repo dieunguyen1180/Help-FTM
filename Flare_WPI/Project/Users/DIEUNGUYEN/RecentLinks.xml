@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="O:\Help for KIC\NEW HELP from TPS\Flare_WPI 3.4a\Content\Resources\Images\image156.png" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="O:\Help for KIC\NEW HELP from TPS\Flare_WPI 3.4a\Content\Appendix_B.htm" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.MultimediaGeneralDialogPage" />
+</RecentLinks>

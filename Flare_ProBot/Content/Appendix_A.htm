@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 1000px">
+            <col with="width: 1000px" />
+            <tr>
+                <td>
+                    <h1>Appendix A: The Process Window Index
+                    </h1>
+                    <p style="text-align: center;"><span style="font-size: 18pt; font-weight: bold; font-family: Arial;">A Method for Quantify Thermal Profile Performance</span>
+                    </p>
+                    <h2><a name="The_Problem"></a>The Problem</h2>
+                    <p>While there are currently statistically valid methods for quantifying pick and place and screen printer performance, there is no widely accepted method for comparing performance of thermal profiles, and thus, no quantifiable system of ranking thermal process performance.&#160; Once a thermal profile has been run, it is judged as being either in or out of spec, and perhaps subjectively judged as being OK, good, or really good.&#160; Efforts to track process performance for SPC or QC generally focus on a single, or a small group, of profile statistics; for example, peak temperature of one or two thermocouples on a golden board.&#160; The Process Window Index is a statistical method for ranking thermal profile and thermal process performance.</p>
+                    <p>&#160;</p>
+                    <h2><a name="Defining_the_Process_Window_Index"></a>Defining the Process Window Index</h2>
+                    <table class="table_2">
+                        <col style="width: 239pt;" />
+                        <col style="width: 239pt;" />
+                        <tr>
+                            <td class="td_25">
+                                <p>The Process Window Index (PWI) is a measure of how well a profile fits within user defined process limits.  See Figure 155.</p>
+                                <p>&#160;</p>
+                                <p>This is done by ranking process profiles on the basis of how well a given profile “fits” the critical process statistics.&#160; A profile that will process product without exceeding any of the critical process statistics is said to be inside the Process Window.&#160; The center of the Process window is defined as zero, and the extreme edge of the process window as 99%.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_25">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000113.png" style="width: 281px;height: 174px;" />
+                                </p>
+                                <p class="p_1">Figure 155: Process Window and PWI</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_25">
+                                <p>&#160;</p>
+                                <p>A PWI of 100% or more indicates that the profile will not process product in spec.&#160; A “Process Window Index” of 99% indicates that the profile will process product within spec, but it is running at the very edge of the Process Window.&#160; A “Process Window Index” of less than 99% indicates that the profile is in spec and tells users what percentage of the process window they are using: for example, a PWI of 70% indicates a profile that is using 70 percent of the process spec.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_25">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000114.png" style="height: 155px;width: 278px;" class="img_11" />
+                                </p>
+                                <p class="p_1">Figure 156: The Process Window Index<br /></p>
+                                <p>(Single Statistic—Peak Temperature of one Thermocouple)</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>The PWI tells users exactly how much of their process window a given profile uses, and thus how robust that profile is.&#160; The lower the PWI, the better the profile.&#160; A PWI of 99% is risky because it indicates that the process could easily drift out of control.&#160; Most users seek a PWI of below 80%, and profiles with a Process Window Index between 50% and 60% are commonly achieved (if the oven is sufficiently flexible and efficient).</p>
+                    <p>&#160;</p>
+                    <p>Figure 156 shows the Process Window Index for the Peak Temperature of a single thermocouple.  The Process Window Index for a complete set of profile statistics is calculated as the worst case (highest number) in the set of statistics.</p>
+                    <p>&#160;</p>
+                    <p>For example: if a profile is run with six thermocouples, and four profile statistics are logged for each thermocouple, then there will be a set of twenty-four statistics for that profile, and the PWI will be the worst case (highest number expressed as a percentage) in that set of profile statistics.  Note that Figure 150 shows the user-designated critical statistics for a single thermocouple.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000115.png" style="width: 623px;height: 404px;" />
+                    </p>
+                    <p class="Caption">Figure 157: The Process Window Index<br />(Multiple Statistics for a Single Thermocouple and Final PWI Calculation)</p>
+                    <p class="Caption">
+                        <br />
+                    </p>
+                    <h2><a name="Calculating_the_PWI"></a>Calculating the PWI</h2>
+                    <p>To calculate the Process Window Index: i=1 to N (number of thermocouples); j=1 to M (number of statistics per thermocouple); <span class="span_9">measured_value</span><sub class="sub_1">[i,j]</sub> is the [i,j]<sup>th</sup> statistic’s value; <span class="span_9">average_limits</span><sub class="sub_1">[i,j]</sub> is the average of the [i,j]<sup>th</sup> statistic’s high and low limits; and <span class="span_9">range</span><sub class="sub_1">[i,j] </sub>is the [i,j]<sup>th</sup> statistic’s high limit minus the low limit.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000116.png" style="width: 521px;height: 77px;" />
+                    </p>
+                    <p style="text-align: center;">Figure 158: Formula for calculating the PWI</p>
+                    <p>&#160;</p>
+                    <p>Thus, the PWI calculation includes all thermocouple statistics for all thermocouples.&#160; The profile PWI is the worst case profile statistic (maximum, or highest percentage of the process window used), and all other values are less.</p>
+                    <p>&#160;</p>
+                    <p><b>Note</b>: When using non-centered Target values, a modified formula is used.</p>
+                    <p>&#160;</p>
+                    <h2><a name="Benefits_of_Ranking"></a>Benefits of Ranking Thermal Profile Performance</h2>
+                    <p>The analysis of thermal profiles with the Process Window Index offers four significant benefits.&#160; The first is that profiles can be easily compared, and users can be confident that they are using the best profile their process can achieve.&#160; Before the PWI was available for profile analysis, comparing profiles was subjective, and users could never be certain they had the best profile for their product.&#160; The PWI provides an excellent opportunity for process improvement and its use is a significant step towards Zero-defect Production.</p>
+                    <p>&#160;</p>
+                    <p>The second benefit is that the PWI greatly simplifies the profiling process.&#160; When used in advanced profiling tools, all profile statistics are reduced to a single number (the PWI) that even the most inexperienced operator can understand.&#160; This means significant savings in terms of training costs and a reduction in defects caused by operator error.&#160; It further means that in a few minutes, an inexperienced operator can setup an oven with the optimal profile, a job that formerly could take an experienced engineer hours.</p>
+                    <p>&#160;</p>
+                    <p>The third benefit is that because the PWI reflects the performance of the whole profile, it provides much better indicator of process capability than tracking a single statistic.&#160; The PWI thus provides excellent data for SPC and other QC monitoring programs while simplifying data gathering and reducing process monitoring costs.</p>
+                    <p>&#160;</p>
+                    <p>Finally, the PWI gives users a simple method for comparing thermal process performance.&#160; Comparisons may be made between individual lines on the shop floor, between processes at multiple plants, and between processes using dissimilar equipment.&#160; The ability to quantify thermal process performance will give electronics assemblers a means for comparing the performance of their soldering equipment.&#160; This is of value in selecting equipment, for buy off, and for process troubleshooting.</p>
+                    <p>&#160;</p>
+                    <p>Table 10 is the result of a series of tests comparing oven performance using several sizes of PCBs.  Each board was profiled in the given oven, and then an automated profile prediction tool was used to find the optimal profile for that board in the given oven.  After the oven setpoints were changed and the oven stabilized, a second profile was run to confirm that the predicted PWI had been achieved.  Table 10 shows that there is significant variation in oven performance between various makes and models.  In this test, Oven C had more zones than Ovens A and B, and performed better, as would be expected.</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_1">
+                        <col style="width: 78pt;" />
+                        <col style="width: 63pt;" />
+                        <col style="width: 68pt;" />
+                        <col style="width: 68pt;" />
+                        <col style="width: 72pt;" />
+                        <col style="width: 68pt;" />
+                        <tr style="height: 13pt;">
+                            <td colspan="2" class="td_38">
+                                <p class="p_69"><span style="color: #ffffff;">Oven</span>
+                                </p>
+                            </td>
+                            <td colspan="4" class="td_39">
+                                <p class="p_69"><span style="color: #ffffff;">Board Type</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_40">
+                                <p class="p_70">Manufacturer</p>
+                            </td>
+                            <td class="td_41">
+                                <p class="p_70">Model</p>
+                            </td>
+                            <td class="td_42">
+                                <p class="p_70">Motherboard</p>
+                            </td>
+                            <td class="td_41">
+                                <p class="p_70">Cell Phone</p>
+                            </td>
+                            <td class="td_41">
+                                <p class="p_1"><span class="span_45">Display</span><span class="span_45"><br />Adapter</span>
+                                </p>
+                            </td>
+                            <td class="td_41">
+                                <p class="p_70">Mainframe</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_43">
+                                <p class="p_40">A</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">X</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">PWI = 87%</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">PWI = 62%</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">PWI = 79%</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">PWI = 126%</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_45">
+                                <p class="p_40">B</p>
+                            </td>
+                            <td class="td_45">
+                                <p class="p_40">Y</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">PWI = 71%</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">PWI = 58%</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">PWI = 61%</p>
+                            </td>
+                            <td class="td_44">
+                                <p class="p_40">PWI = 93%</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_49">
+                                <p class="p_40">C</p>
+                            </td>
+                            <td class="td_50">
+                                <p class="p_40">Z</p>
+                            </td>
+                            <td class="td_47">
+                                <p class="p_40">PWI = 33%</p>
+                            </td>
+                            <td class="td_48">
+                                <p class="p_40">PWI = 29%</p>
+                            </td>
+                            <td class="td_48">
+                                <p class="p_40">PWI = 34%</p>
+                            </td>
+                            <td class="td_48">
+                                <p class="p_41">PWI = 58%</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 10: Comparison of Oven Performance – Best Achievable PWI</p>
+                    <h2><a name="Conclusion"></a>Conclusion</h2>
+                    <p>The simplicity of the Process Window Index makes its validity as a statistical tool readily apparent and its adoption as an industry standard clearly offers a significant opportunity for the improvement of the soldering process.&#160; The advantages detailed above point to its value in demystifying the soldering process and open the door to precision control of a process that has been ignored for too long.&#160; Issues like the coming of Lead-free electronic assembly mean that electronics assemblers can no longer be complacent about their soldering process.&#160; Sophisticated tools utilizing the PWI as a standard for accurately measuring the thermal process will mean more efficient production, improved and simplified process control, and higher quality final product.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>The software will now automatically change some of the default settings of the software, to settings that are more applicable to your specific oven, in regards to how it calculates the suggested recipe setpoints. When the calculation is completed, it will return you to your original profile plot, and it will display a new “Predicted” recipe suggestion that your oven should be able to maintain.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

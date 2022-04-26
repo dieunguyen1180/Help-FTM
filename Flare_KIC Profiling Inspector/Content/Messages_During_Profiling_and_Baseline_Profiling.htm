@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="14" MadCap:lastHeight="2250" MadCap:lastWidth="1181">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 505px">
+            <col style="width: 756px;" />
+            <tr>
+                <td with="width: 505px">
+                    <h1 class="Heading1"><a name="_Toc367109158"></a><a name="_Toc390353657"></a>
+                    </h1>
+                    <h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
+                    <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.  Below is a table of the messages that you might see during this process:  See Table 2.</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_1">
+                        <col style="width: 104pt;" />
+                        <col style="width: 342pt;" />
+                        <tr style="height: 22pt;">
+                            <td class="td_12">
+                                <p class="Important"><span style="color: #ffffff;">Message Alarms</span>
+                                </p>
+                            </td>
+                            <td class="td_12">
+                                <p class="Important"><span style="color: #ffffff;">Message Description</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_13">
+                                <p class="p_32">Message, High PWI</p>
+                            </td>
+                            <td class="td_13">
+                                <p class="p_33">Recent profile of xxx%, PWI must be 90%</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_13">
+                                <p class="p_32">Message Alarm H2</p>
+                            </td>
+                            <td class="td_13">
+                                <p><span class="span_31">e</span><span class="span_31">TPU Communication Failure - wait 5 seconds and try again</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_13">
+                                <p class="p_32">Message Alarm H7</p>
+                            </td>
+                            <td class="td_13">
+                                <p class="p_63">Conveyor has stopped or encoder has been disconnected Virtual Profiling cannot be started.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p style="text-align: center;">Table 2: Profiling System Alarms System message alarms</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Caption">&#160;</p>
+                    <table with="width: 505px">
+                        <col style="width: 750px;" />
+                        <tr>
+                            <td with="width: 505px">
+                                <h1 class="Heading1"><a name="System_message_alarms"></a>System Messages and Alarms</h1>
+                                <h3 class="Heading3"><a name="Message_high_PWI1"></a>Message, High PWI</h3>
+                                <table class="table_2">
+                                    <col style="width: 193pt;" />
+                                    <col style="width: 286pt;" />
+                                    <tr>
+                                        <td class="td_14">
+                                            <p>If the verification profile PWI is &gt;= 100%, you will receive this message when starting the VP.</p>
+                                            <p>If there was a problem with the most recent profile, it can be deleted and the system will try to use the next most recent profile as the baseline profile.  Otherwise, you are advised to run another profile.  See Figure 86.</p>
+                                        </td>
+                                        <td class="td_14">
+                                            <p class="p_1">
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000101.png" />
+                                            </p>
+                                            <p style="text-align: center;">Figure 86: Message High PWI</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_14">
+                                            <h3 class="Heading3"><a name="Alarm_message_H2"></a>Alarm Message H2</h3>
+                                            <p>No communication.  (After software launched and did not have time for eTPU to communicate with computer.)  This message will usually appear if the eTPU was connected after the software was launched.  This is because a connection to the eTPU has not been established yet.  Waiting 5 seconds allows a connection to the eTPU to be established.  See Figure 87.</p>
+                                        </td>
+                                        <td class="td_14">
+                                            <p>&#160;</p>
+                                            <p style="text-align: center;">
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000102.png" />
+                                            </p>
+                                            <p style="text-align: center;">Figure 87: Alarm H2</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_14">
+                                            <h3 class="Heading3"><a name="Alarm_H7"></a>Alarm H7</h3>
+                                            <p>This alarm will appear when trying to start a Virtual Profile from the Profile Explorer.  The oven conveyor must be running and set to the correct speed settings in order to start Virtual profiling.  See Figure 88.</p>
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td class="td_14">
+                                            <p>&#160;</p>
+                                            <p style="text-align: center;">
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000103.png" />
+                                            </p>
+                                            <p style="text-align: center;">Figure 88: Alarm H7</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>&#160;</p>
+                                <h3 class="Heading3"><a name="Alarms_and_Messages_During_Virtual_Profiling"></a>Alarms and Messages During Virtual Profiling</h3>
+                                <p>The software incorporates the use of a Warning and Alarm list box to let you know if there is a problem and the cause for that problem.&#160; Below is a partial list of the Warning and Alarm dialog messages with explanations.&#160; These are active only when Virtual profiling is running and can display in a list box when a VP is calculated.</p>
+                                <p>&#160;</p>
+                                <table align="center" class="table_1">
+                                    <col style="width: 85pt;" />
+                                    <col style="width: 293pt;" />
+                                    <col style="width: 76pt;" />
+                                    <tr style="height: 36pt;">
+                                        <td class="td_15">
+                                            <p class="p_34">Process Alarms</p>
+                                        </td>
+                                        <td class="td_16">
+                                            <p class="p_34">Description</p>
+                                        </td>
+                                        <td class="td_16">
+                                            <p class="p_34">Activates Alarm Relay</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 1</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">PWI=x% - Process is out of spec</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 10</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">This alarm only occurs when the KIC software and the oven control software are communicating and indicates that the oven is not set to the baseline profile recipe.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 11</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">The KIC speed sensor has detected that the conveyor speed has changed significantly since the baseline.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="Caption">Table 3: Virtual Profiling – Process Alarms</p>
+                                <p>&#160;</p>
+                                <table align="center" class="table_1">
+                                    <col style="width: 85pt;" />
+                                    <col style="width: 293pt;" />
+                                    <col style="width: 76pt;" />
+                                    <tr style="height: 36pt;">
+                                        <td class="td_15">
+                                            <p class="p_34">Hardware Alarms</p>
+                                        </td>
+                                        <td class="td_16">
+                                            <p class="p_34">Description</p>
+                                        </td>
+                                        <td class="td_16">
+                                            <p class="p_34">Activates Alarm Relay</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm H1</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p><span class="span_25">e</span><span class="span_25">TPU Communication Failure (happened after Alarm H2)</span>
+                                            </p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm H2</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p><span class="span_25">e</span><span class="span_25">TPU Lost Communication with PC.</span>
+                                            </p>
+                                            <p><span class="span_25">Not</span><span class="span_25">e: This a</span><span class="span_25">larm condition can activate the </span><span class="span_25">alarm relay</span><span class="span_25"> that is controlled by </span><span class="span_25">e</span><span class="span_25">TPU.</span>
+                                            </p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes or No</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm H7</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">Conveyor Stopped or Speed Encoder broken or not connected properly.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_36">Yes</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="Caption">Table 4: Virtual Profiling – Hardware Alarms</p>
+                                <p>&#160;</p>
+                                <table align="center" class="table_1">
+                                    <col style="width: 85pt;" />
+                                    <col style="width: 293pt;" />
+                                    <col style="width: 76pt;" />
+                                    <tr style="height: 36pt;">
+                                        <td class="td_19">
+                                            <p class="p_34">Warnings</p>
+                                        </td>
+                                        <td class="td_20">
+                                            <p class="p_34">Description</p>
+                                        </td>
+                                        <td class="td_20">
+                                            <p class="p_34">Activates Alarm Relay</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Warning # 2</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">This process is likely to go out of spec soon.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">No</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Warning # 3</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">The last profile was out of spec.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">No</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Warning # 4</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">Oven temps have changed significantly since baseline.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_36">No</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="Caption">Table 5: Virtual Profiling – Warnings</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p><b style="font-size: 16pt;"><a name="eTPU_Communication"></a>eTPU Communication</b>
+                                </p>
+                                <p>&#160;</p>
+                                <p><b style="font-size: 14pt;"><a name="Communication_Troubleshooting_for_the_eTPU"></a>Communication Troubleshooting for the eTPU</b>
+                                </p>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If the Yellow LED (AC Power) is not on, then there is no power present.</b>
+                                        <br />To correct this, make sure the eTPU power supply is properly connected to the eTPU and connected to an AC power source.  Use only a factory-supplied power supply.</li>
+                                </ul>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If the green LED (Network communication) is not on, then there is no Ethernet communication.</b>
+                                        <br />To correct this, ensure the dedicated Ethernet adapter is configured properly.  Also make sure the correct IP address class is used, and that the subnet mask is entered correctly.</li>
+                                </ul>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If you open the software and the red LED does not begin blinking (slow blink), then the SitePlayer IP address may not be configured properly.</b>
+                                        <br />To correct this, exit the software and then open the file:<br /><span style="font-family: Arial;">C:\software root directory\Log\KIC2000Hardware.kiccfg</span><br /><br />Edit the line:<br /><span style="font-family: Arial;">SitePlayerIPAddress=</span><br /><br />Enter the IP address of your eTPU-SitePlayer.<br />If still not working, then use Internet Explorer to access the eTPU SitePlayer and use the manual switch.<br /></li>
+                                </ul>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If you cannot connect to the SitePlayer using Internet Explorer, then the SitePlayer IP address is typed incorrectly or the address is unknown.</b>
+                                        <br />To correct this, enter the correct IP address for the SitePlayer.  As long as the SitePlayer is not damaged, you can connect.  If you are unsure of the correct IP address of the SitePlayer, remove the cover and read the IP address from the eTPU configuration label.  If the IP address is unrecoverable, then the eTPU must be returned to your system supplier for reprogramming.</li>
+                                </ul>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If communication with the eTPU is lost, (i.e. eTPU Ethernet cable unplugged, or the power disconnected) the system may not recover on its own.</b>
+                                        <br />To correct this, close the software and then open it again.  This should reset the eTPU SitePlayer.  In some situations, it may require a PC reboot to regain communication with the eTPU.  (green and red LEDs)</li>
+                                </ul>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

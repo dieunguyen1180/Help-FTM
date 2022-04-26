@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1"
+  sourceDocument="D:\SFT-324000-200 ProBot User Manual.doc">
+  <TocEntry
+    Title="PROFILING INSPECTOR USER MANUAL "
+    Link="/Content/User_Manual.htm"
+    ReplaceMergeNode="false"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"></TocEntry>
+  <TocEntry
+    Title="THE HARDWARE"
+    Link="/Content/Understanding_the_hardware.htm">
+    <TocEntry
+      Title="eTPU"
+      Link="/Content/Understanding_the_hardware.htm#eTPU"></TocEntry>
+    <TocEntry
+      Title="PROBES"
+      Link="/Content/Understanding_the_hardware.htm#Probes" />
+    <TocEntry
+      Title="BOARD SENSOR"
+      Link="/Content/Understanding_the_hardware.htm#Board_sensor" />
+    <TocEntry
+      Title="CONVEYOR SPEED ENCODER"
+      Link="/Content/Understanding_the_hardware.htm#Conveyor_speed_encoder" />
+    <TocEntry
+      Title="PROFILER "
+      Link="/Content/Understanding_the_hardware.htm#Profiler" />
+    <TocEntry
+      Title="HARDWARE DIAGRAM"
+      Link="/Content/Understanding_the_hardware.htm#Hardware_diagram"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="DUAL LANE SYSTEMS"
+    Link="/Content/Dual_Lane_Systems.htm"></TocEntry>
+  <TocEntry
+    Title="INSTALL THE SOFTWARE"
+    Link="/Content/Install_the_Software.htm">
+    <TocEntry
+      Title="MINIMUM PC SYSTEM REQUIREMENTS"
+      Link="/Content/Install_the_Software.htm#Minimum_PC_system" />
+    <TocEntry
+      Title="NOTE BEFORE INSTALLATION"
+      Link="/Content/Install_the_Software.htm#Note_before_installation"></TocEntry>
+    <TocEntry
+      Title="LANGUAGES"
+      Link="/Content/Install_the_Software.htm#Languages" />
+    <TocEntry
+      Title="INSTALL"
+      Link="/Content/Install_the_Software.htm#Install" />
+    <TocEntry
+      Title="START THE SOFTWARE"
+      Link="/Content/Install_the_Software.htm#Start_the_Software" />
+  </TocEntry>
+  <TocEntry
+    Title="THE MAIN SCREEN"
+    Link="/Content/The_Main_Screen.htm"></TocEntry>
+  <TocEntry
+    Title="GLOBAL PREFERENCES"
+    Link="/Content/Global_Preferences.htm">
+    <TocEntry
+      Title="GLOBAL TAB"
+      Link="/Content/Global_Preferences.htm#Global_tab">
+      <TocEntry
+        Title="Define Your Oven"
+        Link="/Content/Global_Preferences.htm#Define_Your_Oven" />
+    </TocEntry>
+    <TocEntry
+      Title="PROFILING INSPECTOR TAB"
+      Link="/Content/Global_Preferences.htm#Control_Limits_tab">
+      <TocEntry
+        Title="Specifying VP generation"
+        Link="/Content/Global_Preferences.htm#Specifying_VP" />
+      <TocEntry
+        Title="Specifying Cpk Computation Values"
+        Link="/Content/Global_Preferences.htm#Specifying_Cpk" />
+      <TocEntry
+        Title="How the Software Calculates Cpk"
+        Link="/Content/Global_Preferences.htm#How_the_software" />
+    </TocEntry>
+    <TocEntry
+      Title="DATA BACKUP TAB"
+      Link="/Content/Using_barcodes.htm#Data_Backup_Tab">
+      <TocEntry
+        Title="Copy Data to the Network"
+        Link="/Content/Using_barcodes.htm#Copy_data_to_the_Network"></TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="DEFINE/EDIT PROCESS WINDOW"
+    Link="/Content/Process_Window_setup.htm">
+    <TocEntry
+      Title="SOLDER PASTE MENU"
+      Link="/Content/Process_Window_setup.htm#Solder_Paste_Menu" />
+    <TocEntry
+      Title=" EDIT SPECS"
+      Link="/Content/Process_Window_setup.htm#Edit_Specs">
+      <TocEntry
+        Title="Specify Different Specs for Individual TCs"
+        Link="/Content/Process_Window_setup.htm#Separate_Specs" />
+      <TocEntry
+        Title="TC Selection &amp; Label"
+        Link="/Content/Process_Window_setup.htm#TC_Selection_Label"></TocEntry>
+      <TocEntry
+        Title="Change Specs Name"
+        Link="/Content/Process_Window_setup.htm#Change_Specs_Name" />
+    </TocEntry>
+    <TocEntry
+      Title="SAVE PROCESS WINDOW"
+      Link="/Content/Process_Window_setup.htm#Saving_Process_Window" />
+    <TocEntry
+      Title=" IMPORT LEGACY PROCESS WINDOWS"
+      Link="/Content/Process_Window_setup.htm#Importing_legacy_process_windows" />
+  </TocEntry>
+  <TocEntry
+    Title="HARDWARE STATUS SCREEN"
+    Link="/Content/Hardware_Status.htm"></TocEntry>
+  <TocEntry
+    Title="RUN A PROFILE"
+    Link="/Content/Running_a_Profile.htm">
+    <TocEntry
+      Title="SPECIFY OVEN CHARACTERISTICS"
+      Link="/Content/Running_a_Profile.htm#Specifying_oven">
+      <TocEntry
+        Title="Specify An Oven Recipe"
+        Link="/Content/Running_a_Profile.htm#To_specify_an_oven_recipe" />
+    </TocEntry>
+    <TocEntry
+      Title="ATTACH THERMOCOUPLES"
+      Link="/Content/Running_a_Profile.htm#Attaching_thermocouples">
+      <TocEntry
+        Title="Attach the Air TC"
+        Link="/Content/Running_a_Profile.htm#Attaching_the_Air_TC" />
+      <TocEntry
+        Title="Attach Standard TCs"
+        Link="/Content/Running_a_Profile.htm#Attaching_standard_TCs1" />
+    </TocEntry>
+    <TocEntry
+      Title="ATTACH THERMOCOUPLES TO SEMICONDUCTOR WAFERS"
+      Link="/Content/Running_a_Profile.htm#Attaching_thermocouples1" />
+    <TocEntry
+      Title="SELECT THERMOCOUPLES TO START A PROFILE"
+      Link="/Content/Running_a_Profile.htm#Select_Thermocouples_and" />
+    <TocEntry
+      Title="START THE PROFILE"
+      Link="/Content/Running_a_Profile.htm#Starting_the_profile">
+      <TocEntry
+        Title="Trailing Wire Profiling"
+        Link="/Content/Running_a_Profile.htm#Trailing_wire_profiling" />
+    </TocEntry>
+    <TocEntry
+      Title="LIVE PROFILE GRAPH"
+      Link="/Content/Running_a_Profile.htm#Live_Profile_Graph">
+      <TocEntry
+        Title="Profiler Temperature Triggers"
+        Link="/Content/Running_a_Profile.htm#Profiler_temperature" />
+      <TocEntry
+        Title="Change the Profiler Temperature Trigger Settings"
+        Link="/Content/Running_a_Profile.htm#Changing_the_profiler" />
+      <TocEntry
+        Title="Profile Retransmission"
+        Link="/Content/Running_a_Profile.htm#Profile_retransmission" />
+    </TocEntry>
+    <TocEntry
+      Title="VIEW THE PROFILE AND STATISTICS"
+      Link="/Content/Running_a_Profile.htm#Viewing_the_profile_and">
+      <TocEntry
+        Title="General Tab"
+        Link="/Content/Running_a_Profile.htm#General_tab" />
+      <TocEntry
+        Title="The Graph Controller"
+        Link="/Content/Running_a_Profile.htm#Graph_Controller" />
+      <TocEntry
+        Title="Graph Option Menu"
+        Link="/Content/Running_a_Profile.htm#Graph_Option_Menu">
+        <TocEntry
+          Title="Examine Line"
+          Link="/Content/Running_a_Profile.htm#Examine_Line" />
+        <TocEntry
+          Title="Automatic Calculation Of Delta T + Delta (Or Range) For All Stats"
+          Link="/Content/Running_a_Profile.htm#Automatic_Calculation_Of_Delta_T" />
+        <TocEntry
+          Title="Move TC Line"
+          Link="/Content/Running_a_Profile.htm#Move_TC_Line" />
+        <TocEntry
+          Title="Move Zone Line"
+          Link="/Content/Running_a_Profile.htm#Move_Zone_Line" />
+        <TocEntry
+          Title="Reset"
+          Link="/Content/Running_a_Profile.htm#Reset" />
+      </TocEntry>
+      <TocEntry
+        Title="Profile Screen Buttons"
+        Link="/Content/Running_a_Profile.htm#Profile_screen_buttons">
+        <TocEntry
+          Title="General Tab Buttons"
+          Link="/Content/Running_a_Profile.htm#General_Tab_Buttons" />
+      </TocEntry>
+      <TocEntry
+        Title="Description Tab"
+        Link="/Content/Running_a_Profile.htm#Description_tab">
+        <TocEntry
+          Title="Description Tab Buttons"
+          Link="/Content/Running_a_Profile.htm#Description_Tab_Buttons" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="MANUAL PROFILE PREDICTION"
+      Link="/Content/Running_a_Profile.htm#Manual_profile_prediction">
+      <TocEntry
+        Title="Predict Changes"
+        Link="/Content/Running_a_Profile.htm#Making_changes" />
+    </TocEntry>
+    <TocEntry
+      Title="SET DIFFERENT TOP AND BOTTOM SET POINT TEMPERATURES"
+      Link="/Content/Running_a_Profile.htm#Setting_different_top">
+      <TocEntry
+        Title="Profile Graph Display"
+        Link="/Content/Running_a_Profile.htm#Profile_graph_display" />
+      <TocEntry
+        Title="Exit the Graph Screen"
+        Link="/Content/Running_a_Profile.htm#Exiting_the_graph_screen" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="PROFILE EXPLORER"
+    Link="/Content/Profile_Explorer.htm">
+    <TocEntry
+      Title=" BROWSE FOR HISTORICAL DATA"
+      Link="/Content/Profile_Explorer.htm#Browsing_for_Historical" />
+    <TocEntry
+      Title="VIEW HISTORICAL DATA OVER A NETWORK (HISTORY MODE)"
+      Link="/Content/Profile_Explorer.htm#Viewing_Historical_Data">
+      <TocEntry
+        Title="Profile Explorer Buttons"
+        Link="/Content/Profile_Explorer.htm#Profile_Explorer_Buttons" />
+      <TocEntry
+        Title="Profile Explorer Checkboxes"
+        Link="/Content/Profile_Explorer.htm#Profile_Explorer_Checkboxes" />
+    </TocEntry>
+    <TocEntry
+      Title="PROFILE EXPLORER – VIRTUAL PROFILING"
+      Link="/Content/Profile_Explorer.htm#Profile_Explorer_Virtual_Profiling">
+      <TocEntry
+        Title="View Virtual Profile Data"
+        Link="/Content/Profile_Explorer.htm#View_Virtual_Profile_Data" />
+      <TocEntry
+        Title="Profile Explorer Event Icons"
+        Link="/Content/Profile_Explorer.htm#Profile_Explorer_Event">
+        <TocEntry
+          Title="Profile Icons"
+          Link="/Content/Profile_Explorer.htm#Profile_Icons" />
+      </TocEntry>
+      <TocEntry
+        Title="Virtual Profile Event Icons"
+        Link="/Content/Profile_Explorer.htm#Virtual_Profile_Event_Icons">
+        <TocEntry
+          Title="Alarm Icons"
+          Link="/Content/Profile_Explorer.htm#Alarm_Icons" />
+        <TocEntry
+          Title="Communications Icons"
+          Link="/Content/Profile_Explorer.htm#Communications_Icons" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="ACCESS HISTORY DATA BACKUP FILES"
+      Link="/Content/Profile_Explorer.htm#Access_History_Data_Backup_Files" />
+    <TocEntry
+      Title="INSERT DATA FILES FROM AN OUTSIDE SOURCE"
+      Link="/Content/Profile_Explorer.htm#Inserting_data_files" />
+    <TocEntry
+      Title="RENAME PROFILES"
+      Link="/Content/Profile_Explorer.htm#Renaming_profiles" />
+  </TocEntry>
+  <TocEntry
+    Title="VIRTUAL PROFILING"
+    Link="/Content/Virtual_Profiling_VP.htm">
+    <TocEntry
+      Title="GET A VALID BASELINE PROFILE"
+      Link="/Content/Virtual_Profiling_VP.htm#Getting_a_valid_baseline_profile">
+      <TocEntry
+        Title="Integrate Empty Oven Data"
+        Link="/Content/Virtual_Profiling_VP.htm#Integrate_Empty_Oven_Data" />
+    </TocEntry>
+    <TocEntry
+      Title="CREATE/LOAD A VIRTUAL PROFILE"
+      Link="/Content/Virtual_Profiling_VP.htm#Creating_Loading_a" />
+    <TocEntry
+      Title=" LIVE MODE - GENERAL TAB"
+      Link="/Content/Virtual_Profiling_VP.htm#Virtual_Profiling_Live1">
+      <TocEntry
+        Title="Profile Statistics"
+        Link="/Content/Virtual_Profiling_VP.htm#Profile_Statistics" />
+      <TocEntry
+        Title="Graph Controller"
+        Link="/Content/Virtual_Profiling_VP.htm#VP_Live_Graph_Controller" />
+      <TocEntry
+        Title="Automatic Calculation Of Delta T + Delta (Or Range) For All Statistics"
+        Link="/Content/Virtual_Profiling_VP.htm#Automatic_calculation_of" />
+      <TocEntry
+        Title="Examine Tool"
+        Link="/Content/Virtual_Profiling_VP.htm#Examine_tool" />
+    </TocEntry>
+    <TocEntry
+      Title=" LIVE MODE - DESCRIPTION TAB"
+      Link="/Content/Virtual_Profiling_VP.htm#Virtual_Profiling_Live2" />
+    <TocEntry
+      Title=" VERIFY THE VIRTUAL PROFILE"
+      Link="/Content/Virtual_Profiling_VP.htm#Verifying_the_Virtual">
+      <TocEntry
+        Title="Start A Verification Profile"
+        Link="/Content/Virtual_Profiling_VP.htm#Starting_a_Verification" />
+    </TocEntry>
+    <TocEntry
+      Title="HISTORICAL MODE"
+      Link="/Content/Virtual_Profiling_VP.htm#Historical_Mode" />
+    <TocEntry
+      Title="HISTORICAL MODE - GENERAL TAB"
+      Link="/Content/Virtual_Profiling_VP.htm#Virtual_Profiling1">
+      <TocEntry
+        Title="Viewing Historical Profiles"
+        Link="/Content/Virtual_Profiling_VP.htm#Viewing_Historical_Profiles" />
+      <TocEntry
+        Title="Graph Controller"
+        Link="/Content/Virtual_Profiling_VP.htm#VP_Historical_Graph_Controller" />
+      <TocEntry
+        Title="Automatic Calculation Of Delta T + Delta (Or Range) For All Statistics"
+        Link="/Content/Virtual_Profiling_VP.htm#Automatic_calculation_of1" />
+      <TocEntry
+        Title="Examine Tool"
+        Link="/Content/Virtual_Profiling_VP.htm#Examine_Tool" />
+    </TocEntry>
+    <TocEntry
+      Title=" HISTORICAL MODE - DESCRIPTION TAB"
+      Link="/Content/Virtual_Profiling_VP.htm#Virtual_Profiling5" />
+  </TocEntry>
+  <TocEntry
+    Title="PASSWORD PROTECTION"
+    Link="/Content/Password_protection.htm"></TocEntry>
+  <TocEntry
+    Title="PRINTING"
+    Link="/Content/Printing.htm">
+    <TocEntry
+      Title="PORTRAIT MODE"
+      Link="/Content/Printing.htm#Print_Format_1" />
+    <TocEntry
+      Title="LANDSCAPE MODE"
+      Link="/Content/Printing.htm#Print_Format_2" />
+  </TocEntry>
+  <TocEntry
+    Title="WRITE DATA TO AND VIEW DATA OVER A NETWORK"
+    Link="/Content/Writing_data_to_and_viewing_data_over_a_network.htm">
+    <TocEntry
+      Title="WRITE DATA TO A NETWORK DRIVE"
+      Link="/Content/Writing_data_to_and_viewing_data_over_a_network.htm#Writing_data_to_a" />
+    <TocEntry
+      Title="VIEWING HISTORICAL DATA"
+      Link="/Content/Writing_data_to_and_viewing_data_over_a_network.htm#Viewing_Historical_Data1" />
+  </TocEntry>
+  <TocEntry
+    Title="MESSAGES DURING PROFILING AND BASELINE PROFILING"
+    Link="/Content/Messages_During_Profiling_and_Baseline_Profiling.htm">
+    <TocEntry
+      Title=" SYSTEM MESSAGES AND ALARMS"
+      Link="/Content/Messages_During_Profiling_and_Baseline_Profiling.htm#System_message_alarms">
+      <TocEntry
+        Title="Message, High PWI"
+        Link="/Content/Messages_During_Profiling_and_Baseline_Profiling.htm#Message_high_PWI1" />
+      <TocEntry
+        Title="Alarm Message H2"
+        Link="/Content/Messages_During_Profiling_and_Baseline_Profiling.htm#Alarm_message_H2" />
+      <TocEntry
+        Title="Alarm H7"
+        Link="/Content/Messages_During_Profiling_and_Baseline_Profiling.htm#Alarm_H7" />
+    </TocEntry>
+    <TocEntry
+      Title="ALARMS AND MESSAGES DURING VIRTUAL PROFILING"
+      Link="/Content/Messages_During_Profiling_and_Baseline_Profiling.htm#Alarms_and_Messages_During_Virtual_Profiling" />
+    <TocEntry
+      Title=" ETPU COMMUNICATION"
+      Link="/Content/Messages_During_Profiling_and_Baseline_Profiling.htm#eTPU_Communication">
+      <TocEntry
+        Title="Communication Troubleshooting for the eTPU"
+        Link="/Content/Messages_During_Profiling_and_Baseline_Profiling.htm#Communication_Troubleshooting_for_the_eTPU" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="COMMUNICATE WITH OVEN CONTROLLERS"
+    Link="/Content/Communicate_with_Oven_Controllers.htm">
+    <TocEntry
+      Title="CONFIRM OVEN COMMUNICATIONS"
+      Link="/Content/Communicate_with_Oven_Controllers.htm#Confirm_communications" />
+    <TocEntry
+      Title="CONFIGURE SOFTWARE FOR OVEN COMMUNICATION"
+      Link="/Content/Communicate_with_Oven_Controllers.htm#Configure_Software_for_Oven_Communication" />
+    <TocEntry
+      Title="USE A BASE OVEN RECIPE WITH OVEN COMMUNICATION"
+      Link="/Content/Communicate_with_Oven_Controllers.htm#Use_a_Base_Oven_Recipe_With_Oven_Communication" />
+    <TocEntry
+      Title="RUN A PROFILE USING OVEN COMMUNICATION"
+      Link="/Content/Communicate_with_Oven_Controllers.htm#Run_a_Profile_Using_Oven_Communication" />
+    <TocEntry
+      Title="START A VIRTUAL PROFILE WITH OVEN COMMUNICATION"
+      Link="/Content/Communicate_with_Oven_Controllers.htm#Start_a_Virtual_Profile_With_Oven_Communication" />
+    <TocEntry
+      Title="BASE OVEN RECIPE AUTOMATIC VERIFICATION"
+      Link="/Content/Communicate_with_Oven_Controllers.htm#Base_oven_recipe" />
+  </TocEntry>
+  <TocEntry
+    Title="DUAL LANE SYSTEMS AND FUNCTIONALITY"
+    Link="/Content/Communicate_with_Oven_Controllers.htm#Dual_Lane_Systems_And_Functionality">
+    <TocEntry
+      Title="DUAL LANE DUAL SYSTEMS"
+      Link="/Content/Communicate_with_Oven_Controllers.htm#Dual_Lane_Dual_Systems" />
+    <TocEntry
+      Title="CONFIGURE DUAL LANE SYSTEMS"
+      Link="/Content/Communicate_with_Oven_Controllers.htm#Configure_Dual_Lane_Systems" />
+  </TocEntry>
+  <TocEntry
+    Title="SOFTWARE OPTIONS"
+    Link="/Content/Software_options.htm">
+    <TocEntry
+      Title="NAVIGATOR"
+      Link="/Content/Software_options.htm#Navigator" />
+    <TocEntry
+      Title="AUTO-FOCUS"
+      Link="/Content/Software_options.htm#Auto_Focus" />
+    <TocEntry
+      Title="NAVIGATOR/AUTO FOCUS POWER"
+      Link="/Content/Software_options.htm#Navigator_Auto_Focus" />
+    <TocEntry
+      Title="SWEET SPOT"
+      Link="/Content/Software_options.htm#Sweet_Spot" />
+    <TocEntry
+      Title="STATISTICAL PROCESS CONTROL CHARTS"
+      Link="/Content/Software_options.htm#Statistical_Process_Control_Charts" />
+    <TocEntry
+      Title="LIVE DATA OUTPUT"
+      Link="/Content/Software_options.htm#Live_Data_Output1" />
+  </TocEntry>
+  <TocEntry
+    Title="USE NAVIGATOR TO OPTIMIZE PROFILES"
+    Link="/Content/Using_Navigator_to_optimize_profiles.htm">
+    <TocEntry
+      Title="SEARCH MODE FOR OPTIMIZATION"
+      Link="/Content/Using_Navigator_to_optimize_profiles.htm#Search_Modefor" />
+    <TocEntry
+      Title="CONVEYOR SPEED CONSTRAINTS"
+      Link="/Content/Using_Navigator_to_optimize_profiles.htm#Conveyor_Speed" />
+  </TocEntry>
+  <TocEntry
+    Title="USE AUTO-FOCUS"
+    Link="/Content/Using_Auto-Focus.htm">
+    <TocEntry
+      Title="AUTO-FOCUS TAB"
+      Link="/Content/Using_Auto-Focus.htm#Auto_Focus_tab">
+      <TocEntry
+        Title="Profile Optimization Settings—Search Mode"
+        Link="/Content/Using_Auto-Focus.htm#Profile" />
+    </TocEntry>
+    <TocEntry
+      Title="CONVEYOR SPEED CONSTRAINTS"
+      Link="/Content/Using_Auto-Focus.htm#Conveyor_speed" />
+  </TocEntry>
+  <TocEntry
+    Title="SAVE ENERGY WITH NAVIGATOR AND AUTO-FOCUS"
+    Link="/Content/Saving_energy_with_Navigator_and_Auto_Focus.htm">
+    <TocEntry
+      Title="ENABLE THE POWER FEATURE IN AUTO-FOCUS"
+      Link="/Content/Saving_energy_with_Navigator_and_Auto_Focus.htm#To_enable_the_Power" />
+    <TocEntry
+      Title="ENABLE THE POWER FEATURE IN NAVIGATOR"
+      Link="/Content/Saving_energy_with_Navigator_and_Auto_Focus.htm#To_enable_the_Power1" />
+  </TocEntry>
+  <TocEntry
+    Title="USE SWEET SPOT TARGET"
+    Link="/Content/Use_Sweet_Spot_Target.htm"></TocEntry>
+  <TocEntry
+    Title="USE STATISTICAL PROCESS CONTROL CHARTS"
+    Link="/Content/Using_the_Index_screen.htm">
+    <TocEntry
+      Title="LIVE MODE - CHARTS TAB"
+      Link="/Content/Using_the_Index_screen.htm#Live_Mode_Charts_tab1">
+      <TocEntry
+        Title="View Chart Data"
+        Link="/Content/Using_the_Index_screen.htm#Viewing_chart_data2" />
+    </TocEntry>
+    <TocEntry
+      Title="HISTORICAL MODE - CHART TAB"
+      Link="/Content/Using_the_Index_screen.htm#Historical_mode_Chart_tab1">
+      <TocEntry
+        Title="View Control Charts"
+        Link="/Content/Using_the_Index_screen.htm#Viewing_control_charts1" />
+      <TocEntry
+        Title="Viewing Chart Data"
+        Link="/Content/Using_the_Index_screen.htm#Viewing_chart_data3" />
+      <TocEntry
+        Title="History Mode Chart Options Menu"
+        Link="/Content/Using_the_Index_screen.htm#History_mode_chart1">
+        <TocEntry
+          Title="Buttons"
+          Link="/Content/Using_the_Index_screen.htm#Buttons" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="USING LIVE DATA OUTPUT"
+    Link="/Content/Outputting_live_data.htm">
+    <TocEntry
+      Title="LDO FORMATS"
+      Link="/Content/Outputting_live_data.htm#LDO_Formats" />
+    <TocEntry
+      Title=" DETAILS OF OUTPUT FILES"
+      Link="/Content/Outputting_live_data.htm#Details_Of_Output_Files">
+      <TocEntry
+        Title="LDO Standard TSV And CSV For WordPad"
+        Link="/Content/Outputting_live_data.htm#LDO_Standard_TSV_And_CSV_For_WordPad" />
+      <TocEntry
+        Title="LDO Standard TSV And CSV For Excel"
+        Link="/Content/Outputting_live_data.htm#LDO_Standard_TSV_And_CSV_For_Excel" />
+      <TocEntry
+        Title="LDO 1 Board 1 File (Txt Output)"
+        Link="/Content/Outputting_live_data.htm#LDO_1_Board_1_File" />
+      <TocEntry
+        Title="LDO XML (1 Board 1 File)"
+        Link="/Content/Outputting_live_data.htm#LDO_XML" />
+      <TocEntry
+        Title="LDO 1 Board 1 File (CSV format)"
+        Link="/Content/Outputting_live_data.htm#LDO_1_Board_1_File_CSV_format" />
+    </TocEntry>
+    <TocEntry
+      Title="CONFIGURE LDO"
+      Link="/Content/Outputting_live_data.htm#Configure_LDO">
+      <TocEntry
+        Title="Delete Accumulated LDO Files"
+        Link="/Content/Outputting_live_data.htm#Delete_Accumulated_LDO_Files" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="TROUBLESHOOT COM PORTS"
+    Link="/Content/Troubleshoot_COM_Ports.htm">
+    <TocEntry
+      Title="Comport.Exe"
+      Link="/Content/Troubleshoot_COM_Ports.htm#Comport_Exe">
+      <TocEntry
+        Title="Comport.Exe Buttons"
+        Link="/Content/Troubleshoot_COM_Ports.htm#Comport_Exe_Buttons" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="ALARM RELAY"
+    Link="/Content/Alarm_Relay_Light_Tower.htm#Alarm_Relay"></TocEntry>
+  <TocEntry
+    Title="LIGHT TOWER"
+    Link="/Content/Alarm_Relay_Light_Tower.htm#Light_Tower"></TocEntry>
+  <TocEntry
+    Title="APPENDIX A: THE PROCESS WINDOW INDEX"
+    Link="/Content/Appendix_A.htm">
+    <TocEntry
+      Title="THE PROBLEM"
+      Link="/Content/Appendix_A.htm#The_Problem" />
+    <TocEntry
+      Title="DEFINING THE PROCESS WINDOW INDEX"
+      Link="/Content/Appendix_A.htm#Defining_the_Process_Window_Index" />
+    <TocEntry
+      Title="CALCULATING THE PWI"
+      Link="/Content/Appendix_A.htm#Calculating_the_PWI" />
+    <TocEntry
+      Title="BENEFITS OF RANKING THERMAL PROFILE PERFORMANCE"
+      Link="/Content/Appendix_A.htm#Benefits_of_Ranking_Thermal_Profile_Performance" />
+    <TocEntry
+      Title="CONCLUSION"
+      Link="/Content/Appendix_A.htm#Conclusion" />
+  </TocEntry>
+  <TocEntry
+    Title="APPENDIX B: RECALCULATING ZONE DELTA LIMITS FROM NAVIGATOR/AUTO-FOCUS PREDICTIONS"
+    Link="/Content/Appendix_B.htm">
+    <TocEntry
+      Title="FOR STAND-ALONE SOFTWARE INSTALLATIONS"
+      Link="/Content/Appendix_B.htm#For_Stand_Alone_Software_Installations" />
+    <TocEntry
+      Title="FOR OVEN CONTROLLER SOFTWARE INSTALLATIONS"
+      Link="/Content/Appendix_B.htm#For_Oven_Controller_Software_Installations" />
+  </TocEntry>
+  <TocEntry
+    Title="APPENDIX C: CONFIGURATION PROGRAM"
+    Link="/Content/Appendix_C.htm">
+    <TocEntry
+      Title="USER SETTINGS TAB"
+      Link="/Content/Appendix_C.htm#User_Settings_Tab">
+      <TocEntry
+        Title="Use Baseline Profile Expiration"
+        Link="/Content/Appendix_C.htm#Use_Baseline_Profile_Expiration" />
+    </TocEntry>
+    <TocEntry
+      Title="SHIFTING TAB"
+      Link="/Content/Appendix_C.htm#Shifting_Tab" />
+    <TocEntry
+      Title="DECIMAL TAB"
+      Link="/Content/Appendix_C.htm#Decimal_Tab"></TocEntry>
+    <TocEntry
+      Title="HARDWARE TAB"
+      Link="/Content/Appendix_C.htm#Hardware_Tab"></TocEntry>
+    <TocEntry
+      Title="MESSAGE CONFIG TAB"
+      Link="/Content/Appendix_C.htm#Message_Config_Tab"></TocEntry>
+    <TocEntry
+      Title="PASSWORD CONTROL – MULTI USER"
+      Link="/Content/Appendix_C.htm#Password_Control_Multi_User">
+      <TocEntry
+        Title="Access to the Password Control Tab"
+        Link="/Content/Appendix_C.htm#Access_to_the_Password_Control_Tab"></TocEntry>
+      <TocEntry
+        Title="Multi User Control"
+        Link="/Content/Appendix_C.htm#Multi_User_Control"></TocEntry>
+      <TocEntry
+        Title="Password Control Tab"
+        Link="/Content/Appendix_C.htm#Password_Control_Tab"></TocEntry>
+      <TocEntry
+        Title="User Type Area"
+        Link="/Content/Appendix_C.htm#User_Type_Area"></TocEntry>
+      <TocEntry
+        Title="Password Area"
+        Link="/Content/Appendix_C.htm#Password_Area"></TocEntry>
+      <TocEntry
+        Title="Password Timer Area"
+        Link="/Content/Appendix_C.htm#Password_Timer_Area"></TocEntry>
+      <TocEntry
+        Title="Main Screen With Password Control"
+        Link="/Content/Appendix_C.htm#Main_Screen_With_Password_Control"></TocEntry>
+      <TocEntry
+        Title="Main Screen Log In"
+        Link="/Content/Appendix_C.htm#Main_Screen_Log_In">
+        <TocEntry
+          Title="Example of Limited Access to Functions"
+          Link="/Content/Appendix_C.htm#Example_of_Limited_Access_to_Functions" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="CONTACT KIC"
+    Link="/Content/Contac_Us.htm">
+    <TocEntry
+      Title="ON THE WEB"
+      Link="/Content/Contac_Us.htm#On_the_Web" />
+    <TocEntry
+      Title="KIC TECHNICAL SUPPORT"
+      Link="/Content/Contac_Us.htm#KIC_Technical_Support" />
+    <TocEntry
+      Title="KIC PRODUCT TRAINING"
+      Link="/Content/Contac_Us.htm#KIC_Product_Training" />
+    <TocEntry
+      Title="KIC SALES"
+      Link="/Content/Contac_Us.htm#KIC_Sales" />
+    <TocEntry
+      Title="FIND THE KIC REPRESENTATIVE IN YOUR AREA"
+      Link="/Content/Contac_Us.htm#Find_the_KIC" />
+  </TocEntry>
+</CatapultToc>

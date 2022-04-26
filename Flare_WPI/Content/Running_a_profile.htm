@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Run A Profile</title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td style="text-align: left;">
+                    <h1 class="Heading1"><a name="_Toc390343634"></a>Run A Profile</h1>
+                    <p class="Figure">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300000D1.png" style="height: 48px;width: 89px;" class="img_2" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>The <i>Run a Profile</i> button will guide you through a series of screens. Use the <b>Back</b> and <b>Next</b> arrow buttons at the bottom to move through the screens in the process, which will end with a completed and graphed profile.  The <b>Cancel</b> button returns you to the main menu.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: : If you have already profiled your product using the WPI software, you can go directly to Profile Explorer, start a Virtual Profile, or load the most recent profile for your product, then use the WPI prediction capabilities to improve the profile PWI and generate new machine settings.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000029a.png" style="width: 526px;height: 388px;" />
+                    </p>
+                    <p class="Figure">Figure 11: Run a Profile Screen #1</p>
+                    <p>&#160;</p>
+                    <p><b>Product Name</b> – Enter a unique product name (long file names are acceptable) or choose an existing product name from the drop-down list.</p>
+                    <p>&#160;</p>
+                    <p><b>Process Window</b> – Choose a <i>Process Window</i> from the drop-down list.  These Process Windows are created in the Define/Edit Process Window screen that is accessed from the main screen.</p>
+                    <p>&#160;</p>
+                    <p><b>Application</b> – Select your application type from the list. Three different application types are available – <i>Wave On, Wave Off, and Wave Surfer</i>. <i>Wave On</i> is used for profiling through the entire process – Preheat and Wave; <i>Wave Off</i> is available if you only want to collect data from the preheat area; <i>Wave Surfer</i> is used in conjunction with a separate product offered by KIC – the Wave Surfer fixture.</p>
+                    <p>&#160;</p>
+                    <p><b>Wave Solder Machine Name</b> – Name defined for machine in the Global Preferences tab.</p>
+                    <p>&#160;</p>
+                    <p><b>Set Trigger</b> – This allows you to set a Midpoint and Stop trigger temperature.  The Profile start temperature trigger is determined by the Maximum Product Temperature at Start of Profile setting in the Global Preferences screen.  The start trigger value is always 2ºC above this value. Select only if you need to change the temperature triggers (not typical) for the profiler. It is common to leave the default settings.</p>
+                    <p>&#160;</p>
+                    <p><b>Profile Description</b> – Allows for freehand typing of any notes you may want to include with this profile.  These notes can be changed later from the Profile Explorer.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Entering_Oven_Recipe"></a>Enter the Wave Solder Machine Recipe</h2>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image142.png" style="width: 481px;height: 361px;" />
+                    </p>
+                    <p class="Figure">Figure 22: Run a Profile Screen #2</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p>The layout of the machine recipe screen will be based on the configuration of the wave solder machine, as defined in the ConfigurationProgram.exe. See <a href="Appendix_B.htm#Appendix">Appendix B – Configuration Program</a> for details.</p>
+                    <p>&#160;</p>
+                    <p><b>Preheater Temperature; Solder Pot Temperature; Conveyor Speed</b>
+                    </p>
+                    <p>Enter the setpoint temperatures and speed of the recipe currently loaded in the wave solder machine.</p>
+                    <p>&#160;</p>
+                    <p><b>Click the Next button to continue.</b>
+                    </p>
+                    <h2 class="Heading2"><a name="Attaching_thermocouples"></a>Attach Thermocouples</h2>
+                    <p>Thermocouples (TCs), attached to solder joints or other important sites on the board, directly measure the temperature at the point that the TC bead is in contact with the PCB.  The TC measurements are collected by the profiler and the KIC software to create thermal profiles.</p>
+                    <p>&#160;</p>
+                    <p>Two methods are typically used to attach TCs—<i>aluminum tape and high temperature solder</i>.  Both methods are discussed below.</p>
+                    <p>&#160;</p>
+                    <p>The system works with multiple TCs— <i>Air TC, Dwell TCs, and Product TCs</i> – depending on what type of data you want to collect.  Product TCs record the temperature data for various sites on the board.  The Air TC gets specific positioning because its temperature <i>triggers the start of the profile</i> data processing, aids with data alignment, and is used in the prediction capabilities of the software. Dwell TCs will be used for collecting contact time in the wave.</p>
+                    <h3 class="Heading3"><a name="Instructions_for"></a>Attach The Air TC</h3>
+                    <p>Important considerations regarding the Air TC:</p>
+                    <table>
+                        <col style="width: 375px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td colspan="1">
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <ul style="list-style-type: square;">
+                                        <li>It must be attached at the leading edge of the board, extending approximately one inch (25 mm) in front of the leading edge of the board.</li>
+                                    </ul>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <ul start="2" style="list-style-type: square;">
+                                        <li>It <span class="span_13">MUST</span> be plugged into <span class="span_7">channel 1</span> on the profiler.</li>
+                                    </ul>
+                                    <p>&#160;</p>
+                                    <ul start="2" style="list-style-type: square;">
+                                        <li>If you selected Wave On as the application type, ensure that the Air TC is angled downward so that it contacts the solder wave.<br /></li>
+                                    </ul>
+                                    <p>&#160;</p>
+                                    <p class="ListBullet_6"><b>Click the Next button.</b>
+                                    </p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </td>
+                                <td colspan="1" style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300003D1.png" style="width: 341px;height: 254px;" class="img_1" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-size: 10pt;">The <i>Wave On</i> application allows you to include a measurement of the <i>Dwell Time</i> and <i>Parallelism</i> during your profile. If you chose the <i>Wave Off or Wave Surfer</i> application types, this message will not appear and it will skip over the screens referring to Dwell calculations.
+</span>
+                                    </p>
+                                    <p>&#160;</p>
+                                    <p><span style="font-size: 10pt;">
+If you want to include these calculations in your profile, select <i>Yes</i> and the screen that follows will show an example of how you may set up a product with additional TCs to perform these measurements.
+</span>
+                                    </p>
+                                    <p>&#160;</p>
+                                    <p><span style="font-size: 10pt;">
+If you do not want to include these calculations, click <i>No</i>.
+</span>
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/image143.png" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="Heading2"><a name="Attach_Dwell_TCs"></a> Attach Dwell TCs</h2>
+                                    <p>If you selected Yes to measuring Dwell Time, you will be required to use two additional TCs for performing this measurement.</p>
+                                    <p>&#160;</p>
+                                    <p>These TCs will need to be secured to the left and right <b style="font-style: italic;">bottom</b> side of the board and both must contact the molten solder as the board is passing over the solder wave. The screen at the right shows one example of how these TCs might be attached. You may also be able to wrap aluminum tape (or similar from the top side, around the front edge, to secure the TCs. The layout, or physical characteristics of the product you are profiling will dictate how you may be able to attach them, but for repeatable data, you’ll want to ensure the TCs are securely attached no matter which method is used.</p>
+                                    <h3 class="Heading3"><a name="Connect_Dwell_TCs"></a>Connect Dwell TCs</h3>
+                                    <p>When connecting the <i>Dwell TCs</i> to the profiler, you will attach the <i>Left</i> side TC into channel <i>#2</i>, and the <i>Right</i> side TC into channel <i>#3</i>.</p>
+                                    <p>&#160;</p>
+                                    <p>The software will display a screen as a reminder of attaching the <i>Dwell TCs</i> to the correct channel inputs on the profiler.</p>
+                                    <p>&#160;</p>
+                                    <p class="ListBullet_6"><b>Click the Next button.</b>
+                                    </p>
+                                    <blockquote>
+                                        <p>&#160;</p>
+                                    </blockquote>
+                                </td>
+                                <td class="td_2">
+                                    <p>
+                                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300003F1.png" style="width: 344px;height: 256px;" class="img_1" />
+                                    </p>
+                                    <p>&#160;</p>
+                                    <p>
+                                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300003E1.png" style="width: 346px;height: 259px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td_2">
+                                    <h3 class="Heading3"><a name="Attach_Product_TCs"></a>Attach Product TCs</h3>
+                                    <p>Attach the TCs at selected sites on the board, and plug them into the remaining connectors on the profiler.  Order is not important, unless you plan on labeling where each TC is attached.</p>
+                                    <p>&#160;</p>
+                                    <p>When selecting a position for the standard TCs, you want to measure points on the product that represent the mass-range of the product.  Select at least one position that is a high mass (large component) area of the board and at least one position that is a low mass (small component) area of the board.  If you can develop an acceptable profile for the low and high mass areas of the board, you can process the other areas of the board within the same parameters.</p>
+                                    <p>&#160;</p>
+                                    <p class="ListBullet_6"><b>Click the Next button.</b>
+                                    </p>
+                                    <p>&#160;</p>
+                                    <p>&#160; </p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                </td>
+                                <td class="td_2">
+                                    <p>
+                                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000041.png" style="width: 348px;height: 261px;" class="img_1" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Select_thermocouples_and"></a>Select Thermocouples</h2>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000042a.png" style="width: 498px;height: 373px;" />
+                    </p>
+                    <p class="Figure">Figure 12: Run a Profile Screen #6 – Select TCs</p>
+                    <p>&#160;</p>
+                    <p><b>Include Thermocouple (TC) Labels (20 char. Max)</b> – Checking this will display a field below each TC that is selected.  Up to 20 characters can be used to describe the placement or description of the TC.</p>
+                    <p>&#160;</p>
+                    <p><b>TC Check Boxes</b> – Place a check next to each TC channel that is going to be used for this profile.  TC number 1 is always used for the AIR TC.  If you selected <i>Wave On</i> and are calculating <i>Dwell Time</i>, channels 2 and 3 will automatically be selected and labeled (as shown above). You must use at least one other TC as well.</p>
+                    <p>&#160;</p>
+                    <p>Distance From The Air TC – For Wave On profiles, you need to specify the location of the TCs, relative to the Air TC.  Entering these values allows the software to automatically align the data to the proper positioning. Click the tape measure button for an example of how to determine the distance correctly.</p>
+                    <p>&#160;</p>
+                    <p><b>Live Reading</b> – When the KIC profiler is on and communicating with the software, you will see live temperature updates for the TCs plugged into the KIC profiler.  The TC checkbox must be selected for each TC you are using to view the temperature readings.</p>
+                    <p>&#160;</p>
+                    <p><b>Battery Voltage</b> –Displays the live readings of the KIC profiler battery voltage.  The software will recognize if your battery voltage is too low and will not allow you to start a profile until you have batteries with enough voltage to complete the profile.</p>
+                    <p>&#160;</p>
+                    <p><b>Profiler Internal Temperature</b> – Displays the internal temperature of the KIC profiler.  If the temperature is too high to complete the profile and stay under the maximum rating for the unit, it will not allow you to start the profile.  You must wait until the KIC profiler is cool enough.  The software will let you know what temperature you will have to cool below.</p>
+                    <p>&#160;</p>
+                    <p><b>Board Length</b> – Enter the length of the board to be profiled.</p>
+                    <h2 class="Heading2"><a name="Starting_the_profile"></a>Start the Profile</h2>
+                    <p><b>Note:</b> Make sure your profiler is powered on and ready to operate.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image64.png" style="width: 552px;height: 378px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>Once the wave solder machine has stabilized and you are ready to load the profiler and profile board, click the start profile button (green traffic light).</p>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 375px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>The software will ask if all the zone control thermocouples in the machine are within 2 degrees of the setpoint temperature values.  See Figure 13.</p>
+                                    <p>&#160;</p>
+                                </td>
+                                <td>
+                                    <p style="text-align: left;">
+                                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000043.png" style="height: 130px;width: 317px;" class="img_4" />
+                                    </p>
+                                    <p class="Figure">Figure 13</p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td_2">
+                                    <p>&#160;</p>
+                                    <p><b>If you answer yes</b>, the WPI software will display a prompt telling you that the next board to pass under the Board Sensor must be the board being profiled.  Select <b>OK</b>.  See Figure 14.</p>
+                                    <p>&#160;</p>
+                                    <p>If the control thermocouples are NOT within 2 degrees of the setpoints, click <b>No</b>, then reference Appendix B.</p>
+                                </td>
+                                <td class="td_2">
+                                    <p class="p_3" style="text-align: left;">
+                                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000044.png" style="height: 139px;width: 254px;" class="img_5" />
+                                    </p>
+                                    <p class="Figure">Figure 14</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td_2">
+                                    <p><a name="Profile_Board_Into"></a>
+                                    </p>
+                                    <p>Next, the software will prompt you to put the profiler and profile board into the wave solder machine.  Then choose the forward button.  See Figure 15.</p>
+                                    <p>&#160;</p>
+                                    <p>In order for the board sensor to properly calculate the length of the profile board, make sure the KIC profiler is at least 8” behind the profile board.  For profiling and Virtual Profile Verification profiling, the software will ignore any boards including the KIC profiler that fall within 24” of the trailing edge of the profile board.</p>
+                                    <p>.</p>
+                                    <p>&#160;</p>
+                                </td>
+                                <td class="td_2">
+                                    <p class="p_3">&#160;</p>
+                                    <p class="p_3" style="text-align: left;">
+                                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000045.png" style="width: 364px;height: 274px;" class="img_1" />
+                                    </p>
+                                    <p class="Figure" style="text-align: left;"> Figure 15: Run a Profile screen #7 – Insert Profiler/Product</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p class="p_6"><span class="span_12">IMPORTANT NOTE</span>: All profilers have a maximum operating temperature that, to avoid damage, <u>should never be exceeded</u>.  See the product datasheet for temperature tolerance information:</p>
+                    <table class="table_3">
+                        <col style="width: 86pt;" />
+                        <col style="width: 158pt;" />
+                        <tr>
+                            <td class="td_3">
+                                <p class="p_21">Profiler model</p>
+                            </td>
+                            <td class="td_4">
+                                <p class="p_21">Maximum operating temperature</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_5">
+                                <p class="p_23">X5</p>
+                            </td>
+                            <td class="td_6">
+                                <p class="p_23">85<span class="span_11">°</span>C/185<span class="span_11">°</span>F</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_5">
+                                <p style="text-align: center;">K2</p>
+                            </td>
+                            <td class="td_6">
+                                <p class="p_23">85<span class="span_11">°</span>C/185<span class="span_11">°</span>F</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_5">
+                                <p style="text-align: center;">SPS Smart Profiler</p>
+                            </td>
+                            <td class="td_6">
+                                <p class="p_23">85<span class="span_11">°</span>C/185<span class="span_11">°</span>F</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Live_profile_graph"></a>Live Profile Graph</h2>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000046a.png" style="width: 829px;height: 450px;" />
+                    </p>
+                    <p class="Figure">Figure 16: Live Profile Graph Display</p>
+                    <p>&#160;</p>
+                    <p>The live profile graph screen shows the real-time plot (when using RF or Wi-Fi enabled profilers) of the product as it travels through the machine.  See Figure 16.  (With Datalog profilers, a blank graph screen will display until the profile is completed and the profiler is connected to download the data.)  During the live profile, all the tabs on the screen are deactivated and are inaccessible to you.  The only action that you can take at this point (besides waiting for the profile to complete) is to cancel the profile by clicking on the red X button.  This will bring you back to the main menu.</p>
+                    <p>&#160;</p>
+                    <p class="p_6">The bottom area of the screen displays the status of the profile:</p>
+                    <ol start="1" class="ol_2">
+                        <li class="ListNumber2_1">Waiting for the Air TC to exceed the start trigger temperature.</li>
+                    </ol>
+                    <ol start="2" class="ol_2">
+                        <li class="ListNumber2_1">Profile started- Waiting for the Air TC to exceed the midpoint trigger temperature.</li>
+                    </ol>
+                    <ol start="3" class="ol_2">
+                        <li class="ListNumber2_1">Profile will stop when all thermocouples drop below ‘x’ temperature.</li>
+                    </ol>
+                    <ol start="4" class="ol_2">
+                        <li class="ListNumber2_1">Profiler currently retransmitting.&#160; </li>
+                    </ol>
+                    <ol start="5" class="ol_2">
+                        <li class="ListNumber2_1">Profiler retransmission successful.&#160; </li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="p_6"><span class="span_7">During the live profile:</span>
+                    </p>
+                    <p class="p_6">(Wireless models only.)</p>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_4">The live profile is plotted on the graph.</li>
+                    </ul>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_4">The current temperatures for each thermocouple and the Delta between them are displayed in a small window in the upper-Left hand corner of the profile graph.  The elapsed time is also displayed.</li>
+                    </ul>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_4">The current machine temperature setpoints and conveyor speed for this profile is displayed beneath the Statistics table.</li>
+                    </ul>
+                    <h2 class="Heading2"><a name="Profile_retransmission"></a>Profile retransmission</h2>
+                    <p><span class="span_7">Note</span>: For users of profilers with wireless capability.</p>
+                    <p>&#160;</p>
+                    <p>While the profiler transmits the live profile data to the computer running the WPI software, it simultaneously stores the profile data in its onboard memory.</p>
+                    <p>&#160;</p>
+                    <p>Once the KIC profiler detects that all of the thermocouples have cooled below the profile-end trigger value, it will begin retransmitting the profile data.  The status of the profiler mode will display in the lower left corner of the graph screen.  See Figure 17.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000048.png" style="width: 441px;height: 99px;" class="img_2" />
+                    </p>
+                    <p class="Figure">Figure 17: Profile download status</p>
+                    <p>&#160;</p>
+                    <p>If you have a Data logger version, you must remove the KIC profiler from the machine and thermal shield and then connect the USB download cable to the KIC profiler.  The profile data will automatically begin downloading to the WPI software.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Caution</span>: The profiler and your product may be hot when exiting the machine.  Use gloves when handling.</p>
+                    <p>&#160;</p>
+                    <p>When all the data packets have been received, the software will display a message asking you to turn the profiler off, choose OK.  <b style="text-decoration: underline;">Failing to turn the profiler OFF will drain the battery when using a K2 profiler.</b></p>
+                    <p>&#160;</p>
+                    <p>After the KIC profiler has completed its retransmission, Click “OK” and you are brought to the Graph screen, with the profile and statistics displayed for the current profile run.</p>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_1">If  the Air thermocouple was more than 10C cooler than any other TC, you will get an error message.  At this point you must check to see that the Air thermocouple is plugged into the first channel on the KIC profiler and that all the other thermocouples are firmly attached to the product. Then you will have to rerun the profile.</li>
+                    </ul>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_1">If the message, <i>Waiting for the board</i> to exit appears, wait till <i>Turn off the profiler</i> message appears and follow any subsequent messages that may appear.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>Next, the software will automatically analyze the profile data and presents the profile and statistics.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Viewing_the_profile_and"></a>View The Profile And Statistics</h2>
+                    <p>&#160;</p>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000049.png" style="width: 629px;height: 487px;" />
+                    </p>
+                    <p class="Figure">Figure 18: Profile General Tab – Shows graph, statistics, and recipe</p>
+                    <h3 class="Heading3">General Tab</h3>
+                    <p>The General tab shows the profile graph, profile statistics, current, and predicted recipes.  To enlarge the graph portion of the General Tab, simply double click on the graph.  To enlarge the statistics portion of this screen, double click on the statistics table.  See Figure 18.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: If you have run a profile that meets the Virtual Profile criteria, then the “Start Virtual Profiling” button will appear once the profile has completed.  Click the Start Virtual Profiling button to start Virtual Profiling for this product.</p>
+                    <h3 class="Heading3">Profile Graph Display</h3>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300005F1a.png">
+                        </img>
+                    </p>
+                    <p class="Figure">Figure 38: Profile Graph Display</p>
+                    <p>&#160;</p>
+                    <p>The PWI for the profile appears in the bottom-Left corner of this screen.  See Figure 39.  If the measured PWI is below 100%, the value appears in a green font.  If the measured PWI is 100% or higher, the value appears with a red font.  This enables you to easily identify whether the profile is in or out of spec.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000061a.png">
+                        </img>&#160;&#160; </p>
+                    <p class="Figure">Figure 39: Profile PWI</p>
+                    <h3 class="Heading3"><a name="Graph_Controller"></a>Graph Controller Menu</h3>
+                    <table style="width: 80%;">
+                        <col style="width: 339px;" />
+                        <col />
+                        <tr>
+                            <td class="td_12">
+                                <p>The <i>Graph Controller</i> allows you to modify the view of the WPI-profile graph.  See  Figure 40.  To open the Graph Controller, click on the button labeled ‘TC’ on the column header in the Statistics table, or left click anywhere just on the left side of the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><b>Auto scale</b> – The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.  When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y-axis scales of the profile graph.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_12">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/image110.png" style="width: 382px;height: 272px;" />
+                                </p>
+                                <p class="Figure">Figure 40: Graph Controller</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p><b>TCs</b> – The TCs section is a list of the thermocouples used for the profile.  In the event that you wish to view the profile without a particular or multiple thermocouples, you can deselect individual thermocouples, or deselect the “All” check box, and choose only the thermocouples you wish to view. The software recalculates the PWI and updates the profile statistics based on the remaining thermocouples selected.  You must select at least one product thermocouple. You can also update the distance measurement if a value was input incorrectly when the profile was started.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7" style="font-weight: bold;">Grid</span> – Enables/disables the view of the X and Y-Axis scales.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Reference lines</span> – Enables the view of Reference Lines displayed on the profile graph.  These lines represent any temperatures referenced in the selected Process Window.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Zone lines</span> – Enables the view for the zone lines on the profile graph.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Predicted TCs only</span> – Removes the Original profile plot from view, displaying only the prediction profile plot on the graph.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Zero decimal</span> – When viewing the Examine tool, this setting enables or disables the decimal display.&#160; When unchecked, the software will display one decimal point.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Internal temp</span> – Enables the view of the profiler’s internal temperature profile plot on the graph.&#160; </p>
+                    <p>&#160;</p>
+                    <p><b>Display Detailed PWI</b> – With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values.</p>
+                    <p>&#160;</p>
+                    <p><b>Floating O2 PPM display</b> – When the <i>O2 Live</i> option is purchased, you can enable/disable a window on the graph that shows the O2 measurement recorded during that profile.</p>
+                    <p>&#160;</p>
+                    <p><b>Display of Pointers</b> – Allows you to control which information is displayed when the <i>Pointer Slopes</i> tab in the Statistics table is selected (see below for additional details on pointers).</p>
+                    <h3 class="Heading3">Graph Option Menu</h3>
+                    <p>To view the graph option menu, right-click anywhere within the profile graph area.  See Figure 41</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300004B1.png" style="width: 184px;height: 145px;" class="img_2" />
+                    </p>
+                    <p class="Figure">Figure 41: Graph Option Menu</p>
+                    <h4 class="Heading4">Examine line</h4>
+                    <p>The feature displays the temperature for the location of the examine line on the profile graph. See Figure 40.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300004A1.png" style="width: 150px;height: 131px;" />
+                    </p>
+                    <p class="Figure">Figure 42: Examine line window</p>
+                    <p>&#160;</p>
+                    <p>Wherever the pointer is moved across the profile, the following data appears:</p>
+                    <ul style="list-style-type: square;">
+                        <li>The first column is the actual temperature for each TC.</li>
+                        <li>The second column is the temperature of the predicted profile data – based on setpoint or speed changes.</li>
+                        <li>The Delta T for both actual and predicted TC data.</li>
+                        <li>The time during the profile at which the pointer is placed</li>
+                    </ul>
+                    <h4 class="Heading4">Move TC line</h4>
+                    <div class="div_13">
+                        <p class="FigureFloat_1">
+                            <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300004C1.png" style="width: 178px;height: 82px;" />
+                        </p>
+                        <p class="Figure">Figure 43</p>
+                    </div>
+                    <p>The Move TC line feature allows you to manually move the thermocouple plot on the profile graph.  Moving the plot lets you fine-tune the profile or make corrections in the event the WPI software did not properly display the plot. See Figure.</p>
+                    <p>&#160;</p>
+                    <p>Select the thermocouple you wish to move and then click and drag the highlighted plot and move it to the desired location on the profile graph. See Figure.</p>
+                    <p>&#160;</p>
+                    <p class="p_12">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300004D1.png" style="height: 244px;width: 576px;" class="img_2" />
+                    </p>
+                    <p class="Figure">Figure 44: Move TC Line</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Move Zone line</h4>
+                    <p>The <span class="span_6">Move Zone line</span> feature lets you manually move the zone separation lines on the profile graph.  You can use this feature to fine-tune the profile or make corrections in the event the software did not properly display the zones. </p>
+                    <h4 class="Heading4">Move Preheat and wave divider</h4>
+                    <p>The <i>Move Preheat and wave divider</i> feature lets you manually move the dividing line that separates the two halves of the data plot – preheat and wave.  You can use this feature to fine-tune the profile or make corrections in the event the software did not properly display.</p>
+                    <p>&#160;</p>
+                    <table style="width: 80%">
+                        <col style="width: 411px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p><span style="font-family: Arial; font-size: 12pt;">Zone Resize</span>
+                                </p>
+                                <p>&#160;</p>
+                                <p>Select to move the first line (Zone beginning) or the Last line (Zone ending) (See Figure ) and then click and drag it to the desired location on the profile graph. See Figure .</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td style="width: 50%">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300004E1.png" style="width: 213px;height: 90px;" />
+                                </p>
+                                <p class="Figure">Figure 45: Zone Resize</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p class="p_12">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300004F1a.png" class="img_2" style="width: 555px;height: 230px;" />
+                    </p>
+                    <p class="Figure">Figure 46:&#160; Move Zone Line</p>
+                    <h4 class="Heading4">Reset</h4>
+                    <table style="width: 80%">
+                        <col style="width: 453px;" />
+                        <col />
+                        <tr>
+                            <td class="td_12">
+                                <p>&#160;</p>
+                                <p>The Reset feature will reset the profile and undo any changes you have made to the graph using the Graph Option Menu.  Select the TC Line, or Zone Line option.  See Figure .</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_12" style="width: 50%">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000051.png" style="width: 205px;height: 96px;" />
+                                </p>
+                                <p class="Figure">Figure 47: Reset</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h4 class="Heading4">Pointer Slopes</h4>
+                    <p>The <i>Pointer/Slopes</i> selection allows you to place multiple pointers on the graph screen, manually move them to specific points of interest, and calculate various statistics at and between the pointers.</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image144.png" style="width: 258px;height: 82px;" />
+                    </p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image139.png" style="width: 480px;height: 281px;" />
+                    </p>
+                    <p class="Figure">Figure 48: Pointer Slopes</p>
+                    <h4 class="Heading4">Zoom In</h4>
+                    <p>The <i>Zoom In</i> allows you to scale and zoom in the graph display of a specific part of the profile. Click and drag a box around the area you want to see, then select OK.</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image145.png" style="width: 564px;height: 251px;" />
+                    </p>
+                    <p class="Figure">Figure 49: Zoom In</p>
+                    <h3 class="Heading3">Statistics Table</h3>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image146.png" style="width: 559px;height: 250px;" />
+                    </p>
+                    <p class="Figure">Figure 50: Preheat Tab</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image147.png" />
+                    </p>
+                    <p class="Figure">Figure 51: Wave Tab</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image148.png" />
+                    </p>
+                    <p class="Figure">Figure 52: Pointer Slopes Tab</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p>The statistics table is displayed in the center of the graph screen and lists a variety data, depending on which tab is selected, for the current profile being shown. It will list any measured value, as well as the corresponding PWI value (where applicable). Three separate tabs provide for displaying of the statistical information – Preheat, Wave, and Pointer Slopes.</p>
+                    <p>&#160;</p>
+                    <p><b>Preheat Tab</b> – Displays any statistical value, previously selected in the Process Window setup, related to the Preheat portion of data. Any statistic displayed in green is within the specification limits. Any statistic in red is outside of the spec limits defined.</p>
+                    <p>&#160;</p>
+                    <p><b>Wave Tab</b> – Displays any statistical value, previously selected in the Process Window setup, related to the <i>Wave</i> portion of the data. Any statistic displayed in green is within the specification limits. Any statistic in red is outside of the spec limits defined.</p>
+                    <p><b>NOTE</b>: If no specification was made for Dwell Time, but Dwell Time calculation was selected during the <i>RUN A PROFILE</i> steps, the corresponding Dwell/Parallelism data will be displayed in black.</p>
+                    <p>&#160;</p>
+                    <p><b>Pointer Slopes</b> – This tab will display the calculations for any <i>Pointers</i> that were placed on the graph. It can display the temperature at each pointer location, as well as the Slope, Time, and Peak temperature between any two Pointers. Right click on the graph and click <i>Pointer/Slopes</i> then left click to add a pointer on the plot. Open the <i>Graph Controller</i> menu to select which data to show in this table.</p>
+                    <p>&#160;</p>
+                    <p><b>Automatic calculation of Delta T + Delta (or range) for all stats</b>
+                    </p>
+                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics. This is the range of the highest to the lowest value for any given specification.  This information is strictly being displayed and is not factored in to the PWI value and is not used in any predictive calculations.</p>
+                    <h3 class="Heading3">
+                        Machine Recipe Settings
+</h3>
+                    <p>
+                        <img src="Resources/Images/image149.png" />
+                    </p>
+                    <p class="Figure"> Figure 53: Machine Recipe Settings</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p>At the bottom of the screen will be the machine recipe settings you entered during the RUN A PROFILE screens, including individual Preheat Zone setpoints, Solder Pot Temperature setpoint (plus Measured Pot temperature), and Conveyor Speed setpoint.</p>
+                    <p>&#160;</p>
+                    <p>Additionally, the table includes the overall PWI for each section of data – Preheat and Wave – as well as the Predicted setpoints for optimizing the profile.</p>
+                    <h2 class="Heading2"><a name="Description_Tab"></a>Description tab</h2>
+                    <p class="p_12">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300005A1.png" style="width: 483px;height: 375px;" />
+                    </p>
+                    <p class="Figure">Figure 54: Profile Description Tab</p>
+                    <p>&#160;</p>
+                    <p>The Description tab provides an for viewing/editing any profile notes that may have been entered on the first <i>RUN A PROFILE</i> screen. If notes were not previously entered, they can be added into this area at any time.</p>
+                    <h2 class="Heading2"><a name="Profile_optimization"></a>Optimization Tab</h2>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300005B1.png" style="width: 467px;height: 300px;" />
+                    </p>
+                    <p class="Figure">Figure 52: Profile Optimization Tab</p>
+                    <p>&#160;</p>
+                    <p>The <i>Optimization</i> tab allows you to set the search parameters for Navigator.  The software will search through millions of setpoint and conveyor speed combinations to find the optimal machine settings for each product.  These optimization calculations are based on the selections you make on this tab.  See Figure .</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet_1"><span class="span_7">Original PWI</span> – The Process Window Index for the original profile</p>
+                    <p class="ListBullet_1">&#160;</p>
+                    <p class="ListBullet_1"><span class="span_7">Best PWI</span> – The best Process Window Index that can be found based on the machine recipe optimization constraints selected.</p>
+                    <p class="ListBullet_1">&#160;</p>
+                    <p class="ListBullet_1"><span class="span_7">Speed change</span> – The total change to the conveyor speed for the best machine recipe found.</p>
+                    <p class="ListBullet_1">&#160;</p>
+                    <p class="ListBullet_1"><b>Total setpoint change</b> – The sum of all setpoint changes for the best machine recipe found.</p>
+                    <h3 class="Heading3">Search Mode For Optimization</h3>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_1"><span class="span_7">Minimize PWI</span> – Search for the combination of setpoint temperatures and conveyor speed that will minimize the Process Window Index.</li>
+                    </ul>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_1"><span class="span_7">Allow zone setpoints to change</span> – This option will determine if Navigator will include zone setpoint changes when predicting new solutions. It also allows you to exclude individual zones from suggested changes.</li>
+                    </ul>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_3"><span class="span_7">Allow conveyor speed to change</span> –Choose whether to allow Navigator to vary the conveyor speed.  If you choose this feature, you can set the minimum and maximum speeds.</li>
+                    </ul>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_3"><span class="span_7">Maximize conveyor speed</span> – Search for the setpoint temperatures that will maximize conveyor speed.</li>
+                    </ul>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_1"><span class="span_7">Minimize energy consumption</span> – Used by the Power software feature.  The software searches for the machine settings that will minimize the power consumption by finding setpoint solutions with slower conveyor speeds and lower temperature settings.</li>
+                    </ul>
+                    <h3 class="Heading3">Conveyor Speed Constraints</h3>
+                    <p>As long as the <span class="span_6">Allow Conveyor Speed to Change</span> feature is selected, these options are available.</p>
+                    <p><b>Minimum</b> – Select the slowest conveyor speed you would like Navigator to recommend for new products.</p>
+                    <p><b>Maximum</b> - Select the fastest conveyor speed you would like Navigator to recommend for new products.</p>
+                    <p class="ListContinue">&#160;</p>
+                    <h2 class="Heading2"><a name="Manual_profile_prediction"></a>Manual Profile Prediction</h2>
+                    <p>The WPI software has automatic (Navigator), and manual prediction capabilities.  Manual prediction gives you the flexibility to easily predict changes to the machine settings (temperature settings, conveyor speed), and view the results without having to spend the time actually running unnecessary profiles.  This feature is very helpful to you, minimizing the time spent fine-tuning or developing a thermal profile.</p>
+                    <h3 class="Heading3">Make Changes</h3>
+                    <p>To predict changes to the machine settings, or modify the Navigator prediction results, click on the zone you wish to change.  In the example below, zone 1 has been selected.  See Figure .</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300005C1.png" style="height: 81px;width: 503px;" class="img_2" />
+                    </p>
+                    <p class="Figure">Figure 56: Prediction Settings</p>
+                    <p>&#160;</p>
+                    <p>Type the new temperature setting, and then press Enter.</p>
+                    <p>&#160;</p>
+                    <p>The Navigator prediction tool will predict the results of that change, and then automatically update the PWI, predicted Statistics, and the profile graph.  The new predicted results appear on the graph in a dotted-line format.  This format lets you quickly determine the difference between the original and predicted profiles.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: When separate Top and Bottom setpoints are used, the Navigator prediction will maintain the same delta between the Top and Bottom setting that was used in the original profile.</p>
+                    <h3 class="Heading3">Profile Screen Buttons</h3>
+                    <p>There are four buttons at the bottom of the profile screen:</p>
+                    <table style="width: 100%" class="table_1">
+                        <tr>
+                            <td class="td_12" style="width: 20%">
+                                <p class="p_27">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000052.png" style="width: 98px;height: 53px;" />
+                                </p>
+                            </td>
+                            <td class="td_12" style="width: 80%">
+                                <p class="p_27"><span class="span_7">View/Edit Process Window – </span>Choose this button to either view or edit the process specification(s) for the product used in this profile.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_12" style="width: 20%">
+                                <p class="p_27">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000053.png" style="width: 98px;height: 53px;" />
+                                </p>
+                            </td>
+                            <td class="td_12" style="width: 80%">
+                                <p class="p_27"><span class="span_7">Copy to Clipboard – </span>Choose this button to copy the profile data to the windows clipboard.  You can then paste the data to a different application.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_12" style="width: 20%">
+                                <p class="p_27">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000054.png" style="width: 98px;height: 53px;" />
+                                </p>
+                            </td>
+                            <td class="td_12" style="width: 80%">
+                                <p class="p_27"><span class="span_7">Print –</span> Choose this button to print a copy of the profile that is currently on your screen.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_12" style="width: 20%">
+                                <p class="p_27">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000037.png" style="width: 98px;height: 53px;" />
+                                </p>
+                            </td>
+                            <td class="td_12" style="width: 80%">
+                                <p class="ListBullet_1_3"><span class="span_7">Green check button –</span> When finished viewing or analyzing the profile select this button to either run another profile with this product or return to the WPI main menu.  You return to the Profile Explorer if the profile was opened from there.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3 class="Heading3">Exit The Graph Screen</h3>
+                    <table style="width: 80%">
+                        <col style="width: 401px;" />
+                        <col />
+                        <tr>
+                            <td class="td_12">
+                                <p>Upon exiting the graph screen, you will be prompted if you want to run another profile with this same product.</p>
+                                <p>&#160;</p>
+                                <p>If you select <b>No</b>, you return to the WPI main screen or the Profile Explorer if the profile was originally opened from there.</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_12" style="width: 40%">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000055.png" style="width: 319px;height: 119px;" class="img_6" />
+                                </p>
+                                <p class="Figure">Figure 57</p>
+                                <p class="p_3">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_12">
+                                <p>If you select <b>Yes</b>, you will need to choose from the Original, or Predicted recipe settings.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_7">Original –</span> The same recipe settings used when this profile was originally run.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_7">Predicted -</span> The recipe settings as predicted by Navigator, or a standard prediction that you manually input.</p>
+                            </td>
+                            <td class="td_12" style="width: 40%">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000056.png" style="height: 101px;width: 321px;" class="img_6" />
+                                </p>
+                                <p class="Figure">Figure 58</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>The following message will appear reminding you of the settings that should be entered into the Wave Solder Machine controller:</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000057.png" style="width: 347px;height: 231px;" class="img_2" />
+                    </p>
+                    <p class="Figure">Figure 59</p>
+                    <p>&#160;</p>
+                    <p>WPI software automatically applies the changes to the Run a Profile –Enter Setpoints screen.  You will exit to the Run a Profile –Enter Setpoints screen.</p>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 401px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <h4 class="Heading4">Save Changes to the Profile
+                                </h4>
+                                <p>Any changes to the Description Notes or the Process Window can be saved with the profile.  This will permanently update this profile with the changes.  Changes to the Process Window saved here only save the changes with this specific profile.  To save the changes to Process Window file see next dialog box.  See Figure .</p>
+                            </td>
+                            <td>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000058.png" style="width: 318px;height: 116px;" />
+                                </p>
+                                <p class="Figure">Figure 60</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4 class="Heading4">Save Changes to the Process Window</h4>
+                                <p>If you have made changes to the Process Window from the Graph screen you can save these changes when you exit the graph screen.  The Process Window will permanently have these changes whenever it is used to profile from this point forward.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000059.png" style="width: 318px;height: 102px;" />
+                                </p>
+                                <p class="Figure">Figure 61</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>If you choose <b>Yes</b>, you will be taken to the Process Window screen in order to save the changes that you have made.</p>
+                    <p>&#160;</p>
+                    <p>The first dialog – “Do you want to run a profile with this product?” will appear each time you exit the graph screen.  Click on <b>No</b> if you do not wish to profile.</p>
+                    <p>&#160;</p>
+                    <p>You are sent back to the WPI main menu if you had just completed running a profile.  If you opened the profile from the Profile Explorer, you are returned to the Profile Explorer.  The other two dialogs will only appear if changes are made to the Description notes or Process Window.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

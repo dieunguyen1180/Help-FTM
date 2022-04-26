@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="O:\Help for KIC\NEW HELP from TPS\Flare_KIC Vision 2 v3.6\Content\Resources\Images\image275.png" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="O:\Help for KIC\NEW HELP from TPS\Flare_KIC Vision 2 v3.6\Content\Printing.htm" />
+    </Dialog>
+    <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog" />
+</RecentLinks>

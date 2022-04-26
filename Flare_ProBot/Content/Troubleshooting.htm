@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 1000px">
+            <col with="width: 1000px" />
+            <tr>
+                <td with="width: 505px">
+                    <h1 class="Heading1">Status Messages and Alarms With the Basic System
+                    </h1>
+                    <p>&#160;</p>
+                    <p>The software communicates system status through messages that it displays on the monitor.  Some simply report an operating condition, some provide a warning that process parameters are changing, and still others, called alarms, announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>Alarm messages typically appear in red.  An alarm status may accompany a signal from the eTPU to the optional alarm relay, which, in turn, may trigger hardware-related events such as sounding audible alarms, lighting signal towers, or stopping infeed conveyors.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p style="text-align: left;">
+                                    <img src="Resources/Images/image32.png" style="width: 319px;height: 203px;" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Some status messages and alarms are specific to different functions of the software.  Some may appear when you are first running profiles to establish a baseline.  Others appear only when you begin Virtual Profiling.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Acknowledging_alarms"></a>Acknowledge Alarms
+                    </h2>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>Once displayed on the monitor, an operator needs to acknowledge the alarm, clicking on it to notify the software that the message has been received and make the displayed panel disappear.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p style="text-align: left;">
+                                    <img src="Resources/Images/image33.png" style="width: 316px;height: 197px;" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the KIC2000UserSettings.kiccfg file:
+</p>
+                                <p>&#160;</p>
+                                <p>[HOST]
+</p>
+                                <p>UsingPasswordwithRedAlarm=1
+</p>
+                                <p>&#160;</p>
+                                <p>Next, you need to specify a password on the Global Preferences screen <i>Engineer Password</i> option.  Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.
+</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>
+                                    <img src="Resources/Images/image34.png" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image35.png" style="width: 351px;height: 226px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> Password protection only applies to alarms.  A simple mouse click acknowledges and clears warning messages.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
+                    <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.  Below is a table the message that you might see during this process:  See Table 2.</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_1">
+                        <col style="width: 154pt;" />
+                        <col style="width: 342pt;" />
+                        <tr style="height: 22pt;">
+                            <td class="td_12">
+                                <p class="Important"><span style="color: #ffffff;">Message Alarms</span>
+                                </p>
+                            </td>
+                            <td class="td_12">
+                                <p class="Important"><span style="color: #ffffff;">Message Description</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_13">
+                                <p class="p_32">Message, High PWI</p>
+                            </td>
+                            <td class="td_13">
+                                <p>Recent profile of xxx%, PWI must be no greater than 90%</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_13">
+                                <p class="p_32">Message Alarm H2</p>
+                            </td>
+                            <td class="td_13">
+                                <p>eTPU Communication Failure - wait 5 seconds and try again</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_13">
+                                <p class="p_32">Message Alarm H7</p>
+                            </td>
+                            <td class="td_13">
+                                <p>Conveyor has stopped or encoder has been disconnected Virtual Profiling cannot be started.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Figure">Table 2: Profiling System Alarms System message alarms</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Caption">&#160;</p>
+                    <table with="width: 1000px">
+                        <col style="width: 1000px;" />
+                        <tr>
+                            <td with="width: 505px">
+                                <h2 class="Heading2"><a name="System_message_alarms"></a>System Messages and Alarms</h2>
+                                <h3 class="Heading3">Message, High PWI</h3>
+                                <table class="table_2">
+                                    <col style="width: 400px;" />
+                                    <col style="width: 20px;" />
+                                    <col />
+                                    <tr>
+                                        <td class="td_14">
+                                            <p>If the verification profile PWI is &gt;= 90%, you will receive this message when starting the VP.</p>
+                                            <p>If there was a problem with the most recent profile, it can be deleted and the system will try to use the next most recent profile as the baseline profile.  Otherwise, you are advised to run another profile.  See Figure 85.</p>
+                                        </td>
+                                        <td>&#160;</td>
+                                        <td class="td_14">
+                                            <p class="p_1" style="text-align: left;">
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000101.png" class="img_6" />
+                                            </p>
+                                            <p class="Figure">Figure 85: Message High PWI</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_14">
+                                            <h3 class="Heading3">Alarm Message H2</h3>
+                                            <p>This message will appear if the eTPU is not detected when attempting to start Virtual Profiling.  This can occur if there is an issue with the eTPU, or the connection configuration.  Waiting 5 seconds sometimes allows a connection to the eTPU to be established.  See Figure 86.</p>
+                                        </td>
+                                        <td>&#160;</td>
+                                        <td class="td_14">
+                                            <p>&#160;</p>
+                                            <p style="text-align: left;">
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000102.png" class="img_3" />
+                                            </p>
+                                            <p class="Figure">Figure 86: Alarm H2</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_14">
+                                            <h3 class="Heading3">Alarm H7</h3>
+                                            <p>This alarm will appear when trying to start a Virtual Profile from the Profile Explorer.  The oven conveyor must be running and set to the correct speed settings in order to start Virtual profiling.  See Figure 87.</p>
+                                            <p>&#160;</p>
+                                        </td>
+                                        <td>&#160;</td>
+                                        <td class="td_14">
+                                            <p>&#160;</p>
+                                            <p style="text-align: left;">
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000103.png" class="img_6" />
+                                            </p>
+                                            <p class="Figure">Figure 87: Alarm H7</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p>&#160;</p>
+                                <h2 class="Heading2"><a name="Alarms_Messages_During_VP"></a>Alarms and Messages During Virtual Profiling</h2>
+                                <p>The software incorporates the use of warning and alarm dialog screens to let you know if there is a problem and the cause for that problem.&#160; Below is a partial list of the warning and alarm dialog screens with explanations.&#160; These Alarms are active only when Virtual profiling is running.</p>
+                                <p>&#160;</p>
+                                <table align="center" class="table_1">
+                                    <col style="width: 85pt;" />
+                                    <col style="width: 293pt;" />
+                                    <col style="width: 76pt;" />
+                                    <tr style="height: 36pt;">
+                                        <td class="td_15">
+                                            <p class="p_34">Process Alarms</p>
+                                        </td>
+                                        <td class="td_16">
+                                            <p class="p_34">Description</p>
+                                        </td>
+                                        <td class="td_16">
+                                            <p class="p_34">Activates Alarm Relay</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 1</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">PWI=x% - Process is out of spec</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 8</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">The length of the current product does not match the length of the product during the baseline profile.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">No</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 10</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">This alarm only occurs when the KIC software and the oven control software are communicating and indicates that the oven is not set to the baseline profile recipe.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 11</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">The KIC speed sensor has detected that the conveyor speed has changed significantly since the baseline.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 16</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">Maximum allowable back-to-back boards exceeded (When enabled)</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="Caption">Table 3: Virtual Profiling – Process Alarms</p>
+                                <p>&#160;</p>
+                                <table align="center" class="table_1">
+                                    <col style="width: 85pt;" />
+                                    <col style="width: 293pt;" />
+                                    <col style="width: 76pt;" />
+                                    <tr style="height: 36pt;">
+                                        <td class="td_15">
+                                            <p class="p_34">Hardware Alarms</p>
+                                        </td>
+                                        <td class="td_16">
+                                            <p class="p_34">Description</p>
+                                        </td>
+                                        <td class="td_16">
+                                            <p class="p_34">Activates Alarm Relay</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm H1</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p><span class="span_25">e</span><span class="span_25">TPU Communication Failure (happened after Alarm H2)</span>
+                                            </p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm H2</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p><span class="span_25">e</span><span class="span_25">TPU Lost Communication with PC.</span>
+                                            </p>
+                                            <p><span class="span_25">Not</span><span class="span_25">e: This a</span><span class="span_25">larm condition can activate the </span><span class="span_25">alarm relay</span><span class="span_25"> that is controlled by </span><span class="span_25">e</span><span class="span_25">TPU.</span>
+                                            </p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes or No</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm H7</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">Conveyor Stopped or Speed Encoder broken or not connected properly.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_36">Yes</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="Caption">Table 4: Virtual Profiling – Hardware Alarms</p>
+                                <p>&#160;</p>
+                                <table align="center" class="table_1">
+                                    <col style="width: 85pt;" />
+                                    <col style="width: 293pt;" />
+                                    <col style="width: 76pt;" />
+                                    <tr style="height: 36pt;">
+                                        <td class="td_19">
+                                            <p class="p_34">Warnings</p>
+                                        </td>
+                                        <td class="td_20">
+                                            <p class="p_34">Description</p>
+                                        </td>
+                                        <td class="td_20">
+                                            <p class="p_34">Activates Alarm Relay</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Warning # 2</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">This process is likely to go out of spec soon.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">No</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Warning # 3</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">The last profile was out of spec.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">No</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Warning # 4</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">Oven temps have changed significantly since baseline.</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_36">No</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="Caption">Table 5: Virtual Profiling – Warnings</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <h2 class="Heading2"><a name="eTPU_Communication"></a>eTPU Communication
+                                </h2>
+                                <h3 class="Heading3">Communication Troubleshooting for the eTPU
+                                </h3>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If the Yellow LED (AC Power) is not on, then there is no power present.</b>
+                                        <br />To correct this, make sure the eTPU power supply is properly connected to the eTPU and connected to an AC power source.  Use only a factory-supplied power supply.</li>
+                                </ul>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If the green LED (Network communication) is not on, then there is no Ethernet communication.</b>
+                                        <br />To correct this, ensure the dedicated Ethernet adapter is configured properly.  Also make sure the correct IP address class is used, and that the subnet mask is entered correctly.</li>
+                                </ul>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If you open the software and the red LED does not begin blinking (slow blink), then the SitePlayer IP address may not be configured properly.</b>
+                                        <br />To correct this, exit the software and then open the file:<br /><span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\Log\KIC2000Hardware.kiccfg</span><br /><br />Edit the line:<br /><span style="font-family: 'Courier New'; font-size: 9pt;">SitePlayerIPAddress=</span><br /><br />Enter the IP address of your eTPU-SitePlayer.<br />If still not working, then use Internet Explorer to access the eTPU SitePlayer and use the manual switch.<br /></li>
+                                </ul>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If you cannot connect to the SitePlayer using Internet Explorer, then the SitePlayer IP address is typed incorrectly or the address is unknown.</b>
+                                        <br />To correct this, enter the correct IP address for the SitePlayer.  As long as the SitePlayer is not damaged, you can connect.  If you are unsure of the correct IP address of the SitePlayer, remove the cover and read the IP address from the eTPU configuration label.  If the IP address is unrecoverable, then the eTPU must be returned to your system supplier for reprogramming.</li>
+                                </ul>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li><b>If communication with the eTPU is lost, (i.e. eTPU Ethernet cable unplugged, or the power disconnected) the system may not recover on its own.</b>
+                                        <br />To correct this, close the software and then open it again.  This should reset the eTPU SitePlayer.  In some situations, it may require a PC reboot to regain communication with the eTPU.  (green and red LEDs)</li>
+                                </ul>
+                                <p>&#160;</p>
+                                <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum allowable back-to-back boards has been exceeded</h3>
+                                <p>This is alarm in disabled by default. You may want to enable this optional alarm if you want to be alerted when too many products are being loaded back-to-back into the oven, which can sometimes lead to other process related issues. It will allow you to specify how many consecutive back-to-back boards are allowed. If that number is exceeded, an alarm will be generated.</p>
+                                <h4 class="Heading4">To enable:</h4>
+                                <table>
+                                    <col style="width: 400px;" />
+                                    <col style="width: 20px;" />
+                                    <col />
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <ol>
+                                                    <li>Exit the software, browse to the <i>C:\ProBot</i> directory and run the <i>ConfigurationProgram.exe</i>. Select the <i>Hardware</i> tab.</li>
+                                                </ol>
+                                            </td>
+                                            <td>&#160;</td>
+                                            <td>
+                                                <img src="Resources/Images/FTM0008.png" style="width: 575px;height: 544px;" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <ol start="2">
+                                                    <li>Under the <i>Product Board Sensor</i> section, select the <i>Alarm on Continuous Boards</i> checkbox. Enter the <i>Maximum</i> number of back-to-back boards that you want to allow before the alarm is generated.</li>
+                                                </ol>
+                                            </td>
+                                            <td>&#160;</td>
+                                            <td>
+                                                <img src="Resources/Images/FTM0009.png" style="width: 575px;height: 185px;" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>&#160;</p>
+                                                <p>During <i>Virtual Profiling</i>, if more than the specified number of back-to-back boards are detected entering the oven, an alarm will be generated indicating the problem.</p>
+                                                <p>&#160;</p>
+                                                <p><![CDATA[
+
+													]]><b>NOTE</b>: This alarm setting can also be useful for identifying other hardware issues such as: products stuck in transition onto oven conveyor (when underneath the board sensor), misadjusted, dirty, or faulty board sensors, etc. 
+												</p>
+                                            </td>
+                                            <td>&#160;</td>
+                                            <td>
+                                                <img src="Resources/Images/FTM00010.png" style="width: 444px;height: 285px;" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

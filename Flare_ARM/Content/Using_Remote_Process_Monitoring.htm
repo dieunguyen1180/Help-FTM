@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-110 ARM User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1">Use Remote Process Monitoring</h1>
+                    <p>Remote Process Monitoring (RPM) enables customers to view real-time thermal process data and process status from the automatic profiling system on their reflow or cure ovens from any authorized computer on the network.</p>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li class="ListParagraph_4">The software provides valuable thermal process information in real-time.&#160; The RPM can supply this information to all relevant decision makers wherever they happen to be in the factory.&#160; The results are better data management, efficient process management and oversight, and faster reaction to thermal process issues in the factory.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li class="ListParagraph_4">RPM provides superior information sharing for the factory as a whole.&#160; The software monitors, controls, and displays the thermal process information <span class="span_12">for a single oven</span><span class="span_12">, at that oven</span>.&#160; In contrast, RPM displays the pertinent data for<span class="span_12"> all your</span><span class="span_12"> ovens</span> on any authorized network computer <span class="span_12">on a single screen</span>.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li class="ListParagraph_4">RPM translates complex process issues into an easy to understand format.&#160; With RPM, line supervisors and quality, production, or engineering managers, can access factory-wide, real-time quality and productivity data without staff meetings, reports, or trips to the factory floor.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>Note: <span class="span_11">The software key must remain connected at all times during use for barcode capabilities to function.</span>&#160; </p>
+                    <p>&#160;</p>
+                    <p>RPM is comprised of three main software applications, and one optional software component:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_3">
+                        <li class="ListParagraph"><span class="span_11">The automatic system</span><span class="span_11"> software:</span>
+                        </li>
+                    </ol>
+                    <p class="p_10">The RPM for the automatic system data is a dongle-protected software option.&#160; This software runs with the system software on a computer at the oven.&#160; The RPM software’s main function is to send data over a network to the KIC Server software.&#160; While RPM is enabled, a separate application called <span class="span_12">Watch Dog</span> runs in the background to continuously monitor the connection between each system software instance and the KIC Server(s).</p>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_3">
+                        <li class="ListParagraph_9">KIC Server software:</li>
+                    </ol>
+                    <p class="p_10">The KIC Server software is installed onto a computer or drive on the network and acts as a host for all automatic system software instances running on the network with the RPM output.&#160; It automatically connects to all the systems that are running RPM and passes on the data to any authorized computer on the LAN that is properly logged on.&#160; A maximum of 100 ovens per Server is possible.&#160; The KIC Server has a setup menu for creating and editing user names and passwords for KIC Viewer users.</p>
+                    <p>&#160;</p>
+                    <ol start="3" class="ol_3">
+                        <li class="ListParagraph_9">KIC Viewer software:</li>
+                    </ol>
+                    <p class="p_10">The KIC Viewer resides on your desk or any remote computer on the network.&#160; Once logged on to the KIC Server, Viewer lets you see the data from all automatic system software connected to the Server.&#160; </p>
+                    <p>&#160;</p>
+                    <ol start="4" class="ol_3">
+                        <li class="ListParagraph_9">Win VNC:</li>
+                    </ol>
+                    <p class="p_10">Win VNC is an optional third-party software application that allows you to remotely control, or view the history for any system software client PC on the same LAN.&#160; Win VNC lets you clear alarms, load recipes, and perform system administration tasks.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>In full operation, the combined software and systems function as shown below.</p>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/030000FF.png" style="width: 471px;height: 349px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 134: RPM functional diagram</p>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListParagraph_3">Each system at the reflow or cure oven runs in Virtual Profiling mode, monitoring the process and giving real-time profile/process data for each production board.&#160; The Virtual Profile data is stored locally on the client PC.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListParagraph_3">The Oven Name, Product Name, Process Window Index (PWI), Real-Time Cpk, and current Alarm State (green, yellow, red: with alarm text) are sent to the KIC Server as each board exits the oven.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListParagraph_3">The KIC Server accepts the data from all systems configured to send data, acting as a host for all the data.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListParagraph_3">The KIC Viewer logs on to the KIC Server and displays the pertinent data for all ovens, on one screen, updating each one as boards exit and new data is sent.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Running_RPM"></a>Run RPM</h2>
+                    <h3 class="Heading3"><a name="The_software_client_PC"></a>The Software Client PC</h3>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
+                        <tr>
+                            <td class="td_33">
+                                <p>To enable the RPM feature:</p>
+                                <ol start="1" class="ol_3">
+                                    <li class="ListParagraph">Close the automatic software if open.</li>
+                                    <li class="ListParagraph">Using Windows Explorer, browse to the C:\software root directory and run the ConfigurationProgram.exe application.</li>
+                                    <li class="ListParagraph">Select the RPM tab</li>
+                                    <li class="ListParagraph">Check the “LON in use” checkbox</li>
+                                    <li class="ListParagraph">Enter the IP address of the PC that will be running the <span class="span_12">KIC Server</span> application.</li>
+                                    <li class="ListParagraph">LON Oven ID can be left blank, as the <span class="span_12">KIC Server</span> software will automatically assign it a position.</li>
+                                    <li class="ListParagraph">Click Apply, then OK to close the Configuration Program.</li>
+                                </ol>
+                            </td>
+                            <td class="td_33">
+                                <p class="p_20">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000100.png" style="height: 327px;width: 369px;" />
+                                </p>
+                                <p class="Caption">Figure 135: KIC2000ReadOnly.kiccfg file</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>After editing the file, be sure to save it before exiting.&#160; Next, launch the system software.&#160; </p>
+                    <p>&#160;</p>
+                    <p>When the software launches, you see the following two icons in the notification area:</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000101.png" style="height: 43px;width: 59px;" class="img_1" />. <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000102.png" style="height: 38px;width: 38px;" class="img_1" /></p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: The appearance of the system software icon changes based on its connection status with the KIC Server:</p>
+                    <p>&#160;</p>
+                    <table class="table_4" style="width: 25%;">
+                        <col style="width: 125px;" />
+                        <col style="width: 125px;" />
+                        <tr>
+                            <td class="td_33">
+                                <p class="p_20">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000103.png" style="height: 43px;width: 58px;" class="img_1" />
+                                </p>
+                            </td>
+                            <td class="td_33">
+                                <p class="p_45">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000101.png" style="height: 43px;width: 59px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_33">
+                                <p class="p_45"><span class="span_11">Not</span> connected</p>
+                            </td>
+                            <td class="td_33">
+                                <p class="p_45">Connected</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>View the icon in the notification area.&#160; If the system software is not connected to a KIC Server, check to make sure the KIC Server:</p>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_2">Hosting mode is enabled (KIC Server-click the Start to Host button)</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_2">Displays the communication status of the systemsoftware instances that are connected.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>For more details, see <a href="Using_Remote_Process_Monitoring.htm#KIC_Server"><span class="Hyperlink">KIC Server</span></a>. </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="KIC_Watchdog"></a>Watchdog</h3>
+                    <p>The Watch Dog is a software program that runs in the background when RPM is enabled.  Its main function is to continuously monitor communication between the system software client PC and the KIC Server PC.</p>
+                    <p>&#160;</p>
+                    <p>Note: <span class="span_11">The Watch Dog software is not user configurable.</span></p>
+                    <p>&#160;</p>
+                    <p>Watch Dog automatically starts up when the system software launches with RPM enabled (DO NOT CLOSE IT).  The Watch Dog’s Icon displays on the bottom right corner as seen below:</p>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000104.png" style="height: 62px;width: 588px;" class="img_1" />
+                    </p>
+                    <p class="p_20">&#160;</p>
+                    <p class="p_20">&#160;</p>
+                    <p class="p_20">&#160;</p>
+                    <h3 class="Heading3"><a name="WinVNC"></a>WinVNC</h3>
+                    <p>Virtual Network Computing (VNC) is remote control software that allows you to view and interact with another computer anywhere on a local network.&#160; The two computers do not even have to be the same type or have the same operating system.&#160; VNC also has the capability to remotely control any system software client PC.</p>
+                    <p>&#160;</p>
+                    <p>WinVNC is a third party software application.&#160; VNC software can be downloaded from the internet at the following address: <MadCap:shortcut path="http://www.realvnc.com/download.html" parameters="" class="shortcut_1">http://www.realvnc.com/download.html</MadCap:shortcut></p>
+                    <p>&#160;</p>
+                    <p>VNC software contains multiple applications including VNC Server.&#160; Run VNC Server on the client PC while Virtual Profiling is running in order to view historical data or remotely control any system software client PC via the KIC Viewer application.</p>
+                    <p>&#160;</p>
+                    <p class="p_18">A VNC’s icon appears on the bottom right corner of the monitor.&#160; See Figure 136.</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/z43.png" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 136: VNC task tray icon</p>
+                    <p>&#160;</p>
+                    <p><a name="To_modify_VNC_properties"></a>To modify VNC properties:</p>
+                    <table>
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="ol_3">
+                                    <li>Double Click on the VNC icon.</li>
+                                </ol>
+                                <p class="p_10">The Current User Properties screen (Figure 137) appears.</p>
+                                <p>&#160;</p>
+                                <ol start="2" class="ol_3">
+                                    <li class="ListBullet2">Enter a password for other computers to access this client PC.&#160; (You are asked to enter this password each time any KIC Viewer attempts either Viewing History, or Remotely Controlling this client PC)</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="3" class="ol_3">
+                                    <li class="ListBullet2">Click the <span class="span_11">OK</span> button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_20">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000106.png" style="height: 235px;width: 273px;" class="img_1" />
+                                </p>
+                                <p class="p_20"><span class="span_18">Figure </span><span class="span_18">137</span><span class="span_18">: VNC Properties</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="KIC_Server"></a>KIC Server</h2>
+                    <p>The <span class="span_12">KIC Server</span> software acts as a host for all networked software systems running the RPM option.  The software connects all these systems and passes their data over the LAN to any authorized, properly logged on computers running the <span class="span_12">Viewer</span> application.&#160; </p>
+                    <p>&#160;</p>
+                    <p>You must install the software on a LAN-connected PC.&#160; This PC cannot simultaneously serve as a system software client, but it can run the Viewer application.&#160; The KIC Server can manage up to 100 ovens and has a menu for creating and editing user names and passwords for KIC Viewer-users.&#160; Your system software installation media includes the KIC Server software, but the application requires the continuous connection of an appropriate software key.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="To_install_the_KIC_Server"></a>Install the KIC Server</h3>
+                    <p><span class="span_11">Note</span>: You must install the KIC Server manually.&#160; </p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_3">
+                        <li>Browse the system software installation media for the KIC Server folder.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_3">
+                        <li>In the KIC Server folder, run the file Setup.exe.&#160; </li>
+                    </ol>
+                    <p class="p_10">The installation begins automatically.&#160; </p>
+                    <p>&#160;</p>
+                    <ol start="3" class="ol_3">
+                        <li>Follow the on-screen directions.<br />Tip: <span class="span_11">It may be helpful to copy the KIC Server shortcut to the Windows-Startup folder especially for dedicated-KIC Servers.</span></li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="To_launch_the_KIC_Server"></a>Launch the KIC Server</h3>
+                    <p>From the Windows desktop, click on: Start » Programs » KIC » KIC Server</p>
+                    <p>&#160;</p>
+                    <p class="p_72">Or </p>
+                    <p>&#160;</p>
+                    <p>From Windows Explorer open <span class="span_16">C:\KIC Server\KICServer.exe</span></p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="KIC_Server_Icons"></a>KIC Server Icons</h3>
+                    <p>Once the KIC Server application launches, an icon appears in the notification area.</p>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000107.png" style="width: 46px;height: 46px;" />
+                    </p>
+                    <p class="Caption">Figure 138</p>
+                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server. See Figure 138.</p>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000108.png" style="width: 45px;height: 45px;" />
+                    </p>
+                    <p class="Caption">Figure 139</p>
+                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections. See Figure 139.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>The KIC Server window is shown in Figure 140.  The screen permits the following six functions:</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListParagraph"><span class="span_11">Add</span> new users and passwords for KIC Viewers to connect.</li>
+                        <li class="ListParagraph"><span class="span_11">Edit/delete</span> users and Passwords</li>
+                        <li class="ListParagraph"><span class="span_11">Maximum number of Ovens</span> - Enter the number of ovens you wish to display in the KIC Viewer window.</li>
+                        <li class="ListParagraph"><span class="span_11">Start to host</span> – Enables/disables the KIC Servers’ connection mode.</li>
+                        <li class="ListParagraph">View the connection time and IP address for each system software client PC that is connected</li>
+                        <li class="ListParagraph">View the KIC Viewer-User name and connection time.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <h3 class="Heading3"><a name="To_add_a_new_user"></a>Add a New User</h3>
+                                <ol start="1" class="ol_3">
+                                    <li class="ListBullet2">Enter the new user name.</li>
+                                </ol>
+                                <ol start="2" class="ol_3">
+                                    <li class="ListBullet2">Enter the new password.</li>
+                                </ol>
+                                <ol start="3" class="ol_3">
+                                    <li class="ListBullet2_5">Select the Add button.<br /><br />You are added to the list of users. To access a list of users select the List of Users drop-down menu.<br /><br />The user’s password is updated immediately.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <h3 class="Heading3"><a name="To_change_a_password"></a>Change a Password</h3>
+                                <ol start="1" class="ol_3">
+                                    <li class="ListBullet2">Click on the List of Users dropdown menu.</li>
+                                </ol>
+                                <ol start="2" class="ol_3">
+                                    <li class="ListBullet2">Select the user that you wish to modify.</li>
+                                </ol>
+                                <ol start="3" class="ol_3">
+                                    <li class="ListBullet2">Enter the new password for that user.&#160; </li>
+                                </ol>
+                                <ol start="4" class="ol_3">
+                                    <li class="ListBullet2_5">Select the Change Password button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <h3 class="Heading3"><a name="To_delete_a_user"></a>Delete a User</h3>
+                                <ol start="1" class="ol_3">
+                                    <li class="ListBullet2">Click on the List of Users drop-down menu.</li>
+                                </ol>
+                                <ol start="2" class="ol_3">
+                                    <li class="ListBullet2">Select the user that you wish to modify.</li>
+                                </ol>
+                                <ol start="3" class="ol_3">
+                                    <li class="ListBullet2_5">Select the Delete button.<br /><br />The user account deletes immediately.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34" style="text-align: center;">
+                                <p>&#160;</p>
+                                <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000109.png" style="height: 333px;width: 313px;" />
+                                <p class="Caption">Figure 140: KIC Server Window</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Maximum number of ovens</span> – This value controls the number of oven boxes displayed on the KIC Viewer screen the maximum number of ovens is 100, minimum 1.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Start to Host</span> – The KIC Server will not accept connections until this button is selected.&#160; You must manually select this button to enable hosting by the KIC Server application.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="KIC_Viewer"></a>KIC Viewer</h2>
+                    <p>KIC Viewer software lets you remotely view production data from all automatic systems connected to the KIC Server.&#160; The software is included on the software installation media and can be installed on a desktop PC or any computer on the network. It can be installed on a separate PC or on the same PC with the KIC Server or the automatic system Client.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: Once installed, you first need to <span class="span_12">enable</span> the application in the configuration file and <span class="span_12">connect</span> to the KIC Server before you can launch the application.</p>
+                    <h3 class="Heading3"><a name="Installing_the_KIC_Viewer"></a>Install the KIC Viewer</h3>
+                    <p>You must install the KIC Viewer manually.&#160; </p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_3">
+                        <li class="li_11">Browse the automatic software installation media for the folder named <span class="span_12">KIC Viewer</span>.&#160; </li>
+                        <li class="li_11">In the folder, run the file <span class="span_11">Setup.exe</span>.&#160; </li>
+                        <li>When the instillation begins, follow the on-screen directions.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Configuring_the_KIC_Viewer_application"></a>Configure the KIC Viewer Application</h3>
+                    <p>You can configure the application in two ways:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_3">
+                        <li class="ListParagraph">Using the networking path – this method with allow you to view historical data via a separate application called “App for Viewer”. </li>
+                        <li class="ListParagraph">Using a VNC application – this method will allow you to view historical data via the use of VNC software to directly access the automatic system Client software/PC.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="To_use_KIC_Viewer_by_the_networking_path"></a>Use KIC Viewer by the Networking Path</h4>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <p>&#160;</p>
+                                <ol start="1" class="ol_3">
+                                    <li>Close the KIC Viewer application and then open the configuration file at the following location:</li>
+                                </ol>
+                                <p class="p_30"><span class="span_16">C:\Kicviewer\Configure\ kwConfigure.kcfg file – setup</span>:</p>
+                                <p>&#160;</p>
+                                <ol start="2" class="ol_3">
+                                    <li>Set <span class="span_11">EnableRemoteControl</span> flag to = <span class="span_11">0</span>.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <ol start="3" class="ol_3">
+                                    <li>Set <span class="span_11">[RemoteControlPC] Enable</span> flag to = <span class="span_11">1</span>.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <ol start="4" class="ol_3">
+                                    <li>Select File/Save, then close the file.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p>
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300010A.png" style="height: 226px;width: 241px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="To_use_KIC_Viewer_using_VNC"></a>Use KIC Viewer using VNC</h4>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <p>&#160;</p>
+                                <ol start="1" class="ol_3">
+                                    <li>Close the KIC Viewer application and then open the configuration file at the following location:</li>
+                                </ol>
+                                <p class="p_8">C:\Kicviewer\Configure\ kwConfigure.kcfg file – setup:</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <ol start="2" class="ol_3">
+                                    <li>Set <span class="span_11">EnableRemoteControl</span> flag to = <span class="span_11">1</span>.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <ol start="3" class="ol_3">
+                                    <li>Set <span class="span_11">[RemoteControlPC] Enable</span> flag to = <span class="span_11">1</span>.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <ol start="4" class="ol_3">
+                                    <li>Select File/Save, then close the file.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p>
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300010B.png" style="height: 239px;width: 264px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3 class="Heading3"><a name="Connecting_to_the_KIC_Server"></a>Connect to the KIC Server</h3>
+                    <p>To connect to a KIC Server, enter a valid user name and password from the KIC Viewer machine.&#160; See <a href="Using_Remote_Process_Monitoring.htm#KIC_Server"><span class="Hyperlink">KIC Server</span></a> for details.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: It is very helpful to have the IP address of the PC running the KIC Server application as this information is required each time a KIC Viewer connects to a KIC Server.</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 200pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <p><a name="Launching_the_application"></a>To launch the application:</p>
+                                <ol start="1" class="ol_3">
+                                    <li class="ListBullet2">From the Windows desktop, click Start » Programs » KIC » KIC Viewer</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="2" class="ol_3">
+                                    <li class="ListBullet2">From Windows Explorer:</li>
+                                </ol>
+                                <p class="p_8">Open <span class="span_16">C:\KIC&#160;Viewer\KICViewer.exe</span></p>
+                                <p class="p_8">&#160;</p>
+                                <ol start="3" class="ol_3">
+                                    <li class="ListBullet2">Enter the KIC Server IP address, a valid user name and password.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34" style="text-align: center;">
+                                <img src="Resources/Images/z44.png" class="img_1" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>The KIC Viewer main screen with its toolbar menu appears:</p>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300010D.png" style="height: 170px;width: 394px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 141: KIC Viewer – Main Screen</p>
+                    <h4 class="Heading4"><a name="Toolbar_button_menu"></a>The KIC Viewer Toolbar Button Menu</h4>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_35">
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300010E.png" style="height: 18px;width: 18px;" class="img_2" />Display Icon view (View)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300010F.png" style="height: 18px;width: 18px;" class="img_2" />Display Chart view (View)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000110.png" style="height: 18px;width: 18px;" class="img_2" />Connect to KIC Server (Connect)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000111.png" style="height: 18px;width: 18px;" class="img_2" />Turn Auto-Screen mode On/Off (View)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000112.png" style="height: 18px;width: 18px;" class="img_2" />Display Previous page (View)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000113.png" style="height: 18px;width: 18px;" class="img_2" />Display Next page (View)</p>
+                            </td>
+                            <td class="td_35">
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000114.png" style="height: 18px;width: 18px;" class="img_2" />Reload Configuration (Configuration)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000115.png" style="height: 18px;width: 18px;" class="img_2" />About box (Help)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000116.png" style="height: 18px;width: 18px;" class="img_2" />Sort by ascending Cpk values (Layout)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000117.png" style="height: 18px;width: 18px;" class="img_2" />Sort by descending Cpk values (Layout)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000118.png" style="height: 18px;width: 18px;" class="img_2" />Sort by ascending PWI values (Layout)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000119.png" style="height: 18px;width: 18px;" class="img_2" />Sort by descending PWI values (Layout)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300011A.png" style="height: 18px;width: 18px;" class="img_2" />Sort by Original order (Layout)</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Configuration</h4>
+                    <p>Reload the configuration – This feature manually reloads the configuration in the event you change the configuration without exiting the KIC Viewer software.</p>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_2">Oven selection – Allows you to turn On/Off the ovens to view.  See Figure 142.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300011B.png" style="height: 323px;width: 383px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 142: KIC Viewer – Activate/Deactivate Ovens</p>
+                    <h4 class="Heading4">Icon View</h4>
+                    <p>The Icon view provides the oven name, product name, Process Window Index (PWI) value, Cpk value, and alarm state for each product as they exit the oven with system software.&#160; The alarm states are color-coded (green, yellow, red) in accordance with the standard system software alarm categories.&#160; This information is organized as a box per oven. See Figure 143.</p>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300011C.png" style="height: 385px;width: 508px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 143: KIC Viewer – Icon View</p>
+                    <p>&#160;</p>
+                    <p>A grey oven box can indicate there is a problem with the oven:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_3">
+                        <li class="ListBullet2">The system software client PC is no longer connected to the KIC Server application.</li>
+                    </ol>
+                    <p class="p_10">As soon as the client PC begins running Virtual Profiling again, the oven box will return either red, yellow, or red based on the current conditions in that oven.</p>
+                    <p class="p_10">&#160;</p>
+                    <p class="p_10">If the KIC Server application was closed, each KIC Viewer will wait until the KIC Server is launched again.&#160; If for any reason the KIC Viewer does not automatically reconnect, select Connect from the main menu, and enter a valid user name and password to reconnect.</p>
+                    <p class="p_10">&#160;</p>
+                    <ol start="2" class="ol_3">
+                        <li class="ListBullet2">The client PC is no longer running Virtual Profiling</li>
+                    </ol>
+                    <p class="p_10">&#160;</p>
+                    <ol start="3" class="ol_3">
+                        <li class="ListBullet2">No products have passed through the oven yet.&#160; The icon for each oven will remain the color grey until the first board has passed through the oven.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Viewing_historical_data3"></a>View Historical Data</h3>
+                    <p>Right-click an oven box in the Icon View to view the history for any oven via the Profile Explorer.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: In order to use this feature, WinVNC software program must be installed and configured.</p>
+                    <h4 class="Heading4">View History Display</h4>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_35">
+                                <p>Only the current product folder appears.</p>
+                                <p>&#160;</p>
+                                <p>If you want to see all products profiled on this oven, then click on the “Browse” button (top right corner). See Figure 144.</p>
+                                <p>&#160;</p>
+                                <p>Click <span class="span_11">OK</span> in the pop up box asking to select a working folder.&#160; Then all of product names appears as shown in Figure 144.</p>
+                                <p>&#160;</p>
+                                <p>Click on the main screen button to exit View History mode.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_35">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300011D.png" style="height: 241px;width: 340px;" class="img_1" />
+                                </p>
+                                <p class="p_20"><span class="span_18">Figure </span><span class="span_18">144</span><span class="span_18">: Profiler Explorer via </span><span class="span_18">AppFor</span><span class="span_18">Viewer</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>The history view provides all the standard system software information such as all the production event logs, production run data such as statistics, and basic SPC graphs. See Figure 145 thru Figure 148.</p>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/z45.png" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Remotely_controlling_a"></a>Remotely Control a System Software Client PC</h3>
+                    <p>Remote Control requires a third-party software named VNC.&#160; VNC software can be downloaded free from the internet. </p>
+                    <p>&#160;</p>
+                    <p>Through the software program VNC, you have the ability to control any system software client that is currently connected to a KIC Server.  The Remote-Control feature is only active when VNC Server is installed and running on the client PC.  This can be useful for clearing alarms, loading recipes, and system administration.</p>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 150pt;" />
+                        <tr>
+                            <td class="td_37">
+                                <p>&#160;</p>
+                                <p>Right-click on an oven box, a menu appears.&#160; Select Remote Control system software PC.&#160; A password dialog box appears.&#160; Enter the VNC Server password. See Figure 149.</p>
+                                <p>&#160;</p>
+                                <p>As long the system software, KIC Server, KIC Viewer and VNC Server software are properly configured, you will have direct-remote control of the selected system software client PC via VNC Viewer software application.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_37">
+                                <p class="p_20">&#160;</p>
+                                <p class="p_20">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000122.png" style="width: 212px;height: 79px;" />
+                                </p>
+                                <p class="p_20"><span class="span_18">Figure </span><span class="span_18">149</span><span class="span_18">: VNC Authentication</span>
+                                </p>
+                                <p class="p_20">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_37">
+                                <p>&#160;</p>
+                                <p>If the VNC Server application is not running on the client PC, a VNC error message appears stating, “Could not connect to KIC Server”. See Figure 150.</p>
+                            </td>
+                            <td class="td_37">
+                                <p class="p_20">
+                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000123.png" style="height: 72px;width: 131px;" class="img_2" />
+                                </p>
+                                <p class="p_20"><span class="span_18">Figure </span><span class="span_18">15043</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_20">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/02000124.jpg" style="height: 258px;width: 352px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 151: Remote Control screen Shot</p>
+                    <p>&#160;</p>
+                    <p>To end Remote Control, and return to the KIC Viewer application, manually close the VNC Viewer software application.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Chart_View"></a>Chart View</h3>
+                    <p class="p_18">The chart view displays the PWI value for each of the last 100 products processed through each oven/ system software installation. See Figure 152.</p>
+                    <p class="p_22">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000125.png" style="height: 340px;width: 447px;" class="img_2" />
+                    </p>
+                    <p class="Caption">Figure 152: KIC Viewer – Chart View</p>
+                    <p>&#160;</p>
+                    <p>In the chart view, right&#8209;click on an oven box to display a full-screen chart for that oven. See Figure 153.</p>
+                    <p>&#160;</p>
+                    <p class="p_22">
+                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000126.png" style="height: 344px;width: 452px;" class="img_2" />
+                    </p>
+                    <p class="Caption">Figure 153: KIC Viewer – Full-screen oven chart view</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

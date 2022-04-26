@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 505px">
+            <tr>
+                <td with="width: 505px">
+                    <p style="font-family: Arial;font-size: 20pt;"><b style="color: #4682b4;">Part 1: The Basic System</b>
+                    </p>
+                    <h1 class="Heading2Char">The Hardware</h1>
+                    <p>There are five major hardware components to the basic system:</p>
+                    <p>&#160;</p>
+                    <ul class="">
+                        <li class="">Ethernet Thermocouple Processing Unit (eTPU)</li>
+                        <li class="">Probes</li>
+                        <li class="">Board sensor</li>
+                        <li class="">Conveyor speed encoder</li>
+                        <li class="">Profiler</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="eTPU"></a>eTPU</h3>
+                    <p class="ListBullet">The eTPU interfaces with the computer using an Ethernet cross-over cable that connects from the UpLink port on the eTPU directly to a USB to Ethernet adapter (or to an installed Network Interface Card (NIC)).&#160; Please follow manufacturers’ instructions to install the USB adapter or NIC.</p>
+                    <p class="ListBullet">&#160;</p>
+                    <p class="ListBullet">The computer used with the system can be a machine that is dedicated to only supporting the software or it can also serve as the oven controller PC.  The software can interface directly with the oven controller on selected models from oven manufacturers.&#160; If you have an oven that is capable of communication with the software, you will want to connect the software to the oven controller computer.</p>
+                    <p class="ListBullet">&#160;</p>
+                    <p class="ListBullet">The eTPU must be plugged into an AC power source.  The eTPU utilizes a universal A/C transformer power supply.  The eTPU ships from the factory with multiple AC connectors to accommodate any connector/voltage requirement.</p>
+                    <p class="ListBullet">&#160;</p>
+                    <h3 class="Heading3"><a name="Probes"></a>Probes</h3>
+                    <p class="ListBullet">The probes are mounted in the oven process chamber.&#160; They are usually suspended from the conveyor rails by oven manufacturer approved brackets.&#160; The probes are connected to the eTPU - Odd/Even ports.&#160; Each probe connector is stamped with an <span class="span_11">E </span>or <span class="span_11">O</span> in order to designate <span class="span_11">Odd</span> or <span class="span_11">Even</span>.&#160; See the <a href="#Hardware_Diagram">Hardware Diagram</a>.</p>
+                    <p class="ListBullet">&#160;</p>
+                    <h3 class="Heading3"><a name="Board_Sensor"></a>Board Sensor</h3>
+                    <p class="ListBullet">The Board Sensor is mounted near the entrance of the oven.&#160; It can be mounted further into the oven if necessary.&#160; The Board Sensor is usually mounted to the fixed conveyor rail.&#160; The Board sensor is connected to any of the eTPU&#160; Sensor ports.&#160; Dual lane systems use a board sensor for each lane.</p>
+                    <p class="ListBullet">&#160;</p>
+                    <h3 class="Heading3"><a name="Conveyor_Speed_Encoder"></a>Con<span class="Heading3Char">veyor </span><span class="Heading3Char">S</span><span class="Heading3Char">peed </span><span class="Heading3Char">E</span><span class="Heading3Char">ncoder</span></h3>
+                    <p class="ListBullet">The Conveyor Speed Encoder is mounted to read pulses from a gear that turns while the oven is operating.&#160; The Conveyor Speed Encoder connects to any of the eTPU Sensor ports.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Profiler"></a>Profiler</h3>
+                    <p>The profiler is the data acquisition component of the system.&#160; It provides the on-board, through-the-process temperature data.&#160; The software analyzes this data together with oven zone temperature and conveyor speed factors to display the thermal profile graphically. </p>
+                    <p>&#160;</p>
+                    <p>You can use the software with several profiler models such as:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="">
+                        <li class="">SPS Smart Profiler</li>
+                        <li class="">X<sup>5</sup></li>
+                        <li class="">K<sup>2</sup></li>
+                    </ol>
+                    <p class="p_14">&#160;</p>
+                    <p>&#160;</p>
+                    <p>The software works the same with any of the profilers.&#160; Once you have the software running, you indicate your specific profiler model.&#160; The program then displays the text and graphics that reflect the model you chose.&#160; When afterward running the program, the text and graphics that appear reflect the model you selected.  (The artwork that appears throughout this manual reflects a variety of profiler models.)</p>
+                    <p>&#160;</p>
+                    <p>Profilers can operate in either of two modes—datalog and wireless<span class="span_12">.</span>&#160; In standard datalog mode, the profiler records temperature data as it moves through the thermal process.&#160; A cable then transfers the data to your software application computer.&#160; In wireless mode, the profiler transmits data directly to the computer by radio signals or Wi-Fi instead of an attached cable.&#160; The application software can then display the accumulating data in real-time.</p>
+                    <p>&#160;</p>
+                    <p>For specific information regarding your profiler, consult one of the following publications:</p>
+                    <p>&#160;</p>
+                    <ul class="">
+                        <li>
+                            <MadCap:shortcut path="PTG-330310-000 SPS Smart Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">SPS Smart Profiler Hardware Guide (Publication Number PTG-330310-000)</MadCap:shortcut>
+                        </li>
+                        <li>
+                            <MadCap:shortcut path="EXP-337310-000 X5 Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">X<sup>5</sup> Profiler Hardware Guide, (Publication Number EXP-337310-000)</MadCap:shortcut>
+                        </li>
+                        <li>
+                            <MadCap:shortcut path="EXP-331310-000 K2 Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">K<sup>2</sup> Profiler Hardware Guide, (Publication Number EXP-331310-000)</MadCap:shortcut>
+                        </li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Hardware_Diagram"></a>Hardware Diagram</h2>
+                    <p>The hardware diagram below illustrates the interconnection of the hardware components (including some optional hardware):</p>
+                    <p class="p_15" style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/08000002.png" style="height: 599px;width: 638px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 1: Hardware Configuration Diagram</p>
+                    <p>&#160;</p>
+                    <p>It is critical that all system hardware be installed and configured properly.  Any malfunctioning or incorrectly setup component may prevent the system from providing accurate data or from running Virtual Profiling.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Dual_Lane_Systems"></a>Dual Lane Systems</h2>
+                    <p>The automatic system can monitor production through dual lane reflow ovens. Dual lane functionality supports two control configurations:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="">
+                        <li class="">Dual Lane <span class="span_12">Dual System</span></li>
+                        <li class="">Dual Lane <span class="span_12">Single System</span></li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>A <span class="span_12">Dual Lane-Dual System</span> configuration uses two instances of the software application to track different recipes through the oven.&#160; </p>
+                    <p>&#160;</p>
+                    <p>The <span class="span_12">Dual Lane-Single System</span> tracks two lanes of the same recipe with one instance of the software.&#160; </p>
+                    <p>&#160;</p>
+                    <p>See <a href="Software_operation_with_VAR_communication.htm#Dual_Lane_Systems_And_Functionality">Dual Lane Systems and Functionality</a> for details on installation and configuration.</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

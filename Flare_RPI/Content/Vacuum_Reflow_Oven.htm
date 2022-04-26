@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <p>&#160;</p>
+        <h1 class="Heading1"><a name="Vacuum_Reflow_Oven_Systems"></a>Vacuum Reflow Oven Systems And Functionality</h1>
+        <p>Vacuum reflow ovens typically include an extra chamber in between the heated and cooling sections of the oven. During production, the PCB travels into the vacuum zone, the chamber is sealed off from the rest of the process tunnel, and a vacuum is drawn. The chamber is opened, and then the PCB continues into the cooling section and exits the oven. The purpose of adding a vacuum chamber to the process is to reduce voiding in the formation of the solder joints. The RPI system can be integrated into select* vacuum reflow ovens. This section outlines the unique capabilities of the <i>RPI Vacuum</i> system.</p>
+        <p>* <i>Contact KIC to check for compatibility with your machine</i></p>
+        <p>&#160;</p>
+        <p>In addition to the other functionality described in this manual, the <i>RPI Vacuum</i> system includes:</p>
+        <ul>
+            <li>Process monitoring capabilities throughout the entire process, including the vacuum zone</li>
+            <li>Time duration PCB spent in vacuum zone automatically saved with each profile</li>
+            <li>Time duration PCB spent in vacuum zone automatically saved for each PCB during production</li>
+            <li>A dynamic graphical display of the vacuum zone for each PCB (based on the time each PCB spent in the chamber)</li>
+        </ul>
+        <p>Note: Software communication with the applicable oven controller software may be required for the <i>RPI Vacuum system</i>.</p>
+        <h2 class="Heading2"><a name="Vacuum_System_Hardware"></a>RPI Vacuum System Hardware</h2>
+        <p>The <i>RPI Vacuum</i> system incorporates custom built thermal probes unique to the vacuum ovens which allow for monitoring the heated zones, vacuum chamber, and cooling section to provide complete monitoring of the PCB through the process.</p>
+        <h2 class="Heading2"><a name="Display_Vacuum_Reflow_profile"></a>RPI Vacuum System Functionality</h2>
+        <p>During profiling, the system identifies the duration that the PCB spent in the vacuum chamber, and the graphical display of the vacuum zone is drawn to match this time. A window is also displayed (and saved with the profile) showing how much time, in seconds, the PCB spent in the chamber.</p>
+        <p>
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014016.png" />
+        </p>
+        <p>On vacuum ovens, even if the vacuum chamber is not in use, the software will still display the vacuum zone on the graph, and show the time spent in that zone (based on length of zone defined and conveyor speed setpoint).</p>
+        <p>
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014017.png" />
+        </p>
+        <p><a name="Display_Vacuum_Reflow_VP"></a>During production, as with systems installed on non-vacuum ovens, the live-mode screen displays both the baseline and virtual profile information.  To distinguish between the two, the baseline profile appears in a solid line format, while the virtual profile appears in dashed lines.</p>
+        <p>&#160;</p>
+        <p>The window showing the <i>Time in Vacuum Chamber</i> includes both the time from the baseline profile as well as the time the current production PCB spent in the chamber:</p>
+        <p>
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014018.png" />
+        </p>
+        <p>Additionally, a green line (<i>End of Vacuum Zone Indicator</i>) appears on the graph representing the calculated end of the vacuum zone. Depending on the time a given PCB spends in the chamber, this green line will shift forward or back to show the relative ‘size’ of the zone. More time in the chamber equates to a ‘longer’ zone, and less time a ‘shorter’ zone.</p>
+        <p>&#160;</p>
+        <p>As you can see in the example below, this PCB spent approximately 26 seconds less in the chamber than the baseline, so the green <i>End of Vacuum Zone</i> indicator is shifted forward to represent this ‘shorter’ zone size. Due to this, you can also see the VP (dotted lines) shows an earlier drop in the TC temperatures compared to the baseline:</p>
+        <p>
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014019.png" />
+        </p>
+        <p>In this example, the baseline profile spent much more time in the chamber, so the display of the vacuum zone is extended to represent a ‘longer’ zone:</p>
+        <p>
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014020.png" />
+        </p>
+        <h3 class="Heading3">Additional Warning for Vacuum Process</h3>
+        <p>On <i>RPI Vacuum</i> systems, an additional warning can be enabled for users who want to be notified if the time that production boards spend in the vacuum chamber varies too much from their baseline profile setup.</p>
+        <table style="width: 100%;">
+            <col style="width: 300px;" />
+            <col style="width: 20px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="font-size: 10pt;">
+                        <p>&#160;</p>
+                        <p>To enable this feature, access the <i>Global Preferences/Control Limits</i> tab and select the checkbox for – ‘<i>Trigger Warning if vacuum time varies from baseline by more than</i>’.
+</p>
+                        <p>&#160;</p>
+                        <p>
+Enter the percentage of variation in time you will allow before the system should display the warning message. 
+</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td style="text-align: left;">
+                        <img src="Resources/Images/FTM0003.png" style="width: 515px;height: 423px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 10pt;">
+                        <p>Additionally, you can select the <i>Disable Alarm</i> tab to further customize what happens if this warning occurs. 
+</p>
+                        <p><b>NOTE</b>: Selecting a checkbox on this screen DISABLES the particular function.
+</p>
+                        <p>&#160;</p>
+                        <p>
+By default, the warning message will appear on the screen (checkbox not selected), the Alarm Relay will NOT be activated (checkbox selected), and the warning will be included in Live Data Output files (when LDO is in use and enabled).
+
+</p>
+                        <p>&#160;</p>
+                        <p>Click the green checkmark button to save any changes and return to the RPI main screen.
+</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td style="text-align: left;">
+                        <img src="Resources/Images/FTM0004.png" style="width: 520px;height: 421px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p><b>Example of Warning Message
+</b>
+                        </p>
+                        <p>When this feature is enabled, and the time in the vacuum chamber varies from the baseline time by more than the allowable percentage, the following warning message will be displayed when the board exits the oven and the Virtual Profile is calculated:
+
+</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td style="text-align: left;">
+                        <img src="Resources/Images/FTM0005.png" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="Heading3">Additional Board Sensing Logic for Vacuum Process</h3>
+        <p>On some dual lane vacuum reflow machines, stoppers may be used by the oven manufacturer to sync up the products in the two lanes before allowing them to enter into the heated zones. In these configurations, a special function can be enabled which will alter the standard board sensor operation so that if a product is stopped (and is underneath the board sensor), the board sensor will only detect it as a single product.</p>
+        <table style="width: 100%;">
+            <col style="width: 300px;" />
+            <col style="width: 20px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="font-size: 10pt;">
+                        <p>&#160;</p>
+                        <p>To enable this feature, shut down the software and open the <i>C:\RPI\ConfigurationProgram.exe</i> application.
+
+</p>
+                        <p>&#160;</p>
+                        <p>On the Hardware Tab, select the Enable Fixed Board Length Logic checkbox. When this feature is enabled, you can also enable an alarm notification to alert you if the board sensor is triggered too long (board stuck, improper sensor function, etc.). <i>Select the Alarm if Board Sensor On for “x” seconds</i> checkbox and then enter the amount time delay before the alarm should be generated. Click <i>Apply</i> and <i>OK</i> to save your changes and exit the Configuration utility.
+
+</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td style="font-size: 10pt;text-align: left;">
+                        <img src="Resources/Images/FTM0006.png" style="width: 515px;height: 491px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 10pt;">
+                        <p>&#160;</p>
+                        <p><b>Example of Alarm Message</b><![CDATA[
+]]></p>
+                        <p>When this feature is enabled, and the board sensor is triggered longer that the limit set, the following alarm message will be displayed:
+</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td style="font-size: 10pt;text-align: left;">
+                        <img src="Resources/Images/FTM0007.png" style="width: 362px;height: 233px;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

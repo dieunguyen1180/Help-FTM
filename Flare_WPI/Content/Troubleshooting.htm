@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1"><a name="Understanding_status_messages_and_alarms"></a>Status Messages And Alarms</h1>
+                    <p>The software communicates system status through messages that it displays on the monitor.&#160; Some simply report an operating condition, some provide a warning that process parameters are changing, and still others, called <span class="span_6">alarms</span><span class="span_6">,</span> announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.&#160; </p>
+                    <p>&#160;</p>
+                    <table class="table_1" style="width: 90%;">
+                        <col style="width: 402px;" />
+                        <col />
+                        <tr>
+                            <td class="td_29">
+                                <p>Alarm messages typically appear in red. An alarm status may accompany a signal from the DAU/eTPU to the alarm relay, which in turn may trigger hardware-related events such as sounding audible alarms, lighting signal towers, or stopping infeed conveyors.</p>
+                            </td>
+                            <td class="td_29">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/06000112.png" style="width: 251px;height: 159px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Some status messages and alarms are specific to different functions of the software.&#160; Some may appear when you are first running profiles to establish a baseline.&#160; Others appear only when you begin Virtual Profiling.</p>
+                    <h2 class="Heading2"><a name="Acknowledging_alarms"></a>Acknowledge Alarms</h2>
+                    <table style="width: 90%">
+                        <col style="width: 400px;" />
+                        <col />
+                        <tr>
+                            <td class="td_30">
+                                <p>&#160;</p>
+                                <p>Once displayed on the monitor, an operator needs to acknowledge the alarm, clicking on it to notify the software that the message has been received and make the displayed panel disappear.&#160; </p>
+                            </td>
+                            <td class="td_30">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000113.png" style="width: 264px;height: 168px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_31">
+                                <p class="p_6">&#160;</p>
+                                <p class="p_6">You can use the basic password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the KIC2000UserSettings.kiccfg file:</p>
+                                <p class="p_10">[HOST]</p>
+                                <p class="p_6">UsingPasswordwithRedAlarm=1</p>
+                                <p><b>Note:</b> Enabling this function only applies to alarms.  A simple mouse click acknowledges and clears warning messages.</p>
+                                <p>&#160;</p>
+                                <p class="p_6">Next, you need to specify a password on the Global Preferences screen <span class="span_6">Engineer Password</span> option.&#160; Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.</p>
+                            </td>
+                            <td class="td_32">
+                                <p class="p_6">&#160;</p>
+                                <p class="p_6">&#160;</p>
+                                <p class="p_6">&#160;</p>
+                                <p class="p_6" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000114.png" style="height: 29px;width: 150px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="p_10">&#160;</p>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000115.png" style="width: 387px;height: 250px;" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Profiling_and_baseline"></a>Messages During Profiling and Baseline Profiling</h2>
+                    <p>During the profiling portion prior to starting a Virtual Profile, you may experience some conditions that generate alarms or notification messages.  Below is a table of some of the messages that you might see during this process:  See Table 1.</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_2" style="width:80%">
+                        <tr style="height: 22pt;">
+                            <td class="td_33" style="color: #ffffff;">
+                                <p class="Important">Message Alarms</p>
+                            </td>
+                            <td class="td_33" style="color: #ffffff;">
+                                <p><span class="span_38">Message Description</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_34">
+                                <p class="p_61">Message, High PWI</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_62">Recent profile of xxx%, PWI must be 90%</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_34">
+                                <p class="p_61">Message Alarm H1</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_62">DAU/eTPU Communication Failure - wait 5 seconds and try again</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_34">
+                                <p class="p_61">Message Alarm H7</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_10"><span class="span_39">Conveyor has stopped or encoder has been </span><span class="span_39">disconnected Virtual</span><span class="span_39"> Profiling </span><span class="span_39">cannot</span><span class="span_39"> be started.</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 1: Profiling System Alarms</p>
+                    <h2 class="Heading2"><a name="System_message_alarms"></a>System Message and Alarms</h2>
+                    <h3 class="Heading3">Message, High PWI</h3>
+                    <table style="width: 90%">
+                        <col style="width: 403px;" />
+                        <col />
+                        <tr>
+                            <td class="td_35">
+                                <p>If the verification profile PWI is &gt;= 100%, you will receive this message when starting the VP.</p>
+                                <p>If there was a problem with the most recent profile, it can be deleted, and the system will try to use the next most recent profile as the baseline profile.  Otherwise, you are advised to run another profile.  See Figure 87.</p>
+                            </td>
+                            <td class="td_35">
+                                <p class="p_3" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000116.png" class="img" />
+                                </p>
+                                <p style="text-align: center;">Figure 87: Message High PWI</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_35">
+                                <h3 class="Heading3">Alarm Message H1</h3>
+                                <p>No communication. This message can appear when trying to start VP and the DAU/eTPU is disconnected or not communicating. If it’s a basic timing issue, waiting 5 seconds can allow a connection to the DAU/eTPU to be re-established.  See Figure 88.</p>
+                            </td>
+                            <td class="td_35">
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000117.png" class="img" />
+                                </p>
+                                <p style="text-align: center;">Figure 88: Alarm H1</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_35">
+                                <h3 class="Heading3">Alarm H7</h3>
+                                <p>This alarm will appear when trying to start a Virtual Profile from the Profile Explorer.  The machine conveyor must be running and set to the correct speed settings in order to start Virtual profiling.  See Figure 89.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_35">
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000118.png" class="img" />
+                                </p>
+                                <p style="text-align: center;">Figure 89: Alarm H7</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Alarms and Messages during Virtual Profiling</h3>
+                    <p>The software incorporates the use of warning and alarm dialog screens to let you know if there is a problem and the cause for that problem.  Below is a partial list of the warning and alarm dialog screens with explanations.  These Alarms are active only when Virtual profiling is running.</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_2" style="width: 80%">
+                        <tr style="height: 36pt;">
+                            <td class="td_36">
+                                <p class="p_63">Process Alarms</p>
+                            </td>
+                            <td class="td_37">
+                                <p class="p_63">Description</p>
+                            </td>
+                            <td class="td_37">
+                                <p class="p_63">Activates Alarm Relay</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm # 1</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">PWI=x% - Process is out of spec</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm # 5</p>
+                            </td>
+                            <td class="td_39">
+                                <p><span class="span_27">No Barcode read for this board.</span><span class="span_27">&#160; –or–</span>
+                                </p>
+                                <p><span class="span_27">No B</span><span class="span_27">arcode read for xxx boards.</span>
+                                </p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm # 5A</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">Process Traceability barcode scan failed</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm # 5C</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">Process Control barcode scan failed</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm # 8</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">The length of the current product does not match the length of the product during the baseline profile.</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm # 11</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">The KIC speed sensor has detected that the conveyor speed has changed significantly since the baseline.</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm # 12</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">Incorrect Process Control String (Barcode Option).</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_65">Yes</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 2: Virtual Profiling – Process Alarms</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_2" style="width: 80%">
+                        <tr style="height: 36pt;">
+                            <td class="td_36">
+                                <p class="p_63">Hardware Alarms</p>
+                            </td>
+                            <td class="td_37">
+                                <p class="p_63">Description</p>
+                            </td>
+                            <td class="td_37">
+                                <p class="p_63">Activates Alarm Relay</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm H1</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">DAU/eTPU Communication Failure (happened after Alarm H2)</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm H2</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">DAU/eTPU Lost Communication with PC.</p>
+                                <p class="p_64">Note: This alarm condition can activate the alarm relay that is controlled by the DAU/eTPU<![CDATA[
+                                ]]></p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">Yes or No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Alarm H7</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">Conveyor Stopped or Speed Encoder broken or not connected properly.</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_65">Yes</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 3: Virtual Profiling – Hardware Alarms</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_2" style="width: 80%">
+                        <tr style="height: 36pt;">
+                            <td class="td_40">
+                                <p class="p_63">Warnings</p>
+                            </td>
+                            <td class="td_41">
+                                <p class="p_63">Description</p>
+                            </td>
+                            <td class="td_41">
+                                <p class="p_63">Activates Alarm Relay</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Warning # 2</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">This process is likely to go out of spec soon.</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Warning # 3</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">The last profile was out of spec.</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_32">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_38">
+                                <p class="p_32">Warning # 4</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_64">Machine temps have changed significantly since baseline.</p>
+                            </td>
+                            <td class="td_39">
+                                <p class="p_65">No</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 4: Virtual Profiling – Warnings</p>
+                    <h3 class="Heading3">When Alarm #5a Occurs
+                    </h3>
+                    <p>When the Barcode Traceability feature is enabled and the Barcode Product Sensor (BPS) detects a product whose barcode label has not been read, or the BPS is tripped accidentally, the alarm #5A is activated and the process is stopped via the alarm relay.</p>
+                    <p>&#160;</p>
+                    <p>Alarm #5A displays four alarm buttons: <b>Manual Entry Keyboard/Handheld Scanner, Rescan using Fixed Mount Scanner, Proceed without a Barcode, and Remove this board from Line.</b></p>
+                    <h4 class="Heading4">Manual Entry Keyboard/Handheld scanner
+                    </h4>
+                    <p>Click this button when you want to enter the barcode again by using either the keyboard or a handheld scanner connected to a USB Port.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 400px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Manual Entry Keyboard/Handheld Scanner</b> <img src="Resources/Images/image5.png" style="width: 81px;height: 38px;" />   button. <br /><br /><br />The software displays the Barcode input field and hides all other unselected buttons.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image4.png" style="width: 375px;height: 240px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="2">
+                                        <li>Type in the new barcode and press the <b>Enter</b> key.<br /><br /><br />The software will clear the alarm message and deactivate the Alarm relay to allow the board into the machine.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image6.png" style="width: 378px;height: 243px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>The barcode string will be added to the VP data for that board:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image7.png" style="width: 357px;height: 468px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Rescan Using Fixed Mount Scanner
+</h4>
+                    <p>Click this button when you want to scan the barcode again by using the fixed mount Barcode scanner.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 400px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Rescan using Fixed Mount Scanner</b> <img src="Resources/Images/image9.png" style="width: 76px;height: 36px;" />   button.<br /><br /><br />The software displays the Barcode input field and hides all other unselected buttons.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image8.png" style="width: 369px;height: 235px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="2">
+                                        <li>Scan the barcode with the fixed mounted Barcode scanner.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image10.png" style="width: 375px;height: 240px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>Once the barcode is scanned, the software will clear the alarm message and deactivate the Alarm relay to allow the board into the machine.</p>
+                    <p>&#160;</p>
+                    <p>This barcode string will be added to the VP data for that board:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image11.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Proceed Without a Barcode
+                    </h4>
+                    <p>&#160;</p>
+                    <p>Click this button when you want to process the board without any barcode.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width : 90%">
+                            <col style="width: 399px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Proceed without a Barcode</b> <img src="Resources/Images/image14.png" style="width: 91px;height: 43px;" />  button. <br /><br /><br />The software will clear the alarm message and deactivate the Alarm relay to allow the board into the machine without a barcode.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image12.png" style="width: 377px;height: 241px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image15.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Remove this board from Line
+                    </h4>
+                    <p>&#160;</p>
+                    <p>Select this button if this board will not be going into the machine at this time.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 401px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <p>1.	Click the <b>Remove this board from Line</b><![CDATA[  ]]><img src="Resources/Images/image17.png" style="width: 80px;height: 38px;" /> button.</p>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p>2.	Remove the board from the link conveyor.</p>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image16.png" style="width: 365px;height: 234px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="3">
+                                        <li>Click the green OK check button <img src="Resources/Images/image19.png" style="width: 44px;height: 23px;" /> .<br /><br />The software clears the alarm message and deactivates the Alarm relay to get ready for the next board.<br /><br />If user clicks the “Cancel” button, the software  returns to alarm #5A.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image18.png" style="width: 368px;height: 236px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">When Alarm #5c Occurs
+                    </h3>
+                    <p>&#160;</p>
+                    <p>When the Barcode-Process Control feature is enabled and the Barcode Product Sensor (BPS) detects a product whose barcode label has not been read, or the BPS is tripped accidentally, the alarm #5C is activated and the process is stopped via the alarm relay.</p>
+                    <p>&#160;</p>
+                    <p>Alarm #5C displays four alarm buttons: <b>Manual Entry Keyboard/Handheld Scanner, Rescan using Fixed Mount Scanner, Proceed without a Barcode, and Remove this board from Line.</b></p>
+                    <h4 class="Heading4">Manual Entry Keyboard/Handheld Scanner
+                    </h4>
+                    <p>&#160;</p>
+                    <p>Click this button when you want to enter the barcode again by using either the keyboard or a handheld scanner connected to a USB Port.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 401px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Manual Entry Keyboard/Handheld Scanner</b> <img src="Resources/Images/image23.png" style="width: 75px;height: 35px;" />   button.<br /><br /><br />The software displays the Barcode input field and hides all other unselected buttons.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image22.png" style="width: 362px;height: 232px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="2">
+                                        <li>Type in the new barcode and press the <b>Enter</b> key.<br /><br /><br />The software will clear the alarm message and deactivate the Alarm relay to allow the board into the machine.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image24.png" style="width: 365px;height: 234px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <p><b>NOTE:</b> This barcode will be added to the board if the software also is using the Barcode-Traceability feature.</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Rescan Using Fixed Mount Scanner
+                    </h4>
+                    <p>&#160;</p>
+                    <p>Click this button when you want to scan the barcode again by using the fixed mounted Barcode scanner.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 400px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Rescan using Fixed Mount Scanner</b> <img src="Resources/Images/image28.png" style="width: 69px;height: 32px;" />   button. <br /><br />The software displays the Barcode input field and hides all other unselected buttons.</li>
+                                    </ol>
+                                    <p>&#160;</p>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image26.png" style="width: 367px;height: 235px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="2">
+                                        <li>Scan the barcode with the fixed mounted Barcode scanner.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image27.png" style="width: 366px;height: 233px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>Once the barcode is scanned, the software will clear the alarm message and deactivate the Alarm relay to allow the board into the machine.</p>
+                    <p>&#160;</p>
+                    <p><b>NOTE:</b> This barcode will be added to the board if the software also is using the Barcode-Traceability feature.</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Proceed without a Barcode<![CDATA[
+                    ]]></h4>
+                    <p>&#160;</p>
+                    <p>Click this button when you want to process the board without any barcode.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 400px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Proceed without a Barcode</b> <img src="Resources/Images/image31.png" style="width: 72px;height: 34px;" />  button.<br /><br /><br />The software will clear the alarm message and deactivate the Alarm relay to allow the board into the machine without a barcode.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image30.png" style="width: 358px;height: 229px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Remove this board from Line.
+                    </h4>
+                    <p>&#160;</p>
+                    <p>Select this button if this board will not be going into the machine at this time.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 400px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Remove this board from Line</b> <img src="Resources/Images/image35.png" style="width: 79px;height: 38px;" />  button.</li>
+                                    </ol>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <ol start="2">
+                                        <li>Remove the board from the link conveyor.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image33.png" style="width: 364px;height: 233px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>3.	Click the green OK check button <img src="Resources/Images/image36.png" style="width: 57px;height: 31px;" />.</p>
+                                    <p>&#160;</p>
+                                    <p>The software clears the alarm message and deactivates the Alarm relay to get ready for the next board.</p>
+                                    <p>&#160;</p>
+                                    <p>If user clicks the “Cancel” button, the software  returns to alarm #5C.</p>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image34.png" style="width: 358px;height: 229px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <h3 class="Heading3">When Alarm#12 Occurs
+                    </h3>
+                    <p>&#160;</p>
+                    <p>When a barcode string is received that differs in format from the current product, the software will display a red alarm message - Alarm#12 – with three buttons: Stop Virtual Profiling, Process with current Barcode, Remove the board from Line.</p>
+                    <h4 class="Heading4">Stop Virtual Profiling
+                    </h4>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 400px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Stop Virtual Profiling</b><![CDATA[   ]]><img src="Resources/Images/image44.png" style="width: 79px;height: 37px;" /> button.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image43.png" style="width: 357px;height: 227px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="2">
+                                        <li>	If there is still product in the machine, an additional message will display to wait until they all exit..</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image153.png" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <h4 class="Heading4">Process with Current Barcode
+                    </h4>
+                    <p>&#160;</p>
+                    <p>Users may deactivate the alarm relay to allow a board into the machine even if the barcode is in incorrect. Use this button to stop the alarm when you want to use the barcode that is on the label.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 400px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Process with Current Barcode</b> button <img src="Resources/Images/image49.png" style="width: 59px;height: 29px;" />.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image48.png" style="width: 348px;height: 224px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>This barcode will be added to the board if the <b>Traceability</b> feature is also enabled in the <b>Barcode Option</b> tab.</p>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image50.png" style="width: 247px;height: 300px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <h4 class="Heading4">Remove This Board From Line
+                    </h4>
+                    <p>You use this feature when you want to remove a PCB out of Line before it is passed into the machine, but are going to keep the current Virtual Profile running.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <table style="width: 90%">
+                            <col style="width: 400px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Click the <b>Remove this board from Line</b> button <img src="Resources/Images/image52.png" style="width: 72px;height: 34px;" /> .</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image51.png" style="width: 333px;height: 212px;" />
+                                    </p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="2">
+                                        <li>Remove the board from the line and then click the green check button  <img src="Resources/Images/image54.png" style="width: 42px;height: 22px;" />.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <p style="text-align: center;">
+                                        <img src="Resources/Images/image53.png" style="width: 336px;height: 213px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <h1 class="Heading1"><a name="Light_Tower"></a>Light Tower
+                    </h1>
+                    <p>&#160;</p>
+                    <p>There are two available light towers – one is connected directly to the optional Alarm Relay and uses a single Red light; the other connects to the USB port of the PC, and uses 3 colored lights – Red, Yellow, and Green.</p>
+                    <p>&#160;</p>
+                    <p>Both lights are a means of providing an audio or visual cue when the automatic system software has determined that the process has reached an out-of-control condition.</p>
+                    <h2 class="Heading2"><a name="Standard_Light_Tower"></a>Standard Light Tower
+                    </h2>
+                    <p>&#160;</p>
+                    <p>This light tower plugs directly into the <i>Alarm Relay</i> box. It uses a single Red light with an audible buzzer, which are both activated anytime an alarm condition occurs. Because it is controlled directly by the <i>Alarm Relay</i>, the light and audible buzzer will stay on for as long as the <i>Alarm Relay</i> is energized.</p>
+                    <h2 class="Heading2"><a name="3_Color_USB_Light_Tower"></a>3 Color USB Light Tower
+                    </h2>
+                    <p>&#160;</p>
+                    <p>As this light tower connects to a USB port on the PC running the WPI, it can be used with or without the <i>Alarm Relay</i>. With the use of the USB Light Tower, you get additional visual information on the state of your process through a variety of LED indicators – Red, Yellow, and Green. You also have the ability to mute the audible buzzer when an alarm condition occurs. When an alarm occurs, a small button will appear in the upper left corner of the Crystal Ball. Clicking on this button will mute the audible buzzer. Clicking the button a second time will un-mute the buzzer. If left muted, and the process returns to an in-spec condition, the buzzer will be automatically be active again when the next alarm occurs.</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image103.png" />
+                    </p>
+                    <h3 class="Heading3">LED Light Status
+                    </h3>
+                    <p>&#160;</p>
+                    <p>When VP is not running – All LEDs and buzzer are turned off</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in-spec, but the machine is empty – GREEN LED flashing</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in-spec with product in the machine – GREEN LED on solid</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in a Warning condition – YELLOW LED on solid</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in an Alarm condition – RED LED on solid</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in an Alarm condition w/Buzzer muted – RED LED flashing</p>
+                    <p>&#160;</p>
+                    <p>To customize the operation of either the USB Light Tower or the Alarm Relay, see the <a href="Appendix_B.htm#Alarm2" style="color: #0000ff; text-decoration: underline;">Alarm tab</a> section.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> For more information about the Light Tower and Alarm Relay, see the <MadCap:shortcut path="TFS-326000-000 WPI Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">TFS-326000-000 WPI Hardware Installation and Maintenance Manual</MadCap:shortcut></p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

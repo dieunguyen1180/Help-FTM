@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1"><a name="Virtual"></a>Virtual Profiling</h1>
+                    <p><i>Virtual Profiling</i> (VP) is a means of reliably predicting the thermal profile <i>of every board in a production</i> run based on a comparison of real-time temperature and conveyor speed data against a baseline profile established by an earlier profiler run through the machine.  For a given product, this baseline needs to represent an optimum machine recipe with a good PWI value and a quality soldering result.</p>
+                    <p>&#160;</p>
+                    <p>During the profiler run, the WPI software simultaneously collects temperature data from the board, from the probes installed at product level, and the other installed sensors. The software calculates a mathematical correlation between these temperature readings and stores this data as part of the baseline profile.</p>
+                    <p>&#160;</p>
+                    <p>Once the baseline is established, the WPI software can be put into inspection mode, recording real-time speed and temperature data as a production run of the same boards passes through the machine.  Comparing real-time data to the baseline profile, WPI algorithms accurately extrapolate a simulated thermal profile for each board.  WPI updates and saves the VP profile data as each board exits the machine, creating a valuable quality assurance record of each production unit.</p>
+                    <p>&#160;</p>
+                    <p>During inspection mode (VP), the software displays each boards profile chart and a table of data based on its process window.  Other screens show PWI and SPC control charts.  When machine data varies significantly from the baseline profile, WPI displays appropriate warnings to system operators.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b>  Before you start Virtual Profiling, ensure the WPI system hardware is properly installed and configured.</p>
+                    <h2 class="Heading2"><a name="Getting_a_valid_baseline"></a>Get a Valid Baseline Profile</h2>
+                    <p>Virtual Profiling makes use of a special profile, called the baseline profile, as the data model for its predictions.  The software requires that you first establish this baseline before it enables Virtual Profiling. The baseline profile should represent your optimum machine recipe for your product and needs to meet the Virtual Profile criteria shown below:</p>
+                    <p>&#160;</p>
+                    <ul style="list-style-type: square;">
+                        <li>The PWI must be below the Maximum PWI to allow the VP value as set in Global Preferences.</li>
+                        <li>The conveyor speed measured by the encoder must be within 20% of the specified conveyor speed.</li>
+                        <li>Probe temperatures must be valid; if any probe thermocouple reports a range of greater than 30C between adjacent readings (every 2.5 seconds), the WPI software will consider them invalid.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>If your profile meets the above criteria, it can work as a baseline profile.  The baseline profile will display differently in the Profile Explorer screen—the profile’s icon will have an overlying green VP.<![CDATA[  ]]><img src="Resources/Images/SFT-324000-000 RPI User Manual/06000073.png" style="width: 24px;height: 24px;" /></p>
+                    <p>&#160;</p>
+                    <p>If you suspect the current baseline profile needs replacement by a newer version that more closely matches current production conditions, the software lets you create a new baseline during ongoing production.  As long as this <i>verification profile</i> meets VP criteria, it can become the new baseline profile. See <a href="Monitoring_production_in_live_mode.htm#Verifying_the_Virtual" style="color: #0000ff; text-decoration: underline;">Verify the Virtual Profile</a>.</p>
+                    <h3 class="Heading3"><a name="Integrate_Empty_Oven_Data"></a>Integrate Empty Machine Data</h3>
+                    <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <i>board present</i> and <i>board absent</i> states along the length of the probes.  To obtain this data most efficiently, KIC recommends running the profile board with similar <i>boards moving ahead of it and an empty conveyor behind it</i>.  The downstream flow of boards stabilizes the temperatures and gives a good approximation of normal production conditions.  As the profile board progresses, the probes can measure the temperature when a board is not present.  The software can integrate this comparative data for a more accurate predictive capability.  The machine should remain empty until the profiler and board completely exits the process chamber.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: Be aware of the potential to put the system into a state where the software lacks sufficient empty machine data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profile board into an ongoing production flow.  With other boards both ahead of and behind the profile board, no interval for gathering empty machine data occurs.  A grey crystal ball indicates an unable to predict state. See <a href="Monitoring_production_in_live_mode.htm" style="color: #0000ff; text-decoration: underline;">Monitoring production in live mode</a>.</p>
+                    <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load a Virtual Profile</h2>
+                    <p>There are several ways to begin Virtual Profiling:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListNumber2">Open the Profile Explorer.  Select your product folder in the upper-left corner.  This will display the profiles and events for the selected product.  If you have a profile that meets Virtual Profiling criteria, the profile icon is overlaid with a green VP.  This qualifying profile (baseline) will always be the most recent profile that meets Virtual Profiling criteria (only one profile can qualify as the baseline).<br /><br />No need to highlight the baseline profile, simply click the Start Virtual Profiling button.  This will start Virtual profiling for the selected product.</li>
+                    </ol>
+                    <table class="table_1">
+                        <col style="width: 338pt;" />
+                        <col style="width: 140pt;" />
+                        <tr>
+                            <td class="td_17">
+                                <p>&#160;</p>
+                                <ol start="2" class="ol_1">
+                                    <li class="ListNumber2">If you have run a profile that meets the Virtual Profile criteria, then the <i>Start Virtual Profiling</i> button will appear once the profile has completed.  Click the button to begin Virtual Profiling for the indicated product.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_17">
+                                <p>&#160;</p>
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000060.png" style="width: 120px;height: 66px;" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_17">
+                                <p>&#160;</p>
+                                <ol start="3" class="ol_1">
+                                    <li class="ListNumber2">If you have enabled the Profile Grouping utility, click the link button to associate groups of product models with a baseline profile and to select an individual model for a Virtual Profile production run.  When using the Profile Grouping utility, the Start Virtual Profiling button does not appear on the Profile Explorer screen.</li>
+                                </ol>
+                            </td>
+                            <td class="td_17">
+                                <p>&#160;</p>
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000071.png" style="width: 120px;height: 65px;" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="ListNumber2">&#160;</p>
+                    <p><span class="span_7">Caution</span>: Your software security key must be connected prior to enabling Virtual Profile mode.  If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message appears.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000071a.png" />
+                    </p>
+                    <p style="text-align: center;">Figure 21: Profile Explorer – Start Virtual Profiling</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p>A series of prompts will appear on the screen, depending on the configuration of your system and what features you may or may not have enabled. Once the messages have been acknowledged, the live WPI graph screen will appear, and the system is ready to start collecting production data.</p>
+                    <h2 class="Heading2"><a name="Using_the_Profile_Grouping_utility"></a>Use the Profile Grouping Utility</h2>
+                    <p>WPI includes a utility that lets you identify and group together different products that share the same thermal profile.  For example, one might use a physically identical printed circuit board to manufacture many distinct product models.  The manufacturer needs to specifically identify and track all the different models, but the thermal process specifications used to solder or cure them is identical throughout the product range.  Once a successful process window setup is identified for one model, the Profile Grouping utility lets you <i>link</i> that setup with other models that can use the same process and thus save the time and cost of entering the same setup specifications repeatedly.  In Virtual Profile mode, the baseline profile of a <i>parent product</i> can be matched to multiple <i>child models</i>, permitting smooth production transitions between models.</p>
+                    <p>&#160;</p>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000085a.png" style="width: 668px;height: 369px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>You enable the <i>Profile Grouping</i> functionality by adjusting settings in the <b>C:\WPI\Log\KIC2000UserSettings.kiccfg</b> file.  Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
+                    <p>&#160;</p>
+                    <p class="p_18"><span class="span_27">[</span>APPLICATION CONFIGURATIONS<span class="span_27">]</span></p>
+                    <p class="p_40">EnableProfieGrouping=1</p>
+                    <h3 class="Heading3">Use Wildcard Characters to Identify Child Models</h3>
+                    <p>Anticipating the need to group closely named product models, the software lets you substitute the asterisk (*) symbol as a universal <span class="span_6">wildcard</span> character when adding models to a group or linking them with a specific profile.&#160; You can use wildcards in any position within the model name string.</p>
+                    <p class="Proctitle"><a name="Select_the_Grouping_tab"></a>
+                    </p>
+                    <table class="table_1">
+                        <col style="width: 535px;" />
+                        <col />
+                        <tr>
+                            <td class="td_17">
+                                <ol start="1">
+                                    <li>On the Profile Explorer screen, click the <b>Profile Grouping Utility</b> button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p style="margin-left: 38px;">The <i>Profile Grouping Utility</i> screen appears.</p>
+                                <p style="margin-left: 38px;">&#160;</p>
+                                <ol start="2">
+                                    <li>Select the <b>Grouping</b> tab.</li>
+                                </ol>
+                            </td>
+                            <td class="td_17">
+                                <p> <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000086.png" style="height: 66px;width: 120px;" class="img_1" />&#160; </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p style="margin-left: 45px;">The Grouping tab screen appears, displaying a pull-down list of products that already have defined in-spec, baseline profiles:</p>
+                    <p style="margin-left: 45px;">&#160;</p>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000087.png" style="width: 387px;height: 243px;" class="img_1" />
+                    </p>
+                    <p class="p_3">&#160;</p>
+                    <table style="width: 100%;">
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol start="3">
+                                        <li>From the <b>Baseline Profile</b> list, select the product to which you want to link models.</li>
+                                    </ol>
+                                    <p>&#160;</p>
+                                    <ol start="4">
+                                        <li>
+                                            <p>In the <b>Add New Model</b> field, type in a model name (using wildcards as appropriate) and click the <b>Add</b> button.</p>
+                                        </li>
+                                    </ol>
+                                    <p>&#160;</p>
+                                    <p style="margin-left: 38px;">The model name appears in the Linked Models list</p>
+                                    <p style="margin-left: 38px;">&#160;</p>
+                                    <ol start="5">
+                                        <li>Repeat the steps for any additional models that you want to link to that baseline.</li>
+                                    </ol>
+                                    <p>&#160;</p>
+                                    <p style="margin-left: 38px;"><b>Note:</b> The <b>Remove</b> button will delete any selected model that was mistakenly included in the list.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Use the Utility with Virtual Profiling</h3>
+                    <p>When Profile Grouping is enabled, you can only start Virtual Profiling by using the utility to identify properly linked product/model pairs.&#160; The normal Virtual Profile<span class="span_6"> Start</span> button no longer appears on the Profile Explorer screen.</p>
+                    <h4 class="Heading4">Load A Specific Model</h4>
+                    <p>While many models can be grouped together in association with a baseline profile, <span class="span_6">only one at a time can be processed in Virtual Profiling.</span>&#160; The software provides an interface for <span class="span_6">loading</span> a specific model into VP, paired with a specific product baseline.&#160; The software does a search through the existing baseline profiles and grouped models to seek a matched pair.&#160; The search can yield results of <span class="span_6">match</span>, <span class="span_6">no match</span> and <span class="span_6">multiple matches</span>.&#160; The procedure below describes how to resolve all possible outcomes into a product baseline/single model pairing that can run in VP.</p>
+                    <p class="Proctitle"><a name="Select_the_VP_Load_tab"></a>
+                    </p>
+                    <table class="table_1">
+                        <col style="width: 239pt;" />
+                        <col style="width: 239pt;" />
+                        <tr>
+                            <td class="td_17">
+                                <ol start="1">
+                                    <li>On the Profile Explorer screen, click the <b>Profile Grouping Utility</b> button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p style="margin-left: 38px;">The <i>Profile Grouping Utility</i> screen appears.</p>
+                                <p style="margin-left: 38px;">&#160;</p>
+                                <ol start="2">
+                                    <li>Select the <b>VP Load</b> tab.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p style="margin-left: 38px;">The VP Load tab appears:</p>
+                            </td>
+                            <td class="td_17">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000086.png" style="height: 66px;width: 120px;" class="img_1" />&#160; </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000088.png" style="width: 360px;height: 226px;" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol start="3">
+                                        <li>In the <b>Load and Start VP</b> for field, either type in a model number or use a barcode scanner to input an identification string.</li>
+                                    </ol>
+                                    <p>&#160;</p>
+                                    <ol start="4">
+                                        <li>
+                                            <p>Press the <b>Enter</b> key to start the software search for linked pairs of product baselines and models:</p>
+                                            <p>&#160;</p>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width: 80%;">
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>If the software finds a single linked product/model pair, they appear as linked on the screen, together with the VP Start button:</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000089.png" style="height: 177px;width: 282px;" class="img_1" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;</p>
+                                <p>5a. Click the <span class="span_7">VP Start</span> button to start Virtual Profiling with the selected model.</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>If there are multiple matches, the Matched Model Links screen appears, displaying pull-down lists for products and models.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000090.png" style="height: 113px;width: 283px;" class="img_1" />
+                                </p>
+                            </td>
+                            <td>
+                                <p>5b. Select a product/model pair from the pull-down lists and click the <span class="span_7">green check</span> (OK) button to return to the VP&#160;Load tab screen and start Virtual Profiling with the selected model.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>If there is no match, the software displays a message about the model and a Link button.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008A1.png" style="height: 126px;width: 285px;" class="img_1" />
+                                </p>
+                            </td>
+                            <td>
+                                <p class="p_6">5c. Click the <span class="span_7">Link</span> button. </p>
+                                <p class="p_3">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000086.png" style="height: 38px;width: 69px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>The <i>Matched Model</i> Links screen appears:</p>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008B1.png" style="height: 211px;width: 527px;" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol start="6">
+                                        <li>Input the model number and select a product baseline profile from the <b>Product Name</b> pull-down list.</li>
+                                    </ol>
+                                    <p>&#160;</p>
+                                    <ol start="7">
+                                        <li>Click the green check (OK) button.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p style="margin-left: 45px;">The VP Load screen reappears with the newly linked product/model pair displayed:</p>
+                    <p style="margin-left: 45px;">&#160;</p>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008C1.png" style="height: 201px;width: 318px;" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol start="8">
+                                        <li>Click the VP Start button to begin Virtual Profiling with the selected model.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="Heading4">View The Linked Model On Other Screens</h4>
+                    <p class="p_6">During Virtual Profiling, the name of the linked model appears in several places in the user interface.&#160; On the Profile Explorer screen, all linked models for a selected profile appear at the top of the screen and in the Child Model column:</p>
+                    <p class="p_6">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008D1.png" style="width: 624px;height: 216px;" />
+                    </p>
+                    <p class="p_6">The name also appears at the top of the profile data screen.</p>
+                    <p class="p_42">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008E.png" style="height: 246px;width: 596px;" class="img_1" />
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

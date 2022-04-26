@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <h1 class="Heading1"><a name="Monitor_Production"></a>Monitor Production In Live Mode</h1>
+                    <p>In VP <span class="span_12">live mode</span>, the software displays real-time data for the VP it generates for every production board processed.&#160; The software displays the data in various charts, graphs and statistical tables.&#160; </p>
+                    <p>&#160;</p>
+                    <table class="table_1">
+                        <col style="width: 230pt;" />
+                        <col style="width: 130pt;" />
+                        <tr>
+                            <td class="td_2">
+                                <p>During live mode, it also displays a crystal ball indicator that shows the current Virtual PWI and Cpk values for your process as measured by the software.&#160; The crystal ball indicator appears continuously while VP is enabled.&#160; You can move the crystal ball, but not close or minimize it.&#160;See Figure 58.</p>
+                                <p>&#160;</p>
+                                <p>The crystal ball color will indicate the current Virtual Profiling status: </p>
+                                <p><span class="Heading3Char">Green </span><span class="span_28">Ready</span>
+                                </p>
+                                <p><span class="Heading3Char">Yellow </span><span class="span_28">Warning</span>
+                                </p>
+                                <p><span class="Heading3Char">Red </span><span class="span_28">Alarm</span>
+                                </p>
+                                <p><span class="Heading3Char">Grey </span><span class="span_28">Unable to Predict</span>
+                                </p>
+                            </td>
+                            <td class="td_2">
+                                <p class="Caption">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000085.png" style="height: 149px;width: 100px;" class="img_14" />
+                                    <br />Figure 58: Virtual Profile Crystal Ball indicator</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: A VP status message appears when you place the mouse pointer over the crystal ball.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="How_to_Avoid_the_Grey_Crystal_Ball"></a>How to Avoid the Grey Crystal Ball</h3>
+                    <p>While a green crystal ball reports the system as VP-capable, and yellow/red alert you to problems, the grey color indicates that the software has insufficient data to make useful VP predictions.&#160; The condition can occur during a verification profile run where you introduce the profiler into an ongoing production flow.&#160; With boards both downstream and upstream of the profiler, the system lacks necessary data obtained by sampling empty oven zones.&#160; </p>
+                    <p>&#160;</p>
+                    <p>To avoid the grey status, run the profiler with no boards following behind.&#160; For more information, see <a href="Profile_Explorer.htm#Integrate_Empty_Oven_Data"><span class="Hyperlink">Integrate Empty Oven Data</span></a>.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Virtual_Profiling_Live1"></a>Live Mode - General Tab</h2>
+                    <p class="p_15" style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000086.png" style="height: 327px;width: 624px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 59: General Tab Screen</p>
+                    <p>&#160;</p>
+                    <p>On the <span class="span_12">Live-Mode General tab</span> screen, the software displays both the baseline and virtual profile.&#160; To distinguish between the two, the baseline profile appears in a solid line format, while the virtual profile appears in dashed-lines.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: To enlarge the graph portion of the screen, double click on the graph.&#160; To enlarge the statistics portion of this screen, double click on the statistics.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Board_Sensor_Indicator"></a>Board Sensor Indicator</h3>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 239pt;" />
+                        <tr style="height: 142pt;">
+                            <td class="td_2">
+                                <p>The software indicates the physical location of the board sensor in or near the oven entrance by a small triangle above the graph.&#160; </p>
+                                <p>&#160;</p>
+                                <p>When the sensor first detects a board, the on-screen indicator changes color from green to red.&#160; The indicator stays red as long as the board remains beneath the sensor.&#160; </p>
+                                <p>&#160;</p>
+                                <p>When using a dual lane single system, a triangle icon sensor indicator appears next to each tracking lane.</p>
+                                <p>&#160;</p>
+                                <p><b>NOTE</b>: If there is a long distance between the sensor location and the first zone, the on-screen indicator may not appear on the screen.</p>
+                                <p>&#160; </p>
+                            </td>
+                            <td class="td_2">
+                                <p>
+                                    <img src="Resources/Images/z21.png" /> </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3 class="Heading3"><a name="Profile_Statistics"></a>Profile Statistics</h3>
+                    <p>On the General tab screen, the VP and baseline statistics appear in a table below the profile graph.&#160; Uncheck the baseline check box to remove the baseline statistics form view.&#160; Below the statistics, the Virtual Profile and baseline profile recipes appear.&#160; These recipes should match identically.&#160; The current PWI appears in the bottom-left corner. The PWI for the last board to exit the oven will not be displayed; go to the Charts tab to view this information.</p>
+                    <h3 class="Heading3"><a name="VP_Live_Graph_Controller"></a>Graph Controller</h3>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 350pt;" />
+                        <tr>
+                            <td class="td_2">
+                                <p>The Graph Controller allows you to modify the view of the profile graph.  See Figure 60.  To open the Graph Controller, left-click on the TC column header in the Statistics table or double left-click, anywhere just outside the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_11">Auto Scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.  When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y-axis scale of the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_11">TCs – </span>You cannot disable or rename a TC in a Virtual Profile. You can only perform this function on the Baseline Profile. Those changes would then be reflected in the Virtual Profile display.</p>
+                            </td>
+                            <td class="td_2">
+                                <p class="p_19">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000089.png" style="height: 319px;width: 400px;" class="img_1" />
+                                </p>
+                                <p class="Caption">Figure 60: Graph Controller
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Grid –</span> Enables/disables the view of the X and Y-Axis scales.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Reference </span><span class="span_11">l</span><span class="span_11">ines –</span> Enables the view of Reference Lines displayed on the profile graph.&#160; These lines represent any temperatures referenced in the selected Process Window.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Zone </span><span class="span_11">l</span><span class="span_11">ines – </span>Enables the view for the oven zone lines on the profile graph.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Predicted TCs </span><span class="span_11">o</span><span class="span_11">nly</span> - Removes the Original profile plot from view, displaying only the prediction profile plot on the graph.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Zero </span><span class="span_11">d</span><span class="span_11">ecimal </span>– When viewing the Pointer tool, this setting enables or disables the decimal display.&#160; When unchecked, the software will display one decimal point.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Internal </span><span class="span_11">t</span><span class="span_11">emp </span>– Enables the view of the profiler’s internal temperature profile plot on the graph.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Display Detailed PWI</span> – With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Extra Cooling Slope</span> – Enabling this feature displays multiple Cooling Slope measurements which are customizable by the user.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Floating O2 PPM display</span> – When the <span class="span_12">O2 Live</span> option is purchased, you can enable/disable a window on the graph that shows the O2 measurement recorded during that profile.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">TCs Line Thickness </span>– The pull-down menu lets you select five different thicknesses for the TC lines drawn on the graph.&#160; </p>
+                    <p class="ListBullet_1">&#160;</p>
+                    <p><b>Slope Between/Time Between Peak Between</b> – These selections control which calculations will be displayed in the <i>Pointer Slopes</i> tab of the Statistics table when pointers are added onto a profile graph.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Automatic Calculation of Delta T + Delta (Or Range) For All Statistics</h3>
+                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.&#160; See Figure 61.&#160; This is the range of the highest to the lowest value for any given specification.&#160; This information is strictly being displayed and is not factored in to the PWI value and is not used in the <span class="span_12">optional</span> Navigator or Auto-Focus calculations.&#160; </p>
+                    <h3 class="Heading3">Examine Tool</h3>
+                    <table class="table_1">
+                        <col style="width: 230pt;" />
+                        <col style="width: 200pt;" />
+                        <tr>
+                            <td class="td_2">
+                                <p>You can also view the Delta T (<span class="span_29">∆</span>T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.&#160; This will bring up a pointer and a chart will appear in the upper left corner of the graph.&#160;See Figure 61.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_2">
+                                <p class="p_19">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000043.png" style="height: 95px;width: 115px;" class="img_2" />
+                                </p>
+                                <p class="p_19"><span class="span_18">Figure </span><span class="span_18">61</span><span class="span_18">: </span><span class="span_18">Examine </span><span class="span_18">Tool Display</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Wherever the pointer is moved across the profile, the following data will be displayed:</p>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListParagraph_2">The first column is the actual temperature for each TC, Original.</li>
+                        <li class="ListParagraph_2">The second column is the temperature of the predicted profile data – based on set point or belt speed changes.</li>
+                        <li class="ListParagraph_2">The Delta T for both actual and predicted TC data.</li>
+                        <li class="ListParagraph_2">The time during the profile at which the pointer is placed.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Board_Spacing"></a>Board Spacing</h3>
+                    <p>It is best to maintain at least a 1” space between production boards that enter the oven.&#160; A 1” gap insures that the system will accurately count and track boards through the oven.&#160; In the event that two boards become pushed together leaving no space, the system should be able to detect the correct number of boards processed.</p>
+                    <p>&#160;</p>
+                    <p>If the board length as determined by the system differs by more than 15% from the Baseline-product length while Virtual Profiling –live, an alarm can appear after five boards.</p>
+                    <p>&#160;</p>
+                    <p>The number of boards to trigger an alarm on can be adjusted if needed. Contact your system provider for help.</p>
+                    <h2 class="Heading2"><a name="Virtual_Profiling_Live2"></a>Live Mode - Description Tab</h2>
+                    <table class="table_1">
+                        <col style="width: 230pt;" />
+                        <col style="width: 321pt;" />
+                        <tr>
+                            <td class="td_2">
+                                <p>The Description tab displays the profile Description notes for the Baseline profile.&#160; See Figure 62.</p>
+                                <p>&#160;</p>
+                                <p>You can edit these notes by clicking in the description area.</p>
+                                <p>&#160;</p>
+                                <p>Below the description area, the Virtual Profile and Baseline Statistics, and recipes appear.&#160; The current PWI appears in the bottom-left corner.&#160; Enlarging the description area and statistics are not possible while viewing this tab.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_2">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300008A.png" style="width: 536px;height: 345px;" />
+                                </p>
+                                <p class="p_19"><span class="span_18">Figure </span><span class="span_18">62</span><span class="span_18">: Virtual Profiling – Description Tab</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h2 class="Heading2"><a name="Verifying_the_Virtual_Profile"></a>Verify the Virtual Profile</h2>
+                    <p>The V<span class="span_12">irtual </span><span class="span_12">P</span><span class="span_12">rofile</span> is a prediction of the process profile (inside the oven) generated from a model created when the Baseline profile was run.&#160; A <span class="span_12">V</span><span class="span_12">erification</span> <span class="span_12">P</span><span class="span_12">rofile</span> is a comparison run against the virtual profile model.&#160; If you think the process has changed significantly or you have purposely changed the recipe, running a verification profile lets you verify the prediction model.&#160; This comparison can either verify that the process profile is still within specification or create a new baseline profile based on the recent changes.</p>
+                    <p>&#160;</p>
+                    <p>The verification profile updates the Baseline profile for the current Virtual Profile, insuring that its prediction model yields the most accurate possible results, using the most recent profile.&#160; The software always recognizes the latest in&#8209;spec profile as the Baseline for any Virtual Profile.</p>
+                    <p>&#160;</p>
+                    <p>The software recognizes when the process temperatures change significantly as compared to the current Baseline profile, and then prompts you to run a verification profile.&#160; You can intentionally run a verification profile at any time during Virtual Profiling Live Mode.&#160; </p>
+                    <p class="p_42"><span class="span_11">Note</span>: The software will only accept a verification profile as a new baseline if meets the standard VP criteria.&#160; See <a href="Profile_Explorer.htm#Getting_a_valid_baseline_profile"><span class="Hyperlink">Get a Valid Baseline Profile</span></a>.</p>
+                    <p class="p_42">&#160;</p>
+                    <h3 class="Heading3"><a name="Start_A_Verification_Profile"></a>Start A Verification Profile</h3>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 230pt;" />
+                        <tr style="height: 78pt;">
+                            <td class="td_2">
+                                <p>A Verification Profile can run only when Virtual Profiling is running in live mode.</p>
+                                <p>&#160;</p>
+                                <ol start="1">
+                                    <li>With Virtual Profiling running in live mode, select the Run Profile button at the bottom of the Virtual Profiling-live screen.&#160; See Figure 63.</li>
+                                </ol>
+                            </td>
+                            <td class="td_2">
+                                <p class="p_19">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000009.png" style="height: 67px;width: 124px;" class="img_2" />
+                                </p>
+                                <p class="p_19"><span class="span_18">Figure </span><span class="span_18">63</span><span class="span_18">: Run Profile Button, Main screen</span>
+                                </p>
+                                <p class="p_19">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_2">
+                                <ol start="2">
+                                    <li>
+                                        <p>The software will display a message asking if you want to run a Verification profile:&#160; See Figure 64.</p>
+                                        <ul>
+                                            <li>If you choose “<span class="span_11">No</span>”, the software will return to the previous screen.</li>
+                                            <li>If you choose “<span class="span_11">Yes</span>”, the software will begin stepping through the run profile routine.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </td>
+                            <td class="td_2">
+                                <p class="p_19">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300008B.png" style="width: 250px;height: 115px;" class="img_1" />
+                                </p>
+                                <p class="p_19"><span class="span_18">Figure </span><span class="span_18">64</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Before profiling, make sure:</p>
+                    <p>&#160;</p>
+                    <ul>
+                        <li>
+                            <p>The Profiler is on and ready to profile.</p>
+                            <ul>
+                                <li><span class="span_11">Transmit </span><span class="span_11">model</span> – Receiver or Base Station is plugged into computer.</li>
+                                <li><span class="span_11">Datalog </span><span class="span_11">model</span> – The profiler is plugged into the download cable and download cable is plugged into the computer.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="p_7">&#160;</p>
+                    <ul>
+                        <li>Profiler batteries and internal temperature are at the proper levels to profile.</li>
+                    </ul>
+                    <p class="p_7">&#160;</p>
+                    <ul>
+                        <li>All thermocouples attached to the profiler are below the defined product start temperature.</li>
+                    </ul>
+                    <p class="p_43"><span class="span_11">Note</span>: Depending on the settings on your profiler and in the software, you may have to initialize the profiler.&#160; The software will let you know when this is necessary. To initialize the profiler, connect it with the supplied cable to the computer, and turn on the power. Click <span class="span_11">OK</span> when the software displays the message that the initialization was successful.</p>
+                    <p class="p_16">&#160;</p>
+                    <ol start="3">
+                        <li>Click the Profile Start button (green traffic light).</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>Once the Verification Profile is complete, the profiler has downloaded the profile data that meets Virtual Profile criteria, the software will display the dialog box shown below:&#160; (See Figure 65.)</p>
+                    <p class="p_21">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300008C.png" style="height: 191px;width: 348px;" class="img_2" />
+                    </p>
+                    <p class="Caption">Figure 65: This dialog box will display the PWI and the<br />predicted PWI for the Verification Profile.</p>
+                    <p>&#160;</p>
+                    <p>Alternatively, if the Profile is out of spec, the dialog box shown below will appear stating that the PWI is too high.&#160;See Figure 66</p>
+                    <p>&#160;</p>
+                    <p>If you choose to continue running Virtual Profiling, you will receive WARNING #2, “The last profile was out of spec”.&#160;In this situation, you need to run profiles until an in-spec profile is achieved before the software will allow you to continue Virtual Profiling.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_21">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300008D.png" style="height: 192px;width: 348px;" class="img_2" />
+                    </p>
+                    <p class="Caption">Figure 66: Out of Spec Verification profile</p>
+                    <p>&#160;</p>
+                    <p class="p_27">The dialog box will present two choices:</p>
+                    <ol start="1">
+                        <li><span class="span_11">Continue Virtual Profiling –</span> If the Verification Profile meets Virtual Profiling criteria, it will automatically be used as the new Baseline profile.&#160; If you choose this option, the software will update the Baseline and continue Virtual Profiling, using the Verification Profile as a new Baseline profile.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="2">
+                        <li><span class="span_11">Unload Virtual Profile and go to Prediction mode</span> – If the Verification Profile does not meet Virtual Profiling criteria or is out of spec, it can’t be used for Virtual Profiling.&#160; If you choose this option, you can predict changes to the profile in order to bring the profile back within its process specification.&#160; You will have to run at least one more profile in order to produce a profile that meets Virtual Profiling criteria.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Tip</span>: For an explanation of Virtual Profile criteria, see the <a href="Profile_Explorer.htm#Understanding_Virtual_Profiling">Virtual Profiling</a> Section of this manual</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Historical_Mode"></a>Historical Mode</h2>
+                    <p>The software has an <span class="span_12">historical mode</span> feature.&#160; This feature allows you to view Virtual Profile data for any board processed when the system has been running.&#160; Open the Profile Explorer and select any event other than a profile. The <span class="span_11">Display the Graph and Statistics for this profile </span>button will change from a single graph button display to a HISTORY button display, indicating there is Historical data associated with the selected event.&#160;See Figure 67 and Figure 68.</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_2">
+                        <col style="width: 144pt;" />
+                        <col style="width: 144pt;" />
+                        <tr style="height: 75pt;">
+                            <td class="td_13">
+                                <p class="p_44">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300008E.png" style="height: 51px;width: 91px;" class="img_8" />
+                                </p>
+                                <p class="Caption">Figure 67: Profile Explorer–Display Graph and Statistics for this profile</p>
+                            </td>
+                            <td class="td_13">
+                                <p class="p_44">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000065.png" style="height: 55px;width: 101px;" class="img_1" />
+                                </p>
+                                <p class="Caption">Figure 68: Profile Explorer–Display Historical Graph and Statistics</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Virtual_Profiling1"></a>Historical Mode - General Tab</h2>
+                    <p class="p_21">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300008F.png" style="height: 357px;width: 494px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 69: Virtual Profiling History – General Tab</p>
+                    <p>&#160;</p>
+                    <p>The software will display the Baseline profile on the profile graph in a solid line format.&#160; Also on the profile graph is the Virtual Profile for the selected board, date/time.&#160; The Virtual Profile will be displayed on the profile graph in a dashed-line format.&#160; This display method allows you to easily distinguish between the Baseline and Virtual profiles.</p>
+                    <p>&#160;</p>
+                    <p>Below the profile graph, the Virtual Profile and Baseline profile statistics appear.&#160; Uncheck the Baseline check box to remove the Baseline statistics from view.&#160; Below the statistics, the Virtual Profile and Baseline profile recipes appear.</p>
+                    <h3 class="Heading3"><a name="VP_Historical_Graph_Controller"></a>Graph Controller</h3>
+                    <table class="table_1">
+                        <col style="width: 230pt;" />
+                        <col style="width: 350pt;" />
+                        <tr>
+                            <td class="td_13">
+                                <p>&#160;</p>
+                                <p>The Graph Controller allows you to modify the view of the profile graph.&#160;See Figure 70.  To open the Graph Controller, left-click on the TC column header in the Statistics table or Double left-click, anywhere just outside the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_11">Auto Scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.&#160; When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y-axis scale of the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><b>TCs</b>  – The TCs section is a list of the thermocouples used for the profile.&#160; In the event that you wish to view the profile without particular thermocouples, you can deselect individual thermocouples, or deselect the “All” check box, and choose only the thermocouples you wish to view. The software recalculates the PWI and updates the profile statistics based on the remaining thermocouples selected.&#160; You must select at least one product thermocouple.</p>
+                            </td>
+                            <td class="td_13">
+                                <p class="p_19">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000089.png" style="width: 400px;height: 311px;" class="img_1" />
+                                </p>
+                                <p class="Caption">Figure 70: Graph Controller</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="p_15">&#160;</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Grid –</span> Enables/disables the view of the X and Y-Axis scales.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Reference </span><span class="span_11">l</span><span class="span_11">ines –</span> Enables the view of Reference Lines displayed on the profile graph.&#160; These lines represent any temperatures referenced in the selected Process Window.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Zone </span><span class="span_11">l</span><span class="span_11">ines – </span>Enables the view for the oven zone lines on the profile graph.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Predicted TCs </span><span class="span_11">o</span><span class="span_11">nly</span> - Removes the Original profile plot from view, displaying only the prediction profile plot on the graph.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Zero </span><span class="span_11">d</span><span class="span_11">ecimal </span>– When viewing the Pointer tool, this setting enables or disables the decimal display.&#160; When unchecked, the software will display one decimal point.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Internal </span><span class="span_11">t</span><span class="span_11">emp </span>– Enables the view of the profiler’s internal temperature profile plot on the graph.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Display Detailed PWI</span> – With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values. </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Extra Cooling Slope</span> – Enabling this feature displays multiple Cooling Slope measurements which are customizable by the user. </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Floating O2 PPM display</span> – When the <span class="span_12">O2 Live</span> option is purchased, you can enable/disable a window on the graph that shows the O2 measurement recorded during that profile. See <span class="span_12">O2 Live section for details.</span></p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">TCs Line Thickness </span>– The pull-down menu lets you select five different thicknesses for the TC lines drawn on the graph.&#160; </p>
+                    <p>&#160;</p>
+                    <p><b>Slope Between/Time Between Peak Between</b> – These selections control which calculations will be displayed in the <i>Pointer Slopes</i> tab of the Statistics table when pointers are added onto a profile graph</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Automatic Calculation of Delta T + Delta (Or Range) For All Statistics</h3>
+                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.&#160; See Figure 72.&#160; This is the range of the highest to the lowest value for any given specification.&#160; This information is strictly being displayed and is not factored in to the PWI value and is not used in the Navigator or Auto-Focus calculations.&#160; </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Examine_Tool"></a>Examine Tool</h3>
+                    <table class="table_1" style="width: 80%">
+                        <col style="width: 325pt;" />
+                        <tr>
+                            <td class="td_13">
+                                <p>You can also view the Delta T (<span class="span_29">∆</span>T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.&#160; This will bring up a Pointer and a chart will appear in the upper left corner of the graph.&#160;See Figure 71.</p>
+                            </td>
+                            <td class="td_13">
+                                <p class="Caption_1" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000043.png" style="height: 95px;width: 115px;" class="img_15" />
+                                    <br />
+                                </p>
+                                <p class="Caption">Figure 71: Examine Tool Display</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Wherever the pointer is moved across the profile, the following data will be displayed:</p>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListParagraph_2">The first column is the actual temperature for each TC, Original.</li>
+                        <li class="ListParagraph_2">The second column is the temperature of the predicted profile data – based on set point or belt speed changes.</li>
+                        <li class="ListParagraph_2">The Delta T for both actual and predicted TC data.</li>
+                        <li class="ListParagraph_2">The time during the profile at which the pointer is placed.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Virtual_Profiling5"></a>Historical Mode - Description Tab</h2>
+                    <p class="p_21">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000091.png" style="height: 370px;width: 511px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 72: Virtual Profiling History – Description Tab</p>
+                    <p>&#160;</p>
+                    <p>In Historical mode the Description tab displays the Baseline profile description notes. See Figure 72.  You can edit these notes by clicking in the description area.&#160; Below the description area, the Virtual Profile and Baseline statistics, and recipes are displayed.&#160; The PWI for the selected board appears in the bottom-left corner.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

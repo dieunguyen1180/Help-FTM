@@ -1,0 +1,1879 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <p class="p_1">&#160;</p>
+                    <p class="p_1"><span class="span_1">Profiling System</span>
+                    </p>
+                    <p class="p_2">User Manual</p>
+                    <p class="CoverSubtitle_1">Hardware and Software</p>
+                    <p class="p_3">&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_1">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000001.png" style="height: 379px;width: 506px;" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="CoverSubtitle">Version 3.9</p>
+                    <p>&#160;</p>
+                    <p class="CoverSubtitle"><span class="span_2">Publication Number</span><span class="span_2"> SFT</span><span class="span_2">-324</span><span class="span_2">1</span><span class="span_2">00</span><span class="span_2">-</span><span class="span_2">1</span><span class="span_2">0</span><span class="span_2">1</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_1"><span class="span_3">Profiling System</span><span class="span_3"> User Manual</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;font-weight: bold;font-size: 12pt;">KIC, a Division of Embedded Designs, Inc., grants this product and </p>
+                    <p style="text-align: center;font-weight: bold;font-size: 12pt;">software license to Titan-Semi Co., Ltd. for resale.</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="Subtitle_1">Copyright © 2022 KIC.&#160; All rights reserved.&#160; Patents pending.</p>
+                    <p class="Subtitle_1">16120 West Bernardo Drive</p>
+                    <p class="Subtitle_1">San Diego, CA&#160; 92127</p>
+                    <p class="Subtitle_1">Phone: +1 858 673 6050&#160;&#160;&#160;&#160;&#160; Fax: +1 858 673 0085</p>
+                    <p class="Subtitle_1">A Division of Embedded Designs Inc.</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="p_3">This document contains information that is proprietary to KIC and/or Titan-Semi Co.&#160; Said information is copyrighted, as is all associated software and hardware.&#160; All rights are reserved. Patents are pending.</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="p_3">This document and the information contained in it may not be sold, duplicated, used, or disclosed, in whole or in part, except as specifically authorized in writing by KIC.&#160; The information contained in this document and associated software is subject to change without notice.</p>
+                    <p class="p_3">There are no warranties with respect to the information contained in this document, express or implied, except as provided by written contract between KIC and the customer.</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="p_3">All KIC product names and logos are trademarks of Embedded Designs, Inc. All other trademarks used herein are the property of their respective owners.</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="p_3">&#160;</p>
+                    <p class="p_4"><span class="span_4">Software Licensing Agreement and Product Warranty</span>
+                    </p>
+                    <p class="p_5"><span class="span_5">The </span><span class="span_5">Profiling System</span><span class="span_5"> software sold by </span><span class="span_5">Titan-Semi Co.</span><span class="span_5">, Ltd. </span><span class="span_5">is subject to the following license terms and conditions. </span>
+                    </p>
+                    <p class="p_6">KIC SOFTWARE LICENSE</p>
+                    <ol start="11" class="ol_1">
+                        <li class="li_1"><span class="span_5">This is a software license granted by </span><span class="span_6">KIC</span><span class="span_5">, mailing address 16120 West Bernardo Drive San Diego, CA 92127.&#160; </span>
+                        </li>
+                        <li><span class="span_5">The </span><span class="span_5">Profiling System</span><span class="span_5"> software is licensed to you as the end user and is not sold.</span>
+                        </li>
+                        <li><span class="span_5">The </span><span class="span_5">Profiling System</span><span class="span_5"> software is copyrighted material.</span>
+                        </li>
+                        <li><span class="span_5">The </span><span class="span_5">Profiling System</span><span class="span_5"> software is licensed for use with one or more pieces of associated hardware that together constitute a thermal process management system.&#160; This license allows you to use the software with the purchased system.&#160; You must purchase additional copies of the software if used with additional system hardware.</span>
+                        </li>
+                        <li class="li_2">You may not change, modify, decompile, disassemble, or otherwise reverse engineer the licensed software or any associated hardware.</li>
+                    </ol>
+                    <p class="p_6">LIMITED WARRANTY</p>
+                    <ol start="16" class="ol_1">
+                        <li class="li_2">KIC warrants that the system hardware and software are free from defects in material and workmanship under normal use.&#160; KIC warrants that the system as a whole will perform substantially in accordance with the specifications set forth in the documentation provided with it.</li>
+                        <li class="li_2">Warranty regarding rated temperature:&#160; Components of the system hardware are rated by KIC for proper performance up to a specified maximum temperature.&#160; Any component that KIC determines to have been exposed to temperatures higher than the rated temperature is not covered under this warranty.</li>
+                        <li class="li_1"><span class="span_5">Start of the Warranty period.&#160; The warranty period begins the day the </span><span class="span_5">Profiling System</span> <span class="span_5">product is delivered to you as the first customer.</span></li>
+                        <li class="li_1"><span class="span_5">Obligations of KIC during </span><span class="span_5">the</span><span class="span_5"> warranty period:</span>
+                        </li>
+                    </ol>
+                    <ol start="191" class="ol_2">
+                        <li class="li_2">Replacement:&#160; Within the first year of the start of the warranty, KIC will replace, on an exchange basis and without additional charge, any product proven defective in materials or workmanship.</li>
+                        <li class="li_2">Correction of software:&#160; KIC will either replace or repair, without additional charge, any software that does not perform in substantial compliance with its documented specifications.&#160; In the foregoing circumstances, KIC will deliver either corrective code or a corrected copy of the software.</li>
+                        <li class="li_2">Final Remedy:&#160; If KIC is unable to replace defective media or provide a corrected copy of the software within a reasonable amount of time, KIC will either replace the software with a functionally similar program or refund the license fees paid for use of the software.</li>
+                    </ol>
+                    <ol start="110" class="ol_1">
+                        <li class="li_3">Exclusion of Other Warranties</li>
+                    </ol>
+                    <ol start="1101" class="ol_2">
+                        <li class="li_1"><span class="span_5">Neither KIC nor </span><span class="span_5">Titan-Semi Co.</span><span class="span_5">, Ltd. </span><span class="span_5">warrant that the functions contained in the software will meet your requirements or that the operation of the software will be uninterrupted or error free.&#160; The Warranty does not cover any copy of the software that has been altered or changed in any way by you or others.&#160; </span><span class="span_5">Neither KIC nor </span><span class="span_5">Titan-Semi Co.</span><span class="span_5">, Ltd.</span><span class="span_5">is responsible for problems caused by changes in the operating characteristics of the computer hardware or operating system which are made after delivery of the software.</span>
+                        </li>
+                        <li class="li_4">EXCEPT WHERE LIMITED BY LOCAL JURISDICTIONS, KIC SHALL NOT IN ANY CASE BE LIABLE FOR SPECIAL, INCIDENTAL, CONSEQUENTIAL, INDIRECT OR OTHER SIMILAR DAMAGES ARISING FROM ANY BREACH OF THESE WARRANTIES EVEN If KIC OR ITS AGENT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. </li>
+                    </ol>
+                    <ol start="111" class="ol_1">
+                        <li class="li_3">Other Conditions</li>
+                    </ol>
+                    <ol start="1111" class="ol_2">
+                        <li class="li_1"><span class="span_7">The warranties set forth above are in lieu of all other warranties, whether oral, written or implied, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR USE. the remedies set forth above are the customer’s sole and exclusive remedies</span><span class="span_8">.&#160; </span><span class="span_5">Only an authorized officer of KIC may make modifications to this warranty, or additional warranties binding on KIC.&#160; Accordingly, additional statements such as advertising, collateral or presentations, whether oral or written, do not constitute warranties by KIC</span> <span class="span_5">or </span><span class="span_5">Titan-Semi Co.</span><span class="span_5">, Ltd.</span><span class="span_5"> and should not be relied upon as such.&#160; This warranty gives you specific legal rights, and you may have other rights, which vary by state and/or country.</span></li>
+                    </ol>
+                    <p class="p_7">&#160;</p>
+                    <p class="p_8">LIMITATION OF LIABILITY</p>
+                    <ol start="112" class="ol_1">
+                        <li><span class="span_5">In no case shall KIC's </span><span class="span_5">or </span><span class="span_5">Titan-Semi Co.</span><span class="span_5">, </span><span class="span_5">liability exceed the license fees paid for the right to use the licensed software or One Hundred Dollars ($100.00), whichever is greater.</span>
+                        </li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_9" style="text-align: left;">Part 1 – The Basic System</p>
+                    <p>&#160;</p>
+                    <table style="border-spacing: 0px 0px;margin-left: 0;margin-right: auto;width: 1000px;">
+                        <col style="width: 954px;" />
+                        <col style="width: 46px;" />
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">THE HARDWARE</b>
+                                </div>
+                            </td>
+                            <td><b>3</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">HARDWARE DIAGRAM</span>
+                                </div>
+                            </td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">DUAL LANE SYSTEMS</span>
+                                </div>
+                            </td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">INSTALL THE SOFTWARE</span>
+                                </div>
+                            </td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">THE MAIN SCREEN</b>
+                                </div>
+                            </td>
+                            <td><b>10</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">GLOBAL PREFERENCES</b>
+                                </div>
+                            </td>
+                            <td><b>11</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">GLOBAL TAB</span>
+                                </div>
+                            </td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONTROL LIMITS TAB</span>
+                                </div>
+                            </td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">DISABLE ALARM TAB</span>
+                                </div>
+                            </td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BARCODE OPTION TAB</span>
+                                </div>
+                            </td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">OUTPUTS TAB</span>
+                                </div>
+                            </td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">DEFINE/EDIT PROCESS WINDOW</b>
+                                </div>
+                            </td>
+                            <td><b>19</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SOLDER PASTE MENU</span>
+                                </div>
+                            </td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">EDIT SPECS</span>
+                                </div>
+                            </td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SAVE PROCESS WINDOW</span>
+                                </div>
+                            </td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">IMPORT LEGACY PROCESS WINDOWS</span>
+                                </div>
+                            </td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">HARDWARE STATUS SCREEN</b>
+                                </div>
+                            </td>
+                            <td><b>26</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">RUN A PROFILE</b>
+                                </div>
+                            </td>
+                            <td><b>27</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SPECIFY OVEN CHARACTERISTICS	</span>
+                                </div>
+                            </td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ATTACH THERMOCOUPLES	</span>
+                                </div>
+                            </td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ATTACH THERMOCOUPLES TO SEMICONDUCTOR WAFERS	</span>
+                                </div>
+                            </td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SELECT THERMOCOUPLES TO START A PROFILE	</span>
+                                </div>
+                            </td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">START THE PROFILE	</span>
+                                </div>
+                            </td>
+                            <td>33</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LIVE PROFILE GRAPH	</span>
+                                </div>
+                            </td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">VIEW THE PROFILE AND STATISTICS		</span>
+                                </div>
+                            </td>
+                            <td>38</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">MANUAL PROFILE PREDICTION	</span>
+                                </div>
+                            </td>
+                            <td>46</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SET DIFFERENT TOP AND BOTTOM SET POINT TEMPERATURES	</span>
+                                </div>
+                            </td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">PROFILE EXPLORER	</b>
+                                </div>
+                            </td>
+                            <td><b>51</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BROWSE FOR HISTORICAL DATA	</span>
+                                </div>
+                            </td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">VIEW HISTORICAL DATA OVER A NETWORK (HISTORY MODE)	</span>
+                                </div>
+                            </td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">PROFILE EXPLORER – VIRTUAL PROFILING	</span>
+                                </div>
+                            </td>
+                            <td>54</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ACCESS HISTORY DATA BACKUP FILES	</span>
+                                </div>
+                            </td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">INSERT DATA FILES FROM AN OUTSIDE SOURCE	</span>
+                                </div>
+                            </td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">RENAME PROFILES	</span>
+                                </div>
+                            </td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">VIRTUAL PROFILING	</b>
+                                </div>
+                            </td>
+                            <td><b>57</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">GET A VALID BASELINE PROFILE	</span>
+                                </div>
+                            </td>
+                            <td>57</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CREATE/LOAD A VIRTUAL PROFILE	</span>
+                                </div>
+                            </td>
+                            <td>58</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">USE THE PROFILE GROUPING UTILITY	</span>
+                                </div>
+                            </td>
+                            <td>59</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">MONITOR PRODUCTION IN LIVE MODE	</b>
+                                </div>
+                            </td>
+                            <td><b>64</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LIVE MODE - GENERAL TAB	</span>
+                                </div>
+                            </td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LIVE MODE - DESCRIPTION TAB	</span>
+                                </div>
+                            </td>
+                            <td>68</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">VERIFY THE VIRTUAL PROFILE	</span>
+                                </div>
+                            </td>
+                            <td>68</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">HISTORICAL MODE	</span>
+                                </div>
+                            </td>
+                            <td>71</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">HISTORICAL MODE - GENERAL TAB	</span>
+                                </div>
+                            </td>
+                            <td>71</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">HISTORICAL MODE - DESCRIPTION TAB	</span>
+                                </div>
+                            </td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">PASSWORD PROTECTION	</b>
+                                </div>
+                            </td>
+                            <td><b>75</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">PRINTING	</b>
+                                </div>
+                            </td>
+                            <td><b>76</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">PORTRAIT MODE	</span>
+                                </div>
+                            </td>
+                            <td>76</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LANDSCAPE MODE	</span>
+                                </div>
+                            </td>
+                            <td>77</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">WRITE DATA TO AND VIEW DATA OVER A NETWORK	</b>
+                                </div>
+                            </td>
+                            <td><b>78</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">WRITE DATA TO A NETWORK DRIVE	</span>
+                                </div>
+                            </td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">VIEWING HISTORICAL DATA</span>
+                                </div>
+                            </td>
+                            <td>81</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">STATUS MESSAGES AND ALARMS WITH THE BASIC SYSTEM	</b>
+                                </div>
+                            </td>
+                            <td><b>82</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ACKNOWLEDGE ALARMS	</span>
+                                </div>
+                            </td>
+                            <td>82</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">MESSAGES DURING PROFILING AND BASELINE PROFILING	</span>
+                                </div>
+                            </td>
+                            <td>83</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SYSTEM MESSAGES AND ALARMS	</span>
+                                </div>
+                            </td>
+                            <td>83</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ALARMS AND MESSAGES DURING VIRTUAL PROFILING	</span>
+                                </div>
+                            </td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ETPU COMMUNICATION	</span>
+                                </div>
+                            </td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ALARM#16 – MAXIMUM ALLOWABLE BACK-TO-BACK BOARDS HAS BEEN EXCEEDED	</span>
+                                </div>
+                            </td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">COMMUNICATE WITH OVEN CONTROLLERS	</b>
+                                </div>
+                            </td>
+                            <td><b>87</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONFIRM OVEN COMMUNICATIONS	</span>
+                                </div>
+                            </td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONFIGURE SOFTWARE FOR OVEN COMMUNICATION	</span>
+                                </div>
+                            </td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">USE A BASE OVEN RECIPE WITH OVEN COMMUNICATION	</span>
+                                </div>
+                            </td>
+                            <td>89</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">RUN A PROFILE USING OVEN COMMUNICATION	</span>
+                                </div>
+                            </td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">START A VIRTUAL PROFILE WITH OVEN COMMUNICATION	</span>
+                                </div>
+                            </td>
+                            <td>92</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BASE OVEN RECIPE AUTOMATIC VERIFICATION	</span>
+                                </div>
+                            </td>
+                            <td>93</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">RUN THE SOFTWARE WITHOUT THE BOARD SENSOR</b>
+                                </div>
+                            </td>
+                            <td><b>94</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">DUAL LANE SYSTEMS AND FUNCTIONALITY	</b>
+                                </div>
+                            </td>
+                            <td><b>95</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">DUAL LANE DUAL SYSTEMS	</span>
+                                </div>
+                            </td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">DUAL LANE SINGLE SYSTEMS	</span>
+                                </div>
+                            </td>
+                            <td>96</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONFIGURE DUAL LANE SYSTEMS	</span>
+                                </div>
+                            </td>
+                            <td>97</td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_9" style="text-align: left;">Part 2 – Software and Hardware Options</p>
+                    <p>&#160;</p>
+                    <table style="border-spacing: 0px 0px;margin-left: 0;margin-right: auto;width: 1000px;">
+                        <col style="width: 954px;" />
+                        <col style="width: 46px;" />
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">SOFTWARE OPTIONS</b>
+                                </div>
+                            </td>
+                            <td><b>100</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">NAVIGATOR</span>
+                                </div>
+                            </td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">AUTO-FOCUS</span>
+                                </div>
+                            </td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">NAVIGATOR/AUTO FOCUS POWER</span>
+                                </div>
+                            </td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SWEET SPOT</span>
+                                </div>
+                            </td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">INDEX SCREEN AND PRODUCTION REPORTS</span>
+                                </div>
+                            </td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">STATISTICAL PROCESS CONTROL CHARTS</span>
+                                </div>
+                            </td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">TROUBLESHOOTING SCREEN</span>
+                                </div>
+                            </td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">O2 LIVE</span>
+                                </div>
+                            </td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">VP IDLE MODE</span>
+                                </div>
+                            </td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BARCODE</span>
+                                </div>
+                            </td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LOT ID</span>
+                                </div>
+                            </td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">REMOTE PROCESS MONITORING</span>
+                                </div>
+                            </td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LIVE DATA OUTPUT</span>
+                                </div>
+                            </td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CENTRALIZED PROCESS WINDOW CONTROL</span>
+                                </div>
+                            </td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USE NAVIGATOR TO OPTIMIZE PROFILES</b>
+                                </div>
+                            </td>
+                            <td><b>102</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">SEARCH MODE FOR OPTIMIZATION</span>
+                                </div>
+                            </td>
+                            <td>102</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">CONVEYOR SPEED CONSTRAINTS</span>
+                                </div>
+                            </td>
+                            <td>102</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USE AUTO-FOCUS</b>
+                                </div>
+                            </td>
+                            <td><b>103</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">AUTO-FOCUS TAB</span>
+                                </div>
+                            </td>
+                            <td>103</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PROFILE OPTIMIZATION SETTINGS—SEARCH MODE</span>
+                                </div>
+                            </td>
+                            <td>103</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONVEYOR SPEED CONSTRAINTS</span>
+                                </div>
+                            </td>
+                            <td>103</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">AUTO-FOCUS, RUN A PROFILE</span>
+                                </div>
+                            </td>
+                            <td>104</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">AUTO-FOCUS, PRODUCT DIMENSIONS</span>
+                                </div>
+                            </td>
+                            <td>104</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">AUTO-FOCUS, CONFIRM</span>
+                                </div>
+                            </td>
+                            <td>105</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">SAVE ENERGY WITH NAVIGATOR AND AUTO-FOCUS</b>
+                                </div>
+                            </td>
+                            <td><b>107</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ENABLE THE POWER FEATURE IN AUTO-FOCUS</span>
+                                </div>
+                            </td>
+                            <td>107</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ENABLE THE POWER FEATURE IN NAVIGATOR</span>
+                                </div>
+                            </td>
+                            <td>107</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USE SWEET SPOT TARGET</b>
+                                </div>
+                            </td>
+                            <td><b>108</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USING THE LIVE INDEX SCREEN</b>
+                                </div>
+                            </td>
+                            <td><b>109</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ACCESS THE LIVE PROFILE DATA FROM THE INDEX SCREEN</span>
+                                </div>
+                            </td>
+                            <td>110</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">USE PRODUCTION REPORTS</span>
+                                </div>
+                            </td>
+                            <td>111</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">TIPS</span>
+                                </div>
+                            </td>
+                            <td>111</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PRODUCTION REPORT VIEWER</span>
+                                </div>
+                            </td>
+                            <td>112</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">DPMO CHART</span>
+                                </div>
+                            </td>
+                            <td>113</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">REFLOW YIELD CHART</span>
+                                </div>
+                            </td>
+                            <td>117</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USE STATISTICAL PROCESS CONTROL CHARTS</b>
+                                </div>
+                            </td>
+                            <td><b>121</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LIVE MODE - CHARTS TAB</span>
+                                </div>
+                            </td>
+                            <td>121</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">VIEW CHART DATA</span>
+                                </div>
+                            </td>
+                            <td>122</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">HISTORICAL MODE - CHART TAB</span>
+                                </div>
+                            </td>
+                            <td>123</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">VIEW CONTROL CHARTS</span>
+                                </div>
+                            </td>
+                            <td>123</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">VIEWING CHART DATA</span>
+                                </div>
+                            </td>
+                            <td>124</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">HISTORY MODE CHART OPTIONS MENU</span>
+                                </div>
+                            </td>
+                            <td>124</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">TROUBLESHOOT IN LIVE MODE</b>
+                                </div>
+                            </td>
+                            <td><b>125</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BUTTONS</span>
+                                </div>
+                            </td>
+                            <td>126</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">O2 LIVE</b>
+                                </div>
+                            </td>
+                            <td><b>127</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONFIGURATION</span>
+                                </div>
+                            </td>
+                            <td>127</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">OPERATION</span>
+                                </div>
+                            </td>
+                            <td>129</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">VP IDLE MODE</b>
+                                </div>
+                            </td>
+                            <td><b>131</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONFIGURATION</span>
+                                </div>
+                            </td>
+                            <td>131</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USING BARCODES</b>
+                                </div>
+                            </td>
+                            <td><b>132</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BARCODE OPTION TAB</span>
+                                </div>
+                            </td>
+                            <td>132</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BARCODE FUNCTIONS</span>
+                                </div>
+                            </td>
+                            <td>133</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PROCESS TRACEABILITY (PT)</span>
+                                </div>
+                            </td>
+                            <td>133</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PROCESS CONTROL (PC)</span>
+                                </div>
+                            </td>
+                            <td>133</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">TRIGGER SENSORS</span>
+                                </div>
+                            </td>
+                            <td>133</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">SCANNER SETTINGS</span>
+                                </div>
+                            </td>
+                            <td>134</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BARCODE TYPES</span>
+                                </div>
+                            </td>
+                            <td>134</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">CONFIGURATION OVERVIEW</span>
+                                </div>
+                            </td>
+                            <td>134</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">CONFIGURE AND TEST THE SYSTEM</span>
+                                </div>
+                            </td>
+                            <td>134</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">TEST THE BARCODE USING ETPU UTILITY</span>
+                                </div>
+                            </td>
+                            <td>136</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SCANNER INSTALLATION</span>
+                                </div>
+                            </td>
+                            <td>137</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">VIRTUAL PROFILING AND BARCODES</span>
+                                </div>
+                            </td>
+                            <td>138</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PROCESS CONTROL</span>
+                                </div>
+                            </td>
+                            <td>138</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">BARCODE PRODUCT SENSOR (BPS)/BARCODE STOP SENSOR (BSS) OPERATION</span>
+                                </div>
+                            </td>
+                            <td>140</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">READING BARCODES WITH A PRODUCT TRACEABILITY SCANNER</span>
+                                </div>
+                            </td>
+                            <td>140</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">USE A PTS AT THE OVEN ENTRANCE</span>
+                                </div>
+                            </td>
+                            <td>140</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ENABLE BARCODING PER PRODUCT</span>
+                                </div>
+                            </td>
+                            <td>141</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">DISPLAY THE CURRENT BARCODE QUEUE</span>
+                                </div>
+                            </td>
+                            <td>141</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">BARCODE QUEUE DIALOG</span>
+                                </div>
+                            </td>
+                            <td>142</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">REMOVE BARCODE</span>
+                                </div>
+                            </td>
+                            <td>143</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">VIEW BARCODE TRACEABILITY INFORMATION FOR PREVIOUSLY RUN BARCODES</span>
+                                </div>
+                            </td>
+                            <td>144</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SEARCH FOR BARCODE ENTRIES</span>
+                                </div>
+                            </td>
+                            <td>144</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USE LOT ID CODES</b>
+                                </div>
+                            </td>
+                            <td><b>145</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USE REMOTE PROCESS MONITORING</b>
+                                </div>
+                            </td>
+                            <td><b>146</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">RUN RPM</span>
+                                </div>
+                            </td>
+                            <td>148</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">THE SOFTWARE CLIENT PC</span>
+                                </div>
+                            </td>
+                            <td>148</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">KIC WATCHDOG</span>
+                                </div>
+                            </td>
+                            <td>149</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">WINVNC</span>
+                                </div>
+                            </td>
+                            <td>149</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">KIC SERVER</span>
+                                </div>
+                            </td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">INSTALL THE KIC SERVER</span>
+                                </div>
+                            </td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">LAUNCH THE KIC SERVER	</span>
+                                </div>
+                            </td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">KIC SERVER ICONS</span>
+                                </div>
+                            </td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ADD A NEW USER	</span>
+                                </div>
+                            </td>
+                            <td>151</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">CHANGE A PASSWORD	</span>
+                                </div>
+                            </td>
+                            <td>151</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">DELETE A USER	</span>
+                                </div>
+                            </td>
+                            <td>151</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">KIC VIEWER	</span>
+                                </div>
+                            </td>
+                            <td>152</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">INSTALL THE KIC VIEWER</span>
+                                </div>
+                            </td>
+                            <td>152</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">CONFIGURE THE KIC VIEWER APPLICATION	</span>
+                                </div>
+                            </td>
+                            <td>152</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">CONNECT TO THE KIC SERVER</span>
+                                </div>
+                            </td>
+                            <td>153</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">VIEW HISTORICAL DATA	</span>
+                                </div>
+                            </td>
+                            <td>156</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">REMOTELY CONTROL A SYSTEM SOFTWARE CLIENT PC</span>
+                                </div>
+                            </td>
+                            <td>157</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">CHART VIEW</span>
+                                </div>
+                            </td>
+                            <td>158</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">USING LIVE DATA OUTPUT</b>
+                                </div>
+                            </td>
+                            <td><b>159</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LDO FORMATS	</span>
+                                </div>
+                            </td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">DETAILS OF OUTPUT FILES	</span>
+                                </div>
+                            </td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">LDO STANDARD TSV AND CSV FOR WORDPAD</span>
+                                </div>
+                            </td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">LDO STANDARD TSV AND CSV FOR EXCEL	</span>
+                                </div>
+                            </td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">LDO 1 BOARD 1 FILE (TXT FORMAT)</span>
+                                </div>
+                            </td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">LDO 1 BOARD 1 FILE (XML FORMAT)</span>
+                                </div>
+                            </td>
+                            <td>160</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">LDO 1 BOARD 1 FILE (CSV FORMAT)</span>
+                                </div>
+                            </td>
+                            <td>161</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ONE BOARD PER FILE – TXT - ALTERNATE</span>
+                                </div>
+                            </td>
+                            <td>161</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ONE BOARD PER FILE – TXT - CUSTOM</span>
+                                </div>
+                            </td>
+                            <td>161</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONFIGURE LDO	</span>
+                                </div>
+                            </td>
+                            <td>161</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">INCLUDE ALARM EVENTS IN THE OUTPUT FILE</span>
+                                </div>
+                            </td>
+                            <td>162</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">DELETE ACCUMULATED LDO FILES</span>
+                                </div>
+                            </td>
+                            <td>163</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">CENTRALIZED PROCESS WINDOW CONTROL</b>
+                                </div>
+                            </td>
+                            <td><b>164</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">KIC FILE ADMINISTRATOR</span>
+                                </div>
+                            </td>
+                            <td>164</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONFIGURATION OF SOFTWARE</span>
+                                </div>
+                            </td>
+                            <td>167</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">OPERATION OF SOFTWARE</span>
+                                </div>
+                            </td>
+                            <td>168</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">FOOTPRINT</b>
+                                </div>
+                            </td>
+                            <td><b>169</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LIVE VIEWING</span>
+                                </div>
+                            </td>
+                            <td>169</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">HISTORICAL VIEWING</span>
+                                </div>
+                            </td>
+                            <td>170</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">STATUS MESSAGES AND ALARMS WHEN USING OPTIONAL FEATURES</b>
+                                </div>
+                            </td>
+                            <td><b>171</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ACKNOWLEDGE ALARMS	</span>
+                                </div>
+                            </td>
+                            <td>171</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">MESSAGES DURING PROFILING AND BASELINE PROFILING	</span>
+                                </div>
+                            </td>
+                            <td>172</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SYSTEM MESSAGES AND ALARMS</span>
+                                </div>
+                            </td>
+                            <td>	172</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">MESSAGE, HIGH PWI	</span>
+                                </div>
+                            </td>
+                            <td>172</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ALARM MESSAGE H2<![CDATA[	]]></span>
+                                </div>
+                            </td>
+                            <td>172</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ALARM H7</span>
+                                </div>
+                            </td>
+                            <td>	172</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ALARMS AND MESSAGES FOR VIRTUAL PROFILING	</span>
+                                </div>
+                            </td>
+                            <td>173</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ACTIVATE ALARM #5A	</span>
+                                </div>
+                            </td>
+                            <td>174</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">WHEN ALARM #5A OCCURS	</span>
+                                </div>
+                            </td>
+                            <td>175</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ACTIVATE ALARM #5C	</span>
+                                </div>
+                            </td>
+                            <td>181</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">WHEN ALARM #5C OCCURS	</span>
+                                </div>
+                            </td>
+                            <td>182</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ACTIVATE ALARM #12</span>
+                                </div>
+                            </td>
+                            <td>	188</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">WHEN ALARM#12 OCCURS</span>
+                                </div>
+                            </td>
+                            <td>	190</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">HARDWARE OPTIONS</b>
+                                </div>
+                            </td>
+                            <td><b>193</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ALARM RELAY</span>
+                                </div>
+                            </td>
+                            <td>193<![CDATA[
+                            ]]></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">LIGHT TOWER</span>
+                                </div>
+                            </td>
+                            <td>193<![CDATA[
+                            ]]></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">STANDARD LIGHT TOWER	</span>
+                                </div>
+                            </td>
+                            <td>193</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">3 COLOR USB LIGHT TOWER</span>
+                                </div>
+                            </td>
+                            <td>	193</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">LED LIGHT STATUS – USB LIGHT TOWER</span>
+                                </div>
+                            </td>
+                            <td>	193</td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_10"><span class="span_9">Appendices</span>
+                    </p>
+                    <p>&#160;</p>
+                    <table style="border-spacing: 0px 0px;margin-left: 0;margin-right: auto;width: 1000px;">
+                        <col style="width: 954px;" />
+                        <col style="width: 46px;" />
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">APPENDIX A: THE PROCESS WINDOW INDEX</b>
+                                </div>
+                            </td>
+                            <td><b>194</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">THE PROBLEM</span>
+                                </div>
+                            </td>
+                            <td>	194</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">DEFINING THE PROCESS WINDOW INDEX</span>
+                                </div>
+                            </td>
+                            <td>	194</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CALCULATING THE PWI</span>
+                                </div>
+                            </td>
+                            <td>	195</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BENEFITS OF RANKING THERMAL PROFILE PERFORMANCE</span>
+                                </div>
+                            </td>
+                            <td>	196</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">CONCLUSION	</span>
+                                </div>
+                            </td>
+                            <td>196</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">APPENDIX B: RECALCULATING ZONE DELTA LIMITS FROM NAVIGATOR/AUTO-FOCUS PREDICTIONS</b>
+                                </div>
+                            </td>
+                            <td><b>197</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">FOR STAND-ALONE SOFTWARE INSTALLATIONS	</span>
+                                </div>
+                            </td>
+                            <td>197</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">FOR OVEN CONTROLLER SOFTWARE INSTALLATIONS	</span>
+                                </div>
+                            </td>
+                            <td>199</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 2px dotted #000; height: 12px;"><b style="background: #fff; padding: 0 5px 3px 0; position: absolute;">APPENDIX C: CONFIGURATION PROGRAM	</b>
+                                </div>
+                            </td>
+                            <td><b>201</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">USER SETTINGS TAB	</span>
+                                </div>
+                            </td>
+                            <td>201</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">USE BASELINE PROFILE EXPIRATION</span>
+                                </div>
+                            </td>
+                            <td>	202</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">SHIFTING TAB	</span>
+                                </div>
+                            </td>
+                            <td>203</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">DECIMAL TAB</span>
+                                </div>
+                            </td>
+                            <td>	203</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">HARDWARE TAB	</span>
+                                </div>
+                            </td>
+                            <td>203</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">AUTO-VP TAB	</span>
+                                </div>
+                            </td>
+                            <td>204</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">RPM TAB</span>
+                                </div>
+                            </td>
+                            <td>	204</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">MESSAGE CONFIG TAB</span>
+                                </div>
+                            </td>
+                            <td>	204</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">PASSWORD CONTROL – MULTI USER	</span>
+                                </div>
+                            </td>
+                            <td>205</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ACCESS TO THE PASSWORD CONTROL TAB	</span>
+                                </div>
+                            </td>
+                            <td>205</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">MULTI USER CONTROL</span>
+                                </div>
+                            </td>
+                            <td>	206</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PASSWORD CONTROL TAB	</span>
+                                </div>
+                            </td>
+                            <td>207</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">USER TYPE AREA	</span>
+                                </div>
+                            </td>
+                            <td>209</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PASSWORD AREA	</span>
+                                </div>
+                            </td>
+                            <td>210</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PASSWORD TIMER AREA</span>
+                                </div>
+                            </td>
+                            <td>	210</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">MAIN SCREEN WITH PASSWORD CONTROL	</span>
+                                </div>
+                            </td>
+                            <td>211</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">MAIN SCREEN LOG IN	</span>
+                                </div>
+                            </td>
+                            <td>212</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">RESPONDING TO AN ALARM	</span>
+                                </div>
+                            </td>
+                            <td>214</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">ALARM TAB	</span>
+                                </div>
+                            </td>
+                            <td>215</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">ALARM RELAY MATRIX CONFIGURATION</span>
+                                </div>
+                            </td>
+                            <td>	215</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">USB LIGHT TOWER CONFIGURATION<![CDATA[	]]></span>
+                                </div>
+                            </td>
+                            <td>216</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 30px; position: absolute;">BARCODE TAB</span>
+                                </div>
+                            </td>
+                            <td>	217</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">BARCODE INTERFACE METHOD AREA	</span>
+                                </div>
+                            </td>
+                            <td>218</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">MISSING BARCODE TRIGGER AREA	</span>
+                                </div>
+                            </td>
+                            <td>218</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">PROCESS CONTROL STRING AREA<![CDATA[	]]></span>
+                                </div>
+                            </td>
+                            <td>219</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">DISABLE MISSING BARCODE OPTION AREA	</span>
+                                </div>
+                            </td>
+                            <td>219</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px dotted #000; height: 12px;"><span style="background: #fff; padding: 0 5px 3px 60px; position: absolute;">OPTIONS</span>
+                                </div>
+                            </td>
+                            <td>220</td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_11"><span class="span_10">Introducing </span><span class="span_10">t</span><span class="span_10">he </span><span class="span_10">Automatic System</span>
+                    </p>
+                    <p>The automatic system is a comprehensive suite of thermal process management tools designed to give you the ultimate in PCB soldering quality control.&#160; It can monitor the entire thermal process, giving advanced warning before a product drifts out of specification.&#160; </p>
+                    <p>&#160;</p>
+                    <p>The product combines software and hardware components into an integrated system.&#160; The software supplements its thermal profile analysis core with special tools for performance optimization, changed variable prediction, and data file management.&#160; The hardware includes the probes that measure oven temperature, sensors to track product movement and conveyor speed, a profiler to move through the process accumulating thermal data, an Ethernet communication hub, and alarm system.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: For more information about the hardware components of the system, see the <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters=""><span class="span_12">Automatic System Hardware Installation Manual (TFS-330210-000)</span></MadCap:shortcut>.</p>
+                    <p>&#160;</p>
+                    <p class="p_11"><span class="span_13">About </span><span class="span_13">t</span><span class="span_13">his </span><span class="span_13">Manual</span>
+                    </p>
+                    <p>This user manual is divided into two parts.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_14">Part 1: </span><span class="span_14">The Basic System</span> describes all of the included functionality of the basic system. It details the core software capabilities together with an overview of the hardware components.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_14">Part 2: </span><span class="span_14">Available </span><span class="span_14">Software &amp; Hardware </span><span class="span_14">O</span><span class="span_14">ptions</span> describes the enhancements that can be added to the basic system, which will extend the capabilities of your core software and hardware.&#160; </p>
+                    <p class="ListBullet_1">&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="73" MadCap:lastWidth="1007">
+    <head>
+    </head>
+    <body>
+        <table>
+            <col style="width: 261px;" />
+            <col style="width: 638px;" />
+            <tr>
+                <td><span style="font-size: 9pt; color: #a9a9a9; text-align: right">Profiling Inspector User Manual</span>
+                </td>
+                <td style="text-align: right;"><span style="font-size: 9pt; color: #a9a9a9; text-align: right">Version 3.3</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <MadCap:bodyProxy />
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

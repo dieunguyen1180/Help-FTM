@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Introducing the WPI system</title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1">Introducing the WPI system</h1>
+                    <p>The WPI (Wave Process Inspection) system is a comprehensive suite of thermal process management tools designed to give you the ultimate in PCB soldering quality control. WPI can monitor the entire wave solder process, giving advanced warning before a product drifts out of specification.</p>
+                    <p>&#160;</p>
+                    <p>WPI combines software and hardware components into an integrated system. The software supplements its thermal profile analysis core with special tools for performance optimization, changed variable prediction, and data file management. The WPI hardware utilizes an array of sensors that measure process temperatures, sensors to track product movement and conveyor speed, a profiler (not included) to move through the process accumulating thermal data, an Ethernet communication hub, and alarm system.</p>
+                    <h2 class="Heading2"><a name="Understanding_the1"></a>The hardware</h2>
+                    <p>The major hardware components to a WPI system are:</p>
+                    <ul>
+                        <li>KIC DAU (Data Acquisition Unit) or eTPU (ethernet Thermocouple Processing Unit)</li>
+                        <li>Probes – 30 thermocouples</li>
+                        <li>Conveyor speed encoder</li>
+                        <li>Board sensor</li>
+                        <li>Fixed Pyrometer sensor</li>
+                        <li>
+                            <p>Alarm Relay/Light Tower</p>
+                        </li>
+                        <li>Profiler</li>
+                    </ul>
+                    <h3 class="Heading3">DAU/eTPU</h3>
+                    <p>The DAU or eTPU interfaces with the computer using an Ethernet cross-over cable that connects from the UpLink port on the device directly to a USB to Ethernet adapter (or to an installed Network Interface Card (NIC)).  Please follow manufacturers’ instructions to install the USB adapter or NIC.</p>
+                    <p>&#160;</p>
+                    <p>The computer used with the WPI system can be a machine that is dedicated to only supporting WPI or it can also serve as the machine controller PC.</p>
+                    <p>&#160;</p>
+                    <p>The DAU/eTPU must be plugged into an AC power source.  It utilizes a universal A/C transformer power supply and ships from the factory with multiple AC connectors to accommodate any connector/voltage requirement.</p>
+                    <h3 class="Heading3">Probes</h3>
+                    <p>The probes are mounted in the machine process chamber.  They are usually suspended above and below the product.  The probes are connected to the DAU/eTPU - Odd/Even ports.</p>
+                    <p class="ListBullet">  Each probe connector is stamped with an <b>E</b> or <b>O</b> in order to designate <b>Odd</b> or <b>Even</b>.&#160;See the <a href="Install_the_Software.htm#Hardware_diagram">Hardware diagram</a>.</p>
+                    <h3 class="Heading3">Conveyor Speed Encoder</h3>
+                    <p>The conveyor speed encoder is mounted to read pulses from a gear that turns while the conveyor is operating.  The conveyor speed encoder connects to channel #1 of the DAU/eTPU Sensor ports.</p>
+                    <h3 class="Heading3">Board Sensor</h3>
+                    <p>The board sensor is mounted near the entrance of the machine and provides for product tracking.  It is connected to channel #2 of the DAU/eTPU Sensor ports.</p>
+                    <h3 class="Heading3">Fixed Pyrometer Sensor</h3>
+                    <p>The fixed pyrometer sensor is mounted outside the process tunnel, at the exit of the machine to read the direct temperature of each board as they exit the machine.  It connects to channel #4 of the DAU Sensor ports, or to a USB port on the PC (through an adapter module) when used in conjuction with an eTPU.</p>
+                    <h3 class="Heading3">Alarm Relay/Light Tower</h3>
+                    <p>The Alarm Relay connects to the Alarm/Barcode port of the DAU/eTPU and allows for integration to an infeed conveyor (available with SMEMA interface connections) to prevent products from entering machine when an alarm condition occurs or hardwiring to an external device of your choosing. Additionally, it allows for a standard KIC supplied audible light tower to be powered and triggered. The Alarm Relay is required to have an external AC power source.</p>
+                    <p>&#160;</p>
+                    <p>There are two audible light towers available – one model connects directly to the Alarm Relay device; the other model connects directly to the USB port of the PC See the <a href="Troubleshooting.htm#Light_Tower">Light Tower section</a>.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Profiler                   </h3>
+                    <p>The profiler is the product specific data acquisition component of the WPI system.  It provides the on-board, through-the-process temperature data.  WPI analyzes this data together with machine temperatures and conveyor speed factors to graphically display the thermal profile.</p>
+                    <p>&#160; </p>
+                    <h3 class="Heading3">Profiler Models </h3>
+                    <p>You can use WPI software with the following profiler models:</p>
+                    <ol>
+                        <li>SPS Smart Profiler</li>
+                        <li>X5</li>
+                        <li>K2</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>The software works the same with any of the profilers.  Once you have the software running, you indicate your specific profiler model.  (The artwork that appears throughout this manual reflects a variety of profiler models.)</p>
+                    <p>&#160;</p>
+                    <p>Certain profilers can operate in either of two modes—datalog and wireless.  In standard datalog mode, the profiler records temperature data as it moves through the thermal process.  A cable then transfers the data to the WPI software computer.  In wireless mode, the profiler transmits data directly to the computer by radio signals or Wi-Fi instead of an attached cable.  WPI software can then display the accumulating data in real-time.</p>
+                    <p>&#160;</p>
+                    <p>For specific information regarding your profiler, consult one of the following KIC publications:</p>
+                    <ul class="ul_4">
+                        <li>
+                            <MadCap:shortcut path="PTG-330310-000 SPS Smart Profiler Hardware Guide.pdf" parameters="" class="shortcut_1"> SPS Smart Profiler Hardware Guide, (Publication Number PTG-330310-000)</MadCap:shortcut>
+                        </li>
+                        <li>
+                            <MadCap:shortcut path="EXP-337310-000 X5 Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">X5 Profiler Hardware Guide, (Publication Number EXP-337310-000)</MadCap:shortcut>
+                        </li>
+                        <li>
+                            <MadCap:shortcut path="EXP-331310-000 K2 Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">K2 Profiler Hardware Guide, (Publication Number EXP-331310-000)</MadCap:shortcut>
+                        </li>
+                    </ul>
+                    <h3 class="Heading3">Barcode Reader</h3>
+                    <p>A user-supplied, serial port barcode reader can connect through the DAU/eTPU Alarm/Barcode port.  When used in conjunction with the alarm relay, the barcode reader hardware is connected using the alarm relay Y- cable. Alternately, a USB barcode reader can connect through one of the DAUs built-in USB ports. For additional information about using barcode scanners, see <a href="Appendix_B.htm#Barcode_Tab"><i>Appendix B – Barcode Tab.</i></a></p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Hardware_diagram"></a>Hardware diagram - DAU</h2>
+                    <p>The interconnection of the WPI components is illustrated in the hardware diagram below:</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000003.png" style="width: 504px;height: 464px;" />
+                    </p>
+                    <p class="Figure">Figure 1: Hardware Configuration Diagram</p>
+                    <p>&#160;</p>
+                    <p>Note #1: When an eTPU is used, a USB Barcode Scanner (user supplied) would be connected to a USB port directly on the PC.</p>
+                    <p>Note #2: When an eTPU is used, the Fixed Pyrometer Sensor connects to a USB port on the PC through an additional adapter (additional hardware and cables included with system).</p>
+                    <p>&#160;</p>
+                    <p>It is critical that all WPI hardware is properly installed and configured.  If one of the system components is setup incorrectly or is malfunctioning, the WPI system will not allow you to run Virtual Profiling or provide accurate data.  If you have any questions or are unsure about any of the following, call or email <a href="Contacting_KIC.htm#Contact">KIC Technical Support</a> for assistance.</p>
+                    <p>&#160;</p>
+                    <p><b style="font-size: 16pt;"><a name="Installing_the_software_2"></a>Install The Software</b>
+                    </p>
+                    <h3 class="Heading3">Minimum PC system requirements</h3>
+                    <ul class="ul_1">
+                        <li class="ListBullet2_1">Dual Core / 1GHz processor PC with 2GB RAM </li>
+                        <li class="ListBullet2_1">2GB available storage </li>
+                        <li class="ListBullet2_1">Video 1024 x 768 / 16-bit color</li>
+                        <li class="ListBullet2_1">1 available USB port for data download </li>
+                        <li class="ListBullet2_1">1 available USB port (for software key)</li>
+                        <li class="ListBullet2_1">1 available Ethernet port or 1 available USB port with Ethernet-to-USB adapter</li>
+                        <li class="ListBullet2_1">For product compatibility with Windows® operating systems, visit our website at <MadCap:shortcut path="https://kicthermal.com/support-download/os-compatibility-chart/" parameters="" class="shortcut_1">http://kicthermal.com/support-download/os-compatibility-chart</MadCap:shortcut></li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: Additional powered USB ports may be needed for additional accessories.</p>
+                    <h3 class="Heading3">Note before installation:</h3>
+                    <ul class="ul_2">
+                        <li class="ListBullet_1">Shut down all other applications as a precaution against software conflicts.&#160; </li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="ListBullet_1">SlimKIC 2000 profiler users should disable or uninstall all applications that interface with the PC through a serial COM port, other than your oven controller software.  For example: PDA communication software.</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_1">If you are installing the WPI  software on an oven that is capable of communication with the software, <b>DO NOT place the WPI  icon in the Windows Startup folder</b>.  If the WPI  software loads before the oven controller software, it can cause the oven controller software to malfunction.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p><span style="font-family: Arial; font-size: 12pt; font-weight: bold;">Languages</span>
+                        <br />
+                        <br />
+                    </p>
+                    <p>The software supports the following languages:<br /><br /></p>
+                    <p>
+                        <table>
+                            <col style="width: 105px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>English</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Japanese</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>German</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Korean</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Spanish</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Simplified Chinese</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td>
+                                    <ul>
+                                        <li>Traditional Chinese</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>&#160;</p>
+                    <p>The use of specific languages depends on the operating system:</p>
+                    <ul style="list-style-type: square;">
+                        <li>English, German, and Spanish can be run on any of the supported Windows operating systems.</li>
+                        <li>Japanese, Korean, Simplified Chinese, and Traditional Chinese cannot be used with English versions of Windows operating systems.</li>
+                        <li>To run the software in Japanese, the operating system must be Windows-Japanese version.</li>
+                        <li>To run the software in Simplified or Traditional Chinese, the operating system must be Windows-Chinese version.</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="To_install_the_software"></a>Install
+                 </h3>
+                    <p>
+                        <ol start="1" class="ol_1">
+                            <li class="ListBullet2">Insert the USB flash drive into a USB port on your computer.</li>
+                        </ol>
+                    </p>
+                    <p class="ListBullet">&#160;</p>
+                    <ol start="2" class="ol_1">
+                        <li class="ListBullet2">Depending upon your computer setup, a dialog box may appear. If it does, select <b>Open</b> folder to view <b>files</b>. If a dialog box does not appear, use Windows Explorer to browse to the USB flash drive directory.</li>
+                    </ol>
+                    <p class="ListBullet">&#160;</p>
+                    <ol start="3" class="ol_1">
+                        <li class="ListBullet2">Double-click the installation file in the root directory to begin the installation.</li>
+                    </ol>
+                    <p class="ListBullet">&#160;</p>
+                    <ol start="4" class="ol_1">
+                        <li class="ListBullet2">Follow the instructions for the installation program as the screens appear<br /><br />*When installing the software over an existing WPI directory, the installation will automatically create a backup folder of the existing directory. A warning message will be displayed when selecting an existing directory, and a checkbox can be de-selected if you do not wish to create a backup.<br /><br />The name of the backup directory created will be C:\WPI_Old_MM-DD-YYYY<br /><br /><span class="span_7">Note</span>: If you have questions regarding your hardware or software configuration contact <a href="Contacting_KIC.htm#KIC">KIC Tech Support</a>.</li>
+                    </ol>
+                    <p class="ListBullet2">&#160;</p>
+                    <h2 class="Heading2"><a name="Running_the_RPI_software"></a>Start the software</h2>
+                    <p><span class="span_7">Note</span>: The installation automatically adds a <span class="span_7">KIC</span> folder to the main Windows Start Menu. </p>
+                    <table class="table_1">
+                        <col style="width: 248pt;" />
+                        <col style="width: 230pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <ol start="1" class="ol_2">
+                                    <li>Click on the <span class="span_7">Windows Start</span> button, and locate the <span class="span_7">WPI  icon</span>.&#160; <br /><br /><br /><span class="span_7">Note</span>: The icon may appear in the Start button’s list of frequently used applications or you can click the <span class="span_7">All Programs</span> command to find it in the <span class="span_7">KIC folder</span> that appears among the displayed folder/icon list.</li>
+                                </ol>
+                                <p class="p_7">&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000005.png" style="width: 69px;height: 69px;" />&#160;&#160;&#160;&#160;&#160; <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000006.png" /></p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_2">
+                        <li>Click on the icon. <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000006.png" /></li>
+                    </ol>
+                    <p><a name="Start_the_Software"></a>
+                    </p>
+                    <p class="p_8">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000009.png" style="width: 314px;height: 261px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <ol start="3" class="ol_2">
+                        <li>	A specifically programmed USB dongle key is required to run the WPI software. When starting, if you see the above message, insert the key and click <b>OK</b>.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="Procresult_1"><a name="run_RPI"></a><a name="Start_the_Software_Dongle"></a>
+                    </p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000010a.png" style="width: 460px;height: 240px;" />
+                        <br />
+                    </p>
+                    <p class="Figure">Figure 2: Product Tracking Initialization</p>
+                    <p>&#160;</p>
+                    <p><b>Production mode</b> - If you wish to run profiles or Virtual Profile, enter the current conveyor speed for your machine and choose the <b>OK</b> button, this will activate Production mode.  You can view historical data while in Production mode, but not while a Virtual Profile is running.</p>
+                    <p>&#160;</p>
+                    <p>To view historical Virtual Profile data from the same PC while Virtual Profiling live, launch a separate KIC Host.exe file located in: <span style="font-family: 'Courier New';">C:\WPI\AppForViewer\KICHost.exe</span>.  This will open a separate Profile Explorer that lets you browse through the history of any product including the one currently running VP.  Historical data will be available for any boards that have already exited the machine.</p>
+                    <p>&#160;</p>
+                    <p><b>View History mode</b> - If you wish to work offline and do not plan to profile or Virtual Profile, choose <i>I am not going to run profiles or live WPI</i> button, this will activate History mode.  While History mode is active, you cannot run profiles or Virtual Profile, as the software will not communicate with the WPI hardware.  The software will not even check for KIC hardware unless Production mode is active.  If working in History mode you can browse to any working directory in Profile Explorer, even over a network.</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

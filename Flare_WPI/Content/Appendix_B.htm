@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1><a name="Appendix"></a>Appendix B: Configuration Program
+                    </h1>
+                    <p style="font-size: 10pt;">&#160;</p>
+                    <p>The system has many individual software settings that can be changed to suit the users process and or hardware set up. The configuration program tool facilitates quick and easy system setting changes, saving the user from the complications of manually editing the configuration files.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b>  Only persons with advanced training in the automatic system software should modify these settings. Changes using this tool will directly affect the data collected by the system. Configuration software tool location: <span style="font-family: Arial;">C:\WPI\ConfigurationProgram.exe</span></p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2><a name="User2"></a><a name="User_Settings_Tab"></a>User Settings Tab
+                    </h2>
+                    <p>&#160;</p>
+                    <p><b>Allowable Change –</b> Defines how much deviation is allowed in any one of the probe TC’s before a Warning condition is generated.</p>
+                    <table style="width: 90%">
+                        <col style="width: 399px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p><b>Exclusion –</b> Allows user to disable any of the 30 probe TC’s from the VP calculations.</p>
+                                <p>&#160;</p>
+                                <p><b>VP Idle Mode –</b> Optional feature that can be used along with energy savings features of some machines.</p>
+                                <p>&#160;</p>
+                                <p><b>Display Host Screen –</b> Enables/disables the display of the Host diagnostic screen.</p>
+                                <p>&#160;</p>
+                                <p><b>Display Units Per Hour –</b> Enables live display on top of VP general tab that tracks how many products have been processed in the past hour (value resets at the top of each hour).</p>
+                                <p>&#160;</p>
+                                <p><b>Use Baseline Profile Expiration –</b> Automatically require new baseline profiles after specified number of days.</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <br />
+                                <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000140.png" style="width: 479px;height: 454px;" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p><b>Temperature Triggers and Sample Rates</b>
+                    </p>
+                    <p>The temperature triggers dictate when the profile begins and ends allowing for more consistent data collection.  This area of the tool allows you to change the temperature trigger values as well as sample rate for each application type.</p>
+                    <p>&#160;</p>
+                    <p>There are three temperature triggers:</p>
+                    <ul class="gg">
+                        <li><b>Start -</b>The profile Start temperature trigger is always 2C above the “Maximum Product Temperature at start of profile” setting in the Global tab of the Global Preferences screen.  This value can be changed as needed from as low as 15C to as high as 40C.<br /><br /></li>
+                        <li><b>Mid Point –</b> The midpoint temperature trigger must be higher than the start trigger, and the End trigger.  Be sure the temperature in your process will achieve this setting, or the profile will fail to download.<br /><br /></li>
+                        <li><b>End –</b> The profile will end when all of the thermocouples attached to the profiler have cooled to below the End-Temperature trigger setting.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p><b>Sample rate –</b> Set the sample rate for each application type.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3><a name="Use_Baseline_Profile_Expiration"></a>Use Baseline Profile Expiration
+                    </h3>
+                    <p>&#160;</p>
+                    <p>Enabling this function allows the system to require a new baseline profile is run after a specified number of days have elapsed. When enabled, additional functions will appear on various screens in the software.</p>
+                    <p>&#160;</p>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p><b>Global Preferences/WPI Tab</b> – When it is enabled in the Configuration Program, it adds an additional selection to this tab. Selecting the checkbox allows you to define the number of days after a baseline profile is run that it will automatically expire. This feature can be used to ensure that the system is always using an up to date profile as the baseline.</p>
+                                <p>&#160;</p>
+                                <p>Note: When expired, the profile will still be viewable. However, it will not be able to be used as the baseline for monitoring production.</p>
+                            </td>
+                            <td width="50%" style="text-align: center;">
+                                <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001402.png" style="width: 519px;height: 437px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p><b>Profile Explorer – Search Button</b> - When the expiration feature is enabled, you will see a new button appear in Profile Explorer:</p>
+                            </td>
+                            <td> <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001403.png" /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <ol>
+                                    <li>Click this button to access a search window which will allow you to easily identify when each of your baseline profiles will expire.</li>
+                                    <li>Enter the number of days (window of time remaining until profiles will expire), and then click Search. </li>
+                                    <li>All products with a baseline profile set to expire within the specified timeframe will be displayed.</li>
+                                    <li>Selecting a particular product and clicking on the <i>Run New Baseline Profile</i> will automatically take you to the <i>RUN A PROFILE</i> screen and will select that product name.</li>
+                                </ol>
+                            </td>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001404.png" style="width: 510px;height: 324px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2><a name="Shifting"></a><a name="Shifting_Tab"></a>Shifting Tab
+                                </h2>
+                                <p>&#160;</p>
+                                <p>The information entered in this area is used for proper alignment of the profile data, as well as the installed sensors, relative to the layout of the Wave Solder machine the system is installed in.</p>
+                                <p>&#160;</p>
+                                <p>Select the check box and then enter the required measurements.  Contact KIC Technical Support for assistance.</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/image105.png" style="width: 511px;height: 321px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2><a name="Machine"></a><a name="Machine_Configuration"></a>Machine Configuration
+                                </h2>
+                                <p>&#160;</p>
+                                <p>This tab is used for specifying the layout of the Wave Solder machine. The units of measure of the different areas are selected, the number, and configuration, of the preheat zones, as well as the number and labels for the solder waves.</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/image154.png" style="width: 518px;height: 415px;" />
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2><a name="Decimal"></a><a name="Decimal_Tab"></a>Decimal Tab
+                                </h2>
+                                <p>&#160;</p>
+                                <p>This area controls the number of decimal places for the Conveyor Speed and Zone Setpoints displays in the software.</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/image106.png" style="width: 516px;height: 281px;" />
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2><a name="Hardware_Tab"></a>Hardware Tab
+                                </h2>
+                                <p>&#160;</p>
+                                <p>This area specifies the configuration of the DAU or eTPU network address.</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/image107.png" style="width: 495px;height: 154px;" />
+                                <p>&#160;</p>
+                                <p>
+                                    <img src="Resources/Images/image156.png" style="width: 487px;height: 149px;" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="LDO"></a>LDO Tab</h2>
+                    <p>See <a href="Live_Data_Output.htm#Configuring_LDO">LDO Configuration</a> section</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Auto-VP_Tab"></a>Auto-VP Tab
+                    </h2>
+                    <p>&#160;</p>
+                    <p>Auto-VP is a specialized feature for product changeovers that is dependent on a wide variety of variables. There are multiple configurations of the Auto-VP feature depending on the capabilities and processes in place in the factory. Contact your systems supplier or KIC Technical Support to identify if this functionality can be implemented with your system</p>
+                    <p>&#160;</p>
+                    <h2><a name="RPM_Tab"></a>RPM Tab
+                    </h2>
+                    <p>See <a href="Remote_Process_Monitoring.htm" style="color: #0000ff; text-decoration: underline;">RPM Configuration</a> section.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <h2><a name="Message"></a><a name="Message_Config_Tab"></a>Message Config Tab
+                                </h2>
+                                <p>&#160;</p>
+                                <p>When certain messages are displayed in the software, the user can select a checkbox for “Do not show this again”. If checked, that message box becomes “disabled”. This area allows the user to enable or disable those messages.</p>
+                            </td>
+                            <td width="50%" style="text-align: center;">
+                                <img src="Resources/Images/image108.png" style="width: 486px;height: 254px;" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h2><a name="Password4"></a><a name="Password_Control_Multi_User"></a>Password Control – Multi-User
+                    </h2>
+                    <p>The software offers a Multi-User Control capability to configure certain functions as password protected and, thus, requiring the use of specific user levels.</p>
+                    <p>&#160;</p>
+                    <p>The user types are:</p>
+                    <ul style="list-style-type: square;">
+                        <li>Administrator</li>
+                        <li>Engineer</li>
+                        <li>Tech</li>
+                        <li>Operator (default)</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Access"></a>Access to the Password Control Tab
+                    </h3>
+                    <p>&#160;</p>
+                    <p>By default, the Multi-User Control is disabled. When this password function is enabled, it will require the entering the default Administrator password before the Configuration Utility can be accessed. The Password Control tab can only be used by the Administrator, or the Engineer/Tech user types if specified.</p>
+                    <p>&#160;</p>
+                    <p>If the Multi-User Control is enabled and a user starts the utility, the utility will not launch until they enter the correct password (Default Administrator password is Admin). If the user does not have the password, they can Cancel and close the utility.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000141.png" style="width: 571px;height: 541px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Multi"></a>Multi-User Control
+                    </h3>
+                    <p>&#160;</p>
+                    <p>To apply Multi-User Control, Administrators will click the <b>Enable</b> radio button and then click <b>OK</b>.</p>
+                    <p>&#160;</p>
+                    <p>The confirmation dialog is answered, and then the utility must be restarted.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000142.png" style="width: 561px;height: 529px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>When the administrator logs back in, a password is required.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Password"></a>Password Control Tab
+                    </h3>
+                    <p>&#160;</p>
+                    <p>The <b>Password Control</b> tab allows administrators to manage passwords and permissions for each user type. The image below represents the Password Control tab when Multi-User Control is enabled. This tab displays a <b>Password Control Chart</b>, highlighted, which contains a list of every area in the software. At the bottom of the list, you can give access to the rest of the Configuration Utility tabs, and the Password Control tab individually.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000143.png" style="width: 598px;height: 566px;" />
+                    </p>
+                    <p><b>Stop VP Selections</b>
+                    </p>
+                    <p>There are three different available options for controlling when a VP can be stopped:</p>
+                    <ul>
+                        <li>Stop VP – All Conditions: This is the default setting. An authorized user can stop the VP at any time.</li>
+                        <li>Stop VP with Empty Machine: User can stop the VP only when there is no product in the machine.</li>
+                        <li>Stop VP with Product in Machine: When user clicks Stop button, they have a choice to wait for products to exit the machine, or they can force a stop even if there is still product inside.</li>
+                    </ul>
+                    <p>NOTE: To enable use of either of the second two options, the <i>Stop VP – All Conditions</i> selection must be unchecked.
+					</p>
+                    <p>&#160;</p>
+                    <p><b>Examples of Stop VP Selections</b>
+                    </p>
+                    <p>&#160;</p>
+                    <table style="width: 90%;">
+                        <col style="width: 484px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p><b>Stop VP with Empty Machine:</b>
+                                </p>
+                                <p>Clicking yes will immediately stop the</p>
+                                <p>current VP and return to the Profile</p>
+                                <p>Explorer screen.</p>
+                            </td>
+                            <td width="50%" style="text-align: center;">
+                                <img src="Resources/Images/image155.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Stop VP with Product in Machine (Not Authorized):</b>
+                                </p>
+                                <p>OK – Clicking OK will acknowledge this message window and the VP will stop automatically once the last board exits the machine.</p>
+                                <p>Cancel – The <i>Stop</i> request will be cancelled, and the VP will continue to run.</p>
+                            </td>
+                            <td width="50%" style="text-align: center;">
+                                <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001405.png" style="width: 389px;height: 104px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Stop VP with Product in Machine (Authorized):</b>
+                                </p>
+                                <p>OK – Clicking OK will acknowledge this message window and the VP will stop automatically once the last board exits the machine.</p>
+                                <p>Cancel – The <i>Stop</i> request will be cancelled, and the VP will continue to run.</p>
+                                <p>Force Stop – The VP will stop immediately and return to the Profile Explorer screen.</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001405a.png" style="width: 393px;height: 105px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>If the ‘Force Stop’ selection is used, additional notes will be automatically added into the <i>Description</i> column in Profile Explorer. It will note which user level stopped the VP, and how many products were still in the machine when the stop occurred.</p>
+                            </td>
+                            <td style="text-align: center;">
+                                <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001406.png" style="width: 401px;height: 44px;" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="User"></a>User Type Area
+                    </h3>
+                    <p>&#160;</p>
+                    <p>The <b>User Type</b> pick list allows the Administrator to select and enable the password function by user type.</p>
+                    <p>&#160;</p>
+                    <p>By default, each user in the menu will be unchecked/disabled. By selecting a user type, you not only enable or disable the password entry field and the Password Timer, but also select the type of user to enable and configure.</p>
+                    <p>&#160;</p>
+                    <p>The columns in the <b>Password Control Chart</b> will be enabled depending on the user type selected:</p>
+                    <p>&#160;</p>
+                    <p>Administrator = All columns enabled</p>
+                    <p>Engineer = All columns enabled</p>
+                    <p>Tech = Only Tech and Operator columns enabled</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000144.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <h3><a name="Password2"></a>Password Area
+                    </h3>
+                    <p>&#160;</p>
+                    <p>The Password entry fields are disabled until a user type is selected.</p>
+                    <p>&#160;</p>
+                    <p>When a user type is selected, the <b>Enter Password</b> fields will display as ‘XXXXX” if a password had previously been entered. When a user enters a password ‘X’s will show to indicate an entry, but not show the actual password. After entering a password in the two fields, click the Apply button before changing to another User Type.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000145.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Password3"></a>Password Timer Area
+                    </h3>
+                    <p>The <b>Password Timer</b> is configurable and represents the amount of time before the user is automatically logged out due to being idle.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Main"></a>Main Screen With Password Control
+                    </h3>
+                    <p>&#160;</p>
+                    <p>With Password Control enabled, the software Main Screen with display a Log In button with a letter on it.</p>
+                    <p>&#160;</p>
+                    <p>O = Operator (default)</p>
+                    <p>A = Administrator</p>
+                    <p>E = Engineer</p>
+                    <p>T = Tech</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000146.png" style="width: 611px;height: 458px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>Note that the Operator user type is the default, and typically has the least access privileges.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Main2"></a>Main Screen Log In
+                    </h3>
+                    <p>When the Log in button is clicked, the software displays a drop-down menu, as shown here.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000147.png" style="width: 610px;height: 456px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>Note that you can log in from most screens, such as from the Log in button in the lower left of the Graph screen.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000148.png" style="width: 610px;height: 328px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Example"></a>Example of Limited Access to Functions
+                    </h3>
+                    <p>&#160;</p>
+                    <p>This screenshot shows the limited access that an Operator, for example, may have. Notice that there are no privileges to create, edit, delete, or save changes.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000149.png" style="width: 604px;height: 565px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Respondi"></a>Responding to an Alarm
+                    </h3>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000150.png" style="width: 467px;height: 300px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Alarm2"></a><a name="AR_Matrix_Settings_Tab"></a>Alarm Tab
+                    </h2>
+                    <p>&#160;</p>
+                    <p>The Alarm tab allows for enabling of the USB Light Tower, and for customizing the operation of the Alarm Relay functions.</p>
+                    <h3 class="Heading3"><a name="Alarm"></a>Alarm Relay Matrix configuration</h3>
+                    <p>&#160;</p>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>When the <i>Alarm Relay</i> is in use, you can match the alarm output behavior to your specific production needs through the Alarm Relay (AR) Matrix.  By default, the system only outputs a signal to the relay when it is running Virtual Profiling and an alarm (red crystal ball) condition.  The alarm condition prompts the DAU/eTPU to send a signal that energizes the <i>Alarm Relay</i>, letting it power an audible or light indicator or stop an infeed conveyor</p>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014022.png" style="width: 581px;height: 179px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>When enabled, a list of operational conditions appears.  If an item is checked, the Alarm Relay will be energized during that condition. If an item is unchecked, the relay will be de-energized at that condition. For example, you might want to keep boards from entering the machine except when the Virtual Profile is in a green or yellow crystal ball state.  Selecting all other items except those two will result in stopping the infeed conveyor from allowing boards to enter under any other condition.</p>
+                                    <p>&#160;</p>
+                                    <p>Even if someone tried to bypass the entire system by shutting down the KIC software, it can be configured so that it still would not allow product to enter.  The matrix gives you more control over your process, ensuring that system is in use whenever product is run.</p>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001407.png" style="width: 577px;height: 548px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p><b>NOTE:</b> When the <i>USB Light Bar</i> is used, changing the settings in this Matrix will not alter the <i>USB Light Bar</i> operation. It will <u>only</u> affect the operation of the <i>Alarm Relay</i>.</p>
+                    <h3 class="Heading3"><a name="USB"></a>USB Light Tower configuration</h3>
+                    <h4 class="Heading4">Enable/Disable USB Light Tower</h4>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>To enable the use of the USB Light Tower, enable the checkbox on the Alarm tab. This will enable the default operation of the USB Light Tower as previously described</p>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014023.png" style="width: 579px;height: 176px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p><span style="font-size: 10pt;">When enabled, you will also have the ability to customize the operation of the USB Light Tower. Select the </span><i style="font-size: 10pt;">Use USB Light Tower Matrix</i><span style="font-size: 10pt;"> checkbox to activate the matrix functions.</span>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014024.png" style="width: 581px;height: 180px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="Heading4">USB Light Tower Matrix</h4>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>When enabled, a list of operational conditions appears.  The matrix allows for enabling individually, the sound and light operation for each condition. If an item is checked, the sound or light turns on during that condition. If an item is unchecked, the sound or light will be off at that condition.</p>
+                                    <p>&#160;</p>
+                                    <p>When the Light function is enabled for a condition, one of three colors can be chosen to appear.</p>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014025.png" style="width: 586px;height: 556px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="Heading2"><a name="Barcode_Tab"></a>Barcode Tab
+                    </h2>
+                    <p>&#160;</p>
+                    <p>The <b>Barcode</b> tab is used for configuring some of the barcode interface functions and some barcode operations.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000151.png" style="width: 602px;height: 570px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3><a name="Barcode2"></a>Barcode Interface Method Area
+                    </h3>
+                    <p>&#160;</p>
+                    <p>The <b>Barcode Interface Method</b> area specifies where a barcode string will be coming in:</p>
+                    <p>&#160;</p>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p><b>eTPU/DAU Barcode Port –</b> via 9 pin serial connection on eTPU/DAU, or DAU USB port.</p>
+                                <p>&#160;</p>
+                                <p><b>PC Com Port –</b> via 9 pin serial port or USB Port on PC.</p>
+                                <p><b>NOTE</b>: To use a USB barcode scanner, it must be programmable for a USB Serial Port interface.</p>
+                                <p>&#160;</p>
+                                <p><b>OEM –</b> only available with specific oven manufacturers</p>
+                            </td>
+                            <td width="50%" style="text-align: center;">
+                                <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000152.png" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>If PC Com Port is selected, the <b>COM Port Configuration</b> area also becomes active. This area specifies which Com Port the scanner is connected to, and the Com settings. This area must be configured when using either a DB9 (Com Port) or USB connected scanner and connecting directly to the PC:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000153.png" style="width: 615px;height: 121px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Missing"></a>Missing Barcode Trigger Area
+                    </h3>
+                    <p>&#160;</p>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>The <b>Missing Barcode Trigger</b> area specifies what method is used to trigger the Missing Barcode Alarm function.</p>
+                                    <p>&#160;</p>
+                                    <p><b>Barcode Product Sensor –</b> requires the installation of the BPS sensor adjacent to the barcode scanner. If this sensor is triggered, and a barcode is not received, the Missing Barcode Alarm is generated.</p>
+                                    <p>&#160;</p>
+                                    <p><b>No Read From Scanner –</b> some scanners can be programmed with a “No Read” output.  If “ No Read” is the string received, the  Missing Barcode Alarm is generated.</p>
+                                    <p>&#160;</p>
+                                    <p><b>Disable -</b>  the software will never generate a Missing Barcode alarm. Typically used when some other process verification is in use and the alarm from KIC is not required/desired.</p>
+                                    <p>&#160;</p>
+                                    <p>NOTE: When either <b>“No Read From Scanner”</b> or <b>“Disable”</b> is selected, some of the configurations previously referenced in the <a href="Global_Preferences.htm#Barcode_tab"><i style="color: #0000ff; text-decoration: underline;">Barcode Section</i></a> will automatically be disabled.</p>
+                                </td>
+                                <td style="text-align: center;"> <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000157.png" /><p>&#160;</p><p><img src="Resources/Images/SFT-324000-000 RPI User Manual/08000158.png" style="width: 349px;height: 287px;" /></p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Process"></a>Process Control String Area
+                    </h3>
+                    <p>This area allows you to select which method of Process Control string identification will be used in the software:</p>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><b>Wildcard</b>: Default setting; This method requires that the <i>Control String</i> being defined is always an uninterrupted, consecutive grouping characters – either at the beginning, middle, or end – of a barcode string.</p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014026.png" style="width: 379px;height: 106px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><b>Parsing</b>: This method allows you to select any specific characters from within a barcode string to be used as the <i>Control String</i>. The Parsing method is helpful when the locations of the Control Strings vary from product to product.</p>
+                    <p>&#160;</p>
+                    <h3><a name="Disable"></a>Disable Missing Barcode Option Area
+                    </h3>
+                    <p>&#160;</p>
+                    <p>This area allows you to disable some of the available choices that are given when a Barcode alarm is displayed:</p>
+                    <p>&#160;</p>
+                    <table style="width: 90%;">
+                        <col style="width: 400px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>The four selections listed represent buttons that a user can click on when a Barcode alarm appears on the screen. By selecting a particular checkbox, the software will no longer display that button on the alarm message dialog window.</p>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014010.png" style="width: 374px;height: 162px;" />
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>For example, when the barcode option is in use, and you never want a product to be allowed to enter the machine without the associated barcode string attached to the data, you can select the ‘Proceed without a Barcode’ checkbox. This will prevent that button from being accessible. Below is an example of a Missing Barcode Alarm condition, when that function is disabled. The open spot is where the ‘Proceed without a Barcode’ choice would have been displayed:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014011.png" style="width: 365px;height: 233px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Barcode_Filter_Area"></a>Barcode Filter Area</h3>
+                    <table style="width: 100%;">
+                        <col style="width: 498px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>For situations where a barcode scanner always sends out multiple scans for each barcode read, enabling this function forces the software to ignore duplicate barcode strings. Once a given string is received, it will ignore any duplicate receipts of that same string. When a different string is received, the filter function resets.</p>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/image137.png" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

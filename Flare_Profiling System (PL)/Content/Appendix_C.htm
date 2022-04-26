@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <h1 class="Heading1">Appendix C: Configuration Program</h1>
+                    <p>The system has many individual software settings that can be changed to suit the user’s process and or hardware set up. The configuration program tool facilitates quick and easy system setting changes, saving the user from the complications of manually editing the configuration files.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span><span class="span_11">:</span>  Only persons with advanced training in the automatic system software should modify these settings. Changes using this tool will directly affect the data collected by the system. Configuration software tool location:</p>
+                    <p class="PlainText">C:\software root directory\ConfigurationProgram.exe</p>
+                    <h2 class="Heading2"><a name="User_Settings_Tab"></a>User Settings Tab</h2>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><span class="span_11">Allowable Change </span>– Defines how much deviation is allowed in any one of the 30 probe TC’s before a Warning condition is generated.</p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">Exclusion</span> – Allows user to disable any of the 30 probe TC’s from the VP calculations.</p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">VP Idle Mode</span> – Optional feature that can be used along with energy savings features of some ovens.</p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">D</span><span class="span_11">isplay Host </span><span class="span_11">S</span><span class="span_11">creen</span> – Enables/disables the display of the Host diagnostic screen.&#160; </p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">Display Units Per Hour</span> – Enables live display on top of VP general tab that tracks how many products have been processed in the past hour (value resets at the top of each hour).</p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">Vantage Live Oven Support – </span>Enables interface of data with the Vantage System.</p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">Use Baseline Profile Expiration</span> – Automatically require new baseline profiles after specified number of days.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000168.png" style="width: 446px;height: 400px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Temperature </span><span class="span_11">T</span><span class="span_11">riggers and </span><span class="span_11">S</span><span class="span_11">ample </span><span class="span_11">R</span><span class="span_11">ates</span>
+                    </p>
+                    <p>The temperature triggers dictate when the profile begins and ends allowing for more consistent data collection.&#160; This area of the tool allows you to change the temperature trigger values as well as sample rate for each application type.&#160; </p>
+                    <p>&#160;</p>
+                    <p>There are three temperature triggers:</p>
+                    <p class="p_83"><span class="span_11">Start -</span>The Profile Start temperature trigger is always 2C above the “Maximum Product Temperature at start of profile” setting in the Global tab of the Global Preferences screen.&#160; This value can be changed as needed from as low as 15C to as high as 40C.&#160; </p>
+                    <p class="p_83"><span class="span_11">Mid P</span><span class="span_11">oint –</span> The midpoint temperature trigger must be higher than the Start trigger, and the Stop trigger.&#160; Be sure the temperature in your heated process will achieve this setting or the profile will fail.&#160; </p>
+                    <p class="p_83"><span class="span_11">End –</span> The profile will end when all of the thermocouples attached to the profiler have cooled to below the End-Temperature trigger setting.</p>
+                    <p class="p_83">Note: The separation between the Midpoint and Stop Trigger temperatures must be at least 10ºC/18ºF.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Sample </span><span class="span_11">r</span><span class="span_11">ate –</span> Set the sample rate for each application type.&#160; </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Use_Baseline_Profile_Expiration"></a>Use Baseline Profile Expiration</h3>
+                    <p>&#160;</p>
+                    <p>Enabling this function allows the system to require a new baseline profile is run after a specified number of days have elapsed. When enabled, additional functions will appear on various screens in the software.</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">Global Preferences/Control Limits Tab</span> – When it is enabled in the Configuration Program, it adds an additional selection at the bottom of this tab. Selecting the checkbox allows you to define the number of days after a baseline profile is run that it will automatically expire. This feature can be used to ensure that the system is always using an up to date profile as the baseline.</p>
+                                    <p>&#160;</p>
+                                    <p>Note: When expired, the profile will still be viewable. However, it will not be able to be used as the baseline for monitoring production.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/z52.png" style="width: 502px;height: 413px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span class="span_11">Profile Explorer – Search Button </span>- When the expiration feature is enabled, you will see a new button appear in Profile Explorer:</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300016A.png" style="width: 103px; height: 60px;" class="img_19" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="1" class="">
+                                        <li class="">Click this button to access a search window which will allow you to easily identify when each of your baseline profiles will expire. </li>
+                                        <li class="">Enter the number of days (window of time remaining until profiles will expire), and then click Search. </li>
+                                        <li class="">All products with a baseline profile set to expire within the specified time-frame will be displayed. </li>
+                                        <li class="">Selecting a particular product and clicking on the <span class="span_12">Run New Baseline Profile</span> will automatically take you to the <span class="span_12">RUN A PROFILE </span>screen and will select that product name.</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300016B.png" style="width: 452px;height: 283px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="Heading2"><a name="Shifting_Tab"></a>Shifting Tab</h2>
+                                    <p>In the event that the software does not properly shift (align) the profile it may be necessary to manually enter measurements to correct any profile display/shifting issues.&#160; </p>
+                                    <p>&#160;</p>
+                                    <p>Select the check box and then enter the required measurements.&#160; Contact supplier of system for assistance. </p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300016C.png" style="width: 503px;height: 266px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="Heading2"><a name="Decimal_Tab"></a>Decimal Tab</h2>
+                                    <p>This area controls the number of decimal places for the Conveyor Speed and Zone Setpoints displays in the software.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300016D.png" style="width: 501px;height: 262px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="Heading2"><a name="Hardware_Tab"></a>Hardware Tab</h2>
+                                    <p>This area controls the configuration of the eTPU network addresses, allows for enabling or disabling of the oven communication when applicable, and for adjusting parameters for the board sensor operations.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300016E.png" style="width: 543px;height: 514px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Auto_VP_Tab"></a>Auto-VP Tab</h2>
+                    <p>Auto-VP is specialized feature for product changeovers that is dependent on a wide variety of variables. There are multiple configurations of the Auto-VP feature depending on the capabilities and processes in place in the factory. Contact your systems supplier to identify if this functionality can be implemented with your system</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="RPM_Tab"></a>RPM Tab</h2>
+                    <p>See <a href="Using_Remote_Process_Monitoring.htm#Use"><span class="Hyperlink">RPM Configuration</span></a> section</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2 class="Heading2"><a name="Message_Config_Tab"></a>Message Config Tab</h2>
+                                    <p>When certain messages are displayed in the software, the user can select a checkbox for “Do not show this again”. If checked, that message box becomes “disabled”. This area allows the user to enable or disable those messages.</p>
+                                    <p>&#160;</p>
+                                    <p>NOTE: The ‘<i>Do you want to run a profile?</i>’ message box does NOT contain the disable checkbox. Disabling this message will also disable the transfer of predicted settings when communicating with an oven controller software. That message can only be disabled in this window.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300016F.png" style="width: 469px;height: 444px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Password_Control_Multi_User"></a>Password Control – Multi User</h2>
+                    <p>The software offers a Multi User Control capability to configure certain functions as password protected and, thus, requiring the use of specific user levels. </p>
+                    <p>&#160;</p>
+                    <p>The user types are:</p>
+                    <ul class="">
+                        <li class="">Administrator</li>
+                        <li class="">Engineer</li>
+                        <li class="">Tech</li>
+                        <li class="">Operator (default)</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="Access_to_the_Password_Control_Tab"></a>Access to the Password Control Tab</h3>
+                    <p>By default, the Multi User Control is disabled. When this password function is enabled, it will require entering the default Administrator password before the Configuration Utility can be accessed. The Password Control tab can only be used by the Administrator, or the Engineer/Tech user types if specified.</p>
+                    <p>&#160;</p>
+                    <p>If the Multi User Control is enabled and a user starts the utility, the utility will not launch until they enter the correct password (<span class="span_14">Default Administrator password is Admin</span>). If the user does not have the password they can Cancel and close the utility.</p>
+                    <p>&#160;</p>
+                    <p class="p_19">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000170.png" style="width: 436px;height: 412px;" />
+                    </p>
+                    <h3 class="Heading3"><a name="Multi_User_Control"></a>Multi User Control</h3>
+                    <p>To apply Multi User Control, Administrators will click the <span class="span_11">Enable</span> radio button and then click <span class="span_11">OK</span>. </p>
+                    <p>&#160;</p>
+                    <p>The confirmation dialog is answered, and then the utility must be restarted. </p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000171.png" style="width: 441px;height: 384px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>When the administrator logs back in, a password is required.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Password_Control_Tab"></a>Password Control Tab</h3>
+                    <p>The <span class="span_11">Password Control</span> tab allows administrators to manage passwords and permissions for each user type. The image below represents the Password Control tab when Multi User Control is disabled. This tab displays a <span class="span_11">Password Control Chart</span>, highlighted, which contains a list of every area in the software. </p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/z53.png" class="img_1" style="width: 456px;height: 431px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p> <span class="span_11">Stop VP Selections</span></p>
+                    <p>There are three different available options for controlling when a VP can be stopped:</p>
+                    <ul class="">
+                        <li class="">Stop VP – All Conditions: This is the default setting. An authorized user can stop the VP at any time.</li>
+                        <li class="">Stop VP with Oven Empty: User can stop the VP only when there is no product in the oven.</li>
+                        <li class="">Stop VP with Product in Oven: When user clicks Stop button, they have a choice to wait for products to exit the oven, or they can force a stop even if there is still product in the oven. </li>
+                    </ul>
+                    <p>NOTE: To enable use of either of the second two options, the <span class="span_12">Stop VP – All Conditions</span> selection must be unchecked.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_38">Examples of Stop VP Selections</p>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="p_38">Stop VP with Oven Empty:</p>
+                                    <p>OK – Clicking OK will acknowledge this message window and the VP will stop automatically once the last board exits the oven.</p>
+                                    <p>Cancel – The <span class="span_12">Stop</span> request will be cancelled, and the VP will continue to run.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000172.png" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span class="span_11">Stop VP with Product in Oven:</span>
+                                    </p>
+                                    <p>OK – Clicking OK will acknowledge this message window and the VP will stop automatically once the last board exits the oven.</p>
+                                    <p>Cancel – The <span class="span_12">Stop</span> request will be cancelled, and the VP will continue to run.</p>
+                                    <p>Force Stop – The VP will stop immediately and return to the Profile Explorer screen.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000173.png" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>If the ‘Force Stop’ selection is used, additional notes will be automatically added into the <span class="span_12">Description</span> column in Profile Explorer. It will note which user level stopped the VP, and how many products were still in the oven when the stop occurred.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000174.png" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="Heading3"><a name="User_Type_Area"></a>User Type Area</h3>
+                    <p>The <span class="span_11">User Type</span> pick list allows the Administrator to select and enable the password function by user type. </p>
+                    <p>&#160;</p>
+                    <p>By default, each user in the menu will be unchecked/disabled. By selecting a user type, you not only enable or disable the password entry field and the Password Timer, but also select the type of user to enable and configure.</p>
+                    <p>&#160;</p>
+                    <p>The columns in the <span class="span_11">Password Control Chart</span> will be enabled depending on the user type selected:</p>
+                    <p>&#160;</p>
+                    <p>Administrator = All columns enabled</p>
+                    <p>Engineer = All columns enabled</p>
+                    <p>Tech = Only Tech and Operator columns enabled</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/z54.png" style="width: 484px;height: 423px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Password_Area"></a>Password Area</h3>
+                    <p>The Password entry fields are disabled until a user type is selected. </p>
+                    <p>&#160;</p>
+                    <p>When a user type is selected, the <span class="span_11">Enter Password </span>fields will display as ‘XXXXX” if a password had previously been entered. When a user enters a password ‘X’s will show to indicate an entry, but not show the actual password.</p>
+                    <p>After entering a password in the two fields, click the Apply button before changing to another User Type.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/z55.png" style="width: 454px;height: 398px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Password_Timer_Area"></a>Password Timer Area</h3>
+                    <p>The <span class="span_11">Password Timer</span> is configurable and represents the amount of time before the user is automatically logged out due to being idle.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Main_Screen_with_Password_Control"></a>Main Screen with Password Control</h3>
+                    <p>With Password Control enabled, the software Main Screen with display a Log In button with a letter on it.</p>
+                    <p>&#160;</p>
+                    <p>O = Operator (default)</p>
+                    <p>A = Administrator</p>
+                    <p>E = Engineer</p>
+                    <p>T = Tech</p>
+                    <p>&#160;</p>
+                    <p class="p_19"> <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000176.png" style="width: 447px;height: 335px;" /></p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>Note that the Operator user type is the default, and typically has the least access privileges.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Main_Screen_Log_In"></a>Main Screen Log In</h3>
+                    <p>When the Log in button is clicked, the software displays a drop-down menu, as shown here.</p>
+                    <p>&#160;</p>
+                    <p class="p_19">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000177.png" style="width: 261px;height: 141px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>Note that you can log in from most screens, such as from the Log in button in the lower left of the Graph screen.</p>
+                    <p class="p_19" style="text-align: center;">
+                        <img src="Resources/Images/z56.png" class="img_1" style="width: 506px;height: 276px;" />
+                    </p>
+                    <h4 class="Heading4"><a name="Example_of_Limited_Access_to_Functions"></a>Example of Limited Access to Functions</h4>
+                    <p>This screenshot shows the limited access that an Operator, for example, may have. Notice that there are no privileges to create, edit, delete, or save changes.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000179.png" style="width: 512px;height: 407px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Responding_to_an_Alarm"></a>Responding to an Alarm</h3>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300017A.png" style="width: 467px;height: 300px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="AR_Matrix_Settings_Tab"></a>Alarm Tab</h2>
+                    <p>The Alarm tab allows for enabling of the optional <i>USB Light Tower</i>, and for customizing the operation of the optional <i>Alarm Relay</i> functions.</p>
+                    <h3><a name="Alarm"></a>Alarm Relay Matrix configuration</h3>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>When the <i>Alarm Relay</i> is in use, you can match the alarm output behavior to your specific production needs through the Alarm Relay (AR) Matrix.  By default, the system only outputs a signal to the relay when it is running Virtual Profiling and an alarm (red crystal ball) condition.  The alarm condition prompts the eTPU to send a signal that energizes the <i>Alarm Relay</i>, letting it power an audible or light indicator or stop an infeed conveyor.</p>
+                                    <p>&#160;</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/image2239.png" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>When enabled, a list of operational conditions appear.  If an item is checked, the Alarm Relay will be energized during that condition. If an item is unchecked, the relay will be de-energized at that condition. For example, you might want to keep boards from entering the oven except when the Virtual Profile is in a green or yellow crystal ball state.  Selections you make on the matrix will “invert” the signal that energizes the alarm relay, stopping the infeed conveyor from allowing boards to enter.</p>
+                                    <p>&#160;</p>
+                                    <p><b>Delay in Minutes:</b> This allows a user to specify a delay before an alarm (audible/visual/mechanical) is generated at the selected condition. A ‘0’ (default) means the alarm will be generated as soon as the condition occurs.</p>
+                                    <p>&#160;</p>
+                                    <p>
+
+Even if someone tried to bypass the entire system by shutting down the software, it can be configured so that it still would not allow product to enter.  The matrix gives you more control over your process, ensuring that system is in use whenever product is run.</p>
+                                    <p>&#160;</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/image223g.png" style="width: 577px;height: 547px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p><b>NOTE</b>: When the <i>USB Light Bar</i> is used, changing the settings in this Matrix will not alter the <i>USB Light Bar</i> operation. It will <u>only</u> affect the operation of the <i>Alarm Relay</i>.
+</p>
+                    <p>&#160;</p>
+                    <h3><a name="USB"></a>USB Light Tower configuration</h3>
+                    <h4>Enable/Disable USB Light Tower</h4>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p><span style="font-size: 10pt;">To enable the use of the USB Light Tower, enable the checkbox on the Alarm tab. This will enable the default operation of the USB Light Tower as previously described.</span><![CDATA[
+                                ]]></td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/image2240.png" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p><span style="font-size: 10pt;">When enabled, you will also have the ability to customize the operation of the USB Light Tower. Select the Use </span><i style="font-size: 10pt;">USB Light Tower Matrix</i><span style="font-size: 10pt;"> checkbox to activate the matrix functions.</span><![CDATA[
+                                ]]></td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/image2241.png" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h4>USB Light Tower Matrix</h4>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>When is enabled, a list of operational conditions appear.  The matrix allows for enabling individually, the sound and light operation for each condition. If an item is checked, the sound or light turns on during that condition. If an item is unchecked, the sound or light will be off at that condition.</p>
+                                    <p>&#160;</p>
+                                    <p>When the Light function is enabled for a condition, one of three colors can be chosen to appear.</p>
+                                    <p>&#160;</p>
+                                    <p>For most conditions, the light will appear solid. If you wish for the light to flash in that condition, select the <i>Flash</i> checkbox.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/image2242.png" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="Heading2"><a name="Barcode_Tab"></a>Barcode Tab</h2>
+                    <p>&#160;</p>
+                    <p>The <b>Barcode</b> tab is used for configuring some of the barcode interface functions and some barcode operations.</p>
+                    <p>&#160;</p>
+                    <p class="p_19" style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300017E.png" style="width: 651px;height: 618px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Barcode_Interface_Method_Area"></a>Barcode Interface Method Area</h3>
+                    <p>The <span class="span_11">Barcode Interface Method</span> area specifies where a barcode string will be coming in:</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="p_24"><span class="span_11">eTPU Barcode Port</span> – via 9 pin serial connection on eTPU</p>
+                                    <p class="p_24"><span class="span_11">PC </span><span class="span_11">Com Port</span> – via 9 pin serial port or USB Port on PC. <span class="span_11">NOTE:</span> To use a USB barcode scanner, it must be programmable for a USB Serial Port interface.</p>
+                                    <p class="p_24"><span class="span_11">OEM</span> – only available with specific oven manufacturers</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td style="text-align: left;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300017F.png" style="width: 311px;height: 132px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>If PC Com Port is selected, the <span class="span_11">COM Port Configuration</span> area also becomes active. This area specifies which Com Port the scanner is connected to, and the Com settings. This area must be configured when using either a DB9 (Com Port) or USB connected scanner:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000180.png" style="width: 531px;height: 105px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 19px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h3 class="Heading3"><a name="Missing_Barcode_Trigger_Area"></a>Missing Barcode Trigger Area</h3>
+                                    <p>&#160;</p>
+                                    <p>The <span class="span_11">Missing Barcode Trigger</span> area specifies what method is used to trigger the Missing Barcode Alarm function. </p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">Barcode Product Sensor</span> – requires the installation of the BPS sensor adjacent to the barcode scanner. If this sensor is triggered, and a barcode is not received, the Missing Barcode Alarm is generated. </p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">No Read </span><span class="span_11">from</span><span class="span_11"> Scanne</span>r – some scanners can be programmed with a “No Read” output. If “No Read” is the string received, the Missing Barcode Alarm is generated.</p>
+                                    <p>&#160;</p>
+                                    <p><span class="span_11">Disable</span> –  the software will never generate a Missing Barcode alarm. Typically used when some other process verification is in use and the alarm from KIC is not required/desired. </p>
+                                    <p>&#160;</p>
+                                    <p>NOTE: When either <span class="span_11">“No Read </span><span class="span_11">from</span><span class="span_11"> Scanner”</span> or <span class="span_11">“Disable”</span> is selected, some of the configurations previously referenced in the <a href="/Content/Using_barcodes.htm"><span class="Hyperlink_2">Barcode Section</span></a> will automatically be disabled:</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <p style="text-align: left;">
+                                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000181.png" style="width: 314px;height: 133px;" />
+                                    </p>
+                                    <p style="text-align: left;">
+                                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000182.png" style="width: 318px;height: 263px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Process_Control_String_Area"></a>Process Control String Area<![CDATA[
+                    ]]></h3>
+                    <p>This area allows you to select which method of Process Control string identification will be used in the software:</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p><b>Wildcard</b>: Default setting; This method requires that the Control String being defined is always an uninterrupted, consecutive grouping characters – either at the beginning, middle, or end – of a barcode string.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <p style="text-align: left;">
+                                        <img src="Resources/Images/03000193.png" style="width: 314px;height: 79px;" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><b>Parsing</b>: This method allows you to select any specific characters from within a barcode string to be used as the <i>Control String</i>. The Parsing method is helpful when the locations of the Control Strings vary from product to product.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Disable_Missing_Barcode_Option_Area"></a>Disable Missing Barcode Option Area</h3>
+                    <p>This area allows you to disable some of the available choices that are given when a Barcode alarm is displayed:</p>
+                    <table class="table_2">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>The four selections listed represent buttons that a user can click on when a Barcode alarm appears on the screen. By selecting a particular checkbox, the software will no longer display that button on the alarm message dialog window.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <p style="text-align: left;">
+                                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000183.png" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>For example, when the barcode option is in use, and you never want a product to be allowed to enter the oven without the associated barcode string attached to the data, you can select the ‘Proceed without a Barcode’ checkbox. This will prevent that button from being accessible. Below is an example of a Missing Barcode Alarm condition, when that function is disabled. The open spot is where the ‘Proceed without a Barcode’ choice would have been displayed:</p>
+                    <p>&#160;</p>
+                    <p class="p_19" style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000184.png" style="width: 390px;height: 251px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Options"></a>Options<![CDATA[
+]]></h3>
+                    <p>&#160;</p>
+                    <p style="text-align: left;">
+                        <img src="Resources/Images/image2246.png">
+                        </img>
+                    </p>
+                    <p>&#160;</p>
+                    <p><b>Remove duplicate barcodes:</b> For situations where a barcode scanner always sends out multiple scans for each barcode read, enabling this function forces the software to ignore duplicate barcode strings. Once a given string is received, it will ignore any duplicate receipts of that same string. When a different string is received, the filter function resets.</p>
+                    <p>&#160;</p>
+                    <p><b>Enable Barcode Stop Sensor Logic:</b> Enabling this function causes the external Alarm Relay to energize every time the Barcode Stop Sensor (BSS) is triggered, stopping the product on the in-feed conveyor. This ensures confirmation that each product has been checked for, or assigned, a valid barcode ID before allowing it to enter the oven. This functionality may be needed when a short in-feed conveyor is in use, there are time delays in receiving barcode ID strings, or an extra layer of barcode validation is desired for control before the product enters the oven.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> The Barcode Stop Sensor (BSS) and Barcode Product Sensor (BPS) functions cannot be used at the same time.  Only one of the two configurations can be used. If the <i>Enable Barcode Stop Sensor Logic</i> is selected, the <i>Missing Barcode Trigger</i> section and associated functions will be overridden by this function.</p>
+                    <p>Note: The BPS and BSS physical sensors are identical. The software configuration determines what operation the sensor input will trigger.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

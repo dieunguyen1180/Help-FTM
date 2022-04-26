@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h2 class="Heading2"><a name="Remote"></a>Remote Process Monitoring</h2>
+                    <p><span class="span_7">Note</span>: The software key must remain connected at all times during use for RPM capabilities to function.&#160; </p>
+                    <p>&#160;</p>
+                    <p>KIC Remote Process Monitoring (RPM) enables customers to view real-time thermal process data and process status for any WPI on their wave solder machines from any authorized computer on the network.</p>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_1">The WPI provides valuable thermal process information in real-time.  The RPM can supply this information to all relevant decision makers wherever they happen to be in the factory.  The results are better data management, efficient process management and oversight, and faster reaction to thermal process issues in the factory.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_1">RPM provides superior information sharing for the factory as a whole.  WPI monitors, controls, and displays at the machine, the thermal process information for a single wave solder machine.  RPM will, on a single screen, show all the pertinent data for all the machines in the factory on any authorized computer on the network.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_3">
+                        <li class="ListBullet2_1">RPM translates complex process issues into a very easy to understand format.  Quality managers, production managers, engineering managers, and line supervisors will, for the first time, access meaningful factory-wide quality and productivity information for the thermal process in real-time without the need for staff meetings, lengthy reports, interpretation, and unnecessary visits to the factory floor</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>RPM is comprised of three main software applications, and one optional software component:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListNumber">WPI software: <br /><span style="font-size: 10pt; font-weight: normal;">The RPM for the WPI data is a dongle-protected software option.  This software runs on the WPI system on a computer at the wave solder machine.  RPM’s main function is to send data over a network to the KIC Server software. <br />While RPM is enabled, a separate application called WatchDog runs in the background continuously monitoring the connection between each WPI system and the KIC Server(s).</span></li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_1">
+                        <li class="ListNumber">KIC Server software: <br /><span style="font-size: 10pt; font-weight: normal;">The KIC Server software is installed onto a computer or drive on the network and acts as a host for all WPI systems running on the network with the RPM output.  It automatically connects to all the WPIs that are running RPM and passes on the data to any authorized computer on the LAN that is properly logged on.  A maximum of 100 WPI systems per KIC Server is possible.  The KIC Server has a setup menu for creating and editing usernames and passwords for KIC Viewer users.</span></li>
+                    </ol>
+                    <p class="ListContinue">&#160;</p>
+                    <ol start="3" class="ol_1">
+                        <li class="ListNumber">KIC Viewer software: <br /><span style="font-size: 10pt; font-weight: normal;">The KIC Viewer is installed on any remote computer on the network (i.e. at your desk) and is used to view the data from all WPI systems connected to the KIC Server.  This is done by logging on to the KIC Server.</span></li>
+                    </ol>
+                    <p class="ListContinue">&#160;</p>
+                    <ol start="4" class="ol_1">
+                        <li class="ListNumber">Win VNC: <br /><span style="font-size: 10pt; font-weight: normal;">Win VNC is a third-party software application that allows you to remotely control or view the history for any WPI client PC on the same LAN.  This can be useful for clearing alarms, loading recipes, and system administration.</span></li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_57">In full operation, the combined software and systems function as follows: (See Figure 57.)</p>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000D7.png" style="width: 500px;height: 371px;" />
+                    </p>
+                    <p class="Figure">Figure 57: RPM functional diagram</p>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_3">Each WPI system runs in Virtual Profiling mode, monitoring the process and giving real-time profile/process data for each production board.  The Virtual Profile data is stored locally on the WPI client PC.</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_3">The Machine Name, Product Name, Process Window Index (PWI), Real-Time Cpk, and current Alarm State (green, yellow, red: with alarm text) are sent to the KIC Server as each board exits the machine.</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_3">The KIC Server accepts the data from all WPIs configured to send data, acting as a host for all the data.</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_3">The KIC Viewer logs on to the KIC Server and displays the pertinent data for all machines, on one screen, updating each one as boards exit and new data is sent.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Running_RPM"></a>Configure RPM Output</h2>
+                    <h3 class="Heading3">WPI Client PC</h3>
+                    <p>
+                        <table style="width: 70%">
+                            <tr>
+                                <td>
+                                    <p>To enable the RPM feature:
+</p>
+                                    <ol>
+                                        <li>Close the WPI software if open.
+</li>
+                                        <li>Using Windows Explorer, browse to the C:\WPI folder and run the ConfigurationProgram.exe application.
+</li>
+                                        <li>Select the RPM tab
+</li>
+                                        <li>Check the “LON in use” checkbox
+</li>
+                                        <li>Enter the IP address of the PC that will be running the <i>KIC Server</i> application.
+LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatically assign it a position.
+</li>
+                                        <li>Click Apply, then OK to close the Configuration Program.
+</li>
+                                    </ol>
+                                    <p>&#160;</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <img src="Resources/Images/image77.png" />
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p class="ListNumber2_1">&#160;</p>
+                    <p class="p_6">When the WPI software is launched you will see two icons displayed in the notification area, as shown:</p>
+                    <p class="Figure">
+                        <img src="Resources/Images/image78.png" style="width: 33px;height: 33px;" />
+                        <img src="Resources/Images/image79.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: The WPI icon will change based on the connection state with the KIC Server:</p>
+                    <table style="width: 20%; margin-left: auto; margin-right: auto;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/image80.png" />
+                                    <p>WPI <u>is not </u><br />connected to a <br />KIC Server</p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/image78.png" />
+                                    <p>WPI <u>is</u> <br />connected to a <br />KIC Server</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>If the WPI is not connected to a KIC Server, check to make sure the KIC Server:</p>
+                    <ul style="list-style-type: square;">
+                        <li>Hosting mode enabled (KIC Server-click the Start to Host button)</li>
+                        <li>Displays the communication status of the WPI systems that are connected.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>For more details, see the <a href="Remote_Process_Monitoring.htm#KIC_Server" style="color: #0000ff; text-decoration: underline;">KIC Server</a> section of this manual.</p>
+                    <h3 class="Heading3">KIC Watchdog</h3>
+                    <p>The KIC WatchDog is a software program that runs in the background when RPM is enabled.&#160; Its main function is to continuously monitor communication between the WPI client PC and the KIC Server PC.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: The KIC WatchDog software is not user configurable.</p>
+                    <p>&#160;</p>
+                    <p>KIC WatchDog automatically starts up when WPI launches with RPM enabled (DO NOT CLOSE IT).  The KIC WatchDog’s Icon displays on the bottom right corner as shown below:</p>
+                    <p>&#160;</p>
+                    <p class="Figure">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000D9a.png" />&#160; </p>
+                    <h2 class="Heading2"><a name="KIC_Server"></a>KIC Server</h2>
+                    <p>The <span class="span_6">KIC Server</span> software acts as a host for all networked WPI systems running the RPM option.  The software connects all these systems and passes their data over the LAN to any authorized, properly logged on computers running the <span class="span_6">Viewer</span> application.&#160; </p>
+                    <p>&#160;</p>
+                    <p>You must install the <i>KIC Server</i> software on a LAN-connected PC on the same LAN as the WPI software. This PC cannot simultaneously serve as a WPI client, but it can run the Viewer application.  The KIC Server can manage up to 100 WPI systems and has a menu for creating and editing usernames and passwords for KIC Viewer-users.  Your WPI installation media includes the KIC Server software, but the application requires the continuous connection of an appropriate software key.</p>
+                    <h3 class="Heading3"><span style="text-decoration: none;">Install the KIC Server:</span>
+                    </h3>
+                    <p><span class="span_7">Note</span>: You must install the KIC Server manually.&#160; </p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_2">
+                        <li>Browse the WPI installation media for the KIC Server folder.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_2">
+                        <li>In the KIC Server folder, run the file Setup.exe.&#160;<br />The installation begins automatically.&#160; </li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="3" class="ol_2">
+                        <li>Follow the on-screen directions.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: It may be helpful to copy the KIC Server shortcut to the Windows-Startup folder especially for dedicated-KIC Servers.</p>
+                    <h3 class="Heading3"><span style="text-decoration: none;">Launch the KIC Server:</span>
+                    </h3>
+                    <ol>
+                        <li>From the Windows desktop, click on: Start » Programs » KIC » KIC Server</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="p_59">Or </p>
+                    <p>&#160;</p>
+                    <ul class="v">
+                        <li Start="2">From Windows Explorer open <span class="PlainTextChar_1">C:\KIC Server\KICServer.exe</span></li>
+                    </ul>
+                    <h3 class="Heading3">Icons</h3>
+                    <p>Once the KIC Server application is launches, an icon appears in the notification area.</p>
+                    <p>&#160;</p>
+                    <table style="width: 60%;">
+                        <col style="width: 344px;" />
+                        <col style="width: 267px;" />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server.  See Figure 58.</p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/image82.png" />
+                                    <p class="Figure">Figure 58</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections.  See Figure 59.</p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/image83.png" style="width: 47px;height: 47px;" />
+                                    <p class="Figure">Figure 59</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p><b style="font-size: 12pt;">KIC Server Window Functions</b>
+                    </p>
+                    <p class="p_6">The KIC Server window is shown in Figure 60.  The screen permits the following six functions:</p>
+                    <ol start="1" class="ol_2">
+                        <li class="ListNumber2_2">Add new users and passwords for KIC Viewers to connect.</li>
+                    </ol>
+                    <ol start="2" class="ol_2">
+                        <li class="ListNumber2_2">Edit/delete users and Passwords</li>
+                    </ol>
+                    <ol start="3" class="ol_2">
+                        <li class="ListNumber2_2">View the connection time and IP address for each&#160;WPI client PC that is connected</li>
+                    </ol>
+                    <ol start="4" class="ol_2">
+                        <li class="ListNumber2_2">View the KIC Viewer-User name and connection time.</li>
+                    </ol>
+                    <ol start="5" class="ol_2">
+                        <li class="ListNumber2_2">Maximum number of Ovens - Enter the number of machines you wish to display in the KIC Viewer window.</li>
+                    </ol>
+                    <ol start="6" class="ol_2">
+                        <li class="ListNumber2">Start to host – Enables/disables the KIC Servers’ connection mode.</li>
+                    </ol>
+                    <p class="ListNumber2_2">&#160;</p>
+                    <table style="width: 70%;">
+                        <tr>
+                            <td class="td_23">
+                                <h4 class="Heading4"><span style="text-decoration: none;">Add a new user:</span>
+                                </h4>
+                                <ol start="1" class="ol_2">
+                                    <li class="ListNumber2">Enter the new username.</li>
+                                </ol>
+                                <ol start="2" class="ol_2">
+                                    <li class="ListNumber2">Enter the new password.</li>
+                                </ol>
+                                <ol start="3" class="ol_2">
+                                    <li class="ListNumber2_3">Select the Add button.</li>
+                                </ol>
+                                <p class="Procresult">You are added to the list of users.&#160; To access a list of users, select the List of Users dropdown menu.</p>
+                                <h4 class="Heading4"><span style="text-decoration: none;">Change a password:</span>
+                                </h4>
+                                <ol start="1" class="ol_2">
+                                    <li class="ListNumber2">Click on the List of Users dropdown menu.</li>
+                                </ol>
+                                <ol start="2" class="ol_2">
+                                    <li class="ListNumber2">Select the user that you wish to modify.</li>
+                                </ol>
+                                <ol start="3" class="ol_2">
+                                    <li class="ListNumber2">Enter the new password for that user.&#160; </li>
+                                </ol>
+                                <ol start="4" class="ol_2">
+                                    <li class="ListNumber2_3">Select the Change Password button.</li>
+                                </ol>
+                                <p class="Procresult">The user’s password is updated immediately.</p>
+                                <h4 class="Heading4"><span style="text-decoration: none;">Delete a user:</span>
+                                </h4>
+                                <ol start="1" class="ol_2">
+                                    <li class="ListNumber2">Click on the List of Users dropdown menu.</li>
+                                </ol>
+                                <ol start="2" class="ol_2">
+                                    <li class="ListNumber2">Select the user that you wish to modify.</li>
+                                </ol>
+                                <ol start="3" class="ol_2">
+                                    <li class="ListNumber2_3">Select the Delete button.</li>
+                                </ol>
+                                <p class="Procresult">The user account deletes immediately.</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_23">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E0.png" style="height: 359px;width: 336px;" class="img_2" />
+                                </p>
+                                <p class="Figure">Figure 60: KIC Server Window
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p><b>Maximum number of Ovens –</b> This value controls the number of WPI system boxes displayed on the KIC Viewer screen the maximum number of machines is 100, minimum 1.</p>
+                    <p>&#160;</p>
+                    <p><b>Start to host –</b> The KIC Server will not accept connections until this button is selected.  You must manually select this button to enable hosting by the KIC Server application.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="KIC_Viewer"></a>KIC Viewer</h2>
+                    <p><i>KIC Viewer</i> software lets you remotely view production data from all WPI systems connected to the KIC Server.  The software is included on the WPI installation media and can be installed on a desktop PC or any computer on the network. It can be installed on a separate PC or on the same PC with the <i>KIC Server</i> or the WPI client.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: Once installed, you first need to <span class="span_6">enable</span> the application in the configuration file and <span class="span_6">connect</span> to the KIC Server before you can launch the application.</p>
+                    <h3 class="Heading3">Install the KIC Viewer</h3>
+                    <p>You must install the KIC Viewer manually.&#160; </p>
+                    <p>&#160;</p>
+                    <ol>
+                        <li>Browse the WPI installation media for the folder named <span class="span_6">KIC Viewer</span>.&#160; </li>
+                        <li>In the folder, run the file <span class="span_7">Setup.exe</span>.&#160; </li>
+                        <li>When the instillation begins, follow the on-screen directions.</li>
+                    </ol>
+                    <h3 class="Heading3">Configure the KIC Viewer Application</h3>
+                    <p class="p_6">You can configure the application in two ways:</p>
+                    <ol>
+                        <li>Using the networking path – this method with allow you to view historical data via a separate application called “App for Viewer”. </li>
+                        <li>Using a VNC application – this method will allow you to view historical data via the use of VNC software to directly access the WPI Client software/PC.</li>
+                    </ol>
+                    <h3 class="Heading3">Use KIC Viewer by the Networking Path:
+                    </h3>
+                    <table class="table_1">
+                        <col style="width: 284pt;" />
+                        <col style="width: 194pt;" />
+                        <tr>
+                            <td class="td_23">
+                                <p>&#160;</p>
+                                <ol>
+                                    <li start="1">
+                                        <li>Close the KIC Viewer application and then&#160; open the configuration file at the following location: <br /> C:\Kicviewer\Configure\ kwConfigure.kcfg file – setup:</li>
+                                    </li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="2">
+                                    <li>Set <span class="span_7">EnableRemoteControl</span> flag to = <span class="span_7">0</span>.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="3">
+                                    <li>Set <span class="span_7">[RemoteControlPC] Enable</span> flag to = <span class="span_7">1</span>.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="4">
+                                    <li>Select File/Save, then close the file.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_23">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E1.png" style="height: 226px;width: 241px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Use KIC Viewer using VNC:
+                    </h3>
+                    <table class="table_1">
+                        <col style="width: 284pt;" />
+                        <col style="width: 194pt;" />
+                        <tr>
+                            <td class="td_23">
+                                <p>&#160;</p>
+                                <ol start="1">
+                                    <li>Close the KIC Viewer application and then&#160; open the configuration file at the following location: <br /> C:\Kicviewer\Configure\ kwConfigure.kcfg file – setup:</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="2">
+                                    <li>Set <span class="span_7">EnableRemoteControl</span> flag to = <span class="span_7">1</span>.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="3">
+                                    <li>Set <span class="span_7">[RemoteControlPC] Enable</span> flag to = <span class="span_7">1</span>.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="4">
+                                    <li>Select File/Save, then close the file.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_23">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E2.png" style="height: 239px;width: 264px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3 class="Heading3">Connect to the KIC Server</h3>
+                    <p>To connect to a <i>KIC Server</i>, enter a valid username and password from the KIC Viewer machine. See the <a href="Remote_Process_Monitoring.htm#KIC_Server" style="color: #0000cd; text-decoration: underline;">KIC Server</a> section for details.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note</span>: It is very helpful to have the IP address of the PC running the <i>KIC Server</i> application as this information is required each time a <i>KIC Viewer</i> connects to a KIC Server.</p>
+                    <h3 class="Heading3"><span style="text-decoration: none;">Launch the Application:</span>
+                    </h3>
+                    <ol>
+                        <li>From the Windows desktop, click: Start » Programs » KIC » KIC Viewer</li>
+                        <li>From Windows Explorer, open C:\KIC Viewer\KICViewer.exe</li>
+                        <li>Enter the KIC Server IP address, a valid user name and password.  See Figure 61.</li>
+                    </ol>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image84.png" />
+                    </p>
+                    <p class="Figure">Figure 61: KIC Viewer – Connect</p>
+                    <p>&#160;</p>
+                    <p>The <i>KIC Viewer</i> main screen with its toolbar menu appears:</p>
+                    <p class="Figure">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E3.png" style="height: 170px;width: 394px;" class="img_1" />
+                    </p>
+                    <p class="Figure">Figure 62: KIC Viewer – Main Screen</p>
+                    <h4 class="Heading4">The KIC Viewer Toolbar Button Menu</h4>
+                    <table align="center" class="table_2">
+                        <col style="width: 216pt;" />
+                        <col style="width: 216pt;" />
+                        <tr>
+                            <td class="td_27">
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E4.png" style="height: 18px;width: 18px;" class="img_9" />Display Icon view (View)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E5.png" style="height: 18px;width: 18px;" class="img_9" />Display Chart view (View)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E6.png" style="height: 18px;width: 18px;" class="img_9" />Connect to KIC Server (Connect)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E7.png" style="height: 18px;width: 18px;" class="img_9" />Turn Auto-Screen mode On/Off (View)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E8.png" style="height: 18px;width: 18px;" class="img_9" />Display Previous page (View)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E9.png" style="height: 18px;width: 18px;" class="img_9" />Display Next page (View)</p>
+                            </td>
+                            <td class="td_27">
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000EA.png" style="height: 18px;width: 18px;" class="img_9" />Reload Configuration (Configuration)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000EB.png" style="height: 18px;width: 18px;" class="img_9" />About box (Help)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000EC.png" style="height: 18px;width: 18px;" class="img_9" />Sort by ascending Cpk values (Layout)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000ED.png" style="height: 18px;width: 18px;" class="img_9" />Sort by descending Cpk values (Layout)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000EE.png" style="height: 18px;width: 18px;" class="img_9" />Sort by ascending PWI values (Layout)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000EF.png" style="height: 18px;width: 18px;" class="img_9" />Sort by descending PWI values (Layout)</p>
+                                <p class="ListBullet_1">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F0.png" style="height: 18px;width: 18px;" class="img_9" />Sort by Original order (Layout)</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Connect_to_KIC_Server_button"></a>
+                    </h2>
+                    <h4 class="Heading4">Configuration</h4>
+                    <ol>
+                        <li>Reload the configuration – This feature manually reloads the configuration in the event you changes the configuration without exiting the KIC Viewer software.<br /><br /></li>
+                        <li>Oven selection – Allows you to turn On/Off the machines to view.  See Figure 63.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="Figure">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F2.png" style="width: 509px;height: 430px;" />
+                    </p>
+                    <p class="Figure">Figure 63: KIC Viewer – Activate/Deactivate Ovens</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Icon View</h3>
+                    <p>The Icon view provides the machine name, product name, Process Window Index (PWI) value, Cpk value, and alarm state for each product as they exit the mahcine with WPI.  The alarm states are color-coded (green, yellow, red) in accordance with the standard WPI alarm categories.  This information is organized as a box per machine.  See Figure 64.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F3.png" style="width: 508px;height: 384px;" />
+                    </p>
+                    <p class="Figure">Figure 64: KIC Viewer – Icon View</p>
+                    <p>&#160;</p>
+                    <p>A grey machine box can indicate there is a problem with the WPI system configuration on that machine:</p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_2">
+                        <li class="ListNumber2">The WPI client PC is no longer connected to the KIC Server application.<br />As soon as the WPI client PC begins running Virtual Profiling again, the box will return either green, yellow, or red based on the current conditions in that machine. <br />If the KIC Server application was closed, each KIC Viewer will wait until the KIC Server is launched again.  If for any reason the KIC Viewer does not automatically reconnect, select Connect from the main menu, and enter a valid username and password to reconnect.</li>
+                    </ol>
+                    <p class="ListParagraph">&#160;</p>
+                    <ol start="2" class="ol_2">
+                        <li class="ListNumber2">The WPI client PC is no longer running Virtual Profiling</li>
+                    </ol>
+                    <p class="ListParagraph">&#160;</p>
+                    <ol start="3" class="ol_2">
+                        <li class="ListNumber2">No products have passed through the machine yet.  The icon for each WPI system will remain the color grey until the first board has passed through the machine.</li>
+                    </ol>
+                    <p class="ListNumber3">&#160;</p>
+                    <h3 class="Heading3">View Historical Data</h3>
+                    <p class="p_10">By right-clicking on a machine box in the Icon View, you can view the history for any machine via the Profile Explorer.</p>
+                    <p class="p_10">&#160;</p>
+                    <p><span class="span_7">Note</span>: In order to use this feature, WinVNC software program must be installed and configured.</p>
+                    <h4 class="Heading4">View History Display</h4>
+                    <p>Only the current product folder appears.</p>
+                    <p>&#160;</p>
+                    <p>If you want to see all products profiled on this machine, then click on the “Browse” button (top right corner).</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F4.png" style="width: 518px;height: 367px;">
+                        </img>
+                    </p>
+                    <p class="Figure">Figure 65: Profiler Explorer via KIC Viewer
+                    </p>
+                    <p>&#160;</p>
+                    <p>Click OK in the pop-up box asking to select a working folder.  Then all of product names appears as shown in Figure 65.</p>
+                    <p>&#160;</p>
+                    <p>Click on the WPI main screen button to exit View History mode. The history view provides all the standard WPI information such as all the production event logs, production run data, and basic SPC graphs.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Chart View</h3>
+                    <p>The chart view displays the PWI value for each of the last 100 products processed through each WPI system.  See Figure 66.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FC.png" style="height: 354px;width: 465px;" class="img_2" />
+                    </p>
+                    <p class="Figure">Figure 66: KIC Viewer – Chart View</p>
+                    <p>&#160;</p>
+                    <p>IIn the chart view, right click on a machine box to display a full-screen chart for that machine.  See Figure 67.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FD.png" style="height: 354px;width: 465px;" class="img_2" />
+                    </p>
+                    <p class="Figure">Figure 67: KIC Viewer – Full-screen oven chart view</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Caption" style="text-align: left;">&#160;</p>
+                    <h3 class="Heading3">WinVNC
+                    </h3>
+                    <p>Virtual Network Computing (VNC) is remote control software that allows you to view and interact with another computer anywhere on a local network.  The two computers do not even have to be the same type or have the same operating system.  VNC also has the capability to remotely control any WPI client PC.</p>
+                    <p>&#160;</p>
+                    <p>WinVNC is a third-party software application that is not distributed by KIC.  VNC software can be downloaded from the internet at the following address: <MadCap:shortcut path="http://www.realvnc.com/download.html" parameters="" class="shortcut_1">http://www.realvnc.com/download.html</MadCap:shortcut></p>
+                    <p>&#160;</p>
+                    <p>VVNC software contains multiple applications including VNC Server.  Run VNC Server on the WPI client PC while Virtual Profiling is running in order to view historical data or remotely control any WPI client PC via the KIC Viewer application.</p>
+                    <p>&#160;</p>
+                    <p>A VNC’s icon appears on the bottom right corner of the monitor.  See Figure 68.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000DCa.png" />
+                    </p>
+                    <p class="Figure">Figure 68: VNC task tray icon</p>
+                    <p style="text-align: center;font-weight: normal;">&#160;</p>
+                    <h3 class="Heading3">Modify VNC properties:
+                    </h3>
+                    <table style="width:80%">
+                        <col style="width: 372px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <ol>
+                                    <li>Double Click on the VNC icon.
+
+<br /><br />The Current User Properties screen (Figure 69) appears.
+<br /><br /></li>
+                                    <li>
+
+Enter a password for other computer to access this client PC.  (You are asked to enter this password each time any KIC Viewer attempts either Viewing History, or Remotely Controlling this WPI client PC)<br /><br /></li>
+                                    <li>
+Click the <b>OK</b> button
+</li>
+                                </ol>
+                            </td>
+                            <td>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/image85.png" style="width: 413px;height: 356px;" />
+                                </p>
+                                <p class="Figure">Figure 69: VNC Properties</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h1 class="Heading1"><a name="O2_Live"></a>O2 Live (Optional)
+        </h1>
+                    <p><b>Note:</b> The software key must remain connected at all times during use for <i>O2 Live</i> capabilities to function.</p>
+                    <p>&#160;</p>
+                    <p><i>O2 Live</i> is an optional feature that allows you to display an O2 PPM measured value on a profile, or Virtual Profile data. <i>O2 Live</i> is not an oxygen analyzer, but an option that allows for the output from a user’s existing analyzer to be read in and displayed by the WPI software. An external interface device connects between the output of the oxygen analyzer, and the PC (USB port) running the WPI software <i>(See TFS-326000-000 WPI Hardware Installation and Maintenance Manual for more details about the interface device)</i>. This O2 PPM value is available in the following areas of the software:</p>
+                    <ul style="list-style-type: square;">
+                        <li>Baseline Profile</li>
+                        <li>Virtual Profile (Live)</li>
+                        <li>Virtual Profile (Historical data)</li>
+                        <li>SPC</li>
+                        <li>LDO</li>
+                        <li>RPM</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Configuration"></a>Configuration
+        </h2>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image86.png" style="font-style: normal;width: 650px;height: 198px;" />
+                    </p>
+                    <p class="Figure">Figure 70: O2 Live Configuration</p>
+                    <p>&#160;</p>
+                    <ol>
+                        <li>With the WPI software shut down, browse to the C:\WPI folder, run the <i>ConfigurationProgram.exe</i> application and select the O2 PPM tab.</li>
+                        <li>Select “Enable O2 PPM Monitor”</li>
+                        <li>From the Input Type drop-down menu, choose the option that corresponds with the type of output used on the customer’s oxygen analyzer.</li>
+                        <li>The Low and High values will correspond to the minimum and maximum range of the output; e.g. a Low of 0=0 volts, and a High of 500 equals 5 volts.</li>
+                        <li>
+                            <p>Enter the distance from the WPI Board Sensor (at entrance of machine) to the location of the O2 sample port (from the O2 analyzer) inside the machine.</p>
+                        </li>
+                        <li>Click the Apply and OK buttons at the bottom of the Configuration Program to save changes and close.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Operation"></a>Operation
+        </h2>
+                    <p style="font-style: normal;text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014021.png" />
+                    </p>
+                    <p>When <i>O2 Live</i> is enabled, checkboxes in the <i>O2</i> column in Profile Explorer allow you to select by product, whether the O2 PPM values will be collected and displayed during VP.</p>
+                    <p>&#160;</p>
+                    <p>During Virtual Profiling, a “floating” window displays on the screen showing the measured value, and is color-coded based on the measured value:</p>
+                    <p>&#160;</p>
+                    <p class="Figure">
+                        <img src="Resources/Images/image92.png" style="width: 531px;height: 282px;" />
+                        <br />Figure 71: O2 PPM Floating Windows</p>
+                    <p>&#160;</p>
+                    <p>Below are the formulas used for calculating the O2 PPM value depending on type of analyzer output:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image91.png" style="width: 530px;height: 395px;" />
+                    </p>
+                    <p class="Figure">Figure 72: O2 PPM formulas</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image93.png" />
+                        <br />
+                    </p>
+                    <p style="text-align: center;">&#160;</p>
+                    <h1 class="Heading1"><a name="VP_Idle_Mode"></a>VP Idle Mode (Optional)
+        </h1>
+                    <p><b>Note:</b> The software key must remain connected at all times during use for <i>VP Idle Mode</i> capabilities to function.</p>
+                    <p>&#160;</p>
+                    <p><i>VP Idle Mode</i> is an <i>optional</i> feature that allows the WPI software to automatically go into a type of “sleep –mode” during Virtual Profiling if the machine is equipped with an automated ‘energy saving’ capability. When energy savings features are enabled, the machine control software can modify several of the process parameters – such as conveyor speed, or zone setpoint temperatures. When this occurs, the KIC software would normally alarm on the detected changes to the process. Using VP Idle Mode allows the software to ignore those changes during energy saving periods, thus eliminating unnecessary warnings/alarms from being activated.</p>
+                    <p>&#160;</p>
+                    <p>During VP Idle Mode, the crystal ball will be grey, the statistics chart will be blank, no VP data will be calculated, and no process related alarms or warnings will display or be recorded. When the entrance board sensor is triggered, the system will automatically exit Idle Mode and return to normal VP operation.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Configuration_VP_Idle_Mode"></a>Configuration
+        </h2>
+                    <p>The feature is enabled by shutting down the software, running the ConfigurationProgram.exe (in the C:\WPI directory) and selecting “Use VP Idle Mode” in the area shown below, and entering the amount of time the oven should be empty before entering Idle Mode:</p>
+                    <p>&#160;</p>
+                    <p class="Figure">
+                        <img src="Resources/Images/image132.png" />
+                        <br />Figure 73: VP Idle Mode Configuration</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p style="text-align: left;">&#160;</p>
+                    <p>When VP is running, there will be an additional button on the screen allowing you to manually Enter/Exit VP Idle Mode at any time:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image133.png" />
+                    </p>
+                    <p style="text-align: left;">&#160;</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <h1 class="Heading1"><a name="Units_Per_Hour"></a>Units Per Hour
+        </h1>
+                    <p>The Units Per Hour (UPH) function can display on the General Tab when VP is running, a count of how many boards (Units) have been processed in the last hour. The number automatically resets back to 0 at the top of the hour.</p>
+                    <p class="Figure">
+                        <img src="Resources/Images/image97.png" />
+                        <br />Figure 74: VP Idle Mode Configuration</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <p style="text-align: center;">&#160;</p>
+                    <h2 class="Heading2"><a name="Configuration_Units_Per_Hour"></a>Configuration
+        </h2>
+                    <p>The feature is enabled by shutting down the software, running the ConfigurationProgram.exe (in the C:\WPI directory) and selecting “Enable” in the area shown below:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image134.png" />
+                        <br />
+                    </p>
+                    <p>&#160;</p>
+                    <h1 class="Heading1"><a name="Auto-VP"></a>Auto-VP
+        </h1>
+                    <p>Auto-VP is an available feature that allows for an automated changeover process. Typically, during a product changeover, an Operator has to manually stop the currently running VP, then go into the wave machine software and select and load the correct recipe for the next product to be processed. Then they must go into the KIC software and select the corresponding product and load that VP. This can sometimes lead to the wrong selection being chosen by the user.</p>
+                    <p>&#160;</p>
+                    <p>Through the use of barcodes or MES control programs, the Auto-VP feature can eliminate the need for Operator intervention in the product changeover process. The correct VP is automatically loaded based on information sent to the software.</p>
+                    <p>&#160;</p>
+                    <p>There are multiple configurations of the Auto-VP feature depending on the capabilities and processes in place in the factory. Please contact KIC Tech Support to identify if this functionality can be implemented with your system.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

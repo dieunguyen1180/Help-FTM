@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="8186" MadCap:lastWidth="1135">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 505px">
+            <col style="width: 754px;" />
+            <tr>
+                <td with="width: 505px">
+                    <h3 class="Heading3"><a name="Understanding_Virtual_Profiling"></a><span style="font-size: 18pt;">Virtual Profiling</span>
+                    </h3>
+                    <p><i>Virtual Profiling</i> (VP) is a means of reliably predicting the thermal profile  based on a comparison of real-time temperature and conveyor speed data against a <i>baseline</i> profile established by an earlier profiler run through the oven. The software generates a Virtual Profile at a user-selected interval from once per hour to once every 24 hours.</p>
+                    <p>&#160;</p>
+                    <p> For a given product, this baseline needs to represent an optimum oven recipe with a good PWI value and a quality soldering result. During the initial profile run, the software simultaneously collects temperature data from the board and from the probes installed in the oven at product level.  The software calculates a mathematical correlation between these temperature readings and stores this data as part of the baseline profile.</p>
+                    <p>&#160;</p>
+                    <p>Once the baseline is established, the software goes into monitoring mode, recording real-time belt speed and probe temperature data at the specified interval as the production run passes through the oven.  Comparing real-time data to the baseline profile, the automatic system algorithms accurately extrapolate a simulated thermal profile. When oven data varies significantly from the baseline profile, the software displays appropriate warnings to system operators. The software saves the data from each profile/virtual profile, creating a valuable quality assurance record.</p>
+                    <p>&#160;</p>
+                    <p>If you’ve purchased the option, the software can display a chart and table of profile data based on the process window and also Statistical Process Control (SPC) charts.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b>  Before you start Virtual Profiling, make sure all hardware is properly installed and configured.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Getting_a_valid_baseline_profile"></a>Get a Valid Baseline Profile </h2>
+                    <p>Virtual Profiling makes use of a special profile, called the baseline profile, as the data model for its predictions.  The software requires that you first establish this baseline before it enables Virtual Profiling. The baseline profile should represent your optimum oven recipe for your product and needs to meet the Virtual Profile criteria shown below:</p>
+                    <p>&#160;</p>
+                    <ul>
+                        <li>The PWI must be below the Maximum PWI to allow the VP value as set in Global Preferences.</li>
+                        <li>
+                            <p>The conveyor speed measured by the encoder must be within 20% of the specified conveyor speed.</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>Probe temperatures must be valid; if any probe thermocouple reports a range of greater than 30°C between adjacent readings (every 2.5 seconds), the software will consider them invalid.</p>
+                        </li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>If your profile meets the above criteria, it can work as a baseline profile. The baseline profile will display differently in the Profile Explorer screen—the profile’s icon will have an overlying green VP icon <img src="Resources/Images/image124.png" />.  If you suspect the current baseline profile needs replacement by a newer version that more closely matches current production conditions, the software lets you create a new baseline during ongoing production.  As long as this <i>verification profile</i> meets VP criteria, it can become the new baseline profile.  See <a href="#Virtual_Profiling_Live3">Verify the Virtual Profile</a>.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Integrate_Empty_Oven_Data"></a><span style="font-size: 14pt;">Integrate Empty Oven Data</span>
+                    </h2>
+                    <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <i>board present</i> and <i>board absent</i> states along the length of the probes.  To obtain this data most efficiently, it may be necessary to run the profiler board with similar <i>boards moving ahead of it and an empty conveyor behind it</i>.  The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.  As the profiler board exits each oven zone, the probes can measure the temperature when a board is not present.  The software can integrate this comparative data for a more accurate predictive capability.  The oven should remain empty until the profiler board completely exits the process chamber.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs  and Virtual Profiling will not be able to be used.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load a Virtual Profile</h2>
+                    <p>There are two ways to begin Virtual Profiling:</p>
+                    <p>&#160;</p>
+                    <ol start="1">
+                        <li class="ListNumber2">Open the Profile Explorer and select your product folder in the upper-left corner. This will display the profiles and events for the selected product.  If you have a profile that meets Virtual Profiling criteria, the profile icon will be overlaid with a green VP.  This qualifying profile (Baseline) will always be the most recent profile that meets Virtual Profiling criteria (only one profile can qualify as the baseline).<br /><br />No need to highlight the Baseline profile, simply click the Start Virtual Profiling button.&#160; This will start Virtual profiling for the selected product.</li>
+                    </ol>
+                    <p class="ListBullet2_1">&#160;</p>
+                    <p class="ListBullet2_1">&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 370pt;" />
+                        <col style="width: 109pt;" />
+                        <tr>
+                            <td class="td_10">
+                                <ol start="2">
+                                    <li class="ListNumber2">If you have run a profile that meets the Virtual profile criteria, then the <b>Start</b> Virtual profiling button will appear once the profile has completed.  Click the <b>Start</b> Virtual Profiling button to begin Virtual Profiling for this product. A message will display asking you to confirm if you want to proceed. See Figure 57.</li>
+                                </ol>
+                            </td>
+                            <td class="td_10">
+                                <p>
+                                    <img src="Resources/Images/vis_27.png" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_10">
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_10">
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="ListNumber2">&#160;</p>
+                    <p class="Important"><span class="span_21">Caution: </span><span class="span_18">Your </span><span class="span_18">software</span><span class="span_18"> security</span><span class="span_18"> key must be connected prior to enabling Virtual Profile mode.&#160; If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message will</span><span class="span_18"> be displayed</span><span class="span_18">.</span><span class="span_21">&#160; </span>
+                    </p>
+                    <p>&#160;</p>
+                    <p class="Important"><span class="span_21">Tip: </span><span class="span_18">If your oven is capable of communicating with the software, a dialog box will appear notifying </span><span class="span_18">you</span><span class="span_18"> that Virtual Profile is starting and the oven recipe</span><span class="span_18"> will be changed automatically.</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>If your software is not communicating directly with the oven controller, the software will display the Baseline profile recipe.&#160; Make sure the oven is set to the exact recipe settings.</p>
+                    <p>&#160;</p>
+                    <p class="p_1">&#160; <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000068a.png" /></p>
+                    <p class="Caption">Figure 57: Profile Explorer – Start Virtual Profiling</p>
+                    <p>&#160;</p>
+                    <p>If your oven is capable of communicating with the software and the current oven recipe matches the Baseline profile recipe, a dialog box will appear telling you that the recipe is already set correctly.  See Figure 58.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">&#160; <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300006Aa.png" /></p>
+                    <p class="Caption">Figure 58: Virtual Profiling – Oven Recipe set correctly</p>
+                    <p>&#160;</p>
+                    <p class="Important"><span class="span_21">Tip:</span><span style="font-weight: normal;">Oven Controller: If nothing happens within several seconds, check the oven controll software to make sure there are no error messages or errors that will cause the system to hang.</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Baseline_Profile_Loaded"></a><a name="Baseline_Profile_Empty"></a><a name="Virtual_Profiling_Live1"></a>Live Mode - General Tab</h3>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image125.png" />
+                    </p>
+                    <p style="text-align: center;">Figure 60: General Tab Screen</p>
+                    <p>&#160;</p>
+                    <p>On the <i>Live-Mode General tab</i> screen, the software displays both the baseline and virtual profile.  To distinguish between the two, the baseline profile appears in a solid line format, while the virtual profile appears in dashed-lines.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> To enlarge the graph portion of the screen, double click on the graph.  To enlarge the statistics portion of this screen, double click on the statistics.</p>
+                    <p>&#160;</p>
+                    <p><b style="font-family: Arial; font-size: 14pt;"><a name="Profile_Statistics"></a>Profile Statistics</b>
+                    </p>
+                    <p>&#160;</p>
+                    <p>On the General tab screen, the VP and baseline statistics appear in a table below the profile graph.  Uncheck the baseline check box to remove the baseline statistics form view.  Below the statistics, the Virtual Profile and baseline profile recipes appear.  These recipes should match identically. </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="VP_Live_Graph_Controller"></a>Graph Controller</h3>
+                    <table class="table_2">
+                        <col style="width: 235pt;" />
+                        <col style="width: 244pt;" />
+                        <tr>
+                            <td class="td_10">
+                                <p>The Graph Controller allows you to modify the view of the profile graph.  See Figure 61.  To open the Graph Controller, left-click on the TC column header in the Statistics table or double left-click, anywhere just outside the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_9">Auto Scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.&#160; When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y-axis scale of the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><b>TCs –</b> You cannot disable or rename a TC in a Virtual Profile. You can only perform this function on the Baseline Profile. Those changes would then be reflected in the Virtual Profile display</p>
+                                <p>.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_10">
+                                <p class="p_1"><a name="_Ref185838512"></a><span class="span_22"><img src="Resources/Images/image126.png" /><br />Figure 61: Graph Controller</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="ListBullet2_2"><span class="span_9">Grid –</span> Enables/disables the view of the X and Y-Axis scales.</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Reference lines –</span> Enables the view of Reference Lines displayed on the profile graph.&#160; These lines represent any temperatures referenced in the selected Process Window.</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Zone lines – </span>Enables the view for the oven zone lines on the profile graph.</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Predicted TCs only</span> - Removes the Original profile plot from view, displaying only the prediction profile plot on the graph.&#160; </p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Zero decimal </span>– When viewing the Pointer tool, this setting enables or disables the decimal display.&#160; When unchecked, the software will display one decimal point.</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Internal temp </span>– Enables the view of the profiler’s internal temperature profile plot on the graph.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_9">TCs Line Thickness</span> – The pull down menu lets you select five different thicknesses for the TC lines drawn on the graph.&#160; </p>
+                    <p>&#160;</p>
+                    <p><b>Display Detailed PWI –</b> With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values.</p>
+                    <p>&#160;</p>
+                    <p><b>Extra Cooling Slope –</b> Enabling this feature displays multiple Cooling Slope measurements which are customizable by the user.</p>
+                    <p>&#160;</p>
+                    <p><b>TCs Line Thickness –</b> The pull down menu lets you select five different thicknesses for the TC lines drawn on the graph.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Automatic_calculation_of"></a>Automatic Calculation Of Delta T + Delta (Or Range) For All Statistics</h3>
+                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.  See Figure 62.  This is the range of the highest to the lowest value for any given specification.  This information is strictly being displayed and is not factored in to the PWI value and is not used in the optional Navigator or Auto-Focus calculations.&#160; </p>
+                    <h3 class="Heading3"><a name="Examine_tool"></a>Examine Tool</h3>
+                    <table class="table_2">
+                        <col style="width: 320pt;" />
+                        <col style="width: 126pt;" />
+                        <tr>
+                            <td class="td_10">
+                                <p>You can also view the Delta T (∆T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.  This will bring up a pointer and a chart will appear in the upper left corner of the graph.  See Figure 62.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_10">
+                                <p class="p_1" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000037.png" style="height: 94px;width: 115px;" class="img_1" />
+                                </p>
+                                <p style="text-align: center;">Figure 62: Examine Tool Display</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Wherever the pointer is moved across the profile, the following data will be displayed:</p>
+                    <p>&#160;</p>
+                    <ul style="list-style-type: square;">
+                        <li>The first column is the actual temperature for each TC, Original.</li>
+                        <li>The second column is the temperature of the predicted profile data – based on set point or belt speed changes.</li>
+                        <li>The Delta T for both actual and predicted TC data.</li>
+                        <li>The time during the profile at which the pointer is placed.</li>
+                    </ul>
+                    <p class="p_28">&#160;</p>
+                    <h2 class="Heading2"><a name="Virtual_Profiling_Live2"></a>Live Mode - Description Tab</h2>
+                    <p class="p_29">&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 210pt;" />
+                        <col style="width: 269pt;" />
+                        <tr>
+                            <td class="td_10">
+                                <p>The Description tab displays the profile Description notes for the Baseline profile.  See Figure 63.</p>
+                                <p>&#160;</p>
+                                <p>You can edit these notes by clicking in the description area.</p>
+                                <p>&#160;</p>
+                                <p>Below the description area, the Virtual Profile and Baseline Statistics, and recipes appear.&#160; The current PWI appears in the bottom-left corner.&#160; Enlarging the description area and statistics are not possible while viewing this tab.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_10">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/vis_3.png" width="400" height="211" />
+                                </p>
+                                <p style="text-align: center;">Figure 63: Virtual Profiling – Description Tab</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h2 class="Heading2"><a name="Virtual_Profiling_Live3"></a><a name="Buttons"></a><a name="Verifying_the_Virtual"></a>Verify the Virtual Profile</h2>
+                    <p>The <i>Virtual Profile</i> is a prediction of the process profile (inside the oven) generated from a model created when the Baseline profile was run.  A <i>Verification Profile</i> is a comparison run against the virtual profile model.  If you think the process has changed significantly or you have purposely changed the recipe, running a verification profile lets you verify the prediction model.  This comparison can either verify that the process profile is still within specification or create a new baseline profile based on the recent changes.</p>
+                    <p>&#160;</p>
+                    <p>The verification profile updates the Baseline profile for the current Virtual Profile, insuring that its prediction model yields the most accurate possible results, using the most recent profile.  The software always recognizes the latest in spec profile as the Baseline for any Virtual Profile.</p>
+                    <p>&#160;</p>
+                    <p>The software recognizes when the process temperatures change significantly as compared to the current Baseline profile, and then prompts you to run a verification profile.  You can intentionally run a verification profile at any time during Virtual Profiling Live Mode.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b>The software will only accept a verification profile as a new baseline if meets the standard VP criteria.  See <a href="#Getting_a_valid_baseline_profile">Get a Valid Baseline Profile</a>.</p>
+                    <h3 class="Heading3"><a name="Starting_a_Verification"></a>Start A Verification Profile</h3>
+                    <table class="table_2">
+                        <col style="width: 316pt;" />
+                        <col style="width: 163pt;" />
+                        <tr>
+                            <td class="td_10">
+                                <p>A Verification Profile can run only when Virtual Profiling is running in live mode.</p>
+                                <p>&#160;</p>
+                                <ol>
+                                    <li>With Virtual Profiling running in live mode, select the Run Profile button at the bottom of the Virtual Profiling-live screen.  See Figure 64.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_10">
+                                <p class="p_1">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000007.png" style="height: 76px;width: 140px;" class="img_1" />
+                                </p>
+                                <p class="p_1"><span class="span_22">Figure </span><span class="span_22">64</span><span class="span_22">: Run Profile Button, Main screen</span>
+                                </p>
+                                <p class="p_1">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_10">
+                                <ol start="2">
+                                    <li>The software will display a message asking if you want to run a Verification profile:  See Figure 65.</li>
+                                </ol>
+                                <ul>
+                                    <li class="ListBullet2_1">If you choose “<b>No</b>”, the software will return to the previous screen.</li>
+                                </ul>
+                                <ul>
+                                    <li class="ListBullet2_1">If you choose “<b>Yes</b>”, the software will begin stepping through the run profile routine.</li>
+                                </ul>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_10">
+                                <p class="p_1">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000071.png" style="height: 89px;width: 193px;" class="img_3" />
+                                </p>
+                                <p class="p_1"><span class="span_22">Figure </span><span class="span_22">65</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p class="p_30"><span class="span_9">Before </span><span class="span_9">profiling,</span><span class="span_9"> make sure:</span>
+                    </p>
+                    <ul class="ul_5">
+                        <li class="ListBullet3_1"><span class="span_19">The </span><span class="span_19">Profiler is o</span><span class="span_19">n and ready to profile.</span>
+                        </li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="ListBullet3_2"><span class="span_7">Transmit </span><span class="span_7">model</span><span class="span_19"> – Receiver </span><span class="span_19">or Base Station</span><span class="span_19">is plugged into computer</span><span class="span_19">.</span>
+                        </li>
+                        <li class="ListBullet3_2"><span class="span_7">Datalog </span><span class="span_7">model</span><span class="span_19"> – </span><span class="span_19">The profiler is</span><span class="span_19"> plugged into the download cable and download cable is plugged into the computer.</span>
+                        </li>
+                    </ul>
+                    <ul class="ul_5">
+                        <li class="ListBullet3_3"><span class="span_19">P</span><span class="span_19">rofiler </span><span class="span_19">batteries</span><span class="span_19"> and internal temp</span><span class="span_19">erature</span><span class="span_19"> are at the proper levels to profile.</span>
+                        </li>
+                    </ul>
+                    <ul class="ul_5">
+                        <li class="ListBullet3_3"><span class="span_19">All thermocouples attached to the</span><span class="span_19"> profiler</span><span class="span_19"> are below the defined product start temperature.</span>
+                            <br /><b>Note:</b> Depending on the settings on your profiler and in the software, you may have to initialize the profiler.  The software will let you know when this is necessary. To initialize the profiler, connect it with the supplied cable to the computer, and turn on the power. Click <b>OK</b> when the software displays the message that the initialization was successful</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ol start="3">
+                        <li>Click the Profile Start button (green traffic light).</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>Once the Verification Profile is complete, the profiler has downloaded the profile data that meets Virtual Profile criteria, the software will display the dialog box shown below:  (See Figure 66.)</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000072.png" style="height: 192px;width: 348px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 66: This dialog box will display the PWI and the <br />predicted PWI for the Verification Profile</p>
+                    <p class="Caption">.</p>
+                    <p>&#160;</p>
+                    <p>Alternatively, if the Profile is out of spec, the dialog box shown below will appear stating that the PWI is too high.  See Figure 67.</p>
+                    <p>&#160;</p>
+                    <p>If you choose to continue running Virtual Profiling, you will receive WARNING #2, “The last profile was out of spec”.&#160; In this situation, you need to run profiles until an in spec profile is achieved before the software will allow you to continue Virtual Profiling.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000073.png" style="height: 192px;width: 348px;" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 67: Out of Spec Verification profile</p>
+                    <p>&#160;</p>
+                    <p class="p_24">The dialog box will present two choices:</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListBullet2"><span class="span_9">Continue Virtual Profiling –</span> If the Verification Profile meets Virtual Profiling criteria, it will automatically be used as the new Baseline profile.&#160; If you choose this option, the software will update the Baseline and continue Virtual Profiling, using the Verification Profile as a new Baseline profile.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_1">
+                        <li class="ListBullet2"><span class="span_9">Unload Virtual Profile and go to Prediction mode</span> – If the Verification Profile does not meet Virtual Profiling criteria or is out of spec, it can’t be used for Virtual Profiling.&#160; If you choose this option, you can predict changes to the profile in order to bring the profile back within its process specification.&#160; You will have to run at least one more profile in order to produce a profile that meets Virtual Profiling criteria.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="Important"><span class="span_21">Tip: </span><span class="span_18">For an explanation of Virtual Profile criteria, see the <a href="#Understanding_Virtual_Profiling">Virtual Profiling</a> Section of this manual</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Historical_Mode"></a>Historical Mode</h2>
+                    <p>The software has an <i>historical mode</i> feature.  This feature allows you to view the data for any Virtual Profile  processed when the system has been running.  Open the Profile Explorer and select any event other than a profile. The <b>Display the Graph and Statistics for this profile</b> button will change from a single graph button display to a HISTORY button display, indicating there is Historical data associated with the selected event.  See Figure 68 and Figure 69.</p>
+                    <p>&#160;</p>
+                    <table align="center" style="width: 40%;margin-left: auto;margin-right: auto;">
+                        <col />
+                        <col />
+                        <tr>
+                            <td>
+                                <p class="Figure_2">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000074.png" style="height: 51px;width: 91px;" class="img_1" />
+                                </p>
+                                <p class="Caption">Figure 68: Profile Explorer–<br />Display Graph and Statistics for <br />this profile</p>
+                            </td>
+                            <td>
+                                <p class="Figure_2">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000056.png" style="height: 55px;width: 101px;" class="img_3" />
+                                </p>
+                                <p class="Caption">Figure 69: Profile Explorer–<br />Display Historical Graph and <br />Statistics</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Virtual_Profiling1"></a>Historical Mode - General Tab</h2>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000075.png" />
+                    </p>
+                    <p class="Caption">Figure 70: Virtual Profiling History – General Tab</p>
+                    <p>&#160;</p>
+                    <p>The software will display the Baseline profile on the profile graph in a solid line format.&#160; Also on the profile graph is the Virtual Profile for the selected  date/time.&#160; The Virtual Profile will be displayed on the profile graph in a dashed-line format.&#160; This display method allows you to easily distinguish between the Baseline and Virtual profiles.</p>
+                    <p>&#160;</p>
+                    <p>Below the profile graph, the Virtual Profile and Baseline profile statistics appear.  Uncheck the Baseline check box to remove the Baseline statistics from view.  Below the statistics, the Virtual Profile and Baseline profile recipes appear.</p>
+                    <p>&#160;</p>
+                    <p><b style="font-size: 14pt; font-family: Arial;"><a name="Viewing_Historical_Profiles"></a>Viewing Historical Profiles</b>
+                    </p>
+                    <p>To view the Virtual Profiles for this product use the Green arrow buttons to either go forward in history or go Backwards in history.  Each time the arrow button is selected the software will display the next record in chronological order.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="VP_Historical_Graph_Controller"></a>Graph Controller</h3>
+                    <table class="table_2">
+                        <col style="width: 261pt;" />
+                        <col style="width: 218pt;" />
+                        <tr>
+                            <td class="td_11">
+                                <p>&#160;</p>
+                                <p>The Graph Controller allows you to modify the view of the profile graph.  See Figure 71.  To open the Graph Controller, left-click on the TC column header in the Statistics table or Double left-click, anywhere just outside the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_9">Auto Scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.&#160; When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y-axis scale of the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><b>TCs</b>
+                                </p>
+                                <p>The TCs section is a list of the thermocouples used for the profile.  In the event that you wish to view the profile without a particular or multiple thermocouples, you can deselect individual thermocouples, or deselect the “All” check box, and choose only the thermocouples you wish to view. The software recalculates the PWI, and updates the profile statistics based on the remaining thermocouples selected.  You must select at least one product thermocouple.</p>
+                            </td>
+                            <td class="td_11">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/image128.png" />
+                                    <br />Figure 71: Graph Controller</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p class="p_4"><span class="span_9">Deselecting </span><span class="span_9">t</span><span class="span_9">hermocouples</span>
+                    </p>
+                    <p>If a thermocouple has become disconnected during the profile, the profile results (PWI) may be affected to due above normal peak temperatures and such.&#160; This situation may cause the profile PWI value to be artificially inflated due to bad data.&#160; In the event a single or multiple thermocouples become disconnected from the product during the profile, you can deselect the affected thermocouple(s).&#160; The software will recalculate the PWI, and update the profile statistics based on the remaining thermocouples selected.&#160; You must select at least one product thermocouple.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Grid –</span> Enables/disables the view of the X and Y-Axis scales.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Reference </span><span class="span_9">l</span><span class="span_9">ines –</span> Enables the view of Reference Lines displayed on the profile graph.&#160; These lines represent any temperatures referenced in the selected Process Window.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Zone </span><span class="span_9">l</span><span class="span_9">ines – </span>Enables the view for the oven zone lines on the profile graph.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Predicted TCs </span><span class="span_9">o</span><span class="span_9">nly</span> - Removes the Original profile plot from view, displaying only the prediction profile plot on the graph.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Zero </span><span class="span_9">d</span><span class="span_9">ecimal </span>– When viewing the Pointer tool, this setting enables or disables the decimal display.&#160; When unchecked, the software will display one decimal point.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Internal </span><span class="span_9">t</span><span class="span_9">emp </span>– Enables the view of the profiler’s internal temperature profile plot on the graph.</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p><b>Display Detailed PWI –</b> With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values.</p>
+                    <p>&#160;</p>
+                    <p><b>Extra Cooling Slope –</b> Enabling this feature displays multiple Cooling Slope measurements which are customizable by the user.</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p><span class="span_9">TCs Line Thickness</span> – The pull down menu lets you select five different thicknesses for the TC lines drawn on the graph.&#160; </p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <h3 class="Heading3"><a name="Automatic_calculation_of1"></a>Automatic Calculation Of Delta T + Delta (Or Range) For All Statistics</h3>
+                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.  See Figure 72.  This is the range of the highest to the lowest value for any given specification.  This information is strictly being displayed and is not factored in to the PWI value and is not used in the Navigator or Auto-Focus calculations.&#160; </p>
+                    <h3 class="Heading3"><a name="Examine_Tool"></a>Examine Tool</h3>
+                    <table class="table_2">
+                        <col style="width: 325pt;" />
+                        <col style="width: 122pt;" />
+                        <tr>
+                            <td class="td_11">
+                                <p>You can also view the Delta T (∆T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.  This will bring up a Pointer and a chart will appear in the upper left corner of the graph.  See Figure 72.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_11">
+                                <p class="p_1">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000037.png" style="height: 94px;width: 115px;" class="img_1" />
+                                </p>
+                                <p>Figure 72: Examine Tool Display</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Wherever the pointer is moved across the profile, the following data will be displayed:</p>
+                    <p>&#160;</p>
+                    <ul style="list-style-type: square;">
+                        <li>
+                    The first column is the actual temperature for each TC, Original.
+					</li>
+                        <li>The second column is the temperature of the predicted profile data – based on set point or belt speed changes.
+					</li>
+                        <li>The Delta T for both actual and predicted TC data.
+					</li>
+                        <li>The time during the profile at which the pointer is placed.                    </li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Virtual_Profiling5"></a>Historical Mode - Description Tab</h2>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000076.png" />
+                    </p>
+                    <p class="Caption">Figure 73: Virtual Profiling History – Description Tab</p>
+                    <p>&#160;</p>
+                    <p>In Historical mode the Description tab displays the Baseline profile description notes.  See Figure 73.  You can edit these notes by clicking in the description area.  Below the description area, the Virtual Profile and Baseline statistics, and recipes are displayed.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Virtual_Profiling2"></a>
+                    </h2>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

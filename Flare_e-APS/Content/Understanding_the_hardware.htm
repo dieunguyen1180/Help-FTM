@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1"><b style="font-weight: bold; color: #4682b4;">Part 1: The Basic System</b>
+                    </h1>
+                    <h1 class="Heading1">The Hardware</h1>
+                    <p class="p_4">There are five major hardware components to the basic system:</p>
+                    <ul>
+                        <li class="li_1">Ethernet Thermocouple Processing Unit (eTPU)</li>
+                        <li class="li_1">Probes</li>
+                        <li class="li_1">Board sensor</li>
+                        <li class="li_1">Conveyor speed encoder</li>
+                        <li class="li_1">Profiler</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="eTPU"></a><span class="span_8">e</span>TPU</h2>
+                    <p class="ListBullet2">The eTPU interfaces with the computer using an Ethernet cross-over cable that connects from the UpLink port on the eTPU directly to a USB to Ethernet adapter (or to an installed Network Interface Card (NIC)).&#160; Please follow manufacturers’ instructions to install the USB adapter or NIC.</p>
+                    <p class="ListBullet2">&#160;</p>
+                    <p class="ListBullet2">The computer used with the system can be a machine that is dedicated to only supporting the software or it can also serve as the oven controller PC.  The software can interface directly with the oven controller on selected models from oven manufacturers.&#160; If you have an oven that is capable of communication with the software, you will want to connect the software to the oven controller computer.</p>
+                    <p class="ListBullet2">&#160;</p>
+                    <p class="ListBullet2">The eTPU must be plugged into an AC power source.  The eTPU utilizes a universal A/C transformer power supply.  The eTPU ships from the factory with multiple AC connectors to accommodate any connector/voltage requirement.</p>
+                    <h2 class="Heading2"><a name="Probes"></a>Probes</h2>
+                    <p class="ListBullet2">The probes are mounted in the oven process chamber.&#160; They are usually suspended from the conveyor rails by oven manufacturer approved brackets.&#160; The probes are connected to the eTPU - Odd/Even ports.&#160; Each probe connector is stamped with an <span class="span_9">E </span>or <span class="span_9">O</span> in order to designate <span class="span_9">Odd</span> or <span class="span_9">Even</span>.&#160; See the <u><a href="#Hardware_diagram">Hardware Diagram</a></u>.</p>
+                    <p class="ListBullet2">&#160;</p>
+                    <h2 class="Heading2"><a name="Board_sensor"></a>Board Sensor</h2>
+                    <p class="ListBullet2">The Board Sensor is mounted near the entrance of the oven.  It can be mounted further into the oven if necessary.  The Board Sensor is usually mounted to the fixed conveyor rail. The Board sensor is connected to any of the eTPU  Sensor ports.  Dual lane systems use a board sensor for each lane.</p>
+                    <p class="ListBullet2">&#160;</p>
+                    <h2 class="Heading2"><a name="Conveyor_speed_encoder"></a>Conveyor Speed Encoder</h2>
+                    <p class="ListBullet2">The Conveyor Speed Encoder is mounted to read pulses from a gear that turns while the oven is operating.&#160; The Conveyor Speed Encoder connects to any of the eTPU Sensor ports.</p>
+                    <p class="ListBullet2">&#160;</p>
+                    <h2 class="Heading2"><a name="Profiler"></a>Profiler </h2>
+                    <p class="p_4">The profiler is the data acquisition component of the system.&#160; It provides the on-board, through-the-process temperature data.&#160; The software analyzes this data together with oven zone temperature and conveyor speed factors to display the thermal profile graphically. </p>
+                    <p class="p_4">You can use software with several profiler models such as:</p>
+                    <ol start="1">
+                        <li>
+                            <p>SPS Smart Profiler</p>
+                        </li>
+                        <li class="li_2">X<sup>5</sup></li>
+                        <li class="li_2">K<sup>2</sup></li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p>The software works the same with any of the profilers.  Once you have the software running, you indicate your specific profiler model.  The program then displays the text and graphics that reflect the model you chose. (The artwork that appears throughout this manual reflects a variety of profiler models.)</p>
+                    <p>&#160;</p>
+                    <p class="p_4">Profilers can operate in either of two modes—datalog and wireless.  In standard datalog mode, the profiler records temperature data as it moves through the thermal process.  A cable then transfers the data to your software application computer.  In wireless mode, the profiler transmits data directly to the computer by radio signals or Wi-Fi instead of an attached cable.  The application software can then display the accumulating data in real-time.</p>
+                    <p class="Important_1">For specific information regarding your profiler, consult one of the following publications:</p>
+                    <ul>
+                        <li class="li_1">
+                            <MadCap:shortcut path="PTG-330310-000 SPS Smart Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">SPS Smart Profiler Hardware Guide (Publication Number PTG-330310-000)</MadCap:shortcut>
+                        </li>
+                        <li class="li_1">
+                            <MadCap:shortcut path="EXP-337310-000 X5 Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">X<sup>5</sup> Profiler Hardware Guide, (Publication Number EXP-337310-000)</MadCap:shortcut>
+                        </li>
+                        <li>
+                            <p>
+                                <MadCap:shortcut path="EXP-331310-000 K2 Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">K<sup>2</sup> Profiler Hardware Guide, (Publication Number EXP-331310-000)</MadCap:shortcut>
+                            </p>
+                        </li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Hardware_diagram"></a>Hardware Diagram</h2>
+                    <p class="p_4">The hardware diagram below illustrates the interconnection of the hardware components (including some optional hardware):</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000002.png" />
+                    </p>
+                    <p class="Caption">Figure 1: Hardware Configuration Diagram</p>
+                    <p>&#160;</p>
+                    <p>It is critical that all system hardware be installed and configured properly.&#160; Any malfunctioning or incorrectly setup component may prevent the system from providing accurate data or from running Virtual Profiling.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

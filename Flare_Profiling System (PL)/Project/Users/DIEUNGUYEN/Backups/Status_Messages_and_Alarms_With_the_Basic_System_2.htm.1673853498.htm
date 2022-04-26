@@ -1,0 +1,1173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 505px">
+            <tr>
+                <td with="width: 505px">
+                    <h1 class="Heading1"><a name="Understanding_status_messages_and_alarms"></a>Status Messages And Alarms When Using Optional Features</h1>
+                    <p>The software communicates system status through messages that it displays on the monitor.&#160; Some simply report an operating condition, some provide a warning that process parameters are changing, and still others, called <span class="span_12">alarms</span><span class="span_12">,</span> announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.&#160; </p>
+                    <p>&#160;</p>
+                    <table class="table_1">
+                        <col style="width: 320pt;" />
+                        <col style="width: 158pt;" />
+                        <tr>
+                            <td class="td_37">
+                                <p>Alarm messages typically appear in red.&#160; An alarm status may accompany a signal from the eTPU to the optional alarm relay, which, in turn, may trigger hardware-related events such as sounding audible alarms, lighting signal towers, or stopping infeed conveyors.</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_37">
+                                <p>
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0600009E.png" style="width: 176px;height: 112px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Some status messages and alarms are specific to different functions of the software.&#160; Some may appear when you are first running profiles to establish a baseline.&#160; Others appear only when you begin Virtual Profiling.</p>
+                    <h2 class="Heading2"><a name="Acknowledging_alarms"></a>Acknowledge Alarms</h2>
+                    <table class="table_1">
+                        <col style="width: 361pt;" />
+                        <col style="width: 118pt;" />
+                        <tr>
+                            <td class="td_38">
+                                <p>Once displayed on the monitor, an operator needs to acknowledge the alarm, clicking on it to notify the software that the message has been received and make the displayed panel disappear.&#160; </p>
+                                <p class="p_15">You can use password protection to limit the ability to acknowledge alarms.&#160; To do so, you first need to specify the following value in the KIC2000UserSettings.kiccfg file: </p>
+                                <p class="p_15">&#160;</p>
+                                <p class="PlainText">[HOST]</p>
+                                <p class="PlainText">UsingPasswordwithRedAlarm=1</p>
+                            </td>
+                            <td class="td_38">
+                                <p>
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300009F.png" style="width: 115px;height: 73px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 43pt;">
+                            <td class="td_39">
+                                <p>&#160;</p>
+                                <p class="p_17">Next, you need to specify a password on the Global Preferences screen <span class="span_12">Engineer Password</span> option.&#160; Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.</p>
+                            </td>
+                            <td class="td_40">
+                                <p class="p_17">&#160;</p>
+                                <p class="p_17">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A0.png" style="height: 29px;width: 150px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p class="p_19">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000138.png" style="width: 326px;height: 210px;" class="img_1" />
+                    </p>
+                    <p><span class="span_11">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
+                    <h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
+                    <p>During the profiling portion of getting your software ready to monitor and record real-time production and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.&#160; Below is a table the message that you might see during this process:&#160; See Table 2.</p>
+                    <p>&#160;</p>
+                    <table align="center" style="width: 100%;">
+                        <col style="width: 250px;" />
+                        <col style="width: 350px;" />
+                        <tr style="height: 22pt;">
+                            <td class="td_17">
+                                <p class="p_46">Message Alarms</p>
+                            </td>
+                            <td class="td_17">
+                                <p class="p_46">Message Description</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_18">
+                                <p class="p_47">Message, High PWI</p>
+                            </td>
+                            <td class="td_18">
+                                <p class="p_48">Recent profile of xxx%, PWI must be 90%</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_18">
+                                <p class="p_47">Message Alarm H1</p>
+                            </td>
+                            <td class="td_18">
+                                <p><span class="span_31">e</span><span class="span_31">TPU Communication Failure - wait 5 seconds and try again</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="height: 22pt;">
+                            <td class="td_18">
+                                <p class="p_47">Message Alarm H7</p>
+                            </td>
+                            <td class="td_18">
+                                <p class="p_49">Conveyor has stopped or encoder has been disconnected Virtual Profiling cannot be started.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 6: Profiling System Alarms</p>
+                    <h2 class="Heading2"><a name="System_message_alarms"></a>System Messages And Alarms</h2>
+                    <h3 class="Heading3"><a name="Message_high_PWI1"></a>Message, High PWI</h3>
+                    <table class="table_1">
+                        <col style="width: 181pt;" />
+                        <col style="width: 287pt;" />
+                        <tr>
+                            <td class="td_19">
+                                <p>If the verification profile PWI is &gt;= 100%, you will receive this message when starting the VP.</p>
+                                <p>If there was a problem with the most recent profile, it can be deleted and the system will try to use the next most recent profile as the baseline profile.&#160; Otherwise, you are advised to run another profile.&#160; </p>
+                            </td>
+                            <td class="td_19">
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A2.png" style="width: 245px;height: 100px;" class="img_2" />
+                                </p>
+                                <p class="p_70" style="text-align: center;">Message High PWI</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Alarm_message_H11"></a>Alarm Message H1</h3>
+                    <table class="table_1">
+                        <col style="width: 181pt;" />
+                        <col style="width: 287pt;" />
+                        <tr>
+                            <td class="td_19">
+                                <p>No communication.&#160; (After the software launched and did not have time for eTPU to communicate with computer.)&#160; This message will usually appear if the eTPU was connected after the software was launched.&#160; This is because a connection to the eTPU has not been established yet.&#160; Waiting 5 seconds allows a connection to the eTPU to be established.&#160; </p>
+                            </td>
+                            <td class="td_19">
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000139.png" style="width: 335px;height: 130px;" class="img_1" />
+                                </p>
+                                <p class="p_70">Alarm H1</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Alarm_H71"></a>Alarm H7</h3>
+                    <table class="table_1">
+                        <col style="width: 181pt;" />
+                        <col style="width: 287pt;" />
+                        <tr>
+                            <td class="td_19">
+                                <p>This alarm will appear when trying to start a Virtual Profile from the Profile Explorer.&#160; The oven conveyor must be running and set to the correct speed settings in order to start Virtual profiling.&#160; </p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_19">
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A4.png" style="width: 332px;height: 94px;" class="img_2" />
+                                </p>
+                                <p class="p_70" style="text-align: center;">Alarm H7</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Virtual_Profiling1"></a>Alarms And Messages For Virtual Profiling</h3>
+                    <p>The software incorporates the use of warning and alarm dialog screens to let you know if there is a problem and the cause for that problem.&#160; Below is a partial list of the warning and alarm dialog screens with explanations.&#160; These Alarms are active only when Virtual profiling is running.</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_2">
+                        <col style="width: 85pt;" />
+                        <col style="width: 293pt;" />
+                        <col style="width: 76pt;" />
+                        <tr style="height: 36pt;">
+                            <td class="td_20">
+                                <p class="p_73">Process Alarms</p>
+                            </td>
+                            <td class="td_21">
+                                <p class="p_73">Description</p>
+                            </td>
+                            <td class="td_21">
+                                <p class="p_73">Activates Alarm Relay</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm # 1</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">PWI=x% - Process is out of spec</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm # 5</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">No Barcode read for this board.&#160; –or–</p>
+                                <p class="p_52">No Barcode read for xxx boards.</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm # 5A</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Process Traceability barcode scan failed</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm # 5C</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Process Control barcode scan failed</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm # 8</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">The length of the current product does not match the length of the product during the baseline profile.</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm # 10</p>
+                            </td>
+                            <td class="td_23">
+                                <p><span class="span_27">This alarm only occurs when the </span><span class="span_27">automatic system </span><span class="span_27">software and the oven control software are communicating and indicates that the oven is not set to the baseline profile recipe.</span>
+                                </p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm # 11</p>
+                            </td>
+                            <td class="td_23">
+                                <p><span class="span_27">The </span><span class="span_27">automatic system </span><span class="span_27">speed sensor has detected that the conveyor speed has changed significantly since the baseline.</span>
+                                </p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm # 12</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Incorrect Process Control String (Barcode Option).</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">Yes</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 7: Virtual Profiling – Process Alarms</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_2">
+                        <col style="width: 85pt;" />
+                        <col style="width: 293pt;" />
+                        <col style="width: 76pt;" />
+                        <tr style="height: 36pt;">
+                            <td class="td_20">
+                                <p class="p_73">Hardware Alarms</p>
+                            </td>
+                            <td class="td_21">
+                                <p class="p_73">Description</p>
+                            </td>
+                            <td class="td_21">
+                                <p class="p_73">Activates Alarm Relay</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm H1</p>
+                            </td>
+                            <td class="td_23">
+                                <p><span class="span_27">e</span><span class="span_27">TPU Communication Failure (happened after Alarm H2)</span>
+                                </p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm H2</p>
+                            </td>
+                            <td class="td_23">
+                                <p><span class="span_27">e</span><span class="span_27">TPU Lost Communication with PC.</span>
+                                </p>
+                                <p><span class="span_27">Not</span><span class="span_27">e: This a</span><span class="span_27">larm condition can activate the </span><span class="span_27">alarm relay</span><span class="span_27"> that is controlled by </span><span class="span_27">e</span><span class="span_27">TPU</span><span class="span_27">.</span>
+                                </p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">Yes or No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Alarm H7</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Conveyor Stopped or Speed Encoder broken or not connected properly.</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">Yes</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 8: Virtual Profiling – Hardware Alarms</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <table align="center" class="table_2">
+                        <col style="width: 85pt;" />
+                        <col style="width: 293pt;" />
+                        <col style="width: 76pt;" />
+                        <tr style="height: 36pt;">
+                            <td class="td_24">
+                                <p class="p_73">Warnings</p>
+                            </td>
+                            <td class="td_25">
+                                <p class="p_73">Description</p>
+                            </td>
+                            <td class="td_25">
+                                <p class="p_73">Activates Alarm Relay</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Warning # 2</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">This process is likely to go out of spec soon.</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Warning # 3</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">The last profile was out of spec.</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_51">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_51">Warning # 4</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Oven temps have changed significantly since baseline.</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">No</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="Caption">Table 9: Virtual Profiling – Warnings</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Activate_Alarm_5a"></a>Activate Alarm #5a</h3>
+                    <p>The <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab gives the user the ability to choose to activate an alarm if a product barcode label is not read.</p>
+                    <p>&#160;</p>
+                    <table class="table_9">
+                        <col style="width: 167pt;" />
+                        <col style="width: 302pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">On the <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab, click the checkbox next to <span class="span_11">Traceability</span> to select it.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_16">&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013A.png" style="width: 400px;height: 209px;" />
+                                </p>
+                                <p class="p_16" style="text-align: center;">The <span class="span_11">Traceability (Entrance)</span> barcode function that activates Alarm #5A if a products barcode label is not read.</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Ensure that the radio button next to <span class="span_11">Traceability (Entrance)</span> is selected. </li>
+                                </ol>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013B.png" style="width: 403px;height: 199px;" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="3" class="">
+                                    <li class="">Click the green check button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000011.png" style="width: 37px;height: 20px;" /> to save the settings.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013C.png" style="width: 401px;height: 398px;" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="When_Alarm_5a_Occurs"></a>When Alarm #5a Occurs</h3>
+                    <p>When the Barcode Product Sensor (BPS) detects a product whose barcode label has not been read, or the BPS is tripped accidentally, the alarm #5A is activated and the process is stopped via the alarm relay.</p>
+                    <p>&#160;</p>
+                    <p>Alarm #5A displays four alarm buttons: </p>
+                    <ol start="1" class="">
+                        <li class="">Manual Entry Keyboard/Handheld Scanner</li>
+                        <li class="">Rescan using Fixed Mount Scanner</li>
+                        <li class="">Proceed without a Barcode</li>
+                        <li class="">Remove this board from Line.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Manual_Entry_Keyboard_Handheld_Scanner"></a>Manual Entry Keyboard/Handheld Scanner</h4>
+                    <p>Click this button when you want to enter the barcode again by using either the keyboard or a handheld scanner connected to a USB Port. </p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Manual Entry Keyboard/Handheld Scanner</span>&#160; <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013D.png" style="width: 86px;height: 40px;" /> button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_16">The software displays the Barcode input field and hides all other unselected buttons.</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013E.png" style="width: 317px;height: 203px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Type in the new barcode and press the <span class="span_11">Enter</span> key.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013F.png" style="width: 312px;height: 200px;" />
+                                </p>
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td_34">
+                                <p>The software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven. </p>
+                                <p>&#160;</p>
+                                <p>The barcode will be added to the board.</p>
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/z45.png" class="" style="width: 525px;height: 303px;" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Rescan_Using_Fixed_Mount_Scanner"></a>Rescan Using Fixed Mount Scanner</h4>
+                    <p>Click this button when you want to scan the barcode again by using the fixed mount Barcode scanner. </p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Rescan using Fixed Mount Scanner</span> <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000141.png" />&#160; button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">The software displays the Barcode input field and hides all other unselected buttons.</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013E.png" style="width: 300px;height: 193px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Scan the barcode with the fixed mounted Barcode scanner.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000142.png" style="width: 305px;height: 196px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Once the barcode is scanned, the software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven. </p>
+                    <p>&#160;</p>
+                    <p>This barcode will be added to the board if the software also is using the Traceability barcode option. </p>
+                    <p class="p_19">&#160;</p>
+                    <p class="p_19" style="text-align: center;">
+                        <img src="Resources/Images/z46.png" class="" style="width: 432px;height: 251px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Process_without_a_Barcode"></a>Process without a Barcode</h4>
+                    <p>Click this button when you want to process the board without any barcode. </p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Proceed without a Barcode</span> <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000144.png" style="width: 82px;height: 39px;" /> button.</li>
+                                </ol>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">The software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven without a barcode.</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013E.png" style="width: 296px;height: 190px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td_34">
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/z47.png" class="" style="width: 407px;height: 241px;" />
+                                </p>
+                                <p class="p_19">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h4 class="Heading4"><a name="Remove_this_board_from_Line"></a>Remove this board from Line</h4>
+                    <p>The software will display an alarm message “P<span class="span_12">lease remove this board from the line now &amp; click on the “OK” button</span>.”</p>
+                    <p>&#160;</p>
+                    <table class="table_9">
+                        <col style="width: 167pt;" />
+                        <col style="width: 302pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Remove this board from Line</span> <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000146.png" style="width: 78px;height: 37px;" /> button.</li>
+                                </ol>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">&#160;</p>
+                            </td>
+                            <td rowspan="2" class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013E.png" style="width: 321px;height: 206px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Remove the board from the link conveyor.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="3" class="">
+                                    <li class="">Click the green OK check button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000011.png" style="width: 40px;height: 21px;" />.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_16">The software clears the alarm message and deactivates the Alarm relay to get ready for the next board.</p>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">If user clicks the “Cancel” button, the software returns to alarm #5A.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000147.png" style="width: 327px;height: 210px;" />
+                                </p>
+                                <p class="p_19">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Activate_Alarm_5c"></a>Activate Alarm #5c</h3>
+                    <p>The <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab gives the user the ability to choose to activate an alarm if a product barcode label is not read.</p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_41">
+                                <ol start="1" class="">
+                                    <li class="">On the <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab, click the checkbox next to <span class="span_11">Process Control</span> to select it.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_16">&#160;</p>
+                            </td>
+                            <td rowspan="2" class="td_41">
+                                <p>&#160;</p>
+                                <p class="p_74" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000148.png" style="width: 459px;height: 381px;" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 229pt;">
+                            <td class="td_41">
+                                <ol start="2" class="">
+                                    <li class="">Click the green check button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000011.png" style="width: 47px;height: 25px;" /> to save the settings.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="When_Alarm_5c_Occurs_2"></a>When Alarm #5c Occurs</h3>
+                    <p>When the Barcode Product Sensor (BPS) detects a product whose barcode label has not been read, or the BPS is tripped accidentally, the alarm #5C is activated and the process is stopped via the optional alarm relay.</p>
+                    <p>&#160;</p>
+                    <p>Alarm #5C displays four alarm buttons:</p>
+                    <ol start="1" class="">
+                        <li class="">Manual Entry Keyboard/Handheld Scanner</li>
+                    </ol>
+                    <ol start="2" class="">
+                        <li class="">Rescan using Fixed Mount Scanner</li>
+                    </ol>
+                    <ol start="3" class="">
+                        <li class="">Proceed without a Barcode</li>
+                    </ol>
+                    <ol start="4" class="">
+                        <li class="">Remove this board from Line</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Manual_Entry_Keyboard_Handheld_Scanner2"></a>Manual Entry Keyboard/Handheld Scanner</h4>
+                    <p>Click this button when you want to enter the barcode again by using either the keyboard or a handheld scanner connected to a USB Port. </p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_41">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Manual Entry Keyboard/Handheld Scanner</span>&#160; <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013D.png" style="width: 72px;height: 33px;" /> button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_16">The software displays the Barcode input field and hides all other unselected buttons.</p>
+                            </td>
+                            <td class="td_41">
+                                <p class="p_19">&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000149.png" style="width: 319px;height: 204px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 228pt;">
+                            <td class="td_41">
+                                <ol start="2" class="">
+                                    <li class="">Type in the new barcode and press the <span class="span_11">Enter</span> key.</li>
+                                </ol>
+                            </td>
+                            <td class="td_41">
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300014A.png" style="width: 314px;height: 201px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td_41">
+                                <p>The software will clear the alarm message and deactivate the optional Alarm relay to allow the board into the oven. </p>
+                                <p>&#160;</p>
+                                <p>This barcode will be added to the board if the software also is using the Traceability barcode option. </p>
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/z48.png" class="" style="width: 488px;height: 284px;" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Rescan_Using_Fixed_Mount_Scanner2"></a>Rescan Using Fixed Mount Scanner</h4>
+                    <p>Click this button when you want to scan the barcode again by using the fixed mounted Barcode scanner. </p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Rescan using Fixed Mount Scanner</span> <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000141.png" style="width: 87px;height: 41px;" />&#160; button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">The software displays the Barcode input field and hides all other unselected buttons.</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000149.png" style="width: 308px;height: 198px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Scan the barcode with the fixed mounted Barcode scanner.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300014C.png" style="width: 309px;height: 197px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="">
+                        <col />
+                        <tr>
+                            <td class="td_34">
+                                <p>Once the barcode is scanned, the software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven. </p>
+                                <p>&#160;</p>
+                                <p>This barcode will be added to the board if the software also is using the Traceability barcode option. </p>
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/z49.png" class="" style="width: 483px;height: 285px;" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Process_without_a_Barcode2"></a>Process without a Barcode</h4>
+                    <p>Click this button when you want to process the board without any barcode. </p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Proceed without a Barcode</span> <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000144.png" style="width: 79px;height: 38px;" /> button.</li>
+                                </ol>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">The software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven without a barcode.</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000149.png" style="width: 306px;height: 196px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/z50.png" class="" style="width: 407px;height: 235px;" />
+                                </p>
+                                <p class="p_19">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Remove_this_board_from_Line"></a>Remove this board from Line.</h4>
+                    <p>The software will display an alarm message “<span class="span_12">Please remove this board from the line now &amp; click on the “OK” button</span>.”</p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr style="height: 81pt;">
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Remove this board from Line</span> <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000146.png" style="width: 81px;height: 39px;" /> button.</li>
+                                </ol>
+                            </td>
+                            <td rowspan="2" class="td_34">
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000149.png" style="width: 328px;height: 211px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Remove the board from the link conveyor.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="3" class="">
+                                    <li class="">Click the green OK check button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000011.png" style="width: 39px;height: 21px;" />.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_16">The software clears the alarm message and deactivates the Alarm relay to get ready for the next board.</p>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">If user clicks the “Cancel” button, the software returns to alarm #5C.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000147.png" style="width: 339px;height: 218px;" />
+                                </p>
+                                <p class="p_19">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Activate_Alarm_12"></a>Activate Alarm #12</h3>
+                    <p>The <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab gives the user the ability to activate an alarm if a product barcode label is in the wrong format, Alarm #12 Incorrect Process Control String.</p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">On the <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab, click the checkbox next to <span class="span_11">Process Control</span> to select it.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300014E.png" style="width: 454px;height: 105px;" />
+                                </p>
+                                <p style="text-align: center;">The <span class="span_11">Process Control</span> feature allows control of the process by comparing the barcode string of a product to the corresponding process currently running.&#160; It ensures that the product matches the process.</p>
+                                <p style="text-align: center;">&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Select one of the two radio buttons for <span class="span_11">Process Control</span>.</li>
+                                </ol>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">These radio buttons let you specify using one or two scanners, together with fields for entering identifying prefixes for the scanners.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300014F.png" style="width: 233px;height: 75px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p style="text-align: center;">This feature enables the choice of applying traceability at the oven entrance or exit.</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="3" class="">
+                                    <li class="">Click the checkbox next to <span class="span_11">Traceability</span> to select it. </li>
+                                </ol>
+                                <p class="p_16">&#160;</p>
+                                <p class="p_16">The Process Traceability feature links each product’s profile data with its barcode.&#160; </p>
+                            </td>
+                            <td class="td_34">
+                                <p>&#160;</p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300013B.png" style="width: 339px;height: 168px;" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="4" class="">
+                                    <li class="">Click the green check button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000011.png" style="width: 41px;height: 22px;" /> to save the settings.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000148.png" style="width: 329px;height: 272px;" />
+                                </p>
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h4 class="Heading4"><a name="Barcode_Process_Control_Dialog_Box"></a>Barcode Process Control Dialog Box</h4>
+                    <p>When Virtual Profiling is started, the system produces the Barcode Process Control dialog box. As long as the Process Control function is enabled (Global Preferences), this dialog box will appear every time Virtual Profiling is enabled.&#160; </p>
+                    <p>&#160;</p>
+                    <table class="table_9">
+                        <col style="width: 167pt;" />
+                        <col style="width: 302pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Enter the barcode string that is specific to the product that is running. </li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p class="p_29">The software reads the incoming String and compares the barcode string to that of the Process Control String, for every product. </p>
+                                <p class="p_29">&#160;</p>
+                                <p class="p_29">If the string values differ, A<span class="span_11">larm #12</span> is activated, and the process is stopped via the alarm relay device.</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td rowspan="2" class="td_34">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000150.png" style="width: 299px;height: 152px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 36pt;">
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Click <span class="span_11">OK</span>.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="When_Alarm12_Occurs"></a>When Alarm#12 Occurs</h3>
+                    <p>When a barcode string is received that differs in format from the current product, the software will display a red alarm message - Alarm#12 – with three buttons: </p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_3">
+                        <li class="ListBullet2">Stop Virtual Profiling</li>
+                        <li class="ListBullet2">Process with current Barcode</li>
+                        <li class="ListBullet2">Remove the board from Line. </li>
+                    </ol>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Stop_Virtual_Profiling"></a>Stop Virtual Profiling</h4>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="ol_3">
+                                    <li class="ListParagraph">Click the <span class="span_11">Stop Virtual Profiling</span> <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000151.png" style="width: 78px;height: 36px;" /> button.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_75" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000152.png" style="width: 270px;height: 174px;" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Click the green check button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000011.png" style="width: 34px;height: 18px;" /> to stop virtual profiling. </li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p>&#160;</p>
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000153.png" style="width: 264px;height: 160px;" class="img_1" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <p>Note: Users must wait for all boards to be removed from the oven.</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000154.png" style="width: 271px;height: 162px;" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h4 class="Heading4"><a name="Process_with_current_Barcode"></a>Process with current Barcode</h4>
+                    <p>Users may deactivate the alarm relay to allow a board into the oven even if the barcode is in incorrect. Use this button to stop the alarm when you want to use the barcode that is on the label.</p>
+                    <p>&#160;</p>
+                    <table class="">
+                        <col style="width: 350px;" />
+                        <col style="width: 250px;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the <span class="span_11">Process with Current Barcode</span> button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000155.png" style="width: 58px;height: 28px;" />.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_75" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000152.png" style="width: 276px;height: 178px;" />
+                                </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <p>This barcode will be added to the board if the option for <span class="span_11">Traceability</span> was selected on the <span class="span_11">Barcode Option</span> tab.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_34">
+                                <p>&#160;</p>
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000156.png" style="width: 328px;height: 241px;" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4"><a name="Remove_this_board_from_Line"></a>Remove this board from Line</h4>
+                    <p>You use this feature when you want to remove a PCB out of Line before it is passed into the oven, but are going to keep the current Virtual Profile running. </p>
+                    <p>&#160;</p>
+                    <table class="table_9">
+                        <col style="width: 167pt;" />
+                        <col style="width: 302pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="">
+                                    <li class="">Click the Remove this board from Line button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000157.png" style="width: 65px;height: 31px;" />.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_21">&#160;</p>
+                                <p class="p_76" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000152.png" style="width: 308px;height: 198px;" />
+                                </p>
+                                <p class="p_15">&#160;</p>
+                                <p class="p_15">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="">
+                                    <li class="">Remove the board from the line and then click the green check button <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000011.png" style="width: 43px;height: 23px;" />.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_19">&#160;</p>
+                                <p class="p_19" style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000158.png" style="width: 300px;height: 190px;" />
+                                </p>
+                                <p class="p_19">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h1 class="Heading1"><a name="Alarm_Relay"></a>Alarm Relay</h1>
+                    <p>The Alarm Relay connects to the Alarm/Barcode port of the eTPU, and provides an external notification to the user when an alarm condition occurs. It allows for an optional audible light tower to be powered and triggered; can include SMEMA interface connections; and it allows a user to hardwire in an external device of their choosing. The Alarm Relay is required to have an external AC power source. </p>
+                    <p><span class="span_11">Note</span>: For more information about the hardware components of the system, see the <span class="span_12">Automatic System Hardware Installation Manual</span> (TFS-330210-000).</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h1 class="Heading1"><a name="Light_Tower"></a>Light Tower </h1>
+                    <p>There are two available light towers – one is connected directly to the optional Alarm Relay and uses a single Red light; the other connects to the USB port of the PC, and uses 3 colored lights – Red, Yellow, and Green.</p>
+                    <p>Both lights are a means of providing an audio or visual cue when the automatic system software has determined that the oven process has reached an out-of-control condition. </p>
+                    <h2 class="Heading2"><a name="Standard_Light_Tower"></a>Standard Light Tower</h2>
+                    <p>This light tower can only be used with the <span class="span_12">optional Alarm </span><span class="span_12">Relay</span>, as it plugs directly into the <span class="span_12">Alarm Relay</span> box. It uses a single Red light with an audible buzzer, which are both activated anytime an alarm condition occurs. Because it is controlled directly by the <span class="span_12">Alarm Relay</span>, the light and audible buzzer will stay on for as long as the <span class="span_12">Alarm Relay</span> is energized. </p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Color_USB_Light_Tower"></a>3 Color USB Light Tower</h2>
+                    <p>As this light tower connects to a USB port on the PC running the automatic system, it can be used with or without the <span class="span_12">optional</span> <span class="span_12">Alarm Relay.</span> With the use of the USB Light Tower, you get additional visual information on the state of your process through a variety of LED indicators – Red, Yellow, and Green. You also have the ability to mute the audible buzzer when an alarm condition occurs. When an alarm occurs, a small button will appear in the upper left corner of the Crystal Ball. Clicking on this button will mute the audible buzzer. Clicking the button a second time will un-mute the buzzer. If left muted, and the process returns to an in-spec condition, the buzzer will be automatically be active again when the next alarm occurs.</p>
+                    <p>&#160;</p>
+                    <p class="p_19" style="text-align: center;">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000159.png" style="width: 226px;height: 143px;" />
+                    </p>
+                    <h3 class="Heading3"><a name="LED_Light_Status"></a>LED Light Status</h3>
+                    <p>&#160;</p>
+                    <p>When VP is not running – All LEDs and buzzer are turned off</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in-spec but the oven is empty – GREEN LED flashing</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in-spec with product in the oven – GREEN LED on solid</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in a Warning condition – YELLOW LED on solid</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in an Alarm condition – RED LED on solid</p>
+                    <p>&#160;</p>
+                    <p>When VP is running and the process is in an Alarm condition w/Buzzer muted – RED LED flashing</p>
+                    <p>&#160;</p>
+                    <p>To customize the operation of either the USB Light Tower or the Alarm Relay, see the <a href="Appendix_C.htm#AR_Matrix_Settings_Tab">Alarm Tab</a> section.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: For more information about the Light Tower and Alarm Relay, see the <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters=""><span class="span_12">Automatic System Hardware Installation Manual</span></MadCap:shortcut> (TFS-330210-000). </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

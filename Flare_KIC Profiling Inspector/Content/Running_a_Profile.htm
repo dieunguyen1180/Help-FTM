@@ -1,0 +1,1002 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="15694.33" MadCap:lastWidth="1229">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 505px">
+            <tr>
+                <td with="width: 505px">
+                    <h1 class="Heading1"><a name="_Toc332273983"></a><a name="_Toc390353440"></a>Run a Profile</h1>
+                    <p class="Figure">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000007.png" style="height: 48px;width: 88px;" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>The <i>Run a Profile</i> button will guide you through a series of screens. Use the <b>Back</b> and <b>Next</b> arrow buttons at the bottom  to move through the screens in the process, which will end with a completed and graphed profile.  The <b>Cancel</b> button returns you to the main menu.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> If you have already profiled your product using the software, you can save time and go directly to the Profile Explorer, start a Virtual Profile, or load the most recent profile for your product, then use the prediction capabilities to improve the profile PWI and generate new oven settings.</p>
+                    <h2 class="Heading2"><a name="Name_Product"></a>
+                    </h2>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0200001B.jpg" />
+                    </p>
+                    <p class="Caption">Figure 21: Run a Profile Screen #1</p>
+                    <p>&#160;</p>
+                    <p class="BodyTextIndent"><span class="span_9">Product </span><span class="span_9">n</span><span class="span_9">ame</span> –Enter in a unique product name (long file names are acceptable) or choose an existing product name from the drop down list.</p>
+                    <p class="ListBullet2_2_2"><span class="span_9">Process </span><span class="span_9">w</span><span class="span_9">indow</span> – Choose a <i>Process Window</i> from the drop down list.  These Process Windows are created in the Define/Edit Process Window screen that is accessed from the main screen.</p>
+                    <p class="ListBullet2_2_2"><span class="span_9">Application </span>– Select your Application type from the list.  The software will function depending on the selected Application type.  Some variables that might change depending on the selected Application type are: <i>data-sample rate, profile temperature trigger values, and specific artwork</i>.</p>
+                    <p class="ListBullet2_2_3"><span class="span_9">Oven </span><span class="span_9">n</span><span class="span_9">ame:</span>
+                    </p>
+                    <ul>
+                        <li class="ListBullet2_1">The oven will have information about the number of zones saved with it as well as other zone information.&#160; </li>
+                    </ul>
+                    <ul>
+                        <li class="ListBullet2_1">If you are running the software on an oven controller computer that is communicating with the automatic system software, the Entering Oven Recipe screen shown on the next few pages is skipped because the software already has the recipe information from the oven controller.</li>
+                    </ul>
+                    <p class="ListBullet2_4"><span class="span_9">Profile </span><span class="span_9">d</span><span class="span_9">escription</span> – Allows for freehand typing of any notes you may want to include with this profile.  These notes can be changed later from the Profile Explorer.</p>
+                    <h2 class="Heading2"><a name="Specifying_oven"></a>Specify Oven Characteristics</h2>
+                    <p>To ensure accurate profile data, you may need to enter specific information into the software about the oven(s) you intend to use--information that changes the default values used by the software’s predictive algorithms.&#160; These default values are stored in an oven <span class="span_8">initialization</span> file that the software creates when you first enter the name of a new oven.&#160; The software adds the extension <span class="PlainTextChar_1">.kiccfg</span> to the name you entered and stores the file in this location:</p>
+                    <p><span class="PlainTextChar_1">C:\</span><span class="PlainTextChar_1">Software Root Directory</span><span class="PlainTextChar_1">\Ovens</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p class="p_7">Unless you specify otherwise, the software works with the following initialization file default assumptions:</p>
+                    <ul>
+                        <li class="ListBullet2_3">The zones are uniform and consecutive with no large gaps between them.</li>
+                    </ul>
+                    <ul>
+                        <li class="ListBullet2_3">The minimum temperature for all zones is 70° C.</li>
+                    </ul>
+                    <ul>
+                        <li class="ListBullet2_3">The maximum temperature for all zones is 350° C</li>
+                    </ul>
+                    <ul>
+                        <li class="ListBullet2_3">Default setpoint values start at 100° C and increases at 5° intervals at each zone.</li>
+                    </ul>
+                    <p class="ListBullet2_3">In the Global Preferences screen, the software lets you change the default values of a configuration file to accurately reflect your equipment. You will likely need to set some values, such as the length of oven heating zones, and min/max temperature limits only once -when you first set up the oven. Others, such as temperature setpoints and conveyor speed values that make up an oven recipe, you may change frequently to match to new products </p>
+                    <p class="Proctitle"><a name="To_specify_an_oven_recipe"></a><span style="text-decoration: none;">Specify An Oven Recipe</span>
+                    </p>
+                    <table style="width: 70%;">
+                        <col />
+                        <col style="width: 319px;" />
+                        <tr>
+                            <td>
+                                <p class="p_9">&#160;</p>
+                                <ol start="1">
+                                    <li class="ListParagraph_1"><a name="Entering_Oven_Recipe"></a>In the <i>Enter Oven Setpoints and Conveyor Speed</i> screen (Figure 22), type in the current temperature values for the each of the oven zones.<br /><br /><b>Note:</b> This screen does not appear when the software is communicating with an oven controller.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                            <td>
+                                <p>&#160;&#160; </p>
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/image107.png" />
+                                    <br />Figure 22: Run a Profile screen #2</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol start="2">
+                                    <li class="ListParagraph_2">If the bottom of the zones are to have different setpoint values than the top, deselect the <b>Top and Bottom Setpoint are the same</b> checkbox.<br /><br />The bottom row of fields becomes editable (white).</li>
+                                </ol>
+                            </td>
+                            <td>
+                                <p class="Caption">
+                                    <img src="Resources/Images/image108.png" />
+                                </p>
+                                <p class="Caption">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol start="3">
+                                    <li class="ListParagraph">Enter new temperature values in the bottom row fields. </li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol start="4">
+                                    <li class="ListParagraph_2">Type in a value in the <span class="span_9">Conveyor Speed</span> field.</li>
+                                </ol>
+                                <p class="ListParagraph_1">&#160;</p>
+                                <p class="ListParagraph_2">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000020.png" style="height: 39px;width: 296px;" class="img_3" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ol start="5">
+                                    <li class="ListParagraph">Click the next button to advance to the thermocouple attachment phase of running a profile.</li>
+                                </ol>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><b>Note:</b> If you want to check the current settings, use the <b>Zone Length</b> button to display the <i>Verify the Length of Each Zone</i> and the Minimum and Maximum Setpoint Temperatures screen.&#160; </p>
+                            </td>
+                            <td>
+                                <p class="p_13">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000021.png" style="height: 49px;width: 135px;" class="img_3" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="Proctitle"><a name="To_identify_a_new_oven"></a><a name="Verifying_the_Zone"></a>
+                    </p>
+                    <h2 class="Heading2"><a name="Attaching_thermocouples"></a>Attach Thermocouples</h2>
+                    <p>Thermocouples (TCs), attached to solder joints or other important sites on the board, directly measure the temperature at the point that the TC bead is in contact with the PCB. The TC measurements are collected by the profiler and the software to create thermal profiles.</p>
+                    <p>&#160;</p>
+                    <p>Two methods are typically used to attach TCs—<span class="span_8">aluminum tape</span> and <span class="span_8">high temperature solder</span>.&#160; Both methods are discussed below.</p>
+                    <p>&#160;</p>
+                    <p>The system works with two kinds of TCs—<span class="span_8">standard</span> TCs and the <span class="span_8">A</span><span class="span_8">ir TC</span>.&#160; Standard TCs record the temperature data for various sites on the board.&#160; The air TC gets specific positioning because its temperature <span class="span_8">triggers the start</span><span class="span_8"> of the profile</span> data processing, aids with TC shifting, and improves the prediction capabilities of the software.</p>
+                    <h3 class="Heading3"><a name="Instructions_for"></a>Attach the Air TC</h3>
+                    <p class="p_4"><span class="span_23">There are </span><span class="span_24">two</span><span class="span_23"> important considerations regarding the Air TC:</span>
+                    </p>
+                    <table class="table_2">
+                        <col style="width: 203pt;" />
+                        <col style="width: 275pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li>It must be attached at the leading edge of the board, extending one inch (25<span class="span_8">&#160;</span> mm) in front of the leading edge of the board.&#160;&#160; </li>
+                                </ul>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <ul style="list-style-type: square;">
+                                    <li>It <span class="span_17">MUST</span> be plugged into <span class="span_9">channel 1</span> on the profiler.<br /><br /><b>1.	Click the Next button.</b></li>
+                                </ul>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000029.png" style="height: 251px;width: 334px;" class="img_3" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3 class="Heading3"><a name="Instructions_for1"></a>Attach Standard TCs</h3>
+                    <table class="table_2">
+                        <col style="width: 203pt;" />
+                        <col style="width: 275pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>Attach the standard TCs at selected sites on the board, and plug them into the remaining connectors on the profiler.  Order is not important, unless you plan on labeling where each TC is attached.&#160; </p>
+                                <p>&#160;</p>
+                                <p>When selecting a position for the standard TCs, you want to measure points on the product that represent the mass-range of the product.  Select at least one position that is a high mass (large component) area of the board and at least one position that is a low mass (small component) area of the board.  If you can develop an acceptable profile for the low and high mass areas of the board, you can process the other areas of the board within the same parameters.</p>
+                                <p>&#160;</p>
+                                <p><b>1.	Click the Next button.</b>
+                                </p>
+                            </td>
+                            <td class="td_1">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300002A.png" style="height: 251px;width: 334px;" class="img_3" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h2 class="Heading2"><a name="Attaching_thermocouples1"></a>Attach Thermocouples To Semiconductor Wafers</h2>
+                    <table class="table_2">
+                        <col style="width: 239pt;" />
+                        <col style="width: 239pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <h3 class="Heading3"><a name="Attaching_the_Air_TC"></a>Attach the Air TC:</h3>
+                                <p>&#160;</p>
+                                <ol start="1">
+                                    <li>It must be attached at the leading edge of the wafer, extending one inch (25<span class="span_8">&#160;</span> mm) in front of the leading edge of the wafer.&#160;&#160; </li>
+                                </ol>
+                                <p>&#160;</p>
+                                <ol start="2">
+                                    <li>It <span class="span_17">MUST</span> be plugged into <span class="span_9">channel 1</span> on the profiler.</li>
+                                </ol>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300002B.png" style="height: 185px;width: 257px;" class="img_3" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">
+                                <h3 class="Heading3"><a name="Attaching_standard_TCs1"></a>Attach Standard TCs:</h3>
+                                <p>&#160;</p>
+                                <p>Attach the standard TCs at selected sites on the wafer, and plug them into the remaining connectors on the profiler.&#160; Order is not important, unless you plan on labeling where each TC is attached.&#160; </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300002C.png" style="height: 196px;width: 260px;" class="img_3" />
+                                </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Select_Thermocouples_and"></a>Select Thermocouples to Start a Profile</h2>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image110.png" />
+                    </p>
+                    <p style="text-align: center;">Figure 23: Run a Profile Screen – Select TCs</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Include thermocouple (TC) labels (20 char. m</span><span class="span_9">ax)</span> – Checking this will display a field below each TC that is selected.&#160; Up to 20 characters can be used to describe the placement or description of the TC.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">TC number check box</span> – Place a check next to each TC channel that is going to be used for this profile.  TC number 1 is always used for the AIR TC.  You must use at least one other TC as well.</p>
+                    <ul style="list-style-type: square;">
+                        <li>Turn on the profiler<span class="span_8">.&#160; </span></li>
+                        <li>Click on the green traffic light button to start the profile</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Live r</span><span class="span_9">eading</span><span class="span_9">s</span> – When the profiler is on and plugged directly to either the download cable for datalogging or the receiver/Base Station, you will see live temperature updates for the TCs plugged into the profiler.&#160; The TC checkbox must be selected for each TC you are using in order to view the temperature readings.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Battery</span><span class="span_9"> v</span><span class="span_9">oltage</span> –Displays the live readings of the profiler battery voltage.&#160; The software will recognize if your battery voltage is too low and will not allow you to start a profile until you have batteries with enough voltage to complete the profile.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Internal t</span><span class="span_9">emperature</span> – Displays the internal temperature of the profiler.&#160; If the temperature is too high to complete the profile and stay under the maximum rating for the unit, it will not allow you to start the profile.&#160; You must wait until the profiler is cool enough.&#160; The software will let you know what temperature you will have to cool below.</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p><b>Board Length –</b> Enter the length of the board to be profiled. When using the Auto-Focus option, this value will automatically be filled in based on previous Board Length entry.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>
+                        <h2 class="Heading2"><a name="Starting_the_profile"></a>Start The Profile</h2>
+                    </p>
+                    <p><b>Note:</b> Make sure your profiler is powered on and ready to operate</p>
+                    <p>&#160;</p>
+                    <p>Depending on the settings in the profiler and in the software, you may have to initialize the profiler.  (The software lets you know when this is necessary.)  To initialize your profiler, attach the cable from the receiver to the back of the SlimKIC 2000 or connect the communication cable directly to the X5, K2, or KIC Explorer.  Click OK when the software displays the message that the initialization was successful.</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300002Ea.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>Once the oven has stabilized and you are ready to load the profiler and profile board into the oven select the green traffic light button.</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 229pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>The software will ask if all the oven control thermocouples are within 2 degrees of the setpoint temperature values.  See Figure 24.</p>
+                                <p>&#160;</p>
+                                <p><b>Note:</b> This dialog box will not appear if the software is communicating with the oven controller. The oven controller will send the zone temperature data directly to the automatic software.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300002E.png" style="height: 85px;width: 317px;" class="img_4" />
+                                </p>
+                                <p class="Caption"><a name="_Ref185828591"></a>Figure 24</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td_1">
+                                <p>If your oven is capable of communicating with the software, the oven controller will send the oven control thermocouple data directly to the software.</p>
+                                <p>&#160;</p>
+                                <p>If the control thermocouples are NOT within 2 degrees of the setpoints, click No, then reference Appendix B.</p>
+                                <p class="Caption">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 207pt;" />
+                        <col style="width: 253pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <p><b>If you answer yes</b>, the software will display a prompt telling you that the next board to pass under the board sensor must be the board being profiled.  If no board sensor is used, this screen is skipped.  You acknowledge the prompt, by selecting <b>OK</b>.  See Figure 25.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p class="p_1">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300002F.png" style="height: 139px;width: 254px;" class="img_5" />
+                                </p>
+                                <p class="Caption"><a name="_Ref185830029"></a>Figure 25</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <p><a name="Profile_Board_Into"></a>Next, the software will prompt you to put the profiler and profile board into the oven.  Then choose the forward button.  See Figure 26.</p>
+                                <p>&#160;</p>
+                                <p>In order for the board sensor to properly calculate the length of the profile board, make sure the profiler is at least 8” behind the profile board.&#160; For profiling and Virtual Profile Verification profiling, the software will ignore any boards including the profiler that fall within 24” of the trailing edge of the profile board.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p class="p_1">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000030.png" style="height: 227px;width: 299px;" class="img_3" />
+                                </p>
+                                <p class="Caption"><a name="_Ref185830062"></a>Figure 26: Run a Profile screen #7 – Insert Profiler/Product</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p class="p_4"><span class="span_16">IMPORTANT NOTE</span>: All profilers have a maximum operating temperature that, to avoid damage, <span class="span_17">should never</span><span class="span_17"> be exceeded</span>.&#160; See the product datasheet for temperature tolerance information: </p>
+                    <table class="table_3">
+                        <col style="width: 86pt;" />
+                        <col style="width: 158pt;" />
+                        <tr>
+                            <td class="td_2">
+                                <p class="p_15">Profiler model</p>
+                            </td>
+                            <td class="td_3">
+                                <p class="p_15">Maximum operating temperature</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_4">
+                                <p class="p_16">SlimKIC&#160;2000</p>
+                            </td>
+                            <td class="td_5">
+                                <p class="p_16">105<span class="span_15">°</span>C/220<span class="span_15">°</span>F</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_4">
+                                <p class="p_17">KIC Explorer</p>
+                            </td>
+                            <td class="td_5">
+                                <p class="p_17">85<span class="span_15">°</span>C/185<span class="span_15">°</span>F</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_4">
+                                <p class="p_17">X5</p>
+                            </td>
+                            <td class="td_5">
+                                <p class="p_17">85<span class="span_15">°</span>C/185<span class="span_15">°</span>F</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_4">
+                                <p class="p_17">K2</p>
+                            </td>
+                            <td class="td_5">
+                                <p class="p_17">85<span class="span_15">°</span>C/185<span class="span_15">°</span>F</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_4">
+                                <p style="text-align: center;">SPS Smart Profiler</p>
+                            </td>
+                            <td class="td_5">
+                                <p class="p_17">85<span class="span_15">°</span>C/185<span class="span_15">°</span>F</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3 class="Heading3"><a name="Trailing_wire_profiling"></a>Trailing Wire Profiling</h3>
+                    <p>You can also use the SPS, X5, K2, KIC Explorer, or SlimKIC 2000 profiler with elongated thermocouples or a thermocouple extension long enough to pass through the process.  This is especially useful for low clearance processes or higher temperature processes that would normally cause the profiler to overheat during use.</p>
+                    <p>&#160;</p>
+                    <p>If you have a datalogger model and plan to keep the profiler connected during the profile, ignore the message to unplug the download cable from the profiler.&#160; At the end of the profile, be sure and leave the product TCs connected long enough to achieve the profile-stop trigger value, 110<span class="span_15">°</span>C, otherwise the profile will not complete.&#160; Leave the product TCs connected until the download has completed and the software asks you to turn off the profiler.</p>
+                    <p>&#160;</p>
+                    <p>Using long thermocouples or thermocouple extensions will have an effect on the profiler temperature accuracy.&#160; In order to compensate for the length of thermocouple or thermocouple extension wire, recalibrate the profiler using the same length and gauge TC wires that are to be trailed through the oven or process.&#160; </p>
+                    <p>&#160;</p>
+                    <p>If the profiler remains connected to the communication cable while profiling, the live profile will be plotted on the graph.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>
+                        <h2 class="Heading2"><a name="Understanding_the_live"></a><a name="Live_Profile_Graph"></a>Live Profile Graph</h2>
+                    </p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000031a.png" />
+                    </p>
+                    <p class="Caption"><a name="_Ref185830241"></a>Figure 27: Live Profile Graph Display</p>
+                    <p>&#160;</p>
+                    <p>The Live graph screen shows the real-time plot of the product as it travels through the oven.  See Figure 27.  This will only appear for the wireless models.  During the live profile, all of the tabs on the screen are deactivated and are inaccessible to you.  The only action that you can take at this point (besides waiting for the profile to complete) is to cancel the profile by clicking on the red X button.  This will bring you back to the main menu.</p>
+                    <p>&#160;</p>
+                    <p>The bottom left area of the screen will show you the status of the profile.</p>
+                    <p>&#160;</p>
+                    <ol start="1">
+                        <li class="ListNumber2_1">Waiting for the Air TC to exceed the start trigger temperature</li>
+                    </ol>
+                    <ol start="2">
+                        <li class="ListNumber2_1">Profile started- Waiting for the Air TC to exceed the midpoint trigger temperature</li>
+                    </ol>
+                    <ol start="3">
+                        <li class="ListNumber2_1">Profile will stop when all thermocouples drop below 110 Celsius</li>
+                    </ol>
+                    <ol start="4">
+                        <li class="ListNumber2_1">Profiler currently retransmitting.&#160; </li>
+                    </ol>
+                    <ol start="5">
+                        <li class="ListNumber2_1">Profiler retransmission successful.&#160; </li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p><span class="span_9">During the live profile</span> (Wireless models only)<span class="span_9">:</span></p>
+                    <ul style="list-style-type: square;">
+                        <li>The live profile is plotted on the graph.</li>
+                        <li>The current temperatures for each thermocouple and the Delta between them are displayed in a small window in the upper-left hand corner of the profile graph.  The elapsed time is also displayed.</li>
+                        <li>The current oven temperature setpoints and conveyor speed for this profile appear beneath the Statistics table.</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="Profiler_temperature"></a>Profiler Temperature Triggers</h3>
+                    <p>The software uses temperature triggers for the profilers to determine when the profile is started, and when it ends.&#160; The use of temperature triggers makes it so that you do not have to worry about starting the profile at a specific point or time.&#160; Instead, the profile is started at the same temperature and ends at the same point each time you profile, making the profile data collection process consistent.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000032z.png" />
+                        <br />Table 1: Default temperature trigger values for various Application types</p>
+                    <p>&#160;</p>
+                    <p>The default trigger values should be fine for most processes.&#160; The Profile start-trigger is determined by the Maximum Product Temperature at Start of Profile setting in the Global Preferences screen.&#160; The start trigger value is always 2ºC above this setting.</p>
+                    <h3 class="Heading3"><a name="Changing_the_profiler"></a>Change the Profiler Temperature Trigger Settings</h3>
+                    <p>To change the profiler temperature trigger settings close the software and then launch the configuration software tool. </p>
+                    <p>&#160;</p>
+                    <p><span class="span_9">Configuration software tool location:</span>
+                    </p>
+                    <p><span class="span_25">C:\SoftwareRootDirectory\ConfigurationProgram.exe</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>In the User Settings tab enter the new temperature trigger settings for each application type; Reflow, Cure, Semiconductor then select the <span class="span_8">Apply</span>, or <span class="span_8">OK</span> button to implement the changes.&#160; </p>
+                    <p>&#160;</p>
+                    <p class="p_1">
+                        <img src="Resources/Images/image234.png" />
+                    </p>
+                    <p style="text-align: center;">Figure 28: Configuration software tool, changing temperature triggers</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>
+                        <h2 class="Heading2"><a name="Profile_retransmission"></a>Profile Retransmission</h2>
+                    </p>
+                    <p><span class="span_9">Note</span>: Profile retransmission applies to users of profilers with wireless capability.</p>
+                    <p>&#160;</p>
+                    <p>While the profiler transmits the live profile data to the computer running the software, it simultaneously stores the profile data in its onboard memory.</p>
+                    <p>&#160;</p>
+                    <p>Once the profiler detects that all of the thermocouples have cooled below the profile-end trigger value, it will begin retransmitting the profile data.  When retransmission begins, the profiler will send the profile in data packets.  The retransmission status appear at the bottom of the screen.  See Figure 29.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000033.png" style="width: 513px;height: 75px;" />
+                    </p>
+                    <p class="Caption"><a name="_Ref185830485"></a>Figure 29: Wireless models profile retransmission</p>
+                    <p>&#160;</p>
+                    <p>If you have a datalogger version, you must remove the profiler from the oven and thermal shield and then connect the download cable to the profiler.&#160; The profile data will automatically begin downloading to the software.</p>
+                    <p>&#160;</p>
+                    <p class="Important"><span class="span_21">Caution: The profiler and your product may be hot when exiting the oven. Use gloves if necessary.</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>When all of the data packets have been received, the software will display a message asking you to turn the Profiler off, choose OK.&#160; <span class="span_8">Failing to turn the profiler OFF will drain the battery.</span></p>
+                    <p>&#160;</p>
+                    <p>After the profiler has completed its retransmission, click “OK” and you will be brought to the graph screen, with the profile and statistics displayed for the current profile run.&#160;</p>
+                    <p>&#160;</p>
+                    <ul style="list-style-type: square;">
+                        <li>If the Air thermocouple was more than 10º C cooler than any other TC, you will get an error message.&#160; At this point you must check to see that the Air thermocouple is plugged into the first channel on the profiler and that all the other thermocouples are firmly attached to the product.&#160; Then you will have to rerun the profile.</li>
+                        <li>If the message, “Waiting for the board to exit” appears, wait until the “Turn the Profiler off” message appears and follow any subsequent messages that may appear.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>Next, the software will automatically analyze the profile data and presents the profile and statistics.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Viewing_the_profile_and"></a>View the Profile and Statistics</h2>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image111.png" />
+                    </p>
+                    <p class="Caption"><a name="_Ref185830907"></a>Figure 30: Profile General Tab – Shows graph, statistics, and recipe</p>
+                    <h3 class="Heading3"><a name="General_tab"></a>General Tab</h3>
+                    <p>The General tab shows the profile graph, profile statistics, current, and predicted recipes.  To enlarge the graph portion of the General Tab, simply double click on the graph.  To enlarge the statistics portion of this screen, double click on the statistics.  See Figure 30.</p>
+                    <p>&#160;</p>
+                    <p class="Important"><span class="span_21">Tip: </span><span class="span_18">If you have run a profile that meets the Virtual Profile criteria, then the “Start Virtual Profiling” button will appear once the profile has completed.&#160; Click the Start Virtual Profiling button to start Virtual Profiling for this product.</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Using_the_Graph"></a><a name="Graph_Controller"></a>The Graph Controller</h3>
+                    <table class="table_2">
+                        <col style="width: 239pt;" />
+                        <col style="width: 239pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>The <i>Graph Controller</i> allows you to modify the view of the profile graph.  See Figure 31.  To open the Graph Controller, left-click on the TC column header in the Statistics table or double left-click, anywhere just outside the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_9">Auto scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.&#160; When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X, and Y-axis scale of the profile graph.</p>
+                                <p>&#160;</p>
+                                <p><b>TCs</b>
+                                </p>
+                                <p>The TCs section is a list of the thermocouples used for the profile.  In the event that you wish to view the profile without a particular or multiple thermocouples, you can deselect individual thermocouples, or deselect the “All” check box, and choose only the thermocouples you wish to view. The software recalculates the PWI, and updates the profile statistics based on the remaining thermocouples selected.  You must select at least one product thermocouple.</p>
+                            </td>
+                            <td class="td_1">
+                                <p class="p_1" style="text-align: center;">
+                                    <img src="Resources/Images/image112.png" />
+                                </p>
+                                <p class="p_1" style="text-align: center;">Figure 31: Graph Controller<br /><br /></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p><span class="span_9">Grid –</span> Enables/disables the view of the X, and Y-Axis scales.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_9">Reference </span><span class="span_9">l</span><span class="span_9">ines –</span> Enables the view of Reference Lines displayed on the profile graph.&#160; These lines represent any temperatures referenced in the selected Process Window.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_9">Zone </span><span class="span_9">l</span><span class="span_9">ines – </span>Enables the view for the oven zone lines on the profile graph.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_9">Predicted TCs only</span> - Removes the Original profile plot from view, displaying only the prediction profile plot on the graph.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_9">Zero </span><span class="span_9">d</span><span class="span_9">ecimal </span>– When viewing the Pointer tool, this setting enables or disables the decimal display.&#160; When unchecked, the software will display one decimal point.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_9">Internal </span><span class="span_9">t</span><span class="span_9">emp </span>– Enables the view of the profiler’s internal temperature profile plot on the graph.&#160; </p>
+                    <p>&#160;</p>
+                    <p><b>TCs Line Thickness –</b> The pull down menu lets you select five different thicknesses for the TC lines drawn on the graph.</p>
+                    <p>&#160;</p>
+                    <p><b>Display Detailed PWI –</b> With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values.</p>
+                    <p>&#160;</p>
+                    <p><b>Extra Cooling Slope –</b> Enabling this feature displays multiple Cooling Slope measurements which are customizable by the user.</p>
+                    <p>&#160;</p>
+                    <p>&#160; </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Graph_Option_Menu"></a>Graph Option Menu</h3>
+                    <table class="table_2">
+                        <col style="width: 307pt;" />
+                        <col style="width: 99pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <p>To view the graph option menu, right-click anywhere within the profile graph area.  See Figure 32.&#160; </p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p class="p_1">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000036.png" style="height: 92px;width: 116px;" class="img_1" />
+                                </p>
+                                <p class="Caption"><a name="_Ref220307928"></a>Figure 32</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h4 class="Heading4"><a name="Examine_Line"></a>Examine Line</h4>
+                    <table class="table_2">
+                        <col style="width: 307pt;" />
+                        <col style="width: 113pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <p>The Examine Line feature displays the temperature for the location of the pointer on the profile graph.  See Figure 33.&#160; </p>
+                            </td>
+                            <td class="td_1">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000037.png" style="height: 96px;width: 117px;" class="img_1" />
+                                </p>
+                                <p style="text-align: center;">Figure 33: Examine Line</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Wherever the pointer is moved across the profile, the following data will be displayed:</p>
+                    <ul>
+                        <li class="ListBullet2_3">The first column is the actual temperature for each TC.</li>
+                    </ul>
+                    <ul>
+                        <li class="ListBullet2_3">The second column is the temperature of the predicted profile data – based on set point or belt speed changes.</li>
+                    </ul>
+                    <ul>
+                        <li class="ListBullet2_3">The Delta T for both actual and predicted TC data.</li>
+                    </ul>
+                    <ul>
+                        <li class="ListBullet2_3">The time during the profile at which the pointer is placed.</li>
+                    </ul>
+                    <h4 class="Heading4"><a name="Automatic_Calculation_Of_Delta_T"></a>Automatic Calculation Of Delta T + Delta (Or Range) For All Stats</h4>
+                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.  See Figure 33.</p>
+                    <p>&#160;</p>
+                    <p>This is the range of the highest to the lowest value for any given specification.  This information is strictly being displayed and is not factored in to the PWI value and is not used in the optional Navigator or Auto-Focus calculations. </p>
+                    <h4 class="Heading4"><a name="Move_TC_Line"></a>Move TC Line</h4>
+                    <table class="table_2">
+                        <col style="width: 329pt;" />
+                        <col style="width: 149pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>The Move TC line feature allows the user to manually move the thermocouple plot on the profile graph.  This is used to fine tune the profile or make corrections in the event the software did not properly display the plot.  See Figure 34.</p>
+                            </td>
+                            <td class="td_1">
+                                <p class="p_1">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000038.png" style="width: 160px;height: 74px;" />
+                                </p>
+                                <p style="text-align: center;">Figure 34</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Select the thermocouple you wish to move and then click and drag the highlighted plot and move it to the desired location on the profile graph.   See Figure 35.</p>
+                    <p class="p_6">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000039.png" style="height: 244px;width: 576px;" class="img_1" />
+                    </p>
+                    <p class="Figure"><a name="_Ref220307974"></a>Figure 35: Move TC Line</p>
+                    <h4 class="Heading4"><a name="Move_Zone_Line"></a>Move Zone Line</h4>
+                    <table class="table_2">
+                        <col style="width: 307pt;" />
+                        <col style="width: 172pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>The <span class="span_8">Move Zone Line</span> feature allows the user to manually move the zone separation lines on the profile graph.&#160; This is used to fine tune the profile or make corrections in the event the software did not properly display the zones.&#160; </p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p><b style="font-size: 14pt;"><a name="Zone_Resize"></a>Zone Resize</b>
+                                </p>
+                                <p>Select to move the first line (zone beginning) or the last line (zone ending) (See Figure 36) and then click and drag it to the desired location on the profile graph.   See Figure 37.</p>
+                            </td>
+                            <td class="td_1">
+                                <p class="p_1">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300003A.png" style="width: 213px;height: 90px;" />
+                                </p>
+                                <p style="text-align: center;">Figure 36: Zone Resize</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p class="p_6">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300003Ba.png" class="img_1" />
+                    </p>
+                    <p class="Caption"><a name="_Ref220307995"></a>Figure 37:&#160; Move Zone Line</p>
+                    <h4 class="Heading4"><a name="Reset"></a>Reset</h4>
+                    <table class="table_2">
+                        <col style="width: 239pt;" />
+                        <col style="width: 239pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <p>The Reset feature will reset the profile and undo any changes you have made to the graph using the Graph Option Menu.  Select the TC Line, or Zone Line option.  See Figure 38.&#160; </p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300003C.png" style="width: 204px;height: 96px;" />
+                                </p>
+                                <p class="Caption" style="text-align: center;"><a name="_Ref220308041"></a>Figure 38: Reset</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3 class="Heading3"><a name="Profile_screen_buttons"></a>Profile screen buttons</h3>
+                    <p>There are four buttons at the bottom of the profile screen.</p>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col style="width: 98px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="Resources/Images/image113.png" />
+                                    <p>&#160;</p>
+                                </td>
+                                <td>
+                                    <p><span class="span_9">View/Edit Process Window</span><span class="span_9"> –</span> Choose this button to either view or edit the process specification(s) for the product used in this profile.</p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Resources/Images/image114.png" />
+                                    <p>&#160;</p>
+                                </td>
+                                <td>
+                                    <p><span class="span_9">Copy to clipboard </span>– Choose this button to copy the profile data to the windows clipboard.&#160; You can then paste the data to a different application.</p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Resources/Images/image115.png" />
+                                    <p>&#160;</p>
+                                </td>
+                                <td>
+                                    <p><span class="span_9">Print –</span> Choose this button to print a copy of the profile that is currently on your screen.</p>
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Resources/Images/image116.png" />
+                                    <p>&#160;</p>
+                                </td>
+                                <td>
+                                    <p><span class="span_9">Green </span><span class="span_9">c</span><span class="span_9">heck</span><span class="span_9"> /Profile Explorer button</span>– When finished viewing or analyzing the profile select this button to either run another profile with this product or return to the software main menu.  You return to the Profile Explorer if the profile was opened from there.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 226pt;" />
+                        <col style="width: 253pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p><b style="font-size: 14pt;"><a name="Exit_The_Graph_Screen"></a>Exit The Graph Screen</b>
+                                </p>
+                                <p>&#160;</p>
+                                <p>Upon exiting the graph screen, a message asks you, Do you want to run a profile with this product?&#160; </p>
+                                <p>&#160;</p>
+                                <p>If you select <span class="span_9">No</span>, you return to the main screen or the Profile Explorer if the profile was originally opened from there.</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1" style="text-align: center;">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300003D.png" />
+                                </p>
+                                <p class="p_1"><span class="span_22">Figure 39</span>
+                                </p>
+                                <p class="p_1">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">
+                                <p>If you select <span class="span_9">Yes</span>, you will need to choose from the Original, or Predicted recipe settings. </p>
+                                <p>&#160;</p>
+                                <p><span class="span_9">Original –</span> The same recipe settings used when this profile was originally run.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_9">Predicted -</span> The recipe settings as predicted by the Optional <i>Navigator</i>, or a standard prediction that you manually input.</p>
+                            </td>
+                            <td class="td_1" style="text-align: center;">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300003E.png" />
+                                </p>
+                                <p class="Caption">Figure 40</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>For both the original and predicted recipe settings, the software will automatically send the selected recipe information to the oven controller.&#160; If there is no communication between the software and the Oven controller, the software will display a dialog box showing the recipe information.&#160; You must manually enter this recipe information in the oven controller software.&#160; </p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300003F.png" style="width: 461px;height: 308px;" />
+                    </p>
+                    <p class="Caption">Figure 41</p>
+                    <p>&#160;</p>
+                    <p>The software will automatically apply the changes to the Run a Profile –Enter Setpoints screen.  You will exit to the Run a Profile –Enter Setpoints screen.  If you are running on the oven controller PC, and the oven is compatible with the software the oven recipe will automatically be updated.</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 229pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <h4 class="Heading4"><a name="Saving_Changes_To_The_Profile"></a>Saving Changes To The Profile:</h4>
+                                <p>Any changes to the Description Notes or the Process Window can be saved with the profile.  This will permanently update this profile with the changes.  Changes to the Process Window saved here only save the changes with the profile.  To save the changes to Process Window file see next dialog box.  See Figure 42.&#160; </p>
+                            </td>
+                            <td class="td_1">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000040.png" style="width: 286px;height: 106px;" />
+                                </p>
+                                <p class="Caption"><a name="_Ref270084164"></a>Figure 42</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_1">
+                                <h4 class="Heading4"><a name="Saving_Changes_To_The_Process_Window"></a>Saving Changes To The Process Window:</h4>
+                                <p>If you have made changes to the Process Window from the Graph screen you can save these changes when you exit the graph screen.&#160; The Process Window will permanently have these changes whenever it is used to profile from this point forward.</p>
+                            </td>
+                            <td class="td_1">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000041.png" style="width: 318px;height: 102px;" />
+                                </p>
+                                <p class="p_1"><span class="span_22">Figure </span><span class="span_22">43</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>The software will take you to the Edit Process Window screen in order to save the changes that you have made.</p>
+                    <p>&#160;</p>
+                    <p>The first dialog – “Do you want to run a profile with this product?” will appear each time you exit the graph screen.&#160; Click on <span class="span_9">No</span> if you do not wish to profile.</p>
+                    <p>&#160;</p>
+                    <p>You will be sent back to the Main menu if you had just completed running a profile.&#160; If you opened the profile from the Profile Explorer you will be returned to the Profile Explorer.&#160; The other two dialogs will only appear if changes are made to the Description notes or Process Window.</p>
+                    <h4 class="Heading4"><a name="General_Tab_Buttons"></a>General Tab Buttons</h4>
+                    <p class="ListBullet2_2"><span class="span_9">Start Virtual Profile –</span> If your profile meets Virtual Profile criteria, this button will appear.&#160; Choose this button to start Virtual Profiling using the displayed profile as a Baseline.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">View/Edit Process Window –</span> This will allow you to view the Process Window specifications and limits.&#160;</p>
+                    <p class="ListBullet2_1">Changes made to the Profile and Process Window can be saved when exiting the Graph screen.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Copy to clipboard –</span> This button will copy the profile data to the clipboard for use with third-party software such as a spreadsheet application, or SPC software.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Print –</span> This button will print the current profile.&#160; For more information about printing, see the <a href="Printing.htm#_Ref91061264">Printing</a> section of this manual.</p>
+                    <p>&#160;</p>
+                    <p class="Important"><span class="span_21">Tip: </span><span class="span_18">If you wish to print a tab besides the General tab, pressing F9 on your keyboard will print the contents of any screen in the software.</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Green Check Button –</span> Select this button to run another profile or to exit.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Description_tab"></a>Description Tab</h3>
+                    <p>&#160;</p>
+                    <p class="p_6">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000042.png" style="width: 556px;height: 430px;" />
+                    </p>
+                    <p style="text-align: center;">Figure 44: Profile Description Tab – Shows Description notes, statistics, and recipe</p>
+                    <p>&#160;</p>
+                    <p>The Description tab shows the profile description notes, profile statistics, current and predicted recipes.</p>
+                    <h4 class="Heading4"><a name="Description_Tab_Buttons"></a>Description Tab Buttons</h4>
+                    <p class="ListBullet2_2"><span class="span_9">View/Edit Process Window –</span> This will allow you to view the process window specifications.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Copy to </span><span class="span_9">c</span><span class="span_9">lipboard –</span> This button will copy the profile data to the clipboard for use with third-party software such as a spreadsheet application, or SPC software.</p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Print –</span> This button will print the current profile.</p>
+                    <p>&#160;</p>
+                    <p class="Important"><span class="span_21">Tip</span><span class="span_21">: </span><span class="span_18">If you wish to print a tab besides the General tab, pressing F9 on your keyboard will print the contents of any screen in the software.</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_2"><span class="span_9">Green Check Button –</span> Select this button to run another profile or to exit.</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <p class="ListBullet2_2">&#160;</p>
+                    <h2 class="Heading2"><a name="Manual_profile_prediction"></a>Manual Profile Prediction</h2>
+                    <p>The software has manual prediction capabilities.  Manual prediction gives you the flexibility to easily predict changes to the oven settings (temperature settings, conveyor speed), and view the results without having to spend the time actually running unnecessary profiles.  This feature is very helpful to you, minimizing the time spent fine tuning or developing a thermal profile.</p>
+                    <h3 class="Heading3"><a name="Making_changes"></a>Predict Changes</h3>
+                    <p>To predict changes to the oven settings,</p>
+                    <p>&#160;</p>
+                    <p>1. &#160;&#160;Click the zone you wish to change.<br />&#160;&#160;&#160;&#160;&#160;&#160;In the example below, zone 1 has been selected.  See Figure 45.<br /><br /></p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000043.png" style="height: 81px;width: 503px;" class="img_1" />
+                    </p>
+                    <p class="Caption"><a name="_Ref185832902"></a>Figure 45: Prediction settings</p>
+                    <p>2. &#160;&#160;Type the new temperature setting, and then press Enter.</p>
+                    <p>&#160;</p>
+                    <ul style="list-style-type: square;">
+                        <li>
+                            <p>The manual prediction tool will predict the results of that change, and then automatically update the PWI, predicted Statistics, and the profile graph.</p>
+                        </li>
+                        <li>
+                            <p>The new predicted results will be displayed on the graph in a dotted-line format.  This format enables you to easily determine the difference between the original and predicted profiles.</p>
+                        </li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Setting_different_top"></a>Set Different Top and Bottom Set Point Temperatures</h2>
+                    <table class="table_2">
+                        <col style="width: 184pt;" />
+                        <col style="width: 295pt;" />
+                        <tr>
+                            <td class="td_1">
+                                <p>&#160;</p>
+                                <p>The software will allow you to enter different top and bottom setpoint temperatures prior to running a profile.  See Figure 46.</p>
+                                <p>&#160;</p>
+                                <p>Notice the top of zone 8 is set to 267 and the bottom is set to 257.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_1">
+                                <p class="Caption">
+                                    <img src="Resources/Images/image117.png" />
+                                </p>
+                                <p class="Caption">Figure 46 Different Top and Bottom Setpoints</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Profile_graph_display"></a>Profile Graph Display</h3>
+                    <p>&#160;</p>
+                    <p class="Figure_1" style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000046a.png" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 47: Profile Graph Display</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>The PWI for the profile appears in the bottom left corner of this screen.  See Figure 48.  If the measured PWI is below 100%, the value will be displayed in a green font.  If the measured PWI is 100% or higher, the value will be displayed with a red font.  This enables you to easily identify whether the profile is in or out of spec.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000048a.png" class="img_1" />
+                    </p>
+                    <p class="Caption">Figure 48: Profile PWI</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Exiting_the_graph_screen"></a>Exit the Graph Screen</h3>
+                    <table class="table_2">
+                        <col style="width: 227pt;" />
+                        <col style="width: 252pt;" />
+                        <tr>
+                            <td class="td_10">
+                                <p>The following message appears whenever a profile is closed: “Do you want to run a profile with this product?”  See Figure 49.</p>
+                                <p>&#160;</p>
+                                <p>If you select <span class="span_9">No</span>, you will be returned to the main screen or the Profile Explorer if the profile was originally opened from there.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_10">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000049.png" style="width: 266px;height: 100px;" />
+                                </p>
+                                <p class="p_1" style="text-align: center;"><span class="span_22">Figure 49</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_10">
+                                <p>If you select <span class="span_9">Yes</span>, you will need to choose from the Original, or Predicted recipe settings.&#160; See Figure 50.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_9">Original –</span> The same recipe settings used when this profile was originally run.</p>
+                                <p>&#160;</p>
+                                <p><span class="span_9">Predicted -</span> The recipe settings as predicted by standard prediction that you input manually.</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td class="td_10">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300004A.png" style="width: 321px;height: 101px;" />
+                                </p>
+                                <p class="p_1" style="text-align: center;"><span class="span_22">Figure </span>50</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>For both the original and predicted recipe settings, the software will automatically send the selected recipe information to the oven controller.  If there is no communication between the software and the oven controller, the software will display a dialog box showing the recipe information.  You must manually enter this recipe information in the oven controller software.  See Figure 51.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300004B.png" style="width: 461px;height: 308px;" />
+                    </p>
+                    <p class="Caption">Figure 51: Oven controller communication error</p>
+                    <p>&#160;</p>
+                    <p>The software will automatically apply the changes to the Run a Profile – Enter Setpoints screen.  You will exit to the Run a Profile screen.  If you are running on the oven controller PC, and the oven is compatible with the software the oven recipe will automatically be updated.</p>
+                    <p>&#160;</p>
+                    <p>The first dialog – “Do you want to run a profile with this product?” will appear each time you exit the graph screen.  Click <b>No</b> if you do not wish to profile.</p>
+                    <p>&#160;</p>
+                    <p>You return to the main menu if you had just completed running a profile.&#160; If you opened the profile from the Profile Explorer, you will return to the Profile Explorer.&#160; Two other two dialogs appear if you make changes to the Description notes or Process Window.</p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 231pt;" />
+                        <col style="width: 248pt;" />
+                        <tr>
+                            <td class="td_10">
+                                <h4 class="Heading4"><a name="Save_Changes_To_The_Profile"></a>Save Changes To The Profile</h4>
+                                <p>You can save any changes to the Description Notes or the Process Window with the profile.&#160; This will permanently update this profile with the changes.&#160; Changes to the Process Window saved here only save the changes with the profile.&#160; To save the changes to Process Window file see next dialog box</p>
+                            </td>
+                            <td class="td_10">
+                                <p>&#160;</p>
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300004C.png" style="width: 282px;height: 105px;" />
+                                </p>
+                                <p class="Caption">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_10">
+                                <h4 class="Heading4"><a name="Save_Changes_To_The_Process_Window"></a>Save Changes To The Process Window</h4>
+                                <p>If you have made changes to the Process Window from the Graph screen, you can save these changes when you exit the graph screen.&#160; The Process Window is updated and utilize these changes whenever it is selected for profiling from this point forward.</p>
+                            </td>
+                            <td class="td_10">
+                                <p>&#160;</p>
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000041.png" style="width: 317px;height: 101px;" />
+                                </p>
+                                <p class="Caption">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>If you select “Yes”, the software will take you to the Edit Process Window screen in order to save the changes that you have made.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p class="p_24">If your oven is capable of communicating with the software you will see different dialog boxes.</p>
+                    <ul class="ul_2">
+                        <li class="ListParagraph">If you answer yes, a dialog box will appear displaying the amount of time until the oven acknowledges the recipe change request.  Select OK.  See Figure 52.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p class="Figure_1">&#160; <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300004Ea.png" /></p>
+                    <p class="Caption">Figure 52: Oven controller acknowledge recipe change request</p>
+                    <p>&#160;</p>
+                    <p>When the oven has received the new recipe information, a confirmation dialog box will appear.  See Figure 53.</p>
+                    <p>&#160;</p>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000050a.png" />
+                    </p>
+                    <p class="Caption">Figure 53: Oven controller recipe change confirmation</p>
+                    <p>&#160;</p>
+                    <p class="Important"><span class="span_21">Tip: </span><span class="span_18">Oven controller:</span><span class="span_18">If nothing happens within several seconds, check the oven controller software to make sure there are no error messages or errors that </span><span class="span_18">will cause the system to hang.</span>
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

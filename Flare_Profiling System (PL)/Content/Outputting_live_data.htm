@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 505px">
+            <tr>
+                <td with="width: 505px">
+                    <h1 class="Heading1">Using Live Data Output</h1>
+                    <p>The Live Data Output (LDO) feature outputs Virtual Profile (VP) data in real time for use by third-party applications such as Line Balancing/Production Monitoring Host or SPC software.&#160; This data includes barcode information (where applicable) and all relevant profile data, statistics, and limits.&#160; There are several different LDO formats that can be chosen from. Examples of these formats will be shown later in this section. </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Output of the LDO file data</span> –When the VP is running, the statistical data from each newly completed Virtual Profile is written to the LDO file when the board exits the oven.&#160; </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Viewing LDO data</span> – LDO is designed to output data only and is not meant as a historical database.&#160; It is intended to be used with third party software that collects the LDO data while the Virtual Profile is running-live.&#160; If you are not running third party software to collect the LDO data, and wish you to view historical data, this can be accomplished from within the actual automatic system software in use.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">LDO destination</span> – The location where the LDO output file is written to can be specified by the user in the ConfigurationProgram.exe utility. </p>
+                    <p>&#160;</p>
+                    <p><span class="span_11">Note</span>: For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.&#160; You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.&#160; </p>
+                    <p>&#160;</p>
+                    <p class="p_38">An LDO output file example</p>
+                    <p>Below is an example of the type of data included in the LDO output file: </p>
+                    <p>&#160;</p>
+                    <p class="p_19">
+                        <img src="Resources/Images/z44.png" class="img_1" />
+                    </p>
+                    <p class="caption">Figure 154: Live Data Output text file</p>
+                    <h2 class="Heading2"><a name="LDO_Formats"></a>LDO Formats</h2>
+                    <p>There are several standard LDO formats to choose from:</p>
+                    <ul class="ul_3">
+                        <li class="li_9">LDO Standard TSV or CSV format for WordPad</li>
+                        <li class="li_9">LDO Standard TSV or CSV format for Excel</li>
+                        <li class="li_9">LDO 1 Board 1 File (TXT format)</li>
+                        <li class="li_9">LDO 1 Board 1 File (XML format)</li>
+                        <li class="li_9">LDO 1 Board 1 File (CSV format)</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>The following are specialized output formats and not typically selected by most users:</p>
+                    <ul class="ul_3">
+                        <li class="li_9">LDO KP Data Only (CSV)</li>
+                        <li class="li_9">LDO XML Format A</li>
+                        <li class="li_9">LDO XML Format A2</li>
+                        <li class="li_9">CUSTOME LDO</li>
+                    </ul>
+                    <h2 class="Heading2"><a name="Details_Of_Output_Files"></a>Details of Output Files</h2>
+                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_WordPad"></a>LDO Standard TSV And CSV for WordPad</h3>
+                    <ul class="ul_3">
+                        <li class="li_9">The output file type is a .TXT </li>
+                        <li class="li_9">TSV format is Tab delimited </li>
+                        <li class="li_9">CSV format is Comma delimited.</li>
+                        <li class="li_9">The output file is first generated when the VP is started</li>
+                        <li class="li_9">File is appended as each board exits and VP is calculated</li>
+                        <li class="li_9">The default output file name is Profiling System_LiveDataOutput.txt</li>
+                        <li class="li_9">The user can choose to define their own specific output file name</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="li_9">When default or user defined naming is selected, output file is overwritten when product changeover occurs</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="li_9">File name format can also be set to:&#160; PRODUCT_YYMMDD_HH-MM-SS.txt</li>
+                    </ul>
+                    <ul class="ul_7">
+                        <li class="li_9">When this naming is selected, a new file is generated when product changeover occurs</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_Excel"></a>LDO Standard TSV And CSV For Excel</h3>
+                    <ul class="ul_3">
+                        <li class="li_9">The output file type is a .TXT </li>
+                        <li class="li_9">TSV format is Tab delimited </li>
+                        <li class="li_9">CSV format is Comma delimited.</li>
+                        <li class="li_9">The output file is first generated when the VP is started</li>
+                        <li class="li_9">File is appended as each board exits and VP is calculated</li>
+                        <li class="li_9">The default output file name is Profiling System_LiveDataOutput.txt</li>
+                        <li class="li_9">The user can choose to define their own specific output file name</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="li_9">When default or user defined naming is selected, output file is overwritten at product changeover</li>
+                    </ul>
+                    <ul class="ul_3">
+                        <li class="li_9">File name format can also be set to:&#160; PRODUCT_YYMMDD_HH-MM-SS.txt</li>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="li_9">When this naming is selected, a new file is generated when product changeover occurs</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="LDO_1_Board_1_File"></a>LDO 1 Board 1 File (TXT format)</h3>
+                    <ul class="ul_3">
+                        <li class="li_9">The output file type is a .TXT </li>
+                        <li class="li_9">Separate individual file is generated as board exits oven and VP is calculated</li>
+                        <li class="li_9">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString (Barcode string included when applicable)</li>
+                        <li class="li_9">User cannot change file name – with exception of not including barcode in file name</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="LDO_XML"></a>LDO 1 Board 1 File (XML format)</h3>
+                    <ul class="ul_3">
+                        <li class="li_9">The output file type is a .XML file</li>
+                        <li class="li_9">Separate individual file is generated as board exits oven and VP is calculated</li>
+                        <li class="li_9">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString&#160; (Barcode string included when applicable)</li>
+                        <li class="li_9">User cannot change file name – with exception of not including barcode in file name</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="LDO"></a>LDO 1 Board 1 File (CSV format)</h3>
+                    <ul class="ul_3">
+                        <li class="li_9">The output file type is a .CSV file</li>
+                        <li class="li_9">Separate individual file is generated as board exits oven and VP is calculated</li>
+                        <li class="li_9">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString&#160; (Barcode string included when applicable)</li>
+                        <li class="li_9">User cannot change file name – with exception of not including barcode in file name</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="One_board_per_file_TXT_Alternate"></a>One board per file – TXT - Alternate</h3>
+                    <ul class="ul_3">
+                        <li class="li_9">Similar to ‘standard’ one board per file TXT output</li>
+                        <li class="li_9">Adds lines for ‘customer name’ (taken from Profile Description); separate lines for Date and Time boards entered and exited; which TC had highest PWI</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="One_board_per_file_TXT_Custom"></a>One board per file – TXT - Custom</h3>
+                    <ul class="ul_3">
+                        <li>Similar to ‘standard’ one board per file TXT output</li>
+                        <li>Does not include temperature specs in specifications (Reflow_Time instead of Reflow_Time_/218)</li>
+                    </ul>
+                    <p class="p_16">&#160;</p>
+                    <p><span class="span_24">Note:</span> Examples of each of the available output file types can be found in the C:\Software Root Directory\Sample LDO files folder.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Configure_LDO"></a>Configure LDO</h2>
+                    <table style="width: 100%;">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>With the automatic system software shut down, browse to the C:\Software Root Directory folder and run the ConfigurationProgram.exe application, and select the LDO tab.</li>
+                                        <li>Check the “Enable Live Data Output” checkbox</li>
+                                        <li>Select the desired Format</li>
+                                        <li>The type of Format chosen will affect what naming structure for file will be used (See Details of Output Files above).</li>
+                                        <li>Select the destination path for the output file by clicking on the Browse button. This needs to be a location on the local drive.</li>
+                                        <li>“Max File Size” lets you specify how large the LDO output file can get before a new one is started.</li>
+                                        <li>Select ‘Include Alarm Events’ to record into the output file any warnings or alarms</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000129.png" style="width: 437px;height: 379px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p> If a VP is running for an extended amount of time, once the maximum file size is reached, a new file will be generated and the new file name will be appended with a _# as shown in the example below:</p>
+                    <p class="p_19">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300012A.png" style="height: 83px;width: 591px;" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Include_Alarm_Events"></a>Include Alarm Events in the Output File</h3>
+                    <p>When <i>Include Alarm Events</i> is selected, any alarm and/or warning events that occurred while a board was in the oven will be saved into the output file along with the board data.</p>
+                    <p>&#160;</p>
+                    <p><b>Alarm Event LDO Output File Examples</b>
+                    </p>
+                    <p>Below are examples of the Tab Separated and One Board per File outputs with the <i>Include Alarm Events</i> enabled:</p>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/FTM0001.png" style="width: 418px;height: 210px;" />
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/FTM0002.png" style="width: 413px;height: 217px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;font-size: 8pt;font-family: Arial;">
+									Tab Separated
+								</td>
+                                <td style="text-align: center;font-size: 8pt;font-family: Arial;">One Board per File</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="Heading3">&#160;</h3>
+                    <h3 class="Heading3"><a name="Delete_Accumulated_LDO_Files"></a>Delete Accumulated LDO Files </h3>
+                    <p>In time, accumulating LDO files can take up too much hard disk space and need to be deleted.&#160; The software provides an <span class="span_12">Auto Delete</span> function that lets you specify time intervals for automated file purging.&#160; You can specify a maximum number of days–up to 1827 (five years)–that the system retains the files before automatic purging.&#160; You can also select a time in the 24-hour cycle for the system to automatically check for files that exceed the maximum day limit. </p>
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListBullet2">In the automatic system folder, double-click on the <span class="span_11">AutoDelete</span> icon.&#160; <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300012B.png" style="height: 18px;width: 88px;" class="img_1" /><br />The Auto Delete LDO files screen appears:</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="p_19">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300012C.png" style="height: 198px;width: 253px;" class="img_1" />
+                    </p>
+                    <p>&#160;</p>
+                    <ol start="2" class="ol_1">
+                        <li class="ListBullet2_7">Click in the <span class="span_12">Max days to exist</span> field, and type in a new value.
+						</li>
+                    </ol>
+                    <p class="ListParagraph">
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300012D.png" style="height: 53px;width: 237px;" class="img_1" />
+                    </p>
+                    <p class="ListBullet">&#160;</p>
+                    <table class="table_1">
+                        <col style="width: 300pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_37">
+                                <ol start="3" class="ol_1">
+                                    <li class="ListBullet2_7">Use the drop down list to select an hour during the day to check for old files.</li>
+                                </ol>
+                                <p class="ListBullet_6">&#160; <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300012E.png" style="height: 77px;width: 383px;" class="img_1" /></p>
+                                <ol start="4" class="ol_1">
+                                    <li class="ListBullet2">Click the Apply button.</li>
+                                </ol>
+                            </td>
+                            <td class="td_37">
+                                <p class="ListBullet">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300012F.png" style="height: 188px;width: 85px;" class="img_1" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

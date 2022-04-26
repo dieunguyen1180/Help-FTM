@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table with="width: 1000px">
+            <col with="width: 1000px" />
+            <tr>
+                <td with="width: 505px">
+                    <h1 class="Heading1">Using Live Data Output</h1>
+                    <p>The Live Data Output (LDO) feature outputs Virtual Profile (VP) data in real time for use by third-party applications such as Line Balancing/Production Monitoring Host or SPC software.  This data includes barcode information (where applicable) and all relevant profile data, statistics, and limits.  There are several different LDO formats that can be chosen from. Examples of these formats will be shown later in this section.</p>
+                    <p>&#160;</p>
+                    <p><b>Output of the LDO file data –</b>When the VP is running, the statistical data from each newly completed Virtual Profile  is written to the LDO file when the board exits the oven.</p>
+                    <p>&#160;</p>
+                    <p><b>Viewing LDO data –</b> LDO is designed to output data only and is not meant as a historical database.  It is intended to be used with third party software that collects the LDO data while the Virtual Profile is running-live.  If you are not running third party software to collect the LDO data, and wish you to view historical data, this can be accomplished from within the actual automatic system software in use.</p>
+                    <p>&#160;</p>
+                    <p><b>LDO destination –</b> The location where the LDO output file is written to can be specified by the user in the ConfigurationProgram.exe utility.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.  You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.</p>
+                    <p>&#160;</p>
+                    <p><b>An LDO output file example</b>
+                    </p>
+                    <p>Below is an example of the type of data included in the LDO output file:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000D7aa.png" style="width: 670px;height: 419px;" />
+                        <br />Figure 154: Live Data Output text file</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="LDO_Formats"></a>LDO Formats
+                    </h2>
+                    <p>&#160;</p>
+                    <p>There are several standard LDO formats to choose from:</p>
+                    <ul style="list-style-type: square;">
+                        <li>LDO Standard TSV or CSV format for WordPad</li>
+                        <li>LDO Standard TSV or CSV format for Excel</li>
+                        <li>LDO 1 Board 1 File (TXT format)</li>
+                        <li>
+                            <p>LDO 1 Board 1 File (XML format)</p>
+                        </li>
+                        <li>
+                            <p>LDO 1 Board 1 File (CSV format)</p>
+                        </li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>The following are specialized output formats and not typically selected by most users:</p>
+                    <ul style="list-style-type: square;">
+                        <li>LDO KP Data Only (CSV)</li>
+                        <li>LDO XML Format A</li>
+                        <li>LDO XML Format A2</li>
+                        <li>CUSTOME LDO</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Details_Of_Output_Files"></a>Details of Output Files
+                    </h2>
+                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_WordPad"></a>LDO Standard TSV And CSV for WordPad
+                    </h3>
+                    <ul style="list-style-type: square;">
+                        <li>The output file type is a  .TXT<br /></li>
+                        <li>TSV format is Tab delimited</li>
+                        <li>CSV format is Comma delimited.</li>
+                        <li>The output file is first generated when the VP is started</li>
+                        <li>File is appended as each board exits and VP is calculated</li>
+                        <li>The default output file name is KIC_ProBot_LiveDataOutput.txt</li>
+                        <li>The user can choose to define their own specific output file name</li>
+                        <li class="ListBullet2_7">When default or user defined naming is selected, output file is overwritten when product changeover occurs</li>
+                    </ul>
+                    <ul style="list-style-type: square;">
+                        <li class="ListBullet2_7">File name format can also be set to:  PRODUCT_YYMMDD_HH-MM-SS.txt</li>
+                        <li class="ListBullet2_8">When this naming is selected, a new file is generated when product changeover occurs</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_Excel"></a>LDO Standard TSV And CSV For Excel
+                    </h3>
+                    <ul style="list-style-type: square;">
+                        <li>The output file type is a  .TXT</li>
+                        <li>TSV format is Tab delimited</li>
+                        <li>CSV format is Comma delimited.</li>
+                        <li>The output file is first generated when the VP is started</li>
+                        <li>File is appended as each board exits and VP is calculated</li>
+                        <li>The default output file name is KIC_ProBot_LiveDataOutput.txt</li>
+                        <li>The user can choose to define their own specific output file name</li>
+                        <li class="ListBullet2_7">When default or user defined naming is selected, output file is overwritten at product changeover</li>
+                        <li>File name format can also be set to:  PRODUCT_YYMMDD_HH-MM-SS.txt</li>
+                        <li class="ListBullet2_7">When this naming is selected, a new file is generated when product changeover occurs</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="LDO_1_Board_1_File"></a>LDO 1 Board 1 File (TXT format)
+                    </h3>
+                    <ul style="list-style-type: square;">
+                        <li>The output file type is a  .TXT</li>
+                        <li>Separate individual file is generated as board exits oven and VP is calculated</li>
+                        <li>File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString (Barcode string included when applicable)</li>
+                        <li>User cannot change file name – with exception of not including barcode in file name</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="LDO_XML"></a>LDO 1 Board 1 File  (XML format)
+                    </h3>
+                    <ul style="list-style-type: square;">
+                        <li>The output file type is a  .XML file</li>
+                        <li>Separate individual file is generated as board exits oven and VP is calculated</li>
+                        <li>File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString  (Barcode string included when applicable)</li>
+                        <li>User cannot change file name – with exception of not including barcode in file name</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="LDO_1_Board_1_File_CSV_Format"></a>LDO 1 Board 1 File (CSV format)
+                    </h3>
+                    <ul style="list-style-type: square;">
+                        <li>
+                            <p>The output file type is a  .CSV file</p>
+                        </li>
+                        <li>
+                            <p>Separate individual file is generated as board exits oven and VP is calculated</p>
+                        </li>
+                        <li>
+                            <p>File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString (Barcode string included when applicable)</p>
+                        </li>
+                        <li>
+                            <p>User cannot change file name – with exception of not including barcode in file name</p>
+                        </li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="One_board_per_file_TXT_Alternate"></a>One board per file – TXT - Alternate</h3>
+                    <ul style="list-style-type: square;">
+                        <li>Similar to ‘standard’ one board per file TXT output</li>
+                        <li>Adds lines for ‘customer name’ (taken from Profile Description); separate lines for Date and Time boards entered and exited; which TC had highest PWI</li>
+                    </ul>
+                    <h3 class="Heading3"><a name="One_board_per_file_TXT_Custom"></a>One board per file – TXT - Custom</h3>
+                    <ul style="list-style-type: square;">
+                        <li>Similar to ‘standard’ one board per file TXT output</li>
+                        <li>Does not include temperature specs in specifications (Reflow_Time instead of Reflow_Time_/218)</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p><b style="text-decoration: underline;">Note</b>: Examples of each of the available output file types can be found in the C:\Software Root Directory\Sample LDO files folder.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Configure_LDO"></a>Configure LDO
+</h2>
+                    <table style="width: 100%;">
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <ol>
+                                        <li class="li_4">With the automatic system software shut down, browse to the C:\Software Root Directory folder and run the ConfigurationProgram.exe application, and select the LDO tab.<br /></li>
+                                        <li class="li_4">Check the “Enable Live Data Output” checkbox<br /></li>
+                                        <li class="li_4">Select the desired Format<br /></li>
+                                        <li class="li_4">The type of Format chosen will affect what naming structure for file will be used (See Details of Output Files above).<br /></li>
+                                        <li class="li_4">Select the destination path for the output file by clicking on the Browse button. This needs to be a location on the local drive.<br /></li>
+                                        <li class="li_4">“Max File Size” lets you specify how large the LDO output file can get before a new one is started.<br /></li>
+                                        <li class="li_4">Select ‘Include Alarm Events’ to record into the output file any warnings or alarms.</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000124.png" style="width: 501px;height: 474px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>If a VP is running for an extended amount of time, once the maximum file size is reached, a new file will be generated and the new file name will be appended with a _# as shown in the example below:</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image157.png" />
+                    </p>
+                    <h3 class="Heading3"><a name="Include_Alarm_Events"></a>Include Alarm Events in the Output File</h3>
+                    <p>When <i>Include Alarm Events</i> is selected, any alarm and/or warning events that occurred while a board was in the oven will be saved into the output file along with the board data.</p>
+                    <p>&#160;</p>
+                    <p><b>Alarm Event LDO Output File Examples</b>
+                    </p>
+                    <p>Below are examples of the Tab Separated and One Board per File outputs with the <i>Include Alarm Events</i> enabled:</p>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/FTM0001.png" style="width: 418px;height: 210px;" />
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/FTM0002.png" style="width: 413px;height: 217px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;font-size: 8pt;font-family: Arial;">
+									Tab Separated
+								</td>
+                                <td style="text-align: center;font-size: 8pt;font-family: Arial;">One Board per File</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="Heading3">&#160;</h3>
+                    <h3 class="Heading3"><a name="Delete_Accumulated_LDO_Files"></a>Delete Accumulated LDO Files
+                    </h3>
+                    <p>&#160;</p>
+                    <p>In time, accumulating LDO files can take up too much hard disk space and need to be deleted.  The software provides an <i>Auto Delete</i> function that lets you specify time intervals for automated file purging.  You can specify a maximum number of days–up to 1827 (five years)–that the system retains the files before automatic purging.  You can also select a time in the 24-hour cycle for the system to automatically check for files that exceed the maximum day limit.</p>
+                    <p>&#160;</p>
+                    <ol>
+                        <li>In the automatic system folder, double-click on the <b>AutoDelete</b> icon. <img src="Resources/Images/image2261.png" /><br />The Auto Delete LDO files screen appears:</li>
+                    </ol>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image158.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <ol start="2">
+                        <li>Click in the <i>Max days to exist</i> field, and type in a new value.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="ListContinue3">
+                        <img src="Resources/Images/image159.png" />
+                    </p>
+                    <table class="table_2">
+                        <col style="width: 300pt;" />
+                        <col style="width: 300pt;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol start="3">
+                                        <li>Use the drop-down list to select an hour during the day to check for old files.</li>
+                                    </ol>
+                                    <p class="ListContinue3">
+                                        <img src="Resources/Images/image160.png" />
+                                    </p>
+                                    <ol start="4">
+                                        <li>Click the Apply button.</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/image161.png" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1"><span style="font-family: Arial; font-size: 16pt; font-weight: bold;"><a name="Running_RPI_without_the_board_sensor"></a>Run RPI without the Board Sensor</span>
+                    </h1>
+                    <p>For some applications, such as semi-conductor processes where product is positioned at various locations across a mesh conveyor belt, or other situations where you do not want to or cannot track each individual product entering the process, you have the ability to setup the system to calculate the Virtual Profile based on specified time frequency.</p>
+                    <p>&#160;</p>
+                    <p>When configured in this method, every “X” number of seconds, a VP will be calculated and displayed on the screen. There will be no board tracking across the top of the screen, and there will be no identification possible of whether there was product in the machine or not when each VP is calculated.</p>
+                    <p>&#160;</p>
+                    <p>To enable this functionality:</p>
+                    <p>1.	Close the software if open.</p>
+                    <p>2.	Using Windows Explorer, open the file: <span style="font-family: 'Courier New';">C:\RPI\Log\KIC2000UserSettings.kiccfg</span> (If necessary, select <i>NOTEPAD</i> as the application for opening the file).</p>
+                    <p>3.	In the <span style="font-family: 'Courier New';">[PROPHET]</span> section, find the lines:</p>
+                    <p class="ListContinue" style="font-family: 'Courier New';">[PROPHET]</p>
+                    <p class="ListContinue" style="font-family: 'Courier New';">ChartVPDataWithoutBoardSensor=0</p>
+                    <p>&#160;</p>
+                    <p><span style="font-family: 'Courier New';">ChartVPDataWithoutBoardSensor</span>: Enable/Disable the board sensor (0=Enable, 1=Disable).</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                    <p>4.	Change the line to:</p>
+                    <p class="ListContinue" style="font-family: 'Courier New';">[PROPHET]</p>
+                    <p class="ListContinue" style="font-family: 'Courier New';">ChartVPDataWithoutBoardSensor=1</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                    <p>5.	Save your changes and close Notepad.</p>
+                    <p>6.	Restart the software.</p>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 300px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>Once the software is running, select Global Preferences/Control Limits and you will see a new section at the bottom of the screen called “RPI Record Frequency”. In this selection, you can specify how often the VP will be calculated. You can enter any value from 10 to 100000 seconds.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/image76.png" style="width: 499px;height: 373px;" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Preload_the_Oven"></a>Preload the Oven
+                    </h2>
+                    <p>Without a Board Sensor, the software cannot sense the product, so there is no way for the system to know when products are present and not present.  Therefore, there is no compensation for product load on the oven by the software.</p>
+                    <p>&#160;</p>
+                    <p>In order to produce a profile that best represents the production conditions, it may be necessary to pre-load the oven with products, so that the collected profile data most resembles that of a production piece.</p>
+                    <p>&#160;</p>
+                    <p>If the baseline profile is run without pre-loading the oven, you may see a rise in PWI, or even some alarms associated with oven change since the baseline profile, once Virtual Profiling is activated, and production has begun.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

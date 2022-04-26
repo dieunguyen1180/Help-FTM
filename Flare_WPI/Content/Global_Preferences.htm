@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title>Global Preferences</title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1">Global Preferences</h1>
+                    <p class="Figure" style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300000A1.png" style="height: 76px;width: 140px;" class="img_2" />
+                    </p>
+                    <p style="text-align: left;"><span style="font-size: 16pt; font-weight: bold;">Global Tab</span>
+                    </p>
+                    <p class="p_3" style="text-align: center;">
+                        <img src="Resources/Images/image129.png" style="width: 507px;height: 425px;" />
+                    </p>
+                    <p class="Caption" style="text-align: center;">Figure 4: Global Tab</p>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_1"><span class="span_7">Units of Measure</span> – There are four drop down menus to choose units for <i>Conveyor Speed, Distance, and Temperature</i>.  Auto Focus users enter the units for weight.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_1"><span class="span_7">Product Start Temperature</span> – The software cannot accurately analyze a profile while a board is too hot.  Before it can begin, the temperature of all thermocouples connected between the product and the profiler must be below the value you specify here with the slider bar.  Profiling automatically starts when the Air TC temperature drops to less than 2<span class="span_11">°</span> C above the product start temperature.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li>
+                            <p><b>Wave Solder Machine Name</b> – Enter a name for your machine. Configuration of the machine is done in a separate application. See <a href="Appendix_B.htm#Appendix">Appendix B - Configuration Program</a> section for details.</p>
+                        </li>
+                        <p>&#160;</p>
+                        <li class="ListBullet2_1"><b>Profiling Hardware</b> – Specify the model of your profiler, the number of channels (7, 9, or 12), and, if using the SPS Smart Profiler or X5, specify the data transmission mode (Datalogger or Transmitter).</li>
+                        <p>&#160;</p>
+                    </ul>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_1"><span class="span_7">Languages </span><span class="span_7">–</span> Select the language (English, Spanish, German, Traditional Chinese, Simplified Chinese, or Japanese) you prefer to see displayed in the software.  A restart of software is required after change of language.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul class="ul_2">
+                        <li class="ListBullet2_1"><span class="span_7">Engineer Password</span> – By checking this and entering a password you can control access to certain menus in the software.&#160;See the <a href="Password_protection.htm" style="color: #0000ff; text-decoration: underline;">Password protection</a> section of this manual for details.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Control_Limits_tab"></a>WPI Tab</h2>
+                    <p class="Figure_1">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000013.png" style="width: 530px;height: 443px;" />
+                    </p>
+                    <p style="text-align: center;">Figure 6: WPI Tab</p>
+                    <p>&#160;</p>
+                    <p><b>Maximum PWI to enable Virtual Profiling</b>
+                    </p>
+                    <p>This value will determine the maximum PWI allowable in order for any given profile to qualify as a Virtual Profile baseline.  If the PWI for a profile is lower than this value, it can be used as a Virtual Profile baseline.  By default this value is 90%.  Profiles that exceed this value can not be used for as a Virtual Profile baseline.</p>
+                    <p>&#160;</p>
+                    <p><b>Trigger Warning when PWI is higher than</b>
+                    </p>
+                    <p>When enabled, the software posts a Warning status if the PWI during Virtual Profiing exceeds a specified value.</p>
+                    <p>&#160;</p>
+                    <p><b>Alarm on Pot Temperature</b>
+                    </p>
+                    <p>When enabled by clicking the check box, this option lets you specify an alarm threshold for both minimum and maximum solder pot temperatures.  A solder pot alarm condition can then activate the alarm relay and display the condition on a light bar.</p>
+                    <h3 class="Heading3">Compute Cpk</h3>
+                    <p><b>Statistical Process Control</b> (SPC) for the thermal process is critical for any manufacturing program that involves continuous quality monitoring and improvement.  SPC provides the ability to understand the predictability of the process and to know in real-time when a process may be changing and affect product quality.</p>
+                    <p>&#160;</p>
+                    <p><b>Process Capability Index</b> (Cpk) gives a continuous indication of how current production is keeping within specifications and will indicate if the process is drifting towards a condition where defective product may be produced.  It is a measure of where the process spread falls within the Process Window.  By monitoring this and alarming when it becomes too low, you can proactively address issues in the process before a single defect occurs.</p>
+                    <p>&#160;</p>
+                    <ul>
+                        <li><b>Calculate Cpk with the entire “Population” (from WPI start to latest)</b> – When selected, the software will calculate Cpk across an entire production batch once the specified minimum points to has been exceeded.</li>
+                        <li><b>Alarm on Cpk</b> – Enable or disable the Cpk alarm when running Virtual Profiling.  If the Cpk drops below the defined value, the software can activate an onscreen and/or hardware alarm.  (Default = 1.33.)</li>
+                        <li><b>Minimum</b> – When Alarm on Cpk is enabled, and the Cpk value drops below this minimum, the software activates a software and/or hardware alarm.  (Default = 1.33.)</li>
+                        <li><b>Points to compute Cpk</b>
+                        </li>
+                        <li class="li_3"><b>Minimum</b> – Specify the minimum number of data points (boards) needed for the software to begin calculating Cpk.</li>
+                        <li class="li_3"><b>Maximum</b> – This value is active ONLY when you deselect calculating over the entire “Population”. The Cpk value is instead calculated over a rolling window of data, only using up to the maximum data points at any given time.</li>
+                    </ul>
+                    <h3 class="Heading3">How the Software Calculates Cpk</h3>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000014a.png" />
+                    </p>
+                    <p class="Caption">Figure 7: How WPI calculates Cpk</p>
+                    <p>&#160;</p>
+                    <p>Values used for the spec limits and the data are translated in terms of the Process Window Index.</p>
+                    <p>&#160;</p>
+                    <p>Here is a simple example.&#160; Let us set the Points to Compute Cpk to 5, and the five PWI values are as follows: 68%, 88%, 70%, 64%, and 65%.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000014a1.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>By definition, the overall PWI is always positive and the limit is always 100%.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000014a2.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>So, while the worst PWI is 88%, the Cpk is 1.10 which is below the typical target minimum of 1.33.&#160; This tells us that the chance that the process drift out of spec is too high and this process should be improved.</p>
+                    <p>&#160;</p>
+                    <p>Here is five more sample PWIs: 91%, 91%, 92%, 89%, and 90%.</p>
+                    <p>&#160;</p>
+                    <p>
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000014a3.png" />
+                    </p>
+                    <p>Even though every PWI in the second list is considerable higher/worse than the worst PWI in the first list, the Cpk is a very good 3.07.  Such a high Cpk indicates that there is very little chance this process will drift out of spec.  The reason second process is better than the first is because the second process has very little variation in it.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Copy Data to A Network</h3>
+                    <p>The <i>Copy to Network</i> tool enables automatic copying of all WPI files and data to a network location for backup or archival purposes.  When you click the check box, a separate application launches, and an icon appears in the system tray area.  Right click, and then choose <i>Settings</i> to configure the <i>CopyToNetwork</i> settings.</p>
+                    <p>&#160;</p>
+                    <p class="p_12">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300001C1.png" style="height: 192px;width: 232px;" class="img_2" />
+                    </p>
+                    <p class="Caption">Figure 8: CopyToNetwork software tool screen</p>
+                    <p>&#160;</p>
+                    <p>Select the folders and/or data to be copied and then enter or browse to the network location.  You must enter a valid network path.  Click the Save and Start button to begin copying the selected files and folders to selected network location.</p>
+                    <p>&#160;</p>
+                    <p>The software will prompt you to either, copy all the data now or save the settings without copying the data.</p>
+                    <p>&#160;</p>
+                    <p class="p_12">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300001D1.png" style="height: 72px;width: 310px;" class="img_2" />
+                    </p>
+                    <p class="Caption">Figure 9: CopyToNetwork message</p>
+                    <p style="margin-bottom: 5px;">&#160;</p>
+                    <p style="margin-bottom: 5px;"><b>Yes</b> – The selected data is copied to the selected network location and the settings are saved.</p>
+                    <p style="margin-bottom: 5px;"><b>No</b> – The settings are saved, but no data is copied.</p>
+                    <p style="margin-bottom: 5px;">&#160;</p>
+                    <p style="margin-bottom: 5px;"><b>Notes:</b>
+                    </p>
+                    <ul>
+                        <li style="margin-bottom: 5px;">If the network location is not available, is an invalid path, or the network is disconnected, WPI temporarily writes the selected data to the C:\WPI\_Data_Backup_ folder until the network path or connection has been reestablished.</li>
+                    </ul>
+                    <ul>
+                        <li style="margin-bottom: 5px;">The <i>CopyToNetwork</i> tool launches automatically as long as the Copy to Network option is checked in the Global Preferences-WPI tab.</li>
+                    </ul>
+                    <ul>
+                        <li style="margin-bottom: 5px;">Whenever any selected folder is updated with new/modified information, the new information is automatically backed up to the network location without any further user interaction.</li>
+                    </ul>
+                    <h2 class="Heading2"><a name="Disable_Alarm_tab"></a>Disable Alarm Tab</h2>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000015.png" style="width: 528px;height: 443px;" />
+                    </p>
+                    <p class="Caption">Figure 10:  Disable Alarm Tab</p>
+                    <p>&#160;</p>
+                    <p>By default, WPI software provides many on-screen notifications and alarm relay signals to help keep your process within spec and your production flowing.&#160; Selecting the <span class="span_6">Disable Alarm</span> tab displays a matrix of options to let you <span class="span_6">selectively disable</span> any alarm, warning, or relay signal <span class="span_6">that does not suit your workflow</span>.</p>
+                    <p>&#160;</p>
+                    <p>The column of checkboxes under <span class="span_6">Screen Alarm</span> lets you specify when alarms and warnings appear on your monitor.&#160; The checkboxes under Alarm Relay let you specify the conditions under which an DAU/eTPU signal energizes the alarm relay to let it power an audible or light indicator or to stop an infeed conveyor.&#160; </p>
+                    <p>&#160;</p>
+                    <p>NOTE: For some alarms, if you disable a <i>Screen Alarm</i> selection, but leave the corresponding <i>Alarm Relay</i> selection active, you will have no way of acknowledging the alarm condition. This type of configuration is NOT recommended.
+                    </p>
+                    <p>&#160;</p>
+                    <p>Clicking the top <span class="span_6">Select All</span> checkboxes selects or deselects all of the options in the column below.  Toggling Select All resets the options to let you more easily choose individual items.</p>
+                    <p>&#160;</p>
+                    <table class="table_1">
+                        <col style="width: 298pt;" />
+                        <col style="width: 181pt;" />
+                        <tr>
+                            <td class="td_2">
+                                <p class="p_11">A checkbox at the bottom of the screen lets you turn off the crystal ball graphic that provides a color-coded status during Virtual Profiling.</p>
+                            </td>
+                            <td class="td_2">
+                                <p>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000016.png" style="width: 30px;height: 44px;" />&#160; <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000017.png" style="width: 31px;height: 45px;" />&#160; <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000018.png" style="width: 30px;height: 44px;" />&#160; <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000019.png" style="width: 30px;height: 44px;" /></p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Barcode_tab"></a>Barcode Tab</h2>
+                    <p class="p_3">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000020.png" style="width: 488px;height: 408px;" />
+                    </p>
+                    <p class="Caption">Figure 11: Barcode Option Tab</p>
+                    <p class="Caption">&#160;</p>
+                    <p><span class="span_7">Process Control</span> – Enable or disable the <i>Process Control</i> barcode feature.  The feature allows control of the process by comparing the barcode string of a product to the corresponding process currently running.  It ensures that the product matches the process.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: left;"><span class="span_7">Process Traceability</span> – Enable or disable the <i>Process Traceability</i> barcode feature.  This feature links each product’s profile data with its barcode.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Note:</span> When both Process Control and Traceability are selected, radio buttons appear that let you specify using <i>one or two</i> scanners, together with fields for entering identifying prefixes for the scanners.  The feature enables the choice of applying traceability at the machine entrance or exit.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Scanner Prefix</span> – If you selected the option for 2 scanners, a text entry box displays allowing you to enter the predefined prefix number to identify each barcode scanner.  The software uses this prefix to determine which scan goes to which feature—process control or traceability.  The prefix is programmed using the barcode manufactures software program.  Contact the barcode scanner manufacture for more information.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Missing Barcode Alarm</span> – This option can be enabled or disabled when the Traceability (Exit) function is selected.  The software uses the board sensor to track product location in the machine.  If the board sensor detects a product entering the machine, but the barcode reader doesn’t read its code, the system can activate a software or hardware alarm.  The Traceability (Exit) function also requires entry of the Distance from Board Sensor to TraceabilityBarcodeReader value.</p>
+                    <p>&#160;</p>
+                    <p><span class="span_7">Distance from Board Sensor to TraceabilityBarcodeReader</span> – Measure and enter the distance between the board sensor and the Traceability Barcode Reader when installed at the machine exit in this field.  The software uses this measurement to track product position so it can associate the correct board when the barcode is scanned.</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
