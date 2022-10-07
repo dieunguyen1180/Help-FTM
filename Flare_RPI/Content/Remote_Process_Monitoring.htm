@@ -28,27 +28,29 @@
                     <p>RPM is comprised of three main software applications, and one optional software component:</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_1">
-                        <li class="ListNumber">RPI software: <br /><span style="font-weight: normal;"><span style="font-size: 10pt;">The RPM for the RPI data is a dongle-protected software option.&#160; This software runs on the RPI system on a computer at the oven.&#160; RPM’s main function is to send data over a network to the KIC Server software.</span></span><br style="font-weight: normal;font-size: 10pt;" /><span style="font-weight: normal;"><span style="font-size: 10pt;">While RPM is enabled, a separate application called WatchDog runs in the background continuously monitoring the connection between each RPI system and the KIC Server(s).</span></span></li>
+                        <li class="ListNumber" style="font-size: 10pt;">RPI software: 
+                            <br /><span style="font-size: 10pt; font-weight: normal;">The RPM for the RPI data is a dongle-protected software option.&#160; This software runs on the RPI system on a computer at the oven.&#160; RPM’s main function is to send data over a network to the KIC Server software. While RPM is enabled, a separate application called WatchDog runs in the background continuously monitoring the connection between each RPI system and the KIC Server(s).</span></li>
                     </ol>
                     <p class="ListContinue">&#160;</p>
                     <ol start="2" class="ol_1">
-                        <li class="ListNumber">KIC Server software: <br /><span style="font-size: 10pt; font-weight: normal;">The KIC Server software is installed onto a computer or drive on the network and acts as a host for all RPI systems running on the network with the RPM output.&#160; It automatically connects to all the RPIs that are running RPM and passes on the data to any authorized computer on the LAN that is properly logged on.&#160; A maximum of 100 ovens per KIC Server is possible.&#160; The KIC Server has a setup menu for creating and editing user names and passwords for KIC Viewer users.</span></li>
+                        <li class="ListNumber" style="font-size: 10pt;">KIC Server software: 
+                            <br /><span style="font-size: 10pt; font-weight: normal;">The KIC Server software is installed onto a computer or drive on the network and acts as a host for all RPI systems running on the network with the RPM output.&#160; It automatically connects to all the RPIs that are running RPM and passes on the data to any authorized computer on the LAN that is properly logged on.&#160; A maximum of 100 ovens per KIC Server is possible.&#160; The KIC Server has a setup menu for creating and editing user names and passwords for KIC Viewer users.</span></li>
                     </ol>
                     <p class="ListContinue">&#160;</p>
                     <ol start="3" class="ol_1">
-                        <li class="ListNumber">KIC Viewer software: <br /><span style="font-size: 10pt; font-weight: normal;">The KIC Viewer is installed on any remote computer on the network (i.e. at your desk) and is used to view the data from all RPI systems connected to the KIC Server.&#160; This is done by logging on to the KIC Server.</span></li>
+                        <li class="ListNumber" style="font-size: 10pt;">KIC Viewer software: <br /><span style="font-size: 10pt; font-weight: normal;">The KIC Viewer is installed on any remote computer on the network (i.e. at your desk) and is used to view the data from all RPI systems connected to the KIC Server.&#160; This is done by logging on to the KIC Server.</span></li>
                     </ol>
                     <p class="ListContinue">&#160;</p>
                     <ol start="4" class="ol_1">
-                        <li class="ListNumber">Win VNC: <br /><span style="font-size: 10pt; font-weight: normal;">Win VNC is a third party software application that allows you to remotely control, or view the history for any RPI client PC on the same LAN.&#160; This can be useful for clearing alarms, loading recipes, and system administration.</span></li>
+                        <li class="ListNumber" style="font-size: 10pt;">Win VNC: <br /><span style="font-size: 10pt; font-weight: normal;">Win VNC is a third party software application that allows you to remotely control, or view the history for any RPI client PC on the same LAN.&#160; This can be useful for clearing alarms, loading recipes, and system administration.</span></li>
                     </ol>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <p class="p_57">In full operation, the combined software and systems function as follows: (See Figure 120.)</p>
+                    <p class="p_57">In full operation, the combined software and systems function as follows: (See Figure 108.)</p>
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000D7.png" style="width: 500px;height: 371px;" />
                     </p>
-                    <p class="Caption">Figure 120: RPM functional diagram</p>
+                    <p class="Caption">Figure 108: RPM functional diagram</p>
                     <p>&#160;</p>
                     <ul class="ul_2">
                         <li class="ListBullet2_3">Each RPI system at the reflow or cure oven runs in Virtual Profiling mode, monitoring the process and giving real-time profile/process data for each production board.  The Virtual Profile data is stored locally on the RPI client PC.</li>
@@ -178,20 +180,20 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                         <tbody>
                             <tr>
                                 <td>
-                                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server.  See Figure 121.</p>
+                                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server.  See Figure 109.</p>
                                 </td>
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/image82.png" />
-                                    <p style="text-align: center;">Figure 121</p>
+                                    <p style="text-align: center;">Figure 109</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections.  See Figure 122.</p>
+                                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections.  See Figure 110.</p>
                                 </td>
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/image83.png" />
-                                    <p>Figure 122</p>
+                                    <p>Figure 110</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -199,7 +201,7 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                     <p>&#160;</p>
                     <p><b style="font-size: 12pt;">KIC Server Window Functions</b>
                     </p>
-                    <p class="p_6">The KIC Server window is shown in Figure 123.  The screen permits the following six functions:</p>
+                    <p class="p_6">The KIC Server window is shown in Figure 111.  The screen permits the following six functions:</p>
                     <ol start="1" class="ol_2">
                         <li class="ListNumber2_2">Add new users and passwords for KIC Viewers to connect.</li>
                     </ol>
@@ -268,7 +270,7 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E0.png" style="height: 359px;width: 336px;" class="img_2" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">123</span><span class="span_20">: KIC Server Window</span>
+                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">111</span><span class="span_20">: KIC Server Window</span>
                                 </p>
                             </td>
                         </tr>
@@ -296,8 +298,8 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                         <li class="li_4">Using the networking path – this method with allow you to view historical data via a separate application called “App for Viewer”. </li>
                         <li>Using a VNC application – this method will allow you to view historical data via the use of VNC software to directly access the RPI Client software/PC.</li>
                     </ol>
-                    <p class="Proctitle"><span style="text-decoration: none;">Use KIC Viewer by the Networking Path:</span>
-                    </p>
+                    <h3 class="Heading3">Use KIC Viewer by the Networking Path:
+                    </h3>
                     <table class="table_1">
                         <col style="width: 284pt;" />
                         <col style="width: 194pt;" />
@@ -332,8 +334,8 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p class="Proctitle"><span style="text-decoration: none;">Use KIC Viewer using VNC:</span>
-                    </p>
+                    <h3 class="Heading3">Use KIC Viewer using VNC:
+                    </h3>
                     <table class="table_1">
                         <col style="width: 284pt;" />
                         <col style="width: 194pt;" />
@@ -372,23 +374,23 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                     <p>To connect to a KIC Server, enter a valid user name and password from the KIC Viewer machine.&#160; See the <a href="Remote_Process_Monitoring.htm#KIC_Server" style="color: #0000cd; text-decoration: underline;">KIC Server</a> section for details.</p>
                     <p>&#160;</p>
                     <p><span class="span_7">Note</span>: It is very helpful to have the IP address of the PC running the KIC Server application as this information is required each time a KIC Viewer connects to a KIC Server.</p>
-                    <p class="Proctitle"><span style="text-decoration: none;">Launch the Application:</span>
-                    </p>
+                    <h3 class="Heading3">Launch the Application:
+                    </h3>
                     <ol>
                         <li>From the Windows desktop, click: Start » Programs » KIC » KIC Viewer</li>
                         <li>From Windows Explorer, open C:\KIC Viewer\KICViewer.exe</li>
-                        <li>Enter the KIC Server IP address, a valid user name and password.  See Figure 124.</li>
+                        <li>Enter the KIC Server IP address, a valid user name and password.  See Figure 112.</li>
                     </ol>
                     <p style="text-align: center;">
                         <img src="Resources/Images/image84.png" />
                     </p>
-                    <p style="text-align: center;">Figure 124: KIC Viewer – Connect</p>
+                    <p style="text-align: center;">Figure 112: KIC Viewer – Connect</p>
                     <p>&#160;</p>
                     <p>The <i>KIC Viewer</i> main screen with its toolbar menu appears:</p>
                     <p class="Figure">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000E3.png" style="height: 170px;width: 394px;" class="img_1" />
                     </p>
-                    <p class="Caption">Figure 125: KIC Viewer – Main Screen</p>
+                    <p class="Caption">Figure 113: KIC Viewer – Main Screen</p>
                     <h3 class="Heading3">The KIC Viewer Toolbar Button Menu</h3>
                     <table align="center" class="table_2">
                         <col style="width: 216pt;" />
@@ -432,29 +434,28 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                     <h4 class="Heading4">Configuration</h4>
                     <ol>
                         <li>Reload the configuration – This feature manually reloads the configuration in the event you changes the configuration without exiting the KIC Viewer software.<br /><br /></li>
-                        <li>Oven selection – Allows you to turn On/Off the ovens to view.  See Figure 126.</li>
+                        <li>Oven selection – Allows you to turn On/Off the ovens to view.  See Figure 114.</li>
                     </ol>
                     <p>&#160;</p>
                     <p class="Figure">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F2.png" style="width: 509px;height: 430px;" />
                     </p>
-                    <p class="Caption">Figure 126: KIC Viewer – Activate/Deactivate Ovens</p>
+                    <p class="Caption">Figure 114: KIC Viewer – Activate/Deactivate Ovens</p>
                     <p>&#160;</p>
                     <h3 class="Heading3">Icon View</h3>
-                    <p>The Icon view provides the oven name, product name, Process Window Index (PWI) value, Cpk value, and alarm state for each product as they exit the oven with RPI.  The alarm states are color-coded (green, yellow, red) in accordance with the standard RPI alarm categories.  This information is organized as a box per oven.  See Figure 127.</p>
+                    <p>The Icon view provides the oven name, product name, Process Window Index (PWI) value, Cpk value, and alarm state for each product as they exit the oven with RPI.  The alarm states are color-coded (green, yellow, red) in accordance with the standard RPI alarm categories.  This information is organized as a box per oven.  See Figure 115.</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F3.png" style="width: 508px;height: 384px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F3.png" style="width: 567px;height: 428px;" />
                     </p>
-                    <p class="Caption">Figure 127:7 KIC Viewer – Icon View</p>
+                    <p class="Caption">Figure 115: KIC Viewer – Icon View</p>
                     <p>&#160;</p>
-                    <p>A grey oven box can indicate there is a problem with th\e oven:</p>
+                    <p>A grey oven box can indicate there is a problem with the oven:</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_2">
                         <li class="ListNumber2">The RPI client PC is no longer connected to the KIC Server application.<br />As soon as the RPI client PC begins running Virtual Profiling again, the oven box will return either green, yellow, or red based on the current conditions in that oven.</li>
+                        <br />If the KIC Server application was closed, each KIC Viewer will wait until the KIC Server is launched again.&#160; If for any reason the KIC Viewer does not automatically reconnect, select Connect from the main menu, and enter a valid user name and password to reconnect.
                     </ol>
-                    <p class="ListParagraph">&#160;</p>
-                    <p class="ListParagraph">If the KIC Server application was closed, each KIC Viewer will wait until the KIC Server is launched again.&#160; If for any reason the KIC Viewer does not automatically reconnect, select Connect from the main menu, and enter a valid user name and password to reconnect.</p>
                     <p class="ListParagraph">&#160;</p>
                     <ol start="2" class="ol_2">
                         <li class="ListNumber2">The RPI client PC is no longer running Virtual Profiling</li>
@@ -476,9 +477,9 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                                 <h4 class="Heading4">View History Display</h4>
                                 <p>Only the current product folder appears.</p>
                                 <p>&#160;</p>
-                                <p>If you want to see all products profiled on this oven, then click on the “Browse” button (top right corner).  See Figure 128.</p>
+                                <p>If you want to see all products profiled on this oven, then click on the “Browse” button (top right corner).  See Figure 116.</p>
                                 <p>&#160;</p>
-                                <p>Click <b>OK</b> in the pop up box asking to select a working folder.  Then all of product names appears as shown in Figure 128.</p>
+                                <p>Click <b>OK</b> in the pop up box asking to select a working folder.  Then all of product names appears as shown in Figure 116.</p>
                                 <p>&#160;</p>
                                 <p>Click on the RPI main screen button to exit View History mode.</p>
                                 <p>&#160;</p>
@@ -487,12 +488,12 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F4.png" style="width: 345px;height: 245px;" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">128</span><span class="span_20">: KIC Profiler Explorer via KIC Viewer</span>
+                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">116</span><span class="span_20">: KIC Profiler Explorer via KIC Viewer</span>
                                 </p>
                             </td>
                         </tr>
                     </table>
-                    <p>The history view provides all the standard RPI information such as all the production event logs, production run data such as statistics, and basic SPC graphs.  See Figure 129 thru Figure 132.</p>
+                    <p>The history view provides all the standard RPI information such as all the production event logs, production run data such as statistics, and basic SPC graphs.  See Figure 117 thru Figure 120.</p>
                     <table style="width: 100%;">
                         <col />
                         <tbody>
@@ -513,7 +514,7 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                         <tr>
                             <td class="td_29">
                                 <p>&#160;</p>
-                                <p>Right-click on an oven box, a menu appears.  Select Remote Control RPI PC.  A password dialog box appears.  Enter the VNC Server password.  See Figure 133.</p>
+                                <p>Right-click on an oven box, a menu appears.  Select Remote Control RPI PC.  A password dialog box appears.  Enter the VNC Server password.  See Figure 121.</p>
                                 <p>&#160;</p>
                                 <p>As long the RPI, KIC Server, KIC Viewer and VNC Server software are properly configured, you will have direct-remote control of the selected RPI client PC via VNC Viewer software application.</p>
                                 <p>&#160;</p>
@@ -522,7 +523,7 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                                 <p class="p_3">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000F9.png" style="width: 227px;height: 83px;" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">133</span><span class="span_20">: VNC Authentication</span>
+                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">121</span><span class="span_20">: VNC Authentication</span>
                                 </p>
                                 <p class="p_3">&#160;</p>
                             </td>
@@ -530,75 +531,76 @@ LON Oven ID can be left blank, as the <i>KIC Server</i> software will automatica
                         <tr>
                             <td class="td_29">
                                 <p>&#160;</p>
-                                <p>If the VNC Server application is not running on the RPI client PC, a VNC error message appears stating, “Could not connect to KIC Server”.  See Figure 134.</p>
+                                <p>If the VNC Server application is not running on the RPI client PC, a VNC error message appears stating, “Could not connect to KIC Server”.  See Figure 122.</p>
                             </td>
                             <td class="td_29">
                                 <p class="p_3">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FA.png" style="width: 201px;height: 106px;" class="img_2" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">134</span>
+                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">122</span>
                                 </p>
                             </td>
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p>
-                    </p>
+                    <p>&#160;</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FBa.png" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FBa.png" style="width: 507px;height: 418px;" />
                     </p>
-                    <p class="Caption">Figure 135: Remote Control screen Shot</p>
+                    <p class="Caption">Figure 123: Remote Control screen Shot</p>
                     <p>&#160;</p>
                     <p>To end Remote Control and return to the KIC Viewer application, manually close the VNC Viewer software application.</p>
                     <p>&#160;</p>
                     <h3 class="Heading3">Chart View</h3>
-                    <p>The chart view displays the PWI value for each of the last 100 products processed through each oven/ RPI system.  See Figure 136.</p>
+                    <p>The chart view displays the PWI value for each of the last 100 products processed through each oven/ RPI system.  See Figure 124.</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FC.png" style="height: 354px;width: 465px;" class="img_2" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FC.png" style="width: 503px;height: 382px;" class="img_2" />
                     </p>
-                    <p class="Caption">Figure 136: KIC Viewer – Chart View</p>
+                    <p class="Caption">Figure 124: KIC Viewer – Chart View</p>
                     <p>&#160;</p>
-                    <p>In the chart view, right click on an oven box to display a full-screen chart for that oven.  See Figure 137.</p>
+                    <p>In the chart view, right click on an oven box to display a full-screen chart for that oven.  See Figure 125.</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FD.png" style="height: 354px;width: 465px;" class="img_2" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000FD.png" style="width: 500px;height: 380px;" class="img_2" />
                     </p>
-                    <p class="Caption">Figure 137: KIC Viewer – Full-screen oven chart view</p>
+                    <p class="Caption">Figure 125: KIC Viewer – Full-screen oven chart view</p>
                     <p class="Caption">&#160;</p>
                     <p class="Caption">&#160;</p>
                     <p class="Caption" style="text-align: left;">&#160;</p>
                     <h3 class="Heading3">WinVNC</h3>
                     <p>Virtual Network Computing (VNC) is remote control software that allows you to view and interact with another computer anywhere on a local network.  The two computers do not even have to be the same type or have the same operating system.  VNC also has the capability to remotely control any RPI client PC.</p>
                     <p>&#160;</p>
-                    <p>WinVNC is a third party software application that is not distributed by KIC.  VNC software can be downloaded from the internet at the following address: <MadCap:shortcut path="http://www.realvnc.com/download.html" parameters="" class="shortcut_1">http://www.realvnc.com/download.html</MadCap:shortcut></p>
+                    <p>WinVNC is a third party software application that is not distributed by KIC.  VNC software can be downloaded from the internet.</p>
                     <p>&#160;</p>
                     <p>VNC software contains multiple applications including VNC Server.  Run VNC Server on the RPI client PC while Virtual Profiling is running in order to view historical data or remotely control any RPI client PC via the KIC Viewer application.</p>
                     <p>&#160;</p>
-                    <p>A VNC’s icon appears on the bottom right corner of the monitor.  See Figure 138.</p>
+                    <p>A VNC’s icon appears on the bottom right corner of the monitor.  See Figure 126.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000DCa.png" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000DCa.png" style="width: 159px;height: 35px;" />
                     </p>
-                    <p style="text-align: center;">Figure 138: VNC task tray icon</p>
+                    <p style="text-align: center;">Figure 126: VNC task tray icon</p>
                     <p style="text-align: center;">&#160;</p>
                     <h3 class="Heading3">Modify VNC properties:
                     </h3>
-                    <table style="width:60%">
+                    <table >
+                        <col style="width: 350px;" />
+                        <col />
                         <tr>
                             <td>
                                 <ol>
                                     <li>Double Click on the VNC icon.
 
-<br /><br />The Current User Properties screen (Figure 139) appears.
+<br /><br />The Current User Properties screen (Figure 127) appears.
 <br /><br /></li>
                                     <li>
 
 Enter a password for other computer to access this client PC.  (You are asked to enter this password each time any KIC Viewer attempts either Viewing History, or Remotely Controlling this RPI client PC)
 <br /><br /></li>
                                     <li>
-Click the OK button
+Click the <b>OK</b> button
 </li>
                                 </ol>
                             </td>
@@ -606,7 +608,7 @@ Click the OK button
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/image85.png" />
                                 </p>
-                                <p style="text-align: center;">Figure 139: VNC Properties</p>
+                                <p style="text-align: center;">Figure 127: VNC Properties</p>
                             </td>
                         </tr>
                     </table>
@@ -620,7 +622,8 @@ Click the OK button
         <p><b>Note:</b> The software key must remain connected at all times during use for <i>O2 Live</i> capabilities to function.</p>
         <p>&#160;</p>
         <p><i>O2 Live</i> is an optional feature that allows you to display an O2 PPM measured value on a profile, or Virtual Profile data. <i>O2 Live</i> is not an oxygen analyzer, but an option that allows for the output from a user’s existing analyzer to be read in and displayed by the RPI software. An external interface device connects between the output of the oxygen analyzer, and the PC (USB port) running the RPI software (<i>See <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual</MadCap:shortcut> for more details about the interface device</i>). This O2 PPM value is available in the following areas of the software:</p>
-        <ul style="list-style-type: square;">
+        <p>&#160;</p>
+        <ul class="Square">
             <li>Baseline Profile</li>
             <li>Virtual Profile (Live)</li>
             <li>Virtual Profile (Historical data)</li>
@@ -632,31 +635,33 @@ Click the OK button
         <h2 class="Heading2"><a name="Configuration"></a>Configuration
         </h2>
         <p style="text-align: center;">
-            <img src="Resources/Images/image86.png" />
+            <img src="Resources/Images/image86.png" style="width: 538px;height: 175px;" />
         </p>
-        <p style="text-align: center;">Figure 140: O2 Live Configuration</p>
+        <p class="Caption">Figure 128: O2 Live Configuration</p>
         <p>&#160;</p>
         <ol>
-            <li>With the KIC software shut down, in the C:\RPI folder, run the ConfigurationProgram.exe application and select the O2 PPM tab.</li>
+            <li>With the KIC software shut down, in the C:\RPI folder, run the <i>ConfigurationProgram.exe</i> application and select the ‘O2 PPM’ tab.</li>
             <li>Select “Enable O2 PPM Monitor”</li>
-            <li>From the Input Type drop-down menu, choose the option that corresponds with the type of output used on the customer’s oxygen analyzer.</li>
+            <li>From <i>Input Source</i> drop-down menu, choose the option that corresponds with your hardware.</li>
+            <li>From the <i>Input Type</i> drop-down menu, choose the option that corresponds with the type of output used on the customer’s oxygen analyzer.</li>
             <li>The Low and High values will correspond to the minimum and maximum range of the output; e.g. a Low of 0=0 volts, and a High of 500 equals 5 volts.</li>
-            <li>Click the Apply and OK buttons at the bottom of the Configuration Program to save changes and close.</li>
+            <li>Click the <i style="font-weight: bold;">Apply</i> and <i style="font-weight: bold;">OK</i> buttons at the bottom of the Configuration Program to save changes and close.</li>
             <li>Restart the RPI software and access the Global Preferences screen.</li>
         </ol>
-        <p style="text-align: center;">
+        <p>&#160;</p>
+        <p class="Caption">
             <img src="Resources/Images/image89.png" />
-            <br />Figure 141: O2 Sample Port Entry<br /><br /></p>
+            <br />Figure 129: O2 Sample Port Entry<br /><br /></p>
         <ol class="k" MadCap:continue="true">
             <li>Enter the measurement from the KIC Board Sensor to the point inside the oven tunnel where the O2 sampling port is located.</li>
         </ol>
         <p>&#160;</p>
         <p class="Figure">
             <img src="Resources/Images/image90.png" />
-            <br />Figure 142: O2 PPM Control Limits</p>
+            <br />Figure 130: O2 PPM Control Limits</p>
         <p>&#160;</p>
         <ol class="k" MadCap:continue="true">
-            <li>Select the Control Limits tab to specify the Warning/Alarm limits for the O2 PPM.</li>
+            <li>Select the <i>Control Limits</i> tab to specify the Warning/Alarm limits for the O2 PPM.</li>
         </ol>
         <ol style="list-style-type: lower-alpha;">
             <li class="li_3">You are able to set both minimum and maximum values limits for Warning and Alarm conditions</li>
@@ -669,29 +674,30 @@ Click the OK button
             <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014021.png" />
         </p>
         <ol start="9" MadCap:continue="true">
-            <li value="9">The checkboxes in the O2 column in Profile Explorer allow you to select by product, whether the O2 PPM values will be collected and displayed during VP.</li>
+            <li value="9">The checkboxes in the <i>O2</i> column in Profile Explorer allow you to select by product, whether the O2 PPM values will be collected and displayed during VP.</li>
         </ol>
         <p style="margin-left: 10px;">&#160;</p>
         <p>Below are the formulas used for calculating the O2 PPM value depending on type of analyzer output:</p>
         <p style="text-align: center;">
             <img src="Resources/Images/image91.png" />
-            <br />Figure 143: O2 PPM formulas</p>
+            <br />Figure 131: O2 PPM formulas</p>
         <p>&#160;</p>
         <h2 class="Heading2"><a name="Operation"></a>Operation
         </h2>
         <p>When the O2 feature is used, a “floating” window displays on the screen showing the measured value, and is color-coded based on the measured value:</p>
+        <p>&#160;</p>
         <p style="text-align: center;">
             <img src="Resources/Images/image92.png" />
-            <br />Figure 144: O2 PPM Floating Windows</p>
+            <br />Figure 132: O2 PPM Floating Windows</p>
         <p>&#160;</p>
         <p>Below are examples of the O2 PPM display in various areas of the software:</p>
         <p style="text-align: center;">
             <img src="Resources/Images/image93.png" />
-            <br />Figure 145: O2 PPM display-VP Graph</p>
+            <br />Figure 133: O2 PPM display-VP Graph</p>
         <p style="text-align: center;">&#160;</p>
         <p style="text-align: center;">
             <img src="Resources/Images/image94.png" />
-            <br />Figure 146: O2 PPM display-Charts Tab<br /><br /><img src="Resources/Images/image95.png" /><br />Figure 147: O2 PPM display-KIC Host screen</p>
+            <br />Figure 134: O2 PPM display-Charts Tab<br /><br /><img src="Resources/Images/image95.png" /><br />Figure 135: O2 PPM display-KIC Host screen</p>
         <p style="text-align: center;">&#160;</p>
         <p style="text-align: center;">&#160;</p>
         <h1 class="Heading1"><a name="VP_Idle_Mode"></a>VP Idle Mode (Optional)
@@ -699,50 +705,23 @@ Click the OK button
         <p>&#160;</p>
         <p><b>Note:</b> The software key must remain connected at all times during use for <i>VP Idle Mode</i> capabilities to function.</p>
         <p>&#160;</p>
-        <p>VP Idle Mode is an <i>optional</i> feature that allows the KIC software to automatically go into a type of “sleep –mode” during Virtual Profiling when the energy saving function of some newer ovens is in use. When energy savings features are enabled on the oven, the oven control software will typically modify several of the process parameters – such as conveyor speed, blower fan speed, and even zone setpoint temperatures. When this occurs, the KIC software would normally alarm on the detected changes to the process. Using VP Idle Mode allows the software to ignore those changes during energy saving periods, thus eliminating unnecessary warnings/alarms from being activated.</p>
+        <p><i>VP Idle Mode</i> is an <i>optional</i> feature that allows the KIC software to automatically go into a type of “sleep–mode” during Virtual Profiling when the energy saving function of some newer ovens is in use. When energy savings features are enabled on the oven, the oven control software will typically modify several of the process parameters – such as conveyor speed, blower fan speed, and even zone setpoint temperatures. When this occurs, the KIC software would normally alarm on the detected changes to the process. Using VP Idle Mode allows the software to ignore those changes during energy saving periods, thus eliminating unnecessary warnings/alarms from being activated.</p>
         <p>During VP Idle Mode, the crystal ball will be grey, the statistics chart will be blank, no VP data will be calculated, and no process related alarms or warnings will display or be recorded. When the entrance board sensor is triggered, the system will automatically exit Idle Mode and return to normal VP operation.</p>
         <p>&#160;</p>
         <h2 class="Heading2"><a name="Configuration_VP_Idle_Mode"></a>Configuration
         </h2>
-        <p>The feature is enabled by shutting down the software, running the ConfigurationProgram.exe (in the C:\RPI directory) and selecting “Use VP Idle Mode” in the area shown below, and entering the amount of time the oven should be empty before entering Idle Mode:</p>
+        <p>The feature is enabled by shutting down the software, running the ConfigurationProgram.exe (in the <i>C:\RPI directory</i>) and selecting “Use VP Idle Mode” in the area shown below, and entering the amount of time the oven should be empty before entering Idle Mode:</p>
         <p style="text-align: center;">
             <img src="Resources/Images/image132.png" />
-            <br />Figure 148: VP Idle Mode Configuration</p>
+            <br />Figure 136: VP Idle Mode Configuration</p>
         <p style="text-align: center;">&#160;</p>
         <p style="text-align: left;">&#160;</p>
         <p>When VP is running, there will be an additional button on the screen allowing you to manually Enter/Exit VP Idle Mode at any time:</p>
+        <p>&#160;</p>
         <p style="text-align: center;">
             <img src="Resources/Images/image133.png" />
         </p>
         <p style="text-align: left;">&#160;</p>
         <p style="text-align: center;">&#160;</p>
-        <h1 class="Heading1"><a name="Units_Per_Hour"></a>Units Per Hour
-        </h1>
-        <p>The Units Per Hour (UPH) function can display on the General Tab when VP is running, a count of how many boards (Units) have been processed in the last hour. The number automatically resets back to 0 at the top of the hour.</p>
-        <p style="text-align: center;">
-            <img src="Resources/Images/image97.png" />
-            <br />Figure 149: VP Idle Mode Configuration</p>
-        <p style="text-align: center;">&#160;</p>
-        <p style="text-align: center;">&#160;</p>
-        <h2 class="Heading2"><a name="Configuration_Units_Per_Hour"></a>Configuration
-        </h2>
-        <p>The feature is enabled by shutting down the software, running the ConfigurationProgram.exe (in the C:\RPI directory) and selecting “Enable” as shown below:</p>
-        <p style="text-align: center;">
-            <img src="Resources/Images/image134.png" />
-            <br />
-        </p>
-        <p>&#160;</p>
-        <h1 class="Heading1"><a name="Auto-VP"></a>Auto-VP
-        </h1>
-        <p>Auto-VP is an available feature that allows for an automated changeover process. Typically, during a product changeover, an Operator has to manually stop the currently running VP, then go into the oven software and select and load the correct oven recipe for the next product to be processed. Then they must go into the KIC software and select the corresponding product and load that VP. This can sometimes lead to the wrong selection being chosen by the user.</p>
-        <p>&#160;</p>
-        <p>Through the use of barcodes, MES control programs, or oven communication, the Auto-VP feature can eliminate the need for Operator intervention in the product changeover process. The proper oven recipe and corresponding VP is automatically loaded based on information sent to the software.</p>
-        <p>&#160;</p>
-        <p>There are multiple configurations of the Auto-VP feature depending on the capabilities and processes in place in the factory. Please contact KIC Tech Support to identify if this functionality can be implemented with your system.</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
     </body>
 </html>

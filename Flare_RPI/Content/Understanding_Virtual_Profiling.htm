@@ -9,11 +9,11 @@
             <tr>
                 <td>
                     <h1 class="Heading1"><a name="_Toc390343656"></a>Virtual Profiling</h1>
-                    <p><span class="span_6">Virtual Profiling</span> (VP) is a means of reliably predicting the thermal profile <span class="span_6">of every board in a production run</span> based on a comparison of real-time temperature and conveyor speed data against a <span class="span_6">baseline</span> profile established by an earlier profiler run through the oven.&#160; For a given product, this baseline needs to represent an optimum oven recipe with a good PWI value and a quality soldering result.&#160; </p>
+                    <p>Virtual Profiling (VP) is a means of reliably predicting the thermal profile <i>of every board in a production run</i> based on a comparison of real-time temperature and conveyor speed data against a <i>baseline</i> profile established by an earlier profiler run through the oven.  For a given product, this baseline needs to represent an optimum oven recipe with a good PWI value and a quality soldering result.</p>
                     <p>&#160;</p>
-                    <p>During the profiler run, RPI software simultaneously collects temperature data from the board and from the probes installed in the oven at product level. The software calculates a mathematical correlation between these temperature readings stores this data as part of the baseline profile.&#160; </p>
+                    <p>During the profiler run, RPI software simultaneously collects temperature data from the board and from the probes installed in the oven at product level. The software calculates a mathematical correlation between these temperature readings and stores this data as part of the baseline profile.</p>
                     <p>&#160;</p>
-                    <p>Once the baseline is established, the RPI software goes into monitoring mode, recording real-time belt speed and probe temperature data as a production run of similar boards passes through the oven.  Comparing real-time data to the baseline profile, RPI algorithms accurately extrapolate a simulated thermal profile for each board.  RPI updates and saves the VP profile data as each board exits the oven, creating a valuable quality assurance record of each production unit.</p>
+                    <p>Once the baseline is established, the RPI software goes into monitoring mode, recording real-time belt speed and probe temperature data as a production run of similar boards passes through the oven.  Comparing real-time data to the baseline profile, RPI algorithms accurately extrapolate a simulated thermal profile, or <i>Virtual Profile</i>, for each board.  RPI updates and saves this VP profile data as each board exits the oven, creating a valuable quality assurance record of each production unit.</p>
                     <p>&#160;</p>
                     <p>In monitoring mode, the software displays each board’s profile chart and a table of data based on its process window.&#160; Other screens show PWI and SPC control charts.&#160; When oven data varies significantly from the baseline profile, RPI displays appropriate warnings to system operators. </p>
                     <p>&#160;</p>
@@ -24,13 +24,13 @@
                     <ul class="ul_3">
                         <li class="ListBullet3_1" style="font-size: 10pt;">The PWI must be below the Maximum PWI to allow the VP value as set in Global Preferences.</li>
                         <li class="ListBullet3_1" style="font-size: 10pt;">The conveyor speed measured by the encoder must be within 20% of the specified conveyor speed.</li>
-                        <li class="ListBullet3_1" style="font-size: 10pt;">Probe temperatures must be valid; if any probe thermocouple reports a range of greater than 30<span class="span_11">°</span>Cbetween adjacent readings (every 2.5 seconds), the RPI software will consider them invalid.</li>
+                        <li class="ListBullet3_1" style="font-size: 10pt;">Probe temperatures must be valid; if any probe thermocouple reports a range of greater than 30<span class="span_11">°</span>C between adjacent readings (every 2.5 seconds), the RPI software will consider them invalid.</li>
                     </ul>
                     <p>If your profile meets the above criteria, it can work as a baseline profile.  The baseline profile will display differently in the Profile Explorer screen—the profile’s icon will have an overlying green VP.  <img src="Resources/Images/SFT-324000-000 RPI User Manual/06000073.png" style="width: 24px;height: 24px;" /></p>
                     <p>&#160;</p>
                     <p>If you suspect the current baseline profile needs replacement by a newer version that more closely matches current production conditions, the software lets you create a new baseline during ongoing production.  As long as this <i>verification profile</i> meets VP criteria, it can become the new baseline profile.&#160; See <a href="Monitoring_production_in_live_mode.htm#Verifying_the_Virtual" style="color: #0000ff; text-decoration: underline;">Verify the Virtual Profile</a>.</p>
                     <h3 class="Heading3"><a name="Integrate_Empty_Oven_Data"></a>Integrate Empty Oven Data</h3>
-                    <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <span class="span_6">board present</span> and <span class="span_6">board absent</span> states along the length of the probes.&#160; To obtain this data most efficiently, KIC recommends running the profiler board with similar <span class="span_6">boards </span><span class="span_6">moving ahead</span> <span class="span_6">of it </span><span class="span_6">and an empty conveyor </span><span class="span_6">behind</span><span class="span_6"> it</span><span class="span_6">.</span>&#160; The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.&#160; As the profiler board exits each oven zone, the probes can measure the temperature when a board is not present.&#160; The software can integrate this comparative data for a more accurate predictive capability.&#160; The oven should remain empty until the profiler board completely exits the process chamber.</p>
+                    <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <u>board present</u> and <span class="span_6">board absent</span> states along the length of the probes.&#160; To obtain this data most efficiently, KIC recommends running the profiler board with similar <span class="span_6">boards </span><span class="span_6">moving ahead</span> <span class="span_6">of it </span><span class="span_6">and an empty conveyor </span><span class="span_6">behind</span><span class="span_6"> it</span><span class="span_6">.</span>&#160; The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.&#160; As the profiler board exits each oven zone, the probes can measure the temperature when a board is not present.&#160; The software can integrate this comparative data for a more accurate predictive capability.&#160; The oven should remain empty until the profiler board completely exits the process chamber.</p>
                     <p>&#160;</p>
                     <p><span class="span_7">Note</span>: Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs.  A grey crystal ball indicates an unable to predict state.&#160; See <a href="Monitoring_production_in_live_mode.htm" style="color: #0000ff; text-decoration: underline;">Monitoring production in live mode</a>.</p>
                     <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load A Virtual Profile</h2>
@@ -98,13 +98,12 @@
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000082.png" style="width: 519px;height: 261px;" />
                     </p>
-                    <p class="p_3">&#160;</p>
                     <p>&#160;</p>
                     <p><span class="span_7">Note</span>: If your oven is capable of communicating with the RPI software, a dialog box will appear notifying you that Virtual Profile is starting and the oven recipe is changed automatically.</p>
                     <p>&#160;</p>
                     <p class="p_6">If your RPI software is not communicating directly with the oven controller, the software will display the baseline profile recipe.&#160; Make sure the oven is set to the exact recipe settings.</p>
                     <p class="p_6" style="text-align: center;">
-                        <img src="Resources/Images/image114.png" />
+                        <img src="Resources/Images/image114.png" style="width: 893px;height: 482px;" />
                     </p>
                     <p class="Caption">Figure 70: Profile Explorer – Start Virtual Profiling</p>
                     <p>&#160;</p>
@@ -115,6 +114,7 @@
                     <p class="Caption">Figure 71: Virtual Profiling – Oven Recipe Set Correctly</p>
                     <p>&#160;</p>
                     <p><span class="span_7">Note</span>: Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Using_the_Profile_Grouping_utility"></a>Use the Profile Grouping Utility</h2>
                     <p class="p_6">RPI includes a utility that lets you identify and group together different products that share the same thermal profile.&#160; For example, one might use a physically identical printed circuit board to manufacture many distinct product models.&#160; The manufacturer needs to specifically identify and track all the different models, but the thermal process specifications used to solder or cure them is identical throughout the product range.&#160; Once a successful process window setup is identified for one model, RPI lets you <span class="span_6">link</span> that setup with other models that can use the same process and thus save the time and cost of entering the same setup specifications repeatedly.&#160; In Virtual Profile mode, the baseline profile of a <span class="span_6">parent</span> <span class="span_6">product </span>can be matched to multiple <span class="span_6">child</span><span class="span_6"> models</span>, permitting smooth production transitions between models.&#160; </p>
                     <p class="p_3">
@@ -124,6 +124,7 @@
                     <p class="p_6">You enable the <span class="span_6">Profile Grouping</span> functionality by adjusting settings in the <span class="span_7">KIC2000UserSettings</span><span class="span_7">.kiccfg</span> file.&#160; Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
                     <p class="p_18"><span class="span_27">[</span>APPLICATION CONFIGURATIONS<span class="span_27">]</span></p>
                     <p class="p_40">EnableProfieGrouping=1</p>
+                    <p class="p_40">&#160;</p>
                     <h3 class="Heading3">Use Wildcard Characters to Identify Child Models</h3>
                     <p>Anticipating the need to group closely named product models, the software lets you substitute the asterisk (*) symbol as a universal <span class="span_6">wildcard</span> character when adding models to a group or linking them with a specific profile.&#160; You can use wildcards in any position within the model name string.</p>
                     <p class="Proctitle"><a name="Select_the_Grouping_tab"></a>
@@ -135,7 +136,7 @@
                             <td class="td_17">
                                 <p>&#160;</p>
                                 <ol start="1" class="ol_2">
-                                    <li class="ListParagraph">On the Profile Explorer screen, click the <span class="span_7">Profile Grouping Utility </span>button.</li>
+                                    <li class="ListNumber2">On the Profile Explorer screen, click the <span class="span_7">Profile Grouping Utility </span>button.</li>
                                 </ol>
                             </td>
                             <td class="td_17">
@@ -145,32 +146,30 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p class="p_41"><span class="span_6">The P</span><span class="span_6">rofile </span><span class="span_6">G</span><span class="span_6">rouping </span><span class="span_6">U</span><span class="span_6">tility</span><span class="span_6"> screen appears</span><span class="span_6">.</span>
-                    </p>
+                    <p class="ListParagraph_3">The <i>Profile Grouping Utility</i> screen appears.                    </p>
                     <p>&#160;</p>
                     <ol start="2" class="ol_2">
-                        <li class="ListParagraph">Select the <span class="span_7">Grouping</span> tab.</li>
+                        <li class="ListNumber2">Select the Grouping tab.
+                    </li>
                     </ol>
+                    <p class="ListParagraph_3">The Grouping tab screen appears, displaying a pull-down list of products that already have defined in-spec, baseline profiles:</p>
                     <p>&#160;</p>
-                    <p class="p_41"><span class="span_6">The G</span><span class="span_6">rouping tab </span><span class="span_6">screen appears</span><span class="span_6">, displaying a pull-down list of products that already have defined in-spec, baseline profiles</span><span class="span_6">:</span>
-                    </p>
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000087.png" style="height: 222px;width: 353px;" class="img_1" />
                     </p>
                     <p class="p_3">&#160;</p>
                     <ol start="3" class="ol_2">
-                        <li class="ListParagraph">From the <span class="span_7">Baseline Profile</span> list, select the product to which you want to link models.&#160; </li>
+                        <li class="ListNumber2">From the <span class="span_7">Baseline Profile</span> list, select the product to which you want to link models.&#160; </li>
                     </ol>
                     <p>&#160;</p>
                     <ol start="4" class="ol_2">
-                        <li class="ListParagraph">In the <span class="span_7">Add New Model</span> field, type in a model name (using wildcards as appropriate), and click the <span class="span_7">Add</span> button. </li>
+                        <li class="ListNumber2">In the <span class="span_7">Add New Model</span> field, type in a model name (using wildcards as appropriate), and click the <span class="span_7">Add</span> button. </li>
                     </ol>
                     <p>&#160;</p>
-                    <p class="p_18"><span class="span_6">The </span><span class="span_6">model name appears in the Linked Models list</span>
-                    </p>
+                    <p class="ListParagraph_3">The model name appears in the Linked Models list</p>
                     <p>&#160;</p>
                     <ol start="5" class="ol_2">
-                        <li class="ListParagraph">Repeat the steps for any additional models that you want to link to that baseline.</li>
+                        <li class="ListNumber2">Repeat the steps for any additional models that you want to link to that baseline.</li>
                     </ol>
                     <p>&#160;</p>
                     <p class="p_7"><span class="span_7">Note</span>: The <span class="span_7">Remove</span> button will delete any selected model that was mistakenly included in the list. </p>
@@ -188,7 +187,7 @@
                             <td class="td_17">
                                 <p>&#160;</p>
                                 <ol start="1" class="ol_2">
-                                    <li class="ListParagraph">On the Profile Explorer screen, click the <span class="span_7">Profile Grouping Utility </span>button.</li>
+                                    <li class="ListNumber2">On the Profile Explorer screen, click the <span class="span_7">Profile Grouping Utility </span>button.</li>
                                 </ol>
                             </td>
                             <td class="td_17">
@@ -198,24 +197,24 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p class="p_41"><span class="span_6">The P</span><span class="span_6">rofile </span><span class="span_6">G</span><span class="span_6">rouping </span><span class="span_6">U</span><span class="span_6">tility screen appears.</span>
+                    <p class="ListParagraph_3"><span class="span_6">The P</span><span class="span_6">rofile </span><span class="span_6">G</span><span class="span_6">rouping </span><span class="span_6">U</span><span class="span_6">tility screen appears.</span>
                     </p>
                     <p>&#160;</p>
                     <ol start="2" class="ol_2">
-                        <li class="ListParagraph">Select the <span class="span_7">VP Load</span> tab.</li>
+                        <li class="ListNumber2">Select the <span class="span_7">VP Load</span> tab.</li>
                     </ol>
                     <p>&#160;</p>
-                    <p class="p_41">The <i>VP Load</i> tab appears:</p>
+                    <p class="ListParagraph_3">The <i>VP Load</i> tab appears:</p>
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000088.png" style="height: 218px;width: 346px;" class="img_1" />
                     </p>
                     <p>&#160;</p>
                     <ol start="3" class="ol_2">
-                        <li class="ListParagraph">In the <span class="span_7">Load and Start VP for</span> field, either type in a model number or use a barcode scanner to input an identification string.</li>
+                        <li class="ListNumber2">In the <span class="span_7">Load and Start VP for</span> field, either type in a model number or use a barcode scanner to input an identification string.</li>
                     </ol>
                     <p>&#160;</p>
                     <ol start="4" class="ol_2">
-                        <li class="ListParagraph_2"><a name="Press_the_Enter_key_to_start"></a>Press the <span class="span_7">Enter</span> key to start the software search for linked pairs of product baselines and models:</li>
+                        <li class="ListNumber2"><a name="Press_the_Enter_key_to_start"></a>Press the <span class="span_7">Enter</span> key to start the software search for linked pairs of product baselines and models:</li>
                     </ol>
                     <table style="width: 80%;">
                         <tr>
@@ -275,20 +274,20 @@
                     </p>
                     <p>&#160;</p>
                     <ol start="6" class="ol_2">
-                        <li class="ListParagraph">Input the model number and select a product baseline profile from the <span class="span_7">Product Name</span> pull-down list.</li>
+                        <li class="ListNumber2">Input the model number and select a product baseline profile from the <span class="span_7">Product Name</span> pull-down list.</li>
                     </ol>
                     <p class="p_7">&#160;</p>
                     <ol start="7" class="ol_2">
-                        <li class="ListParagraph">Click the green check (OK) button.</li>
+                        <li class="ListNumber2">Click the green check (OK) button.</li>
                     </ol>
                     <p>&#160;</p>
-                    <p class="Procresult_1">The VP Load screen reappears with the newly linked product/model pair displayed:</p>
+                    <p class="ListParagraph_3">The VP Load screen reappears with the newly linked product/model pair displayed:</p>
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008C1.png" style="height: 201px;width: 318px;" class="img_1" />
                     </p>
                     <p>&#160;</p>
                     <ol start="8" class="ol_2">
-                        <li class="ListParagraph">Click the VP Start button to begin Virtual Profiling with the selected model.</li>
+                        <li class="ListNumber2">Click the VP Start button to begin Virtual Profiling with the selected model.</li>
                     </ol>
                     <p>&#160;</p>
                     <h4 class="Heading4">View The Linked Model On Other Screens</h4>

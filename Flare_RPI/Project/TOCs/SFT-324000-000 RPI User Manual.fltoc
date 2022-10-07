@@ -215,9 +215,6 @@
       Title="HISTORICAL MODE - TROUBLESHOOTING TAB"
       Link="/Content/Monitoring_production_in_live_mode.htm#Virtual_Profiling3" />
     <TocEntry
-      Title="PRODUCTION REPORT"
-      Link="/Content/Monitoring_production_in_live_mode.htm#Production_Report" />
-    <TocEntry
       Title="BARCODE FUNCTIONS"
       Link="/Content/Monitoring_production_in_live_mode.htm#Barcodefunctions" />
     <TocEntry
@@ -346,14 +343,14 @@
   </TocEntry>
   <TocEntry
     Title="UNITS PER HOUR"
-    Link="/Content/Remote_Process_Monitoring.htm#Units_Per_Hour">
+    Link="/Content/Password_protection.htm#Units_Per_Hour">
     <TocEntry
       Title="CONFIGURATION"
-      Link="/Content/Remote_Process_Monitoring.htm#Configuration_Units_Per_Hour" />
+      Link="/Content/Password_protection.htm#Configuration_Units_Per_Hour" />
   </TocEntry>
   <TocEntry
     Title="AUTO-VP"
-    Link="/Content/Remote_Process_Monitoring.htm#Auto-VP"></TocEntry>
+    Link="/Content/Password_protection.htm#Auto-VP"></TocEntry>
   <TocEntry
     Title="PASSWORD PROTECTION"
     Link="/Content/Password_protection.htm" />
@@ -417,7 +414,10 @@
       Link="/Content/Troubleshooting.htm#Profiling_and_baseline" />
     <TocEntry
       Title="SYSTEM MESSAGE AND ALARMS"
-      Link="/Content/Troubleshooting.htm#System_message_alarms" />
+      Link="/Content/Troubleshooting.htm#System_message_alarms"></TocEntry>
+    <TocEntry
+      Title="ALARMS AND MESSAGES DURING VIRTUAL PROFILING"
+      Link="/Content/Troubleshooting.htm#Alarms_and_Messages_during_VP" />
   </TocEntry>
   <TocEntry
     Title="LIGHT TOWER"

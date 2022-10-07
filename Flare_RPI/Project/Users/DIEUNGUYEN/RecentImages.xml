@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UrlList>
+    <Url Source="Resources/Images/image152.png" />
     <Url Source="Resources/Images/FTM00017.png" />
     <Url Source="Resources/Images/FTM00016.png" />
     <Url Source="Resources/Images/FTM00015.png" />
@@ -19,5 +20,4 @@
     <Url Source="Resources/Images/image151.png" />
     <Url Source="Resources/Images/image150.png" />
     <Url Source="Resources/Images/image149.png" />
-    <Url Source="Resources/Images/image142.png" />
 </UrlList>

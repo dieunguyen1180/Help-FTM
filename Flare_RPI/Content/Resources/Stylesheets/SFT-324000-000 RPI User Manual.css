@@ -780,7 +780,7 @@ div.div_7
 
 li.li_3
 {
-	margin-left: 18pt;
+	margin-left: 14pt;
 }
 
 p.ListBullet_1_1
@@ -1507,7 +1507,7 @@ div.div_21
 li.li_4
 {
 	page-break-after: avoid;
-	margin-bottom: 6pt;
+	margin-left: 25pt;
 }
 
 span.PlainTextChar_2
@@ -3413,5 +3413,18 @@ ul.CircleL4 > li > ul > li > ul > li > ul > li::marker
 {
 	font-family: ;
 	content: '°';
+}
+
+ul.Square
+{
+	list-style-type: disc;
+	list-style-image: none;
+}
+
+ul.Square > li::marker
+{
+	font-family: ;
+	font-size: 12pt;
+	content: '▪';
 }
 

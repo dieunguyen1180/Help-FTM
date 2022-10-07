@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <p><a name="Production_Report"></a>Production Report</p>
+        <p>The RPI Production Report is an available feature of the software. Each time you stop a Virtual Profile, the software prompts you with the choice to view a Production Report with user selectable dates and range.  See Figure 98 </p>
+        <p>&#160;</p>
+        <p>To use this capability, you must first manually enable the function by browsing to the C:\RPI\Log\KIC2000ReadOnly.kiccfg file, and change the following line to =1</p>
+        <p>[REPORT_MANAGEMENT]</p>
+        <p>UseReportManagement=0</p>
+        <p>&#160;</p>
+        <p>The Production Report displays a DPMO (Defects Per Million Opportunities) chart and a Reflow Yield chart,  along with the details for each respective chart.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000B0a.png" />
+        </p>
+        <p class="Caption">Figure 98: Production Reports</p>
+        <h3 class="Heading3">Tips</h3>
+        <ul class="ul_3">
+            <li class="ListBullet2_1">The Production Report can be launched manually by locating and running the following file: <span style="font-family: Arial;">C:\RPI\Report\index.htm</span>.</li>
+        </ul>
+        <p class="ListContinue2">&#160;</p>
+        <ul class="ul_3">
+            <li class="ListBullet2_1">The Production Report requires Active-X so make sure your internet browser is set to allow Active-X content.</li>
+        </ul>
+        <p class="ListParagraph">&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Production Report Viewer </h3>
+        <p><b>Production report settings –</b> The Settings button displays a menu where you can enable or disable the view of each chart and set the limit values (red lines on graph -- See Figure 98).  Click on the “Setting” button to open the settings dialog.  See Figure 99</p>
+        <p class="Figure_1">
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000B1.png" style="height: 135px;width: 153px;" class="img_2" />
+        </p>
+        <p class="Caption">Figure 99: Production Report Settings</p>
+        <p>&#160;</p>
+        <p class="ListBullet_1"><span class="span_7">DPMO </span><span class="span_7">c</span><span class="span_7">hart</span> – Turns the display of the DPMO Chart On/Off.</p>
+        <p class="ListBullet_1">&#160;</p>
+        <p class="ListBullet_1"><span class="span_7">Limit </span><span class="span_7">l</span><span class="span_7">ine</span> – When DPMO Chart is enabled (On), sets the location of the DPMO Chart limit line (red line).</p>
+        <p class="ListBullet_1">&#160;</p>
+        <p class="ListBullet_1"><span class="span_7">Yield </span><span class="span_7">c</span><span class="span_7">hart</span> – Turns the display of the Yield Chart On/Off.</p>
+        <p class="ListBullet_1">&#160;</p>
+        <p class="ListBullet_1"><span class="span_7">Limit </span><span class="span_7">l</span><span class="span_7">ine</span> – When Yield Chart is enabled (On), sets the location of the Yield Chart limit line (red line).</p>
+        <p class="ListBullet_1">&#160;</p>
+        <p class="ListBullet_1"><span class="span_7">Save</span> – Click to save the settings and redisplay the graph(s) using those new settings.</p>
+        <p class="ListBullet_1">&#160;</p>
+        <p class="ListBullet_1"><span class="span_35">X</span> – Close the settings dialog without applying any changes.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">DPMO Chart</h3>
+        <p>Defects Per Million Opportunities (DPMO) is a measure of process performance that defines a defect as a nonconformance of a quality characteristic to its specification.  DPMO differs from defective Parts Per Million (PPM) in that it takes into account the possibility of multiple defects in one part.&#160; </p>
+        <p>&#160;</p>
+        <p class="Figure">
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000B2a.png" />
+        </p>
+        <p class="Caption">Figure 100: Production Reports – DPMO Chart</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p><span style="font-size: 16pt;"><span style="font-size: 14pt;">DPMO Chart Details</span></span>
+        </p>
+        <p>&#160;</p>
+        <p class="Figure">
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000B9a.png" />
+        </p>
+        <p class="Caption">Figure 101: Production Reports – DPMO Detail</p>
+        <p>&#160;</p>
+        <p>The Details for the DPMO Report are as follows (See Figure 101):</p>
+        <p class="p_27"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B3.png" style="width: 20px;height: 19px;" /></span><span class="span_21"> # Boards:</span><span class="span_22"> The number of units produced</span>
+        </p>
+        <p class="p_27"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B4.png" style="width: 20px;height: 19px;" /></span><span class="span_21"> # TC Points:</span><span class="span_22"> The number of thermocouple data points measured</span>
+        </p>
+        <p class="p_27"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B5.png" style="width: 20px;height: 19px;" /></span><span class="span_21"> # Profile Specs:</span><span class="span_22"> The number of profile specification data points measured</span>
+        </p>
+        <p class="p_27"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B6.png" style="width: 20px;height: 19px;" /></span><span class="span_21"> Total # Opportunities:</span><span class="span_22"> The number of opportunities for a defect</span><span class="span_22"> for all units produced</span>
+        </p>
+        <p class="p_27"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B7.png" style="width: 20px;height: 19px;" /></span><span class="span_21"> Total # Errors:</span><span class="span_22"> The number of defects (statistics that are out-of-spec)</span><span class="span_22"> for all units produced</span>
+        </p>
+        <p class="p_27"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B8.png" style="width: 20px;height: 19px;" /></span><span class="span_21"> DPMO:</span><span class="span_22"> Defects per million opportunities</span>
+        </p>
+        <h4 class="Heading4">DPMO Chart Formulas</h4>
+        <p>The formulas used in the DPMO Report are as follows:</p>
+        <p>&#160;</p>
+        <p class="p_27"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B6.png" style="width: 20px;height: 19px;" /></span><span class="span_22"> Total</span><span class="span_22"> Opportunities =</span><span class="span_22">﴾</span><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B3.png" style="width: 20px;height: 19px;" /></span><span class="span_22"> No. of Units</span><span class="span_22">﴿</span><span class="span_22">×</span><span class="span_22">﴾</span><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B4.png" style="width: 20px;height: 19px;" /></span><span class="span_22"> No. of TC Points</span><span class="span_22">﴿</span><span class="span_22">×</span><span class="span_22">﴾</span><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B5.png" style="width: 20px;height: 19px;" /></span><span class="span_22"> No. of Profile Specs</span><span class="span_22">﴿</span>
+        </p>
+        <p class="p_27"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B8.png" style="width: 20px;height: 19px;" /></span><span class="span_22"> DPMO = </span><span class="span_22">﴾</span><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B7.png" style="width: 20px;height: 19px;" /></span><span class="span_22">Total</span><span class="span_22"> Defects</span><span class="span_22">﴿</span><span class="span_36">¸</span><span class="span_22">﴾</span><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000B6.png" style="width: 20px;height: 19px;" /></span><span class="span_22">Total </span><span class="span_22">Opportunities</span><span class="span_22">﴿</span><span class="span_22">×</span><span class="span_22"> 1000000</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4 class="Heading4"><span style="font-size: 14pt;">DPMO Chart Settings - Select Report Start Date:</span>
+        </h4>
+        <ol start="1" class="ol_2">
+            <li class="li_6">Click the Date Icon to open the calendar, and select the year, month, and day.&#160; </li>
+            <li class="li_6">Select the number of days to include in the report.</li>
+            <li class="li_4">Click the refresh button to refresh the DPMO chart.</li>
+        </ol>
+        <p>
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000BA.png" style="width: 624px;height: 518px;" />
+        </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Viewing DPMO </span><span class="span_7">c</span><span class="span_7">hart </span><span class="span_7">d</span><span class="span_7">etails</span> – Using the pointer select the node or data point on the DPMO chart.&#160; The corresponding DPMO report data for the selected date appears.&#160; </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4 class="Heading4"><span style="font-size: 14pt;">DPMO Chart – Print</span>
+        </h4>
+        <table class="table_1">
+            <col style="width: 239pt;" />
+            <col style="width: 239pt;" />
+            <tr>
+                <td class="td_23">
+                    <ol start="1" class="ol_1">
+                        <li class="ListBullet2">Right-click within the chart to display a popup menu.&#160; See Figure 102.</li>
+                    </ol>
+                    <p class="ListNumber4">&#160;</p>
+                    <ol start="2" class="ol_1">
+                        <li class="ListBullet2">Select “Print DPMO chart”.</li>
+                    </ol>
+                    <p class="ListBullet">&#160;</p>
+                    <ol start="3" class="ol_1">
+                        <li class="ListBullet2">Click on the Printer icon <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000BB.png" style="width: 32px;height: 29px;" /> in the upper-right corner to print the chart. </li>
+                    </ol>
+                    <p>&#160;</p>
+                    <p class="ListBullet">&#160;</p>
+                </td>
+                <td class="td_23">
+                    <p class="ListBullet_5">&#160;</p>
+                    <p class="ListBullet_5">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000BC.png" style="height: 71px;width: 113px;" class="img_2" />
+                    </p>
+                    <p class="ListBullet_5"><span class="span_20">Figure </span><span class="span_20">102</span><span class="span_20"><br />Print DPMO Chart</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_23">
+                    <p class="Proctitle"><span style="text-decoration: none;">Print the DPMO Details:</span>
+                    </p>
+                    <p class="FigureFloat">&#160;</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListBullet2">Right-click within the details to display a popup menu.&#160; See Figure 103.<br /><br /></li>
+                        <li class="ListBullet2">Select “Print DPMO detail”.</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <ol start="3" class="ol_1">
+                        <li class="ListBullet2">Click on the Printer icon <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000BB.png" style="width: 32px;height: 29px;" /> in the upper-right corner to print the details. </li>
+                    </ol>
+                </td>
+                <td class="td_23">
+                    <p class="ListBullet_5">&#160;</p>
+                    <p class="ListBullet_5">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000BD.png" style="height: 73px;width: 114px;" class="img_2" />
+                    </p>
+                    <p class="FigureFloat">Figure 103<br />Print DPMO Details</p>
+                    <p class="ListBullet">&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p class="ListBullet">&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Reflow Yield Chart</h3>
+        <p>The Reflow Yield Chart measures the products defect rate.  Reflow Yield is a board level type of defect measurement.&#160; Five errors produced in any one board defines it as defective.  The yield appears as a percentage.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000BEa.png" />
+        </p>
+        <p class="Caption">Figure 104: Production Reports – Yield Chart</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4 class="Heading4"><span style="font-size: 14pt;">Reflow Yield Chart Details</span>
+        </h4>
+        <p>
+        </p>
+        <p class="Figure">
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000C2a.png" />
+        </p>
+        <p class="Caption">Figure 105: Production Reports – Yield Details</p>
+        <p>&#160;</p>
+        <p>The Details for the Reflow Yield Report are as follows (See Figure 105):</p>
+        <p>&#160;</p>
+        <p class="p_48"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000BF.png" style="width: 19px;height: 19px;" /></span><span class="span_21"> # Boards:</span><span class="span_22"> The number of units produced</span>
+        </p>
+        <p class="p_48"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000C0.png" style="width: 19px;height: 19px;" /></span><span class="span_21"> # Boards with error(s):</span><span class="span_22"> The number of defective units.&#160; Five out-of-spec statistics per unit = One defective unit.</span>
+        </p>
+        <p class="p_48"><span class="span_22"><img src="Resources/Images/SFT-324000-000 RPI User Manual/060000C1.png" style="width: 19px;height: 19px;" /></span><span class="span_21"> Yield:</span><span class="span_22"> The successful yield rate (non-defects) expressed as a percentage.</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4 class="Heading4"><span style="font-size: 14pt;">Reflow Yield Chart Settings - Select Report Start Date:</span>
+        </h4>
+        <ol start="1" class="ol_2">
+            <li class="li_6">Click the <span class="span_6">Date</span> Icon to open the calendar, and select the year, month, and day.&#160; </li>
+            <li class="li_6">Select the number of days to include in the report.</li>
+            <li class="li_7">Click the refresh button to refresh the <span class="span_6">Reflow Yield</span> chart.</li>
+        </ol>
+        <p>
+            <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000C3.png" style="width: 624px;height: 529px;" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4 class="Heading4"><span style="font-size: 14pt;"><span style="font-size: 12pt; font-weight: bold;">Reflow Yield – Print the Reflow Yield Chart</span></span>
+        </h4>
+        <table class="table_1">
+            <col style="width: 239pt;" />
+            <col style="width: 239pt;" />
+            <tr>
+                <td class="td_23">
+                    <ol start="1" class="ol_1">
+                        <li class="ListBullet2">Right-click within the chart to display a popup menu.&#160; See Figure 106.</li>
+                    </ol>
+                    <p class="ListBullet">&#160;</p>
+                    <ol start="2" class="ol_1">
+                        <li class="ListBullet2">Select “Print Yield chart”.</li>
+                    </ol>
+                    <p class="ListBullet">&#160;</p>
+                    <ol start="3" class="ol_1">
+                        <li class="ListBullet2">Click on the Printer icon <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000BB.png" style="width: 32px;height: 29px;" /> in the upper-right corner to print the chart. </li>
+                    </ol>
+                    <p class="ListBullet">&#160;</p>
+                </td>
+                <td class="td_23">
+                    <p class="ListBullet_5">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000C4.png" style="height: 71px;width: 115px;" class="img_2" />
+                    </p>
+                    <p class="ListBullet_5"><span class="span_20">Print Yield Chart</span><span class="span_20">Figure </span><span class="span_20">106</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_23">
+                    <p class="Proctitle"><span style="text-decoration: none; font-weight: bold;">Reflow Yield – Print the Reflow Yield Detail:</span>
+                    </p>
+                    <p class="FigureFloat">&#160;</p>
+                    <ol start="1" class="ol_1">
+                        <li class="ListBullet2">Right-click within the details to display a popup menu.&#160; See Figure 107.<br /><br /></li>
+                    </ol>
+                    <ol start="2" class="ol_1">
+                        <li class="ListBullet2">Select “Print Yield detail”.</li>
+                    </ol>
+                    <ol start="3" class="ol_1">
+                        <li class="ListBullet2">Click on the Printer icon <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000BB.png" style="width: 32px;height: 29px;" /> in the upper-right corner to print the details. </li>
+                    </ol>
+                </td>
+                <td class="td_23">
+                    <p class="ListBullet_5">&#160;</p>
+                    <p class="ListBullet_5">&#160;</p>
+                    <p class="ListBullet_5">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000C5.png" style="height: 72px;width: 115px;" class="img_2" />
+                    </p>
+                    <p class="FigureFloat">Print Yield Details Figure 107</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

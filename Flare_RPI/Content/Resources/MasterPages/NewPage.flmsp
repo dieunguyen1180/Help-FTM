@@ -3,12 +3,12 @@
     <head>
     </head>
     <body>
-        <table with="width: 400px">
-            <col style="width: 245px;" />
+        <table with="width: 400px" style="width: 295px;">
+            <col style="width: 288px;" />
             <tr>
                 <td with="width: 400px">
                     <div>
-                        <p class="Header"><span style="font-family: Arial;"><span style="color: #a9a9a9;">RPI User Manual - <span style="font-size: 9pt;">Version 3.9</span></span></span>
+                        <p class="Header"><span style="font-family: Arial;"><span style="color: #a9a9a9;">RPI User Manual - <span style="font-size: 9pt;">Version 3.11</span></span></span>
                         </p>
                     </div>
                     <MadCap:bodyProxy />
