@@ -103,7 +103,7 @@
       Title="PROFILE EXPLORER – VIRTUAL PROFILING"
       Link="/Content/Profile_Explorer.htm#Profile_Explorer_VP" />
     <TocEntry
-      Title="ACCESS HISTORY DATA BACKUP FILES"
+      Title="HISTORY DATA FILES"
       Link="/Content/Profile_Explorer.htm#Access_History_Data_Backup_Files" />
     <TocEntry
       Title="INSERT DATA FILES FROM AN OUTSIDE SOURCE"
@@ -185,22 +185,16 @@
     <TocEntry
       Title="ALARMS AND MESSAGES DURING VIRTUAL PROFILING"
       Link="/Content/Troubleshooting.htm#Alarms_Messages_During_VP" />
-    <TocEntry
-      Title="ETPU COMMUNICATION"
-      Link="/Content/Troubleshooting.htm#eTPU_Communication" />
-    <TocEntry
-      Title="ALARM#16 – MAXIMUM ALLOWABLE BACK-TO-BACK BOARDS HAS BEEN EXCEEDED"
-      Link="/Content/Troubleshooting.htm#Alarm_16" />
   </TocEntry>
   <TocEntry
     Title="COMMUNICATE WITH OVEN CONTROLLERS"
     Link="/Content/Software_operation_with_VAR_communication.htm">
     <TocEntry
+      Title="CONFIGURE SOFTWARE FOR OVEN COMMUNICATION"
+      Link="/Content/Software_operation_with_VAR_communication.htm#Configuring_software_for_oven_communication" />
+    <TocEntry
       Title="CONFIRM OVEN COMMUNICATIONS"
       Link="/Content/Software_operation_with_VAR_communication.htm#Confirm_communications" />
-    <TocEntry
-      Title="CONFIGURE SOFTWARE FOR OVEN COMMUNICATION"
-      Link="/Content/Software_operation_with_VAR_communication.htm#Software_configuration1" />
     <TocEntry
       Title="USE A BASE OVEN RECIPE WITH OVEN COMMUNICATION"
       Link="/Content/Software_operation_with_VAR_communication.htm#Baseline_recipe_explained" />
@@ -246,7 +240,7 @@
       Title="SWEET SPOT"
       Link="/Content/Understanding_the_software_options.htm#Sweet_Spot" />
     <TocEntry
-      Title="INDEX SCREEN AND PRODUCTION REPORTS"
+      Title="INDEX SCREEN"
       Link="/Content/Understanding_the_software_options.htm#Index_Screen_And_Production_Reports" />
     <TocEntry
       Title="STATISTICAL PROCESS CONTROL CHARTS"
@@ -304,7 +298,7 @@
       Link="/Content/Using_Auto_Focus.htm#Auto_Focus_Run"></TocEntry>
     <TocEntry
       Title="AUTO-FOCUS, PRODUCT DIMENSIONS"
-      Link="/Content/Using_Auto_Focus.htm#Auto_Focus_Product" />
+      Link="/Content/Using_Auto_Focus.htm#Auto_Focus_product" />
     <TocEntry
       Title="AUTO-FOCUS, CONFIRM"
       Link="/Content/Using_Auto_Focus.htm#Auto_Focus_Confirm" />
@@ -328,22 +322,6 @@
     <TocEntry
       Title="ACCESS THE LIVE PROFILE DATA FROM THE INDEX SCREEN:"
       Link="/Content/Using_the_Index_screen.htm#To_access_the_live" />
-    <TocEntry
-      Title="USE PRODUCTION REPORTS"
-      Link="/Content/Using_the_Index_screen.htm#Production_Report">
-      <TocEntry
-        Title="TIPS"
-        Link="/Content/Using_the_Index_screen.htm#Tips" />
-      <TocEntry
-        Title="PRODUCTION REPORT VIEWER"
-        Link="/Content/Using_the_Index_screen.htm#Production_Report_Viewer" />
-      <TocEntry
-        Title="DPMO CHART"
-        Link="/Content/Using_the_Index_screen.htm#DPMO_chart" />
-      <TocEntry
-        Title="REFLOW YIELD CHART"
-        Link="/Content/Using_the_Index_screen.htm#Reflow_Yield_Chart" />
-    </TocEntry>
   </TocEntry>
   <TocEntry
     Title="USE STATISTICAL PROCESS CONTROL CHARTS"
@@ -542,19 +520,19 @@
       Title="DETAILS OF OUTPUT FILES"
       Link="/Content/Outputting_live_data.htm#Details_Of_Output_Files">
       <TocEntry
-        Title="LDO STANDARD TSV AND CSV FOR WORDPAD"
+        Title="TSV AND CSV FOR WORDPAD"
         Link="/Content/Outputting_live_data.htm#LDO_Standard_TSV_And_CSV_For_WordPad" />
       <TocEntry
-        Title="LDO STANDARD TSV AND CSV FOR EXCEL"
+        Title="TSV FOR EXCEL"
         Link="/Content/Outputting_live_data.htm#LDO_Standard_TSV_And_CSV_For_Excel" />
       <TocEntry
-        Title="LDO 1 BOARD 1 FILE (TXT FORMAT)"
+        Title="ONE BOARD PER FILE (TXT FORMAT)"
         Link="/Content/Outputting_live_data.htm#LDO_1_Board_1_File" />
       <TocEntry
-        Title="LDO 1 BOARD 1 FILE (XML FORMAT)"
+        Title="ONE BOARD PER FILE (XML FORMAT)"
         Link="/Content/Outputting_live_data.htm#LDO_XML" />
       <TocEntry
-        Title="LDO 1 BOARD 1 FILE (CSV FORMAT)"
+        Title="ONE BOARD PER FILE (CSV FORMAT)"
         Link="/Content/Outputting_live_data.htm#LDO_1_Board_1_File_CSV_Format" />
       <TocEntry
         Title="ONE BOARD PER FILE – TXT - ALTERNATE"

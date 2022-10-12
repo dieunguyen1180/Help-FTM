@@ -10,7 +10,7 @@
                 <td with="width: 505px">
                     <h1 class="Heading1">Using Navigator to optimize profiles</h1>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/image135.png" />
+                        <img src="Resources/Images/image135.png" style="width: 664px;height: 354px;" />
                     </p>
                     <p class="Caption">Figure 94: Profile Optimization Tab</p>
                     <p>&#160;</p>
@@ -20,19 +20,21 @@
                     <p class="ListBullet2_2">&#160;</p>
                     <p class="ListBullet2_2"><span class="span_9">Best PWI</span> – The best Process Window Index that can be found based on the oven recipe optimization constraints selected.</p>
                     <p class="ListBullet2_2">&#160;</p>
-                    <p class="ListBullet2_2"><span class="span_9">Speed </span><span class="span_9">c</span><span class="span_9">hange</span> – The total change to the conveyor speed for the best oven recipe found.</p>
-                    <p class="ListBullet2_2">&#160;</p>
-                    <p class="ListBullet2_2"><span class="span_9">Total </span><span class="span_9">s</span><span class="span_9">et point </span><span class="span_9">c</span><span class="span_9">hange</span> – The sum of all set point changes for the best oven recipe found.</p>
-                    <p class="ListBullet2_2">&#160;</p>
+                    <p><b>Speed Change</b> – The total change to the conveyor speed for the best oven recipe found.</p>
+                    <p>&#160;</p>
+                    <p><b>Total Setpoint Change</b> – The sum of all set point changes for the best oven recipe found.</p>
+                    <p>&#160;</p>
                     <h3 class="Heading3"><a name="Search_Mode_for_Optimization"></a>Search Mode for Optimization</h3>
-                    <ul style="list-style-type: square;">
+                    <ul class="Square">
                         <li><b>Minimize PWI –</b> Search for the combination of set point temperatures and conveyor speed that will minimize the Process Window Index.</li>
+                        <li><b>Maximize conveyor speed –</b> Search for the set point temperatures that will maximize conveyor speed.</li>
+                        <li><b>Minimize energy consumption –</b> Used by the Power software feature.  The software searches for the oven settings that will minimize the power consumption of the oven by finding oven set point solutions with slower conveyor speeds and lower temperature settings.</li>
+                    </ul>
+                    <ul class="Square">
                         <li><b>Allow zone set points to change –</b> This option will determine if Navigator will include zone set point changes when predicting new solutions.</li>
                         <li><b>Allow conveyor speed to change –</b> Choose whether to allow Navigator to vary the conveyor speed.  If you choose this feature, you can set the minimum and maximum speeds.</li>
-                        <li><b>Maximize conveyor speed –</b> Search for the set point temperatures that will maximize conveyor speed.</li>
-                        <li><b>Minimize energy consumption –</b> Used by the Power software feature.  The software search for the oven settings that will minimize the power consumption of the oven by finding oven set point solutions with slower conveyor speeds and lower temperature settings.</li>
-                        <li>&#160;</li>
                     </ul>
+                    <p>&#160;</p>
                     <h3 class="Heading3"><a name="Conveyor_Speed"></a>Conveyor Speed Constraints</h3>
                     <p>As long as the <i>Allow Conveyor Speed to Change</i> feature is selected, these options will be available.</p>
                     <p style="margin-left: 20px;"><b>Minimum</b> – Select the slowest conveyor speed you would like Navigator to recommend for new products.</p>

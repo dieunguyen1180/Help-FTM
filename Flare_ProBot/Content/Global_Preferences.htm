@@ -46,7 +46,7 @@
                     <h3 class="Heading3">Define Your Oven
                     </h3>
                     <table class="table_2">
-                        <col style="width: 400px;" />
+                        <col style="width: 551px;" />
                         <col style="width: 20px;" />
                         <col />
                         <tbody>
@@ -61,7 +61,7 @@
                                 <td>&#160;</td>
                                 <td style="text-align: center;">
                                     <p class="Caption" style="text-align: left;">
-                                        <img src="Resources/Images/image233.png" style="width: 350px;height: 272px;" />
+                                        <img src="Resources/Images/image233.png" />
                                     </p>
                                     <p class="Figure">Figure 6: Enter Oven Name - Global Tab</p>
                                     <p>&#160;</p>
@@ -78,7 +78,7 @@
                                 <td>&#160;</td>
                                 <td style="text-align: center;">
                                     <p class="Figure" style="text-align: left;">
-                                        <img src="Resources/Images/image94.png" style="width: 347px;height: 261px;" />
+                                        <img src="Resources/Images/image94.png" />
                                     </p>
                                     <p class="Figure">Figure 7: Verify Zone Length</p>
                                     <p>&#160;</p>
@@ -86,7 +86,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p style="text-align: left;">The screen populates with numbered zones and default length and temperature values.</p>
+                    <p>The screen populates with numbered zones and default length and temperature values.</p>
                     <p style="text-align: center;">
                         <br />
                         <img src="Resources/Images/image227.png" />
@@ -94,12 +94,12 @@
                     <p>&#160;</p>
                     <ol start="4">
                         <li>Change the default values as needed.<br /><br /></li>
-                        <li>Click the green check button <img src="Resources/Images/image228.png" />  to save the settings and return to the <b>Global Preferences</b> screen.<br /><br /><br /></li>
+                        <li>Click the <b>green check</b> button <img src="Resources/Images/image228.png" />  to save the settings and return to the <b>Global Preferences</b> screen.<br /><br /><br /></li>
                     </ol>
                     <h2 class="Heading2"><a name="Control_Limits_tab"></a>Control Limits Tab
                     </h2>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300000B.png" style="width: 477px;height: 397px;" />
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300000B.png" />
                     </p>
                     <p class="Caption">Figure 8: Global Preferences – Control Limits Tab</p>
                     <p>&#160;</p>
@@ -113,7 +113,7 @@
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Specifying_Cpk"></a>Specifying Cpk computation values</h3>
                     <p class="p_6">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300000C.png" style="width: 537px;height: 126px;" />
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300000C.png" />
                     </p>
                     <p class="p_7">&#160;</p>
                     <p class="ListBullet2_1"><b>Calculate Cpk with the entire “Population” (from Virtual Profiling start to latest) –</b> When selected, the software will calculate Cpk across an entire production batch once the specified minimum points to compute Cpk has been exceeded.</p>
@@ -124,16 +124,24 @@
                     <p>&#160;</p>
                     <p class="ListBullet2_1"><b>Points to compute Cpk</b>
                     </p>
-                    <ul class="ul_4">
-                        <li class="ListBullet2_1"><span class="span_9">Minimum </span><span class="span_9">–</span> Specify the minimum number of data points needed for the software to begin calculating Cpk.</li>
-                    </ul>
-                    <ul class="ul_4">
-                        <li class="ListBullet2_1"><span class="span_9">Maximum – </span>Enter the maximum number of data points to calculate Cpk.  The Cpk value will be calculated over a rolling window of data, only using up to the maximum data points at any given time.</li>
+                    <ul style="list-style-type: square;">
+                        <li class="li_3"><span class="span_9">Minimum </span><span class="span_9">–</span> Specify the minimum number of data points needed for the software to begin calculating Cpk.</li>
                     </ul>
                     <p>&#160;</p>
-                    <p class="ListBullet2_1"><b>Note:</b> Cpk is only calculated and displayed when Virtual Profiling is running:</p>
+                    <ul style="list-style-type: square;">
+                        <li class="li_3"><span class="span_9">
+                            Maximum – </span>Enter the maximum number of data points to calculate Cpk.  The Cpk value will be calculated over a rolling window of data, only using up to the maximum data points at any given time.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p class="ListContinue2"><b>Note:</b> Cpk is only calculated and displayed when Virtual Profiling is running.</p>
+                    <p>&#160;</p>
                     <p class="ListBullet2_1">&#160;</p>
-                    <p class="ListBullet2_1"><span class="span_9">Maximum PWI to enable Virtual Profiling </span><span class="span_9">–</span> This percentage value determines the maximum PWI allowable in order for any given profile to qualify as a Virtual Profile baseline.  If the PWI for a profile is lower than this value, it can be used as a Virtual Profile baseline.  By default this value is 90%.  Profiles that exceed this value cannot be used as a Virtual Profile baseline.</p>
+                    <h3 class="Heading3">Virtual Profiling Settings</h3>
+                    <p class="ListBullet2_1" style="text-align: center;">
+                        <img src="Resources/Images/image2271.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_1"><span class="span_9">Maximum PWI to enable Virtual Profiling </span><span class="span_9">–</span> This percentage value determines the maximum PWI allowable in order for any given profile to qualify as a Virtual Profile baseline.  If the PWI for a profile is lower than this value, it can be used as a Virtual Profile baseline.  By default, this value is 90%.  Profiles that exceed this value cannot be used as a Virtual Profile baseline.</p>
                     <p class="ListBullet2_1">&#160;</p>
                     <p class="ListBullet2_1"><b>Trigger Warning when PWI is higher than –</b> Enabling this feature allows you to display a Warning dialog box on the screen when the PWI exceeds the user defined PWI percentage</p>
                     <p>&#160;</p>
@@ -180,11 +188,13 @@
                     <p style="text-align: left;">&#160;</p>
                     <p>By default, the automatic software provides many on-screen notifications and <i>Optional</i> alarm relay signals to help keep your process within spec and your production flowing.  Selecting the <i>Disable Alarm</i> tab displays a matrix of options to let you <i>selectively disable</i> any alarm, warning, or relay signal <i>that does not suit your workflow</i>.</p>
                     <p>&#160;</p>
-                    <p>The column of checkboxes under <i>Screen Alarm</i> lets you specify when alarms and warnings appear on your monitor.  The checkboxes under Alarm Relay let you specify the conditions under which an eTPU signal energizes the <i>Optional</i> alarm relay to let it power an audible or light indicator or to stop an infeed conveyor.</p>
+                    <p><b>Screen Alarm</b> – This column of features lets you specify if the alarms and warnings appear on your monitor.</p>
                     <p>&#160;</p>
-                    <p>NOTE: For some alarms, if you disable a <i>Screen Alarm</i> selection, but leave the corresponding <i>Alarm Relay</i> selection active, you will have no way of acknowledging the alarm condition. This type of configuration is NOT recommended.</p>
+                    <p><b>Alarm Relay</b> - This column lets you specify the conditions under which an eTPU signal energizes the alarm relay to let it power an audible or light indicator or to stop an infeed conveyor.</p>
                     <p>&#160;</p>
-                    <p>Clicking the top <i>Select All</i> checkboxes selects or deselects all of the options in the column below.  Toggling Select All resets the options to let you more easily choose individual items.</p>
+                    <p><b>NOTE:</b> For some alarms, if you disable a <i>Screen Alarm</i> selection, but leave the corresponding <i>Alarm Rela</i>y selection active, you will have no way of acknowledging the alarm condition. This type of configuration is NOT recommended.</p>
+                    <p>&#160;</p>
+                    <p><b>Select All</b> -This toggle selects or deselects all of the options in the column once selected.  Toggling <i style="font-weight: bold;">Select All</i> again resets the options to let you more easily choose individual items.</p>
                     <p>&#160;</p>
                     <table style="width: 80%;">
                         <col style="width: 439px;" />
@@ -192,34 +202,34 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <p>A checkbox at the bottom of the screen lets you turn off the crystal ball graphic that provides a color-coded status during Virtual Profiling.</p>
+                                    <p>A check box at the bottom of the screen lets you turn off the crystal ball graphic that provides a color-coded status during Virtual Profiling.</p>
                                     <p>&#160;</p>
                                 </td>
                                 <td>
-                                    <img src="Resources/Images/image96.png" /> <img src="Resources/Images/image97.png" /> <img src="Resources/Images/image98.png" /> <img src="Resources/Images/image99.png" /></td>
+                                    <img src="Resources/Images/image96.png" style="width: 52px;height: 72px;" /> <img src="Resources/Images/image97.png" style="width: 52px;height: 72px;" /> <img src="Resources/Images/image98.png" style="width: 52px;height: 72px;" /> <img src="Resources/Images/image99.png" style="width: 52px;height: 72px;" /></td>
                             </tr>
                         </tbody>
                     </table>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <table class="table_2">
-                        <col style="width: 400px;" />
+                        <col style="width: 663px;" />
                         <col style="width: 20px;" />
                         <col />
                         <tr>
                             <td class="td_1">
                                 <h2 class="Heading2"><a name="Barcode_Tab"></a>Barcode Option Tab</h2>
-                                <h3 class="Heading3">Manage Profile and VP Data
-                                </h3>
+                                <h3 class="Heading3"><![CDATA[                               ]]></h3>
                                 <p class="p_4">&#160;</p>
-                                <p class="p_4">Note: The controls shown in the top of the ‘Barcode Option’ section are only available if you have purchased the Barcode options. </p>
+                                <p class="p_4">Note: The settings shown in the top of the ‘Barcode Option’ section are only used if you have purchased the Barcode options. </p>
+                                <p>&#160;</p>
                                 <p class="p_4">To learn more about the optional functionality controlled from this screen, see the section in Part 2 of the manual titled <a href="Using_barcodes.htm" style="color: #0000ff; text-decoration: underline;">Using Barcodes.</a></p>
                                 <p class="p_4">&#160;</p>
                                 <p>&#160;</p>
                             </td>
                             <td>&#160;</td>
                             <td class="td_1">
-                                <p style="text-align: left;"> <img src="Resources/Images/image100.png" style="width: 424px;height: 347px;" /></p>
+                                <p style="text-align: left;"> <img src="Resources/Images/image100.png" /></p>
                                 <p>&#160;</p>
                             </td>
                         </tr>
@@ -228,35 +238,50 @@
                                 <h2 class="Heading2"><a name="Outputs_tab"></a>Outputs Tab
 </h2>
                                 <h3 class="Heading3"><a name="Virtual_Profile_Image"></a>Virtual Profile Image Output</h3>
-                                <p>The <i>Virtual Profile Image Output</i> generates a Virtual Profile image file while Virtual Profiling is running live.  The image file is output in the form of a .JPEG file type. The output file can be generated at user selected time intervals, or for each board processed. To enable the feature select the check box and browse to a network location to store the <i>Virtual Profile</i> image files. There are two (2) different methods of image creation:</p>
+                                <p>The <i>Virtual Profile Image Output</i> generates a Virtual Profile image file while Virtual Profiling is running live.  The image file is output in the form of a .jpg file type, with the naming structure of ProductName_OvenName_YYMMDD_HH:MM:SS.JPG.</p>
+                                <p>If the barcode feature is used, the product barcode string is included after the time stamp.  The output file can be generated at user selected time intervals, or for each board processed.</p>
                                 <p>&#160;</p>
-                                <p style="margin-left: 20px;"><b>The VP Image file generated every X minute(s)</b> – Selecting this option will generate the images based on time interval. Enter the time in minutes (1 – 60) at which the software generates each image.</p>
+                                <p>To enable the feature select the check box and browse to a location to store the <i>Virtual Profile</i> image files. There are two (2) different methods of image creation:</p>
+                                <p>&#160;</p>
                                 <ul>
-                                    <li><b>Max File Numbers</b> - Enter the maximum number of files (64 – 512) to be stored in the destination folder.  The software automatically limits the number of files in this folder during live Virtual Profiling situations.  When the maximum number of files is exceeded, new files automatically replace the oldest files.</li>
+                                    <li><b>The VP Image file generated every X minute(s)</b> – Selecting this option will generate the images based on time interval. Enter the time in minutes (1 – 2880) at which the software generates each image.</li>
+                                </ul>
+                                <ul style="list-style-type: circle;">
+                                    <li class="li_3"><b>Max File Numbers</b> - Enter the maximum number of files (64 – 512) to be stored in the destination folder.  The software automatically limits the number of files in this folder during live Virtual Profiling situations.  When the maximum number of files is exceeded, new files automatically replace the oldest files.</li>
                                 </ul>
                                 <p>&#160;</p>
-                                <p style="margin-left: 20px;"><b>The VP Image file generated for every board</b> – Selecting this option will generate an image for each board.</p>
                             </td>
                             <td>&#160;</td>
-                            <td class="td_1" style="text-align: left;"> <img src="Resources/Images/image2247.png" style="width: 424px;height: 347px;" /></td>
+                            <td class="td_1" style="text-align: left;"> <img src="Resources/Images/image2247.png" /></td>
                         </tr>
                     </table>
-                    <p>&#160;</p>
-                    <p><b>NOTE:</b> When this selection is in use, the <i>Run a Verification Profile</i> and <i>View/Edit Process Window</i> buttons are unavailable. Additionally, when using this selection you can specify additional information that will appear on the image:</p>
                     <ul>
-                        <li style="font-weight: bold;">Company Name</li>
-                        <li style="font-weight: bold;">Engineer</li>
-                        <li style="font-weight: bold;">Logo</li>
+                        <li><b>The VP Image file generated for every board</b> – Selecting this option will generate an image for each board. <b>NOTE:</b> When this selection is in use, the <i>Run a Verification Profile</i> and <i>View/Edit Process Window</i> buttons are unavailable. Additionally, when using this selection you can specify additional information that will appear on the image:</li>
                     </ul>
-                    <p class="ListParagraph">&#160;</p>
+                    <ul style="list-style-type: circle;">
+                        <li class="li_3"><b>Company Name</b>
+                        </li>
+                        <li class="li_3"><b>Engineer</b>
+                        </li>
+                        <li class="li_3"><b>Logo</b> (.bmp files only)</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <ul>
+                        <li><b>Output in-spec VP Only</b> – This feature is only available when using the time output. It will NOT create output files if the Virtual Profile is in an out-of-spec condition at the specified interval.</li>
+                        <li><b>Output in Portrait Mode</b> – Default output is in Landscape mode.</li>
+                        <li><b>Output as PDF</b> – Generates a PDF file instead of a .jpg.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Examples of Image Outputs</h4>
                     <table>
                         <tr>
                             <td>
-                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0200000E.jpg" style="height: 351px;width: 468px;" class="img_1" />
+                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0200000E.png" style="width: 566px;height: 424px;" class="img_1" />
                                 <p style="text-align: center;">Example of VP Image file from time interval</p>
                             </td>
                             <td>
-                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0200000E2.png" style="height: 351px;width: 468px;" class="img_1" />
+                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0200000E2.png" style="width: 566px;height: 424px;" class="img_1" />
                                 <p style="text-align: center;">Example of VP Image file for every board</p>
                             </td>
                         </tr>
@@ -266,7 +291,7 @@
                     <p>The <span class="span_8">Copy to Network</span> tool lets you store all software files and data to a network location for backup or archival purposes.&#160; When you click the check box, the tool software launches, and an icon appears in the system tray area.&#160; Right click, and then choose <span class="span_8">Settings</span> to configure the <span class="span_8">CopyToNetwork</span> settings. </p>
                     <p>&#160;</p>
                     <p class="p_6">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300000F.png" style="height: 192px;width: 231px;" class="img_1" />
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0300000F.png" style="width: 577px;height: 475px;" />
                     </p>
                     <p class="Caption">Figure 11: CopyToNetwork software tool screen</p>
                     <p>&#160;</p>
@@ -276,7 +301,7 @@
                     <p>The software will prompt you to either, copy all the data now or save the settings without copying the data.&#160; </p>
                     <p>&#160;</p>
                     <p class="p_6">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000010.png" style="height: 72px;width: 310px;" class="img_1" />
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000010.png" style="width: 566px;height: 193px;" />
                     </p>
                     <p class="Caption">Figure 12: CopyToNetwork message</p>
                     <p>&#160;</p>
@@ -285,7 +310,7 @@
                     <p>&#160;</p>
                     <p class="Important_2">Notes:</p>
                     <ul style="list-style-type: square;">
-                        <li>If the network location is not available, is an invalid path, or the network is disconnected the software will temporarily write the selected data to the C:\software root directory\_Data_Backup_ folder until the network path or connection has been reestablished.<br /><br /></li>
+                        <li>If the network location is not available, is an invalid path, or the network is disconnected the software will temporarily write the selected data to the <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\_Data_Backup_</i> folder until the network path or connection has been reestablished.<br /><br /></li>
                         <li>The CopyToNetwork tool launches automatically as long as the Copy to Network option is checked in the Global Preferences tab.<br /><br /></li>
                         <li>Whenever any selected folder is updated with new/modified information, the new information is automatically backed up to the network location without any further user interaction.</li>
                     </ul>
