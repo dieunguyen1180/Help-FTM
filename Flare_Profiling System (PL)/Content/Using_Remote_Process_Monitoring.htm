@@ -58,9 +58,9 @@
                     </ol>
                     <p>&#160;</p>
                     <p class="" style="text-align: center;">
-                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000101.png" style="height: 322px;width: 434px;" class="img_1" />
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000101.png" style="width: 441px;height: 327px;" class="img_1" />
                     </p>
-                    <p class="Caption">Figure 134: RPM functional diagram</p>
+                    <p class="Caption">Figure 124: RPM functional diagram</p>
                     <p>&#160;</p>
                     <ul class="">
                         <li class="">Each system at the reflow or cure oven runs in Virtual Profiling mode, monitoring the process and giving real-time profile/process data for each production board.&#160; The Virtual Profile data is stored locally on the client PC.</li>
@@ -77,6 +77,7 @@
                     <ul class="">
                         <li class="">The KIC Viewer logs on to the KIC Server and displays the pertinent data for all ovens, on one screen, updating each one as boards exit and new data is sent.</li>
                     </ul>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Running_RPM"></a>Run RPM</h2>
                     <h3 class="Heading3"><a name="The_software_client_PC"></a>The Software Client PC</h3>
                     <p>&#160;</p>
@@ -89,7 +90,7 @@
                                     <p>To enable the RPM feature:</p>
                                     <ol start="1" class="">
                                         <li class="">Close the automatic software if open.</li>
-                                        <li class="">Using Windows Explorer, browse to the C:\software root directory and run the ConfigurationProgram.exe application.</li>
+                                        <li class="">Using Windows Explorer, browse to the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory</span> and run the ConfigurationProgram.exe application.</li>
                                         <li class="">Select the RPM tab</li>
                                         <li class="">Check the “LON in use” checkbox</li>
                                         <li class="">Enter the IP address of the PC that will be running the <span class="span_12">KIC Server</span> application.</li>
@@ -100,7 +101,7 @@
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000102.png" style="width: 331px;height: 292px;" />
                                     <br />
-                                    <p class="Caption_3" style="text-align: center;">Figure 135: KIC2000ReadOnly.kiccfg file</p>
+                                    <p class="Caption_3" style="text-align: center;">Figure 125: KIC2000ReadOnly.kiccfg file</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -168,11 +169,11 @@
                     <p>&#160;</p>
                     <p>VNC software contains multiple applications including VNC Server.&#160; Run VNC Server on the client PC while Virtual Profiling is running in order to view historical data or remotely control any system software client PC via the KIC Viewer application.</p>
                     <p>&#160;</p>
-                    <p class="p_17">A VNC’s icon appears on the bottom right corner of the monitor.&#160; See Figure 136.</p>
+                    <p class="p_17">A VNC’s icon appears on the bottom right corner of the monitor.&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000107.png" style="height: 36px;width: 158px;" class="img_1" />
                     </p>
-                    <p class="Caption">Figure 136: VNC task tray icon</p>
+                    <p class="Caption">Figure 126: VNC task tray icon</p>
                     <p>To modify VNC properties:</p>
                     <table class="">
                         <col style="width: 230pt;" />
@@ -182,7 +183,7 @@
                                 <ol start="1" class="">
                                     <li>Double Click on the VNC icon.</li>
                                 </ol>
-                                <p class="p_16">The Current User Properties screen (Figure 137) appears.</p>
+                                <p class="p_16">The Current User Properties screen  appears.</p>
                                 <p>&#160;</p>
                                 <ol start="2" class="">
                                     <li class="">Enter a password for other computers to access this client PC.&#160; (You are asked to enter this password each time any KIC Viewer attempts either Viewing History, or Remotely Controlling this client PC)</li>
@@ -197,7 +198,7 @@
                                 <p class="p_19">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000108.png" style="width: 295px;height: 255px;" />
                                 </p>
-                                <p class="p_19"><span class="span_18">Figure 137: VNC Properties</span>
+                                <p class="p_19"><span class="span_18">Figure 127: VNC Properties</span>
                                 </p>
                             </td>
                         </tr>
@@ -206,7 +207,8 @@
                     <h2 class="Heading2"><a name="KIC_Server"></a>KIC Server</h2>
                     <p>The <span class="span_12">KIC Server</span> software acts as a host for all networked software systems running the RPM option.  The software connects all these systems and passes their data over the LAN to any authorized, properly logged on computers running the <span class="span_12">Viewer</span> application.&#160; </p>
                     <p>&#160;</p>
-                    <p>You must install the software on a LAN-connected PC.&#160; This PC cannot simultaneously serve as a system software client, but it can run the Viewer application.&#160; The KIC Server can manage up to 100 ovens and has a menu for creating and editing user names and passwords for KIC Viewer-users.&#160; Your system software installation media includes the KIC Server software, but the application requires the continuous connection of an appropriate software key.</p>
+                    <p>You must install the software on a LAN-connected PC.  This PC cannot simultaneously serve as a system software client, but it can run the Viewer application.  The KIC Server can manage up to 100 ovens and has a menu for creating and editing usernames and passwords for KIC Viewer-users.  Your system software installation media includes the KIC Server software, but the application requires the continuous connection of an appropriate software key.</p>
+                    <p>&#160;</p>
                     <h3 class="Heading3"><a name="To_install_the_KIC_Server"></a>Install the KIC Server</h3>
                     <p><span class="span_11">Note</span>: You must install the KIC Server manually.&#160; </p>
                     <p>&#160;</p>
@@ -218,7 +220,6 @@
                         <li class="ListNumber4">In the KIC Server folder, run the file Setup.exe.&#160; <br />The installation begins automatically.&#160;</li>
                     </ol>
                     <li class="ListNumber4"> </li>
-                    <li class="ListNumber4">&#160;</li>
                     <ol start="3" class="ol_3">
                         <li class="ListNumber4">Follow the on-screen directions.</li>
                     </ol>
@@ -238,16 +239,16 @@
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000109.png" style="width: 46px;height: 46px;" />
                     </p>
-                    <p class="Caption">Figure 138</p>
-                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server.&#160;See Figure 138.</p>
+                    <p class="Caption">Figure 128</p>
+                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server.&#160;See Figure 128.</p>
                     <p>&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300010A.png" style="width: 45px;height: 45px;" />
                     </p>
-                    <p class="Caption">Figure 139</p>
-                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections.&#160;See Figure 139.</p>
+                    <p class="Caption">Figure 129</p>
+                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections.&#160;See Figure 129.</p>
                     <p>&#160;</p>
-                    <p>The KIC Server window is shown in Figure 140.&#160; The screen permits the following six functions:</p>
+                    <p>The KIC Server window is shown in Figure 130.&#160; The screen permits the following six functions:</p>
                     <ol start="1" class="ol_1">
                         <li class="ListNumber4"><span class="span_11">Add</span> new users and passwords for KIC Viewers to connect.</li>
                         <li class="ListNumber4"><span class="span_11">Edit/delete</span> users and Passwords</li>
@@ -266,7 +267,7 @@
                                 <td>
                                     <h3 class="Heading3"><a name="To_add_a_new_user"></a>Add a New User</h3>
                                     <ol start="1" class="">
-                                        <li class="">Enter the new user name.</li>
+                                        <li class="">Enter the new username.</li>
                                     </ol>
                                     <ol start="2" class="">
                                         <li class="">Enter the new password.</li>
@@ -274,7 +275,8 @@
                                     <ol start="3" class="">
                                         <li class="">Select the Add button.</li>
                                     </ol>
-                                    <p>You are added to the list of users. To access a list of users select the List of Users dropdown menu.</p>
+                                    <p>&#160;</p>
+                                    <p>You are added to the list of users. To access a list of users, select the List of Users dropdown menu..</p>
                                     <p>&#160;</p>
                                     <p>The user’s password is updated immediately.</p>
                                     <p>&#160;</p>
@@ -310,7 +312,7 @@
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300010B.png" style="width: 311px;height: 330px;" />
                                     <br />
-                                    <p class="Caption">Figure 140: KIC Server Window</p>
+                                    <p class="Caption">Figure 130: KIC Server Window</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -348,18 +350,17 @@
                         <tr>
                             <td class="td_34">
                                 <p>&#160;</p>
-                                <ol start="1" class="">
-                                    <li>Close the KIC Viewer application and then open the configuration file at the following location:</li>
+                                <ol>
+                                    <li>Close the KIC Viewer application and then open the configuration file at the following location <br /><span style="font-family: 'Courier New'; font-size: 9pt;">C:\Kicviewer\Configure\ kwConfigure.kcfg</span> file – setup:</li>
                                 </ol>
-                                <p class="p_29"><span class="span_16">C:\Kicviewer\Configure\ kwConfigure.kcfg file – setup</span>:</p>
                                 <p>&#160;</p>
                                 <ol start="2" class="">
-                                    <li>Set <span class="span_11">EnableRemoteControl</span> flag to = <span class="span_11">0</span>.</li>
+                                    <li>Set <span class="span_11" style="font-weight: normal; font-family: 'Courier New'; font-size: 9pt;">EnableRemoteControl</span> flag to = <span class="span_11" style="font-weight: normal; font-family: 'Courier New'; font-size: 9pt;">0</span>.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
                                 <ol start="3" class="">
-                                    <li>Set <span class="span_11">[RemoteControlPC] Enable</span> flag to = <span class="span_11">1</span>.</li>
+                                    <li>Set <span style="font-family: 'Courier New'; font-size: 9pt;">[RemoteControlPC] Enable</span> flag to = <span class="span_11" style="font-weight: normal; font-family: 'Courier New'; font-size: 9pt;">1</span>.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
@@ -384,18 +385,16 @@
                             <td class="td_34">
                                 <p>&#160;</p>
                                 <ol start="1" class="">
-                                    <li>Close the KIC Viewer application and then open the configuration file at the following location:</li>
+                                    <li>Close the KIC Viewer application and then open the configuration file at the following location: <br /><span style="font-family: 'Courier New'; font-size: 9pt;">C:\Kicviewer\Configure\ kwConfigure.kcfg</span> file – setup:</li>
                                 </ol>
-                                <p class="p_7">C:\Kicviewer\Configure\ kwConfigure.kcfg file – setup:</p>
-                                <p>&#160;</p>
                                 <p>&#160;</p>
                                 <ol start="2" class="">
-                                    <li>Set <span class="span_11">EnableRemoteControl</span> flag to = <span class="span_11">1</span>.</li>
+                                    <li>Set <span class="span_11" style="font-weight: normal; font-family: 'Courier New'; font-size: 9pt;">EnableRemoteControl</span> flag to = <span class="span_11" style="font-weight: normal; font-family: 'Courier New'; font-size: 9pt;">1</span>.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
                                 <ol start="3" class="">
-                                    <li>Set <span class="span_11">[RemoteControlPC] Enable</span> flag to = <span class="span_11">1</span>.</li>
+                                    <li>Set <span style="font-family: 'Courier New'; font-size: 9pt;">[RemoteControlPC] Enable</span> flag to = <span class="span_11" style="font-weight: normal; font-family: 'Courier New'; font-size: 9pt;">1</span>.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
@@ -447,11 +446,12 @@
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300010F.png" style="width: 459px;height: 196px;" class="img_1" />
                     </p>
-                    <p class="Caption">Figure 141: KIC Viewer – Main Screen</p>
+                    <p class="Caption">Figure 131: KIC Viewer – Main Screen</p>
+                    <p class="Caption">&#160;</p>
                     <h4 class="Heading4"><a name="The_KIC_Viewer_Toolbar_Button_Menu"></a>The KIC Viewer Toolbar Button Menu</h4>
                     <table align="center" class="">
-                        <col style="width: 200px;" />
-                        <col style="width: 200px;" />
+                        <col style="width: 400px;" />
+                        <col style="width: 400px;" />
                         <tr>
                             <td class="td_35">
                                 <p class="ListBullet_1">
@@ -490,29 +490,30 @@
                     <p>Reload the configuration – This feature manually reloads the configuration in the event you change the configuration without exiting the KIC Viewer software.</p>
                     <p>&#160;</p>
                     <ul class="ul_2">
-                        <li class="ListBullet2_2">Oven selection – Allows you to turn On/Off the ovens to view.&#160; See Figure 135.</li>
+                        <li class="ListBullet2_2">Oven selection – Allows you to turn On/Off the ovens to view.</li>
                     </ul>
                     <p>&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300011D.png" style="width: 444px;height: 374px;" />
                     </p>
-                    <p class="Caption">Figure 142: KIC Viewer – Activate/Deactivate Ovens</p>
+                    <p class="Caption">Figure 132: KIC Viewer – Activate/Deactivate Ovens</p>
                     <h4 class="Heading4"><a name="Icon_View"></a>Icon View</h4>
-                    <p>The Icon view provides the oven name, product name, Process Window Index (PWI) value, Cpk value, and alarm state for each product as they exit the oven with system software.&#160; The alarm states are color-coded (green, yellow, red) in accordance with the standard system software alarm categories.&#160; This information is organized as a box per oven.&#160; See Figure 143.</p>
+                    <p>The Icon view provides the oven name, product name, Process Window Index (PWI) value, Cpk value, and alarm state for each product as they exit the oven with system software.  The alarm states are color-coded (green, yellow, red) in accordance with the standard system software alarm categories.  This information is organized as a box per oven.</p>
                     <p>&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300011E.png" style="width: 476px;height: 359px;" />
                     </p>
-                    <p class="Caption">Figure 143: KIC Viewer – Icon View</p>
+                    <p class="Caption">Figure 133: KIC Viewer – Icon View</p>
                     <p>&#160;</p>
                     <p>A grey oven box can indicate there is a problem with the oven:</p>
                     <p>&#160;</p>
                     <ol start="1" class="">
                         <li class="">The system software client PC is no longer connected to the KIC Server application.</li>
                     </ol>
-                    <p class="p_16">As soon as the client PC begins running Virtual Profiling again, the oven box will return either red, yellow, or red based on the current conditions in that oven.</p>
+                    <p class="p_16">As soon as the client PC begins running Virtual Profiling again, the oven box will return either red, yellow, or red based on the current conditions in that oven.<br /></p>
                     <p class="p_16">&#160;</p>
-                    <p class="p_16">If the KIC Server application was closed, each KIC Viewer will wait until the KIC Server is launched again.&#160; If for any reason the KIC Viewer does not automatically reconnect, select Connect from the main menu, and enter a valid user name and password to reconnect.</p>
+                    <p class="p_16">
+                        <br />If the KIC Server application was closed, each KIC Viewer will wait until the KIC Server is launched again.  If for any reason the KIC Viewer does not automatically reconnect, select Connect from the main menu, and enter a valid username and password to reconnect.</p>
                     <p class="p_16">&#160;</p>
                     <ol start="2" class="">
                         <li class="">The client PC is no longer running Virtual Profiling</li>
@@ -534,9 +535,9 @@
                             <td class="td_35">
                                 <p>Only the current product folder appears.</p>
                                 <p>&#160;</p>
-                                <p>If you want to see all products profiled on this oven, then click on the “Browse” button (top right corner).&#160; See Figure 144.</p>
+                                <p>If you want to see all products profiled on this oven, then click on the “Browse” button (top right corner).&#160; See Figure 134.</p>
                                 <p>&#160;</p>
-                                <p>Click <span class="span_11">OK</span> in the pop up box asking to select a working folder.&#160; Then all of product names appears as shown in Figure 144.</p>
+                                <p>Click <span class="span_11">OK</span> in the pop up box asking to select a working folder.&#160; Then all of product names appears as shown.</p>
                                 <p>&#160;</p>
                                 <p>Click on the main screen button to exit View History mode.</p>
                                 <p>&#160;</p>
@@ -545,34 +546,34 @@
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300011F.png" style="width: 422px;height: 298px;" />
                                 </p>
-                                <p class="p_19" style="text-align: center;"><span class="span_18">Figure 144: Profiler Explorer via AppForViewer</span>
+                                <p class="p_19" style="text-align: center;"><span class="span_18">Figure 134: Profiler Explorer via AppForViewer</span>
                                 </p>
                             </td>
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p style="text-align: left;">The history view provides all the standard system software information such as all the production event logs, production run data such as statistics, and basic SPC graphs.&#160; See Figure 145 thru Figure 148.</p>
+                    <p style="text-align: left;">The history view provides all the standard system software information such as all the production event logs, production run data such as statistics, and basic SPC graphs.&#160; </p>
                     <p>&#160;</p>
                     <table align="center" class="table_1" style="width: 90%">
                         <tbody>
                             <tr>
                                 <td>
                                     <img src="Resources/Images/z43.png" class="img_1" style="width: 450px;height: 330px;" />
-                                    <p class="Caption">Figure 145: Profile Explorer</p>
+                                    <p class="Caption">Figure 135: Profile Explorer</p>
                                 </td>
                                 <td>
                                     <img src="Resources/Images/z66.png" style="width: 450px;height: 330px;" />
-                                    <p class="Caption">Figure 146: Profile Graph – General Tab</p>
+                                    <p class="Caption">Figure 136: Profile Graph – General Tab</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="Resources/Images/z67.png" style="width: 450px;height: 330px;" />
-                                    <p class="Caption">Figure 147: Profile Graph – Chart Tab</p>
+                                    <p class="Caption">Figure 137: Profile Graph – Chart Tab</p>
                                 </td>
                                 <td>
                                     <img src="Resources/Images/z68.png" style="width: 450px;height: 330px;" />
-                                    <p class="Caption">Figure 148: Profile Graph – Troubleshooting Tab</p>
+                                    <p class="Caption">Figure 138: Profile Graph – Troubleshooting Tab</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -588,7 +589,7 @@
                         <tr>
                             <td class="td_37">
                                 <p>&#160;</p>
-                                <p style="text-align: left;">Right-click on an oven box, a menu appears.&#160; Select Remote Control system software PC.&#160; A password dialog box appears.&#160; Enter the VNC Server password.&#160; See Figure 149.</p>
+                                <p style="text-align: left;">Right-click on an oven box, a menu appears.&#160; Select Remote Control system software PC.&#160; A password dialog box appears.&#160; Enter the VNC Server password.&#160;</p>
                                 <p>&#160;</p>
                                 <p style="text-align: left;">As long the system software, KIC Server, KIC Viewer and VNC Server software are properly configured, you will have direct-remote control of the selected system software client PC via VNC Viewer software application.</p>
                                 <p>&#160;</p>
@@ -598,7 +599,7 @@
                                 <p class="p_19" style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000124.png" style="width: 210px;height: 76px;" />
                                 </p>
-                                <p class="p_19" style="text-align: center;"><span class="span_18">Figure 149: VNC Authentication</span>
+                                <p class="p_19" style="text-align: center;"><span class="span_18">Figure 139: VNC Authentication</span>
                                 </p>
                                 <p class="p_19">&#160;</p>
                             </td>
@@ -606,13 +607,13 @@
                         <tr>
                             <td class="td_37">
                                 <p>&#160;</p>
-                                <p style="text-align: left;">If the VNC Server application is not running on the client PC, a VNC error message appears stating, “Could not connect to KIC Server”.&#160; See Figure 150.</p>
+                                <p style="text-align: left;">If the VNC Server application is not running on the client PC, a VNC error message appears stating, “Could not connect to KIC Server”.&#160;</p>
                             </td>
                             <td class="td_37">
                                 <p class="p_19" style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000125.png" class="" style="width: 212px;height: 115px;" />
                                 </p>
-                                <p class="p_19" style="text-align: center;"><span class="span_18">Figure 150</span>
+                                <p class="p_19" style="text-align: center;"><span class="span_18">Figure 140</span>
                                 </p>
                             </td>
                         </tr>
@@ -622,22 +623,22 @@
                     <p class="p_15" style="text-align: center;">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/02000126.jpg" style="width: 551px;height: 404px;" />
                     </p>
-                    <p class="Caption" style="text-align: center;">Figure 151: Remote Control screen Shot</p>
+                    <p class="Caption" style="text-align: center;">Figure 141: Remote Control screen Shot</p>
                     <p>&#160;</p>
                     <p>To end Remote Control, and return to the KIC Viewer application, manually close the VNC Viewer software application.</p>
                     <h3 class="Heading3"><a name="Chart_view"></a>Chart View</h3>
-                    <p class="p_17">The chart view displays the PWI value for each of the last 100 products processed through each oven/ system software installation.&#160;See Figure 145.</p>
+                    <p class="p_17">The chart view displays the PWI value for each of the last 100 products processed through each oven/ system software installation.&#160;</p>
                     <p class="p_21" style="text-align: center;">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000127.png" style="width: 539px;height: 408px;" />
                     </p>
-                    <p class="Caption">Figure 152: KIC Viewer – Chart View</p>
+                    <p class="Caption">Figure 142: KIC Viewer – Chart View</p>
                     <p>&#160;</p>
-                    <p>In the chart view, right&#8209;click on an oven box to display a full-screen chart for that oven.&#160;See Figure 153.</p>
+                    <p>In the chart view, right&#8209;click on an oven box to display a full-screen chart for that oven.&#160;</p>
                     <p>&#160;</p>
                     <p class="p_21">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000128.png" style="width: 539px;height: 407px;" />
                     </p>
-                    <p class="Caption">Figure 153: KIC Viewer – Full-screen oven chart view</p>
+                    <p class="Caption">Figure 143: KIC Viewer – Full-screen oven chart view</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                 </td>

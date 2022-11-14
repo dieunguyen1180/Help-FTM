@@ -9,13 +9,13 @@
                 <td>
                     <h1 class="Heading1">Profile Explorer</h1>
                     <p class="p_19">
-                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300000A.png" style="width: 109px;height: 59px;" class="img_1" />
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300000A.png" style="width: 161px;height: 86px;" class="img_1" />
                     </p>
                     <p>&#160;</p>
-                    <p>The Profile Explorer is a powerful and simple data file management tool.&#160; For each unique product name you use when profiling, the software will create a folder with the same name.&#160; See Figure 53.<span class="span_21">.</span> The software saves all the profiles run using that product name in that folder. </p>
+                    <p>The Profile Explorer is a powerful and simple data file management tool.  For each unique product name you use when profiling, the software will create a folder with the same name.  See Figure 53. The software saves all the profiles run using that product name in that folder.</p>
                     <p>&#160;</p>
                     <p class="p_19">
-                        <img src="Resources/Images/z15.png" class="img_1" style="width: 836px;height: 452px;" />
+                        <img src="Resources/Images/z15.png" />
                     </p>
                     <p class="Caption">Figure 53: Profile Explorer</p>
                     <p class="Caption">&#160;</p>
@@ -40,12 +40,13 @@
                     </ul>
                     <p>&#160;</p>
                     <p><span class="span_11">Note</span>: If the profile is labeled as “Bad” or if, for any reason, the automatic system software cannot display it, the profile is automatically copied to the Clipboard so that you can use a third-party app such as MS-Excel to view the data.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Browsing_for_Historical"></a>Browse for Historical Data</h2>
                     <p>The current Data Path for the data viewed in the Profile Explorer appears in the upper-right corner.&#160; The data path appears grayed out if running in production mode.&#160; It will be active, if you clicked on the, I am not going to Profile or Virtual Profile button (enabling History mode), when first launching the software.</p>
                     <p>&#160;</p>
-                    <p class="p_25">The data path can be changed, but must be done so through the <span class="span_16">\</span><span class="span_16">software&#160;root&#160;directory</span><span class="span_16">\Log\KIC2000DataPath.kiccfg</span> file.</p>
+                    <p>The data path can be changed but must be done so through the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\Log\KIC2000DataPath.kiccfg</span> file.</p>
                     <p>&#160;</p>
-                    <p>To view historical Virtual Profile data from the same PC while Virtual Profiling is live, you launch a separate Host.exe file located: <span class="span_16">C:\</span><span class="span_16">software&#160;root&#160;directory\APP</span><span class="span_16">forViewer\KICHost.exe</span>.&#160; This will open a separate Profile Explorer that will allow you to browse through the history of any product including the one currently running VP.&#160; Historical data will be available for any boards that have already exited the oven.</p>
+                    <p>To view historical Virtual Profile data from the same PC while Virtual Profiling is live, you launch a separate Host.exe file located: C<span style="font-family: 'Courier New'; font-size: 9pt;">:\software root directory\APPforViewer\KICHost.exe</span>.  This will open a separate Profile Explorer that will allow you to browse through the history of any product including the one currently running VP.  Historical data will be available for any boards that have already exited the oven.</p>
                     <p>&#160;</p>
                     <p><span class="span_11">Note</span>: This feature was designed to allow you to view historical data stored in a different directory on the same computer or on remote PC over a network.</p>
                     <p>&#160;</p>
@@ -62,7 +63,7 @@
                             <td class="td_2">
                                 <ol start="1">
                                     <li>
-                                        <p>From your remote PC, start the software and click on the “I am not going to run profiles or live Virtual Profile” button.&#160; See Figure 54.</p>
+                                        <p>From your remote PC, start the software and click on the “<i>I am not going to run profiles or live Virtual Profile</i>” button.</p>
                                         <p>&#160;</p>
                                         <p>The software will open up normally.</p>
                                     </li>
@@ -83,7 +84,7 @@
                     </table>
                     <p>&#160;</p>
                     <ol start="3">
-                        <li>A <span class="span_11">Browse</span> button will be enabled in the upper right hand corner of the Profile Explorer screen.&#160; See Figure 55.</li>
+                        <li>A <b>Browse</b> button will be enabled in the upper right hand corner of the Profile Explorer screen.</li>
                     </ol>
                     <p>&#160;</p>
                     <p class="p_19">
@@ -97,80 +98,79 @@
                             <p>Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.</p>
                             <p>&#160;</p>
                             <p>For example: if the profiles are stored in a directory named</p>
-                            <p><span class="span_16">F:\</span><span class="span_16">software&#160;root&#160;directory</span><span class="span_16">\</span><span class="span_16">Profiles\Board</span><span class="span_16">&#160;</span><span class="span_16">A</span><span class="span_16">, </span><span class="span_16">you would direct it only to the</span>
-                            </p>
-                            <p><span class="span_16">F:\</span><span class="span_16">software&#160;root&#160;directory</span><span class="span_16">\</span><span class="span_16"> folder.</span>
-                            </p>
+                            <p><span style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\Profiles\Board A</span>, you would direct it only to the <br /><span style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\</span> folder.</p>
                         </li>
                     </ol>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Profile_Explorer_Buttons"></a>Profile Explorer Buttons</h3>
                     <p>&#160;</p>
-                    <p>
-                        <img src="Resources/Images/z17.png" class="img_1" />
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/z17.png" style="width: 966px;height: 59px;" />
                     </p>
                     <p>&#160;</p>
                     <table class="table_1">
-                        <col style="width: 122pt;" />
+                        <col style="width: 80pt;" />
                         <col style="width: 657pt;" />
-                        <tr style="height: 42pt;">
+                        <tr>
                             <td class="td_2">
-                                <p class="p_19">
+                                <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000062.png" style="height: 40px;width: 71px;" class="img_1" />
                                 </p>
                             </td>
                             <td class="td_2">
-                                <p><span class="span_11">Start Virtual Profiling –</span>Click this button to start Virtual Profiling.&#160; The software will always use the latest qualifying profile as the Virtual Profile - Baseline profile.</p>
-                            </td>
-                        </tr>
-                        <tr style="height: 45pt;">
-                            <td class="td_2">
-                                <p class="p_19">
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000063.png" style="height: 38px;width: 70px;" class="img_2" />
-                                </p>
-                            </td>
-                            <td class="td_2">
-                                <p><span class="span_11">Save Selected Profile –</span> Click this button to save an event or profile to the location of your choice, either hard disk, network drive, or floppy disk.</p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr style="height: 45pt;">
-                            <td class="td_2">
-                                <p class="p_19">
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000064.png" style="height: 38px;width: 71px;" class="img_2" />
-                                </p>
-                            </td>
-                            <td class="td_2">
-                                <p><span class="span_11">Delete File - </span>Click this button to delete an event or profile.</p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr style="height: 77pt;">
-                            <td class="td_2">
-                                <p class="p_19">
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000065.png" style="height: 41px;width: 76px;" class="img_1" />
-                                    <br />
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000066.png" style="height: 38px;width: 70px;" class="img_2" />
-                                </p>
-                            </td>
-                            <td class="td_12">
-                                <p><span class="span_11">Display the Graph and Statistics for this profile -</span> Click this button to display the graph and statistics for the selected profile.&#160; If you have an event other than a profile, the Display Graph and Statistics button will change to a Charts button.</p>
+                                <p><span class="span_11">Start Virtual Profiling</span>  – Click this button to start Virtual Profiling.&#160; The software will always use the latest qualifying profile as the Virtual Profile - Baseline profile.</p>
                                 <p>&#160;</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="td_2">
-                                <p class="p_19">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000063.png" style="height: 38px;width: 70px;" class="img_2" />
+                                </p>
+                            </td>
+                            <td class="td_2">
+                                <p><span class="span_11">Save Selected Profile</span> – Click this button to save an event or profile to the location of your choice, either hard disk, network drive, or floppy disk.</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_2">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000064.png" style="width: 68px;height: 35px;" class="img_2" />
+                                </p>
+                            </td>
+                            <td class="td_2">
+                                <p><span class="span_11">Delete File</span> – Click this button to delete an event or profile.</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_2">
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000065.png" style="height: 41px;width: 76px;" class="img_1" />
+                                    <br />
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000066.png" style="width: 73px;height: 39px;" class="img_2" />
+                                </p>
+                            </td>
+                            <td class="td_2">
+                                <p style="text-align: left;"><span class="span_11">Display the Graph and Statistics for this profile</span> – Click this button to display the graph and statistics for the selected profile.&#160; If you have an event other than a profile, the Display Graph and Statistics button will change to a Charts button.</p>
+                                <p style="text-align: left;">&#160;</p>
+                                <p style="text-align: left;">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_2">
+                                <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000067.png" style="height: 38px;width: 72px;" class="img_1" />
                                 </p>
                             </td>
                             <td class="td_2">
-                                <p><span class="span_11">Return to Main Menu –</span>Click this button to return to the main menu screen.</p>
+                                <p><span class="span_11">Return to Main Menu</span> – Click this button to return to the main menu screen.</p>
                             </td>
                         </tr>
                     </table>
-                    <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Profile_Explorer_Checkboxes"></a>Profile Explorer Checkboxes</h3>
@@ -182,9 +182,9 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <p class="ListBullet"><span class="span_11">Show VP – </span>Display all VP Start and Stop events for the selected product.</p>
-                                    <p class="ListBullet"><span class="span_11">Show Profiles –</span> Display the Profiles for the selected product.</p>
-                                    <p class="ListBullet"><span class="span_11">Show Alarms –</span> Display the Alarm state changes for the selected product. </p>
+                                    <p class="ListBullet"><span class="span_11">Show VP</span> – Display all VP Start and Stop events for the selected product.</p>
+                                    <p class="ListBullet"><span class="span_11">Show Profiles</span> – Display the Profiles for the selected product.</p>
+                                    <p class="ListBullet"><span class="span_11">Show Alarms</span> – Display the Alarm state changes for the selected product. </p>
                                 </td>
                                 <td>
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000068.png" style="height: 102px;width: 166px;" />
@@ -192,12 +192,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Double click any event to view the details including alarm event history.&#160; </p>
-                    <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: If two alarm/alert acknowledgements appear at the same time, only one will appear in Profile Explorer.</p>
+                    <p><b>Note:</b> Double click any event to view the details including alarm event history.  If two alarm/alert acknowledgements appear at the same time, only one will appear in Profile Explorer.</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Profile_Explorer_Virtual_Profiling"></a>Profile Explorer – Virtual Profiling</h2>
@@ -220,7 +215,6 @@
                     </ol>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <p>&#160;</p>
                     <h3 class="Heading3"><a name="Profile_Explorer_Event_Icons"></a>Profile Explorer Event Icons</h3>
                     <p>&#160;</p>
                     <h4 class="Heading4"><a name="Profile_Icons"></a>Profile Icons</h4>
@@ -231,7 +225,6 @@
                     <p>&#160;</p>
                     <p class="ListBullet_1">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/06000069.png" style="height: 24px;width: 24px;" class="img_1" /> <span class="span_11">Virtual Profile capable –</span> This icon appears for the most recent Virtual Profile capable profile.</p>
-                    <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Virtual_Profile_Event_Icons"></a>Virtual Profile Event Icons</h3>
@@ -303,23 +296,23 @@
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000073.png" style="width: 24px;height: 24px;" /> e<span class="span_11">TPU Communication Restored –</span> This icon appears when the software re-gains communication with the eTPU.</p>
                     <p class="p_16">&#160;</p>
                     <p>&#160;</p>
-                    <h2 class="Heading2"><a name="Access_History_Data_Backup_Files"></a>Access History Data Backup Files</h2>
+                    <h2 class="Heading2"><a name="Access_History_Data_Backup_Files"></a>History Data Files</h2>
                     <p>As the software processes Virtual Profiles, it logs data files to a <span class="span_12">Profiles</span> folder that later can be analyzed.&#160; It automatically stores these <span class="span_12">Event</span> and <span class="span_12">VPdata</span> files associated with each specific product to a <span class="span_12">History</span> folder.&#160; </p>
                     <p>&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000074.png" style="height: 158px;width: 600px;" class="img_1" />
                     </p>
                     <p>&#160;</p>
-                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Inserting_data_files"></a>Insert Data Files from an Outside Source</h2>
-                    <p>If you receive data files via disc or email, you can copy them to the <span class="span_16">software&#160;root&#160;directory</span><span class="span_16">\</span><span class="span_16">Profiles</span> folder in Windows Explorer.&#160; The next time you enter the Profile Explorer screen the software will automatically create folders for those profiles based on the profile name and put the profiles in the folders.</p>
+                    <p>If you receive data files via disc or email, you can copy them to the <span style="font-family: 'Courier New'; font-size: 9pt;">software root directory\Profiles</span> folder in Windows Explorer.  The next time you enter the Profile Explorer screen the software will automatically create folders for those profiles based on the profile name and put the profiles in the folders.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Renaming_profiles"></a>Rename Profiles</h2>
                     <p>In situations that require it, you have the ability to edit the profile name. This can be especially useful when products are very similar but have different names.&#160; Once the profile has been optimized, it can be renamed and used as a baseline profile for similar products if the need arises.&#160; This eliminates the need to re-profile similar products unnecessarily.</p>
                     <p>&#160;</p>
                     <p><span class="span_11">Note</span>: Renaming a profile includes the name that is embedded in the profile that shows up on the printout</p>
                     <p>&#160;</p>
                     <ol start="1">
-                        <li>Manually create a new folder in the C:\<span class="span_16">software&#160;root&#160;directory</span> \Profiles folder using the new product name. </li>
+                        <li>Manually create a new folder in the <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory \Profiles</i> folder using the new product name.</li>
                         <li>Copy the desired profile into this new folder.</li>
                         <li>A folder with that new Product Name will appear in Profile Explorer.</li>
                         <li>
@@ -331,8 +324,8 @@
                         </li>
                     </ol>
                     <p>&#160;</p>
-                    <p>&#160;</p>
                     <p><span class="span_11">Note</span>: Virtual Profiling will be most accurate for products that have their own baseline profile.</p>
+                    <p>&#160;</p>
                     <p>&#160;</p>
                     <h1 class="Heading1"><a name="Understanding_Virtual_Profiling"></a>Virtual Profiling</h1>
                     <p><span class="span_12">Virtual Profiling</span> (VP) is a means of reliably predicting the thermal profile <span class="span_12">of every board in a production run</span> based on a comparison of real-time temperature and conveyor speed data against a <span class="span_12">baseline</span> profile established by an earlier profiler run through the oven.&#160; For a given product, this baseline needs to represent an optimum oven recipe with a good PWI value and a quality soldering result.</p>
@@ -344,6 +337,7 @@
                     <p>In monitoring mode, the software displays each board’s profile chart and a table of data based on its process window.&#160; Other optional screens can show PWI and SPC control charts.&#160; When oven data varies significantly from the baseline profile, the software displays appropriate warnings to system operators. </p>
                     <p>&#160;</p>
                     <p><span class="span_11">Note</span>: Before you start Virtual Profiling, make sure all hardware is properly installed and configured. </p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Getting_a_valid_baseline_profile"></a>Get a Valid Baseline Profile</h2>
                     <p>Virtual Profiling makes use of a special profile, called the <span class="span_12">baseline</span> profile, as the data model for its predictions.&#160; The software requires that you first establish this baseline before it enables Virtual Profiling. The baseline profile should represent your optimum oven recipe for your product and needs to meet the Virtual Profile criteria shown below:</p>
                     <p>&#160;</p>
@@ -354,10 +348,12 @@
                     </ul>
                     <p>&#160;</p>
                     <p>If your profile meets the above criteria, it can work as a baseline profile. The baseline profile will display differently in the Profile Explorer screen—the profile’s icon will have an overlying green VP icon <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/06000069.png" style="height: 19px;width: 19px;" class="img_1" />.  If you suspect the current baseline profile needs replacement by a newer version that more closely matches current production conditions, the software lets you create a new baseline during ongoing production.&#160; As long as this <span class="span_12">verification profile</span> meets VP criteria, it can become the new baseline profile.&#160; See <a href="Virtual_Profiling_VP.htm#Verifying_the_Virtual_Profile"><span class="Hyperlink">Verify the Virtual Profile</span></a></p>
-                    <h3 class="Heading3"><a name="Integrate_Empty_Oven_Data"></a>Integrate Empty Oven Data</h3>
-                    <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <span class="span_12">board present</span> and <span class="span_12">board absent</span> states along the length of the probes.&#160; To obtain this data most efficiently, it may be necessary to run the profiler board with similar <span class="span_12">boards moving ahead of it and an empty conveyor be</span><span class="span_12">hind it</span><span class="span_12">.</span>&#160; The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.&#160; As the profiler board exits each oven zone, the probes can measure the temperature when a board is not present.&#160; The software can integrate this comparative data for a more accurate predictive capability.&#160; The oven should remain empty until the profiler board completely exits the process chamber.</p>
                     <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.&#160; The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.&#160; With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs.&#160; A grey crystal ball indicates an unable to predict state.&#160; See .</p>
+                    <h3 class="Heading3"><a name="Integrate_Empty_Oven_Data"></a>Integrate Empty Oven Data</h3>
+                    <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <span class="span_12">board present</span> and <span class="span_12">board absent</span> states along the length of the probes.&#160; To obtain this data most efficiently, it may be necessary to run the profiler board with similar <i>boards moving ahead of it and an empty conveyor behind it</i>. The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.&#160; As the profiler board exits each oven zone, the probes can measure the temperature when a board is not present.&#160; The software can integrate this comparative data for a more accurate predictive capability.&#160; The oven should remain empty until the profiler board completely exits the process chamber.</p>
+                    <p>&#160;</p>
+                    <p><b>Note:</b> Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs.  A grey crystal ball indicates an unable to predict state.  See <a href="Virtual_Profiling_VP.htm#Monitor_Production">Monitoring Production In Live Mode</a>.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load a Virtual Profile</h2>
                     <p>There are several ways to begin Virtual Profiling:</p>
                     <p>&#160;</p>
@@ -409,7 +405,7 @@
                     </p>
                     <p class="Caption">Figure 56: Profile Explorer – Start Virtual Profiling</p>
                     <p>&#160;</p>
-                    <p>If your oven is capable of communicating with the software and the current oven recipe matches the Baseline profile recipe, a dialog box will appear telling you that the recipe is already set correctly.&#160; See Figure 57.</p>
+                    <p>If your oven is capable of communicating with the software and the current oven recipe matches the Baseline profile recipe, a dialog box will appear telling you that the recipe is already set correctly.&#160;</p>
                     <p>&#160;</p>
                     <p class="p_21">
                         <img src="Resources/Images/z19.png" class="img_1" />
@@ -418,6 +414,7 @@
                     <p>&#160;</p>
                     <p><span class="span_11">Tip</span>: Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang.</p>
                     <p>&#160;</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Using_the_Profile_Grouping_utility"></a>Use the Profile Grouping Utility</h2>
                     <p>The automatic system includes a utility that lets you identify and group together different products that share the same thermal profile.&#160; For example, one might use a physically identical printed circuit board to manufacture many distinct product models.&#160; The manufacturer needs to specifically identify and track all the different models, but the thermal process specifications used to solder or cure them is identical throughout the product range.&#160; Once a successful process setup is identified for one model, the feature lets you <span class="span_12">link</span> that setup with other models that can use the same process and thus save the time and cost of entering the same setup specifications repeatedly.&#160; In Virtual Profile mode, the baseline profile of a <span class="span_12">parent</span> <span class="span_12">product </span>can be matched to multiple <span class="span_12">child models</span>, permitting smooth production transitions between models.&#160; </p>
                     <p>&#160;</p>
@@ -425,7 +422,7 @@
                         <img src="Resources/Images/z20.png" class="img_1" />
                     </p>
                     <p>&#160;</p>
-                    <p>You enable the <span class="span_12">Profile Grouping</span> functionality by adjusting settings in the <span class="span_11">KIC2000UserSettings.kiccfg</span> file.&#160; Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
+                    <p>You enable the <i>Profile Grouping</i> functionality by adjusting settings in the K<b>IC2000UserSettings.kiccfg</b> file, <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\Log\KIC2000UserSettings</i>.  Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
                     <p>&#160;</p>
                     <p class="p_7"><span class="span_27">[</span>APPLICATION CONFIGURATIONS<span class="span_27">]</span></p>
                     <p class="p_41">EnableProfieGrouping=1</p>
@@ -452,8 +449,8 @@
                     <p>&#160;</p>
                     <ol start="2">
                         <li>Select the <span class="span_11">Grouping</span> tab.<br /><br />The Grouping tab screen appears, displaying a pull-down list of products that already have defined in-spec, baseline profiles:</li>
-                        <li>&#160;</li>
                     </ol>
+                    <p>&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300007C.png" style="width: 439px;height: 276px;" class="img_1" />
                     </p>
@@ -464,7 +461,7 @@
                     <p>&#160;</p>
                     <ol start="4">
                         <li>
-                            <p>In the <span class="span_11">Add New Model</span> field, type in a model name (using wildcards as appropriate), and click the <span class="span_11">Add</span> button.</p>
+                            <p>In the <b>Add New Model</b> field, type in a model name (using wildcards as appropriate) and click the <b>Add</b> button.<br /><br /></p>
                             <p>The model name appears in the Linked Models list</p>
                         </li>
                     </ol>
@@ -605,7 +602,6 @@
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/02000083.jpg" style="height: 182px;width: 624px;" class="img_1" />
                     </p>
-                    <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>The name also appears at the top of the profile data screen</p>

@@ -48,10 +48,11 @@
                         </tr>
                         <tr>
                             <td class="td_15">
-                                <p>You can use password protection to limit the ability to acknowledge alarms.&#160; To do so, you first need to specify the following value in the KIC2000UserSettings.kiccfg file:</p>
+                                <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the <span style="font-family: 'Courier New'; font-size: 9pt;">KIC2000UserSettings.kiccfg</span> file:</p>
                                 <p class="p_15">&#160;</p>
                                 <p class="p_15">[HOST]</p>
-                                <p class="p_17">UsingPasswordwithRedAlarm=1</p>
+                                <p class="p_17"><span style="font-family: 'Courier New'; font-size: 9pt;">UsingPasswordwithRedAlarm=1</span>
+                                </p>
                                 <p class="p_17">Next, you need to specify a password on the Global Preferences screen <span class="span_12">Engineer Password</span> option.&#160; Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.</p>
                             </td>
                             <td>&#160;</td>
@@ -71,8 +72,9 @@
                     </p>
                     <p>&#160;</p>
                     <p><span class="span_11">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
-                    <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.&#160; Below is a table of messages that you might see during this process:&#160; See Table 2.</p>
+                    <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.  Below is a table of messages that you might see during this process:  See Table 2.</p>
                     <p>&#160;</p>
                     <table align="center" class="table_2">
                         <col style="width: 104pt;" />
@@ -120,7 +122,7 @@
                         <tr>
                             <td class="td_19">
                                 <p>If the verification profile PWI is &gt;= 90%, you will receive this message when starting the VP.</p>
-                                <p>If there was a problem with the most recent profile, it can be deleted and the system will try to use the next most recent profile as the baseline profile.  Otherwise, you are advised to run another profile.  See Figure 85.</p>
+                                <p>If there was a problem with the most recent profile, it can be deleted, and the system will try to use the next most recent profile as the baseline profile.  Otherwise, you are advised to run another profile.</p>
                             </td>
                             <td>&#160;</td>
                             <td class="td_19">
@@ -140,7 +142,7 @@
                         <col />
                         <tr>
                             <td class="td_19">
-                                <p>This message will appear if the eTPU is not detected when attempting to start Virtual Profiling.  This can occur if there is an issue with the eTPU, or the connection configuration.  Waiting 5 seconds sometimes allows a connection to the eTPU to be established.  See Figure 86.</p>
+                                <p>This message will appear if the eTPU is not detected when attempting to start Virtual Profiling.  This can occur if there is an issue with the eTPU, or the connection configuration.  Waiting 5 seconds sometimes allows a connection to the eTPU to be established.</p>
                             </td>
                             <td>&#160;</td>
                             <td class="td_19">
@@ -161,7 +163,7 @@
                         <col />
                         <tr>
                             <td class="td_19">
-                                <p>This alarm will appear when trying to start a Virtual Profile from the Profile Explorer.  The oven conveyor must be running and set to the correct speed settings in order to start Virtual profiling.  See Figure 87.</p>
+                                <p>This alarm will appear when trying to start a Virtual Profile from the Profile Explorer.  The oven conveyor must be running and set to the correct speed settings in order to start Virtual profiling.</p>
                                 <p>&#160;</p>
                             </td>
                             <td>&#160;</td>
@@ -360,43 +362,18 @@
                     </table>
                     <p class="Caption">Table 5: Virtual Profiling – Warnings</p>
                     <p>&#160;</p>
+                    <h3 class="Heading3">Detailed Alarm Information</h3>
+                    <p>Most alarm conditions will activate an optional, external Alarm Relay, which can be used for stopping the infeed conveyor and preventing further boards from entering the oven during an alarm. The default operation is if the alarm condition is corrected, even if the alarm notification message on the screen has not been acknowledged, the Alarm Relay will automatically turn off allowing boards to resume entering the oven.</p>
                     <p>&#160;</p>
-                    <h2 class="Heading2"><a name="eTPU_Communication"></a>eTPU Communication</h2>
-                    <h3 class="Heading3"><a name="Communication_Troubleshooting_for_the_eTPU"></a>Communication Troubleshooting for the eTPU</h3>
-                    <ul style="list-style-type: square;">
-                        <li><span class="span_11">If the Yellow </span><span class="span_11">LED</span> <span class="span_11">(AC Power) is not on, then there is no power present.</span></li>
-                    </ul>
-                    <p class="p_16">To correct this, make sure the eTPU power supply is properly connected to the eTPU and connected to an AC power source.&#160; Use only a factory-supplied power supply.</p>
+                    <p>However, some users may only want to resume product flow only AFTER the alarm notification has been acknowledged. For Alarm numbers 1, 10, and 11 (see above table for each alarm description) you can modify this functionality so that the Alarm Relay will stay activated until the screen message is acknowledged.</p>
                     <p>&#160;</p>
-                    <ul style="list-style-type: square;">
-                        <li><span class="span_11">If the g</span><span class="span_11">reen LED</span> <span class="span_11">(Network communication)</span><span class="span_11"> is not </span><span class="span_11">on, then there is no </span><span class="span_11">Ethernet communication.</span></li>
-                    </ul>
-                    <p class="p_16">To correct this, ensure the dedicated Ethernet adapter is configured properly.&#160; Also make sure the correct IP address class is used, and that the subnet mask is entered correctly.</p>
-                    <p>&#160;</p>
-                    <ul style="list-style-type: square;">
-                        <li><span class="span_11">If</span><span class="span_11"> you open the software and the r</span><span class="span_11">ed </span><span class="span_11">LED </span><span class="span_11">does not begin blinking (slow blink), then the </span><span class="span_11">SitePlayer</span><span class="span_11"> IP address</span> <span class="span_11">may</span><span class="span_11"> not </span><span class="span_11">be </span><span class="span_11">configured properly.</span></li>
-                    </ul>
-                    <p class="p_16">To correct this, exit the software and then open the file:</p>
-                    <p class="p_16"><span class="span_16">C:\</span><span class="span_16">software root directory</span><span class="span_16">\</span><span class="span_16">Log\KIC2000Hardware.kiccfg</span>
-                    </p>
-                    <p class="p_16">&#160;</p>
-                    <p class="p_16">Edit the line:</p>
-                    <p class="p_16"><span class="span_16">SitePlayer</span><span class="span_16">IPA</span><span class="span_16">d</span><span class="span_16">dress=</span>
-                    </p>
-                    <p class="p_16">&#160;</p>
-                    <p class="p_16">Enter the IP address of your eTPU-SitePlayer.</p>
-                    <p class="p_16">If still not working, then use Internet Explorer to access the eTPU SitePlayer and use the manual switch.</p>
-                    <p>&#160;</p>
-                    <ul style="list-style-type: square;">
-                        <li><span class="span_11">If you cannot connect to the </span><span class="span_11">SitePlayer</span><span class="span_11"> using </span><span class="span_11">Internet</span><span class="span_11"> Explorer, t</span><span class="span_11">hen the </span><span class="span_11">SitePlayer</span><span class="span_11"> IP address is</span> <span class="span_11">typed</span> <span class="span_11">incorrect</span><span class="span_11">ly</span><span class="span_11"> or the address is </span><span class="span_11">unknown</span><span class="span_11">.</span></li>
-                    </ul>
-                    <p class="p_16">To correct this, enter the correct IP address for the SitePlayer.&#160; As long as the SitePlayer is not damaged, you can connect.&#160; If you are unsure of the correct IP address of the SitePlayer, remove the cover and read the IP address from the eTPU configuration label.&#160; If the IP address is unrecoverable, then the eTPU must be returned to your system supplier for reprogramming.</p>
-                    <p>&#160;</p>
-                    <ul style="list-style-type: square;">
-                        <li><span class="span_11">If communication with the eTPU is lost, (i.e. eTPU Ethernet cable unplugged, or the power disconnected) the syst</span><span class="span_11">em may not recover on its own.</span>
-                        </li>
-                    </ul>
-                    <p class="p_16">To correct this, close the software and then open it again.&#160; This should reset the eTPU SitePlayer.&#160; In some situations, it may require a PC reboot to regain communication with the eTPU.&#160; (green and red LEDs)</p>
+                    <p>To change to this operation:</p>
+                    <ol>
+                        <li>Exit the software</li>
+                        <li>Using Windows Explorer, browse to the <span style="font-family: 'Courier New';">C:\ software root \Log</span> directory and open the <i style="font-family: 'Courier New';">KIC2000ReadOnly.kiccfg</i></li>
+                        <li>Modify the line <i style="font-family: 'Courier New';">AROnUntilAcknowledge=0</i> to <i style="font-family: 'Courier New';">=1</i></li>
+                        <li>Save and close the file, then restart the software</li>
+                    </ol>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum allowable back-to-back boards has been exceeded</h3>
                     <p>This is alarm in disabled by default. You may want to enable this optional alarm if you want to be alerted when too many products are being loaded back-to-back into the oven, which can sometimes lead to other process related issues. It will allow you to specify how many consecutive back-to-back boards are allowed. If that number is exceeded, an alarm will be generated.</p>
@@ -409,7 +386,7 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li>Exit the software, browse to the <i>C:\Profiling System</i> directory and run the <i>ConfigurationProgram.exe</i>. Select the <i>Hardware</i> tab.</li>
+                                        <li>Exit the software, browse to the <i style="font-family: 'Courier New'; font-size: 9pt;">C:\ software root directory</i>  and run the <i>ConfigurationProgram.exe</i>. Select the <i>Hardware</i> tab.</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>

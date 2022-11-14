@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UrlList>
+    <Url Source="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000185.png" />
+    <Url Source="Resources/Images/z70.png" />
     <Url Source="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000031.png" />
     <Url Source="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000053.png" />
     <Url Source="Resources/Images/z69.png" />
@@ -18,6 +20,4 @@
     <Url Source="Resources/Images/03000191.png" />
     <Url Source="Resources/Images/03000190.png" />
     <Url Source="Resources/Images/03000189.png" />
-    <Url Source="Resources/Images/03000188.png" />
-    <Url Source="Resources/Images/03000187.png" />
 </UrlList>

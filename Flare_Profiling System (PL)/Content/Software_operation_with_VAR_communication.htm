@@ -12,24 +12,10 @@
                     <p class="p_19">
                         <img src="Resources/Images/z26.png" class="img_1" />
                     </p>
-                    <h2 class="Heading2"><a name="Confirm_communications"></a>Confirm Oven Communications</h2>
-                    <p class="p_19">
-                        <img src="Resources/Images/z27.png" class="img_1" style="width: 526px;height: 449px;" />
-                    </p>
-                    <p class="Caption">Figure 88: Hardware Status – Oven Controller Communication</p>
-                    <p class="Caption">&#160;</p>
-                    <p>Once you’ve installed the system on a communication-capable oven, your first task is to check the Hardware Status screen to see if the software recognizes the oven controller.</p>
                     <p>&#160;</p>
-                    <p>If the appropriate system isn’t identified in the <span class="span_12">Oven Controller</span> field check the following:</p>
-                    <ul class="ul_2">
-                        <li class="ListParagraph_2">Verify that the software is installed on the same PC and hard drive as the manufacturer’s oven controller software.</li>
-                        <li class="ListParagraph_2">Exit the software and run the <span class="span_12">ConfigurationProgram.exe</span> found in the software root directory folder.&#160; The Hardware tab lists a selection of ovens and oven models.</li>
-                        <li class="ListParagraph_2">Contact supplier or the oven manufacturer to make sure the version of oven controller software and firmware is compatible for oven communications.</li>
-                        <li class="ListParagraph_2">Make sure that the latest versions of the correct drivers are properly installed. (Contact supplier or the oven manufacturer for details.)</li>
-                    </ul>
                     <h2 class="Heading2"><a name="Software_configuration1"></a>Configure Software for Oven Communication</h2>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 250pt;" />
                         <tr>
                             <td class="td_32">
@@ -47,11 +33,28 @@
                             </td>
                             <td class="td_32">
                                 <p>
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/020000A6.jpg" style="height: 228px;width: 277px;" class="img_1" />
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/020000A6.jpg" />
                                 </p>
                             </td>
                         </tr>
                     </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Confirm_communications"></a>Confirm Oven Communications</h2>
+                    <p class="p_19">
+                        <img src="Resources/Images/z27.png" />
+                    </p>
+                    <p class="Caption">Figure 88: Hardware Status – Oven Controller Communication</p>
+                    <p class="Caption">&#160;</p>
+                    <p>Once you’ve installed the system on a communication-capable oven, your first task is to check the Hardware Status screen to see if the software recognizes the oven controller.</p>
+                    <p>&#160;</p>
+                    <p>If the appropriate system isn’t identified in the <span class="span_12">Oven Controller</span> field check the following:</p>
+                    <ul class="ul_2">
+                        <li class="ListParagraph_2">Verify that the software is installed on the same PC and hard drive as the manufacturer’s oven controller software.</li>
+                        <li class="ListParagraph_2">Exit the software and run the <span class="span_12">ConfigurationProgram.exe</span> found in the software root directory folder.&#160; The Hardware tab lists a selection of ovens and oven models.</li>
+                        <li class="ListParagraph_2">Contact supplier or the oven manufacturer to make sure the version of oven controller software and firmware is compatible for oven communications.</li>
+                        <li class="ListParagraph_2">Make sure that the latest versions of the correct drivers are properly installed. (Contact supplier or the oven manufacturer for details.)</li>
+                    </ul>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Baseline_recipe_explained"></a>Use a Base Oven Recipe with Oven Communication</h2>
                     <p>The operating parameters of a reflow oven are specified by the manufacturer in the oven controller.&#160; These parameters may include zone setpoint temperatures, conveyor speed, fan speed, Nitrogen On/Off, conveyor width, etc.&#160; Taken together, these parameters form a <span class="span_12">Base Oven Recipe</span>, which the software uses as a set of default values.&#160; </p>
                     <p>The software can set/load the zone setpoint temperatures and the conveyor speed parameters, adjusting them from the default values in the Base Oven Recipe.</p>
@@ -59,7 +62,7 @@
                     <p>In order for the engineer to specify the other parameters, a <span class="span_12">Base Oven Recipe</span> must be created.&#160; This oven recipe has all the oven parameters except the zone set point temperatures and conveyor speed set correctly.&#160; When you load a Virtual Profile for a given product, this software will modify the set points and conveyor speed in the Base Oven Recipe, and then load the Base Oven Recipe into the oven controller.&#160; In this way, the oven will be setup exactly as it was during the Baseline Profile.</p>
                     <p>&#160;</p>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 250pt;" />
                         <tr>
                             <td class="td_32">
@@ -68,7 +71,7 @@
                             </td>
                             <td class="td_32">
                                 <p>
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A7.png" style="width: 242px;height: 165px;" class="img_1" />
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A7.png" style="width: 294px;height: 200px;" class="img_1" />
                                 </p>
                             </td>
                         </tr>
@@ -99,12 +102,12 @@
                     </ul>
                     <p class="ListBullet2_1">&#160;</p>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 200pt;" />
                         <tr>
                             <td class="td_32">
                                 <ul class="ul_2">
-                                    <li class="ListNumber4">The software will display the message “Waiting for the oven controller to acknowledge recipe change”.&#160; There will be a time delay displayed for an estimated period for the oven to acknowledge the changes and that all conditions are right to set the oven to these new set points.&#160;See Figure 89.</li>
+                                    <li class="ListNumber4">The software will display the message “Waiting for the oven controller to acknowledge recipe change”.  There will be a time delay displayed for an estimated period for the oven to acknowledge the changes and that all conditions are right to set the oven to these new set points.</li>
                                 </ul>
                                 <p class="ListBullet_1">&#160;</p>
                             </td>
@@ -140,12 +143,12 @@
                     </ul>
                     <p class="ListBullet2_1">&#160;</p>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 300pt;" />
                         <tr>
                             <td class="td_32">
                                 <ul>
-                                    <li>Next the system will take you to the Verify Minimum and Maximum Set point Temperature screen.&#160; This is to verify that we have not allowed the software to choose set point values that the oven is not capable of controlling to.&#160; (See Figure 91.)</li>
+                                    <li>Next the system will take you to the Verify Minimum and Maximum Set point Temperature screen.&#160; This is to verify that we have not allowed the software to choose set point values that the oven is not capable of controlling to.&#160; </li>
                                 </ul>
                                 <p>&#160;</p>
                                 <ul>
@@ -160,9 +163,10 @@
                             </td>
                         </tr>
                     </table>
-                    <p class="ListParagraph">If you entered the new set points manually the software will automatically find new set points like the Navigator would when you get to this point.&#160; Be patient you may have to go through this cycle of the oven not controlling to set point values a few times before the proper combination of acceptable set points and profile optimization can be found.&#160; In worst case scenarios you may have to change the 2.0 degrees delta between set point and actual because the oven is just simply not capable of getting within 2 degrees C of the set point no matter what the temperature.&#160; Please contact KIC Tech support if this is the case.</p>
+                    <p class="ListParagraph">If you entered the new set points manually the software will automatically find new set points like the Navigator would when you get to this point.&#160; Be patient you may have to go through this cycle of the oven not controlling to set point values a few times before the proper combination of acceptable set points and profile optimization can be found.&#160; In worst case scenarios you may have to change the 2.0 degrees delta between set point and actual because the oven is just simply not capable of getting within 2 degrees C of the set point no matter what the temperature.&#160; </p>
                     <p class="ListParagraph">&#160;</p>
-                    <p><span class="span_11">T</span><span class="span_11">ip</span>: If you get into a situation where you are having to adjust too many times and are still not getting set points that the oven will control to, but you are or you will be in spec by manually changing predicted set points, then go into the Optimization Tab and turn off “Allow Zone Set points To Change”.&#160; The next time around, the software will not change any of the zone values but you can go in and change them manually to exactly what the actual values are and run the profile.</p>
+                    <p><b>Tip:</b> If you get into a situation where you are having to adjust too many times and are still not getting set points that the oven will control to, but you are or you will be in spec by manually changing predicted set points, then go into the Optimization Tab and turn off “Allow Zone Set points To Change”.  The next time around, the software will not change any of the zone valuesvalues, but you can go in and change them manually to exactly what the actual values are and run the profile.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Starting_a_Virtual"></a>Start a Virtual Profile with Oven Communication</h2>
                     <p>Before running a Virtual Profile with oven communications, review the following:</p>
                     <p>&#160;</p>
@@ -177,12 +181,12 @@
                     <p class="ListBullet2_1">You can save any changes made to the original recipe while profiling if you want to create a recipe that can be run on the oven controller without the software running.&#160; If you choose not to save the changes, when you load this product under the software it will load the proper recipe parameters for that product.</p>
                     <p class="ListBullet2_1">&#160;</p>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 300pt;" />
                         <tr>
                             <td class="td_32">
                                 <ol start="3" class="ol_3">
-                                    <li class="ListBullet2">When starting a Virtual Profile from the Profile Explorer, you will be asked to select your Base Oven Recipe.&#160; A browse dialog box will appear, providing you with the means to browse your PC and point to the location and file name of the Base Oven Recipe you’ve chosen to use for this product. See Figure 92.</li>
+                                    <li class="ListBullet2">When starting a Virtual Profile from the Profile Explorer, you will be asked to select your Base Oven Recipe.&#160; A browse dialog box will appear, providing you with the means to browse your PC and point to the location and file name of the Base Oven Recipe you’ve chosen to use for this product.</li>
                                 </ol>
                                 <p class="ListBullet2_1">&#160;</p>
                                 <p class="ListBullet2_1">Remember it should be the same one you chose when you originally ran your baseline profiles.&#160; If you choose the wrong Base Oven Recipe, you could have boards fall off the conveyor or never even make it in because the Base Oven Recipe you chose does not match the width of the original file you loaded.</p>
@@ -202,12 +206,12 @@
                     </ol>
                     <p class="ListBullet">&#160;</p>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 200pt;" />
                         <tr>
                             <td class="td_32">
                                 <ol start="5" class="ol_3">
-                                    <li class="ListBullet2">If you have already loaded a VP and selected a Base Oven Recipe then you will not see the <span class="span_12">Select the</span><span class="span_12"> Base Oven Recipe to be Loaded</span> screen.&#160; Instead you will see the screen shown at the right, verifying that you are loading the correct Base Oven Recipe.&#160; If you choose <span class="span_12">No</span> then the <span class="span_12">Select</span><span class="span_12"> Base Oven Recipe to Be Loaded</span>: screen will appear.&#160; (See Figure 94.)</li>
+                                    <li class="ListBullet2">If you have already loaded a VP and selected a Base Oven Recipe then you will not see the <span class="span_12">Select the</span><span class="span_12"> Base Oven Recipe to be Loaded</span> screen.&#160; Instead you will see the screen shown at the right, verifying that you are loading the correct Base Oven Recipe.&#160; If you choose <span class="span_12">No</span> then the <span class="span_12">Select</span><span class="span_12"> Base Oven Recipe to Be Loaded</span>: screen will appear.&#160; </li>
                                 </ol>
                             </td>
                             <td class="td_32">
@@ -221,6 +225,7 @@
                     </table>
                     <p>&#160;</p>
                     <p><span class="span_11">Note</span>: If you feel that the system is taking too long to load the Base Oven Recipe or the setpoints, switch over to the oven control software and see if you can detect a reason why the oven is not accepting the changes.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Base_oven_recipe"></a>Base Oven Recipe Automatic Verification</h2>
                     <p>For Base Oven Recipe compatible ovens, users can automatically verify the correct Base Oven Recipe before beginning a Virtual Profile.&#160; This feature is especially useful for users that have multiple production products using multiple Base Oven Recipes.&#160; The system will allow you to select the Base Oven Recipe and if the selected recipe does not match, the Virtual Profile cannot begin.</p>
                     <p>&#160;</p>
@@ -229,7 +234,7 @@
                     </ol>
                     <p class="ListBullet">&#160;</p>
                     <ol start="2" class="ol_3">
-                        <li class="ListBullet2">Find and open the file: <span class="span_16">C:\</span><span class="span_16">software root directory</span><span class="span_16">\Log\KIC2000UserSettings.kiccfg</span></li>
+                        <li class="ListBullet2">Find and open the file: <span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\Log\KIC2000UserSettings.kiccfg</span></li>
                     </ol>
                     <p class="ListBullet">&#160;</p>
                     <ol start="3" class="ol_3">
@@ -250,7 +255,7 @@
                     </ol>
                     <p class="ListBullet">&#160;</p>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 239pt;" />
                         <tr>
                             <td class="td_32">
@@ -258,7 +263,7 @@
                             </td>
                             <td class="td_32">
                                 <p class="p_19">
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000AC.png" style="height: 61px;width: 217px;" class="img_1" />
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000AC.png" style="width: 314px;height: 87px;" class="img_1" />
                                 </p>
                                 <p class="p_59">&#160;</p>
                             </td>
@@ -271,7 +276,7 @@
                             </td>
                             <td class="td_32">
                                 <p class="p_19">
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000AD.png" style="height: 171px;width: 245px;" class="img_2" />
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000AD.png" style="width: 320px;height: 222px;" class="img_2" />
                                 </p>
                                 <p class="p_59">&#160;</p>
                             </td>
@@ -284,7 +289,7 @@
                             </td>
                             <td class="td_32">
                                 <p class="p_19">
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000AE.png" style="height: 174px;width: 298px;" class="img_1" />
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000AE.png" style="width: 453px;height: 263px;" class="img_1" />
                                 </p>
                                 <p class="Caption_2">&#160;</p>
                             </td>
@@ -321,7 +326,7 @@
                     </ol>
                     <p>&#160;</p>
                     <table>
-                        <col style="width: 274px;" />
+                        <col style="width: 404px;" />
                         <col />
                         <tbody>
                             <tr>
@@ -368,7 +373,7 @@
                         <li class="ListParagraph_5">Board sensors</li>
                     </ul>
                     <table class="table_2">
-                        <col style="width: 239pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 250pt;" />
                         <tr>
                             <td class="td_32">
@@ -394,7 +399,7 @@
                     <p>The single system uses the same recipe on both lanes, but tracks two flows of product across the user interface.&#160; When in Live Mode, the white rectangle icons track two boards through channels at the top of the Charts, Chart data, and Troubleshooting tab screens:</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000B1.png" style="height: 86px;width: 624px;" class="img_1" />
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000B1.png" />
                     </p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
@@ -406,7 +411,7 @@
                     <p>During the software installation, you will have the option to select what type of system will be in use:</p>
                     <p>&#160;</p>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 350pt;" />
                         <tbody>
                             <tr>
@@ -420,19 +425,29 @@
                                     <p>Select “<span class="span_12">Dual Lane Single System</span>” if there is only <span class="span_15">one</span> system installed across the two lanes of the oven.</p>
                                 </td>
                                 <td style="text-align: center;">
-                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000B5.png" style="width: 394px;height: 292px;" />
+                                    <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000B5.png" />
                                 </td>
                             </tr>
                             <tr>
                                 <td>
+                                    <p>&#160;</p>
                                     <p>When “<span class="span_12">Dual Lane Dual System</span>” is selected, as noted previously, there will be two separate software directories used – one for the “Front” and one for the “Back”. You will be able to choose whether you want to install the software for either one, or both directories. </p>
                                 </td>
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000B6.png" style="width: 394px;height: 291px;" />
                                 </td>
                             </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>Additional settings for a Dual Lane system configuration can be found in the <i>ConfigurationProgram.exe</i> located in the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\Software Root</span> directory.</p>
+                    <table class="table_2">
+                        <col style="width: 300pt;" />
+                        <col style="width: 350pt;" />
+                        <tbody>
                             <tr>
                                 <td>
+                                    <p>&#160;</p>
                                     <p><span class="span_14">Lane Configuration</span> – For a Dual Lane-Single System, this section allows you to specify the position of the Board Tracking display in the software for each lane. </p>
                                     <p>&#160;</p>
                                     <p><span class="span_14">User defined label for Lanes</span> – By default, the software will label the lanes “Front” and “Back”. When the checkbox is checked, the drop-down menu allows you to select alternate designations for the lane names. </p>
@@ -459,7 +474,7 @@
                     <p>&#160;</p>
                     <h4 class="Heading4">Configuring to profile</h4>
                     <table class="table_2">
-                        <col style="width: 230pt;" />
+                        <col style="width: 300pt;" />
                         <col style="width: 200pt;" />
                         <tbody>
                             <tr>

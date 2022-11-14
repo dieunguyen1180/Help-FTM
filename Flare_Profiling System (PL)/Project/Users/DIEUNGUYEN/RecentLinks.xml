@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RecentLinks>
     <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
-        <Link Value="O:\Help for KIC\NEW HELP from TPS\Flare_Profiling System (PL) 3.6\Content\Resources\Images\z68.png" />
+        <Link Value="O:\Help for KIC\HELP FTM\Flare_Profiling System (PL)\Content\Resources\Images\SFT-324100-101 Profiling System User Manual v3.2 draft\03000185.png" />
     </Dialog>
     <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
-        <Link Value="O:\Help for KIC\NEW HELP from TPS\Flare_Profiling System (PL) 3.8\Content\Understanding_the_software_options.htm" />
+        <Link Value="O:\Help for KIC\HELP FTM\Flare_Profiling System (PL)\Content\Virtual_Profiling_VP.htm" />
     </Dialog>
     <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog" />
 </RecentLinks>

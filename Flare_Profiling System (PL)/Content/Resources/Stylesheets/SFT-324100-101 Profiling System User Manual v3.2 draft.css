@@ -487,8 +487,8 @@ li.ListBullet
 
 p.ListParagraph
 {
-	margin-left: 36pt;
 	font-family: 'Times New Roman';
+	margin-left: 30pt;
 }
 
 p.ListBullet2_1
@@ -4896,5 +4896,99 @@ p.Footer_1
 	border-top-color: #333399;
 	font-family: 'Times New Roman';
 	margin-right: -23pt;
+}
+
+ul.Square
+{
+	list-style-image: none;
+}
+
+ul.Square > li::marker
+{
+	font-family: 'Times New Roman';
+	font-size: 14pt;
+	content: '▪';
+}
+
+ul.Square > li > ul
+{
+	list-style-image: none;
+}
+
+ul.Square > li > ul > li::marker
+{
+	font-size: 14pt;
+	content: '▪';
+}
+
+ul.Square > li > ul > li > ul
+{
+	list-style-image: none;
+}
+
+ul.Square > li > ul > li > ul > li::marker
+{
+	font-size: 14pt;
+	content: '▪';
+}
+
+ul.Square > li > ul > li > ul > li > ul
+{
+	list-style-image: none;
+}
+
+ul.Square > li > ul > li > ul > li > ul > li::marker
+{
+	font-size: 14pt;
+	content: '▪';
+}
+
+ul.SqareIcon
+{
+	list-style-image: none;
+}
+
+ul.SqareIcon > li::marker
+{
+	font-family: Wingdings;
+	content: 'q';
+}
+
+ul.SqareIcon > li > ul
+{
+	list-style-image: none;
+}
+
+ul.SqareIcon > li > ul > li::marker
+{
+	font-family: Wingdings;
+	content: 'q';
+}
+
+ul.SqareIcon > li > ul > li > ul
+{
+	list-style-image: none;
+}
+
+ul.SqareIcon > li > ul > li > ul > li::marker
+{
+	font-family: Wingdings;
+	content: 'q';
+}
+
+ul.SqareIcon > li > ul > li > ul > li > ul
+{
+	list-style-image: none;
+}
+
+ul.SqareIcon > li > ul > li > ul > li > ul > li::marker
+{
+	font-family: Wingdings;
+	content: 'q';
+}
+
+div
+{
+	font-size: 10pt;
 }
 
