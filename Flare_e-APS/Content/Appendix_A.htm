@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title></title>
-        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/SFT-321000-151 e-APS User Manual.css" rel="stylesheet" />
     </head>
     <body>
         <table style="width: 1000px;">
@@ -10,8 +10,7 @@
                 <td>
                     <h1 class="Heading1"><a name="Appendix_A_Using_the"></a>Appendix A: The Process Window Index
                     </h1>
-                    <p style="text-align: center;"><span style="font-size: 18pt; font-weight: bold; font-family: Arial;">A Method for Quantify Thermal Profile Performance</span>
-                    </p>
+                    <p style="text-align: center;font-family: Arial;font-size: 16pt;font-weight: bold;">A Method for Quantify Thermal Profile Performance</p>
                     <h2 class="Heading2"><a name="The_Problem"></a>The Problem
                     </h2>
                     <p>While there are currently statistically valid methods for quantifying pick and place and screen printer performance, there is no widely accepted method for comparing performance of thermal profiles, and thus, no quantifiable system of ranking thermal process performance.&#160; Once a thermal profile has been run, it is judged as being either in or out of spec, and perhaps subjectively judged as being OK, good, or really good.&#160; Efforts to track process performance for SPC or QC generally focus on a single, or a small group, of profile statistics; for example, peak temperature of one or two thermocouples on a golden board.&#160; The Process Window Index is a statistical method for ranking thermal profile and thermal process performance.</p>
@@ -22,14 +21,14 @@
                         <col style="width: 150pt;" />
                         <tr>
                             <td class="td_25">
-                                <p>The Process Window Index (PWI) is a measure of how well a profile fits within user defined process limits.  See Figure 106.</p>
+                                <p>The Process Window Index (PWI) is a measure of how well a profile fits within user defined process limits. </p>
                                 <p>&#160;</p>
                                 <p>This is done by ranking process profiles on the basis of how well a given profile “fits” the critical process statistics.&#160; A profile that will process product without exceeding any of the critical process statistics is said to be inside the Process Window.&#160; The center of the Process window is defined as zero, and the extreme edge of the process window as 99%.</p>
                                 <p>&#160;</p>
                             </td>
                             <td class="td_25">
                                 <p style="text-align: center;">
-                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000113.png" style="width: 281px;height: 174px;" />
+                                    <img src="Resources/Images/SFT-321000-151 e-APS User Manual/08000113.png" style="width: 281px;height: 174px;" />
                                 </p>
                                 <p class="Caption">Figure 106: Process Window and PWI</p>
                                 <p>&#160;</p>
@@ -43,7 +42,7 @@
                             </td>
                             <td class="td_25">
                                 <p style="text-align: center;">
-                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000114.png" style="height: 155px;width: 278px;" class="img_11" />
+                                    <img src="Resources/Images/SFT-321000-151 e-APS User Manual/08000114.png" style="height: 155px;width: 278px;" class="img_11" />
                                 </p>
                                 <p class="Caption">Figure 107: The Process Window Index<br /></p>
                                 <p class="Caption">(Single Statistic—Peak Temperature of one Thermocouple)</p>
@@ -57,7 +56,7 @@
                     <p>&#160;</p>
                     <p>For example: if a profile is run with six thermocouples, and four profile statistics are logged for each thermocouple, then there will be a set of twenty-four statistics for that profile, and the PWI will be the worst case (highest number expressed as a percentage) in that set of profile statistics.  Note that Figure 108 shows the user-designated critical statistics for a single thermocouple.</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000115.png" style="width: 623px;height: 404px;" />
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/08000115.png" style="width: 623px;height: 404px;" />
                     </p>
                     <p class="Caption">Figure 108: The Process Window Index<br />(Multiple Statistics for a Single Thermocouple and Final PWI Calculation)</p>
                     <p class="Caption">
@@ -67,15 +66,15 @@
                     <p>To calculate the Process Window Index: i=1 to N (number of thermocouples); j=1 to M (number of statistics per thermocouple); <span class="span_9">measured_value</span><sub class="sub_1">[i,j]</sub> is the [i,j]<sup>th</sup> statistic’s value; <span class="span_9">average_limits</span><sub class="sub_1">[i,j]</sub> is the average of the [i,j]<sup>th</sup> statistic’s high and low limits; and <span class="span_9">range</span><sub class="sub_1">[i,j] </sub>is the [i,j]<sup>th</sup> statistic’s high limit minus the low limit.</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000116.png" style="width: 521px;height: 77px;" />
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/08000116.png" style="width: 521px;height: 77px;" />
                     </p>
                     <p class="Caption">Figure 109: Formula for calculating the PWI</p>
                     <p>&#160;</p>
-                    <p>Thus, the PWI calculation includes all thermocouple statistics for all thermocouples.&#160; The profile PWI is the worst case profile statistic (maximum, or highest percentage of the process window used), and all other values are less.</p>
+                    <p>Thus, the PWI calculation includes all thermocouple statistics for all thermocouples.&#160; The profile PWI is the worst-case profile statistic (maximum, or highest percentage of the process window used), and all other values are less.</p>
                     <p>&#160;</p>
                     <p><b>Note</b>: When using non-centered Target values, a modified formula is used.</p>
                     <p>&#160;</p>
-                    <h2 class="Heading2"><span class="span_44"><a name="Benefits_of_Ranking_Thermal_Profile_Performance"></a>Benefits of Ranking Thermal Profile Performance</span>
+                    <h2 class="Heading2"><a name="Benefits_of_Ranking_Thermal_Profile_Performance"></a>Benefits of Ranking Thermal Profile Performance
                     </h2>
                     <p>The analysis of thermal profiles with the Process Window Index offers four significant benefits.&#160; The first is that profiles can be easily compared, and users can be confident that they are using the best profile their process can achieve.&#160; Before the PWI was available for profile analysis, comparing profiles was subjective, and users could never be certain they had the best profile for their product.&#160; The PWI provides an excellent opportunity for process improvement and its use is a significant step towards Zero-defect Production.</p>
                     <p>&#160;</p>

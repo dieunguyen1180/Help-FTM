@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title></title>
-        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/SFT-321000-151 e-APS User Manual.css" rel="stylesheet" />
     </head>
     <body>
         <table style="width: 1000px;">
@@ -12,9 +12,9 @@
                     <h2 class="Heading2"><a name="Writing_data_to_a_Network"></a>Write Data to a Network Drive</h2>
                     <p>The software can be configured to write the collected data (profiles and historical VP data) to a network drive location.  This would allow data from one or even multiple systems to be stored in one centralized location (Server/Shared Hard Drive).</p>
                     <p>&#160;</p>
-                    <p class="p_10">The first step necessary is to map a network drive from the PC running the software to the desired network location.  Due to the multiple varieties of OS and network configurations, this step cannot be described in great detail.  We recommend you contact your IT/Network administrator for setting this up.  Below is a typical example of this setup.  See Figure 76.</p>
+                    <p class="p_10">The first step necessary is to map a network drive from the PC running the software to the desired network location.  Due to the multiple varieties of OS and network configurations, this step cannot be described in great detail.  We recommend you contact your IT/Network administrator for setting this up.  Below is a typical example of this setup.  </p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000080.png" style="width: 528px;height: 271px;" />
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/03000080.png" style="width: 528px;height: 271px;" />
                     </p>
                     <p class="Caption">Figure 76: Example Network </p>
                     <p>&#160;</p>
@@ -25,26 +25,26 @@
                     </ol>
                     <p>&#160;</p>
                     <ol start="2" class="ol_1">
-                        <li class="ListBullet2_4">The <span style="font-size: 9pt; font-family: 'Courier New';">KIC2000DataPath.kiccfg</span> file will open up in Notepad:  See Figure 77.</li>
+                        <li class="ListBullet2_4">The <span style="font-size: 9pt; font-family: 'Courier New';">KIC2000DataPath.kiccfg</span> file will open up in Notepad:  </li>
                     </ol>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000081.png" />
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/03000081.png" />
                     </p>
                     <p class="Caption">Figure 77</p>
                     <p class="Caption">&#160;</p>
                     <ol start="3" class="ol_1">
-                        <li class="ListBullet2_4">Change the line <span style="font-family: Arial;">AllowUserToManuallyChangeWorkingDataPathInThisIniFile=0</span> to the value =1:  See Figure 78.</li>
+                        <li class="ListBullet2_4">Change the line <span style="font-family: Arial;">AllowUserToManuallyChangeWorkingDataPathInThisIniFile=0</span> to the value =1:</li>
                     </ol>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000082.png" />
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/03000082.png" />
                     </p>
                     <p class="Caption">Figure 78</p>
                     <p>&#160;</p>
                     <ol start="4" class="ol_1">
-                        <li class="ListBullet2_4">Change all of the lines shown below to = the desired network location. <b>Note</b>: This will be the main network folder you created and copied the Log, Ovens, Process Spec, and Profiles folders into.  See Figure 79.</li>
+                        <li class="ListBullet2_4">Change all of the lines shown below to = the desired network location. <b style="text-decoration: underline;">Note</b>: This will be the main network folder you created and copied the Log, Ovens, Process Spec, and Profiles folders into.</li>
                     </ol>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000083.png" />
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/03000083.png" />
                     </p>
                     <p class="Caption">Figure 79</p>
                     <p>&#160;</p>
@@ -60,14 +60,13 @@
                         <li class="ListBullet2_4">With the software open, go to the Profile Explorer:</li>
                     </ol>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000084a.png" />
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/03000084a.png" />
                     </p>
                     <p class="Caption">Figure 80</p>
                     <p>&#160;</p>
-                    <p>Your new network drive should be displayed in the upper right hand corner of the screen as the Current Data Path.  See Figure 80.</p>
+                    <p>Your new network drive should be displayed in the upper right-hand corner of the screen as the Current Data Path.</p>
                     <p>&#160;</p>
-                    <p class="Important"><span class="span_21">Note: </span><span class="span_18">The</span><span class="span_18">Network path</span><span class="span_18"> will be grayed out, and cannot be changed from inside of Profile Explorer.</span>
-                    </p>
+                    <p><b>Note:</b> The Network path will be grayed out and cannot be changed from inside of Profile Explorer.</p>
                     <p>&#160;</p>
                     <p>All data collected in this software application will now be written to the network folder chosen.&#160; </p>
                     <p>&#160;</p>
@@ -79,7 +78,7 @@
                         <img src="Resources/Images/image266.png" style="width: 360px;height: 130px;" />
                     </p>
                     <p>&#160;</p>
-                    <p>When this occurs, you are still able to use the software but only working with files (ovens, Process Windows, profiles) that are located in the local directory. It will temporarily reset back to the local install directory and any new files generated or updated will be saved in the local directory (<span style="font-family: 'Courier New'; font-size: 9pt;">C:\ “software root folder”</span>). If the network connection is re-established, the software must be restarted to begin writing directly to the network directory again.</p>
+                    <p>When this occurs, you are still able to use the software but only working with files (ovens, Process Windows, profiles) that are located in the local directory. It will temporarily reset back to the local install directory and any new files generated or updated will be saved in the local directory <span style="font-family: 'Courier New'; font-size: 9pt;">(C:\software root folder)</span>. If the network connection is re-established, the software must be restarted to begin writing directly to the network directory again.</p>
                     <p>&#160;</p>
                     <p>Any data that was collected while the software was offline will be moved to the network directory after the connection has been re-established and the software is restarted.</p>
                     <p>&#160;</p>
@@ -88,13 +87,13 @@
                     <p>To view historical data over the network:</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_1">
-                        <li class="ListBullet2">From your <u>remote</u> computer, start the software and click on the “I am not going to run profiles or live Virtual Profiling” button.  See Figure 81.</li>
+                        <li class="ListBullet2">From your <u>remote</u> computer, start the software and click on the “I am not going to run profiles or live Virtual Profiling” button.  </li>
                     </ol>
                     <p>&#160;</p>
                     <p style="margin-left: 45px;"><b>Caution:</b> Do not choose this button when working at the PC where the system hardware is installed.</p>
                     <p>&#160;</p>
                     <p class="p_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000003a.png" />
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/03000003a.png" />
                     </p>
                     <p class="Caption">Figure 81</p>
                     <p>&#160;</p>
@@ -108,7 +107,7 @@
                     <p class="Caption">Figure 82</p>
                     <p>&#160;</p>
                     <ol start="3" class="ol_1">
-                        <li class="ListBullet2">A <b>Browse</b> button will be enabled in the upper right hand corner of the screen:  See Figure 82.<br /><br />You can now click the <b>Browse</b> button and point to the directory where your profiles are.&#160; Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.<br /><br />For example:&#160;If the profiles are in the folder&#160; <span style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\Profiles\Board A</span> you would direct it only to the folder&#160; <span style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\</span><br /></li>
+                        <li class="ListBullet2">A <b>Browse</b> button will be enabled in the upper right-hand corner of the screen: <br /><br />You can now click the <b>Browse</b> button and point to the directory where your profiles are.&#160; Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.<br /><br />For example:&#160;If the profiles are in the folder&#160;<span style="font-family: 'Courier New'; font-size: 9pt; font-style: italic;">F:\software root directory\Profiles\Board A</span> you would direct it only to the folder&#160;<span style="font-family: 'Courier New'; font-size: 9pt; font-style: italic;">F:\software root directory\</span>.<br /></li>
                     </ol>
                     <p>&#160;</p>
                     <p>&#160;</p>

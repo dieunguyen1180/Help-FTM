@@ -1,4 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UrlList>
+    <Url Source="Resources/Images/bGreenCheck.png" />
+    <Url Source="Resources/Images/bPrint.png" />
+    <Url Source="Resources/Images/bCopyCP.png" />
+    <Url Source="Resources/Images/bEditPW.png" />
+    <Url Source="Resources/Images/bStartVP.png" />
+    <Url Source="Resources/Images/Image2271.png" />
     <Url Source="Resources/Images/image276.png" />
 </UrlList>

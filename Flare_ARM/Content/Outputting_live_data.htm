@@ -8,7 +8,7 @@
             <col style="width: 1000px;" />
             <tr>
                 <td>
-                    <h1 class="Heading1">Using Live Data Output</h1>
+                    <h1 class="Heading1"><a name="Using"></a>Using Live Data Output</h1>
                     <p>The Live Data Output (LDO) feature outputs Virtual Profile (VP) data in real time for use by third-party applications such as Line Balancing/Production Monitoring Host or SPC software.&#160; This data includes barcode information (where applicable) and all relevant profile data, statistics, and limits.&#160; There are several different LDO formats that can be chosen from. Examples of these formats will be shown later in this section. </p>
                     <p>&#160;</p>
                     <p><span class="span_11">Output of the LDO file data</span> –When the VP is running, the statistical data from each newly completed Virtual Profile is written to the LDO file when the board exits the oven.&#160; </p>
@@ -29,23 +29,24 @@
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="LDO_Formats"></a>LDO Formats</h2>
                     <p>There are several standard LDO formats to choose from:</p>
-                    <ul class="ul_3">
-                        <li class="li_9">LDO Standard TSV or CSV format for WordPad</li>
-                        <li class="li_9">LDO Standard TSV or CSV format for Excel</li>
-                        <li class="li_9">LDO 1 Board 1 File (TXT format)</li>
-                        <li class="li_9">LDO 1 Board 1 File (XML format)</li>
-                        <li class="li_9">LDO 1 Board 1 File (CSV format)</li>
+                    <ul class="Square" style="list-style-type: square;">
+                        <li>TSV or CSV format for WordPad</li>
+                        <li>TSV format for Excel</li>
+                        <li>1 Board 1 File (TXT format)</li>
+                        <li>1 Board 1 File (XML format)</li>
+                        <li>1 Board 1 File (CSV format)</li>
                     </ul>
                     <p>&#160;</p>
                     <p>The following are specialized output formats and not typically selected by most users:</p>
-                    <ul class="ul_3">
-                        <li class="li_9">LDO KP Data Only (CSV)</li>
-                        <li class="li_9">LDO XML Format A</li>
-                        <li class="li_9">LDO XML Format A2</li>
-                        <li class="li_9">CUSTOME LDO</li>
+                    <ul class="Square" style="list-style-type: square;">
+                        <li>KP Data Only (CSV)</li>
+                        <li>XML Format A</li>
+                        <li>XML Format A2</li>
+                        <li>CUSTOME LDO</li>
+                        <li>1 Board 1 File – TXT – Alternate/Custom</li>
                     </ul>
                     <h2 class="Heading2"><a name="Details_Of_Output_Files"></a>Details of Output Files</h2>
-                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_WordPad"></a>LDO Standard TSV And CSV for WordPad</h3>
+                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_WordPad"></a>TSV And CSV for WordPad</h3>
                     <ul class="ul_3">
                         <li class="li_9">The output file type is a .TXT </li>
                         <li class="li_9">TSV format is Tab delimited </li>
@@ -56,66 +57,72 @@
                         <li class="li_9">The user can choose to define their own specific output file name</li>
                     </ul>
                     <ul class="ul_2">
-                        <li class="li_9">When default or user defined naming is selected, output file is overwritten when product changeover occurs</li>
+                        <li class="li_8">When default or user defined naming is selected, output file is overwritten when product changeover occurs</li>
                     </ul>
                     <ul class="ul_2">
-                        <li class="li_9">File name format can also be set to:&#160; PRODUCT_YYMMDD_HH-MM-SS.txt</li>
+                        <li class="li_8">File name format can also be set to:&#160; PRODUCT_YYMMDD_HH-MM-SS.txt</li>
                     </ul>
                     <ul class="ul_7">
                         <li class="li_9">When this naming is selected, a new file is generated when product changeover occurs</li>
                     </ul>
-                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_Excel"></a>LDO Standard TSV And CSV For Excel</h3>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_Excel"></a>TSV for Excel</h3>
                     <ul class="ul_3">
                         <li class="li_9">The output file type is a .TXT </li>
                         <li class="li_9">TSV format is Tab delimited </li>
-                        <li class="li_9">CSV format is Comma delimited.</li>
                         <li class="li_9">The output file is first generated when the VP is started</li>
                         <li class="li_9">File is appended as each board exits and VP is calculated</li>
                         <li class="li_9">The default output file name is KIC_ARM_LiveDataOutput.txt</li>
                         <li class="li_9">The user can choose to define their own specific output file name</li>
                     </ul>
                     <ul class="ul_2">
-                        <li class="li_9">When default or user defined naming is selected, output file is overwritten at product changeover</li>
+                        <li class="li_8">When default or user defined naming is selected, output file is overwritten at product changeover</li>
                     </ul>
                     <ul class="ul_3">
                         <li class="li_9">File name format can also be set to:&#160; PRODUCT_YYMMDD_HH-MM-SS.txt</li>
                     </ul>
                     <ul class="ul_2">
-                        <li class="li_9">When this naming is selected, a new file is generated when product changeover occurs</li>
+                        <li class="li_8">When this naming is selected, a new file is generated when product changeover occurs</li>
                     </ul>
-                    <h3 class="Heading3"><a name="LDO_1_Board_1_File"></a>LDO 1 Board 1 File (TXT format)</h3>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="LDO_1_Board_1_File"></a>One board per file (TXT format)</h3>
                     <ul class="ul_3">
                         <li class="li_9">The output file type is a .TXT </li>
                         <li class="li_9">Separate individual file is generated as board exits oven and VP is calculated</li>
                         <li class="li_9">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString (Barcode string included when applicable)</li>
                         <li class="li_9">User cannot change file name – with exception of not including barcode in file name</li>
                     </ul>
-                    <h3 class="Heading3"><a name="LDO_XML"></a>LDO 1 Board 1 File (XML format)</h3>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="LDO_XML"></a>One board per file (XML format)</h3>
                     <ul class="ul_3">
                         <li class="li_9">The output file type is a .XML file</li>
                         <li class="li_9">Separate individual file is generated as board exits oven and VP is calculated</li>
-                        <li class="li_9">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString&#160; (Barcode string included when applicable)</li>
+                        <li class="li_9">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString&#160;(Barcode string included when applicable)</li>
                         <li class="li_9">User cannot change file name – with exception of not including barcode in file name</li>
                     </ul>
-                    <h3 class="Heading3"><a name="LDO_1_Board_1_File_CSV_Format"></a>LDO 1 Board 1 File (CSV format)</h3>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="LDO_1_Board_1_File_CSV_Format"></a>One board per file (CSV format)</h3>
                     <ul class="ul_3">
                         <li class="li_9">The output file type is a .CSV file</li>
                         <li class="li_9">Separate individual file is generated as board exits oven and VP is calculated</li>
                         <li class="li_9">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString&#160; (Barcode string included when applicable)</li>
                         <li class="li_9">User cannot change file name – with exception of not including barcode in file name</li>
                     </ul>
+                    <p>&#160;</p>
                     <h3 class="Heading3"><a name="One_board_per_file_TXT_Alternate"></a>One board per file – TXT - Alternate</h3>
                     <ul style="list-style-type: square;">
                         <li>Similar to ‘standard’ one board per file TXT output</li>
                         <li>Adds lines for ‘customer name’ (taken from Profile Description); separate lines for Date and Time boards entered and exited; which TC had highest PWI</li>
                     </ul>
+                    <p>&#160;</p>
                     <h3 class="Heading3"><a name="One_board_per_file_TXT_Custom"></a>One board per file – TXT - Custom</h3>
                     <ul style="list-style-type: square;">
                         <li>Similar to ‘standard’ one board per file TXT output</li>
                         <li>Does not include temperature specs in specifications (Reflow_Time instead of Reflow_Time_/218)</li>
                     </ul>
                     <p>&#160;</p>
-                    <p><span class="span_24">Note:</span> Examples of each of the available output file types can be found in the C:\Software Root Directory\Sample LDO files folder. </p>
+                    <p class="ListParagraph" style="font-style: normal;"><span class="span_24" style="text-decoration: none;">Note:</span> Examples of each of the available output file types can be found in the <span style="font-family: 'Courier New';">C:\software root Directory\Sample LDO files</span> folder. </p>
+                    <p class="ListParagraph" style="font-style: normal;">&#160;</p>
                     <h2 class="Heading2"><a name="Configure_LDO"></a>Configure LDO</h2>
                     <table style="width: 100%;">
                         <col style="width: 400px;" />
@@ -126,8 +133,8 @@
                                 <td>
                                     <p>&#160;</p>
                                     <ol>
-                                        <li class="li_10">With the automatic system software shut down, browse to the C:\Software Root Directory folder and run the ConfigurationProgram.exe application, and select the LDO tab.<br /></li>
-                                        <li class="li_10">Check the “Enable Live Data Output” checkbox<br /></li>
+                                        <li class="li_10">With the automatic system software shut down, browse to the <span style="font-family: 'Courier New';">C:\Software Root Directory</span> folder and run the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> application, and select the LDO tab.<br /></li>
+                                        <li class="li_10">Check the <b style="font-style: italic;">Enable Live Data Output</b> checkbox<br /></li>
                                         <li class="li_10">Select the desired Format<br /></li>
                                         <li class="li_10">The type of Format chosen will affect what naming structure for file will be used (See Details of Output Files above).<br /></li>
                                         <li class="li_10">Select the destination path for the output file by clicking on the Browse button. This needs to be a location on the local drive.<br /></li>
@@ -137,7 +144,7 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000127.png" style="width: 501px;height: 474px;" />
+                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000127.png" style="width: 501px;height: 474px;" />
                                 </td>
                             </tr>
                         </tbody>
@@ -146,7 +153,7 @@
                     <p>&#160;</p>
                     <p> If a VP is running for an extended amount of time, once the maximum file size is reached, a new file will be generated and the new file name will be appended with a _# as shown in the example below:</p>
                     <p class="p_20">
-                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000128.png" style="height: 83px;width: 591px;" class="img_1" />
+                        <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000128.png" style="height: 83px;width: 591px;" class="img_1" />
                     </p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Include_Alarm_Events"></a>Include Alarm Events in the Output File</h3>
@@ -181,17 +188,17 @@
                     <p>In time, accumulating LDO files can take up too much hard disk space and need to be deleted.&#160; The software provides an <span class="span_12">Auto Delete</span> function that lets you specify time intervals for automated file purging.&#160; You can specify a maximum number of days–up to 1827 (five years)–that the system retains the files before automatic purging.&#160; You can also select a time in the 24-hour cycle for the system to automatically check for files that exceed the maximum day limit. </p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_1">
-                        <li class="ListBullet2">In the automatic system folder, double-click on the <span class="span_11">AutoDelete</span> icon.&#160; <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000129.png" style="height: 18px;width: 88px;" class="img_1" /><p>The Auto Delete LDO files screen appears:</p></li>
+                        <li class="ListBullet2">In the automatic system folder, double-click on the <span class="span_11">AutoDelete</span> icon.&#160; <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000129.png" style="height: 18px;width: 88px;" class="img_1" /><p>The Auto Delete LDO files screen appears:</p></li>
                     </ol>
                     <p class="p_20">
-                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300012A.png" style="height: 198px;width: 253px;" class="img_1" />
+                        <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300012A.png" style="height: 198px;width: 253px;" class="img_1" />
                     </p>
                     <p>&#160;</p>
                     <ol start="2" class="ol_1">
-                        <li class="ListBullet2_7">Click in the <span class="span_12">Max days to exist</span> field, and type in a new value.</li>
+                        <li class="ListBullet2_7">Click in the <span class="span_12" style="font-style: normal; font-weight: bold;">Max days to exist</span> field, and type in a new value.</li>
                     </ol>
                     <p class="ListParagraph">
-                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300012B.png" style="height: 53px;width: 237px;" class="img_1" />
+                        <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300012B.png" style="height: 53px;width: 237px;" class="img_1" />
                     </p>
                     <p class="ListBullet">&#160;</p>
                     <table>
@@ -202,14 +209,14 @@
                                 <ol start="3" class="ol_1">
                                     <li class="ListBullet2_7">Use the drop-down list to select an hour during the day to check for old files.</li>
                                 </ol>
-                                <p class="ListBullet_6">&#160; <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300012C.png" style="height: 77px;width: 383px;" class="img_1" /></p>
+                                <p class="ListBullet_6">&#160; <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300012C.png" style="height: 77px;width: 383px;" class="img_1" /></p>
                                 <ol start="4" class="ol_1">
-                                    <li class="ListBullet2">Click the Apply button.</li>
+                                    <li class="ListBullet2">Click the <b>Apply</b> button.</li>
                                 </ol>
                             </td>
                             <td class="td_37">
                                 <p class="ListBullet">
-                                    <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300012D.png" style="height: 188px;width: 85px;" class="img_1" />
+                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300012D.png" style="height: 188px;width: 85px;" class="img_1" />
                                 </p>
                             </td>
                         </tr>

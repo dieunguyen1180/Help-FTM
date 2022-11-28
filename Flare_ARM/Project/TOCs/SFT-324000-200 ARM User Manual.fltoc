@@ -185,9 +185,6 @@
       Title="ALARMS AND MESSAGES DURING VIRTUAL PROFILING"
       Link="/Content/Troubleshooting.htm#Alarms_Messages_During_VP" />
     <TocEntry
-      Title="ETPU COMMUNICATION"
-      Link="/Content/Troubleshooting.htm#eTPU_Communication"></TocEntry>
-    <TocEntry
       Title="ALARM#16 – MAXIMUM ALLOWABLE BACK-TO-BACK BOARDS HAS BEEN EXCEEDED"
       Link="/Content/Troubleshooting.htm#Alarm_16" />
   </TocEntry>
@@ -245,7 +242,7 @@
       Title="SWEET SPOT"
       Link="/Content/Understanding_the_software_options.htm#Sweet_Spot" />
     <TocEntry
-      Title="INDEX SCREEN AND PRODUCTION REPORTS"
+      Title="INDEX SCREEN"
       Link="/Content/Understanding_the_software_options.htm#Index_Screen_And_Production_Reports" />
     <TocEntry
       Title="STATISTICAL PROCESS CONTROL CHARTS"
@@ -325,24 +322,8 @@
     Title="USING THE LIVE INDEX SCREEN"
     Link="/Content/Using_the_Index_screen.htm">
     <TocEntry
-      Title="ACCESS THE LIVE PROFILE DATA FROM THE INDEX SCREEN:"
+      Title="ACCESS THE LIVE PROFILE DATA FROM THE INDEX SCREEN"
       Link="/Content/Using_the_Index_screen.htm#To_access_the_live" />
-    <TocEntry
-      Title="USE PRODUCTION REPORTS"
-      Link="/Content/Using_the_Index_screen.htm#Use_Production_Reports">
-      <TocEntry
-        Title="TIPS"
-        Link="/Content/Using_the_Index_screen.htm#Tips" />
-      <TocEntry
-        Title="PRODUCTION REPORT VIEWER"
-        Link="/Content/Using_the_Index_screen.htm#Production_Report_Viewer" />
-      <TocEntry
-        Title="DPMO CHART"
-        Link="/Content/Using_the_Index_screen.htm#DPMO_Chart" />
-      <TocEntry
-        Title="REFLOW YIELD CHART"
-        Link="/Content/Using_the_Index_screen.htm#Reflow_Yield_Chart" />
-    </TocEntry>
   </TocEntry>
   <TocEntry
     Title="USE STATISTICAL PROCESS CONTROL CHARTS"
@@ -418,15 +399,18 @@
       Title="BARCODE TYPES"
       Link="/Content/Using_barcodes.htm#Barcode_Types">
       <TocEntry
-        Title="CONFIGURATION"
+        Title="CONFIGURATION OVERVIEW"
         Link="/Content/Using_barcodes.htm#Configuration_Overview" />
       <TocEntry
         Title="CONFIGURE AND TEST THE SYSTEM"
         Link="/Content/Using_barcodes.htm#Configuring_and_testing"></TocEntry>
       <TocEntry
-        Title="SCANNER INSTALLATION"
-        Link="/Content/Using_barcodes.htm#Scanner_Installation" />
+        Title="TEST SENSOR INPUTS WITH ETPU UTILITY"
+        Link="/Content/Using_barcodes.htm#Test_Sensor_Inputs" />
     </TocEntry>
+    <TocEntry
+      Title="SCANNER INSTALLATION"
+      Link="/Content/Using_barcodes.htm#Scanner_Installation" />
     <TocEntry
       Title="VIRTUAL PROFILING AND BARCODES"
       Link="/Content/Using_barcodes.htm#VP_and_Barcode">
@@ -538,19 +522,19 @@
       Title="DETAILS OF OUTPUT FILES"
       Link="/Content/Outputting_live_data.htm#Details_Of_Output_Files">
       <TocEntry
-        Title="LDO STANDARD TSV AND CSV FOR WORDPAD"
+        Title="TSV AND CSV FOR WORDPAD"
         Link="/Content/Outputting_live_data.htm#LDO_Standard_TSV_And_CSV_For_WordPad" />
       <TocEntry
-        Title="LDO STANDARD TSV AND CSV FOR EXCEL"
+        Title="TSV FOR EXCEL"
         Link="/Content/Outputting_live_data.htm#LDO_Standard_TSV_And_CSV_For_Excel" />
       <TocEntry
-        Title="LDO 1 BOARD 1 FILE (TXT FORMAT)"
+        Title="ONE BOARD PER FILE (TXT FORMAT)"
         Link="/Content/Outputting_live_data.htm#LDO_1_Board_1_File" />
       <TocEntry
-        Title="LDO 1 BOARD 1 FILE (XML FORMAT)"
+        Title="ONE BOARD PER FILE (XML FORMAT)"
         Link="/Content/Outputting_live_data.htm#LDO_XML" />
       <TocEntry
-        Title="LDO 1 BOARD 1 FILE (CSV FORMAT)"
+        Title="ONE BOARD PER FILE (CSV FORMAT)"
         Link="/Content/Outputting_live_data.htm#LDO_1_Board_1_File_CSV_Format" />
       <TocEntry
         Title="ONE BOARD PER FILE – TXT - ALTERNATE"
@@ -575,7 +559,17 @@
     Link="/Content/Centralized Process Window Control.htm#Centralized_Process_Window_Control">
     <TocEntry
       Title="KIC FILE ADMINISTRATOR"
-      Link="/Content/Centralized Process Window Control.htm#KIC_File_Administrator" />
+      Link="/Content/Centralized Process Window Control.htm#KIC_File_Administrator">
+      <TocEntry
+        Title="WORKING DIRECTORY"
+        Link="/Content/Centralized Process Window Control.htm#Working" />
+      <TocEntry
+        Title="CONVERT OLD PW FILES"
+        Link="/Content/Centralized Process Window Control.htm#Convert" />
+      <TocEntry
+        Title="CHANGE SPEC NAME"
+        Link="/Content/Centralized Process Window Control.htm#Change" />
+    </TocEntry>
     <TocEntry
       Title="CONFIGURATION OF SOFTWARE"
       Link="/Content/Centralized Process Window Control.htm#Configuration_of_RPI_software" />
@@ -609,7 +603,7 @@
         Title="MESSAGE, HIGH PWI"
         Link="/Content/System_message_alarms.htm#Message_High_PWI" />
       <TocEntry
-        Title="ALARM MESSAGE H1"
+        Title="ALARM MESSAGE H2"
         Link="/Content/System_message_alarms.htm#Alarm_H1" />
       <TocEntry
         Title="ALARM H7"

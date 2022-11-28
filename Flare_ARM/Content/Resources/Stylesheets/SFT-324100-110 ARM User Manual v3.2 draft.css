@@ -27,9 +27,11 @@ ul
 li
 {
 	font-family: 'Times New Roman';
-	margin-top: 0pt;
-	margin-bottom: 0pt;
 	font-size: 10pt;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin-bottom: 2pt;
+	margin-top: 2pt;
 }
 
 td
@@ -83,6 +85,9 @@ p.p_1
 {
 	margin-right: 0pt;
 	text-align: center;
+	font-size: 36pt;
+	color: #000080;
+	font-weight: bold;
 }
 
 p.p_2
@@ -186,6 +191,8 @@ li.li_1
 {
 	margin-top: 2pt;
 	margin-bottom: 2pt;
+	padding-bottom: 0px;
+	padding-top: 0px;
 }
 
 li.li_2

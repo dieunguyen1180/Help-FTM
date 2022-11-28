@@ -12,40 +12,42 @@
                     <h2 class="Heading2"><a name="Writing_data_to_Network_Drive"></a>Write Data to a Network Drive</h2>
                     <p>The software can be configured to write the collected data (profiles and historical VP data) to a network drive location.&#160; This would allow data from one or even multiple systems to be stored in one centralized location (Server/Shared Hard Drive).</p>
                     <p>&#160;</p>
-                    <p class="p_12">The first step necessary is to map a network drive from the PC running the software to the desired network location.&#160; Due to the multiple varieties of OS and network configurations, this step cannot be described in great detail.&#160; We recommend you contact your IT/Network administrator for setting this up.&#160; Below is a typical example of this setup.&#160; See Figure 78.</p>
+                    <p class="p_12">The first step necessary is to map a network drive from the PC running the software to the desired network location.&#160; Due to the multiple varieties of OS and network configurations, this step cannot be described in great detail.&#160; We recommend you contact your IT/Network administrator for setting this up.&#160; Below is a typical example of this setup.&#160;</p>
                     <p class="p_22">
-                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000096.png" style="width: 563px;height: 288px;" class="img_1" />
+                        <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000096.png" style="width: 563px;height: 288px;" class="img_1" />
                     </p>
                     <p class="Caption">Figure 78: Example Network </p>
                     <p>&#160;</p>
-                    <p>Once you have mapped the drive, create a folder on the network drive and copy in the following folders from the C:\software root folder directory – Log, Ovens, Process Specs, and Profiles.&#160; Once completed, follow the steps below on the PC where the automatic system software is installed:</p>
+                    <p>Once you have mapped the drive, create a folder on the network drive and copy in the following folders from the <span style="font-family: 'Courier New';">C:\software root folder directory</span> – Log, Ovens, Process Specs, and Profiles.&#160; Once completed, follow the steps below on the PC where the automatic system software is installed:</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_3">
                         <li class="ListNumber4">Ensure the automatic system software is closed, open Windows Explorer, and locate the file:</li>
                     </ol>
-                    <p class="PlainText_1">C:\<span class="span_5">software root folder</span>\Log\KIC2000DataPath.kiccfg</p>
+                    <p class="PlainText_1">C:\software root folder\Log\KIC2000DataPath.kiccfg</p>
                     <p>&#160;</p>
                     <ol start="2" class="ol_3">
-                        <li class="ListBullet2_5">The <span class="span_16">KIC2000DataPath.kiccfg</span> file will open up in Notepad:&#160; See Figure 79.</li>
+                        <li class="ListBullet2_5">The <span class="span_16">KIC2000DataPath.kiccfg</span> file will open up in Notepad:</li>
                     </ol>
                     <p class="p_22">
-                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000097.png" style="width: 515px;height: 193px;" class="img_1" />
+                        <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000097.png" style="width: 515px;height: 193px;" class="img_1" />
                     </p>
                     <p class="Caption">Figure 79</p>
                     <p class="Caption">&#160;</p>
                     <ol start="3" class="ol_3">
-                        <li class="ListBullet2_5">Change the line <span class="span_16">AllowUserToManuallyChangeWorkingDataPathInThisIniFile=0</span> to the value <span class="span_16">=1</span>:&#160; See Figure 80.</li>
+                        <li class="ListBullet2_5">Change the line <span class="span_16">AllowUserToManuallyChangeWorkingDataPathInThisIniFile=0</span> to the value <span class="span_16">=1</span>:&#160;</li>
                     </ol>
                     <p class="p_22">
-                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000098.png" style="height: 194px;width: 518px;" class="img_1" />
+                        <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000098.png" style="height: 194px;width: 518px;" class="img_1" />
                     </p>
                     <p class="Caption">Figure 80</p>
                     <p>&#160;</p>
                     <ol start="4" class="ol_3">
-                        <li class="ListBullet2_5">Change all of the lines shown below to <span class="span_30">=</span> the desired network location. <span class="span_24">Note</span><span class="span_24">:</span> This will be the main network folder you created and copied the Log, Ovens, Process Spec, and Profiles folders into.  See Figure 81.</li>
+                        <li class="ListBullet2_5">Change all of the lines shown below to <span class="span_30">=</span> the desired network location. </li>
                     </ol>
+                    <p class="ListParagraph"><span class="span_24" style="text-decoration: none;">Note:</span> This will be the main network folder you created and copied the Log, Ovens, Process Spec, and Profiles folders into. </p>
+                    <p class="ListParagraph"> </p>
                     <p class="p_22">
-                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/03000099.png" style="height: 190px;width: 506px;" class="img_1" />
+                        <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000099.png" style="height: 190px;width: 506px;" class="img_1" />
                     </p>
                     <p class="Caption">Figure 81</p>
                     <p>&#160;</p>
@@ -65,13 +67,13 @@
                     </p>
                     <p class="Caption">Figure 82</p>
                     <p>&#160;</p>
-                    <p>Your new network drive should be displayed in the upper right-hand corner of the screen as the Current Data Path.&#160; See Figure 82.</p>
+                    <p>Your new network drive should be displayed in the upper right-hand corner of the screen as the Current Data Path.</p>
                     <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: The Network path will be grayed out and cannot be changed from inside of Profile Explorer.</p>
+                    <p class="ListBullet_2"><span class="span_11">Note</span>: The Network path will be grayed out and cannot be changed from inside of Profile Explorer.</p>
                     <p>&#160;</p>
                     <p>All data collected in this software application will now be written to the network folder chosen.&#160; </p>
                     <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: If you have multiple automatic systems, you will need to create a separate folder on the Network drive for each system – e.g. Line 1, Line 2, etc.</p>
+                    <p class="ListBullet_2"><span class="span_11">Note</span>: If you have multiple automatic systems, you will need to create a separate folder on the Network drive for each system – e.g. Line 1, Line 2, etc.</p>
                     <p>&#160;</p>
                     <p>If the network is unavailable when accessing various areas of the software (Define/Edit Process Window, Run A Profile, Profile Explorer), a message will appear alerting you to the issue:</p>
                     <p>&#160;</p>
@@ -79,7 +81,7 @@
                         <img src="Resources/Images/image2244.png" style="width: 335px;height: 120px;" />
                     </p>
                     <p>&#160;</p>
-                    <p>When this occurs, you are still able to use the software but only working with files (ovens, Process Windows, profiles) that are located in the local directory. It will temporarily reset back to the local install directory and any new files generated or updated will be saved in the local directory (C:\’software root directory’). If the network connection is re-established, the software must be restarted to begin writing directly to the network directory again.</p>
+                    <p>When this occurs, you are still able to use the software but only working with files (ovens, Process Windows, profiles) that are located in the local directory. It will temporarily reset back to the local install directory and any new files generated or updated will be saved in the local directory (<span style="font-family: 'Courier New';">C:\’software root directory’</span>). If the network connection is re-established, the software must be restarted to begin writing directly to the network directory again.</p>
                     <p>&#160;</p>
                     <p>Any data that was collected while the software was offline will be moved to the network directory after the connection has been re-established and the software is restarted.</p>
                     <p>&#160;</p>
@@ -88,30 +90,28 @@
                     <p>To view historical data over the network:</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_3">
-                        <li class="ListBullet2">From your <span class="span_15">remote </span>computer, start the software and click on the “I am not going to run profiles or live Virtual Profiling” button.&#160; See Figure 83.</li>
+                        <li class="ListBullet2">From your <span class="span_15">remote </span>computer, start the software and click on the <b>I am not going to run profiles or live Virtual Profiling</b> button.&#160;</li>
                     </ol>
                     <p>&#160;</p>
-                    <p><span class="span_11">Caution</span>: Do not choose this button when working at the PC where the system hardware is installed.</p>
+                    <p class="ListParagraph"><span class="span_11" style="text-decoration: underline;">Caution</span>: Do not choose this button when working at the PC where the system hardware is installed.</p>
                     <p>&#160;</p>
                     <p class="p_20"> <img src="Resources/Images/z24.png" class="img_1" style="width: 372px;height: 238px;" /></p>
                     <p class="Caption">Figure 83</p>
                     <p>&#160;</p>
                     <ol start="2" class="ol_3">
-                        <li class="ListBullet2">The software will open up normally.&#160; When the main screen appears, click on the Profile Explorer button.</li>
+                        <li class="ListBullet2">The software will open up normally.&#160; When the main screen appears, click on the <b>Profile Explorer</b> button.</li>
                     </ol>
+                    <p>&#160;</p>
                     <p class="p_20">
-                        <img src="Resources/Images/SFT-324100-110 ARM User Manual v3.2 draft/0300009B.png" style="height: 312px;width: 585px;" class="img_1" />
+                        <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300009B.png" style="height: 312px;width: 585px;" class="img_1" />
                     </p>
                     <p class="Caption">Figure 84</p>
                     <p>&#160;</p>
                     <ol start="3" class="ol_3">
-                        <li class="ListBullet2">A <span class="span_11">Browse</span> button will be enabled in the upper right hand corner of the screen:&#160; See Figure 84.</li>
+                        <li class="ListBullet2">A <span class="span_11">Browse</span> button will be enabled in the upper right-hand corner of the screen:<br /><br />You can now click the <span class="span_11">Browse</span> button and point to the directory where your profiles are.&#160; Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.<br /><br />For example:&#160; If the profiles are in the folder&#160; <span class="span_16">F:\software root directory\Profiles\Board&#160;A</span> you would direct it only to the folder&#160; <span class="span_16">F:\software root directory\</span></li>
                     </ol>
                     <p>&#160;</p>
-                    <p class="ListBullet2_1">You can now click the <span class="span_11">Browse</span> button and point to the directory where your profiles are.&#160; Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.</p>
                     <p>&#160;</p>
-                    <p class="ListBullet2_1">For example:&#160; If the profiles are in the folder&#160; <span class="span_16">F:\software root directory\Profiles\Board&#160;A</span></p>
-                    <p class="ListBullet2_1">you would direct it only to the folder&#160; <span class="span_16">F:\software root directory\</span></p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                 </td>
