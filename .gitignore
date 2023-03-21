@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Flare_e-APS/Output/DIEUNGUYEN/Temporary/DepSets
+/Flare_ARM/Output/DIEUNGUYEN/Temporary
+/Flare_ARM/Output/DIEUNGUYEN/HtmlHelp
+/Flare_ProBot/Output/DIEUNGUYEN/HtmlHelp
+/Flare_Profiling System (PL)/Output/DIEUNGUYEN/Temporary
+/Flare_Profiling System (PL)/Output/DIEUNGUYEN/HtmlHelp
+/Flare_e-APS/FileSync/FileSyncCache.mcspcachef
+/Flare_e-APS/Output/DIEUNGUYEN/HtmlHelp
+/Flare_e-APS/Output/DIEUNGUYEN/Temporary
+/Flare_ProBot/Output/DIEUNGUYEN/Temporary
+/Flare_RPI/Output/DIEUNGUYEN/HtmlHelp
+/Flare_RPI/Output/DIEUNGUYEN/Temporary/DepSets
+/Flare_RPI/Output/DIEUNGUYEN/Temporary
+/Flare_ARM/Doc/SFT-324100-110 ARM User Manual_v3.11_old.docx
+/Flare_ARM/Doc/Issues of ARM v3.11.docx
