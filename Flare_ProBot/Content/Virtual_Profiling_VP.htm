@@ -4,11 +4,11 @@
         <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
     </head>
     <body>
-        <table with="width: 1000px">
-            <col with="width: 1000px" />
+        <table with="width: 1200px">
+            <col with="width: 1200px" />
             <tr>
-                <td with="width: 505px">
-                    <h1 class="Heading1">Monitor Production In Live Mode</h1>
+                <td>
+                    <h1 class="Heading1">Monitor Production in Live Mode</h1>
                     <p>In VP <i>live mode</i>, the software displays real-time data for the VP it generates for every production board processed.  The software displays the data in various charts, graphs, and statistical tables.</p>
                     <p>&#160;</p>
                     <table class="table_2">
@@ -21,21 +21,38 @@
                                 <p>During live mode, it also displays a crystal ball indicator that shows the current Virtual PWI and Cpk values for your process as measured by the software.  The crystal ball indicator appears continuously while VP is enabled.  You can move the crystal ball, but not close or minimize it.</p>
                                 <p>&#160;</p>
                                 <p>The crystal ball color will indicate the current Virtual Profiling status: </p>
-                                <p><span class="span_26">Green </span><span class="span_27">Ready</span>
-                                </p>
-                                <p><span class="span_26">Yellow </span><span class="span_27">Warning</span>
-                                </p>
-                                <p><span class="span_26">Red </span><span class="span_27">Alarm</span>
-                                </p>
-                                <p><span class="span_26">Grey </span><span class="span_27">Unable to Predict</span>
-                                </p>
-                                <p>&#160;</p>
-                                <p><b>Note:</b> A VP status message appears when you place the mouse pointer over the crystal ball.</p>
-                                <p>&#160;</p>
+                                <table align="center" style="width: 40%">
+                                    <col />
+                                    <col />
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: right;"><b>Green</b>
+                                            </td>
+                                            <td style="text-align: left;">....Ready</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: right;"><b>Yellow</b>
+                                            </td>
+                                            <td style="text-align: left;">....Warning</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: right;"><b>Re</b>d</td>
+                                            <td style="text-align: left;">....Alarm</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: right;"><b>Grey</b>
+                                            </td>
+                                            <td style="text-align: left;">....Unable to Predict</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <blockquote>
+                                    <p><b>Note:</b> A VP status message appears when you place the mouse pointer over the crystal ball.</p>
+                                </blockquote>
                                 <p>&#160;</p>
                             </td>
                             <td>
-                                <p style="text-align: center;">
+                                <p>
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0200006B.png" style="width: 103px;height: 148px;" />
                                 </p>
                                 <p class="Figure">Figure 58: Virtual Profile Crystal Ball indicator</p>
@@ -58,8 +75,9 @@
                     <p style="text-align: center;">Figure 59: General Tab Screen</p>
                     <p>&#160;</p>
                     <p>On the <i>Live-Mode General tab</i> screen, the software displays both the baseline and virtual profile.  To distinguish between the two, the baseline profile appears in a solid line format, while the virtual profile appears in dashed-lines.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> To enlarge the graph portion of the screen, double click on the graph.  To enlarge the statistics portion of this screen, double click on the statistics.</p>
+                    <blockquote>
+                        <p><b>Note:</b> To enlarge the graph portion of the screen, double click on the graph.  To enlarge the statistics portion of this screen, double click on the statistics.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h3 class="Heading3">Board Sensor Indicator
                     </h3>
@@ -110,6 +128,8 @@
                                 <p>&#160;</p>
                                 <p><b>Auto Scale</b> – The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.  When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y-axis scale of the profile graph.</p>
                                 <p>&#160;</p>
+                                <p><b>TCs</b> – You cannot disable or rename a TC in a Virtual Profile. You can only perform this function on the Baseline Profile. Those changes would then be reflected in the Virtual Profile display.</p>
+                                <p>&#160;</p>
                                 <p>&#160;</p>
                             </td>
                             <td class="td_10">
@@ -121,8 +141,6 @@
                             </td>
                         </tr>
                     </table>
-                    <p>&#160;</p>
-                    <p><b>TCs</b> – You cannot disable or rename a TC in a Virtual Profile. You can only perform this function on the Baseline Profile. Those changes would then be reflected in the Virtual Profile display.</p>
                     <p>&#160;</p>
                     <p><b>TCs Line Thickness</b> – The pull-down menu lets you select five different thicknesses for the TC lines drawn on the graph.</p>
                     <p>&#160;</p>
@@ -211,8 +229,10 @@
                     <p>The verification profile updates the Baseline profile for the current Virtual Profile, ensuring that its prediction model yields the most accurate possible results, using the most recent profile.  The software always recognizes the latest in spec profile as the Baseline for any Virtual Profile.</p>
                     <p>&#160;</p>
                     <p>The software recognizes when the process temperatures change significantly as compared to the current Baseline profile, and then prompts you to run a verification profile.  You can intentionally run a verification profile at any time during Virtual Profiling Live Mode.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b>The software will only accept a verification profile as a new baseline if meets the standard VP criteria.  See <a href="Profile_Explorer.htm#Getting_a_valid_baseline_profile" style="color: #0000ff; text-decoration: underline;">Get a Valid Baseline Profile</a>.</p>
+                    <blockquote>
+                        <p><b>Note:</b>The software will only accept a verification profile as a new baseline if meets the standard VP criteria.  See <a href="Profile_Explorer.htm#Getting_a_valid_baseline_profile" style="color: #0000ff; text-decoration: underline;">Get a Valid Baseline Profile</a>.</p>
+                        <p>&#160;</p>
+                    </blockquote>
                     <h3 class="Heading3"><a name="Starting_a_Verification"></a>Start A Verification Profile</h3>
                     <table class="table_2">
                         <col style="width: 230pt;" />
@@ -222,7 +242,7 @@
                                 <p>A Verification Profile can run only when Virtual Profiling is running in live mode.</p>
                                 <p>&#160;</p>
                                 <ol>
-                                    <li>With Virtual Profiling running in live mode, select the Run Profile button at the bottom of the Virtual Profiling-live screen.  See Figure 63.</li>
+                                    <li>With Virtual Profiling running in live mode, select the Run Profile button at the bottom of the Virtual Profiling-live screen.  </li>
                                 </ol>
                                 <p>&#160;</p>
                             </td>
@@ -240,11 +260,9 @@
                                 <ol start="2">
                                     <li>The software will display a message asking if you want to run a Verification profile:  </li>
                                 </ol>
-                                <ul>
-                                    <li class="ListBullet2_1">If you choose “<b>No</b>”, the software will return to the previous screen.</li>
-                                </ul>
-                                <ul>
-                                    <li class="ListBullet2_1">If you choose “<b>Yes</b>”, the software will begin stepping through the run profile routine.</li>
+                                <ul class="Square">
+                                    <li>If you choose <b>No</b>, the software will return to the previous screen.</li>
+                                    <li>If you choose <b>Yes</b>, the software will begin stepping through the run profile routine.</li>
                                 </ul>
                                 <p>&#160;</p>
                             </td>
@@ -258,13 +276,12 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p class="p_30"><span class="span_9">Before </span><span class="span_9">profiling,</span><span class="span_9"> make sure:</span>
-                    </p>
+                    <p>Before profiling, make sure:</p>
                     <ul class="ul_5">
-                        <li class="ListBullet3_1"><span class="span_19">The </span><span class="span_19">Profiler is o</span><span class="span_19">n and ready to profile.</span>
-                        </li>
+                        <li class="ListBullet3_1"><span style="font-size: 10pt;">The Profiler is on and ready to profile.</span><![CDATA[
+                        ]]></li>
                     </ul>
-                    <ul class="ul_2">
+                    <ul class="ul_2" style="list-style-type: square;">
                         <li class="ListBullet3_2"><span class="span_7">Transmit </span><span class="span_7">model</span><span class="span_19"> – Receiver </span><span class="span_19">or Base Station</span><span class="span_19">is plugged into computer</span><span class="span_19">.</span>
                         </li>
                         <li class="ListBullet3_2"><span class="span_7">Datalog </span><span class="span_7">model</span><span class="span_19"> – </span><span class="span_19">The profiler is</span><span class="span_19"> plugged into the download cable and download cable is plugged into the computer.</span>
@@ -276,11 +293,20 @@
                     </ul>
                     <ul class="ul_5">
                         <li class="ListBullet3_3"><span class="span_19">All thermocouples attached to the</span><span class="span_19"> profiler</span><span class="span_19"> are below the defined product start temperature.</span>
-                            <br /><b>Note:</b> Depending on the settings on your profiler and in the software, you may have to initialize the profiler.  The software will let you know when this is necessary. To initialize the profiler, connect it with the supplied cable to the computer, and turn on the power. Click <b>OK</b> when the software displays the message that the initialization was successful</li>
+                        </li>
                     </ul>
-                    <p>&#160;</p>
+                    <blockquote>
+                        <blockquote>
+                            <blockquote>
+                                <p><b>Note:</b> Depending on the settings on your profiler and in the software, you may have to initialize the profiler.  The software will let you know when this is necessary. To initialize the profiler, connect it with the supplied cable to the computer, and turn on the power. Click <b>OK</b> when the software displays the message that the initialization was successful.</p>
+                            </blockquote>
+                        </blockquote>
+                    </blockquote>
+                    <p>
+                        <br />
+                    </p>
                     <ol start="3">
-                        <li>Click the Profile Start button (green traffic light).</li>
+                        <li>Click the <b>Profile Start</b> button (green traffic light).</li>
                     </ol>
                     <p>&#160;</p>
                     <p>Once the Verification Profile is complete, the profiler has downloaded the profile data that meets Virtual Profile criteria, the software will display the dialog box shown below:</p>
@@ -301,16 +327,17 @@
                     <p class="Caption">Figure 66: Out of Spec Verification profile</p>
                     <p>&#160;</p>
                     <p class="p_24">The dialog box will present two choices:</p>
-                    <ol start="1" class="ol_1">
-                        <li class="ListBullet2"><span class="span_9">Continue Virtual Profiling –</span> If the Verification Profile meets Virtual Profiling criteria, it will automatically be used as the new Baseline profile.&#160; If you choose this option, the software will update the Baseline and continue Virtual Profiling, using the Verification Profile as a new Baseline profile.</li>
+                    <ol>
+                        <li><span class="span_9">Continue Virtual Profiling –</span> If the Verification Profile meets Virtual Profiling criteria, it will automatically be used as the new Baseline profile.&#160; If you choose this option, the software will update the Baseline and continue Virtual Profiling, using the Verification Profile as a new Baseline profile.</li>
                     </ol>
                     <p>&#160;</p>
-                    <ol start="2" class="ol_1">
-                        <li class="ListBullet2"><span class="span_9">Unload Virtual Profile and go to Prediction mode</span> – If the Verification Profile does not meet Virtual Profiling criteria or is out of spec, it can’t be used for Virtual Profiling.&#160; If you choose this option, you can predict changes to the profile in order to bring the profile back within its process specification.&#160; You will have to run at least one more profile in order to produce a profile that meets Virtual Profiling criteria.</li>
+                    <ol start="2">
+                        <li><span class="span_9">Unload Virtual Profile and go to Prediction mode</span> – If the Verification Profile does not meet Virtual Profiling criteria or is out of spec, it can’t be used for Virtual Profiling.&#160; If you choose this option, you can predict changes to the profile in order to bring the profile back within its process specification.&#160; You will have to run at least one more profile in order to produce a profile that meets Virtual Profiling criteria.</li>
                     </ol>
-                    <p>&#160;</p>
-                    <p class="Important"><span class="span_21">Tip: </span><span class="span_18">For an explanation of Virtual Profile criteria, see the <a href="Profile_Explorer.htm#Understanding_Virtual_Profiling">Virtual Profiling</a> Section of this manual</span>
-                    </p>
+                    <blockquote>
+                        <p class="Important"><span class="span_21">Tip: </span><span class="span_18">For an explanation of Virtual Profile criteria, see the <a href="Profile_Explorer.htm#Understanding_Virtual_Profiling">Virtual Profiling</a> Section of this manual</span>
+                        </p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Historical_Mode"></a>Historical Mode</h2>
@@ -358,6 +385,7 @@
                                 <p>&#160;</p>
                                 <p><span class="span_9">Auto Scale</span> – The Auto Scale feature will automatically adjust the X, and Y-axis scales to fit all of the data in the profile graph.&#160; When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X, and Y-axis scale of the profile graph.</p>
                                 <p>&#160;</p>
+                                <p><b>TCs</b> – The TCs section is a list of the thermocouples used for the profile.  In the event that you wish to view the profile without a particular or multiple thermocouples, you can deselect individual thermocouples, or deselect the “All” check box, and choose only the thermocouples you wish to view. The software recalculates the PWI and updates the profile statistics based on the remaining thermocouples selected.  You must select at least one product thermocouple.</p>
                             </td>
                             <td>
                                 <p class="Caption">
@@ -367,7 +395,6 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p><b>TCs</b> – The TCs section is a list of the thermocouples used for the profile.  In the event that you wish to view the profile without a particular or multiple thermocouples, you can deselect individual thermocouples, or deselect the “All” check box, and choose only the thermocouples you wish to view. The software recalculates the PWI and updates the profile statistics based on the remaining thermocouples selected.  You must select at least one product thermocouple.</p>
                     <p>&#160;</p>
                     <p><b>TCs Line Thickness</b> – The pull-down menu lets you select five different thicknesses for the TC lines drawn on the graph.</p>
                     <p>&#160;</p>
@@ -428,8 +455,8 @@
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Virtual_Profiling5"></a>Historical Mode - Description Tab</h2>
-                    <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000076.png" style="width: 1133px;height: 613px;" />
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000076.png" style="width: 1008px;height: 545px;" />
                     </p>
                     <p class="Caption">Figure 72: Virtual Profiling History – Description Tab</p>
                     <p>&#160;</p>

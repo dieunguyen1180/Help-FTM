@@ -9,14 +9,14 @@
             <tr>
                 <td>
                     <h1 class="Heading1">Status Messages and Alarms when Using Optional Features</h1>
-                    <p>The software communicates system status through messages that it displays on the monitor.&#160; Some simply report an operating condition, some provide a warning that process parameters are changing, and still others, called <span class="span_12">alarms</span><span class="span_12">,</span> announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.&#160; </p>
+                    <p>The software communicates system status through messages that it displays on the monitor.  Some simply report an operating condition, some provide a warning that process parameters are changing, and still others, called <i>alarms</i>, announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.&#160; </p>
                     <p>&#160;</p>
                     <table class="table_2">
                         <col style="width: 230pt;" />
                         <col style="width: 250pt;" />
                         <tr>
                             <td class="td_37">
-                                <p>Alarm messages typically appear in red.&#160; An alarm status may accompany a signal from the eTPU to the optional alarm relay, which, in turn, may trigger hardware-related events such as sounding audible alarms, lighting signal towers, or stopping infeed conveyors.</p>
+                                <p>Alarm messages typically appear in red.  An alarm status may accompany a signal from the eTPU to the optional alarm relay, which, in turn, may trigger hardware-related events such as sounding audible alarms, lighting signal towers, or stopping infeed conveyors.</p>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
                             </td>
@@ -28,7 +28,8 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p>Some status messages and alarms are specific to different functions of the software.&#160; Some may appear when you are first running profiles to establish a baseline.&#160; Others appear only when you begin Virtual Profiling.</p>
+                    <p>Some status messages and alarms are specific to different functions of the software.  Some may appear when you are first running profiles to establish a baseline.  Others appear only when you begin Virtual Profiling.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Acknowledging_alarms_option"></a>Acknowledge Alarms</h2>
                     <table class="table_2">
                         <col style="width: 230pt;" />
@@ -67,7 +68,7 @@
                     <p class="ListParagraph"><span class="span_11">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Messages_for_baseline_profiling_option"></a>Messages During Profiling and Baseline Profiling</h2>
-                    <p>During the profiling portion of getting your software ready to monitor and record real-time production and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.&#160; Below is a table the message that you might see during this process: See Table 2.</p>
+                    <p>During the profiling portion of getting your software ready to monitor and record real-time production and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.&#160; Below is a table the message that you might see during this process:</p>
                     <p>&#160;</p>
                     <table class="table_2">
                         <col style="width: 230pt;" />
@@ -166,9 +167,8 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Alarms_Message_For_VP"></a>Alarms and Messages for Virtual Profiling</h3>
-                    <p>The software incorporates the use of warning and alarm dialog screens to let you know if there is a problem and the cause for that problem.&#160; Below is a partial list of the warning and alarm dialog screens with explanations.&#160; These Alarms are active only when Virtual profiling is running.</p>
+                    <h2 class="Heading2"><a name="Alarms_Message_during_VP"></a>Alarms and Messages during Virtual Profiling</h2>
+                    <p>The software incorporates the use of warning and alarm dialog screens to let you know if there is a problem and the cause for that problem.  Below is a partial list of the warning and alarm dialog screens with explanations.  These Alarms are active only when Virtual profiling is running.</p>
                     <p>&#160;</p>
                     <table align="center" class="table_2">
                         <col style="width: 85pt;" />
@@ -201,8 +201,9 @@
                                 <p class="p_52">Alarm # 5</p>
                             </td>
                             <td class="td_23">
-                                <p class="p_53">No Barcode read for this board.&#160; –or–</p>
-                                <p class="p_53">No Barcode read for xxx boards.</p>
+                                <p class="p_53">No Barcode read for this board.  –or–</p>
+                                <p class="p_53">No global read for xxx boards.
+								</p>
                             </td>
                             <td class="td_23">
                                 <p class="p_52">No</p>
@@ -246,7 +247,7 @@
                                 <p class="p_52">Alarm # 10</p>
                             </td>
                             <td class="td_23">
-                                <p><span class="span_27">This alarm only occurs when the </span><span class="span_27">automatic system </span><span class="span_27">software and the oven control software are communicating and indicates that the oven is not set to the baseline profile recipe.</span>
+                                <p class="p_53">This alarm only occurs when the KIC software and the oven control software are communicating and indicates that the oven is not set to the baseline profile recipe.
                                 </p>
                             </td>
                             <td class="td_23">
@@ -258,7 +259,7 @@
                                 <p class="p_52">Alarm # 11</p>
                             </td>
                             <td class="td_23">
-                                <p><span class="span_27">The </span><span class="span_27">automatic system </span><span class="span_27">speed sensor has detected that the conveyor speed has changed significantly since the baseline.</span>
+                                <p class="p_53">The KIC speed sensor has detected that the conveyor speed has changed significantly since the baseline.
                                 </p>
                             </td>
                             <td class="td_23">
@@ -278,10 +279,32 @@
                         </tr>
                         <tr style="height: 13pt;">
                             <td class="td_22">
+                                <p class="p_52">Alarm # 13</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">One or more KIC probes have exceeded the footprint limits specified</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_54">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
                                 <p class="p_52">Alarm # 16</p>
                             </td>
                             <td class="td_23">
                                 <p class="p_53">Maximum allowable back-to-back boards exceeded (When enabled)</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_54">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_52">Alarm # 18</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">Invalid board length detected from board sensor and cannot assign barcode in queue to board</p>
                             </td>
                             <td class="td_23">
                                 <p class="p_54">Yes</p>
@@ -311,7 +334,7 @@
                                 <p class="p_52">Alarm H1</p>
                             </td>
                             <td class="td_23">
-                                <p><span class="span_27">e</span><span class="span_27">TPU Communication Failure (happened after Alarm H2)</span>
+                                <p class="p_53">eTPU Communication Failure (happened after Alarm H2)
                                 </p>
                             </td>
                             <td class="td_23">
@@ -323,10 +346,7 @@
                                 <p class="p_52">Alarm H2</p>
                             </td>
                             <td class="td_23">
-                                <p><span class="span_27">e</span><span class="span_27">TPU Lost Communication with PC.</span>
-                                </p>
-                                <p><span class="span_27">Not</span><span class="span_27">e: This a</span><span class="span_27">larm condition can activate the </span><span class="span_27">alarm relay</span><span class="span_27"> that is controlled by </span><span class="span_27">e</span><span class="span_27">TPU</span><span class="span_27">.</span>
-                                </p>
+                                <p class="p_53">eTPU Lost Communication with PC.</p>
                             </td>
                             <td class="td_23">
                                 <p class="p_52">Yes or No</p>
@@ -397,60 +417,19 @@
                         </tr>
                     </table>
                     <p class="Caption">Table 9: Virtual Profiling – Warnings</p>
+                    <p class="Caption">&#160;</p>
+                    <h3 class="Heading3">Detailed Alarm Information</h3>
+                    <p>Most alarm conditions will activate an optional, external Alarm Relay, which can be used for stopping the infeed conveyor and preventing further boards from entering the oven during an alarm. The default operation is if the alarm condition is corrected, even if the alarm notification message on the screen has not been acknowledged, the Alarm Relay will automatically turn off allowing boards to resume entering the oven.</p>
                     <p>&#160;</p>
+                    <p>However, some users may only want to resume product flow only AFTER the alarm notification has been acknowledged. For Alarm numbers 1, 10, and 11 (see above table for each alarm description) you can modify this functionality so that the Alarm Relay will stay activated until the screen message is acknowledged.</p>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Activate_Alarm_5a"></a>Activate Alarm #5a</h3>
-                    <p>The <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab gives the user the ability to choose to activate an alarm if a product barcode label is not read.</p>
-                    <p>&#160;</p>
-                    <table>
-                        <col style="width: 350px;" />
-                        <col style="width: 300px;" />
-                        <tr>
-                            <td class="td_34">
-                                <ol start="1" class="ol_1">
-                                    <li class="ListParagraph_4">On the <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab, click the checkbox next to <span class="span_11">Traceability</span> to select it.</li>
-                                </ol>
-                                <p>&#160;</p>
-                                <p class="p_10">&#160;</p>
-                            </td>
-                            <td class="td_34">
-                                <p style="text-align: center;">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000138.png" style="width: 385px;height: 203px;" />
-                                </p>
-                                <p class="p_10">The <span class="span_11">Traceability (Entrance)</span> barcode function that activates Alarm #5A if a products barcode label is not read.</p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td_34">
-                                <ol start="2" class="ol_1">
-                                    <li class="ListParagraph_4">Ensure that the radio button next to <span class="span_11">Traceability (Entrance)</span> is selected. </li>
-                                </ol>
-                                <p class="p_10">&#160;</p>
-                                <p class="p_10">&#160;</p>
-                            </td>
-                            <td class="td_34">
-                                <p>&#160;</p>
-                                <p style="text-align: center;">
-                                    <img src="Resources/Images/z69.png" class="img_1" />
-                                </p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td_34">
-                                <ol start="3" class="ol_1">
-                                    <li class="ListParagraph_4">Click the <b>Green check</b> button <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000011.png" style="height: 21px;width: 40px;" class="img_1" /> to save the settings.</li>
-                                </ol>
-                            </td>
-                            <td class="td_34">
-                                <p class="p_20">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300013A.png" style="width: 391px;height: 387px;" class="img_1" />
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>&#160;</p>
+                    <p>To change to this operation:</p>
+                    <ol>
+                        <li>Exit the software</li>
+                        <li>Using Windows Explorer, browse to the C:\ARM\Log directory and open the <i style="font-family: 'Courier New';">KIC2000ReadOnly.kiccfg</i></li>
+                        <li>Modify the line <i style="font-family: 'Courier New';">AROnUntilAcknowledge=0</i> to <i style="font-family: 'Courier New';">=1</i></li>
+                        <li>Save and close the file, then restart the software</li>
+                    </ol>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="When_Alarm_5a_Occurs"></a>When Alarm #5a Occurs</h3>
                     <p>When the Barcode Product Sensor (BPS) detects a product whose barcode label has not been read, or the BPS is tripped accidentally, the alarm #5A is activated and the process is stopped via the alarm relay.</p>
@@ -657,37 +636,6 @@
                                     <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000145.png" style="height: 249px;width: 389px;" class="img_1" />
                                 </p>
                                 <p class="p_20">&#160;</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Activate_Alarm_5c"></a>Activate Alarm #5c</h3>
-                    <p>The <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab gives the user the ability to choose to activate an alarm if a product barcode label is not read.</p>
-                    <p>&#160;</p>
-                    <table class="table_2">
-                        <col style="width: 230pt;" />
-                        <col style="width: 250pt;" />
-                        <tr>
-                            <td class="td_41">
-                                <ol start="1" class="ol_3">
-                                    <li class="ListParagraph">On the <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab, click the checkbox next to <span class="span_11">Process Control</span> to select it.</li>
-                                </ol>
-                                <p>&#160;</p>
-                                <p class="p_10">&#160;</p>
-                            </td>
-                            <td rowspan="2" class="td_41">
-                                <p>&#160;</p>
-                                <p class="p_75" style="text-align: center;">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000146.png" style="height: 387px;width: 465px;" class="img_1" />
-                                </p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr style="height: 229pt;">
-                            <td class="td_41">
-                                <ol start="2" class="ol_3">
-                                    <li class="ListParagraph">Click the <b>Green check</b> button <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000011.png" style="height: 21px;width: 40px;" class="img_1" /> to save the settings.</li>
-                                </ol>
                             </td>
                         </tr>
                     </table>
@@ -908,124 +856,8 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Activate_Alarm_12"></a>Activate Alarm #12</h3>
-                    <p>The <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab gives the user the ability to activate an alarm if a product barcode label is in the wrong format, Alarm #12 Incorrect Process Control String.</p>
-                    <p>&#160;</p>
-                    <table class="table_2">
-                        <col style="width: 230pt;" />
-                        <col style="width: 250pt;" />
-                        <tr>
-                            <td class="td_34">
-                                <ol start="1" class="ol_3">
-                                    <li class="ListParagraph">On the <span class="span_11">Global Preferences</span> screen <span class="span_11">Barcode Option</span> tab, click the checkbox next to <span class="span_11">Process Control</span> to select it.</li>
-                                </ol>
-                            </td>
-                            <td class="td_34">
-                                <p style="text-align: center;">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300014C.png" style="height: 90px;width: 386px;" class="img_1" />
-                                </p>
-                                <p>The <span class="span_11">Process Control</span> feature allows control of the process by comparing the barcode string of a product to the corresponding process currently running.&#160; It ensures that the product matches the process.</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td_34">
-                                <ol start="2" class="ol_3">
-                                    <li class="ListParagraph">Select one of the two radio buttons for Process Control.<br /><br />These radio buttons let you specify using one or two scanners, together with fields for entering identifying prefixes for the scanners.</li>
-                                </ol>
-                                <p class="p_10">&#160;</p>
-                                <p>&#160;</p>
-                            </td>
-                            <td class="td_34">
-                                <p>&#160;</p>
-                                <p style="text-align: center;">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300014D.png" style="height: 97px;width: 295px;" class="img_1" />
-                                </p>
-                                <p>&#160;</p>
-                                <p>This feature enables the choice of applying traceability at the oven entrance or exit.</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td_34">
-                                <ol start="3" class="ol_3">
-                                    <li class="ListParagraph">Click the checkbox next to <span class="span_11">Traceability</span> to select it. <br /><br />The Process Traceability feature links each product’s profile data with its barcode.&#160; </li>
-                                </ol>
-                                <p class="p_10">&#160;</p>
-                            </td>
-                            <td class="td_34">
-                                <p>&#160;</p>
-                                <p style="text-align: center;">
-                                    <img src="Resources/Images/z53.png" class="img_1" />
-                                </p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="td_34">
-                                <ol start="4" class="ol_3">
-                                    <li class="ListParagraph">Click the <b>Green check</b> button <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000011.png" style="height: 21px;width: 40px;" class="img_1" /> to save the settings.</li>
-                                </ol>
-                            </td>
-                            <td class="td_34">
-                                <p class="p_20">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000146.png" style="height: 328px;width: 394px;" class="img_1" />
-                                </p>
-                                <p class="p_20">&#160;</p>
-                                <p class="p_20">&#160;</p>
-                                <p class="p_20">&#160;</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <h4 class="Heading4">Barcode Process Control Dialog Box</h4>
-                    <p>When Virtual Profiling is started, the system produces the Barcode Process Control dialog box. As long as the Process Control function is enabled (Global Preferences), this dialog box will appear every time Virtual Profiling is enabled.&#160; </p>
-                    <p>&#160;</p>
-                    <table class="table_2">
-                        <col style="width: 230pt;" />
-                        <col style="width: 250pt;" />
-                        <tr>
-                            <td class="td_34">
-                                <ol start="1" class="ol_1">
-                                    <li class="ListParagraph_16">Enter the barcode string that is specific to the product that is running. 
-								<p>&#160;</p><p class="">The software reads the incoming String and compares the barcode string to that of the Process Control String, for every product. </p><p class="">&#160;</p><p class="">If the string values differ, <i>Alarm #12</i> is activated, and the process is stopped via the alarm relay device.</p></li>
-                                </ol>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                            </td>
-                            <td rowspan="2" class="td_34">
-                                <p style="text-align: center;">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/0300014E.png" style="height: 196px;width: 386px;" class="img_1" />
-                                </p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                            </td>
-                        </tr>
-                        <tr style="height: 36pt;">
-                            <td class="td_34">
-                                <ol start="2" class="ol_1">
-                                    <li class="ListParagraph_16">Click <span class="span_11">OK</span>.</li>
-                                </ol>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>&#160;</p>
-                    <h3 class="Heading3"><a name="When_Alarm_12_Occurs"></a>When Alarm#12 Occurs</h3>
-                    <p>When a barcode string is received that differs in format from the current product, the software will display a red alarm message - Alarm#12 – with three buttons: </p>
-                    <p>&#160;</p>
-                    <ol start="1" class="ol_3">
-                        <li class="ListBullet2">Stop Virtual Profiling</li>
-                        <li class="ListBullet2">Process with current Barcode</li>
-                        <li class="ListBullet2">Remove the board from Line. </li>
-                    </ol>
+                    <h3 class="Heading3"><a name="When_Alarm_12_Occurs"></a>When Alarm #12 Occurs</h3>
+                    <p>When a barcode string is received that differs in format from the current product, the software will display a red alarm message - Alarm#12 – with three buttons: Stop Virtual Profiling, Process with current Barcode, Remove the board from Line.</p>
                     <p>&#160;</p>
                     <h4 class="Heading4">Stop Virtual Profiling</h4>
                     <table class="table_2">
@@ -1070,7 +902,7 @@
                             </td>
                             <td class="td_34">
                                 <p class="p_20">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000152.png" style="height: 208px;width: 346px;" class="img_1" />
+                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/FTMSFT0000020.png" style="height: 208px;width: 346px;" class="img_1" />
                                 </p>
                             </td>
                         </tr>
@@ -1146,6 +978,92 @@
                                 <p class="p_20">&#160;</p>
                                 <p class="p_20">
                                     <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000156.png" style="height: 250px;width: 388px;" class="img_1" />
+                                </p>
+                                <p class="p_20">&#160;</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum allowable back-to-back boards has been exceeded</h3>
+                    <p>This is alarm in disabled by default. You may want to enable this optional alarm if you want to be alerted when too many products are being loaded back-to-back into the oven, which can sometimes lead to other process related issues. It will allow you to specify how many consecutive back-to-back boards are allowed. If that number is exceeded, an alarm will be generated.</p>
+                    <h4 class="Heading4">To enable:</h4>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Exit the software, browse to the <i style="font-family: 'Courier New';">C:\ARM</i> directory and run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i>. Select the <i style="font-weight: normal;">Hardware</i> tab.</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM0008.png" style="width: 575px;height: 544px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="2">
+                                        <li>Under the <i>Product Board Sensor</i> section, select the <i style="font-weight: bold;">Alarm on Continuous Boards</i> checkbox. Enter the <i>Maximum</i> number of back-to-back boards that you want to allow before the alarm is generated.</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM0009.png" style="width: 575px;height: 185px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>During <i>Virtual Profiling</i>, if more than the specified number of back-to-back boards are detected entering the oven, an alarm will be generated indicating the problem.</p>
+                                    <p>&#160;</p>
+                                    <p><![CDATA[
+
+										]]><b>Note:</b> This alarm setting can also be useful for identifying other hardware issues such as: products stuck in transition onto oven conveyor (when underneath the board sensor), misadjusted, dirty, or faulty board sensors, etc. 
+									</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00010.png" style="width: 444px;height: 285px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="When_Alarm_18_Occurs"></a>When Alarm #18 Occurs</h3>
+                    <h4 class="Heading4">OK remove barcode</h4>
+                    <p>You use this feature when you want to remove a PCB out of Line before it is passed into the oven but are going to keep the current Virtual Profile running. </p>
+                    <p>&#160;</p>
+                    <table class="table_2">
+                        <col style="width: 230pt;" />
+                        <col style="width: 250pt;" />
+                        <tr>
+                            <td class="td_34">
+                                <ol start="1" class="ol_3">
+                                    <li class="ListParagraph">Click the <b>OK remove barcode</b><![CDATA[  ]]><img src="Resources/Images/FTM00037.png" style="width: 108px;height: 50px;" class="img_1" /> button.<br /><br />The software will clear the alarm and remove the displayed barcode from the queue.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_22">&#160;</p>
+                                <p class="p_77" style="text-align: center;">
+                                    <img src="Resources/Images/FTM00038.png" />
+                                </p>
+                                <p class="p_17">&#160;</p>
+                                <p class="p_17">&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_34">
+                                <ol start="2" class="ol_3">
+                                    <li class="ListParagraph">Click the <b>Keep Barcode in queue</b> <img src="Resources/Images/FTM00039.png" style="width: 109px;height: 51px;" />  button.<br /><br />The software will clear the alarm and keep the displayed barcode in the queue, to be assigned to the next real board.</li>
+                                </ol>
+                            </td>
+                            <td class="td_34">
+                                <p class="p_20">&#160;</p>
+                                <p class="p_20">
+                                    <img src="Resources/Images/FTM00040.png" style="width: 417px;height: 268px;" class="img_1" />
                                 </p>
                                 <p class="p_20">&#160;</p>
                             </td>

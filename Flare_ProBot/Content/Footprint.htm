@@ -12,30 +12,86 @@
         <h2 class="Heading2"><a name="Live_Viewing"></a>Live Viewing</h2>
         <p>When the option is present and a <i>Virtual Profile</i> is running, an additional <i>Footprint</i> tab will be available in the upper left of the screen.</p>
         <p>&#160;</p>
-        <p>
-            <img src="Resources/Images/FTM00012.png" style="width: 1070px;height: 576px;" />
+        <p style="text-align: center;">
+            <img src="Resources/Images/FTM00012.png" />
         </p>
         <p>&#160;</p>
-        <p>The left side of the screen displays the following temperature related information:</p>
+        <p>The main area of the screen displays the following temperature related information:</p>
         <ul>
-            <li class="li_2">Current (green dot) – the current live temperature of each of the 30 installed probe thermocouples</li>
-            <li class="li_2">Footprint (gray area) – a representation of the range of temperatures each of the probe thermocouples have measured since starting <i>VP</i></li>
-            <li class="li_2">Oven Setpoint (dotted line) – the setpoint temperature specified for each individual zone (NOTE: This information is for reference only. It is not unusual for the probe thermocouple temperature to be slightly lower than the zone setpoint temperature.)</li>
+            <li class="li_1"><b>Current</b> (green dot) – the current live temperature of each of the 30 installed probe thermocouples</li>
+            <li class="li_1"><b>Footprint</b> (gray area) – a representation of the range of temperatures each of the probe thermocouples have measured since starting <i>VP</i></li>
+            <li class="li_1"><b>Oven Setpoint</b> (dotted line) – the setpoint temperature specified for each individual zone (NOTE: This information is for reference only. It is not unusual for the probe thermocouple temperature to be slightly lower than the zone setpoint temperature.)</li>
+            <li class="li_1"><b>Baseline</b> (red line) – gives a visual representation of the temperature each of the probe thermocouples were at during baseline</li>
         </ul>
-        <p>The right side of the screen displays similar information for the conveyor speed.</p>
+        <p>&#160;</p>
+        <p>The right side of the screen displays similar information for the conveyor speed and a new settings tab for configuring alarm limits.</p>
         <p>&#160;</p>
         <p>
             <img src="Resources/Images/FTM00013.png" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" style="float: left;left: 10px;top: 1290px;margin-left: 4px;margin-right: 4px;padding-left: 4px;padding-right: 4px;width: 74px;height: 40px;" />
         </p>
-        <p>The <i>Reset Footprint</i> button will temporarily erase the gray footprint area on the screen for both the temperature and speed information. A new display of the <i>Footprint</i> will begin after using the reset function. </p>
-        <p>NOTE: The actual variation will still be available when viewing historical data.</p>
+        <p>The <i>Reset Footprint</i> button will temporarily erase the gray footprint area on the screen for both the temperature and speed information. A new display of the <i>Footprint</i> will begin after using the reset function. <b>Note:</b> The actual variation will still be available when viewing historical data.</p>
         <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Footprint_Settings"></a>Footprint Settings</h3>
+        <table>
+            <col style="width: 43px;" />
+            <col style="width: 8px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Resources/Images/FTM00034.png" style="width: 39px;height: 32px;" />
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <p>The Settings button is located in the upper right-hand corner of the Footprint tab. Selecting this button will allow for further configuration. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <col style="width: 497px;" />
+            <col style="width: 548px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>The <b style="font-style: italic;">Alarm on Maximum Deviation from Baseline</b> checkbox is selected by default, with a value of 30C specified. If any or multiple probe TC’s deviate +/- 30C from the baseline reading, it will generate an alarm condition. If entering a different value, select <b>Apply</b> then <b>OK</b>.</li>
+                        </ol>
+                        <blockquote>
+                            <blockquote>
+                                <p class="p_44"><b>Note:</b> This will generate Alarm #13 if any of the 30 probe TC’s deviate from baseline more than the specified limit.</p>
+                            </blockquote>
+                        </blockquote>
+                    </td>
+                    <td>
+                        <img src="Resources/Images/FTM00035.png" style="width: 375px;height: 308px;" />
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="2">
+                            <li>If the <b style="font-style: italic;">Alarm on Maximum Deviation from Baseline</b> box is deselected, you may set individual specs for any or all probe TC’s. After you have input a low and high limit for the probe TC’s you wish to monitor, select <b>Apply</b> and <b>OK</b>.</li>
+                        </ol>
+                        <blockquote>
+                            <blockquote>
+                                <p class="p_44"><b>Note:</b> This will generate Alarm #13 if any of the 30 probe TC’s deviate from baseline more than the specified limit.</p>
+                            </blockquote>
+                        </blockquote>
+                    </td>
+                    <td>
+                        <img src="Resources/Images/FTM00036.png" style="width: 382px;height: 314px;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <p>&#160;</p>
         <p>&#160;</p>
         <h2 class="Heading2" style="text-align: left;"><a name="Historical_Viewing"></a>Historical Viewing</h2>
         <p>When viewing historical <i>VP</i> data, you can access the <i>Footprint</i> data that was recorded during that time period.</p>
         <p>&#160;</p>
-        <p>
+        <p style="text-align: center;">
             <img src="Resources/Images/FTM00014.png" style="width: 1066px;height: 576px;" />
         </p>
         <p>&#160;</p>
@@ -69,14 +125,15 @@
                         </ul>
                         <p>When the cursor is held over the <i>Conveyor Footprint</i> area it will display:</p>
                         <ul>
-                            <li class="li_1">Current speed</li>
-                            <li class="li_1">Slowest speed</li>
-                            <li class="li_1">Fastest speed</li>
+                            <li>Current = current speed</li>
+                            <li>Baseline = baseline speed</li>
+                            <li>Min = slowest speed read</li>
+                            <li>Max = fastest speed read</li>
                         </ul>
                     </td>
                     <td>&#160;</td>
                     <td>
-                        <img src="Resources/Images/FTM00017.png" style="width: 296px;height: 163px;" />
+                        <img src="Resources/Images/FTM00017.png" />
                     </td>
                 </tr>
             </tbody>

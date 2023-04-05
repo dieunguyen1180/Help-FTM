@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RecentLinks>
+    <Dialog Name="B3.XmlTextKit.MultimediaGeneralDialogPage" />
+    <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
+        <Link Value="O:\Help for KIC\HELP FTM\Flare_PRI\Content\Profile_Printing.htm" />
+    </Dialog>
+    <Dialog Name="B3.XmlMdiEditorKit.ImageGeneralDialogPage">
+        <Link Value="O:\Help for KIC\HELP FTM\Flare_PRI\Content\Resources\Images\SFT-324400-000 PRI User Manual\3000014a3.png" />
+    </Dialog>
+</RecentLinks>

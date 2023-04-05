@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1"><a name="_Appendix_B:_Recalculating"></a>Appendix B: Recalculating Zone Delta Limits from Navigator/Auto-Focus Predictions</h1>
+        <p>&#160;</p>
+        <p>Occasionally, when using the <span class="span_6">Navigator</span> or <span class="span_6">Auto-Focus </span>options to generate new recipes, it may give suggested setpoints that your specific oven may not be able to achieve. For example, it may suggest setting Zone 1 to 100 and Zone 2 to 150, but after loading the settings, you find that your oven is only able to hold Zone 1 to 109. When this situation occurs, there is procedure in the software you can follow that will force it to “learn” the capabilities of your oven, which means it will be able to provide suggested setpoints that your oven is more likely to be able to maintain. The steps below will show how to perform this recalculation both on a stand-alone PC, and also when the software is communication with the oven control software.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="For_Stand-alone"></a>For Stand-alone Software Installations (Not Communicating with Oven)</h2>
+        <table class="table_1">
+            <col style="width: 400px;" />
+            <col style="width: 600px;" />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <p>&#160;</p>
+                        <ol start="1" class="ol_2">
+                            <li class="li_20">When you go to start the predicted profile, click on the traffic light and the software will first ask if the oven is stabilized. Choose <span class="span_7">No</span>.</li>
+                        </ol>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_3">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone.png" style="height: 131px;width: 381px;" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">195</span>
+                        </p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_7">&#160;</p>
+                        <ol start="2" class="ol_2">
+                            <li class="li_20">Next, it will ask you if the oven is still in the process of stabilizing. Choose <span class="span_7">No</span>. </li>
+                        </ol>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_79" style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_1.png" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">196</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_7">&#160;</p>
+                        <ol start="3" class="ol_2">
+                            <li class="li_20">The software will then display this message, letting you know that it will now start the “recalculation” process. (<span class="span_7">Note:</span> on a stand-alone oven, you do not need to change the actual oven setpoints at this point). Click <span class="span_7">OK</span>.</li>
+                        </ol>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_79" style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_2.png" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">197</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_80">&#160;</p>
+                        <ol start="4" class="ol_2">
+                            <li class="li_20">On this screen, change the zone setpoints to the actual temperature that the oven is able to maintain. After entering new setpoints, click the <span class="span_7">arrow forward</span> button.</li>
+                        </ol>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_79" style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_3.png" class="img_11" style="width: 534px;height: 404px;" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">198</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2" style="font-size: 10pt;">&#160;</h2>
+        <h2 class="Heading2"><a name="For_Oven_Controller"></a>For Oven Controller Software Installations</h2>
+        <p>&#160;</p>
+        <table class="table_1">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th colspan="2" class="th_3">
+                        <p class="p_10">&#160;</p>
+                        <p class="p_10" style="text-align: left;">The following section outlines the steps used when your profiling software is installed on the oven PC, <span class="span_13">and</span> is communicating with the oven control software.</p>
+                        <p class="p_10">&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_2">
+                        <ol start="1">
+                            <li class="li_20">When you go to start the predicted profile, click on the traffic light and the software will prompt you if the oven temperatures are not within 2 degrees of the zone setpoint. If the temperatures are not getting closer, click <span class="span_7">No</span>.</li>
+                        </ol>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_2">
+                        <p style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_4.png" class="img_11" style="width: 408px;height: 306px;" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">199</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_7">&#160;</p>
+                        <ol start="2">
+                            <li class="li_20"><span class="span_48">I</span><span class="span_48">mportant</span><span class="span_48">:</span> you will now need to switch over to your oven control software and change the setpoints to the temperature that the zones are actually controlling to. Only click <span class="span_7">OK</span> <span class="span_13">after</span> you have modified the oven recipe. </li>
+                        </ol>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_79" style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_5.png" class="img_11" style="width: 395px;height: 296px;" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">200</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_7">&#160;</p>
+                        <ol start="3">
+                            <li class="li_20">Next, it will bring you to the Zone Setpoint and Zone Min/Max Temperatures screen. This is just to allow you to confirm that the Min/Max values that are entered are correct. Click the <span class="span_7">arrow forward</span> button.</li>
+                        </ol>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_79" style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_6.png" style="width: 377px;height: 308px;" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">201</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_7">&#160;</p>
+                        <ol start="4">
+                            <li class="li_20">Click <span class="span_7">OK</span> on this screen to start the “recalculation” of the zone delta limits.</li>
+                        </ol>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_79" style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_7.png" style="height: 279px;width: 371px;" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">202</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>The software will now automatically change some of the default settings of the software, to settings that are more applicable to your specific oven, in regards to how it calculates the suggested recipe setpoints. When the calculation is completed, it will return you to your original profile plot, and it will display a new “Predicted” recipe suggestion that your oven should be able to maintain.</p>
+    </body>
+</html>

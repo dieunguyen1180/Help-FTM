@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body style="text-align: left;">
+        <h1 class="Heading1" style="text-align: left;"><a name="Live_Data_Output"></a>Live Data Output</h1>
+        <p style="text-align: left;">The Live Data Output (LDO) feature outputs Pyrometer Profile (PP) data in real time for use by third-party applications such as Line Balancing/Production Monitoring Host or SPC software.&#160; This data includes barcode information (where applicable) and all relevant profile data, statistics, and limits.&#160; There are several different LDO formats that can be chosen from. Examples of these formats will be shown later in this section. </p>
+        <p>&#160;</p>
+        <p style="text-align: left;"><span class="span_7">Output of the LDO File Data</span> –When the PP is running, the statistical data from each newly completed Pyrometer Profile is written to the LDO file when the board exits the oven.&#160; </p>
+        <p>&#160;</p>
+        <p style="text-align: left;"><span class="span_7">Viewing LDO Data</span> – LDO is designed to output data only and is not meant as a historical database.&#160; It is intended to be used with third party software that collects the LDO data while the Pyrometer Profile is running-live.&#160; If you are not running third party software to collect the LDO data, and wish you to view historical data, this can be accomplished from within the actual KIC software in use.</p>
+        <p>&#160;</p>
+        <p style="text-align: left;"><span class="span_7">LDO Destination</span> – The location where the LDO output file is written to can be specified by the user in the <span class="PlainTextChar_1">ConfigurationProgram.exe</span> utility. </p>
+        <p style="text-align: left;">&#160;</p>
+        <p class="p_18" style="text-align: left;"><span class="span_7">Note</span>: For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.&#160; You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.&#160; </p>
+        <p>&#160;</p>
+        <p style="text-align: left;"><a name="Configuration1"></a><span class="span_7">An LDO Output File Example</span>
+        </p>
+        <p>&#160;</p>
+        <p style="text-align: left;">Below is an example of the type of data included in the LDO output file: </p>
+        <p>&#160;</p>
+        <p class="Caption_1">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/080000CE.png" class="img_11" style="width: 658px;height: 408px;" />
+        </p>
+        <h2 class="Heading2" style="text-align: left;"><a name="LDO_Formats"></a>LDO Formats</h2>
+        <p style="text-align: left;">There are several standard LDO formats to choose from:</p>
+        <ul>
+            <li style="text-align: left;">TSV or CSV format for WordPad</li>
+            <li style="text-align: left;">TSV or CSV format for Excel</li>
+            <li style="text-align: left;">1 Board 1 File (TXT format)</li>
+            <li style="text-align: left;">1 Board 1 File (XML format)</li>
+            <li style="text-align: left;">1 Board 1 File (CSV format)</li>
+        </ul>
+        <p style="text-align: left;">&#160;</p>
+        <p style="text-align: left;">The following are specialized output formats and not typically selected by most users:</p>
+        <ul>
+            <li style="text-align: left;">KP Data Only (CSV)</li>
+            <li style="text-align: left;">XML Format A</li>
+            <li style="text-align: left;">XML Format A2</li>
+            <li style="text-align: left;">CUSTOME LDO</li>
+        </ul>
+        <p style="text-align: left;">&#160;</p>
+        <h2 class="Heading2" style="text-align: left;"><a name="Details_of_Output_Files"></a>Details of Output Files</h2>
+        <h3 class="Heading3" style="text-align: left;">TSV and CSV for WordPad</h3>
+        <ul style="list-style-type: square;">
+            <li style="text-align: left;">The output file type is a .TXT </li>
+            <li style="text-align: left;">TSV format is Tab delimited </li>
+            <li style="text-align: left;">CSV format is Comma delimited.</li>
+            <li style="text-align: left;">The output file is first generated when the PP is started</li>
+            <li style="text-align: left;">File is appended as each board exits and PP is calculated</li>
+            <li style="text-align: left;">The default output file name is KIC_PRI_LiveDataOutput.txt</li>
+            <li style="text-align: left;">The user can choose to define their own specific output file name</li>
+        </ul>
+        <ul style="list-style-type: circle;">
+            <li class="li_3">If default or user defined naming is selected, output file is overwritten on product changeover occurs</li>
+            <li class="li_3">File name format can also be set to:&#160; PRODUCT_YYMMDD_HH-MM-SS.txt</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li class="li_4">When this naming is selected, a new file is generated when product changeover occurs</li>
+        </ul>
+        <h3 class="Heading3" style="text-align: left;">TSV for Excel</h3>
+        <ul style="list-style-type: square;">
+            <li style="text-align: left;">The output file type is a .TXT </li>
+            <li style="text-align: left;">Format is Tab delimited</li>
+            <li style="text-align: left;">The output file is first generated when the PP is started</li>
+            <li style="text-align: left;">File is appended as each board exits and PP is calculated</li>
+            <li style="text-align: left;">The default output file name is KIC_PRI_LiveDataOutput.txt</li>
+            <li style="text-align: left;">The user can choose to define their own specific output file name</li>
+        </ul>
+        <ul style="list-style-type: circle;">
+            <li class="li_3">When default or user defined naming is selected, output file is overwritten when product changeover occurs</li>
+            <li class="li_3">File name format can also be set to:&#160; PRODUCT_YYMMDD_HH-MM-SS.txt</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li class="li_4">When this naming is selected, a new file is generated when product changeover occurs</li>
+        </ul>
+        <h3 class="Heading3" style="text-align: left;">One Board One File (TXT format)</h3>
+        <ul style="list-style-type: square;">
+            <li style="text-align: left;">The output file type is a .TXT </li>
+            <li style="text-align: left;">Separate individual file is generated as board exits oven and PP is calculated</li>
+            <li style="text-align: left;">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString (Barcode string included when applicable)</li>
+            <li style="text-align: left;">User cannot change file name – with exception of not including barcode in file name</li>
+        </ul>
+        <h3 class="Heading3" style="text-align: left;">One Board One File (XML format)</h3>
+        <ul style="list-style-type: square;">
+            <li style="text-align: left;">The output file type is a .XML file</li>
+            <li style="text-align: left;">Separate individual file is generated as board exits oven and PP is calculated</li>
+            <li style="text-align: left;">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString (Barcode string included when applicable)</li>
+            <li style="text-align: left;">User cannot change file name – with exception of not including barcode in file name</li>
+        </ul>
+        <h3 class="Heading3" style="text-align: left;">One Board One File (CSV format)</h3>
+        <ul style="list-style-type: square;">
+            <li style="text-align: left;">The output file type is a .CSV file</li>
+            <li style="text-align: left;">Separate individual file is generated as board exits oven and PP is calculated</li>
+            <li style="text-align: left;">File name is ProductName_OvenName_YYMMDD_HH-MM-SS_BarcodeString (Barcode string included when applicable)</li>
+            <li style="text-align: left;">User cannot change file name – with exception of not including barcode in file name</li>
+        </ul>
+        <p style="text-align: left;">&#160;</p>
+        <p class="p_7" style="text-align: left;"><span class="span_7">Note:</span> Examples of each of the available output file types can be found in the <span class="PlainTextChar_1">C:\PRI\Sample LDO files</span> folder. </p>
+        <p class="p_7" style="text-align: left;">&#160;</p>
+        <h2 class="Heading2" style="text-align: left;"><a name="Configuring_LDO"></a>Configure LDO</h2>
+        <ol>
+            <li style="text-align: left;">With the KIC software shut down, browse to the C:\PRI folder and run the ConfigurationProgram.exe application, and select the LDO tab:</li>
+        </ol>
+        <p class="Caption" style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/LDO Formats.png" class="img_11" />
+        </p>
+        <p class="Caption" style="text-align: center;">Figure 116: LDO configuration</p>
+        <p style="text-align: left;">&#160;</p>
+        <ol start="2">
+            <li style="text-align: left;">Check the <span class="span_10">Enable Live Data Output</span> checkbox</li>
+            <li style="text-align: left;">Select the desired Format</li>
+            <li style="text-align: left;">The type of Format chosen will affect what naming structure for file will be used (See Details of Output Files above). </li>
+            <li style="text-align: left;">Select the destination path for the output file by clicking on the Browse button. This needs to be a location on the local drive.</li>
+            <li style="text-align: left;">“Max File Size” lets you specify how large the LDO output file can get before a new one is started.</li>
+        </ol>
+        <p style="text-align: left;">&#160;</p>
+        <p style="text-align: left;"> If a PP is running for an extended amount of time, once the maximum file size is reached, a new file will be generated and the new file name will be appended with a _# as shown in the example below:</p>
+        <p style="text-align: left;">&#160;</p>
+        <p class="p_3" style="text-align: left;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/LDO Formats_1.png" style="width: 771px;height: 136px;" alt="Graphical user interface, text, application&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption" style="text-align: left;">Figure 117: Live Data Output files</p>
+        <h2 class="Heading2" style="text-align: left;"><a name="Changing_the_file_name_format"></a><a name="Generating_an_LDO_file_for_each_exiting_board"></a>
+        </h2>
+        <h2 class="Heading2" style="text-align: left;"><a name="Deleting_accumulated_LDO_files"></a>Delete Accumulated LDO Files</h2>
+        <p style="text-align: left;">In time, accumulating LDO files can take up too much hard disk space and need to be deleted.&#160; The software provides an <span class="span_6">Auto Delete</span> function that lets you specify time intervals for automated file purging.&#160; You can specify a maximum number of days–up to 1827 (five years)–that the system retains the files before automatic purging.&#160; You can also select a time in the 24-hour cycle for the system to automatically check for files that exceed the maximum day limit. </p>
+        <p style="text-align: left;">&#160;</p>
+        <ol>
+            <li style="text-align: left;">In the PRI folder, double-click on the <span class="span_7">AutoDelete</span> icon.&#160; <img src="Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files.png" style="width: 155px;height: 30px;" class="img_11" /></li>
+        </ol>
+        <p style="text-align: left;">The Auto Delete LDO files screen appears:</p>
+        <p class="p_3" style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files_1.png" class="img_11" />
+        </p>
+        <p class="Caption" style="text-align: left;">Figure 118</p>
+        <p style="text-align: left;">&#160;</p>
+        <p style="text-align: left;">&#160;</p>
+        <ol start="2">
+            <li style="text-align: left;">Click in the <span class="span_10">Max days to exist</span> field, and type in a new value.</li>
+        </ol>
+        <p class="p_18" style="text-align: left;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files_2.png" class="img_11" />
+        </p>
+        <p style="text-align: left;">&#160;</p>
+        <table style="width: 100%;">
+            <col style="width: 484px;" />
+            <col style="width: 17px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <ol start="3">
+                            <li style="text-align: left;">Use the drop-down list to select an hour during the day to check for old files.</li>
+                        </ol>
+                        <p class="p_15" style="text-align: left;">&#160; <img src="Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files_3.png" class="img_11" style="width: 415px;height: 90px;" /></p>
+                        <ol start="4">
+                            <li style="text-align: left;">Click the <span class="span_7">Apply</span> button.</li>
+                        </ol>
+                    </td>
+                    <td style="text-align: left;">&#160;</td>
+                    <td style="text-align: left;">
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files_4.png" class="img_11" style="width: 86px;height: 182px;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="text-align: left;">&#160;</p>
+        <p style="text-align: left;">&#160;</p>
+    </body>
+</html>

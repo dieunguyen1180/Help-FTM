@@ -3,12 +3,12 @@
     <head>
     </head>
     <body>
-        <table style="width: 1000px">
-            <col style="width: 1000px;" />
+        <table style="width: 1200px">
+            <col style="width: 1200px;" />
             <tr>
-                <td with="width: 400px">
+                <td with="width: 700px">
                     <div>
-                        <p class="Header"><span style="font-family: Arial;"><span style="color: #a9a9a9;">ProBot User Manual - <span style="font-size: 9pt;">Version 3.11</span></span></span>
+                        <p class="Header"><span style="font-family: Arial;"><span style="color: #a9a9a9;">ProBot User Manual - <span style="font-size: 9pt;">Version 3.12</span></span></span>
                         </p>
                     </div>
                     <MadCap:bodyProxy />

@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1"><a name="Write_Data_To_Network"></a>Write Data to and View PRI Data Over a Network</h1>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Writing_data_to_a"></a>Write Data To A Network Drive</h2>
+        <p>The PRI software can be configured to write the collected data (profiles and historical PP data) to a network drive location.&#160; This would allow data from one or even multiple systems to be stored in one centralized location (Server/Shared Hard Drive).</p>
+        <p>&#160;</p>
+        <p>The first step necessary is to map a network drive from the PC running the PRI software to the desired network location.&#160; Due to the multiple varieties of OS and network configurations, KIC cannot detail this step.&#160; We recommend you contact your IT/Network administrator for setting this up.&#160; Below is a typical example of this setup.&#160; </p>
+        <p class="p_60">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Write Data to and View PRI.png" class="img_11" style="width: 760px;height: 389px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">142</span><span class="span_20">: Example Network with PRI</span>
+        </p>
+        <p>&#160;</p>
+        <p>Once you have mapped the drive, create a folder on the network drive and copy in the following folders from the <span class="PlainTextChar_1">C:\PRI directory</span> – Log, Ovens, Process Specs, and Profiles. Once completed, follow the steps below on the PC where the PRI software is installed:</p>
+        <p>&#160;</p>
+        <ol>
+            <li>Ensure the KIC software is closed, open Windows Explorer, and locate the file:<br /><span style="font-family: 'Courier New';">C:\PRI\Log\KIC2000DataPath.kiccfg</span><br /></li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="2">
+            <li>The <span class="PlainTextChar_1">KIC2000DataPath.kiccfg</span> file will open up in Notepad:&#160; </li>
+        </ol>
+        <p>&#160;</p>
+        <p class="p_3" style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Write Data to and View PRI_1.png" class="img_11" style="width: 490px;height: 163px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">143</span>
+        </p>
+        <p>&#160;</p>
+        <ol start="3">
+            <li>Change the line <span class="PlainTextChar_1">AllowUserToManuallyChangeWorkingDataPathInThisIniFile=0</span> to the value <span class="PlainTextChar_1">=1</span>:&#160; </li>
+        </ol>
+        <p class="p_7">&#160;</p>
+        <p class="p_3" style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Write Data to and View PRI_2.png" class="img_11" style="width: 486px;height: 165px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">144</span>
+        </p>
+        <p>&#160;</p>
+        <ol start="4">
+            <li>Change all of the lines shown below to = the desired network location.</li>
+        </ol>
+        <p class="p_18">&#160;</p>
+        <p class="p_18" style="text-indent: 0.5in;"><span class="span_7">Note:</span> This will be the main network folder you created and copied the Log, Ovens, Process Spec, and Profiles folders into.&#160; </p>
+        <p class="p_7">&#160;</p>
+        <p class="p_3" style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Write Data to and View PRI_3.png" class="img_11" style="width: 483px;height: 168px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">145</span>
+        </p>
+        <p>&#160;</p>
+        <ol start="5">
+            <li>Once the <span class="PlainTextChar_1">DataPath.kiccfg</span> file has been modified with the new locations, choose File/Save from the drop-down menu to save the changes.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="6">
+            <li>Close Notepad and start the software.</li>
+        </ol>
+        <p>&#160;</p>
+        <p><span class="span_12">C</span><span class="span_12">AUTION</span><span class="span_13">:</span>&#160; If you changed the default data path and run the software in history mode (select the “I am not going to profile or Pyrometer Profile” button), or if your network is not connected or is not functional, the working directory (location data is written to) will revert to the default location of <span class="PlainTextChar_1">C:\PRI</span>.&#160; To write to the network again, shut down the software and repeat the previous steps 1-6.</p>
+        <p>&#160;</p>
+        <ol start="7">
+            <li>With the software open, go to the Profile Explorer:</li>
+        </ol>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_5.png" style="width: 763px;height: 73px;">
+            </img>
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">146</span>
+        </p>
+        <p>&#160;</p>
+        <p>Your new network drive should be displayed in the upper right-hand corner of the screen as the Current Data Path.&#160; </p>
+        <p>&#160;</p>
+        <p style="text-indent: 0.5in;"><span class="span_7">Note</span>: The Network path will be grayed out and cannot be changed from inside of Profile Explorer.</p>
+        <p>&#160;</p>
+        <p>All data collected in this PRI application will now be written to the network folder chosen.</p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note</span>: If you have multiple PRI systems, you will need to create a separate folder on the Network drive for each system – e.g. KIC Line 1, KIC Line 2, etc.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Viewing_historical_data2"></a>View Historical Data </h2>
+        <p>You can also view all collected data over the network from any computer that has the PRI software installed.</p>
+        <p>&#160;</p>
+        <p class="p_26">Use the following steps to view historical data over the network:</p>
+        <p>&#160;</p>
+        <ol>
+            <li>The software will open normally.&#160; When the main screen appears, click the Profile Explorer button.</li>
+        </ol>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/View Historical Data.png" style="height: 338px;width: 624px;" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">147</span><span class="span_20">: View Historical Data</span>
+        </p>
+        <p>&#160;</p>
+        <ol start="2">
+            <li>A <span class="span_7">Browse</span> button is enabled in the upper right-hand corner of the screen.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>You can now click the Browse button and point to the directory where your profiles are.&#160; Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.</p>
+        <p>&#160;</p>
+        <p>For example:&#160; If the profiles are in the folder&#160; <span class="PlainTextChar_1">F:\PRI\Profiles\Board&#160;A,</span> you would direct it only to the folder&#160; <span class="PlainTextChar_1">F:\PRI\</span></p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h1 class="Heading1"><a name="Communicating_with_oven_controllers"></a>Communicate with Oven Controllers</h1>
+        <p>Because PRI can interface directly with the oven controllers on many reflow oven models, several leading manufactures act as Value Added Resellers (VARs) for KIC software.&#160; PRI can automatically send setpoints and other recipe data to these oven controller systems, eliminating the need for separate data entry.&#160; </p>
+        <p>&#160;</p>
+        <p>The table below lists the oven manufacturers that support communication:</p>
+        <p>&#160;</p>
+        <table align="center" class="table_2">
+            <col style="width: 131px;" />
+            <col style="width: 131px;" />
+            <col />
+            <col style="width: 147px;" />
+            <thead>
+                <tr style="height: 14pt;">
+                    <th class="th_8" style="color: #ffffff;">
+                        <p class="p_112">Oven Manufacturer</p>
+                    </th>
+                    <th class="th_9" style="color: #ffffff;">
+                        <p class="p_112">Communication Capable</p>
+                    </th>
+                    <th class="th_9" style="color: #ffffff;">
+                        <p class="p_112">Baseline Oven Recipe Capable</p>
+                    </th>
+                    <th class="th_9" style="color: #ffffff;">
+                        <p class="p_112">Min. software version for comm.</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 22pt;">
+                    <td class="td_63">
+                        <p class="p_113">BTU</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">2.2</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_63">
+                        <p class="p_113">Vitronics</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">7.03</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_63">
+                        <p class="p_113">Heller</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">1.0.6.3.2</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_63">
+                        <p class="p_113">Rehm</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes, on V6 and VXP models</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">No</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">N/A</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_63">
+                        <p class="p_113">Seho</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">Yes*</p>
+                    </td>
+                    <td class="td_64">
+                        <p class="p_114">N/A</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_65">
+                        <p class="p_113">Senju</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_114">No</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_115">v1.0.0.3 &#160;</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_65">
+                        <p class="p_113">SMT</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_115">v388389</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_65">
+                        <p class="p_113">Sonic</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_115">v1005.3.101.22</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_65">
+                        <p class="p_113">Mailbox</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_114">Yes</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_114">No</p>
+                    </td>
+                    <td class="td_66">
+                        <p class="p_115">—</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">148</span><span class="span_20">: PRI Supported Oven Controller Communications</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Confirming_oven_communications"></a>Confirm Oven Communications</h2>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Confirm Oven Communications.png" style="width: 576px;height: 553px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">149</span><span class="span_20">: Hardware Status – Oven Controller Communication</span>
+        </p>
+        <p>&#160;</p>
+        <p>Once you’ve installed the system on a communication-capable oven, your first task is to check the Hardware Status screen to see if the software recognizes the oven controller.</p>
+        <p>&#160;</p>
+        <p>If the appropriate system isn’t identified in the <span class="span_6">Oven Controller</span>, field check the following:</p>
+        <ul style="list-style-type: square;">
+            <li>Verify that the software is installed on the same PC and hard drive as the manufacturer’s oven controller software.</li>
+            <li>Exit the software and run the <span class="span_46">ConfigurationProgram.exe</span> found in the PRI root folder.&#160; The Hardware tab lists a selection of ovens and oven models.</li>
+            <li>Contact KIC or the oven manufacturer to make sure the version of oven controller software and firmware is compatible for oven communications.</li>
+            <li>Make sure that the latest versions of the correct drivers are properly installed.&#160; (Contact KIC or the oven manufacturer for details.)</li>
+        </ul>
+        <p class="p_18">&#160;</p>
+        <h2 class="Heading2"><a name="Configuring_software_for_oven_communication"></a>Configure Software For Oven Communication</h2>
+        <table class="table_1">
+            <col style="width: 358px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_6">
+                        <p style="text-align: left;">There are <span class="span_6">two</span> items you have to set in the Global Preferences screen when configuring the software for use with oven communications. </p>
+                        <p style="text-align: left;">&#160;</p>
+                        <ol>
+                            <li style="text-align: left;">Enter an oven name and zone lengths and zone limit data.&#160; </li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <ol start="2">
+                            <li style="text-align: left;">Check <span class="span_7">Use Oven Base Recipe</span>.&#160; (Optional.)</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_6">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Confirm Oven Communications_1.png" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">150</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <h2 class="Heading2"><a name="Using_a_Base_Oven_Recipe_with_oven_communication"></a>Use a Base Oven Recipe with Oven Communication</h2>
+        <p>The operating parameters of a reflow oven are specified by the manufacturer in the oven controller.&#160; These parameters may include zone setpoint temperatures, conveyor speed, fan speed, Nitrogen On/Off, conveyor width, etc.&#160; Taken together, these parameters form a <span class="span_6">Base Oven Recipe</span>, which PRI uses as a set of default values.&#160; </p>
+        <p>PRI can set/load the zone setpoint temperatures and the conveyor speed parameters, adjusting them from the default values in the Base Oven Recipe.</p>
+        <p>&#160;</p>
+        <p>In order for the engineer to specify the other parameters, a <span class="span_6">Base Oven Recipe</span> must be created.&#160; This oven recipe has all the oven parameters except the zone set point temperatures and conveyor speed set correctly.&#160; When you load a Pyrometer Profile for a given product, this software will modify the set points and conveyor speed in the Base Oven Recipe, and then load the Base Oven Recipe into the oven controller.&#160; In this way, the oven will be setup exactly as it was during the Baseline Profile.</p>
+        <table class="table_1">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_6">
+                        <p>&#160;</p>
+                        <p class="p_6" style="text-align: left;">When the <span class="span_6">Use Oven Base Recipe</span> option is selected, nothing will happen until a Pyrometer Profile is loaded from the Profile Explorer.&#160; Then the software will present the Browse dialog in order to select the Base Oven recipe.&#160; </p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_6">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Confirm Oven Communications_2.png" style="height: 135px;width: 198px;" alt="Baseline Recipe" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">151</span><span class="span_20">: Browse window for selecting the </span><span class="span_50">Base Oven Recipe</span>
+                        </p>
+                        <p class="p_10">&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Running_a_profile_using_oven_communication"></a>Run A Profile Using Oven Communication</h2>
+        <p>When running profiles with oven communications, be aware of the following differences when compared to regular operations:</p>
+        <p>&#160;</p>
+        <ol start="1">
+            <li class="ListNumber2">When running a profile and going through the sequence of screens leading up to the <span class="span_6">Select Thermocouple</span> screen, you will not see a pull-down menu for the oven since there can be only one.&#160; You will also not see the screen for the oven settings since this was taken care of in Global Preferences.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="2">
+            <li class="ListNumber2">When you are running the software with oven communication, the software sends data to the oven’s PC control software.&#160; This communication seems transparent at first, but once you gain more experience you will see certain signs that the KIC software and the oven controller are communicating.&#160; One of the first things you might notice is that the recipe name loaded on the oven controller software will be <span class="span_6">KICPROFILE</span>.&#160; Loading the <span class="span_6">KICPROFILE</span> recipe provides the benefit of giving the KIC software a vehicle to update oven settings without having to call a specific recipe file name and location of an oven controller recipe.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="3">
+            <li class="ListNumber2">When running a profile, the software uses a Base Oven Recipe as a starting point for the oven recipe then changes the name to <span class="span_6">KICPROFILE</span> and will/can only change the zone setpoints and conveyor speed settings thereafter.&#160; This gives the software the flexibility to change setpoints and conveyor speed on the fly without having you manually rename or save the recipe file.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="4">
+            <li class="ListNumber2">For your first profile, load appropriate temperature and conveyor speed settings in the oven control software.&#160; Once you have run your first profile or have loaded an existing profile from the Profile Explorer zone setpoints, you can make conveyor speed adjustments manually while viewing the profile or let it happen automatically if you have the Navigator software option installed.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Once you choose to run a profile <span class="span_6">using the predicted setpoints and conveyor speed,</span> the software automatically sends these new settings to the oven controller software to be loaded.&#160; When the new settings are loaded, watch for the following:</p>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th colspan="2" class="th_6">
+                        <ul style="list-style-type: square;">
+                            <li style="text-align: left;">With some oven controllers there may be an audio warning, indicating that the oven is going to change settings.&#160; Some of the audio indicators are also accompanied by a timer that will not allow the oven to load the new setpoints until the programmed time has elapsed.&#160; These timers can be reduced or turned off at the customer’s discretion.</li>
+                        </ul>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_23">
+                        <ul style="list-style-type: square;">
+                            <li style="text-align: left;">The software will display the message “Waiting for the oven controller to acknowledge recipe change”.&#160; There is a time delay displayed for an estimated period for the oven to acknowledge the changes and that all conditions are right to set the oven to these new setpoints.&#160; </li>
+                        </ul>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_23">
+                        <p style="text-align: left;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Run A Profile Using Oven Communication.png" style="width: 287px;height: 129px;" class="img_27" />
+                        </p>
+                        <p class="p_3" style="text-align: left;"><span class="span_20">Figure 152: Waiting for Oven Controller to Acknowledge Recipe Change</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_23">
+                        <p>&#160;</p>
+                        <ul style="list-style-type: square;">
+                            <li>You may notice with some ovens that it takes longer than others, you’ll have to get a feel for this as you go but if you feel the change is taking too long then switch over to the oven software and try to ascertain if there is some kind of disturbance that would cause the oven controller not to load the new setpoints.</li>
+                        </ul>
+                    </td>
+                    <td class="td_23">
+                        <p>&#160;</p>
+                        <p class="p_3" style="text-align: left;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Run A Profile Using Oven Communication_1.png" style="width: 121px;height: 98px;" class="img_27" />
+                        </p>
+                        <p class="p_3" style="text-align: left;"><span class="span_20">Figure 153: Recipe Copy Successful</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <ol start="5">
+            <li class="li_14">If you are starting a profile and the software tells you that the oven’s actual zone temperatures are not within 2 degrees of the of the setpoint value, and you know that you have waited long enough (possibly even answered that they are still changing), but now you know they are not, then you will have to answer <span class="span_6">No</span> and follow the instructions. This information is outlined in the user manual, but what happens next may be a little confusing to a first-time user. Here is a list of what takes place and why:</li>
+        </ol>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>You answer <span class="span_10">No</span> the temperatures are not getting closer and the system then asks you to change the Setpoint values to that of the Actual. What the system is doing by this is finding out what the oven will control to in certain zones.&#160; It then takes the differences and uses them to update the oven.ini file so the next time the system optimizes for a profile it will take the zone delta limitations that it learned and apply it to the next profile.&#160; The software will use the new zone delta limits until the values change again by a set of oven setpoints that can’t be maintained by the oven are chosen. Remember that it is very important that you are sure that the oven can’t achieve the original setpoints before you answer <span class="span_10">No</span>. Once the new delta limits are established this will affect the capability of the Navigator to optimize your profiles.</li>
+        </ul>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th>
+                        <p>&#160;</p>
+                        <ul style="list-style-type: square;">
+                            <li>Next the system will take you to the Verify Minimum and Maximum Setpoint Temperature screen.&#160; This is to verify that we have not allowed the KIC software to choose setpoint values that the oven is not capable of controlling to.&#160; </li>
+                        </ul>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_6">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Run A Profile Using Oven Communication_2.png" style="height: 232px;width: 310px;" alt="Graphical user interface, application&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">154</span><span class="span_20">: Verify Setpoints</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Next the software will prompt you that it will calculate new setpoints.&#160; When you click on <span class="span_7">OK</span>, the screen will change to a profile graph that has calculated new oven setpoints for the oven to load to produce the optimized profile results.&#160; This works the same even if you do not have the Navigator option. If you entered the new setpoints manually the software will automatically find new setpoints like the Navigator would when you get to this point.&#160; Be patient you may have to go through this cycle of the oven not controlling to setpoint values a few times before the proper combination of acceptable setpoints and profile optimization can be found.&#160; In worst case scenarios you may have to change the 2.0 degrees delta between setpoint and actual because the oven is just simply not capable of getting within 2 degrees C of the setpoint no matter what the temperature.&#160; Please contact KIC Tech support if this is the case.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="p_93"><span class="span_7">Note</span>: If you get into a situation where you are having to adjust too many times and are still not getting setpoints that the oven will control to, but you are or you will be in spec by manually changing predicted setpoints, then go into the Optimization Tab and turn off “Allow Zone Setpoints To Change”.&#160; The next time around the KIC software will not change any of the zone values but you can go in and change them manually to exactly what the actual values are and run the profile.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Starting_a_Virtual_Profile_with_oven_communications"></a>Start a Pyrometer Profile with Oven Communication</h2>
+        <p>Before running a Pyrometer Profile with oven communications, review the following:</p>
+        <p>&#160;</p>
+        <ol start="1">
+            <li class="li_14">You have <span class="span_6">Use Base Oven Recipe</span> checked in Global Preferences, but the software did not ask you to select it when you started the PP.&#160; If you have just run your baseline profile and start a PP immediately, without exiting that product, then the PP will start without asking you to choose a Base Oven Recipe.&#160; The system assumes since you just ran a successful baseline profile that all of the oven settings are correct, and in turn, the Base Oven Recipe settings are correct.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="2">
+            <li class="li_14">You setup your product and have a baseline profile now but you do not have an oven recipe to match it.&#160; What recipe will you load when you want to run production on this product?&#160; Remember that even though you originally loaded a specific oven recipe file, the software took over and loaded the KICPROFILE recipe on your oven and did not save any subsequent zone setpoints and trouble changes to that original oven recipe.<br /><br />You can save any changes made to the original recipe while profiling if you want to create a recipe that can be run on the oven controller without the software running.&#160; If you choose not to save the changes, when you load this product under the software it will load the proper recipe parameters for that product.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 400px;" />
+            <col style="width: 30px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th>
+                        <ol start="3">
+                            <li class="li_14" style="text-align: left;">When starting a Pyrometer Profile from the Profile Explorer, the software prompts you to select your Base Oven Recipe.&#160; The <span class="span_6">Select the Base Oven Recipe to be loaded</span> screen appears, letting you to browse your PC and point to the location and file name of the Base Oven Recipe you want to use for this product. <br /><br />Remember it should be the same one you choose when you originally ran your baseline profiles.&#160; If you choose the wrong Base Oven Recipe, you could have boards fall off the conveyor or never even make it in because the Base Oven Recipe you chose does not match the width of the original file you loaded.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                    <th>&#160;</th>
+                    <th>
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Start a Pyrometer Profile.png" style="width: 334px;height: 227px;" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">155</span><span class="span_20">: Select the Base Oven Recipe to be Loaded</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol start="4">
+            <li class="li_14">When you have selected and opened the Base Oven Recipe the KIC software will load that recipe on the oven.&#160; All of the parameters in this recipe are correct for this product except the zone setpoints and conveyor speed.&#160; With some ovens, you may hear and audio warning, you may see the light tower change to an amber state, you may even see the conveyor stop momentarily and then start again indicating that the oven is loading the Base Oven Recipe.&#160; Seconds later you may hear or see one or all of these signs again as the software sends just the zone setpoints and conveyor speed settings to the oven controller.</li>
+        </ol>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 400px;" />
+            <col style="width: 30px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th>
+                        <ol start="5">
+                            <li class="li_14">If you have already loaded a PP and selected a Base Oven Recipe then you will not see the <span class="span_6">Select the Base Oven Recipe to be loaded</span> screen, instead you will see the screen shown. Click <span class="span_7">Yes</span> to verify that you are loading the correct Base Oven Recipe.&#160; If you choose <span class="span_7">No</span> then the <span class="span_6">Select the Base Oven Recipe to Be loaded</span> screen appears.&#160; </li>
+                        </ol>
+                    </th>
+                    <th>&#160;</th>
+                    <th>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Start a Pyrometer Profile_1.png" style="height: 83px;width: 288px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_27" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">156</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <blockquote>
+            <p class="p_18"><span class="span_7">Note</span>: If you feel that the system is taking too long to load the Base Oven Recipe or the setpoints, switch over to the oven control software and see if you can detect a reason why the oven is not accepting the changes.</p>
+        </blockquote>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Base_oven_recipe_automatic_verification"></a>Base Oven Recipe Automatic Verification</h2>
+        <p>For Base Oven Recipe compatible ovens, users can automatically verify the correct Base Oven Recipe before beginning a Pyrometer Profile.&#160; This feature is especially useful for users that have multiple production products using multiple Base Oven Recipes.&#160; The system lets you select the Base Oven Recipe and if the selected recipe does not match, the Pyrometer Profile cannot begin.</p>
+        <h3 class="Heading3">Enable the Base Oven Recipe Automatic Verification</h3>
+        <ol start="1">
+            <li class="li_14">Close the software if open.</li>
+        </ol>
+        <ol start="2">
+            <li class="li_14">Find and open the file: <span class="PlainTextChar_1">C:\software root directory\Log\KIC2000UserSettings.kiccfg</span></li>
+            <li class="li_14">In the <span class="PlainTextChar_1">[PROPHET]</span> section find and edit the line:</li>
+        </ol>
+        <p class="PlainTextChar_1_1">AllowNotChangeRecipeAuto=1</p>
+        <ol start="4">
+            <li class="li_14">Save and then exit the file.</li>
+            <li class="li_14">Open the software.</li>
+            <li class="li_14">On the Global Preferences screen Global tab, select the <span class="span_7">Use Oven Baseline Recipe</span> check box.&#160; </li>
+        </ol>
+        <p>&#160;</p>
+        <table class="table_1">
+            <col style="width: 400px;" />
+            <col style="width: 378px;" />
+            <thead>
+                <tr>
+                    <th class="th_6">
+                        <p style="text-align: left;">The next time a Pyrometer Profile is started a dialog box appears, prompting you to verify the correct Base Oven Recipe, or select a different one. </p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_6">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Base Oven Recipe Automatic.png" style="width: 262px;height: 72px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_27" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">157</span>
+                        </p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_23">
+                        <p>&#160;</p>
+                        <p>Select the <span class="span_7">Yes</span> button to continue.&#160; Select the <span class="span_7">No</span> button to choose a different Base Oven Recipe.&#160; </p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_23">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Base Oven Recipe Automatic_1.png" style="height: 173px;width: 247px;" class="img_27" />
+                        </p>
+                        <p class="p_3"><span class="span_20">Figure </span><span class="span_20">158</span>
+                        </p>
+                        <p class="p_3">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_23">
+                        <p>If the selected Base Oven Recipe does not match, a yellow dialog box appears.&#160; </p>
+                        <p>&#160;</p>
+                        <p>To select a different recipe then select the <span class="span_7">Continue</span> button.&#160; </p>
+                        <p>&#160;</p>
+                        <p>When the correct recipe is selected, the software goes directly to the Pyrometer Profile display:</p>
+                        <p class="p_3">&#160;</p>
+                    </td>
+                    <td class="td_23">
+                        <p class="p_23">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Base Oven Recipe Automatic_2.png" style="width: 384px;height: 147px;" alt="Text&#xA;&#xA;Description automatically generated" class="img_51" />
+                            <br /><span class="span_20">Figure </span><span class="span_20">159</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

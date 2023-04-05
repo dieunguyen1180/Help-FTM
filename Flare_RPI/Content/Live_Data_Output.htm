@@ -16,8 +16,9 @@
                     <p><b>Viewing LDO data –</b> LDO is designed to output data only and is not meant as a historical database.  It is intended to be used with third party software that collects the LDO data while the Virtual Profile is running-live.  If you are not running third party software to collect the LDO data, and wish you to view historical data, this can be accomplished from within the actual KIC software in use.</p>
                     <p>&#160;</p>
                     <p><b>LDO destination –</b> The location where the LDO output file is written to can be specified by the user in the <i>ConfigurationProgram.exe</i> utility.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.  You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.&#160; </p>
+                    <blockquote>
+                        <p><b>Note:</b> For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.  You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.&#160; </p>
+                    </blockquote>
                     <h2 class="Heading2"><a name="Configuration1"></a>An LDO output file example
                     </h2>
                     <p class="p_6">Below is an example of the type of data included in the LDO output file:</p>
@@ -108,8 +109,9 @@
                         <li>Similar to ‘standard’ one board per file TXT output</li>
                         <li>Does not include temperature specs in specifications (Reflow_Time instead of Reflow_Time_/218)</li>
                     </ul>
-                    <p>&#160;</p>
-                    <p><b style="text-decoration: underline;">Note:</b> Examples of each of the available output file types can be found in the C:\RPI\Sample LDO files folder or click the ‘Open’ button next to a selection.</p>
+                    <blockquote>
+                        <p><b style="text-decoration: none;">Note:</b> Examples of each of the available output file types can be found in the <span style="font-family: 'Courier New';">C:\RPI\Sample LDO</span> files folder or click the <b>Open</b> button next to a selection.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Configuring_LDO"></a>Configure LDO</h2>
                     <table style="width: 100%;">
@@ -121,9 +123,9 @@
                                 <td>
                                     <ol>
                                         <li>
-                                            <p class="ListBullet">With the KIC software shut down, browse to the C:\RPI folder and run the ConfigurationProgram.exe application, and select the LDO tab.</p>
+                                            <p class="ListBullet">With the KIC software shut down, browse to the <span style="font-family: 'Courier New';">C:\RPI</span> folder and run the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> application, and select the LDO tab.</p>
                                         </li>
-                                        <li>Check the ‘Enable Live Data Output’ checkbox at the top</li>
+                                        <li>Check the <b>Enable Live Data Output</b> checkbox at the top</li>
                                         <li>
                                             <p class="ListBullet">Select the desired Format</p>
                                         </li>
@@ -131,7 +133,7 @@
                                             <p class="ListBullet">The type of Format chosen will affect what naming structure for file will be used (See Details of Output Files above).</p>
                                         </li>
                                         <li>
-                                            <p class="ListBullet">Select the output file destination path by clicking on the <i>Browse</i> button. <u>This needs to be a location on the local drive.</u></p>
+                                            <p class="ListBullet">Select the output file destination path by clicking on the <b>Browse</b> button. <u>This needs to be a location on the local drive.</u></p>
                                         </li>
                                         <li>
                                             <p class="ListBullet">‘Max File Size’ lets you specify how large the LDO output file can get before a new one is started.</p>
@@ -197,7 +199,7 @@
                     </p>
                     <p class="Procresult">&#160;</p>
                     <ol start="2" class="ol_1">
-                        <li class="ListBullet2">Click in the <span class="span_6">Max days to exist</span> field, and type in a new value.</li>
+                        <li class="ListBullet2">Click in the <span class="span_6" style="font-weight: bold;">Max days to exist</span> field, and type in a new value.</li>
                     </ol>
                     <p>&#160;</p>
                     <p class="ListParagraph">
@@ -212,7 +214,7 @@
                                 </ol>
                                 <p>&#160;</p>
                                 <ol start="4">
-                                    <li>Click the Apply button.</li>
+                                    <li>Click the <b>Apply</b> button.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
@@ -225,169 +227,7 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <h1 class="Heading1"><a name="Using_dual_lane_systems"></a>Dual Lane Systems And Functionality
-                    </h1>
-                    <p>The automatic system can monitor production through dual lane reflow ovens. This section will define the unique capabilities of the dual lane configuration.</p>
-                    <p>&#160;</p>
-                    <p>A <i>Dual Lane-Dual System</i> configuration uses two instances of the software application to track different recipes through the oven.</p>
-                    <p>&#160;</p>
-                    <p>The <i>Dual Lane-Single System</i> tracks two lanes of the same recipe with one instance of the software.</p>
-                    <p>&#160;</p>
-                    <p>A radio button display during the installation routine lets you choose between the standard configuration or one of the dual lane setups.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> For more information about the hardware components of the system, see the <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut></p>
-                    <p>&#160;</p>
-                    <p>&#160;</p>
-                    <h2 class="Heading2"><a name="Dual_lane_dual_systems"></a>Dual Lane Dual Systems
-                    </h2>
-                    <p>A dual system installation features two distinct instances of the RPI software and a complete duplication of the thermal management hardware.  Dual systems include two:</p>
-                    <p>&#160;</p>
-                    <ul>
-                        <li>Pairs of probes</li>
-                        <li>Encoders</li>
-                        <li>eTPUs</li>
-                        <li>Board sensors</li>
-                    </ul>
-                    <p>&#160;</p>
-                    <table>
-                        <col style="width: 328px;" />
-                        <col style="width: 66px;" />
-                        <tr>
-                            <td>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>Each RPI instance receives data from its own associated eTPU.  Each stores its logged data and executable subroutines in separate folders identified as either <i>front rail or back rail</i>.  (The front rail designates the lane closest to the lifting cover of the oven—the back rail designated the lane closest to the hinge of the oven cover.)</p>
-                            </td>
-                            <td>
-                                <p>
-                                    <img src="Resources/Images/1an.png" style="width: 311px;height: 238px;" />
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>&#160;</p>
-                    <p>The two instances of the software permit using different recipes in each lane.  In the desktop toolbar, each RPI instance is represented by its own icon – F for Front Rail and B for Back Rail.</p>
-                    <p>
-                        <img src="Resources/Images/image71.png" />
-                    </p>
-                    <p>&#160;</p>
-                    <h2 class="Heading2"><a name="Dual_lane_single_systems"></a>Dual Lane Single Systems
-                    </h2>
-                    <p>The single system configuration uses only one RPI instance.  An installation includes one set of thermal management hardware supplemented with <i>an additional product sensor</i>.  One product sensor is associated with each lane.</p>
-                    <p>&#160;</p>
-                    <p>The single system uses the same recipe on both lanes but tracks two flows of product across the user interface.  When in Live Mode, the white rectangle icons track two boards through channels at the top of the General, Chart data, and Troubleshooting tab screens:</p>
-                    <p>&#160;</p>
-                    <p style="text-align: center;">
-                        <img src="Resources/Images/1ai.png" style="width: 609px;height: 83px;" />
-                    </p>
-                    <p style="text-align: center;">
-                        <img src="Resources/Images/1ak.png" style="width: 202px;height: 153px;" /> <img src="Resources/Images/1al.png" style="width: 201px;height: 152px;" /> <img src="Resources/Images/1am.png" style="width: 199px;height: 153px;" /></p>
-                    <p>&#160;</p>
-                    <p>The system calculates a separate data set for each board.  It accumulates historical data in a manner just like a single lane oven.  A “Lane Identifier” will be saved with the data from each board for identifying which lane the particular board was processed in.</p>
-                    <p>&#160;</p>
-                    <h2 class="Heading2"><a name="Configure_Dual_Lane_Systems"></a>Configure Dual Lane Systems
-                    </h2>
-                    <p>During the software installation, you will have the option to select what type of system will be in use:</p>
-                    <p>&#160;</p>
-                    <table>
-                        <col style="width: 400px;" />
-                        <col style="width: 20px;" />
-                        <col />
-                        <tr>
-                            <td>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>You would select <i>“Dual Lane Dual System”</i> if there is a complete system installed on <u>each</u> lane of the oven.</p>
-                                <p>&#160;</p>
-                                <p>You would select <i>“Dual Lane Single System”</i> if there is only <u>one</u> system installed across the two lanes of the oven.</p>
-                            </td>
-                            <td>&#160;</td>
-                            <td>
-                                <p>
-                                    <img src="Resources/Images/image72.png" />
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>&#160;</p>
-                                <p>When <i>“Dual Lane Dual System”</i> is selected, as noted previously, there will be two separate software directories used – one for the “Front” and one for the “Back”. You will be able to choose whether you want to install the software for either one, or both directories.</p>
-                                <p>&#160;</p>
-                            </td>
-                            <td>&#160;</td>
-                            <td>
-                                <p>
-                                    <img src="Resources/Images/image73.png" />
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>&#160;</p>
-                    <p>&#160;</p>
-                    <h3 class="Heading3">Dual Lane Configuration
-                    </h3>
-                    <p>Additional settings for a Dual Lane system configuration can be found in the <i>ConfigurationProgram.exe</i> located in the <i>C:\RPI directory</i>.</p>
-                    <p>&#160;</p>
-                    <table>
-                        <col style="width: 400px;" />
-                        <col style="width: 20px;" />
-                        <col />
-                        <tr>
-                            <td>
-                                <p><b><i>Lane Configuration</i> –</b> For a Dual Lane-Single System, this section allows you to specify the position of the Board Tracking display in the software for each lane.</p>
-                                <p>&#160;</p>
-                                <p><b><i>User defined label for Lanes</i> –</b> By default, the software will label the lanes “Front” and “Back”. When the checkbox is checked, the drop-down menu allows you to select alternate designations for the lane names.</p>
-                                <p><b>NOTE:</b> The Front Lane is always the lane closest to the front side of the machine.</p>
-                                <p>&#160;</p>
-                                <p><b><i>Dual Lane – Dual System Only</i> –</b> When a Dual System is in use, there are two instances of the RPI software running – one for each lane. By default, a user must select the lane they want to see on the screen at any given time.</p>
-                                <p>When selecting this checkbox, the user can define an interval for the software “automatically” to switch over to the other lanes display after no input from the mouse cursor. <b>Note:</b> <i>Automatic switching will only occur when both lanes are running a live VP.</i></p>
-                            </td>
-                            <td>&#160;</td>
-                            <td>
-                                <p>
-                                    <img src="Resources/Images/image74.png" />
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>&#160;</p>
-                    <p><b>Note: For Dual Lane Dual System installations, the settings in this configuration utility must be entered into both install directories – C:\RPI Front Rail and C:\RPI Back Rail.</b>
-                    </p>
-                    <p>&#160;</p>
-                    <p>On Dual Lane Dual Systems, when you select <i>User defined label for Lanes</i>, the selection chosen will display as a watermark on the Index, General, Description, Charts, and Troubleshooting screens. See example below:</p>
-                    <p style="text-align: center;">
-                        <img src="Resources/Images/image75.png" />
-                    </p>
-                    <p>&#160;</p>
-                    <h4 class="Heading4">Configuring to profile
-                    </h4>
-                    <table style="width: 100%;">
-                        <col style="width: 400px;" />
-                        <col />
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p>The profiler can only communicate with one lane at a time, so you must select which lane you want the profiler to connect to. Disconnect then reconnect the profiler (or Smart Dock/Base Station where applicable). A pop-up menu will display in the lower right of the screen allowing you to select which lane to connect to. Repeat these steps to change to the other lane.</p>
-                                </td>
-                                <td style="text-align: left;">&#160;&#160;&#160;&#160;&#160; <img src="Resources/Images/image135.png" style="width: 271px;height: 97px;" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>&#160;</p>
                 </td>
-            </tr>
-            <tr>
-                <td>&#160;</td>
             </tr>
         </table>
     </body>

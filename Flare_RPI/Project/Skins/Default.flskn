@@ -27,4 +27,5 @@
     LinesFromRoot="true"
     PlusMinusSquares="true"
     Border="FixedSingle" />
+  <WebHelpOptions />
 </CatapultSkin>

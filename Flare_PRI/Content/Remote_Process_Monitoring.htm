@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1><a name="Use_Sweet_Spot_Target"></a>Use Sweet Spot Target (Optional)</h1>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_5.png" class="img_11" style="width: 559px;height: 198px;" />
+        </p>
+        <p class="Caption">Figure 126: Sweet Spot option</p>
+        <p class="p_3">&#160;</p>
+        <p>&#160;</p>
+        <p>Normally, when selecting a specification, only an upper and lower limit is defined, and the “target” value is automatically the center of the upper/lower limits. If you have purchased the <span class="span_6">Sweet Spot Target</span> option, enabling this feature allows you to manually define your own Target value for each statistic. This function may be desired when there is a defined specification window, but the desired optimal value may not be the exact center of the limits. </p>
+        <h1 class="Heading1"><a name="O2_Live"></a>O2 Live (Optional)</h1>
+        <p style="text-indent: 0.5in;"><span class="span_7">Note</span>: The software key must always remain connected during use for <span class="span_6">O2 Live</span> capabilities to function.</p>
+        <p>&#160;</p>
+        <p><span class="span_6">O2 Live</span> is an optional feature that allows you to display an O2 PPM measured value on a profile, or Pyrometer Profile data. <span class="span_6">O2 Live</span> is not an oxygen analyzer, but an option that allows for the output from a user’s existing analyzer to be read in and displayed by the PRI software. An external interface device connects between the output of the oxygen analyzer, and the PC (USB port) running the PRI software<span class="span_6">)</span>. This O2 PPM value is available in the following areas of the software:</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Baseline Profile</li>
+            <li>Pyrometer Profile (Live)</li>
+            <li>Pyrometer Profile (Historical data)</li>
+            <li>SPC</li>
+            <li>LDO</li>
+        </ul>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Configuration"></a>Configuration</h2>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/O2 Live Optional.png" class="img_11" style="width: 564px;height: 172px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">127</span><span class="span_20">: O2 Live Configuration</span>
+        </p>
+        <p>&#160;</p>
+        <p>With the KIC software shut down, in the <span class="PlainTextChar_1">C:\PRI</span> folder, run the <span class="span_46">ConfigurationProgram.exe</span> application and select the O2 PPM tab.</p>
+        <p>Select <span class="span_10">Enable O2 PPM Monitor</span></p>
+        <p>From the Input Type drop-down menu, choose the option that corresponds with the type of output used on the customer’s oxygen analyzer. </p>
+        <p>The Low and High values will correspond to the minimum and maximum range of the output, e.g. a Low of 0=0 volts, and a High of 500 equals 5 volts.</p>
+        <p>Click the <span class="span_7">Apply</span> and <span class="span_7">OK</span> buttons at the bottom of the Configuration Program to save changes and close.</p>
+        <p>Restart the PRI software and access the Global Preferences screen.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/O2 Live Optional_1.png" style="width: 573px;height: 269px;" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">128</span><span class="span_20">: O2 Sample Port Entry</span>
+        </p>
+        <p>&#160;</p>
+        <p>Enter the measurement from the KIC Board Sensor to the point inside the oven tunnel where the O2 sampling port is located.</p>
+        <p class="p_109">&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/O2 Live Optional_2.png" style="width: 589px;height: 163px;" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">129</span><span class="span_20">: O2 PPM Control Limits</span>
+        </p>
+        <p>&#160;</p>
+        <p>Select the Control Limits tab to specify the Warning/Alarm limits for the O2 PPM. </p>
+        <p>When the measured value is below the Warning limit, the O2 display window will be Green in color</p>
+        <p>When the measured value exceeds the Warning limit, the O2 display window will be Yellow in color</p>
+        <p>When the measured value exceeds the Alarm limit, the O2 display window will be Red in color and will trigger the <span class="span_6">KIC Alarm Relay</span> where applicable.</p>
+        <p class="p_110">&#160;</p>
+        <p>Below are the formulas used for calculating the O2 PPM value depending on type of analyzer output:</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/O2 Live Optional_3.png" style="width: 550px;height: 410px;" alt="Text, letter&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">130</span><span class="span_20">: </span><span class="span_20">O2 PPM formulas</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Operation"></a>Operation</h2>
+        <p>When the O2 feature is used, a “floating” window displays on the screen showing the measured value, and is color-coded based on the measured value:</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Operation.png" style="width: 637px;height: 336px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">131</span><span class="span_20">: O2 PPM Floating Windows</span>
+        </p>
+        <p>&#160;</p>
+        <p>Below are examples of the O2 PPM display in various areas of the software:</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Operation_1.png" class="img_11" style="width: 715px;height: 508px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">132</span><span class="span_20">: </span><span class="span_20">O2 PPM display-PP Graph</span>
+        </p>
+        <p class="p_3">&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Operation_2.png" class="img_11" style="width: 711px;height: 500px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">133</span><span class="span_20">: </span><span class="span_20">O2 PPM display-Charts Tab</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h1 class="Heading1"><a name="VP_Idle_Mode"></a>PP Idle Mode (Optional) </h1>
+        <p class="p_18"><span class="span_7">Note</span>: The software key must always remain connected during use for <span class="span_6">PP Idle Mode </span>capabilities to function.</p>
+        <p>&#160;</p>
+        <p>PP Idle Mode is an <span class="span_6">optional</span> feature that allows the KIC software to automatically go into a type of “sleep –mode” during Pyrometer Profiling when the energy saving function of some newer ovens is in use. When energy savings features are enabled on the oven, the oven control software will typically modify several of the process parameters – such as conveyor speed, blower fan speed, and even zone setpoint temperatures. When this occurs, the KIC software would normally alarm on the detected changes to the process. Using PP Idle Mode allows the software to ignore those changes during energy saving periods, thus eliminating unnecessary warnings/alarms from being activated.</p>
+        <p>During PP Idle Mode, the crystal ball will be grey, the statistics chart will be blank, no PP data will be calculated, and no process related alarms or warnings will display or be recorded. When the entrance board sensor is triggered, the system will automatically exit Idle Mode and return to normal PP operation.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Configuration_VP_Idle_Mode"></a>Configuration</h2>
+        <p>The feature is enabled by shutting down the software, running the <span class="PlainTextChar_1">ConfigurationProgram.exe</span> (in the <span class="PlainTextChar_1">C:\PRI</span> directory) and selecting “Use PP Idle Mode” in the area shown below, and entering the amount of time the oven should be empty before entering Idle Mode:</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Idle Mode Optional.png" style="width: 571px;height: 546px;" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">134</span><span class="span_20">: PP Idle Mode Configuration</span>
+        </p>
+        <p>&#160;</p>
+        <p>When PP is running, there will be an additional button on the screen allowing you to manually Enter/Exit PP Idle Mode at any time:</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Idle Mode Optional_1.png" style="width: 709px;height: 72px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 135: PP Idle Mode</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

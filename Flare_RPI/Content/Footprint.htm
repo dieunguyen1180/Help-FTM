@@ -16,13 +16,15 @@
             <img src="Resources/Images/FTM00012.png" style="width: 1043px;height: 563px;" />
         </p>
         <p>&#160;</p>
-        <p>The left side of the screen displays the following temperature related information:</p>
+        <p>The main area of the screen displays the following temperature related information:</p>
         <ul>
             <li>Current (green dot) – the current live temperature of each of the 30 installed probe thermocouples</li>
             <li>Footprint (gray area) – a representation of the range of temperatures each of the probe thermocouples have measured since starting <i>VP</i></li>
             <li>Oven Setpoint (dotted line) – the setpoint temperature specified for each individual zone (NOTE: This information is for reference only. It is not unusual for the probe thermocouple temperature to be slightly lower than the zone setpoint temperature.)</li>
+            <li>Baseline (red line) – gives a visual representation of the temperature each of the probe thermocouples were at during baseline</li>
         </ul>
-        <p>The right side of the screen displays similar information for the conveyor speed.</p>
+        <p>&#160;</p>
+        <p>The right side of the screen displays similar information for the conveyor speed and a new settings tab for configuring alarm limits.</p>
         <p>&#160;</p>
         <table style="width: 100%;">
             <col style="width: 110px;" />
@@ -33,61 +35,133 @@
                         <img src="Resources/Images/FTM00013.png" />
                     </td>
                     <td>
-                        <p>The <i>Reset Footprint</i> button will temporarily erase the gray footprint area on the screen for both the temperature and speed information. A new display of the <i>Footprint</i> will begin after using the reset function. NOTE: The actual variation will still be available when viewing historical data.</p>
+                        <p>The <i>Reset Footprint</i> button will temporarily erase the gray footprint area on the screen for both the temperature and speed information. A new display of the <i>Footprint</i> will begin after using the reset function. </p>
+                        <p style="font-size: 6pt;">&#160;</p>
+                        <p style="text-indent: 0.5in;"><b>Note:</b> The actual variation will still be available when viewing historical data.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
         <p>&#160;</p>
-        <h2 class="Heading2">&#160;</h2>
-        <h2 class="Heading2"><a name="Historical_Viewing"></a>Historical Viewing</h2>
+        <h2 class="Heading2"><a name="Footprint_Settings"></a>Footprint Settings</h2>
+        <table style="width: 100%;">
+            <col style="width: 43px;">
+            </col>
+            <col>
+            </col>
+            <col>
+            </col>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="Resources/Images/FTM00034.png" style="width: 39px;height: 32px;">
+                        </img>
+                    </td>
+                    <td>&#160;</td>
+                    <td>The <b style="font-style: italic;">Settings</b> button is located in the upper right-hand corner of the Footprint tab. Selecting this button will allow for further configuration.</td>
+                </tr>
+            </tbody>
+        </table>
+        <table style="width: 100%;">
+            <col style="width: 450px;">
+            </col>
+            <col>
+            </col>
+            <tbody>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>Selecting the checkbox at the top of the tab will allow for a deviation number to be set for all TC’s. Inputting a value into the box will set a general deviation alarm if any or multiple TC’s deviate +/- the set value from your baseline. After you have set a value for this box you will select <b>Apply</b> then <b>OK</b>.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <blockquote>
+                            <blockquote>
+                                <p><b>Note:</b> This will generate Alarm #13 if any of the probe TC’s deviate more than the specified limit.</p>
+                            </blockquote>
+                        </blockquote>
+                    </td>
+                    <td>
+                        <img src="Resources/Images/FTM00035.png">
+                        </img>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol start="2">
+                            <li>If the <b style="font-style: italic;">Alarm on Maximum Deviation from Baseline</b> box is deselected, you may set individual specs for several or all TC’s. After you have inputted both a low and high limit for the TC’s you wish to monitor you may select <b>Apply</b> and <b>OK</b>.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <blockquote>
+                            <blockquote>
+                                <p><b>Note:</b> This will generate Alarm #13 if any of the specified probe TC’s deviate more than the specified limits.</p>
+                            </blockquote>
+                        </blockquote>
+                    </td>
+                    <td>
+                        <img src="Resources/Images/FTM00036.png">
+                        </img>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="p_23">&#160;</p>
+        <h2 class="Heading2" style="text-align: left;"><a name="Historical_Viewing"></a>Historical Viewing</h2>
         <p>When viewing historical <i>VP</i> data, you can access the <i>Footprint</i> data that was recorded during that time period.</p>
         <p>&#160;</p>
         <p>
-            <img src="Resources/Images/FTM00014.png" style="width: 1034px;height: 558px;" />
+            <img src="Resources/Images/RPIFTM00014.png" style="width: 1067px;height: 568px;">
+            </img>
         </p>
         <p>&#160;</p>
         <p>In addition to the capabilities described under ‘Live Viewing’, the following additional functions are available in Historical Viewing:</p>
         <ul>
-            <li>Date/Time stamp display on graph – updates as data is replayed</li>
-            <li>Play button <img src="Resources/Images/FTM00015.png" style="width: 20px;height: 31px;" />  toggles between 1x and 10x replay speed</li>
-            <li>Pause button <img src="Resources/Images/FTM00016.png" style="width: 20px;height: 32px;" />  to stop replay</li>
-            <li>Timeline – black colored bar at the bottom of the zone display representing the entire timeline for this VP:</li>
+            <li class="li_1">Date/Time stamp display on graph – updates as data is replayed</li>
+            <li class="li_1">Play button <img src="Resources/Images/FTM00015.png" style="width: 18px;height: 27px;"></img>  toggles between 1x and 10x replay speed</li>
+            <li class="li_1">Pause button <img src="Resources/Images/FTM00016.png" style="width: 18px;height: 29px;"></img>  to stop replay</li>
+            <li class="li_1">Timeline – black colored bar at the bottom of the zone display representing the entire timeline for this VP:</li>
         </ul>
         <ul style="list-style-type: circle;">
-            <li class="li_8">Start – when the <i>VP</i> was started</li>
-            <li class="li_8">Stop – when the <i>VP</i> was stopped</li>
-            <li class="li_8">Alarm Events – red vertical lines indicate when a system alarm occurred</li>
-            <li class="li_8">Timeline indicator – small triangle under timeline bar; moves with replay; click and hold to move to specific part of timeline</li>
+            <li class="ListParagraph">Start – when the <i>VP</i> was started</li>
+            <li class="ListParagraph">Stop – when the <i>VP</i> was stopped</li>
+            <li class="ListParagraph">Alarm Events – red vertical lines indicate when a system alarm occurred</li>
+            <li class="ListParagraph">Timeline indicator – small triangle under timeline bar; moves with replay; click and hold to move to specific part of timeline</li>
         </ul>
         <p>&#160;</p>
         <table style="width: 100%;">
-            <col style="width: 787px;" />
-            <col style="width: 0px;" />
-            <col style="width: 676px;" />
+            <col style="width: 450px;">
+            </col>
+            <col>
+            </col>
+            <col>
+            </col>
             <tbody>
                 <tr>
                     <td>
                         <p>In either live or historical view, you can hold your cursor over an individual probe TC and a pop-up window will appear showing:</p>
                         <ul>
                             <li>The probe TC number</li>
+                            <li>Baseline = baseline temperature read</li>
                             <li>Current = current temperature read</li>
                             <li>Min = lowest temperature read</li>
                             <li>Max = highest temperature read</li>
                         </ul>
                         <p>When the cursor is held over the <i>Conveyor Footprint</i> area it will display:</p>
                         <ul>
-                            <li>Current speed</li>
-                            <li>Slowest speed</li>
-                            <li>Fastest speed</li>
+                            <li>Current = current speed</li>
+                            <li>Baseline = baseline speed</li>
+                            <li>Min = slowest speed read</li>
+                            <li>Max = fastest speed read</li>
                         </ul>
                     </td>
                     <td>&#160;</td>
                     <td>
-                        <img src="Resources/Images/FTM00017.png" style="width: 296px;height: 163px;" />
+                        <img src="Resources/Images/FTM00017.png">
+                        </img>
                     </td>
                 </tr>
             </tbody>
         </table>
+        <p>&#160;</p>
     </body>
 </html>

@@ -42,9 +42,6 @@
       Title="DISABLE ALARM TAB"
       Link="/Content/Global_Preferences.htm#Disable_Alarm_tab" />
     <TocEntry
-      Title="BARCODE TAB"
-      Link="/Content/Global_Preferences.htm#Barcode_tab" />
-    <TocEntry
       Title="OUTPUTS TAB"
       Link="/Content/Global_Preferences.htm#Outputs_tab" />
   </TocEntry>
@@ -123,6 +120,16 @@
       Link="/Content/Running_a_profile.htm#Setting_different_top" />
   </TocEntry>
   <TocEntry
+    Title="USING DUAL PROFILING MODE"
+    Link="/Content/Dual_Profiling_Mode.htm">
+    <TocEntry
+      Title="CONFIGURATION"
+      Link="/Content/Dual_Profiling_Mode.htm#Global_Tab_24ch" />
+    <TocEntry
+      Title="RUN A PROFILE – DUAL PROFILING MODE"
+      Link="/Content/Dual_Profiling_Mode.htm#Run_Profile_DualProfiling" />
+  </TocEntry>
+  <TocEntry
     Title="PROFILE EXPLORER"
     Link="/Content/Profile_Explorer.htm">
     <TocEntry
@@ -188,12 +195,6 @@
       Title="VP LIVE MODE BUTTONS"
       Link="/Content/Monitoring_production_in_live_mode.htm#Buttons" />
     <TocEntry
-      Title="VIRTUAL PROFILING WITH BARCODE PROCESS CONTROL"
-      Link="/Content/Monitoring_production_in_live_mode.htm#Virtual_Profiling_with1" />
-    <TocEntry
-      Title="READ BARCODES WITH A PRODUCT TRACEABILITY SCANNER"
-      Link="/Content/Monitoring_production_in_live_mode.htm#Reading_barcodes_with_a" />
-    <TocEntry
       Title="VERIFY THE VIRTUAL PROFILE"
       Link="/Content/Monitoring_production_in_live_mode.htm#Verifying_the_Virtual" />
     <TocEntry
@@ -216,7 +217,7 @@
       Link="/Content/Monitoring_production_in_live_mode.htm#Virtual_Profiling3" />
     <TocEntry
       Title="BARCODE FUNCTIONS"
-      Link="/Content/Monitoring_production_in_live_mode.htm#Barcodefunctions" />
+      Link="/Content/Monitoring_production_in_live_mode.htm#Barcode_functions" />
     <TocEntry
       Title="BARCODE TYPES"
       Link="/Content/Monitoring_production_in_live_mode.htm#Barcode_types"></TocEntry>
@@ -260,16 +261,22 @@
   </TocEntry>
   <TocEntry
     Title="DUAL LANE SYSTEMS AND FUNCTIONALITY"
-    Link="/Content/Live_Data_Output.htm#Using_dual_lane_systems">
+    Link="/Content/Dual_Lane_Systems_and_Functionality.htm">
     <TocEntry
       Title="DUAL LANE DUAL SYSTEMS"
-      Link="/Content/Live_Data_Output.htm#Dual_lane_dual_systems"></TocEntry>
+      Link="/Content/Dual_Lane_Systems_and_Functionality.htm#Dual_lane_dual_systems"></TocEntry>
     <TocEntry
       Title="DUAL LANE SINGLE SYSTEMS"
-      Link="/Content/Live_Data_Output.htm#Dual_lane_single_systems" />
+      Link="/Content/Dual_Lane_Systems_and_Functionality.htm#Dual_lane_single_systems" />
     <TocEntry
       Title="CONFIGURE DUAL LANE SYSTEMS"
-      Link="/Content/Live_Data_Output.htm#Configure_Dual_Lane_Systems" />
+      Link="/Content/Dual_Lane_Systems_and_Functionality.htm#Configure_Dual_Lane_Systems" />
+    <TocEntry
+      Title="DUAL LANE DUAL SYSTEM BARCODE FUNCTIONS"
+      Link="/Content/Dual_Lane_Systems_and_Functionality.htm#Dual-Lane_DS_Barcode_Fuction" />
+    <TocEntry
+      Title="DUAL LANE SINGLE SYSTEM BARCODE FUNCTIONS"
+      Link="/Content/Dual_Lane_Systems_and_Functionality.htm#Dual-Lane_SS_Barcode_Fuction" />
   </TocEntry>
   <TocEntry
     Title="VACUUM REFLOW OVEN SYSTEMS AND FUNCTIONALITY"
@@ -466,11 +473,7 @@
     Link="/Content/Appendix_C.htm">
     <TocEntry
       Title="USER SETTINGS TAB"
-      Link="/Content/Appendix_C.htm#User_Settings_Tab">
-      <TocEntry
-        Title="Use Baseline Profile Expiration"
-        Link="/Content/Appendix_C.htm#Use_Baseline_Profile_Expiration" />
-    </TocEntry>
+      Link="/Content/Appendix_C.htm#User_Settings_Tab"></TocEntry>
     <TocEntry
       Title="SHIFTING TAB"
       Link="/Content/Appendix_C.htm#Shifting_Tab" />
@@ -491,64 +494,13 @@
       Link="/Content/Appendix_C.htm#Message_Config_Tab" />
     <TocEntry
       Title="PASSWORD CONTROL – MULTI USER"
-      Link="/Content/Appendix_C.htm#Password_Control_Multi_User">
-      <TocEntry
-        Title="Access to the Password Control Tab"
-        Link="/Content/Appendix_C.htm#Access_Password_Control_Tab" />
-      <TocEntry
-        Title="Multi User Control"
-        Link="/Content/Appendix_C.htm#Multi_User_Control" />
-      <TocEntry
-        Title="Password Control Tab"
-        Link="/Content/Appendix_C.htm#Password_Control_Tab" />
-      <TocEntry
-        Title="User Type Area"
-        Link="/Content/Appendix_C.htm#User_Type_Area" />
-      <TocEntry
-        Title="Password Area"
-        Link="/Content/Appendix_C.htm#Password_Area" />
-      <TocEntry
-        Title="Password Timer Area"
-        Link="/Content/Appendix_C.htm#Password_Timer_Area" />
-      <TocEntry
-        Title="Main Screen With Password Control"
-        Link="/Content/Appendix_C.htm#Main_Screen_with_Password_Control" />
-      <TocEntry
-        Title="Main Screen Log In"
-        Link="/Content/Appendix_C.htm#Main_Screen_Log_In" />
-      <TocEntry
-        Title="Responding to an Alarm"
-        Link="/Content/Appendix_C.htm#Responding_to_an_Alarm" />
-    </TocEntry>
+      Link="/Content/Appendix_C.htm#Password_Control_Multi_User"></TocEntry>
     <TocEntry
       Title="ALARM TAB"
-      Link="/Content/Appendix_C.htm#AR_Matrix_Settings_Tab">
-      <TocEntry
-        Title="Alarm Relay Matrix configuration"
-        Link="/Content/Appendix_C.htm#AR_Matrix_Configuration" />
-      <TocEntry
-        Title="USB Light Tower configuration"
-        Link="/Content/Appendix_C.htm#USB_Light_Tower_configuration" />
-    </TocEntry>
+      Link="/Content/Appendix_C.htm#AR_Matrix_Settings_Tab"></TocEntry>
     <TocEntry
       Title="BARCODE TAB"
-      Link="/Content/Appendix_C.htm#Barcode_Tab">
-      <TocEntry
-        Title="Barcode Interface Method Area"
-        Link="/Content/Appendix_C.htm#Barcode_Interface_Method_Area" />
-      <TocEntry
-        Title="Missing Barcode Trigger Area"
-        Link="/Content/Appendix_C.htm#Missing_Barcode_Trigger_Area" />
-      <TocEntry
-        Title="Process Control String Area"
-        Link="/Content/Appendix_C.htm#Process_Control_String_Area" />
-      <TocEntry
-        Title="Disable Missing Barcode Option Area"
-        Link="/Content/Appendix_C.htm#Disable_Missing_Barcode_Option" />
-      <TocEntry
-        Title="Options"
-        Link="/Content/Appendix_C.htm#Options" />
-    </TocEntry>
+      Link="/Content/Appendix_C.htm#Barcode_Tab"></TocEntry>
   </TocEntry>
   <TocEntry
     Title="CONTACT KIC"

@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Appendix C: Configuration Program</h1>
+        <p>The system has many individual software settings that can be changed to suit the users process and or hardware set up. The configuration program tool facilitates quick and easy system setting changes, saving the user from the complications of manually editing the configuration files.&#160; </p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note:</span>  Only persons with advanced training in the automatic system software should modify these settings. Changes using this tool will directly affect the data collected by the system. Configuration software tool location:<br /><span style="font-family: 'Courier New';">C:\PRI\ConfigurationProgram.exe</span></p>
+        <p class="p_18">
+            <br />
+        </p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="User_Settings_Tab"></a>User Settings Tab</h2>
+        <p>&#160;</p>
+        <p><span class="span_7">Allowable Change </span>– Defines how much deviation is allowed in any one of the Pyrometers before a Warning condition is generated.</p>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 400px;" />
+            <col style="width: 10px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p><span class="span_7">Exclusion</span> – Allows user to disable any of the pyrometers from the PP calculations.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">PP</span><span class="span_7">Idle Mode</span> – Optional feature that can be used along with energy savings features of some ovens.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Display Host Screen</span> – Enables/disables the display of the Host diagnostic screen.&#160; </p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Display Units Per Hour</span> – Enables live display on top of PP general tab that tracks how many products have been processed in the past hour (value resets at the top of each hour).</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Vantage Live Oven Support – </span>Enables interface of data with the Vantage System.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Use Baseline Profile Expiration</span> – Automatically require new baseline profiles after specified number of days.</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td style="text-align: center;">
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Appendix C Configuration Program.png" style="width: 493px;height: 471px;" />
+                        <p class="Caption"><span class="span_20">Figure 203: User Settings Tab</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="text-align: center;">
+            <br />
+        </p>
+        <p class="p_26">Temperature Triggers and Sample Rates</p>
+        <p>The temperature triggers dictate when the profile begins and ends allowing for more consistent data collection.&#160; This area of the tool allows you to change the temperature trigger values as well as sample rate for each application type.&#160; </p>
+        <p>&#160;</p>
+        <p>There are three temperature triggers:</p>
+        <p class="p_85"><span class="span_7">Start -</span>The profile Start temperature trigger is always 2C above the “Maximum Product Temperature at start of profile” setting in the Global tab of the Global Preferences screen.&#160; This value can be changed as needed from as low as 15C to as high as 40C.&#160; </p>
+        <p class="p_85"><span class="span_7">Mid Point –</span> The midpoint temperature trigger must be higher than the start trigger, and the End trigger.&#160; Be sure the temperature in your heated process will achieve this setting or the profile will fail.&#160; </p>
+        <p class="p_85"><span class="span_7">End –</span> The profile will end when all of the thermocouples attached to the profiler have cooled to below the End-Temperature trigger setting.</p>
+        <p class="p_13">&#160;</p>
+        <p><span class="span_7">Sample rate –</span> Set the sample rate for each application type.&#160; </p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Use_Baseline_Profile_Expiration"></a>Use Baseline Profile Expiration</h3>
+        <p>&#160;</p>
+        <p>Enabling this function allows the system to require a new baseline profile is run after a specified number of days have elapsed. When enabled, additional functions will appear on various screens in the software.</p>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 400px;" />
+            <col style="width: 10px;" />
+            <col style="width: 400px;" />
+            <tbody>
+                <tr>
+                    <td style="font-size: 10pt;"><span class="span_7">Global Preferences/Control Limits Tab</span> – When it is enabled in the Configuration Program, it adds an additional selection at the bottom of this tab. Selecting the checkbox allows you to define the number of days after a baseline profile is run that it will automatically expire. This feature can be used to ensure that the system is always using an up to date profile as the baseline.<p>&#160;</p><p class="p_18"><span class="span_7">Note:</span> When expired, the profile will still be viewable. However, it will not be able to be used as the baseline for monitoring production.</p></td>
+                    <td style="font-size: 10pt;">&#160;</td>
+                    <td style="font-size: 10pt;">
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_6.png" />
+                        <p>
+                            <p class="Caption">Figure 204: Baseline Expiration</p>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 10pt;">
+                        <p><span class="span_7">Profile Explorer – Search Button </span>- When the expiration feature is enabled, you will see a new button appear in Profile Explorer:</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td style="font-size: 10pt;">&#160;</td>
+                    <td style="font-size: 10pt;">
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_6_1.png" style="width: 133px;height: 67px;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-size: 10pt;">
+                        <ol>
+                            <li>Click this button to access a search window which will allow you to easily identify when each of your baseline profiles will expire. </li>
+                            <li>Enter the number of days (window of time remaining until profiles will expire), and then click Search. </li>
+                            <li>All products with a baseline profile set to expire within the specified timeframe will be displayed. <span class="span_20">Figure </span><span class="span_20">205</span><span class="span_20">: Baseline Search</span></li>
+                            <li>Selecting a particular product and clicking on the <span class="span_6">Run New Baseline Profile</span> will automatically take you to the <span class="span_6">RUN A PROFILE </span>screen and will select that product name.</li>
+                        </ol>
+                    </td>
+                    <td style="font-size: 10pt;">&#160;</td>
+                    <td style="font-size: 10pt;">
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_6_2.png" style="width: 456px;height: 289px;" />
+                        <p class="Caption">Figure 205: Baseline Search</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Decimal_Tab"></a>Decimal Tab
+</h2>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 400px;" />
+            <col style="width: 10px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td><span style="font-size: 10pt;">This area controls the number of decimal places for the Conveyor Speed and Zone Setpoints displays in the software.</span>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Decimal Tab.png" style="width: 456px;height: 277px;" />
+                        <p class="Caption"><span class="span_20">Figure </span><span class="span_20">206</span><span class="span_20">: Decimal Tab</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2 class="Heading2"><a name="Hardware_Tab"></a>Hardware Tab
+					</h2>
+                    </td>
+                    <td>&#160;</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td><span style="font-size: 10pt;">This area controls the configuration of the DAU network addresses and allows for enabling or disabling of the oven communication when applicable.</span>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Decimal Tab_1.png" />
+                        <p class="Caption"><span class="span_20">Figure </span><span class="span_20">207</span><span class="span_20">: Hardware Tab</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <br />
+        </p>
+        <h2 class="Heading2"><a name="Auto-VP_Tab"></a>Auto-PP Tab</h2>
+        <p>Auto-PP is a specialized feature for product changeovers that is dependent on a wide variety of variables. There are multiple configurations of the Auto-PP feature depending on the capabilities and processes in place in the factory. Contact your systems supplier to identify if this functionality can be implemented with your system.</p>
+        <table>
+            <col style="width: 400px;" />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td> <h2 class="Heading2"><a name="Message_Config_Tab"></a>Message Config Tab
+						</h2><p>When certain messages are displayed in the software, the user can select a checkbox for “Do not show this again”. If checked, that message box becomes “disabled”. This area allows the user to enable or disable those messages.</p></td>
+                    <td>&#160;</td>
+                    <td>
+                        <p>&#160;</p>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Auto PP Tab.png" style="width: 459px;height: 292px;" />
+                        <p class="Caption"><span class="span_20">Figure </span><span class="span_20">208</span><span class="span_20">: Message Config Tab</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Password_Control_Multi_User"></a>Password Control – Multi User</h2>
+        <p>The software offers a Multi User Control capability to configure certain functions as password protected and, thus, requiring the use of specific user levels. </p>
+        <p>&#160;</p>
+        <p class="p_26">The user types are:</p>
+        <ul style="list-style-type: square;">
+            <li>Administrator</li>
+            <li>Engineer</li>
+            <li>Tech</li>
+            <li>Operator (default)</li>
+        </ul>
+        <h3 class="Heading3"><a name="Access_Password_Control_Tab"></a>Access to the Password Control Tab</h3>
+        <p>By default, the Multi User Control is disabled. When this password function is enabled, it will require the entering the default Administrator password before the Configuration Utility can be accessed. The Password Control tab can only be used by the Administrator, or the Engineer/Tech user types if specified. </p>
+        <p>&#160;</p>
+        <p>If the Multi User Control is enabled and a user starts the utility, the utility will not launch until they enter the correct password (<span class="span_6">Default Administrator password is Admin</span>). </p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Password Control Multi User.png" style="width: 580px;height: 553px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 209: Password Control Tab</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Multi_User_Control"></a>Multi User Control</h3>
+        <p>To apply Multi User Control, Administrators will click the <span class="span_7">Enable</span> radio button and then click <span class="span_7">OK</span>. </p>
+        <p>&#160;</p>
+        <p>The confirmation dialog is answered, and then the utility must be restarted. </p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Figure Password Control Tab.png" style="width: 601px;height: 574px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 210: Restart Configuration Program</p>
+        <p>&#160;</p>
+        <p>When the administrator logs back in, a password is required. <span class="span_7">The default password is Admin</span>.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Password_Control_Tab"></a>Password Control Tab</h3>
+        <p>The <span class="span_7">Password Control</span> tab allows administrators to manage passwords and permissions for each user type. The image below represents the Password Control tab when Multi User Control is enabled. This tab displays a <span class="span_7">Password Control Chart</span>, highlighted, which contains a list of every area in the software. At the bottom of the list, you can give access to the rest of the Configuration Utility tabs, and the Password Control tab individually. </p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Password Control Multi User.png" class="img_11" style="width: 636px;height: 607px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">211</span><span class="span_20">: List of Control</span>
+        </p>
+        <p>&#160;</p>
+        <p class="p_26">Stop PP Selections</p>
+        <p>There are three different available options for controlling when a PP can be stopped:</p>
+        <ul>
+            <li>Stop PP – All Conditions: This is the default setting. An authorized user can stop the PP at any time.</li>
+            <li>Stop PP with Oven Empty: User can stop the PP only when there is no product in the oven.</li>
+            <li>Stop PP with Product in Oven: When user clicks Stop button, they have a choice to wait for products to exit the oven, or they can force a stop even if there is still product in the oven. </li>
+        </ul>
+        <p class="p_7"><span class="span_7">N</span><span class="span_7">ote</span><span class="span_7">:</span> To enable use of either of the second two options, the <span class="span_6">Stop PP – All Conditions</span> selection must be unchecked.</p>
+        <p>&#160;</p>
+        <h4 class="Heading4">Examples of Stop PP Selections</h4>
+        <table>
+            <col style="width: 400px;" />
+            <col style="width: 10px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="p_26">Stop PP with Oven Empty:</p>
+                        <p><span class="span_7">OK</span> – Clicking <span class="span_7">OK</span> will acknowledge this message window and the PP will stop automatically once the last board exits the oven.</p>
+                        <p><span class="span_7">Cancel</span> – The <span class="span_6">Stop</span> request will be cancelled, and the PP will continue to run.</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Password Control Tab.png" />
+                        <p class="Caption"><span class="span_20">Figure </span><span class="span_20">212</span><span class="span_20">: </span><span class="span_20">Stop Message 1</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p_26">Stop PP with Product in Oven: </p>
+                        <p>
+                            <br /><span class="span_7">OK</span> – Clicking <span class="span_7">OK</span> will acknowledge this message window and the PP will stop automatically once the last board exits the oven.</p>
+                        <p><span class="span_7">Cancel</span> – The <span class="span_6">Stop</span> request will be cancelled, and the PP will continue.</p>
+                        <p><span class="span_7">Force Stop</span> – The PP will stop immediately and return to the Profile Explorer screen.</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Password Control Tab_1.png" style="height: 117px;width: 381px;" />
+                        <p class="Caption"><span class="span_20">Figure </span><span class="span_20">213</span><span class="span_20">: Stop Message 2</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>If the ‘Force Stop’ selection is used, additional notes will be automatically added into the <span class="span_6">Description</span> column in Profile Explorer. It will note which user level stopped the PP, and how many products were still in the oven when the stop occurred.</td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Password Control Tab_2.png" style="height: 89px;width: 379px;" />
+                        <p class="Caption"><span class="span_20">Figure </span><span class="span_20">214</span><span class="span_20">: Event in Profile Explorer</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="User_Type_Area"></a>User Type Area</h3>
+        <p>The <span class="span_7">User Type</span> pick list allows the Administrator to select and enable the password function by user type. </p>
+        <p>&#160;</p>
+        <p>By default, each user in the menu will be unchecked/disabled. By selecting a user type, you not only enable or disable the password entry field and the Password Timer, but also select the type of user to enable and configure.</p>
+        <p>&#160;</p>
+        <p>The columns in the <span class="span_7">Password Control Chart</span> will be enabled depending on the user type selected:</p>
+        <p>&#160;</p>
+        <ul>
+            <li>Administrator = All columns enabled</li>
+            <li>Engineer = All columns enabled</li>
+            <li>Tech = Only Tech and Operator columns enabled</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Password Control Multi User.png" style="height: 589px;width: 616px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 215: User Type</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Password_Area"></a>Password Area</h3>
+        <p>The Password entry fields are disabled until a user type is selected. </p>
+        <p>&#160;</p>
+        <p>When a user type is selected, the <span class="span_7">Enter Password </span>fields will display as ‘XXXXX” if a password had previously been entered. When a user enters a password ‘X’s will show to indicate an entry, but not show the actual password. After entering a password in the two fields, click the Apply button before changing to another User Type.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Password_Timer_Area"></a>Password Timer Area</h3>
+        <p>The <span class="span_7">Password Timer</span> is configurable and represents the amount of time before the user is automatically logged out due to being idle.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Password Control Multi User.png" style="height: 589px;width: 616px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 216: Set Password and Timer</p>
+        <h3 class="Heading3"><a name="Main_Screen_with_Password_Control"></a>Main Screen with Password Control</h3>
+        <p>With Password Control enabled, the software Main Screen with display a Log In button with a letter on it.</p>
+        <p>&#160;</p>
+        <ul>
+            <li>
+                <p>O= Operator (default)</p>
+            </li>
+            <li>
+                <p>A = Administrator</p>
+                <p>E = Engineer</p>
+                <p>T = Tech</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Figure Set Password and Timer.png" style="width: 597px;height: 448px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 217: Main Screen - Password</p>
+        <p>&#160;</p>
+        <p style="text-indent: 0.5in;"><span class="span_7">Note</span><span class="span_7">:</span> The Operator user type is the default, and typically has the least access privileges.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Main_Screen_Log_In"></a>Main Screen Log In</h3>
+        <p>When the Log in button is clicked, the software displays a drop-down menu, as shown here.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Main Screen Log In.png" style="width: 599px;height: 448px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 218: Main Screen - Login</p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note</span><span class="span_7">:</span> You can log in from most screens, such as from the Log in button in the lower left of the Graph screen.</p>
+        <p class="p_18">&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Main Screen Log In_1.png" class="img_11" />
+        </p>
+        <p class="Caption">Figure 219: Graph Screen - Login</p>
+        <h3 class="Heading3">Example of Limited Access to Functions</h3>
+        <p>This screenshot shows the limited access that an Operator, for example, may have. Notice that there are no privileges to create, edit, delete, or save changes.</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Figure Graph Screen Login.png" style="width: 591px;height: 469px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 220: Process Window – Password</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Responding_to_an_Alarm"></a>Responding to an Alarm</h3>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Responding to an Alarm.png" style="height: 345px;width: 536px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 221: Alarm Message – Password</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <br />
+        </p>
+        <h2 class="Heading2"><a name="AR_Matrix_Settings_Tab"></a>AR Matrix Settings Tab</h2>
+        <p>&#160;</p>
+        <p>When the <span class="span_7">Alarm Relay</span> is in use, you can match the alarm output behavior to your specific production needs through the Alarm Relay Matrix.&#160; By default, the system only outputs a signal to the relay when it is running Pyrometer Profiling and an alarm (red crystal ball) condition.&#160; The alarm condition prompts the DAU to send a signal that energizes the <span class="span_7">Alarm Relay</span>, letting it power an audible or light indicator or stop an infeed conveyor. </p>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 400px;" />
+            <col style="width: 10px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p>The tab presents a matrix of radio button options that lets you choose when to send the signal from a variety of operational conditions.&#160; For example, you might want to keep boards from entering the oven except when the Pyrometer Profile is in a green or yellow crystal ball state.&#160; Selections you make on the matrix will “invert” the signal that energizes the alarm relay, stopping the infeed conveyor from allowing boards to enter. </p>
+                        <p>&#160;</p>
+                        <p>Even if someone tried to bypass the entire system by shutting down the KIC software, it can be configured so that it still would not allow product to enter.&#160; The matrix gives you more control over your process, ensuring that tjsystem is in use whenever product is run.</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/AR Matrix Settings Tab.png" style="width: 452px;height: 432px;" />
+                        <p class="Caption">Figure 222: AR Matrix</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_3">
+            <br />
+        </p>
+        <h3 class="Heading3">Use the Alarm Relay Matrix</h3>
+        <p class="p_7">&#160;</p>
+        <p class="p_6">Select the <span class="span_7">Use AR Matrix</span> checkbox to enable the matrix settings. </p>
+        <p class="p_8">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Use the Alarm Relay Matrix.png" style="height: 40px;width: 236px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 223</p>
+        <p>&#160;</p>
+        <p class="p_7"><span class="span_7">Note</span>: The <span class="span_10">All</span> option lets you turn all the alarm options on or off.</p>
+        <p>&#160;</p>
+        <p>Click the check boxes to enable or disable the alarm features you want.&#160; </p>
+        <p class="p_7">&#160;</p>
+        <p>Click <span class="span_7">Apply</span> then <span class="span_7">OK</span> to accept the new settings and close the window.</p>
+        <p class="p_18">&#160;</p>
+        <p class="p_7">If you are currently running the PRI software, as the window closes, you return to the screen you had open when you started the utility.</p>
+        <p>&#160;</p>
+        <p class="p_7"><span class="span_7">Note</span>: Exit the PRI software before attempting to make any changes to the Alarm Relay Matrix.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">A Matrix Example</h3>
+        <table class="table_1">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <p style="text-align: left;">In the example to the right, <span class="span_10">Use AR Matrix</span> is selected, meaning that for any items selected as <span class="span_10">ON</span><span class="span_6">, </span>the alarm relay will be energized.&#160; For any that are selected as <span class="span_10">OFF</span>, the relay will be de-energized.</p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">In this example configuration, the <span class="span_6">Alarm Relay</span> will be energized at all times, <span class="span_13">except</span> when a PP is running, and there is a green, yellow, or gray crystal ball. </p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_3">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Use the Alarm Relay Matrix_1.png" style="height: 400px;width: 418px;" class="img_11" />
+                        </p>
+                        <p class="Caption">Figure 224: AR Matrix Example</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <p>
+            <br />
+        </p>
+        <h2 class="Heading2"><a name="Barcode_Tab"></a>Barcode Tab</h2>
+        <p>&#160;</p>
+        <p>The <span class="span_7">Barcode</span> tab is used for configuring some of the barcode interface functions and some barcode operations. </p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Barcode Tab.png" style="width: 602px;height: 579px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 225: Barcode Tab – Configuration Program</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Barcode_Interface_Method_Area"></a>Barcode Interface Method Area</h3>
+        <p>The <span class="span_7">Barcode Interface Method</span> area specifies where a barcode string will be coming in:</p>
+        <p>&#160;</p>
+        <table style="width: 100%;">
+            <col style="width: 356px;" />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="font-size: 10pt;"><span class="span_7"><span style="font-size: 10pt;">DAU Barcode Port</span></span><span style="font-size: 10pt;"> – via 9 pin serial connection on DAU</span>
+                        <p class="p_11"><span class="span_7"><span style="font-size: 10pt;">PC Com Port</span></span><span style="font-size: 10pt;"> – via 9 pin serial port or USB Port on PC. </span>
+                        </p>
+                        <p class="p_131"><span class="span_7"><span style="font-size: 10pt;">Note:</span></span><span style="font-size: 10pt;"> To use a USB barcode scanner, it must be programmable for a USB Serial Port interface.</span>
+                        </p>
+                        <p class="p_11"><span class="span_7"><span style="font-size: 10pt;">OEM</span></span><span style="font-size: 10pt;"> – only available with specific oven manufacturers</span>
+                        </p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7.png" style="height: 158px;width: 369px;">
+                        </img>
+                        <p class="Caption" style="text-align: left;">Figure 226: Barcode Interface Method</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>If PC Com Port is selected, the <span class="span_7">COM Port Configuration</span> area also becomes active. This area specifies which Com Port the scanner is connected to, and the Com settings. This area must be configured when using either a DB9 (Com Port) or USB connected scanner:</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_1.png" style="width: 666px;height: 132px;" alt="Graphical user interface, text&#xA;&#xA;Description automatically generated with medium confidence" class="img_11">
+            </img>
+        </p>
+        <p class="Caption">Figure 227: Com Port Configuration</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Missing_Barcode_Trigger_Area"></a>Missing Barcode Trigger Area</h3>
+        <table style="width: 100%;">
+            <col style="width: 400px;" />
+            <col style="width: 22px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p>The <span class="span_7">Missing Barcode Trigger</span> area specifies what method is used to trigger the Missing Barcode Alarm function. </p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Barcode Product Sensor</span> – requires the installation of the BPS sensor adjacent to the barcode scanner. If this sensor is triggered, and a barcode is not received, the Missing Barcode Alarm is generated. </p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_2.png" style="height: 129px;width: 290px;">
+                        </img>
+                        <p class="Caption" style="text-align: left;">Figure 228: Missing Barcode Trigger</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p colspan="3"><span class="span_7">No Read from Scanne</span>r – some scanners can be programmed with a “No Read” output.&#160; If “No Read” is the string received, the Missing Barcode Alarm is generated.</p>
+                        <p colspan="3">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="span_7">Disable</span><span style="font-size: 10pt;"> - the software will never generate a Missing Barcode alarm. Typically used when some other process verification is in use and the alarm from KIC is not required/desired. </span>
+                        <p>&#160;</p>
+                        <p class="p_18"><span class="span_7">Note:</span> When either <span class="span_7">“</span><span class="span_6">No Read From Scanner</span><span class="span_7">”</span> or <span class="span_7">“</span><span class="span_6">Disable</span><span class="span_7">”</span> is selected, some of the configurations previously referenced in the <a href="Global_Preferences.htm#Barcode_Tab">Barcode Section</a> will automatically be disabled.</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_3.png" style="height: 126px;width: 286px;">
+                        </img>
+                        <p class="Caption" style="text-align: left;">Figure 229: Barcode – Global Preferences</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="Disable_Missing_Barcode_Option"></a>Disable Missing Barcode Option Area</h3>
+        <p>This area allows you to disable some of the available choices that are given when a Barcode alarm is displayed:</p>
+        <table style="width: 100%;">
+            <col style="width: 401px;" />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="font-size: 10pt;">The four selections listed represent buttons that a user can click on when a Barcode alarm appears on the screen. By selecting a particular checkbox, the software will no longer display that button on the alarm message dialog window.</td>
+                    <td style="font-size: 10pt;">&#160;</td>
+                    <td style="font-size: 10pt;">
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_4.png" style="height: 160px;width: 367px;">
+                        </img>
+                        <p class="Caption">Figure 230: Disable Missing Barcode Buttons</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <br />
+        </p>
+        <p>&#160;</p>
+        <p>For example, when the barcode option is in use, and you never want a product to be allowed to enter the oven without the associated barcode string attached to the data, you can select the ‘Proceed without a Barcode’ checkbox. This will prevent that button from being accessible. Below is an example of a Missing Barcode Alarm condition, when that function is disabled. The open spot is where the ‘Proceed without a Barcode’ choice would have been displayed:</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_5.png" class="img_11" style="width: 416px;height: 267px;">
+            </img>
+        </p>
+        <p class="Caption">Figure 231: Example - Button Disabled</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <br />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -4,10 +4,10 @@
         <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
     </head>
     <body>
-        <table with="width: 1000px">
-            <col with="width: 1000px" />
+        <table with="width: 1200px">
+            <col with="width: 1200px" />
             <tr>
-                <td with="width: 505px">
+                <td>
                     <h1 class="Heading1">Using Live Data Output</h1>
                     <p>The <i>Live Data Output (LDO)</i> feature outputs Virtual Profile (VP) data in real time for use by third-party applications such as Line Balancing/Production Monitoring Host or SPC software.  This data includes barcode information (where applicable) and all relevant profile data, statistics, and limits.  There are several different LDO formats that can be chosen from. Examples of these formats will be shown later in this section.</p>
                     <p>&#160;</p>
@@ -16,8 +16,9 @@
                     <p><b>Viewing LDO data –</b> LDO is designed to output data only and is not meant as a historical database.  It is intended to be used with third party software that collects the LDO data while the Virtual Profile is running-live.  If you are not running third party software to collect the LDO data, and wish you to view historical data, this can be accomplished from within the actual automatic system software in use.</p>
                     <p>&#160;</p>
                     <p><b>LDO destination –</b> The location where the LDO output file is written to can be specified by the user in the ConfigurationProgram.exe utility.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.  You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.</p>
+                    <blockquote>
+                        <p><b>Note:</b> For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.  You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p><b>An LDO output file example</b>
                     </p>
@@ -113,8 +114,9 @@
                         <li>Similar to ‘standard’ one board per file TXT output</li>
                         <li>Does not include temperature specs in specifications (Reflow_Time instead of Reflow_Time_/218)</li>
                     </ul>
-                    <p>&#160;</p>
-                    <p><b style="text-decoration: underline;">Note</b>: Examples of each of the available output file types can be found in the <i>C:\Software Root Directory\Sample LDO files</i> folder.</p>
+                    <blockquote>
+                        <p><b style="text-decoration: underline;">Note</b>: Examples of each of the available output file types can be found in the <i>C:\ software root Directory\Sample LDO files</i> folder.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Configure_LDO"></a>Configure LDO
@@ -128,13 +130,13 @@
                                 <td>
                                     <p>&#160;</p>
                                     <ol>
-                                        <li class="li_4">With the automatic system software shut down, browse to the <i>C:\ software root</i> directory folder and run the ConfigurationProgram.exe application, and select the LDO tab.<br /></li>
-                                        <li class="li_4">Check the “Enable Live Data Output” checkbox<br /></li>
+                                        <li class="li_4">With the automatic system software shut down, browse to the <i>C:\ software root</i> directory folder and run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i> application, and select the LDO tab.<br /></li>
+                                        <li class="li_4">Check the <b>Enable Live Data Output</b> checkbox<br /></li>
                                         <li class="li_4">Select the desired Format<br /></li>
                                         <li class="li_4">The type of Format chosen will affect what naming structure for file will be used (See Details of Output Files above).<br /></li>
-                                        <li class="li_4">Select the destination path for the output file by clicking on the Browse button. This needs to be a location on the local drive.<br /></li>
-                                        <li class="li_4">“Max File Size” lets you specify how large the LDO output file can get before a new one is started.<br /></li>
-                                        <li class="li_4">Select ‘Include Alarm Events’ to record into the output file any warnings or alarms.</li>
+                                        <li class="li_4">Select the destination path for the output file by clicking on the <b>Browse</b> button. This needs to be a location on the local drive.<br /></li>
+                                        <li class="li_4"><b>Max File Size</b> lets you specify how large the LDO output file can get before a new one is started.<br /></li>
+                                        <li class="li_4">Select <b>Include Alarm Events</b> to record into the output file any warnings or alarms.</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>

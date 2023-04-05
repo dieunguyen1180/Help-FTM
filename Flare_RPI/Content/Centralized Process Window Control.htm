@@ -8,18 +8,20 @@
         <p>This optional feature enables a customer to ensure that every instance of the software is always using the same Process Window files and prevents unauthorized editing of specifications. Many factories may have multiple systems and the same Process Windows may need to be used at any one of those systems. This can lead to mistakes being made during file transfer from one machine to another. Another issue arises when someone makes a change to a specification on one machine, and the change may not be made on others, or the updated file is not copied to all other software. This can lead to varying profile results depending on which PC the data is collected in.</p>
         <p>&#160;</p>
         <p>This feature eliminates these situations by ‘centralizing’ the creation and editing of Process Window files through the use of a separate application, accessible only by authorized personnel. All Process Window files reside in a specified central directory, and each instance of the RPI software gets their Process Windows from this location. Additionally, all creation and editing functions of the Process Window within the RPI software are disabled. This ensures that no matter who is running the profile or at which location, the correct, approved Process Window specifications are the only ones available.</p>
-        <p>&#160;</p>
-        <p><b>Note</b>: For the Centralized Process Window Control to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. You can verify if you have the optional feature by viewing the Software Key panel in the Hardware Status screen.</p>
-        <p>Additionally, each instance of the RPI software that you want to use this option on must be connected to your company network and have access to the directory where the Process Windows are saved.</p>
+        <blockquote>
+            <p><b>Note</b>: For the Centralized Process Window Control to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. You can verify if you have the optional feature by viewing the Software Key panel in the Hardware Status screen.</p>
+            <p>Additionally, each instance of the RPI software that you want to use this option on must be connected to your company network and have access to the directory where the Process Windows are saved.</p>
+        </blockquote>
         <p>&#160;</p>
         <h2 class="Heading2"><a name="KIC_File_Administrator"></a>KIC File Administrator</h2>
-        <p>
+        <p style="text-align: center;">
             <img src="Resources/Images/image143.png" style="width: 784px;height: 482px;" />
         </p>
         <p>&#160;</p>
-        <p>The <i>KIC File Administrator</i> is the application that will be used for creating and editing Process Windows for use with the Centralized Process Window Control option.</p>
-        <p>&#160;</p>
-        <p><b>Note</b>: For the <i>KIC File Administrator (or KFA)</i> to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. Only authorized users should be allowed to have access to this application.</p>
+        <p>The <i style="font-family: 'Courier New';">KIC File Administrator</i> is the application that will be used for creating and editing Process Windows for use with the Centralized Process Window Control option.</p>
+        <blockquote>
+            <p><b>Note</b>: For the <i style="font-family: 'Courier New';">KIC File Administrator (or KFA)</i> to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. Only authorized users should be allowed to have access to this application.</p>
+        </blockquote>
         <p>&#160;</p>
         <table style="width: 80%;">
             <col style="width: 350px;" />
@@ -29,7 +31,7 @@
                     <td>
                         <p>&#160;</p>
                         <p>&#160;</p>
-                        <p>As an added protection, this application requires a password for use. The default password is <i>Admin</i>, but can be changed in the <i>Settings</i> menu after logging in.</p>
+                        <p>As an added protection, this application requires a password for use. The default password is <i style="font-weight: bold; text-decoration: underline;">Admin</i>, but can be changed in the <i>Settings</i> menu after logging in.</p>
                     </td>
                     <td style="text-align: center;">
                         <img src="Resources/Images/image144.png" />
@@ -47,7 +49,7 @@
         <p><b>Solder Paste button</b> – Displays list of manufacturers solder paste formulations with specifications</p>
         <p><b>Process Window Type</b> – You will need to choose <i>Automatic System</i> when creating Process Window files for RPI.</p>
         <p><b>Working Directory</b> – This is the network location where you will be saving/storing the Process Window files. By default, it will show the path where the KFA application is located. Use the <i>Browse</i> button to point to the desired network directory.</p>
-        <p><b>Convert Old PW files</b> – This section is used for updating existing Process Window files for compatibility* with the <i>Centralized Process Window Control</i> option.</p>
+        <p><b>Convert Old PW files</b> – This section is used for updating existing Process Window files for compatibility<span style="font-size: 14pt;">*</span> with the <i>Centralized Process Window Control</i> option.</p>
         <p><b>Login/Logout</b> – Allows you to display or deactivate all areas of the application.</p>
         <p><b>Change Specs Name</b> – Allows a user to change the name of a specification. See <i>Change Specs Name</i> section below for details.</p>
         <p><b>Settings</b> – Used for setting units of measure (for this application), changing password, inactivity time-out, etc.</p>
@@ -55,24 +57,22 @@
         <p><b>Cancel</b> – Ignores any changes made and closes application</p>
         <p><b>Apply</b> – Saves changes and keeps open the application</p>
         <p>&#160;</p>
-        <p>*The <i>Centralized Process Window Control</i> option uses a unique file format for Process Windows. When the option is in use, the RPI software will only read Process Window files that were created or converted using the <i>KIC File Administrator</i> application. ‘Standard’ Process Window files will not be recognized by the RPI software when this option is enabled.</p>
+        <p><span style="font-size: 14pt;">*</span>The <i>Centralized Process Window Control</i> option uses a unique file format for Process Windows. When the option is in use, the RPI software will only read Process Window files that were created or converted using the <i>KIC File Administrator</i> application. ‘Standard’ Process Window files will not be recognized by the RPI software when this option is enabled.</p>
         <p style="font-weight: bold;font-style: italic;">&#160;</p>
-        <p style="font-weight: bold;font-style: italic;"><span style="font-size: 14pt;">Working Directory</span>
-        </p>
+        <h3 class="Heading3">Working Directory</h3>
         <p>
             <img src="Resources/Images/image146.png" />
         </p>
         <p>As this is the network location where the Process Window files will be stored, and <u>all</u> RPI software installations will need to access this directory, you may need to contact your IT department to identify a proper location for this directory.</p>
-        <p>Once a network directory is identified, click on the <i>Browse</i> button to select the location. Click <i>OK</i> in the selection window, then click <i>Apply</i> to save the change. Two subfolders named <i>Ovens</i> and <i>ProcessSpecs</i> will automatically be generated in the specified directory. All new Process Windows created, and any existing ones that are converted to the compatible format, will be saved into the <i>ProcessSpecs</i> folder of this <i>Working Directory</i> location.</p>
+        <p>Once a network directory is identified, click on the <b>Browse</b> button to select the location. Click <i>OK</i> in the selection window, then click <b>Apply</b> to save the change. Two subfolders named <i style="font-family: 'Courier New';">Ovens</i> and <i style="font-family: 'Courier New';">ProcessSpecs</i> will automatically be generated in the specified directory. All new Process Windows created, and any existing ones that are converted to the compatible format, will be saved into the <i style="font-family: 'Courier New';">ProcessSpecs</i> folder of this <i style="font-family: 'Courier New';">Working Directory</i> location.</p>
         <p>&#160;</p>
-        <p><b style="font-style: italic; font-size: 14pt;">Convert Old PW files</b>
-        </p>
+        <h3 class="Heading3">Convert Old PW files</h3>
         <p>
             <img src="Resources/Images/image147.png" />
         </p>
         <p>This section enables you to easily convert any existing Process Window files you already have into the updated format so they can be used with the <i>Centralized Process Window Control</i> option. To update existing files:</p>
         <p>&#160;</p>
-        <p>Click on the <i>Browse</i> button and point to the <i>ProcessSpecs</i> sub-folder of an RPI directory (C:\RPI\ProcessSpecs). Click the <i>Apply</i> button. All Process Windows files (.KIC247ProcessSpec) will be automatically copied, converted into the new format (.ASCentralProcessSpec), and then pasted into the <i>ProcessSpecs</i> folder of the <i>Working Directory</i> on the network. To ensure all of your Process Windows are updated and available, repeat these same steps for each PC where you have the RPI software installed.</p>
+        <p>Click on the <i style="font-weight: bold; font-style: normal;">Browse</i> button and point to the <i style="font-family: 'Courier New';">ProcessSpecs</i> sub-folder of an RPI directory (<span style="font-family: 'Courier New';">C:\RPI\ProcessSpecs</span>). Click the <i style="font-weight: bold; font-style: normal;">Apply</i> button. All Process Windows files (.KIC247ProcessSpec) will be automatically copied, converted into the new format (.ASCentralProcessSpec), and then pasted into the <i style="font-family: 'Courier New';">ProcessSpecs</i> folder of the <i style="font-family: 'Courier New';">Working Directory</i> on the network. To ensure all of your Process Windows are updated and available, repeat these same steps for each PC where you have the RPI software installed.</p>
         <p>&#160;</p>
         <table style="width: 100%;">
             <col style="width: 276px;" />
@@ -80,10 +80,9 @@
             <tbody>
                 <tr>
                     <td>
-                        <p><i style="font-weight: bold; font-size: 14pt;">Change Spec Name</i>
-                        </p>
+                        <h3 class="Heading3">Change Spec Name</h3>
                         <p>This functionality is available for users who need to customize the name of a given specification to meet their internal naming conventions for process specifications. The updated name is what will display in the RPI Process Windows.</p>
-                        <p>If you need to change a specification, check the <i>Use Change Specs Name</i> checkbox. From the left side columns (greyed out), locate the specification names you want to modify and type the new name into the corresponding right side column. Click <i>Save</i> then <i>Exit</i> when you’ve completed your changes.</p>
+                        <p>If you need to change a specification, check the <i style="font-weight: bold;">Use Change Specs Name</i> checkbox. From the left side columns (greyed out), locate the specification names you want to modify and type the new name into the corresponding right side column. Click <i style="font-weight: bold; font-style: normal;">Save</i> then <i style="font-weight: bold; font-style: normal;">Exit</i> when you’ve completed your changes.</p>
                     </td>
                     <td style="text-align: center;">
                         <img src="Resources/Images/image148.png" style="width: 481px;height: 367px;" />
@@ -104,7 +103,7 @@
             <img src="Resources/Images/image149.png" />
         </p>
         <p>&#160;</p>
-        <p>After installation of the RPI software is completed, you will also need to specify the network directory where the Process Window files will be retrieved from. This will be done through the <i>ConfigurationProgram.exe</i> utility:</p>
+        <p>After installation of the RPI software is completed, you will also need to specify the network directory where the Process Window files will be retrieved from. This will be done through the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i> utility:</p>
         <table style="width: 100%;">
             <col style="width: 283px;" />
             <col />
@@ -114,10 +113,10 @@
                         <p>&#160;</p>
                         <ol>
                             <li>Shut down the RPI software</li>
-                            <li>Browse to the C:\RPI directory</li>
-                            <li>Run the <i>ConfigurationProgram.exe</i> file</li>
+                            <li>Browse to the <span style="font-family: 'Courier New';">C:\RPI</span> directory</li>
+                            <li>Run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i> file</li>
                             <li>In the Process Window Directory section, click <i>Browse</i> and select the <i>ProcessSpecs</i> folder in the network drive previously specified in the <i>KFA</i> utility</li>
-                            <li>Click <i>Apply</i> and <i>OK</i> to save the changes and close the utility</li>
+                            <li>Click <i style="font-weight: bold; font-style: normal;">Apply</i> and <i style="font-weight: bold; font-style: normal;">OK</i> to save the changes and close the utility</li>
                         </ol>
                     </td>
                     <td style="text-align: center;">
@@ -134,8 +133,9 @@
         <p>&#160;</p>
         <p>When the <i>Centralized Process Window</i> option is in use, the RPI software will populate the drop-down menu at the top of the screen with <b style="font-style: italic;">only</b> the Process Window files from the specified network directory. All edit and naming functions are removed. The user can only view the Process Window files.</p>
         <p>The Process Window files will automatically be downloaded into the local RPI directory from the specified network location. This ensures that whenever a Process Window needs to be accessed – either from opening the Process Window screen, or from the Run a Profile screen – the most up-to-date version of the Process Windows are always being used.</p>
-        <p>&#160;</p>
-        <p><b>Note</b>: For the <i>Centralized Process Window Control</i> to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. You can verify if you have the optional feature by viewing the Software Key panel in the Hardware Status screen.</p>
-        <p>Additionally, each instance of the RPI software that you want to use this option on must be connected to your company network and have access to the directory where the Process Windows are saved.</p>
+        <blockquote>
+            <p><b>Note</b>: For the <i>Centralized Process Window Control</i> to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use. You can verify if you have the optional feature by viewing the Software Key panel in the Hardware Status screen.</p>
+            <p>Additionally, each instance of the RPI software that you want to use this option on must be connected to your company network and have access to the directory where the Process Windows are saved.</p>
+        </blockquote>
     </body>
 </html>

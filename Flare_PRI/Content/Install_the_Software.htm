@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1"><a name="Introducing_the_RPI_system"></a>Introducing the PRI System</h1>
+        <p><span class="span_7">Pyrometer Reflow Inspection (PRI)</span> is the first ever reflow inspection system to utilize pyrometers installed throughout the oven process tunnel.&#160; These pyrometers measure the real-time temperature of production boards directly, without making contact, sensing their infrared energy as they go through the oven.&#160; </p>
+        <p>&#160;</p>
+        <p>The Pyrometer Reflow Inspection system is a comprehensive suite of thermal process management tools designed to give you the ultimate in PCB soldering quality control. KIC PRI can monitor the entire thermal process, giving advanced warning before a product drifts out of specification.&#160; Its barcode control features can prevent costly product/recipe mismatches, and its power management features enable efficient operation at the lowest energy cost.</p>
+        <p>&#160;</p>
+        <p>PRI combines software and hardware components into an integrated system, supplementing its thermal profile analysis core with special tools for performance optimization, changed variable prediction, and data file management. </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Understanding_the1"></a>The Hardware</h2>
+        <p>The major hardware components to a PRI system are:</p>
+        <ul class="ul_6">
+            <li class="li_9">Data Acquisition Unit (DAU)</li>
+            <li class="li_9">Pyrometer sensors</li>
+            <li class="li_9">Purge Blocks</li>
+            <li class="li_9">Conveyor speed encoder</li>
+            <li class="li_9">Product sensor</li>
+            <li class="li_9">Alarm Relay/Light Tower</li>
+            <li class="li_9">Profiler</li>
+        </ul>
+        <h3 class="Heading3">DAU</h3>
+        <p>The DAU is the main control unit for the system, to which all installed sensors connect through. It interfaces with the computer using an Ethernet cross-over cable that connects from the UpLink port on the DAU directly to a USB to Ethernet adapter (or to an installed Network Interface Card (NIC)).&#160; Please follow manufacturers’ instructions to install the USB adapter or NIC.&#160; </p>
+        <p>&#160;</p>
+        <p>The computer used with the PRI system can be a machine that is dedicated to only supporting PRI or it can also serve as the oven controller PC.&#160; PRI can interface directly with the oven controller on selected models from many oven manufacturers.&#160; When installed on an oven that is capable of communication with the PRI software, it will allow information (zone setpoints, conveyor setpoints, etc.) to be exchanged between the PRI software and the oven controller software. </p>
+        <p>&#160;</p>
+        <p>The DAU must be plugged into an AC power source.&#160; The DAU utilizes a universal A/C transformer power supply.&#160; The DAU ships from the factory with multiple AC connectors to accommodate any connector/voltage requirement.</p>
+        <h3 class="Heading3">Pyrometers</h3>
+        <p>The pyrometers are installed in the oven process tunnel.&#160; They are mounted on the fixed rail, or in a manner that allows clear visibility of the printed circuit boards without interfering with the product flow by oven manufacturer approved brackets. The pyrometers are connected to an adapter box, which adapts the inputs to the DAU.&#160; Typically half the pyrometers enter from the oven entrance and half enter from the oven exit. Pyrometers 1-6 are connected into one adapter box that will be plugged into the A labeled input of the DAU and pyrometers 7-12 are connected into the other adapter box and plugged into the DAU input labeled B.&#160; </p>
+        <h3 class="Heading3"><span class="normaltextrun">N</span><span class="normaltextrun">itrogen</span><span class="normaltextrun"> or Compressed Air </span><span class="normaltextrun">Purge Block</span>
+        </h3>
+        <p class="normaltextrun">Dual Purge Blocks supply a regulated flow of gas or air to each of the pyrometer sensors. </p>
+        <h3 class="Heading3">Conveyor Speed Encoder</h3>
+        <p>The conveyor speed encoder is a sensor mounted to sense the teeth of a gear that turns while the conveyor is moving.&#160; The conveyor speed encoder connects to channel #1 of the DAU Sensor ports.</p>
+        <h3 class="Heading3">Product Sensor</h3>
+        <p>The product sensor is typically mounted near the entrance of the oven, on the fixed conveyor rail.&#160; The sensor is connected to channel #2 of the DAU Sensor ports.&#160; The first pyrometer acts as the main board sensing device, but the product sensor at the entrance of the oven is used to display the boards as they travel from the oven entrance to the first pyrometer (middle of zone 1).</p>
+        <h3 class="Heading3">Alarm Relay/Light Tower </h3>
+        <p>The Alarm Relay connects to the Alarm/Barcode port of the DAU and provides a method for external notification to the user when an alarm condition occurs. It allows for a KIC supplied audible light tower to be powered and triggered; it can include SMEMA interface connections; it also allows a user to hardwire in an external device of their choosing. The Alarm Relay is required to have an external AC power source. </p>
+        <p>There are two audible light towers available – one model connects directly to the Alarm Relay device; the other model connects directly to the USB port of the PC. See the <a href="Troubleshooting.htm#Light_Tower">Light Tower section</a>.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Profiler </h3>
+        <p>The profiler is a separately offered data acquisition component that is required to use the PRI system.&#160; It provides the on-board, through-the-process temperature data, what we call the “Thermocouple Profile”. </p>
+        <h4 class="Heading4">Profiler Models
+        </h4>
+        <p>The following profiler models are compatible with the PRI system software:</p>
+        <ol start="1" class="ol_2">
+            <li class="li_2">SPS Smart Profiler</li>
+            <li class="li_5">X<sup>5</sup></li>
+            <li class="li_5">K<sup>2</sup></li>
+        </ol>
+        <p class="p_36">The SPS profilers are available in two different configurations —datalogger and datalog/wireless<span class="span_6">.</span>&#160; In standard datalogger mode, the profiler records temperature data as it moves through the thermal process.&#160; A download cable is then connected to download the data to the PC running the PRI software.&#160; In wireless mode, the profiler transmits data by Wi-Fi via a Smart Dock connected to the PC.&#160; The PRI software displays the accumulating data in real-time.</p>
+        <p>&#160;</p>
+        <p>For specific information regarding your profiler, consult one of the following KIC publications:</p>
+        <ul class="ul_6">
+            <li class="li_9">
+                <MadCap:shortcut path="PTG-330310-000 SPS Smart Profiler Hardware Guide.pdf" parameters="" class="shortcut_1"> SPS Smart Profiler Hardware Guide, (Publication Number PTG-330310-000)</MadCap:shortcut>
+            </li>
+            <li class="li_9">
+                <MadCap:shortcut path="EXP-337310-000 X5 Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">X5 Profiler Hardware Guide, (Publication Number EXP-337310-000)</MadCap:shortcut>
+            </li>
+            <li class="li_9">
+                <MadCap:shortcut path="EXP-331310-000 K2 Profiler Hardware Guide.pdf" parameters="" class="shortcut_1">K2 Profiler Hardware Guide, (Publication Number EXP-331310-000)</MadCap:shortcut>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Additional Components</h3>
+        <h4 class="Heading4">Barcode Reader</h4>
+        <p>A user-supplied barcode reader can connect to the DAU Alarm/Barcode port (when using a DB-9 serial connection), to one of the DAU USB ports (when using a USB barcode scanner), or to a PC Com or USB port.&#160; When used in conjunction with the Alarm Relay, the serial barcode reader hardware can connect to the DAU via the Alarm Relay Y- cable.&#160; The barcode reader is mounted on the entrance side of the oven, on the in-feed conveyor. For additional information about using barcode scanners, see <a href="Appendix_C.htm#Barcode_Tab"><span class="span_6">Appendix C – Barcode Tab.</span></a></p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Hardware_diagram"></a>Hardware Diagram</h2>
+        <p>The interconnection of the hardware components is illustrated in the hardware diagram below:</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Hardware Diagram.png" style="width: 667px;height: 569px;" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">1</span><span class="span_20">: Hardware Configuration Diagram</span>
+        </p>
+        <p>&#160;</p>
+        <p>It is critical that all PRI hardware is properly installed and configured.&#160; If one of the system components is setup incorrectly or is malfunctioning, the PRI system will not allow you to run <span class="span_6">Pyrometer Profiling</span> or provide accurate data.&#160; If you have any questions or are unsure about any of the following, contact KIC Technical Support for assistance at <a href="mailto:tech@kicmail.com"><span class="Hyperlink">tech@kicmail.com</span></a></p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Installing_the_software"></a>Install The Software
+		</h2>
+        <h3 class="Heading3">Minimum PC System Requirements</h3>
+        <ul class="ul_6">
+            <li class="li_9">3 GHz Dual Core processor </li>
+            <li class="li_9">4GB RAM</li>
+            <li class="li_9">SSD is recommended</li>
+            <li class="li_9">Video 1024 x 768 / 16-bit color</li>
+            <li class="li_9">1 available USB port for data download </li>
+            <li class="li_9">1 available USB port (for software protection dongle key)</li>
+            <li class="li_9">1 available Ethernet port or 1 available USB port with Ethernet-to-USB adapter</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="text-indent: 1in;"><span class="span_7">Note</span>:&#160; Additional powered USB ports may be needed for additional accessories.</p>
+        <h4 class="Heading4">Notes Before Installation</h4>
+        <ul class="ul_7">
+            <li class="li_5">Shut down all other applications as a precaution against software conflicts.&#160; </li>
+            <li class="li_9">If you are installing the PRI software on an oven that is capable of communication with the software<span class="span_7">, DO NOT place the PRI icon in the Windows Startup folder.</span>&#160; If the PRI software loads before the oven controller software, it can cause the oven controller software to malfunction.</li>
+        </ul>
+        <p>&#160;</p>
+        <h3 class="Heading3">Install</h3>
+        <ol start="1" class="ol_1">
+            <li>Insert the USB flash drive into a USB port on your computer.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="2" class="ol_1">
+            <li>Depending upon your computer setup, a dialog box may appear. If it does, select <span class="span_7">Open</span><span class="span_7">folder</span> to view <span class="span_7">files</span>. If a dialog box does not appear, use Windows Explorer to browse to the USB flash drive directory.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="3" class="ol_1">
+            <li>Double-click the installation file in the root directory to begin the installation.</li>
+        </ol>
+        <p class="p_7">&#160;</p>
+        <ol start="4" class="ol_1">
+            <li>Follow the instructions for the installation program as the screens appear.<br />*When installing the software over an existing PRI directory, the installation will automatically create a backup folder of the existing directory. A warning message will be displayed when selecting an existing directory, and a checkbox can be de-selected if you do not wish to create a backup. <br />The name of the backup directory created will be <span class="PlainTextChar_1">C:\ PRI _Old_MM-DD-YYYY</span></li>
+        </ol>
+        <p class="p_85">&#160;</p>
+        <p class="p_7" style="text-indent: 1in;"><span class="span_7">Note</span>: If you have questions regarding your hardware or software configuration contact <a href="Contacting_KIC.htm#KIC">KIC Tech Support</a>.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Running_the_RPI_software"></a>Start the Software</h2>
+        <p style="text-indent: 1in;"><span class="span_7">Note</span>: The installation automatically adds a <span class="span_7">KIC</span> folder to the main Windows Start Menu. </p>
+        <p>&#160;</p>
+        <table class="table_1">
+            <col style="width: 422pt;" />
+            <col style="width: 20pt;" />
+            <col style="width: 230pt;" />
+            <tr>
+                <td class="td_1">
+                    <p>&#160;</p>
+                    <ol start="1" class="ol_1">
+                        <li>Click on the <span class="span_7">Windows Start</span> button to locate the PRI icon.</li>
+                    </ol>
+                    <p class="p_7">&#160;</p>
+                    <blockquote>
+                        <p class="p_7"><span class="span_7">Note</span>: The icon will appear in the Start button’s list of frequently used applications or you can click the <span class="span_7">All Programs</span> command to find it in the <span class="span_7">KIC folder</span> that appears among the displayed folder/icon list.</p>
+                    </blockquote>
+                </td>
+                <td>&#160;</td>
+                <td class="td_1">
+                    <p>&#160;</p>
+                    <p>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Start the Software.png" style="width: 144px;height: 63px;" />&#160;&#160;&#160;&#160;&#160; </p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <ol start="1" class="ol_4">
+            <li>Alternately, you can browse to the <span class="span_46">C:\PRI</span> directory and double click the <span class="PlainTextChar_1">KICHost.exe</span> file to start the application.<img src="Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_1.png" style="width: 130px;height: 29px;" class="img_11" /></li>
+        </ol>
+        <p><a name="Start_the_Software"></a>
+        </p>
+        <p>&#160;</p>
+        <p class="p_8">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_2.png" style="height: 325px;width: 505px;" class="img_11" />
+        </p>
+        <p>&#160;</p>
+        <ol start="2" class="ol_1">
+            <li>A specifically programmed USB dongle key is required to run the PRI software. When starting, if you see the above message, insert the dongle key and click <span class="span_7">OK</span>.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

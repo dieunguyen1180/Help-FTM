@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1"><a name="Understanding_status_messages_and_alarms"></a>Status Messages and Alarms</h1>
+        <p>The software communicates system status through messages that it displays on the monitor.&#160; Some simply report an operating condition, some provide a warning that process parameters are changing, and still others, called <span class="span_6">alarms,</span> announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.&#160; </p>
+        <p>&#160;</p>
+        <table class="table_1">
+            <col style="width: 350px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_6">
+                        <p style="text-align: left;">Alarm messages typically appear in red. An alarm status may accompany a signal from the DAU to the optional alarm relay, which, in turn, may trigger hardware-related events such as sounding audible alarms, lighting signal towers, or stopping infeed conveyors.</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_6">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms.png" style="width: 299px;height: 189px;" class="img_11" />
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <p>Some status messages and alarms are specific to different functions of the software.&#160; Some may appear when you are first running profiles to establish a baseline.&#160; Others appear only when you begin Pyrometer Profiling.</p>
+        <h2 class="Heading2"><a name="Acknowledging_alarms"></a>Acknowledge Alarms</h2>
+        <table class="table_1">
+            <col style="width: 350px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_10">
+                        <p style="text-align: left;">Once displayed on the monitor, an operator needs to acknowledge the alarm, clicking on it to notify the software that the message has been received and make the displayed panel disappear.&#160; </p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">You can use password protection to limit the ability to acknowledge alarms.&#160; To do so, you first need to specify the following value in the <span class="PlainTextChar_1">KIC2000UserSettings.kiccfg</span> file:</p>
+                    </th>
+                    <th class="th_10">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_1.png" style="width: 290px;height: 184px;" alt="Text&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_67">
+                        <p class="p_10">&#160;</p>
+                        <p class="p_10">[HOST]</p>
+                        <p class="p_116">UsingPasswordwithRedAlarm=1</p>
+                    </td>
+                    <td class="td_68">
+                        <p class="p_6">&#160;</p>
+                        <p class="p_6">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_2.png" style="height: 29px;width: 150px;" class="img_11" />
+                        </p>
+                        <p style="font-size: 6pt;">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_67" colspan="2">
+                        <p>Next, you need to specify a password on the Global Preferences screen <span class="span_6">Engineer Password</span> option.&#160; Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_10">&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_3.png" style="height: 211px;width: 343px;" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">160</span>
+        </p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
+        <h2 class="Heading2"><a name="Profiling_and_baseline"></a>Messages During Profiling and Baseline Profiling</h2>
+        <p>During the profiling portion of getting your PRI ready to monitor and record real-time production and prior to starting a Pyrometer Profile, you may experience some conditions that cause the system to alert you to.&#160; Below is a table of some of the messages that you might see during this process:&#160; See Table 1.</p>
+        <p>&#160;</p>
+        <table align="center" class="table_2">
+            <thead>
+                <tr style="height: 22pt;">
+                    <th class="th_11" style="color: #ffffff;">
+                        <p class="p_26">Message Alarms</p>
+                    </th>
+                    <th class="th_11" style="color: #ffffff;">
+                        <p class="p_26">Message Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 22pt;">
+                    <td class="td_34">
+                        <p class="p_117">Message, High PWI</p>
+                    </td>
+                    <td class="td_34">
+                        <p class="p_47">Recent profile of xxx%, PWI must be 90%</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_34">
+                        <p class="p_117">Message Alarm H1</p>
+                    </td>
+                    <td class="td_34">
+                        <p class="p_47">TPU Communication Failure - wait 5 seconds and try again</p>
+                    </td>
+                </tr>
+                <tr style="height: 22pt;">
+                    <td class="td_34">
+                        <p class="p_117">Message Alarm H7</p>
+                    </td>
+                    <td class="td_34">
+                        <p class="p_118">Conveyor has stopped or encoder has been disconnected Pyrometer Profiling cannot be started.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_23"><span class="span_20">Table </span><span class="span_20">1</span><span class="span_20">: Profiling System Alarms</span>
+        </p>
+        <h2 class="Heading2"><a name="System_message_alarms"></a>System Message and Alarms</h2>
+        <h3 class="Heading3">Message, High PWI</h3>
+        <table class="table_1">
+            <col style="width: 350px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_12">
+                        <p style="text-align: left;">If the verification profile PWI is &gt;= 100%, you will receive this message when starting the PP.</p>
+                        <p style="text-align: left;">If there was a problem with the most recent profile, it can be deleted and the system will try to use the next most recent profile as the baseline profile.&#160; Otherwise, you are advised to run another profile.&#160; </p>
+                    </th>
+                    <th class="th_12">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_4.png" style="height: 131px;width: 229px;" class="img_27" />
+                        </p>
+                        <p class="p_3"><span class="span_20">Figure </span><span class="span_20">161</span><span class="span_20">: Message High PWI</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <h3 class="Heading3">Alarm Message H1</h3>
+        <table class="table_1">
+            <col style="width: 350px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_12">
+                        <p style="text-align: left;">No communication.&#160; (After PRI Launched and did not have time for DAU to communicate with computer.)&#160; This message will usually appear if the DAU was connected after the software was launched.&#160; This is because a connection to the DAU has not been established yet.&#160; Waiting 5 seconds allows a connection to the DAU to be established.&#160; </p>
+                    </th>
+                    <th class="th_12">
+                        <p>&#160;</p>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_5.png" style="width: 282px;height: 140px;" class="img_27" />
+                        </p>
+                        <p class="p_3"><span class="span_20">Figure </span><span class="span_20">162</span><span class="span_20">: Alarm H1</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <h3 class="Heading3">Alarm H7</h3>
+        <table class="table_1">
+            <col style="width: 350px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_12">
+                        <p style="text-align: left;">This alarm will appear when trying to start a Pyrometer Profile from the Profile Explorer.&#160; The oven conveyor must be running and set to the correct speed settings to start Pyrometer profiling. </p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_12">
+                        <p>&#160;</p>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_6.png" style="width: 282px;height: 122px;" class="img_27" />
+                        </p>
+                        <p class="p_3"><span class="span_20">Figure </span><span class="span_20">163</span><span class="span_20">: Alarm H7</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p class="p_88">&#160;</p>
+        <p class="p_88"><a name="Alarms_and_Messages_during_VP"></a>Alarms and Messages during Pyrometer Profiling</p>
+        <p>The software incorporates the use of warning and alarm dialog screens to let you know if there is a problem and the cause for that problem.&#160; Below is a partial list of the warning and alarm dialog screens with explanations.&#160; These Alarms are active only when Pyrometer profiling is running.</p>
+        <p>&#160;</p>
+        <table align="center" class="table_2">
+            <col style="width: 127px;" />
+            <col style="width: 511px;" />
+            <col style="width: 106px;" />
+            <thead>
+                <tr style="height: 36pt;">
+                    <th class="th_13">
+                        <p class="p_119">Process Alarms</p>
+                    </th>
+                    <th class="th_14">
+                        <p class="p_119">Description</p>
+                    </th>
+                    <th class="th_14">
+                        <p class="p_119">Activates Alarm Relay</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm # 1</p>
+                    </td>
+                    <td class="td_39">
+                        <p>PWI=x% - Process is out of spec</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">Yes</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm # 5</p>
+                    </td>
+                    <td class="td_39">
+                        <p>No Barcode read for this board.&#160; –or–</p>
+                        <p>No Barcode read for xxx boards.</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">No</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm # 5A</p>
+                    </td>
+                    <td class="td_39">
+                        <p>Process Traceability barcode scan failed</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">Yes</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm # 5C</p>
+                    </td>
+                    <td class="td_39">
+                        <p>Process Control barcode scan failed</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">Yes</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm # 8</p>
+                    </td>
+                    <td class="td_39">
+                        <p>The length of the current product does not match the length of the product during the baseline profile.</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">No</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm # 10</p>
+                    </td>
+                    <td class="td_39">
+                        <p>This alarm only occurs when the KIC software and the oven control software are communicating and indicates that the oven is not set to the baseline profile recipe.</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">Yes</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm # 11</p>
+                    </td>
+                    <td class="td_39">
+                        <p>The KIC speed sensor has detected that the conveyor speed has changed significantly since the baseline.</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">Yes</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm # 12</p>
+                    </td>
+                    <td class="td_39">
+                        <p>Incorrect Process Control String (Barcode Option).</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_122">Yes</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_23"><span class="span_20">Table </span><span class="span_20">2</span><span class="span_20">: Pyrometer Profiling – Process Alarms</span>
+        </p>
+        <p class="p_23">&#160;</p>
+        <p class="p_23">&#160;</p>
+        <p>&#160;</p>
+        <table align="center" class="table_2">
+            <col style="width: 141px;" />
+            <col style="width: 505px;" />
+            <col style="width: 96px;" />
+            <thead>
+                <tr style="height: 36pt;">
+                    <th class="th_13">
+                        <p class="p_119">Hardware Alarms</p>
+                    </th>
+                    <th class="th_14">
+                        <p class="p_119">Description</p>
+                    </th>
+                    <th class="th_14">
+                        <p class="p_119">Activates Alarm Relay</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm H1</p>
+                    </td>
+                    <td class="td_39">
+                        <p>DAU Communication Failure (happened after Alarm H2)</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">Yes</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm H2</p>
+                    </td>
+                    <td class="td_39">
+                        <p>DAU Lost Communication with PC.</p>
+                        <p>Note: This alarm condition can activate the alarm relay that is controlled by the DAU</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">Yes or No</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Alarm H7</p>
+                    </td>
+                    <td class="td_39">
+                        <p>Conveyor Stopped or Speed Encoder broken or not connected properly.</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_122">Yes</p>
+                        <p class="p_12">&#160;</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_69">
+                        <p class="p_120">Alarm</p>
+                    </td>
+                    <td class="td_69">
+                        <p>Pyrometer X is currently reading Y. This is below the allowable of -100C. Either the pyrometer is not calibrated correctly, or the pyrometer is faulty and must be replaced.</p>
+                        <p>Pyrometer X is currently reading Y. This is above the allowable of 300C. Either the pyrometer is not calibrated correctly, or the pyrometer is faulty and must be replaced.</p>
+                    </td>
+                    <td class="td_69">
+                        <p class="p_122">Yes</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_69">
+                        <p class="p_120">Alarm </p>
+                    </td>
+                    <td class="td_69">
+                        <p>Pyrometer X internal is currently reading Y. This exceeds the allowable of 300C. Please check oven settings and adjust setpoints if they are exceeding 300C.</p>
+                        <p>If you are still experiencing abnormally high temperature readings, please contact KIC for further support at <a href="mailto:tech@kicmail.com"><span class="Hyperlink">tech@kicmail.com</span></a>.</p>
+                    </td>
+                    <td class="td_69">
+                        <p class="p_122">Yes</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_69">
+                        <p class="p_120">Alarm</p>
+                    </td>
+                    <td class="td_69">
+                        <p>Unable to detect Pyro X. Please check the connections and try again. Contact KIC support at <a href="mailto:tech@kicmail.com"><span class="Hyperlink">tech@kicmail.com</span></a><span class="Hyperlink"> if you are still experiencing problems.</span></p>
+                    </td>
+                    <td class="td_69">
+                        <p class="p_122">Yes</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_23"><span class="span_20">Table </span><span class="span_20">3</span><span class="span_20">: Pyrometer Profiling – Hardware Alarms</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <table align="center" class="table_2">
+            <col style="width: 141px;" />
+            <col style="width: 538px;" />
+            <col style="width: 122px;" />
+            <thead>
+                <tr style="height: 36pt;">
+                    <th class="th_15">
+                        <p class="p_119">Warnings</p>
+                    </th>
+                    <th class="th_16">
+                        <p class="p_119">Description</p>
+                    </th>
+                    <th class="th_16">
+                        <p class="p_119">Activates Alarm Relay</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Warning # 2</p>
+                    </td>
+                    <td class="td_39">
+                        <p>This process is likely to go out of spec soon.</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">No</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Warning # 3</p>
+                    </td>
+                    <td class="td_39">
+                        <p>The last profile was out of spec.</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_121">No</p>
+                    </td>
+                </tr>
+                <tr style="height: 13pt;">
+                    <td class="td_38">
+                        <p class="p_120">Warning # 4</p>
+                    </td>
+                    <td class="td_39">
+                        <p>Oven temps have changed significantly since baseline.</p>
+                    </td>
+                    <td class="td_39">
+                        <p class="p_122">No</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_23"><span class="span_20">Table </span><span class="span_20">4</span><span class="span_20">: Pyrometer Profiling – Warnings</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">When Alarm #5a Occurs</h3>
+        <p>When the Barcode Product Sensor (BPS) detects a product whose barcode label has not been read, or the BPS is tripped accidentally, the alarm #5A is activated and the process is stopped via the alarm relay.</p>
+        <p>&#160;</p>
+        <p>Alarm #5A displays four alarm buttons: Manual Entry Keyboard/Handheld Scanner, Rescan using Fixed Mount Scanner, Proceed without a Barcode, and Remove this board from Line.</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Manual Entry Keyboard/Handheld scanner</h5>
+        <p>Click this button when you want to enter the barcode again by using either the keyboard or a handheld scanner connected to a USB Port. </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <table>
+            <col style="width: 418px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_17">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Manual Entry Keyboard/Handheld Scanner</span>&#160; <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs.png" style="width: 79px;height: 36px;" /> button.<br /><br /><br />The software displays the Barcode input field and hides all other unselected buttons.</li>
+                        </ol>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_17">
+                        <p class="p_3">&#160;</p>
+                        <p class="p_23">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_1.png" style="width: 391px;height: 252px;" />
+                        </p>
+                        <p class="p_23"><span class="span_20"> Figure </span><span class="span_20">164</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_70">
+                        <ol start="2">
+                            <li>Type in the new barcode and press the <span class="span_7">Enter</span> key.<br /><br /><br />The software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven. </li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_70">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_2.png" style="height: 249px;width: 388px;" alt="Text&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">165</span>
+                        </p>
+                        <p class="p_3">&#160;</p>
+                        <p class="p_3">&#160;</p>
+                        <p class="p_3">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>The barcode will be added to the board.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_3.png" style="width: 633px;height: 347px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">166</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Rescan Using Fixed Mount Scanner</h5>
+        <p>Click this button when you want to scan the barcode again by using the fixed mount Barcode scanner. </p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_17">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Rescan using Fixed Mount Scanner</span><img src="Resources/Images/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner.png" style="width: 96px;height: 43px;" />&#160; button.<br /><br /><br />The software displays the Barcode input field and hides all other unselected buttons.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p class="p_7">&#160;</p>
+                    </th>
+                    <th class="th_17">
+                        <p class="p_3">&#160;</p>
+                        <p class="p_23">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_1.png" style="width: 391px;height: 252px;" />
+                        </p>
+                        <p class="p_23"><span class="span_20"> Figure </span><span class="span_20">167</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_70">
+                        <ol start="2" class="ol_1">
+                            <li>Scan the barcode with the fixed mounted Barcode scanner.</li>
+                        </ol>
+                    </td>
+                    <td class="td_70">
+                        <p class="p_3">&#160;</p>
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner_1.png" style="height: 250px;width: 386px;" alt="Text&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">168</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Once the barcode is scanned, the software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven. </p>
+        <p>&#160;</p>
+        <p>This barcode will added to the board.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_4.png" class="img_11" style="width: 633px;height: 348px;" />
+        </p>
+        <p style="text-align: center;"><span class="span_20">Figure 169</span>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Proceed Without a Barcode</h5>
+        <p>Click this button when you want to process the board without any barcode. </p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th>
+                        <ol>
+                            <li style="text-align: left;">Click the <span class="span_7">Proceed without a Barcode</span><img src="Resources/Images/SFT-324400-000 PRI User Manual/Proceed Without a Barcode.png" style="width: 86px;height: 43px;" /> button.<br /><br />The software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven without a barcode.</li>
+                        </ol>
+                        <p class="p_7">&#160;</p>
+                    </th>
+                    <th class="th_17">
+                        <p class="p_3">&#160;</p>
+                        <p class="p_23">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_1.png" style="width: 391px;height: 252px;" />
+                        </p>
+                        <p class="p_23"><span class="span_20"> Figure </span><span class="span_20">170</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Proceed Without a Barcode_1.png" style="height: 328px;width: 608px;" class="img_11">
+            </img>
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">171</span>
+        </p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Remove this board from Line</h5>
+        <p>The software will display an alarm message “P<span class="span_6">lease remove this board from the line now &amp; click on the “OK” button</span>.”</p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_17">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Remove this board from Line</span><img src="Resources/Images/SFT-324400-000 PRI User Manual/Remove this board from Line.png" style="width: 86px;height: 43px;" /> button.</li>
+                        </ol>
+                        <p class="p_7">&#160;</p>
+                        <p class="p_7">&#160;</p>
+                        <ol start="2">
+                            <li>Remove the board from the link conveyor.</li>
+                        </ol>
+                        <p class="p_7">&#160;</p>
+                    </th>
+                    <th rowspan="2" class="th_17">
+                        <p class="p_3">&#160;</p>
+                        <p class="p_23">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_1.png" style="width: 391px;height: 252px;" /><span class="span_20"> Figure </span><span class="span_20">172</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_70"> </td>
+                </tr>
+                <tr>
+                    <td class="td_70">
+                        <ol start="3">
+                            <li>Click the <span class="span_7">c</span><span class="span_7">heck</span> button <img src="Resources/Images/SFT-324400-000 PRI User Manual/Global Preferences_1.png" style="width: 57px;height: 30px;" class="img_11" />.<br /><br />The software clears the alarm message and deactivates the Alarm relay to get ready for the next board.<br /><br />If user clicks the <span class="span_7">Cancel</span> button, the software returns to alarm #5A.</li>
+                        </ol>
+                        <p> </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_70">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Remove this board from Line_1.png" style="height: 251px;width: 393px;" alt="A picture containing text, first-aid kit, vector graphics&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">173</span>
+                        </p>
+                        <p class="p_3">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h3 class="Heading3">When Alarm #5c Occurs</h3>
+        <p>When the Barcode Product Sensor (BPS) detects a product whose barcode label has not been read, or the BPS is tripped accidentally, the alarm #5C is activated and the process is stopped via the alarm relay.</p>
+        <p>&#160;</p>
+        <p>Alarm #5C displays four alarm buttons: Manual Entry Keyboard/Handheld Scanner, Rescan using Fixed Mount Scanner, Proceed without a Barcode, and Remove this board from Line.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Manual Entry Keyboard/Handheld Scanner</h5>
+        <p>Click this button when you want to enter the barcode again by using either the keyboard or a handheld scanner connected to a USB Port. </p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 420px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_18">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Manual Entry Keyboard/Handheld Scanner</span>&#160; <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs.png" style="width: 79px;height: 36px;" /> button. <br /><br /><br />The software displays the Barcode input field and hides all other unselected buttons.</li>
+                        </ol>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_18">
+                        <p class="p_3">&#160;</p>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs.png" style="width: 400px;height: 256px;" alt="Calendar&#xA;&#xA;Description automatically generated with low confidence" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">174</span>
+                        </p>
+                        <p class="p_23">&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 228pt;">
+                    <td class="td_71">
+                        <ol start="2">
+                            <li>Type in the new barcode and press the <span class="span_7">Enter</span> key.<br /><br /><br />The software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven. </li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_71">
+                        <p>&#160;</p>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs_1.png" style="width: 407px;height: 259px;" alt="Text&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">175</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>This barcode will be added to the board if the software also is using the Traceability barcode option. </p>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs_2.png" class="img_11" style="width: 668px;height: 359px;" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">176</span>
+        </p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Rescan Using Fixed Mount Scanner</h5>
+        <p>Click this button when you want to scan the barcode again by using the fixed mounted Barcode scanner. </p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_17">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Rescan using Fixed Mount Scanner</span><img src="Resources/Images/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner.png" style="width: 96px;height: 43px;" />&#160; button.<br /><br /><br />The software displays the Barcode input field and hides all other unselected buttons.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p class="p_7">&#160;</p>
+                    </th>
+                    <th class="th_17">
+                        <p class="p_3">&#160;</p>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs.png" style="height: 249px;width: 388px;" alt="Calendar&#xA;&#xA;Description automatically generated with low confidence" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">177</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_70">
+                        <ol start="2">
+                            <li>Scan the barcode with the fixed mounted Barcode scanner.</li>
+                        </ol>
+                    </td>
+                    <td class="td_70">
+                        <p class="p_3">&#160;</p>
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner_1_1.png" style="height: 249px;width: 389px;" alt="Text&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">178</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Once the barcode is scanned, the software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven. </p>
+        <p>&#160;</p>
+        <p>This barcode will be added to the board if the software also is using the Traceability barcode option. </p>
+        <p class="p_3">&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs_2.png" style="height: 328px;width: 609px;" alt="Graphical user interface, application&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p>&#160;</p>
+        <p style="text-align: center;"><span class="span_20">Figure 179</span>
+        </p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Process without a Barcode</h5>
+        <p>Click this button when you want to process the board without any barcode. </p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_17">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Proceed without a Barcode</span><img src="Resources/Images/SFT-324400-000 PRI User Manual/Proceed Without a Barcode.png" style="width: 86px;height: 43px;" /> button.<br /><br />The software will clear the alarm message and deactivate the Alarm relay to allow the board into the oven without a barcode.</li>
+                        </ol>
+                        <p class="p_7">&#160;</p>
+                    </th>
+                    <th class="th_17">
+                        <p class="p_3">&#160;</p>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs.png" style="height: 249px;width: 388px;" alt="Calendar&#xA;&#xA;Description automatically generated with low confidence" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">180</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <h5 class="Heading5">&#160;</h5>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs_2.png" style="height: 328px;width: 609px;" alt="Graphical user interface, application&#xA;&#xA;Description automatically generated" class="img_11">
+            </img>
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">181</span>
+        </p>
+        <h5 class="Heading5">&#160;</h5>
+        <h5 class="Heading5">Remove this board from Line</h5>
+        <p>The software will display an alarm message “<span class="span_6">Please remove this board from the line now &amp; click on the “OK” button</span>.”</p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr style="height: 81pt;">
+                    <th class="th_17">
+                        <ol start="1" class="ol_1">
+                            <li>Click the <span class="span_7">Remove this board from Line</span><img src="Resources/Images/SFT-324400-000 PRI User Manual/Remove this board from Line.png" style="width: 86px;height: 43px;" /> button.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <ol start="2" class="ol_1">
+                            <li>Remove the board from the link conveyor.</li>
+                        </ol>
+                    </th>
+                    <th rowspan="2" class="th_17">
+                        <p>&#160;</p>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs.png" style="height: 249px;width: 388px;" alt="Calendar&#xA;&#xA;Description automatically generated with low confidence" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">182</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_70"> </td>
+                </tr>
+                <tr>
+                    <td class="td_70">
+                        <ol start="3" class="ol_1">
+                            <li>Click the <span class="span_7">check</span> button <img src="Resources/Images/SFT-324400-000 PRI User Manual/Global Preferences_1.png" style="width: 54px;height: 29px;" class="img_11" />.<br /><br />The software clears the alarm message and deactivates the Alarm relay to get ready for the next board.<br /><br />If user clicks the <span class="span_7">Cancel</span> button, the software returns to alarm #5C.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_70">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Remove this board from Line_1.png" style="height: 251px;width: 393px;" alt="A picture containing text, first-aid kit, vector graphics&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">183</span>
+                        </p>
+                        <p class="p_3">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">When Alarm#12 Occurs</h5>
+        <p>When a barcode string is received that differs in format from the current product, the software will display a red alarm message - Alarm#12 – with three buttons: Stop Pyrometer Profiling, Process with current Barcode, Remove the board from Line. </p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Stop Pyrometer Profiling</h5>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_17">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Stop </span><span class="span_7">Pyrometer</span><span class="span_7">Profiling</span><img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 12 Occurs.png" style="height: 39px;width: 81px;" class="img_11" /> button.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_17">
+                        <p class="p_123">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 12 Occurs_1.png" style="width: 377px;height: 244px;" alt="A picture containing text, screenshot, sign, sale&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">184</span>
+                        </p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_70">
+                        <ol start="2">
+                            <li>Click the<span class="span_7"> check</span> button <img src="Resources/Images/SFT-324400-000 PRI User Manual/Global Preferences_1.png" style="height: 21px;width: 39px;" class="img_11" /> to stop Pyrometer profiling. </li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_70">
+                        <p>&#160;</p>
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Remove this board from Line_1.png" style="width: 376px;height: 238px;" alt="A picture containing text, first-aid kit, vector graphics&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">185</span>
+                        </p>
+                        <p class="p_3">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_70">
+                        <blockquote>
+                            <p><span class="span_7">Note:</span> Users must wait for all boards to be removed from the oven.</p>
+                        </blockquote>
+                    </td>
+                    <td class="td_70">
+                        <p style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 12 Occurs_2.png" class="img_11" style="width: 250px;height: 150px;" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">186</span>
+                        </p>
+                        <p class="p_3">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Process with Current Barcode</h5>
+        <p>Users may deactivate the alarm relay to allow a board into the oven even if the barcode is in incorrect. Use this button to stop the alarm when you want to use the barcode that is on the label.</p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 351px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_17">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Process with Current Barcode</span> button <img src="Resources/Images/SFT-324400-000 PRI User Manual/Process with Current Barcode.png" style="height: 37px;width: 75px;" class="img_11" />.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_17">
+                        <p class="p_123">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Process with Current Barcode_1.png" style="height: 215px;width: 333px;" alt="A picture containing text, sign, screenshot&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">187</span>
+                        </p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_70">
+                        <p>This barcode will be added to the board if the option for <span class="span_6">Traceability</span> was selected on the <span class="span_10">Barcode Option</span> tab.</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="td_70">
+                        <p>&#160;</p>
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs_2.png" style="width: 498px;height: 267px;" alt="Graphical user interface, application&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">188</span>
+                        </p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Remove this Board from Line</h5>
+        <p>You use this feature when you want to remove a PCB out of Line before it is passed into the oven but are going to keep the current Pyrometer Profile running. </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <table class="table_8">
+            <col style="width: 400px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_17">
+                        <ol start="1">
+                            <li>Click the <span class="span_7">Remove this board from Line</span> button <img src="Resources/Images/SFT-324400-000 PRI User Manual/Remove this Board from Line_1_1.png" style="height: 34px;width: 71px;" class="img_11" />.</li>
+                        </ol>
+                    </th>
+                    <th class="th_17">
+                        <p class="p_12">&#160;</p>
+                        <p class="p_10">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Remove this Board from Line_1_2.png" style="height: 254px;width: 392px;" alt="Timeline&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">189</span>
+                        </p>
+                        <p class="p_10">&#160;</p>
+                        <p class="p_10">&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_70">
+                        <ol start="2">
+                            <li>Remove the board from the line and then click the <span class="span_7">check</span> button <img src="Resources/Images/SFT-324400-000 PRI User Manual/Global Preferences_1.png" style="width: 43px;height: 23px;" class="img_11" />.</li>
+                        </ol>
+                    </td>
+                    <td class="td_70">
+                        <p class="p_3">&#160;</p>
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Remove this board from Line_1.png" style="height: 250px;width: 391px;" alt="A picture containing text, first-aid kit, vector graphics&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">190</span>
+                        </p>
+                        <p class="p_3">&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h1 class="Heading1"><a name="Light_Tower"></a>Light Tower </h1>
+        <p>There are two available light towers – one is connected directly to the optional Alarm Relay and uses a single Red light; the other connects to the USB port of the PC, and uses 3 colored lights – Red, Yellow, and Green. </p>
+        <p>&#160;</p>
+        <p>Both lights are a means of providing an audio or visual cue when the automatic system software has determined that the oven process has reached an out-of-control condition. </p>
+        <h2 class="Heading2"><a name="Standard_Light_Tower"></a>Standard Light Tower</h2>
+        <p>This light tower plugs directly into the <span class="span_6">Alarm Relay</span> box. It uses a single Red light with an audible buzzer, which are both activated anytime an alarm condition occurs. Because it is controlled directly by the <span class="span_6">Alarm Relay</span>, the light and audible buzzer will stay on for as long as the <span class="span_6">Alarm Relay</span> is energized. </p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="3_Color_USB_Light_Tower"></a>3 Color USB Light Tower</h2>
+        <p>As this light tower connects to a USB port on the PC running the PRI, it can be used with or without the <span class="span_6">Alarm Relay</span>. With the use of the USB Light Tower, you get additional visual information on the state of your process through a variety of LED indicators – Red, Yellow, and Green. You also have the ability to mute the audible buzzer when an alarm condition occurs. When an alarm occurs, a small button will appear in the upper left corner of the Crystal Ball. Clicking on this button will mute the audible buzzer. Clicking the button a second time will un-mute the buzzer. If left muted, and the process returns to an in-spec condition, the buzzer will be automatically be active again when the next alarm occurs.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Light Tower.png" style="height: 177px;width: 278px;" alt="A picture containing shape&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <h3 class="Heading3">LED Light Status</h3>
+        <p class="ListBullet">&#160;</p>
+        <ul>
+            <li>When PP is not running – All LEDs and buzzer are turned off</li>
+        </ul>
+        <p class="ListBullet">&#160;</p>
+        <ul>
+            <li>When PP is running, and the process is in-spec but the oven is empty – GREEN LED flashing</li>
+        </ul>
+        <p class="ListBullet">&#160;</p>
+        <ul>
+            <li>When PP is running, and the process is in-spec with product in the oven – GREEN LED on solid</li>
+        </ul>
+        <p class="ListBullet">&#160;</p>
+        <ul>
+            <li>When PP is running, and the process is in a Warning condition – YELLOW LED on solid</li>
+        </ul>
+        <p class="ListBullet">&#160;</p>
+        <ul>
+            <li>When PP is running, and the process is in an Alarm condition – RED LED on solid</li>
+        </ul>
+        <p class="ListBullet">&#160;</p>
+        <ul>
+            <li>When PP is running, and the process is in an Alarm condition w/Buzzer muted – RED LED flashing</li>
+        </ul>
+        <p class="ListParagraph_3">
+            <br />
+        </p>
+        <p class="p_7"><span class="span_7">Note</span>: For more information about the Light Tower and Alarm Relay, see the <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut></p>
+        <p class="p_7">&#160;</p>
+        <p class="p_7">&#160;</p>
+    </body>
+</html>

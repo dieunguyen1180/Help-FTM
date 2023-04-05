@@ -1,0 +1,1323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="true"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="true"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2023-03-25T23:41:37.5070472+07:00"
+  ProjectName="Flare_PRI"
+  ProjectFolder="O:\Help for KIC\HELP FTM"
+  AutoSync="false"
+  AutoFitTables="true"
+  UseHeaderRows="true"
+  Stylesheet="../../../Flare_PRI from RPI/Content/Resources/Stylesheets/SFT-324000-000 PRI User Manual.css"
+  LastImport="2023-03-25T23:43:48.9250314+07:00">
+  <Files>
+    <Url
+      Source="../../../Flare_PRI from RPI/DOC/SFT-324400-000 PRI User Manual.docx"
+      AbsoluteSource="file:///O:/Help for KIC/HELP FTM/Flare_PRI from RPI/DOC/SFT-324400-000 PRI User Manual.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PRI User Manual.png"
+      TimeStamp="3/25/2023 11:41:38 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PRI User Manual_1.png"
+      TimeStamp="3/25/2023 11:41:38 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/PRI User Manual.htm"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Software Licensing Agreement.htm"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Contents.htm"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/The Hardware.htm"
+      TimeStamp="3/25/2023 11:41:59 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Hardware Diagram.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Hardware Diagram.htm"
+      TimeStamp="3/25/2023 11:41:59 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Install The Software.htm"
+      TimeStamp="3/25/2023 11:41:59 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_1.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_2.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_3.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_4.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_5.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_6.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_7.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start the Software_8.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Start the Software.htm"
+      TimeStamp="3/25/2023 11:41:59 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Global Preferences.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Global Preferences_1.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Global Preferences_2.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Global Preferences_3.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Global Preferences.htm"
+      TimeStamp="3/25/2023 11:41:59 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Tab.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Tab_1.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Auto Focus Tab.htm"
+      TimeStamp="3/25/2023 11:42:00 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/How the Software Calculates.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/How the Software Calculates_1.png"
+      TimeStamp="3/25/2023 11:41:39 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/How the Software Calculates_2.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/How the Software Calculates_3.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/How the Software Calculates_4.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/How the Software Calculates_5.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/How the Software Calculates_6.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/How the Software Calculates_7.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/How the Software Calculates.htm"
+      TimeStamp="3/25/2023 11:42:00 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_1.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual.htm"
+      TimeStamp="3/25/2023 11:42:00 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Process Window Setup.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Process Window Setup_1.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Process Window Setup_2.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Process Window Setup_3.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Process Window Setup.htm"
+      TimeStamp="3/25/2023 11:42:01 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Edit Specs.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Edit Specs_1.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Edit Specs.htm"
+      TimeStamp="3/25/2023 11:42:01 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Specify Different Specs for.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Specify Different Specs for_1.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Specify Different Specs for_2.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Specify Different Specs for_3.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Specify Different Specs for_4.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Specify Different Specs for_5.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Specify Different Specs for.htm"
+      TimeStamp="3/25/2023 11:42:01 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Import Legacy Process Windows.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Import Legacy Process Windows_1.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Import Legacy Process Windows_2.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Import Legacy Process Windows_3.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Import Legacy Process Windows_4.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Import Legacy Process Windows.jpg"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Import Legacy Process Windows_5.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Import Legacy Process Windows.htm"
+      TimeStamp="3/25/2023 11:42:01 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Hardware Status.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Hardware Status_1.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Hardware Status.htm"
+      TimeStamp="3/25/2023 11:42:01 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Run A Thermocouple Profile.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Run A Thermocouple Profile.htm"
+      TimeStamp="3/25/2023 11:42:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_1_1.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_1.htm"
+      TimeStamp="3/25/2023 11:42:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Product Dimensions.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Auto Focus Product Dimensions.htm"
+      TimeStamp="3/25/2023 11:42:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Confirm.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Confirm_1.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Confirm_2.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Confirm_3.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Confirm_4.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto Focus Confirm_5.png"
+      TimeStamp="3/25/2023 11:41:40 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Auto Focus Confirm.htm"
+      TimeStamp="3/25/2023 11:42:02 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Oven Characteristics.htm"
+      TimeStamp="3/25/2023 11:42:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Specify An Oven Recipe.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Specify An Oven Recipe_1.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Specify An Oven Recipe.htm"
+      TimeStamp="3/25/2023 11:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples_1.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Attach Thermocouples.htm"
+      TimeStamp="3/25/2023 11:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples To Semiconductor.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples To Semiconductor_1.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples To Semiconductor_2.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples To Semiconductor_3.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples To Semiconductor_4.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples To Semiconductor_5.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Attach Thermocouples To Semiconductor_6.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Attach Thermocouples To Semiconductor.htm"
+      TimeStamp="3/25/2023 11:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Live Profile Graph.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Live Profile Graph.htm"
+      TimeStamp="3/25/2023 11:42:04 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Retransmission.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Profile Retransmission.htm"
+      TimeStamp="3/25/2023 11:42:04 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/View the Profile and Statistics.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/View the Profile and Statistics.htm"
+      TimeStamp="3/25/2023 11:42:04 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Graph Display.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Graph Display_1.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Graph Display_2.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Profile Graph Display.htm"
+      TimeStamp="3/25/2023 11:42:04 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_1.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_2.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_3.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_4.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_5.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_6.png"
+      TimeStamp="3/25/2023 11:41:41 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_7.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_8.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_9.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_10.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/The Graph Controller.htm"
+      TimeStamp="3/25/2023 11:42:05 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons_1.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons_2.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons_3.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons_4.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Profile Screen Buttons.htm"
+      TimeStamp="3/25/2023 11:42:05 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Description Tab.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Description Tab.htm"
+      TimeStamp="3/25/2023 11:42:05 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Optimization with.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Optimization with_1.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Profile Optimization with.htm"
+      TimeStamp="3/25/2023 11:42:06 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Different Top and Bottom Setpoint.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Different Top and Bottom Setpoint_1.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Different Top and Bottom Setpoint.htm"
+      TimeStamp="3/25/2023 11:42:06 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Exit the Graph Screen.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Exit the Graph Screen_1.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Exit the Graph Screen_2.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Exit the Graph Screen_3.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Exit the Graph Screen_4.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Exit the Graph Screen.htm"
+      TimeStamp="3/25/2023 11:42:06 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Explorer.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Explorer_1.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Profile Explorer.htm"
+      TimeStamp="3/25/2023 11:42:06 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_1.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_2.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_3.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_4.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_5.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_6.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_7.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_8.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_9.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_10.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_11.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2_12.png"
+      TimeStamp="3/25/2023 11:41:42 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_2.htm"
+      TimeStamp="3/25/2023 11:42:06 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_1.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_2.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_3.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_4.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_5.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_6.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_7.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_8.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_9.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_10.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event_11.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Note Double click any event.htm"
+      TimeStamp="3/25/2023 11:42:07 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/History Data Files.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/History Data Files_1.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/History Data Files.htm"
+      TimeStamp="3/25/2023 11:42:07 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Monitor Production in PP Live.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Monitor Production in PP Live.htm"
+      TimeStamp="3/25/2023 11:42:07 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode General Tab.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode General Tab_1.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/PP Live Mode General Tab.htm"
+      TimeStamp="3/25/2023 11:42:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller_1.png"
+      TimeStamp="3/25/2023 11:41:43 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Graph Controller.htm"
+      TimeStamp="3/25/2023 11:42:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Description Tab.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/PP Live Mode Description Tab.htm"
+      TimeStamp="3/25/2023 11:42:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Charts Tab.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/PP Live Mode Charts Tab.htm"
+      TimeStamp="3/25/2023 11:42:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/View Chart Data.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/View Chart Data.htm"
+      TimeStamp="3/25/2023 11:42:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_1.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_2.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_3.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_4.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_5.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_6.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_7.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_8.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_9.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_10.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting.htm"
+      TimeStamp="3/25/2023 11:42:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Verify the Pyrometer Profile.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Verify the Pyrometer Profile_1.png"
+      TimeStamp="3/25/2023 11:41:44 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Verify the Pyrometer Profile.htm"
+      TimeStamp="3/25/2023 11:42:09 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Once the verification profile.htm"
+      TimeStamp="3/25/2023 11:42:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode_1.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode_2.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Historical Mode.htm"
+      TimeStamp="3/25/2023 11:42:10 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller_1_1.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller_1_2.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller_1_3.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Graph Controller_1.htm"
+      TimeStamp="3/25/2023 11:42:10 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/History Mode Chart Options.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/History Mode Chart Options_1.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/History Mode Chart Options_2.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/History Mode Chart Options_3.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/History Mode Chart Options.htm"
+      TimeStamp="3/25/2023 11:42:10 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode Troubleshooting.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode Troubleshooting_1.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode Troubleshooting_2.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Historical Mode Troubleshooting.htm"
+      TimeStamp="3/25/2023 11:42:10 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Scanners.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Scanners_1.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Scanners.htm"
+      TimeStamp="3/25/2023 11:42:11 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Pyrometer Profiling and Barcodes.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Pyrometer Profiling and Barcodes_1.png"
+      TimeStamp="3/25/2023 11:41:45 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Pyrometer Profiling and Barcodes.htm"
+      TimeStamp="3/25/2023 11:42:11 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_1.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_2.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_3.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_4.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_5.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_6.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_7.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3.htm"
+      TimeStamp="3/25/2023 11:42:11 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/View Barcode Traceability.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/View Barcode Traceability_1.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/View Barcode Traceability.htm"
+      TimeStamp="3/25/2023 11:42:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Live Data Output And Barcodes.png"
+      TimeStamp="3/25/2023 11:41:46 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Live Data Output And Barcodes.htm"
+      TimeStamp="3/25/2023 11:42:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/LDO Formats.png"
+      TimeStamp="3/25/2023 11:41:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/LDO Formats_1.png"
+      TimeStamp="3/25/2023 11:41:49 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/LDO Formats.htm"
+      TimeStamp="3/25/2023 11:42:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files.png"
+      TimeStamp="3/25/2023 11:41:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files_1.png"
+      TimeStamp="3/25/2023 11:41:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files_2.png"
+      TimeStamp="3/25/2023 11:41:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files_3.png"
+      TimeStamp="3/25/2023 11:41:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files_4.png"
+      TimeStamp="3/25/2023 11:41:49 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Delete Accumulated LDO Files.htm"
+      TimeStamp="3/25/2023 11:42:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Dual Lane Systems and Functionality.jpg"
+      TimeStamp="3/25/2023 11:41:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Dual Lane Systems and Functionality.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Dual Lane Systems and Functionality.htm"
+      TimeStamp="3/25/2023 11:42:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_1.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_2.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_3.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_4.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_5.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems.htm"
+      TimeStamp="3/25/2023 11:42:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/O2 Live Optional.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/O2 Live Optional_1.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/O2 Live Optional_2.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/O2 Live Optional_3.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/O2 Live Optional.htm"
+      TimeStamp="3/25/2023 11:42:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Operation.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Operation_1.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Operation_2.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Operation.htm"
+      TimeStamp="3/25/2023 11:42:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Idle Mode Optional.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/PP Idle Mode Optional_1.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/PP Idle Mode Optional.htm"
+      TimeStamp="3/25/2023 11:42:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Units Per Hour.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Units Per Hour_1.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Units Per Hour.htm"
+      TimeStamp="3/25/2023 11:42:14 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Auto PP.htm"
+      TimeStamp="3/25/2023 11:42:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Printing.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Printing_1.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Printing_2.png"
+      TimeStamp="3/25/2023 11:41:50 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Profile Printing_3.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Profile Printing.htm"
+      TimeStamp="3/25/2023 11:42:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Write Data to and View PRI.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Write Data to and View PRI_1.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Write Data to and View PRI_2.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Write Data to and View PRI_3.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Write Data to and View PRI.htm"
+      TimeStamp="3/25/2023 11:42:15 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/With the software open go.htm"
+      TimeStamp="3/25/2023 11:42:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/View Historical Data.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/View Historical Data.htm"
+      TimeStamp="3/25/2023 11:42:15 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Communicate with Oven Controllers.htm"
+      TimeStamp="3/25/2023 11:42:16 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Confirm Oven Communications.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Confirm Oven Communications_1.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Confirm Oven Communications_2.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Confirm Oven Communications.htm"
+      TimeStamp="3/25/2023 11:42:16 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Run A Profile Using Oven Communication.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Run A Profile Using Oven Communication_1.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Run A Profile Using Oven Communication_2.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Run A Profile Using Oven Communication.htm"
+      TimeStamp="3/25/2023 11:42:16 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start a Pyrometer Profile.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Start a Pyrometer Profile_1.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Start a Pyrometer Profile.htm"
+      TimeStamp="3/25/2023 11:42:16 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Base Oven Recipe Automatic.png"
+      TimeStamp="3/25/2023 11:41:51 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Base Oven Recipe Automatic_1.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Base Oven Recipe Automatic_2.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Base Oven Recipe Automatic.htm"
+      TimeStamp="3/25/2023 11:42:16 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_1.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_2.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_3.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_4.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_5.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Status Messages and Alarms_6.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Status Messages and Alarms.htm"
+      TimeStamp="3/25/2023 11:42:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_1.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_2.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs_3.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/When Alarm 5a Occurs.htm"
+      TimeStamp="3/25/2023 11:42:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner_1.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner.htm"
+      TimeStamp="3/25/2023 11:42:18 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_4.htm"
+      TimeStamp="3/25/2023 11:42:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Proceed Without a Barcode.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Proceed Without a Barcode_1.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Proceed Without a Barcode.htm"
+      TimeStamp="3/25/2023 11:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Remove this board from Line.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Remove this board from Line_1.png"
+      TimeStamp="3/25/2023 11:41:52 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Remove this board from Line.htm"
+      TimeStamp="3/25/2023 11:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs_1.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs_2.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/When Alarm 5c Occurs.htm"
+      TimeStamp="3/25/2023 11:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner_1_1.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Rescan Using Fixed Mount Scanner_1.htm"
+      TimeStamp="3/25/2023 11:42:20 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_5.htm"
+      TimeStamp="3/25/2023 11:42:20 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Process without a Barcode.htm"
+      TimeStamp="3/25/2023 11:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 12 Occurs.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 12 Occurs_1.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/When Alarm 12 Occurs_2.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/When Alarm 12 Occurs.htm"
+      TimeStamp="3/25/2023 11:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Process with Current Barcode.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Process with Current Barcode_1.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Process with Current Barcode.htm"
+      TimeStamp="3/25/2023 11:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Remove this Board from Line_1_1.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Remove this Board from Line_1_2.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Remove this Board from Line_1.htm"
+      TimeStamp="3/25/2023 11:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Light Tower.png"
+      TimeStamp="3/25/2023 11:41:53 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Light Tower_1.png"
+      TimeStamp="3/25/2023 11:41:54 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Light Tower_2.png"
+      TimeStamp="3/25/2023 11:41:55 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Light Tower.htm"
+      TimeStamp="3/25/2023 11:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/For example if a profile is.png"
+      TimeStamp="3/25/2023 11:41:55 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/For example if a profile is_1.png"
+      TimeStamp="3/25/2023 11:41:55 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/For example if a profile is.htm"
+      TimeStamp="3/25/2023 11:42:21 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Benefits of Ranking Thermal.htm"
+      TimeStamp="3/25/2023 11:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_1.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_2.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_3.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_4.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_5.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_6.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone_7.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Appendix B Recalculating Zone.htm"
+      TimeStamp="3/25/2023 11:42:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Appendix C Configuration Program.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Appendix C Configuration Program.htm"
+      TimeStamp="3/25/2023 11:42:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_6.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_6_1.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_6_2.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_6.htm"
+      TimeStamp="3/25/2023 11:42:22 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Decimal Tab.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Decimal Tab_1.png"
+      TimeStamp="3/25/2023 11:41:56 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Decimal Tab.htm"
+      TimeStamp="3/25/2023 11:42:23 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Auto PP Tab.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Auto PP Tab.htm"
+      TimeStamp="3/25/2023 11:42:23 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Password Control Multi User.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Password Control Multi User.htm"
+      TimeStamp="3/25/2023 11:42:23 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Figure Password Control Tab.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Figure Password Control Tab.htm"
+      TimeStamp="3/25/2023 11:42:24 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Password Control Tab.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Password Control Tab_1.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Password Control Tab_2.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Password Control Tab.htm"
+      TimeStamp="3/25/2023 11:42:24 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/User Type Area.htm"
+      TimeStamp="3/25/2023 11:42:24 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Password Area.htm"
+      TimeStamp="3/25/2023 11:42:24 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Figure Set Password and Timer.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Figure Set Password and Timer.htm"
+      TimeStamp="3/25/2023 11:42:24 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Main Screen Log In.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Main Screen Log In_1.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Main Screen Log In.htm"
+      TimeStamp="3/25/2023 11:42:25 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Figure Graph Screen Login.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Figure Graph Screen Login.htm"
+      TimeStamp="3/25/2023 11:42:25 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Responding to an Alarm.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Responding to an Alarm.htm"
+      TimeStamp="3/25/2023 11:42:25 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/AR Matrix Settings Tab.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/AR Matrix Settings Tab.htm"
+      TimeStamp="3/25/2023 11:42:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Use the Alarm Relay Matrix.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Use the Alarm Relay Matrix_1.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Use the Alarm Relay Matrix.htm"
+      TimeStamp="3/25/2023 11:42:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/Barcode Tab.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/Barcode Tab.htm"
+      TimeStamp="3/25/2023 11:42:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_1.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_2.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_3.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_4.png"
+      TimeStamp="3/25/2023 11:41:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_5.png"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7_6.png"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+    <Url
+      Source="../../Content/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_7.htm"
+      TimeStamp="3/25/2023 11:42:26 PM" />
+    <Url
+      Source="../TOCs/SFT-324400-000 PRI User Manual.fltoc"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+    <Url
+      Source="../../Content/Resources/MasterPages/SFT-324400-000 PRI User Manual.flmsp"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+    <Url
+      Source="../../Content/Resources/PageLayouts/Default.flpgl"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+ 
+    <Url
+      Source="../../Content/Resources/Stylesheets/SFT-324000-000 PRI User Manual.css"
+      TimeStamp="3/25/2023 11:41:58 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Caption" />
+    <StyleName
+      Name="Cover Subtitle" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="Heading 5" />
+    <StyleName
+      Name="List Legal" />
+    <StyleName
+      Name="List Number 2" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Subtitle" />
+    <StyleName
+      Name="TOC 1" />
+    <StyleName
+      Name="TOC 2" />
+    <StyleName
+      Name="TOC Heading" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Heading 2 Char" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="normaltextrun" />
+    <StyleName
+      Name="Page Number" />
+    <StyleName
+      Name="Subtle Reference" />
+  </UsedCharacterStyles>
+</MsWordImport>

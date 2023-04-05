@@ -1,0 +1,1001 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1"> <a name="_Monitor_Production_In"></a>Monitor Production in PP Live Mode</h1>
+        <p>In PP <span class="span_10">live mode</span>, the PRI software displays real-time data for the PP it generates for every production board processed.&#160; The software displays the data in various charts, graphs, and statistical tables.&#160; </p>
+        <p>&#160;</p>
+        <table class="table_1">
+            <col style="width: 737px;" />
+            <col style="width: 126px;" />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <p style="text-align: left;">During live mode, it also displays a crystal ball indicator that shows the current Pyrometer PWI, and Cpk values for your process as measured by the software.&#160; The crystal ball indicator appears continuously while PP is enabled.&#160; You can move the crystal ball, but not close or minimize it.&#160; </p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">The crystal ball color will indicate the current Pyrometer Profiling status: </p>
+                        <blockquote>
+                            <p class="ListContinue3" style="text-align: left;">&#160;</p>
+                            <table style="text-align: center;">
+                                <col style="width: 100px;" />
+                                <col style="width: 2px;" />
+                                <col style="width: 378px;" />
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: right;"><span class="span_30">Green</span>
+                                        </td>
+                                        <td>&#160;</td>
+                                        <td style="text-align: left;"><span class="span_31">....Ready</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: right;"><span class="span_30">Yellow</span>
+                                        </td>
+                                        <td>&#160;</td>
+                                        <td style="text-align: left;"><span class="span_31">....Warning</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: right;"><span class="span_30">Red</span>
+                                        </td>
+                                        <td>&#160;</td>
+                                        <td style="text-align: left;"><span class="span_31">....Alarm</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: right;"><span class="span_30">Grey</span>
+                                        </td>
+                                        <td>&#160;</td>
+                                        <td style="text-align: left;"><span class="span_31">....Unable to Predict</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </blockquote>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_3">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Monitor Production in PP Live.png" style="width: 103px;height: 147px;" alt="A picture containing text, green&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="Caption">Figure 70: Pyrometer Profile Crystal Ball indicator</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p style="text-indent: 0.5in;"><span class="span_7">Note</span>: A PP status message appears when you place the mouse pointer over the crystal ball.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="How_to_Avoid_The_Grey_Crystal_Ball"></a>How to Avoid the Grey Crystal Ball</h2>
+        <p>While a green crystal ball reports the system as PP-capable, and yellow/red alert you to problems, the grey color indicates that the software has insufficient data to make useful PP predictions.&#160; The condition can occur during a baseline or verification profile run where you introduce the profiler into an ongoing production flow.&#160; With boards both downstream and upstream of the profiler, the system lacks necessary data obtained by sampling empty oven zones.&#160; To avoid the grey status KIC recommends running the profiler with no boards following behind.&#160; For more information, see see <a href="Understanding_Virtual_Profiling.htm#Integrate_Empty_Oven_Data" style="color: #0000cd; text-decoration: underline;">Integrating Empty Oven Data</a>.</p>
+        <p>&#160;</p>
+        <p class="p_104"><a name="Virtual_Profiling_Live1"></a>PP Live Mode - General Tab</p>
+        <p class="p_104">&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode General Tab.png" style="width: 828px;height: 444px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 71: Pyrometer Profiling – General Tab</p>
+        <p>&#160;</p>
+        <p>On the live-mode screen, the software displays both the baseline and pyrometer profile. The baseline profile appears in a solid line format, while the pyrometer profile appears in dashed lines. To enlarge the graph section, double click on the graph. To enlarge the statistics section, double click on the statistics.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Board Sensor Indicator</h3>
+        <table class="table_1">
+            <col style="width: 350px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <p>&#160;</p>
+                        <p style="text-align: left;">The software indicates the physical location of the board sensor in or near the oven entrance by a small triangle above the graph.&#160; </p>
+                        <p>&#160;</p>
+                        <p style="text-align: left;">When the sensor first detects a board, the on-screen indicator changes color from green to red.&#160; The indicator stays red as long as the board remains beneath the sensor.&#160; </p>
+                    </th>
+                    <th class="th_3">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode General Tab_1.png" class="img_11" style="width: 366px;height: 135px;" />
+                        </p>
+                        <p>
+                            <div style="height: 11.2pt;width: 101.1pt;" class="div_85">
+                                <p class="Caption">Figure 72</p>
+                            </div>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <h3 class="Heading3">Pyrometer 1 Sensor Indicator</h3>
+        <table class="table_1">
+            <col style="width: 647px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <p style="text-align: left;">The software indicates the physical location of the board sensor in zone 1 by the triangle above the graph.</p>
+                        <p>&#160;</p>
+                        <p style="text-align: left;">When the sensor first detects a board, the on-screen indicator changes color from green to red.&#160; The indicator stays red if the board remains beneath the sensor.</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_3">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode General Tab_2.png" class="img_11" style="width: 368px;height: 130px;" />
+                        </p>
+                        <p class="Caption">
+                            <div style="height: 11.2pt;width: 101.1pt;" class="div_86">
+                                <p class="Caption">Figure 73</p>
+                            </div>
+                            <div style="height: 13.5pt;width: 101.1pt;" class="div_87">
+                                <p class="Caption">&#160;</p>
+                            </div>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <h3 class="Heading3">Profile Statistics</h3>
+        <p>As shown, the Pyrometer Profile and baseline statistics appear in a table below the profile graph.&#160; Below the statistics, the Pyrometer Profile and baseline profile recipes appear.&#160; These recipes should match identically.&#160; The current PWI appears in the bottom-left corner.&#160; The PWI for the last board to exit the oven will not be displayed; go to the Charts tab to view this information.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="VP_Live_Graph_Controller"></a>Graph Controller</h3>
+        <table class="table_7">
+            <col style="width: 400px;" />
+            <col style="width: 490px;" />
+            <thead>
+                <tr>
+                    <th class="th_3" style="text-align: left;">
+                        <p>The Graph Controller allows you to modify the view of the PRI profile graph.&#160; To open the Graph Controller, Left-click on the TC column header in the Statistics table or Double Left-click, anywhere just outside the profile graph.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Auto scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.&#160; When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">TCs – </span>You cannot disable or rename a TC in a live Pyrometer Profile. You can only perform this function on the Baseline Profile. Those changes would then be reflected in any Pyrometer Profile data recorded from that point.</p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_3" style="text-align: left;">
+                        <p>&#160;</p>
+                        <p style="text-align: center;">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller.png" style="width: 409px;height: 293px;" alt="Graphical user interface, application, Word&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="Caption_2">
+                            <div style="height: 11.2pt;width: 101.1pt;" class="div_88">
+                                <p class="Caption">Figure 74</p>
+                            </div>
+                            <div style="height: 13.5pt;width: 101.1pt;" class="div_88">
+                                <p class="Caption">&#160;</p>
+                            </div>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p><span class="span_7">TC’s Line Thickness</span> – The pull-down menu lets you select five different thicknesses for the TC lines drawn on the graph.&#160; </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Board Length </span><span class="span_7">–</span> Displays the board length defined when the profile was run.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Grid –</span> Enables/disables the view of the X and Y-Axis scales.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Reference lines –</span> Enables the view of Reference Lines displayed on the profile graph.&#160; These lines represent any temperatures referenced in the selected Process Window.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Zone lines – </span>Enables the view for the oven zone lines on the profile graph.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Predicted TCs only</span> - Removes the original profile plot from view, displaying only the prediction profile plot on the graph.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Original</span><span class="span_7"> TCs only</span> - Removes the predicted profile plot from view, displaying only the original profile plot on the graph.&#160; </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Zero decimal </span>– When viewing the Examine tool, this setting enables or disables the decimal display.&#160; When unchecked, the software will display one decimal point.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Internal temp </span>– Enables the view of the profiler’s internal temperature profile plot on the graph.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Display Detailed PWI</span> – With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values. </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Extra Cooling Slope</span> – Enabling this feature displays multiple Cooling Slope measurements which are customizable by the user. </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Floating O2 PPM display</span> – When the <span class="span_6">O2 Live</span> option is purchased, you can enable/disable a window on the graph that shows the O2 measurement during production. </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">Examine Tool</h5>
+        <table class="table_1">
+            <col style="width: 311px;" />
+            <col style="width: 223px;" />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <p style="text-align: left;">You can also view the Delta T (∆T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.&#160; This will bring up a pointer and a chart will appear in the upper left corner of the graph.&#160; </p>
+                        <p>&#160;</p>
+                    </th>
+                    <th class="th_3">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller_1.png" style="width: 169px;height: 181px;" class="img_11" />
+                        </p>
+                        <p class="Caption">Figure 75: Examine Tool Display</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <p>Wherever the pointer is moved across the profile, the following data appears:</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>The first column is the actual temperature for each TC, Original.</li>
+            <li>The second column is the temperature of the predicted profile data – based on setpoint or belt speed changes.</li>
+            <li>The Delta T for both actual and predicted TC data.</li>
+            <li>The time during the profile at which the pointer is placed</li>
+        </ul>
+        <p class="p_18">&#160;</p>
+        <h3 class="Heading3">Board Spacing </h3>
+        <p>PRI can detect boards regardless of separation. The PRI system will accurately count and track boards through the oven even if two boards become pushed together leaving no space. The  PRI system is able to detect the correct number of boards processed.</p>
+        <p>&#160;</p>
+        <p class="p_11">If the board length as determined by the system differs by more than 15% from the baseline-product length while Pyrometer Profiling – live, an alarm will appear after five boards.</p>
+        <p class="p_11">&#160;</p>
+        <p>The number of boards to trigger an alarm can be changed if needed, contact KIC Technical Support for help.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling_Live2"></a>PP Live Mode - Description Tab</h2>
+        <table class="table_1">
+            <col style="width: 351px;" />
+            <col style="width: 10px;" />
+            <col style="width: 501px;" />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <p style="text-align: left;">The Description tab displays the profile Description notes for the baseline profile. </p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">You can edit these notes by clicking in the description area.</p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">Below the description area, the Pyrometer Profile and Baseline Statistics, and recipes are displayed.&#160; In the bottom-left corner, the current PWI appears.&#160; Enlarging the description area and statistics are not possible while viewing this tab.</p>
+                        <p style="text-align: left;">&#160;</p>
+                    </th>
+                    <th>&#160;</th>
+                    <th class="th_3">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Description Tab.png" style="width: 423px;height: 224px;" alt="Graphical user interface, application, table, Excel&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="Caption">Figure 76: Pyrometer Profiling – Description Tab</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling_Live3"></a>PP Live Mode - Charts Tab</h2>
+        <table class="table_1">
+            <col style="width: 350px;" />
+            <col style="width: 10px;" />
+            <col style="width: 507px;" />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <p style="text-align: left;">The Chart tab will display a control chart for the overall profile PWI, and each individual process specification, as defined in the Process Window setup.&#160; </p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">The alarm limits for each specification appears on each chart using red horizontal lines.</p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">Each time a board is detected exiting the oven, the PRI software will plot a data point for each product thermocouple on each chart.&#160; The chart data will coincide with the live Pyrometer Profile data.&#160; </p>
+                        <p style="text-align: left;">&#160;</p>
+                        <p style="text-align: left;">The PRI software will update the overall PWI for each chart and calculate the Cpk and display the results above each chart.</p>
+                    </th>
+                    <th>&#160;</th>
+                    <th class="th_3">
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Charts Tab.png" style="width: 431px;height: 229px;" alt="Diagram&#xA;&#xA;Description automatically generated" class="img_11" />
+                        </p>
+                        <p class="Caption">Figure 77: Pyrometer Profiling– Chart Tab, all charts</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note</span>: You can enable or change the Cpk alarm values in the “Global Preferences” screen before you start Pyrometer Profiling.</p>
+        <p>&#160;</p>
+        <p>Above the control charts is a bar display showing the board sensor location.&#160; Similar to the <span class="span_10">General</span> tab, when a board is detected under the sensor, the indicator color will change from green to red as long as the sensor detects a board.&#160; This display also shows the current location and number of boards in the oven.&#160; In the bottom-left corner, the current PWI appears.&#160; If the Barcode capabilities are enabled, the barcode number for the current board appears in the lower-left-corner as well.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">View Chart Data</h3>
+        <p>To view individual chart data, click inside the chart area of your choice.&#160; This will display that chart in a full screen view.&#160; </p>
+        <p>&#160;</p>
+        <p>Move the mouse pointer over the chart data, a display box will appear.&#160; This display box data includes barcode number, PWI, Cpk, date, and time for each board.&#160; The date and time for the last board to exit the oven appears at the bottom of the full screen chart in Blue text.&#160; </p>
+        <p>&#160;</p>
+        <p>Click in the chart area to return to the regular <span class="span_7">Chart</span> tab view.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/View Chart Data.png" style="width: 793px;height: 427px;" alt="Graphical user interface, application, table&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 78: Pyrometer Profiling – Chart Tab, zoom chart</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling_Live4"></a>PP Live Mode - Troubleshooting Tabs</h2>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting.png" style="width: 795px;height: 427px;" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">79</span><span class="span_20">: Pyrometer Profiling – Troubleshooting Tab</span>
+        </p>
+        <p>&#160;</p>
+        <p>The Troubleshooting tab will display the pyrometer and conveyor speed deviation on charts.&#160; The pyrometer deviation is measured against the baseline profile – pyrometer data.&#160; This data is updated for every board, or every 25 Seconds.&#160; In the bottom-left corner, the current PWI appears.&#160; </p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note:</span> There is a separate tab called Conveyor Speed that provides a more in-depth view as to what the conveyor speed was at every location in the oven for the entire profile. </p>
+        <p>&#160;</p>
+        <p>TS2 stands for troubleshooting thermocouple 2. TS3 stands for troubleshooting thermocouple 3…etc. The blue bar represents the deviation in board temperature between the baseline and the current production board. The red bar represents the deviation in oven temperature between the baseline and the current production board. The figure above is displaying deviation for TS2, troubleshooting thermocouple 2. You can inspect each thermocouple individually by clicking the corresponding tabs.</p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note: </span> Moving the mouse pointer over the deviation chart data will enable tool tips that show the deviation value for each of the pyrometers.&#160; Moving the mouse pointer over the conveyor speed chart will show the baseline profile conveyor speed, and the conveyor speed for the last board to exit.&#160; </p>
+        <p>&#160;</p>
+        <p class="p_12">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_1.png" class="img_11" style="width: 161px;height: 228px;" />
+        </p>
+        <p class="Caption">Figure 80: Pyrometer Deviation Value Display
+        </p>
+        <h2 class="Heading2"><a name="Virtual_Profiling_Live5"></a>PP Live Mode - Troubleshooting Empty Oven Tab</h2>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_2.png" style="width: 822px;height: 445px;" alt="Chart&#xA;&#xA;Description automatically generated with medium confidence" class="img_11" />
+        </p>
+        <p class="Caption">Figure 81: Pyrometer Profiling – Troubleshooting Empty Oven Tab</p>
+        <p class="p_3">&#160;</p>
+        <p>The Troubleshooting Empty Oven tab will display the difference in empty oven temperature readings between the baseline and the current empty oven.&#160; This data is updated every time the oven becomes empty and experiences changes.&#160; </p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling_Live6"></a>PP Live Mode - Conveyor Speed Tab</h2>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_3.png" style="width: 794px;height: 434px;" alt="Graphical user interface&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 82: Pyrometer Profiling – Conveyor Speed Tab</p>
+        <p class="p_3">&#160;</p>
+        <p>The Conveyor Speed Tab displays conveyor speed at every location during the boards ride through oven. The straight horizontal black lines represent the conveyor speed setpoint. This oven is set for -+1” of tolerance and the oven seems to stay within the boundaries.&#160; The conveyor speed recorded during the baseline displays with the blue line in the chart to the right. The live real-time conveyor speed during production is displayed with the green line in the graph to the left.&#160; </p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling_Live7"></a>PP Live Mode - Pyro Tabs (Pyrometer Tabs)</h2>
+        <p>&#160;</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_4.png" style="width: 802px;height: 432px;" alt="Graphical user interface, application&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 83: Pyrometer Profiling – Pyro Tabs</p>
+        <p class="p_3">&#160;</p>
+        <p>The Pyro tabs will display pyrometer readings for a maximum of 4 pyrometers per tab. The Y axis is temperature while the X axis is conveyor clicks. The blue line shows the pyrometer readings from the baseline. The green line indicates the expected location of the baseline board. If the green line does not appear under the blue line, then that signifies board jam/shifting. Similarly, the black line shows the pyrometer readings during production. The red line indicates the expected location of the production board. If the red line does not appear under the defined production board in black, that would signal a board jam/shift.&#160; </p>
+        <p>&#160;</p>
+        <p>In the example above, it shows the baseline and production board did in fact arrive at their expected locations. There was no shifting during these profiles.</p>
+        <p>&#160;</p>
+        <p class="p_3"><span class="span_7">Note:</span> You can enlarge a specified pyrometer by double left-clicking the chart:</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_5.png" style="width: 639px;height: 344px;" alt="Graphical user interface, text, application&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 84: Pyrometer Profiling – Pyro Tabs, zoom chart</p>
+        <p class="Caption">&#160;</p>
+        <p class="Caption">&#160;</p>
+        <h2 class="Heading2"><a name="Buttons"></a>PP Live Mode Buttons</h2>
+        <p>While in Pyrometer Profiling - live mode the software displays several buttons at the bottom of the screen.</p>
+        <p>&#160;</p>
+        <p class="p_27">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_6.png" style="width: 99px;height: 53px;" />
+            <br /><span class="span_7">Run Profile – </span>Select this button to run a Pyrometer Profile Verification profile.&#160; The software may require you to run a Verification profile if it has determined that the current PP is no longer accurate.</p>
+        <p class="p_27">&#160;</p>
+        <p class="p_27">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons.png" style="width: 99px;height: 53px;" />
+            <br /><span class="span_7">View/Edit Process Window – </span>Select to view the Process Window specifications and limits in a read-only format.</p>
+        <p class="p_27">&#160;</p>
+        <p class="p_27">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons_1.png" style="width: 99px;height: 53px;" />
+            <br /><span class="span_7">Copy to Clipboard – </span>Copies the profile and/or Pyrometer Profile data to the clipboard for use with third-party software such as a spreadsheet application, or SPC software.</p>
+        <p class="p_27">&#160;</p>
+        <p class="p_27">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_7.png" style="width: 99px;height: 53px;" />
+            <br /><span class="span_7">Print –</span> This button will print the current profile.</p>
+        <p class="p_93"><span class="span_7">Note:</span> If you wish to print a tab besides the General tab, pressing F9 on your keyboard will print the contents of any screen in the PRI software.</p>
+        <p class="p_93">&#160;</p>
+        <p class="p_27">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_8.png" style="width: 99px;height: 53px;" />
+            <br /><span class="span_7">Profiler Explorer – </span>This button will take you to the Profile Explorer screen.&#160; You can view profile and Pyrometer Profile event data.&#160; This feature is especially useful to ascertain which alarms have occurred and have been acknowledged during production.&#160; There is only one button at the bottom, which will return you back to Pyrometer Profiling - live mode.</p>
+        <p class="p_27">&#160;</p>
+        <p class="p_27">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_9.png" style="width: 99px;height: 53px;" />
+            <br /><span class="span_7">Stop </span><span class="span_7">Pyrometer</span><span class="span_7">Profiling – </span>This button will return you to the <span class="span_6">Profile Explorer</span> screen.</p>
+        <p class="p_27">&#160;</p>
+        <p class="p_27">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/PP Live Mode Troubleshooting_10.png" style="width: 99px;height: 53px;" />
+            <br /><span class="span_7">B</span><span class="span_7">arcode Queue –</span> Displays a text box showing the current barcodes yet to be assigned.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Verifying_the_Virtual"></a>Verify the Pyrometer Profile</h2>
+        <p>The <span class="span_6">verification profile </span>is when a thermocouple profile and pyrometer profile are generated at the same time. The verification profile is used to help determine how the oven and board may have changed from the current Baseline profile.</p>
+        <p>&#160;</p>
+        <p>The verification profile updates the Baseline profile for the current Pyrometer Profile, ensuring that its prediction model yields the most accurate possible results, using the most recent profile.&#160; The software always recognizes the latest in&#8209;spec profile as the Baseline for any Pyrometer Profile.</p>
+        <p>&#160;</p>
+        <p>The software recognizes when the process temperatures change significantly as compared to the current Baseline profile, and then prompts you to run a verification profile.&#160; You can intentionally run a verification profile at any time during Pyrometer Profiling Live Mode.&#160; </p>
+        <p class="p_105"><span class="span_7">Note</span>: The software will only accept a verification profile as a new baseline if meets the standard PP criteria.&#160; See <a href="Understanding_Virtual_Profiling.htm#Getting_a_valid_baseline" style="color: #0000ff; text-decoration: underline;">Get A Valid Baseline Profile</a>.</p>
+        <p>&#160;</p>
+        <table class="table_1">
+            <col />
+            <col style="width: 393px;" />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <ol start="1">
+                            <li style="text-align: left;">Verify that PP is running in live mode</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <ol start="2">
+                            <li style="text-align: left;">Select the <span class="span_7">Run Profile</span> button at the bottom of the PP live screen.&#160; </li>
+                        </ol>
+                    </th>
+                    <th class="th_3">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Verify the Pyrometer Profile.png" style="width: 99px;height: 53px;" class="img_11" />
+                        </p>
+                        <p class="Caption">Figure 85: Run Profile Button, PP Live Mode Screen</p>
+                        <p class="p_3">&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_2">
+                        <ol start="3">
+                            <li class="li_5">The software displays a message asking if you want to run a verification profile:&#160; <br />If you choose <span class="span_7">No</span>, the software will return to the previous screen.<br />If you choose <span class="span_7">Yes</span>, the software will begin stepping through the run profile routine.</li>
+                        </ol>
+                        <p>&#160;</p>
+                        <p>
+                            <br />
+                        </p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Verify the Pyrometer Profile_1.png" style="width: 340px;height: 161px;" class="img_11" />
+                        </p>
+                        <p class="Caption">Figure 86: Run verification message</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li class="li_6">Verify the following before profiling:</li>
+        </ol>
+        <p class="p_18">The profiler is on and ready to profile.</p>
+        <ul style="list-style-type: circle;">
+            <li class="li_16">If in Transmit model – Smart Dock (SPS) or Base Station (X<sup>5</sup>) is plugged into computer.</li>
+            <li class="li_16">If in Datalogger model – The profiler is plugged into the download cable and download cable is plugged into the computer.</li>
+            <li class="li_16">Profiler batteries and internal temperature are at the proper levels to profile.</li>
+            <li class="li_16">All thermocouples attached to the profiler are below the defined product start temperature.</li>
+        </ul>
+        <p>&#160;</p>
+        <ol start="5">
+            <li class="li_6">To begin profiling, click the <span class="span_7">Profile Start</span> button (green traffic light).</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Once the verification profile is complete and the data has downloaded, it will display one of the two dialog boxes shown below.&#160; </p>
+        <p>&#160;</p>
+        <p class="p_106">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/030000A4.png" class="img_11" />
+        </p>
+        <p class="Caption">Figure 87: In-spec Verification Profile</p>
+        <p>&#160;</p>
+        <p>Alternatively, if the profile is out of spec, the dialog box shown below will appear stating that the PWI is too high.&#160; </p>
+        <p class="p_106">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/030000A5.png" class="img_11" />
+        </p>
+        <p class="Caption">Figure 88: Out of Spec Verification profile</p>
+        <p class="p_23">&#160;</p>
+        <p>If you choose to continue running Pyrometer Profiling, you will receive WARNING #2, “The last profile was out of spec”.&#160; In which case, you would need to run profiles until an in-spec profile is achieved before the software lets you continue Pyrometer Profiling.</p>
+        <p class="p_36">&#160;</p>
+        <p class="p_36">The dialog boxes present two choices:</p>
+        <ol start="1">
+            <li><span class="span_7">Continue </span><span class="span_7">Pyrometer</span><span class="span_7">Profiling –</span> If the verification profile meets Pyrometer Profiling criteria, it will automatically be used as the new baseline profile.&#160; If you choose this option, the software will update the baseline and continue Pyrometer Profiling, using the verification profile as a new baseline profile.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="2">
+            <li><span class="span_7">Unload </span><span class="span_7">Pyrometer</span><span class="span_7">Profile and go to Prediction mode</span> – If the verification profile does not meet Pyrometer Profiling criteria or is out of spec, it can’t be used for Pyrometer Profiling.&#160; If you choose this option, you can predict changes to the profile in order to bring the profile back within its process specification.&#160; You will have to run at least one more profile in order to produce a profile that meets Pyrometer Profiling criteria.</li>
+        </ol>
+        <p>&#160;</p>
+        <p style="text-indent: 1in;"><span class="span_7">Note</span>: For an explanation of PP criteria, see <a href="Understanding_Virtual_Profiling.htm" style="color: #0000ff; text-decoration: underline;">Pyrometer Profiling</a>.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Historical_mode"></a>Historical Mode</h2>
+        <p>The PRI software has an historical mode feature. This feature allows you to view Pyrometer Profile data for any board processed when the PRI system has been running.&#160; Open the Profile Explorer and select any event other than a profile<span class="span_7">. </span>The <span class="span_7">Display the Graph and Statistics for this profile</span> button will change from a single graph button display to a <span class="span_7">HISTORY</span> button display, indicating there is Historical data associated with selected event. </p>
+        <p>&#160;</p>
+        <table align="center" class="table_2">
+            <thead>
+                <tr>
+                    <th class="th_6">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode.png" class="img_11" style="width: 127px;height: 64px;" />
+                        </p>
+                        <p class="Caption">Figure 89: Profile Explorer–<br />Display Graph and Statistics <br />for this profile</p>
+                    </th>
+                    <th class="th_6">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode_1.png" class="img_11" style="width: 124px;height: 64px;" />
+                        </p>
+                        <p class="Caption">Figure 90: Profile Explorer–<br />Display Historical Graph <br />and Statistics</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <h3 class="Heading3">&#160;</h3>
+        <h3 class="Heading3"><a name="Viewing_historical_data1"></a>View Historical Data while Running a Live Pyrometer Profile</h3>
+        <p>To view historical Pyrometer Profile data from the same PC while Pyrometer Profiling - live, you launch a separate <span class="PlainTextChar_1">KICHost.exe</span> file located in: <span class="PlainTextChar_1">C:\PRI\AppforViewer\KICHost.exe</span>.&#160; This opens a separate Profile Explorer that allows you to browse through the history of any product including the one currently running PP.&#160; Historical data will be available for any boards that have already exited the oven.</p>
+        <h3 class="Heading3"><a name="Virtual_Profiling1"></a>Historical Mode - General Tab</h3>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode_2.png" style="height: 338px;width: 624px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 91: Pyrometer Profiling History – General Tab</p>
+        <p>&#160;</p>
+        <p>The PRI software will display the baseline profile on the profile graph in a solid line format and the Pyrometer Profile appears on the profile graph in a dashed-line format.&#160; This display method allows you to easily distinguish between the baseline and Pyrometer profiles.</p>
+        <p>Below the profile graph, the Pyrometer Profile and baseline profile statistics are displayed. Below the statistics, the Pyrometer Profile and baseline profile recipes are displayed.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3"><a name="VP_Historical_Graph_Controller"></a>Graph Controller</h3>
+        <table style="width: 100%;">
+            <col style="width: 397px;" />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p>The <span class="span_10">Graph Controller</span> settings allow you to modify the view of the PRI-profile graph.&#160; To open the Graph Controller, left click on the TC column header in the Statistics table.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Auto scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.&#160; When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y-axis scales of the profile graph.</p>
+                        <p>&#160;</p>
+                        <p><span class="span_7">TCs –</span> The TCs section is a list of the thermocouples used for the profile.&#160; If you wish to view the profile without a particular thermocouple, you can deselect it, or deselect the “All” check box, and choose only the thermocouples you wish to view. The software recalculates the PWI and updates the profile statistics based on the remaining thermocouples selected.&#160; You must select at least one product thermocouple</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller_1_1.png" style="width: 427px;height: 306px;" />
+                        <p class="Caption">Figure 92: Graph Controller </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <br />
+        </p>
+        <p><span class="span_7">TC Line Thickness</span><span class="span_7">–</span> The pull-down menu lets you select five different thicknesses for the TC lines drawn on the graph.&#160; </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Board Length </span><span class="span_7">–</span> Displays the board length defined when the profile was run</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Grid –</span> Enables/disables the view of the X and Y-Axis scales.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Reference lines –</span> Enables the view of Reference Lines displayed on the profile graph.&#160; These lines represent any temperatures referenced in the selected Process Window.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Zone lines – </span>Enables the view for the oven zone lines on the profile graph.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Predicted TCs only</span> - Removes the original profile plot from view, displaying only the prediction profile plot on the graph.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Original</span><span class="span_7"> TCs only</span> - Removes the predicted profile plot from view, displaying only the original profile plot on the graph.&#160; </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Zero decimal </span>– When viewing the Examine tool, this setting enables or disables the decimal display.&#160; When unchecked, the software will display one decimal point.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Internal temp </span>– Enables the view of the profiler’s internal temperature profile plot on the graph.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Display Detailed PWI</span> – With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values. </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Extra Cooling Slope</span> – Enabling this feature displays multiple Cooling Slope measurements which are customizable by the user. </p>
+        <p>&#160;</p>
+        <p><span class="span_7">Floating O2 PPM display</span> – When the <span class="span_6">O2 Live</span> option is purchased, you can enable/disable a window on the graph that shows the O2 measurement recorded during that profile. See the <a href="Remote_Process_Monitoring.htm#O2_Live" style="color: #0000ff; text-decoration: underline;">O2 Live (Optional)</a> section for details.</p>
+        <p>&#160;</p>
+        <p class="p_91"><span class="span_30">Automatic Calculation </span><span class="span_30">of</span><span class="span_30"> Delta T + Delta (Or Range) </span><span class="span_30">f</span><span class="span_30">or </span><span class="span_30">a</span><span class="span_30">ll Statistics</span>
+        </p>
+        <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.&#160; This is the range of the highest to the lowest value for any given specification.&#160; This information is strictly being displayed and is not factored in to the PWI value and is not used in the Navigator or Auto-focus calculations.&#160; </p>
+        <p>&#160;</p>
+        <p class="p_88">Examine Tool</p>
+        <table class="table_1">
+            <col style="width: 502px;" />
+            <col style="width: 170px;" />
+            <thead>
+                <tr>
+                    <th class="th_6">
+                        <p style="text-align: left;">You can also view the Delta T (∆T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.&#160; This will bring up a pointer and a chart will appear in the upper left corner of the graph.&#160; </p>
+                    </th>
+                    <th class="th_6">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/The Graph Controller_4.png" style="width: 159px;height: 127px;" alt="b" class="img_27" />
+                        </p>
+                        <p class="Caption">Figure 93: Examine Tool Display</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <p>Wherever the pointer moves across the profile, the following data appears:</p>
+        <ul>
+            <li class="li_14">The first column is the actual temperature for each TC, Original.</li>
+            <li class="li_14">The second column is the temperature of the predicted profile data – based on setpoint or belt speed changes.</li>
+            <li class="li_14">The Delta T for both actual and predicted TC data.</li>
+            <li class="li_14">The time during the profile at which the pointer is placed</li>
+        </ul>
+        <p class="ListParagraph_3">&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling5"></a>Historical Mode - Description Tab</h2>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller_1_2.png" />
+        </p>
+        <p class="Caption">Figure 94: Pyrometer Profiling History – Description Tab</p>
+        <p>&#160;</p>
+        <p>In Historical mode the Description tab displays the Baseline profile description notes. Below the description area, the Pyrometer Profile and baseline statistics, and recipes are displayed.&#160; In the bottom-left corner, the PWI (and the barcode number, if enabled) for the selected board appears.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling2"></a>Historical Mode - Chart Tab</h2>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Graph Controller_1_3.png" style="width: 711px;height: 383px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 95: Pyrometer Profiling History – Chart Tab, all charts</p>
+        <p>&#160;</p>
+        <p>The Chart tab will display a control chart for the overall profile PWI and for each individual process specification with alarm limits as defined in the Process Window setup.&#160; The chart data will coincide with the Pyrometer Profile data for the selected board, date and time.</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">View Control Charts</h5>
+        <p>Depending on the screen resolution, setting of the computer not all charts may fit within the screen area.&#160; Use the buttons in the upper-right corner of the Chart tab to select the number of charts to display and toggle between then.&#160; </p>
+        <p>&#160;</p>
+        <p>The control charts hold all of the historical Pyrometer Profile data for your product as selected in the Profile Explorer.&#160; Each data point on each chart represents a board that has passed through your oven.</p>
+        <p>&#160;</p>
+        <p><span class="span_7">Board selector line -</span> Each chart has a Board Selector Line at specific board #.&#160; The board # appears at the top of the screen, along with the date and time that board # was entered into the PRI system.&#160; You can move the Board Selector line position by clicking and dragging the small triangle at the bottom of the Board Selector line.</p>
+        <p>&#160;</p>
+        <p>The Maximum PWI and Cpk for the selected board, date and time are highlighted above the corresponding chart(s).</p>
+        <p>&#160;</p>
+        <p>Each chart contains data for every product thermocouple used during the profile.&#160; Below the charts you can de-select the TCs that you wish to remove from the control chart display.&#160; De-selecting a TC will remove the data for that TC from each control chart.&#160; Click the check box again to display the data for that TC.&#160; In the bottom-left corner, the PWI (and the barcode number, if enabled) for the selected board appears.</p>
+        <p>&#160;</p>
+        <h5 class="Heading5">View Chart Data</h5>
+        <p>To view individual chart data, click inside the chart area of your choice.&#160; This will display that chart in a full screen format.&#160; Move the mouse pointer over the chart data, and a display box will appear.&#160; This display box data includes barcode number, PWI, Cpk, date, and time for each board.&#160; The date and time for the last board to exit the oven appears at the bottom of the full screen chart.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">History Mode Chart Options Menu</h3>
+        <p>&#160;</p>
+        <p class="p_12">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/History Mode Chart Options.png" style="width: 158px;height: 79px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 96: History mode-Chart Options Menu</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><span class="span_7">Meter window –</span> Right click anywhere in the full screen chart area.&#160; The Chart Options menu will appear, select Meter Window.&#160; This will display a small data box in the upper-left corner of the profile graph.&#160; This data box will display the historical – statistic data for any selected board.&#160; To select a board move your mouse pointer along the chart data, at each data point the historical – statistic data for that board appears.&#160; Right-click in the chart area again and de-select Meter Window to disable this feature.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><span class="span_7">Point protector –</span> When this feature is enabled, the software will display individual data points for each board.&#160; A small square shaped data point represents a production board.&#160; A small circle shaped data point represents a profile board.&#160; To activate this feature right click anywhere in the full screen chart area.&#160; A menu will appear, select Point Protector.&#160; This will display the individual data points on each control chart.&#160; De-selecting this feature will remove the data points from the control chart, showing only a plot of the same data.&#160; By default, the Point Protector is enabled for charts containing 20 boards or less.&#160; Click in the full screen chart area again to return to the regular Chart tab view.</li>
+        </ul>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li><span class="span_7">Event History-</span> This feature is enabled as a default setting in the software.&#160; When viewing the charts tab while in History mode an Event History dialog box appears.&#160; The Event History dialog box will contain a list of all alarms and alarm related events that happened during the (selected) Pyrometer Profile.&#160; </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="p_12">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/History Mode Chart Options_1.png" style="height: 139px;width: 401px;" alt="Graphical user interface, table&#xA;&#xA;Description automatically generated with medium confidence" class="img_11" />
+        </p>
+        <p class="Caption">Figure 97: Event History dialog box</p>
+        <p>&#160;</p>
+        <p class="p_107"><span class="span_7">Disabling Event History Display</span> - Right click anywhere in the full screen chart area.&#160; The Chart Options menu will appear, select the Event History option.&#160; </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p class="p_102">Charts Tab Buttons</p>
+        <p>The Charts tab will have two extra buttons found only on this screen:</p>
+        <table class="table_1">
+            <thead>
+                <tr>
+                    <th class="th_6">
+                        <p class="p_11">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/History Mode Chart Options_2.png" style="height: 48px;width: 29px;" class="img_11" />
+                        </p>
+                    </th>
+                    <th class="th_6">
+                        <p class="p_13" style="text-align: left;"><span class="span_7">Scroll backwards in time</span> – Clicking on the green left arrowhead will result in displaying the <span class="span_6">previous</span> set of pyrometer profiled boards.</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_23">
+                        <p class="p_11">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/History Mode Chart Options_3.png" style="height: 50px;width: 31px;" class="img_11" />
+                        </p>
+                    </td>
+                    <td class="td_23">
+                        <p class="p_11" style="text-align: left;"><span class="span_7">Scroll forward in time</span> – Clicking on the green right arrowhead will result in displaying the <span class="span_6">next</span> set of Pyrometer Profiled boards.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="p_93"><span class="span_7">Note</span><span class="span_6">:</span> Each chart can display a maximum of 100 data points (boards) at any given time.&#160; Every 100 data points are considered a set of data.&#160; A set of data can contain up to 100 data points, or if the production run was stopped before 100 boards were processed, a data set may contain less than 100 data points.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling3"></a>Historical Mode - Troubleshooting Tab</h2>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode Troubleshooting.png" style="width: 811px;height: 438px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 98: Pyrometer Profiling History – Troubleshooting Tab</p>
+        <p>&#160;</p>
+        <p>The Troubleshooting tab shows historical pyrometer and conveyor speed deviation.&#160; The Board #, date and time appears at the top of the screen.&#160; To change the board #, go to the Charts tab and move the Board Selector Line to a different board (#) number.&#160; The PWI for the selected board appears in the bottom-left corner.</p>
+        <p>&#160;</p>
+        <p>Depending on your oven and needs, the number of pyrometers required will change. On the screen, each zone is displayed on the TS tabs within the vertical gray lines.&#160; </p>
+        <h5 class="Heading5" style="font-size: 6pt;">&#160;</h5>
+        <h5 class="Heading5">Historical Mode Buttons</h5>
+        <p>While in Pyrometer Profiling - Historical mode, the software displays four buttons at the bottom of the screen.</p>
+        <p>&#160;</p>
+        <table class="table_1">
+            <thead>
+                <tr style="height: 50pt;">
+                    <th class="th_6">
+                        <p class="p_27">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons.png" style="height: 47px;width: 88px;" class="img_11" />
+                        </p>
+                    </th>
+                    <th class="th_7">
+                        <p style="text-align: left;"><span class="span_7">View/Edit Process Window – </span>This lets you view and edit the process window specifications and limits.</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 52pt;">
+                    <td class="td_23">
+                        <p class="p_27">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons_1.png" style="height: 47px;width: 88px;" class="img_11" />
+                        </p>
+                    </td>
+                    <td class="td_62">
+                        <p><span class="span_7">Copy to Clipboard – </span>This button copies the profile or Pyrometer Profile data to the clipboard for use with third-party software such as a spreadsheet application, or SPC software.</p>
+                    </td>
+                </tr>
+                <tr style="height: 58pt;">
+                    <td class="td_23">
+                        <p class="p_27">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons_2.png" style="height: 47px;width: 88px;" class="img_11" />
+                        </p>
+                    </td>
+                    <td class="td_62">
+                        <p><span class="span_7">Print – </span>This button will print the current profile as displayed on the General Tab.</p>
+                        <blockquote>
+                            <p><span class="span_7">Note</span>: If you wish to print a tab besides the General tab, pressing F9 on your keyboard will print the contents of any screen in the software.</p>
+                        </blockquote>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_23">
+                        <p class="p_27">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode Troubleshooting_1.png" style="height: 48px;width: 88px;" class="img_11" />
+                        </p>
+                    </td>
+                    <td class="td_62">
+                        <p><span class="span_7">Profile Explorer – </span>This button will return you to the Profile Explorer.&#160; Click this button when finished viewing historical Pyrometer Profile data.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 class="Heading1">&#160;</h1>
+        <h1 class="Heading1"><a name="Barcode_Functions"></a>Barcode Functions</h1>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Historical Mode Troubleshooting_2.png" style="width: 160px;height: 87px;" class="img_11" />
+        </p>
+        <p>&#160;</p>
+        <p>PRI software has two main barcode functions, <span class="span_6">Process Traceability</span>, and <span class="span_6">Process Control</span>.&#160; For either barcode function, the barcode scanners connect directly to the DAU-Alarm/Barcode port or to the pigtail connector of the alarm relay-cable if an alarm relay is also being used.&#160; The Alarm Relay is required for use of the Process Control barcode function. Alternatively, a Serial or USB scanner can also be connected directly to the PC running the PRI software. See <a href="Appendix_C.htm#Barcode_Tab"><i style="color: #0000ff; text-decoration: underline;">Appendix C – Barcode</i></a> for more information.</p>
+        <h3 class="Heading3">Process Traceability (PT)</h3>
+        <p>The Process Traceability function enables process traceability with profile data for every product linked to its barcode number.&#160; The software will match the barcode number and complete process data to every single production board recorded by the system.&#160; The Process Traceability Barcode function can be used with or without the Process Control function.</p>
+        <h3 class="Heading3">Process Control (PC)</h3>
+        <p>The Process Control function enables process control by reading the product barcode label before the product enters the oven and confirms that a specific area of the barcode correlates to a specified product.&#160; If the barcode string value matches the current process string value, production continues as normal.&#160; If the incoming barcode string value differs from your defined string value, an alarm is activated and the process can be stopped until the operator acknowledges the alarm and takes the proper action. In order to utilize the Process Control feature, your barcode strings need to contain at least one character (referred to as a “String”) that is common to all boards in a production run. For example, when running “Product A”, all barcode labels for “Product A” would be “ABCxxxx”, where “ABC” would represent the common characters (String) on each barcode label, and “xxxx” would represent the rest of the barcode characters, which would typically be unique to each individual board. The common character string can fall anywhere within the barcode. The barcode functions can be used together or separately.&#160; There are multiple ways to install the barcode hardware.&#160; The correct method will be determined by the KIC hardware and your barcode labeling techniques.</p>
+        <h3 class="Heading3">Barcode Product Sensor</h3>
+        <p>The Barcode Product Sensor (BPS) is an optional product sensor used exclusively with the barcode option for improved functionality. </p>
+        <p>&#160;</p>
+        <p>Using the BPS, the PRI system is able to determine if any given product has had its barcode label successfully scanned.&#160; If a product triggers the sensor and there is no barcode string read into the software, the system will give a NO READ alarm.&#160; (Alarm 5C)</p>
+        <h3 class="Heading3">Scanners</h3>
+        <p>The PRI barcode option is offered as a <span class="span_13">software only</span> option.&#160; You must provide the serial port or USB barcode scanner, support/ utility software, all communication cabling, and mounting hardware.</p>
+        <p>&#160;</p>
+        <p class="p_16">Here are some important points to consider when planning to use PRI with the barcode option:</p>
+        <ol>
+            <li>The barcode reader must have either a 9-pin D-Sub serial connector (RS-232) for communication or be a USB model that can be programmable for Serial Port interface.</li>
+            <li>Barcode readers with Raster scan (multi-scan) are recommended</li>
+            <li>Barcode reader must be capable of the following communication settings:<p>&#160;</p><p><b>Baud Rate: 9600 bits/sec, Data Bits: 8, Parity: None, Stop Bits: 1</b></p><p>&#160;</p></li>
+            <li>The scanner(s) must be programmed to have both a “Line Feed” and “Carriage Return” after each string is scanned.</li>
+            <li>The scanner must be programmed for a single output for each board scanned.</li>
+            <li>You will need the barcode reader utility software in order to configure the barcode reader.</li>
+            <li>Non-standard cabling may be required for multiple barcode applications.</li>
+        </ol>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Barcode_types"></a>Barcode Types</h2>
+        <p>Since the software does not actually read the barcode labels, you can use any barcode type that your barcode scanner is capable of reading.&#160; Verify your barcode scanner can read the barcode type prior to KIC installation.&#160; Refer to the scanner manufacturer for programming of the settings.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2">Configuration Overview</h2>
+        <ol start="1">
+            <li>Program the barcode scanner settings using the software utility that is provided by the scanner manufacturer.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="2">
+            <li>Select desired functions/settings in the Barcode tab of the Configuration Program, and then enable the barcode option(s) in Global Preferences.&#160; The PRI Hardware Status screen will help you verify your barcode reader is connected properly.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol start="3">
+            <li>Test the hardware connection.</li>
+        </ol>
+        <p>&#160;</p>
+        <h3 class="Heading3">Configure and Test the System</h3>
+        <p>Start by ensuring that the Barcode software key is properly connected to your PC.&#160; Verify the software key is correctly installed by viewing the Hardware Status screen.&#160; Confirmation appears in the Software Key field.&#160; </p>
+        <p>&#160;</p>
+        <p>If you do not see confirmation displayed, check the following:</p>
+        <p>&#160;</p>
+        <ul>
+            <li class="li_6">Check to make sure software key is properly installed and correctly seated.</li>
+            <li class="li_6">Check to make sure the key you have is programmed for Barcodes.</li>
+            <li>Check to make sure the USB port is functional.</li>
+        </ul>
+        <p class="p_3">&#160;</p>
+        <table style="width: 100%;">
+            <col style="width: 400px;" />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="p_3">&#160;</p>
+                        <ol>
+                            <li>Shut down the PRI software and in the C:\PRI directory run the ConfigurationProgram.exe</li>
+                            <li>Select the Barcode tab and select the applicable configuration.</li>
+                            <li>Click Apply then OK to save the changes and close the application.</li>
+                            <li>Restart the PRI software.<br />NOTE: See the <a href="Appendix_C.htm#Barcode_Tab"><span class="Hyperlink">Barcode Tab</span></a> section in Appendix C for more details on each setting.</li>
+                        </ol>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Scanners.png" style="width: 443px;height: 422px;" />
+                        <p class="Caption" style="text-align: left;">Figure 99: Barcode Tab Config Program</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>Open the PRI software.&#160; From the main menu, select the <span class="span_7">Global Preferences</span> button, and then select the <span class="span_10">Barcode</span> tab.&#160; Select the Barcode option(s) that apply.<br /><br /></li>
+                            <li>There are several possible barcode hardware configurations.&#160; The correct barcode configuration will depend on the KIC hardware and barcode labeling technique.&#160; For barcode type configuration details, see the section titled <a href="#Barcode_types"><span class="Hyperlink">Barcode Types</span></a>.&#160; <br /><br /></li>
+                            <li>Select your barcode function(s) and enter any measurements that apply.&#160; The Missing Barcode Alarm feature is only for the Process Traceability function.<br />Click the check button to save and return to the main screen.</li>
+                        </ol>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Scanners_1.png" style="width: 435px;height: 381px;" />
+                        <p class="Caption" style="text-align: left;">Figure 100: Barcode Tab – Global</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_3">
+            <br />
+        </p>
+        <h3 class="Heading3">View Barcode Data on the Hardware Status Screen</h3>
+        <p><span class="span_7">Hardware Status</span> – Once a barcode function is enabled, a barcode field is added to the Hardware Status screen as seen below.</p>
+        <p style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Hardware Status_1.png" />
+        </p>
+        <p class="Caption">Figure 101: Barcode – Hardware Status</p>
+        <p class="Caption">&#160;</p>
+        <p>Scan a barcode and the barcode string will appear in the Barcode section, .&#160; In order to view the barcode value, the conveyor must be moving.&#160; The barcode information will not display until the encoder begins moving.</p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Test with The Barcode Log Configuration File</h3>
+        <p><span class="span_7">Barcode Log</span> - You can also verify that the barcode feature is configured properly or for troubleshooting purposes by viewing the Barcode-Log file.&#160; If the barcode scanner hardware is connected and functioning properly, the system generates a log file.&#160; Every barcode value read by the system is logged and viewable.</p>
+        <p>&#160;</p>
+        <p>To view the barcode-log file go to <span class="PlainTextChar_1">C:\PRI\Log\barcodeLog.txt</span>.&#160; This file will list the date, time, and barcode value for each barcode read into the software.&#160; </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Virtual_Profiling_and_Barcodes"></a>Pyrometer Profiling and Barcodes</h2>
+        <p class="p_18"><span class="span_7">Note</span>: The barcode option requires a software key in order to function.&#160; The software key must remain connected at all times during use.&#160; </p>
+        <h3 class="Heading3"><a name="Enable_Barcoding_Per_Product"></a>Enable Barcoding Per Product </h3>
+        <p>You can turn on or off the Process Control and Traceability functions on a per product basis. When the Barcode feature is active, in Profile Explorer you will find checkboxes for the two different functions to the right of each product folder. These checkboxes allow you turn on/off the feature independently for each product:</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Pyrometer Profiling and Barcodes.png" style="height: 80px;width: 624px;" class="img_11" />
+        </p>
+        <p class="Caption">Figure 102: Barcode enable – Profile Explorer</p>
+        <p class="p_3">&#160;</p>
+        <h3 class="Heading3">Process Control</h3>
+        <p>When Pyrometer Profiling is started, the system produces the Barcode Process Control dialog box.&#160; This dialog box gives you the opportunity to:</p>
+        <p>&#160;</p>
+        <ul>
+            <li>Enter or change the Process Control String.</li>
+            <li>Disable Process Control for this Pyrometer Profile run.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>As long as the Process Control function is enabled, this dialog box will appear every time Pyrometer Profiling is started.&#160; </p>
+        <p>&#160;</p>
+        <p>For Process Control you are required to enter the barcode String that is specific to the product that is running.&#160; The software reads the incoming String and compares the barcode string to that of the Process Control String, for every product.&#160; If the string values differ, an alarm is activated, and the process is stopped via the alarm relay device.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Pyrometer Profiling and Barcodes_1.png" style="height: 216px;width: 412px;" class="img_27" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">103</span><span class="span_20">: Barcode Process Control dialog</span>
+        </p>
+        <p>&#160;</p>
+        <h4 class="Heading4">Barcode Product Sensor (BPS)</h4>
+        <p>PRI systems using the optional BPS and Process Control barcode function will have the ability to activate an alarm if a products barcode label is not read.</p>
+        <p>&#160;</p>
+        <p>When the BPS detects a product whose barcode label has not been read, or the BPS is tripped accidentally, an alarm is activated, and the process is stopped via the alarm relay.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3.png" style="height: 180px;width: 285px;" alt="A picture containing text&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_4">Figure </span><span class="span_4">104</span><span class="span_4">: Alarm 5C</span>
+        </p>
+        <p>Control buttons on the screen let you:</p>
+        <ul style="list-style-type: square;">
+            <li>Manually reenter the barcode, using the keyboard or a handheld scanner</li>
+            <li>Rescan the barcode with a mounted scanner</li>
+            <li>Continue production without the barcode</li>
+            <li>Remove the board from the line</li>
+        </ul>
+        <h3 class="Heading3">Traceability </h3>
+        <p>The Traceability function enables process traceability with profile data for every product linked to its barcode number. When installed on a load conveyor, the scanner reads barcode labels before the products enter the oven.&#160; If the barcode label is not read, the process is stopped before the product enters the oven.&#160; This method requires use of the Alarm Relay, and load conveyor.</p>
+        <p>&#160;</p>
+        <p>PRI systems using a BPS and Process traceability barcode function will have the ability to activate an alarm if a products barcode label is not read. When the BPS detects a product whose barcode label has not been read, or the BPS is tripped accidentally, an alarm is activated and the process is stopped via the Alarm Relay.&#160;&#160; </p>
+        <p>&#160;</p>
+        <p>Control buttons on the screen let you:</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Manually reenter the barcode, using the keyboard or a handheld scanner</li>
+            <li>Rescan the barcode with a mounted scanner</li>
+            <li>Continue production without the barcode</li>
+            <li>Remove the board from the line.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_1.png" style="height: 183px;width: 282px;" class="img_11" />
+        </p>
+        <p class="p_23"><span class="span_20">Figure </span><span class="span_20">105</span><span class="span_20">: Alarm 5a</span>
+        </p>
+        <h3 class="Heading3"><a name="Display_the_Current_Barcode_Queue"></a>Display Barcode Queue</h3>
+        <p>A button for the barcode queue is available on the Graph, Description, Charts, and Troubleshooting screens during a live PP. This allows a user to remove a product and its associated barcode string from the line before the product enters the oven. The software will display this button even if all barcode options are disabled. When hovering the mouse over the button, a tool tip “Display Barcode Queue” will display.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_2.png" style="height: 119px;width: 511px;" alt="Graphical user interface, application&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 106: Barcode Queue</p>
+        <p class="Caption">&#160;</p>
+        <h4 class="Heading4">Barcode Queue </h4>
+        <p>When opened, the <span class="span_7">Barcode Queue</span> shows a list of all the barcodes currently in the queue in order. The next barcode to be assigned to a board appears at the top of the list. A barcode is automatically removed from the list after the board has completely passed the entrance board sensor.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_3.png" style="width: 477px;height: 269px;" alt="Graphical user interface, application, Word&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 107: Display Barcode Queue</p>
+        <p>&#160;</p>
+        <p>The <span class="span_7">Remove</span> button is disabled by default. When you select a barcode, the <span class="span_7">Remove</span> button becomes active.</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_4.png" style="width: 467px;height: 264px;" alt="Graphical user interface, application, Word&#xA;&#xA;Description automatically generated" class="img_11" />
+        </p>
+        <p class="Caption">Figure 108: Remove Barcode</p>
+        <p class="Caption_4">&#160;</p>
+        <p>When removing a barcode string, click <span class="span_7">Yes</span> on the window that asks you to “<span class="span_6">Confirm you want to delete this barcode string from the queue</span>?” <br />Clicking <span class="span_7">No</span> returns the user to the Barcode queue window.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_5.png" class="img_11" />
+        </p>
+        <p class="Caption">Figure 109: Confirm remove</p>
+        <p>&#160;</p>
+        <p>The software then removes that string from the queue and the next string in line will be assigned to the next board.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_6.png" style="width: 442px;height: 252px;" />
+        </p>
+        <p class="Caption">Figure 110: Updated queue</p>
+        <p>&#160;</p>
+        <p>In the example below, barcode VT0002 had been removed from a queue, and you can see it is reflected in the board data.</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/SFT-324400-000 PRI User Manual_3_7.png" class="img_11" />
+        </p>
+        <p class="Caption">Figure 111: Removed barcode</p>
+        <p class="p_3">&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Viewing_barcode"></a>View Barcode Traceability Information Historical Data</h2>
+        <p>In the Profile Explorer screen, there is a Barcode button located at the bottom of the page.&#160; Select this button to search for specific bar-coded products and view their profile information for the date/time they were processed.&#160; A dialog box appears with a field to enter the barcode string with a Search button next to it<span class="span_19">.</span>&#160; You can enter the value using the keyboard, or by selecting the scanner check box and then using the barcode scanner to scan the actual barcode eliminating the need to enter the value manually.&#160; </p>
+        <p><a name="Searching_for_barcode"></a>
+        </p>
+        <p>Below this is a field that will list the time, date and PWI for that barcode, if it exists for the chosen product.&#160; Either double-click the listing or highlight it and then click the View Selected Profile button.&#160; This will bring you to the Historical Pyrometer Profile graph for that board. </p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/View Barcode Traceability.png" style="width: 549px;height: 346px;" class="img_27" />
+        </p>
+        <p class="Caption">Figure 112: Barcode Search</p>
+        <p class="Caption">&#160;</p>
+        <p class="p_23">&#160;</p>
+        <p>The software will display the barcode value in the bottom-Left corner of the Pyrometer Profile screen: </p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/View Barcode Traceability_1.png" class="img_11" />
+        </p>
+        <p class="Caption">Figure 113: Pyrometer Profiling – Chart Tab </p>
+        <p class="Caption">&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Live_Data_Output_and"></a>Live Data Output And Barcodes</h2>
+        <p>The <span class="span_7">Live Data Output</span> (LDO) function will output the thermal process data to a file.&#160; The thermal process data will include barcode information for every board when both Barcode Traceability and the Live Data Output feature is enabled.&#160; </p>
+        <p>&#160;</p>
+        <p>Below is an example of the <span class="PlainTextChar_1">KIC_PRI_LiveDataOutput.txt</span> file that is generated by the system when LDO is active.&#160; </p>
+        <p>&#160;</p>
+        <p style="text-indent: 0.5in;"><span class="span_7">Note</span>: the tables below were created by importing the LDO data file into Microsoft Excel.</p>
+        <p>&#160;</p>
+        <p class="p_3" style="text-align: left;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Live Data Output And Barcodes.png" style="width: 667px;height: 427px;" />
+        </p>
+        <p class="Caption">Figure 114: Example Live Data Output text file</p>
+        <p>&#160;</p>
+    </body>
+</html>

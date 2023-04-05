@@ -23,7 +23,7 @@
                     <p>The list of product folders is in the upper left of the Profile Explorer.  Click on the magnification glass button at the top left to search for a product name. </p>
                     <p>&#160;</p>
                     <ul style="list-style-type: square;">
-                        <li>By default, the time/date listed in the <i>Last Modified</i> column will show the date/time of the last completed VP. Alternatively, you can select the time/date to be based only on baseline profiles by right-clicking on the <i>Last Modified</i> button and selecting <i>Most recent profile/profile modification.</i></li>
+                        <li>By default, the time/date listed in the <i>Last Modified</i> column will show the date/time of the last completed VP. Alternatively, you can select the time/date to be based only on baseline profiles by right-clicking on the <b>Last Modified</b> button and selecting <b>Most recent profile/profile modification.</b></li>
                     </ul>
                     <p>&#160;</p>
                     <ul style="list-style-type: square;">
@@ -36,14 +36,15 @@
                     </ul>
                     <p>&#160;</p>
                     <ul style="list-style-type: square;">
-                        <li>Double-click the profile to display the graph and statistics for that profile. Clicking the “<i>Display Graph…</i>” button can also do this.<br /><br /><b>Note:</b> If the profile is labeled as “Bad” or if, for any reason, the automatic system software cannot display it, the profile is automatically copied to the Clipboard so that you can use a third-party app such as MS-Excel to view the data.</li>
+                        <li>Double-click the profile to display the graph and statistics for that profile. Clicking the <i style="font-weight: bold;">Display Graph…</i> button can also do this.<br /><br /><b>Note:</b> If the profile is labeled as “Bad” or if, for any reason, the automatic system software cannot display it, the profile is automatically copied to the Clipboard so that you can use a third-party app such as MS-Excel to view the data.</li>
                     </ul>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Browsing_for_Historical"></a>Browse for Historical Data</h2>
                     <p>The current Data Path for the data viewed in the Profile Explorer appears in the upper-right corner.&#160; The data path appears grayed out if running in production mode.&#160; It will be active, if you clicked on the, I am not going to Profile or Virtual Profile button (enabling History mode), when first launching the software.</p>
                     <p>&#160;</p>
-                    <p class="p_26">The data path can be changed but must be done so through the <span class="span_16">\</span><span class="span_16">software&#160;root&#160;directory</span><span class="span_16">\Log\KIC2000DataPath.kiccfg</span> file.</p>
+                    <p>The data path can be changed but must be done so through the </p>
+                    <p><span class="span_16">C:\</span><span class="span_16">software&#160;root&#160;directory</span><span class="span_16">\Log\KIC2000DataPath.kiccfg</span> file.</p>
                     <p>&#160;</p>
                     <p>To view historical Virtual Profile data from the same PC while Virtual Profiling is live, you launch a separate Host.exe file located: <span class="span_16">C:\</span><span class="span_16">software&#160;root&#160;directory\APP</span><span class="span_16">forViewer\KICHost.exe</span>.&#160; This will open a separate Profile Explorer that will allow you to browse through the history of any product including the one currently running VP.&#160; Historical data will be available for any boards that have already exited the oven.</p>
                     <p>&#160;</p>
@@ -176,7 +177,9 @@
                         <tr>
                             <td>
                                 <p class="ListBullet"><span class="span_11">Show VP – </span>Display all VP Start and Stop events for the selected product.</p>
+                                <p class="ListBullet" style="font-size: 6pt;">&#160;</p>
                                 <p class="ListBullet"><span class="span_11">Show Profiles –</span> Display the Profiles for the selected product.</p>
+                                <p class="ListBullet" style="font-size: 6pt;">&#160;</p>
                                 <p class="ListBullet"><span class="span_11">Show Alarms –</span> Display the Alarm state changes for the selected product. </p>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
@@ -188,8 +191,7 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> Double click any event to view the details including alarm event history.  If two alarm/alert acknowledgements appear at the same time, only one will appear in Profile Explorer.</p>
+                    <p class="ListParagraph"><b>Note:</b> Double click any event to view the details including alarm event history.  If two alarm/alert acknowledgements appear at the same time, only one will appear in Profile Explorer.</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Profile_Explorer_VP"></a>Profile Explorer – Virtual Profiling</h2>
@@ -294,7 +296,7 @@
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Access_History_Data_Backup_Files"></a>Access History Data Backup Files</h2>
-                    <p>As the software processes Virtual Profiles, it logs data files to a <span style="font-family: 'Courier New'; font-style: italic;">Profiles</span> folder that later can be analyzed.&#160; It automatically stores these <span class="span_12">Event</span> and <span class="span_12">VPdata</span> files associated with each specific product to a <i style="font-family: 'Courier New';">History</i> folder.&#160; </p>
+                    <p>As the software processes Virtual Profiles, it logs data files to a <i>Profiles</i> folder that later can be analyzed.&#160; It automatically stores these <span class="span_12">Event</span> and <span class="span_12">VPdata</span> files associated with each specific product to a <i>History</i> folder.&#160; </p>
                     <p>&#160;</p>
                     <p class="p_20">
                         <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000073.png" style="height: 158px;width: 600px;" class="img_1" />
@@ -302,11 +304,11 @@
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Inserting_data_files"></a>Insert Data Files from an Outside Source</h2>
-                    <p>If you receive data files via disc or email, you can copy them to the <span style="font-family: 'Courier New'; font-size: 9pt;">software root directory\Profiles</span> folder in Windows Explorer. The next time you enter the Profile Explorer screen the software will automatically create folders for those profiles based on the profile name and put the profiles in the folders.</p>
+                    <p>If you receive data files via disc or email, you can copy them to the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\Software root directory\Profiles</span> folder in Windows Explorer. The next time you enter the Profile Explorer screen the software will automatically create folders for those profiles based on the profile name and put the profiles in the folders.</p>
                     <h2 class="Heading2"><a name="Renaming_profiles"></a>Rename Profiles</h2>
                     <p>In situations that require it, you have the ability to edit the profile name. This can be especially useful when products are very similar but have different names.&#160; Once the profile has been optimized, it can be renamed and used as a baseline profile for similar products if the need arises.&#160; This eliminates the need to re-profile similar products unnecessarily.</p>
                     <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Renaming a profile includes the name that is embedded in the profile that shows up on the printout</p>
+                    <p class="ListBullet_2"><span class="span_11">Note</span>: Renaming a profile includes the name that is embedded in the profile that shows up on the printout</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_3">
                         <li class="ListParagraph">Manually create a new folder in the <span class="span_16">C:\software&#160;root&#160;directory</span> \Profiles folder using the new product name. </li>
@@ -319,9 +321,8 @@
                         <li class="ListParagraph_5">None of the files on the PC are actually renamed, when viewing the profiles in Profile Explorer, they all look the same.&#160; However, profiles run after the name has been changed will use the new product name as part of their file names </li>
                     </ul>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Virtual Profiling will be most accurate for products that have their own baseline profile.</p>
-                    <p>&#160;</p>
+                    <p class="ListParagraph"><span class="span_11">Note</span>: Virtual Profiling will be most accurate for products that have their own baseline profile.</p>
+                    <p class="p_05Inch">&#160;</p>
                     <h1 class="Heading1"><a name="Understanding_Virtual_Profiling"></a>Virtual Profiling</h1>
                     <p><span class="span_12">Virtual Profiling</span> (VP) is a means of reliably predicting the thermal profile <span class="span_12">of every board in a production run</span> based on a comparison of real-time temperature and conveyor speed data against a <span class="span_12">baseline</span> profile established by an earlier profiler run through the oven.&#160; For a given product, this baseline needs to represent an optimum oven recipe with a good PWI value and a quality soldering result.</p>
                     <p>&#160;</p>
@@ -387,9 +388,9 @@
                         </tr>
                     </table>
                     <p class="ListNumber2">&#160;</p>
-                    <p class="ListParagraph"><span class="span_11" style="text-decoration: underline;">Caution</span>: Your software security key must be connected prior to enabling Virtual Profile mode.&#160; If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message will be displayed.&#160; </p>
+                    <p><span class="span_11" style="text-decoration: underline;">Caution</span>: Your software security key must be connected prior to enabling Virtual Profile mode.&#160; If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message will be displayed.&#160; </p>
                     <p class="ListParagraph">&#160;</p>
-                    <p class="ListParagraph"><span class="span_11">Tip</span>: If your oven is capable of communicating with the software, a dialog box will appear notifying you that Virtual Profile is starting and the oven recipe will be changed automatically.</p>
+                    <p><span class="span_11">Tip</span>: If your oven is capable of communicating with the software, a dialog box will appear notifying you that Virtual Profile is starting and the oven recipe will be changed automatically.</p>
                     <p>&#160;</p>
                     <p>If your software is not communicating directly with the oven controller, the software will display the Baseline profile recipe.&#160; Make sure the oven is set to the exact recipe settings.</p>
                     <p>&#160;</p>
@@ -405,7 +406,7 @@
                     </p>
                     <p class="Caption">Figure 57: Virtual Profiling – Oven Recipe set correctly</p>
                     <p>&#160;</p>
-                    <p class="ListParagraph"><span class="span_11">Tip</span>: Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang.</p>
+                    <p><span class="span_11">Tip</span>: Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang.</p>
                     <p class="ListParagraph">&#160;</p>
                     <h2 class="Heading2"><a name="Using_the_Profile_Grouping_utility"></a>Use the Profile Grouping Utility</h2>
                     <p>The automatic system includes a utility that lets you identify and group together different products that share the same thermal profile.&#160; For example, one might use a physically identical printed circuit board to manufacture many distinct product models.&#160; The manufacturer needs to specifically identify and track all the different models, but the thermal process specifications used to solder or cure them is identical throughout the product range.&#160; Once a successful process setup is identified for one model, the feature lets you <span class="span_12">link</span> that setup with other models that can use the same process and thus save the time and cost of entering the same setup specifications repeatedly.&#160; In Virtual Profile mode, the baseline profile of a <span class="span_12">parent</span> <span class="span_12">product </span>can be matched to multiple <span class="span_12">child models</span>, permitting smooth production transitions between models.&#160; </p>
@@ -414,7 +415,7 @@
                         <img src="Resources/Images/z20.png" class="img_1" />
                     </p>
                     <p>&#160;</p>
-                    <p>You enable the <i>Profile Grouping</i> functionality by adjusting settings in the <b>KIC2000UserSettings.kiccfg</b> file, <span style="font-family: 'Courier New'; font-size: 9pt; font-style: italic;">C:\software root directory\Log\KIC2000UserSettings</span>.  Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
+                    <p>You enable the <i>Profile Grouping</i> functionality by adjusting settings in the <span style="font-family: 'Courier New';">KIC2000UserSettings.kiccfg</span> file, <span style="font-family: 'Courier New'; font-size: 9pt; font-style: italic;">C:\software root directory\Log\KIC2000UserSettings</span>.  Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
                     <p>&#160;</p>
                     <p class="ListParagraph" style="font-family: 'Courier New';">[APPLICATION CONFIGURATIONS]</p>
                     <p class="ListParagraph" style="font-family: 'Courier New';">EnableProfieGrouping=1</p>
@@ -572,7 +573,7 @@
                     </p>
                     <p>&#160;</p>
                     <ol start="6" class="ol_1">
-                        <li class="ListParagraph">Input the model number and select a product baseline profile from the <span class="span_11">Product Name</span> pull-down list.</li>
+                        <li class="ListParagraph">Input the model number and select a product baseline profile from the <i style="font-weight: bold;">Product Name</i> pull-down list.</li>
                     </ol>
                     <p class="p_10">&#160;</p>
                     <ol start="7" class="ol_1">

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 RPI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1"><a name="Using_dual_lane_systems"></a>Dual Lane Systems and Functionality
+                    </h1>
+                    <p>The automatic system can monitor production through dual lane reflow ovens. This section will define the unique capabilities of the dual lane configuration.</p>
+                    <p>&#160;</p>
+                    <p>A <i>Dual Lane-Dual System</i> configuration uses two instances of the software application to track different recipes through the oven.</p>
+                    <p>&#160;</p>
+                    <p>The <i>Dual Lane-Single System</i> tracks two lanes of the same recipe with one instance of the software.</p>
+                    <p>&#160;</p>
+                    <p>A radio button display during the installation routine lets you choose between the standard configuration or one of the dual lane setups.</p>
+                    <blockquote>
+                        <p><b>Note:</b> For more information about the hardware components of the system, see the <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut></p>
+                        <p>&#160;</p>
+                    </blockquote>
+                    <h2 class="Heading2"><a name="Dual_lane_dual_systems"></a>Dual Lane Dual Systems
+                    </h2>
+                    <p>A dual system installation features two distinct instances of the RPI software and a complete duplication of the thermal management hardware.  Dual systems include two:</p>
+                    <p>&#160;</p>
+                    <ul>
+                        <li>Pairs of probes</li>
+                        <li>Encoders</li>
+                        <li>eTPUs</li>
+                        <li>Board sensors</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 328px;" />
+                        <col style="width: 66px;" />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>Each RPI instance receives data from its own associated eTPU.  Each stores its logged data and executable subroutines in separate folders identified as either <i>front rail or back rail</i>.  (The front rail designates the lane closest to the lifting cover of the oven—the back rail designated the lane closest to the hinge of the oven cover.)</p>
+                            </td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/1an.png" style="width: 311px;height: 238px;" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>The two instances of the software permit using different recipes in each lane.  In the desktop toolbar, each RPI instance is represented by its own icon – F for Front Rail and B for Back Rail.</p>
+                    <p>
+                        <img src="Resources/Images/image71.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Dual_lane_single_systems"></a>Dual Lane Single Systems
+                    </h2>
+                    <p>The single system configuration uses only one RPI instance.  An installation includes one set of thermal management hardware supplemented with <i>an additional product sensor</i>.  One product sensor is associated with each lane.</p>
+                    <p>&#160;</p>
+                    <p>The single system uses the same recipe on both lanes but tracks two flows of product across the user interface.  When in Live Mode, the white rectangle icons track two boards through channels at the top of the General, Chart data, and Troubleshooting tab screens:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/1ak.png" /> </p>
+                    <p>&#160;</p>
+                    <p>The system calculates a separate data set for each board.  It accumulates historical data in a manner just like a single lane oven.  A “Lane Identifier” will be saved with the data from each board for identifying which lane the particular board was processed in.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Configure_Dual_Lane_Systems"></a>Configure Dual Lane Systems
+                    </h2>
+                    <p>During the software installation, you will have the option to select what type of system will be in use:</p>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>You would select <i style="font-weight: bold;">Dual Lane Dual System</i> if there is a complete system installed on <u>each</u> lane of the oven.</p>
+                                <p>&#160;</p>
+                                <p>You would select <i style="font-weight: bold;">Dual Lane Single System</i> if there is only <u>one</u> system installed across the two lanes of the oven.</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/image72.png" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>&#160;</p>
+                                <p>When <i style="font-weight: bold;">Dual Lane Dual System</i> is selected, as noted previously, there will be two separate software directories used – one for the “Front” and one for the “Back”. You will be able to choose whether you want to install the software for either one, or both directories.</p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/image73.png" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Dual Lane Configuration
+                    </h3>
+                    <p>Additional settings for a Dual Lane system configuration can be found in the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i> located in the <i style="font-family: 'Courier New';">C:\RPI</i>.</p>
+                    <p>&#160;</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col style="width: 20px;" />
+                        <col />
+                        <tr>
+                            <td>
+                                <p><b>Lane Configuration –</b> For a Dual Lane-Single System, this section allows you to specify the position of the Board Tracking display in the software for each lane.</p>
+                                <p>&#160;</p>
+                                <p><b>User defined label for Lanes –</b> By default, the software will label the lanes “Front” and “Back”. When the checkbox is checked, the drop-down menu allows you to select alternate designations for the lane names.</p>
+                                <p style="font-size: 6pt;">&#160;</p>
+                                <p><b>Note:</b> The Front Lane is always the lane closest to the front side of the machine.</p>
+                                <p>&#160;</p>
+                                <p><b>Dual Lane – Dual System Only –</b> When a Dual System is in use, there are two instances of the RPI software running – one for each lane. By default, a user must select the lane they want to see on the screen at any given time.</p>
+                                <p>When selecting this checkbox, the user can define an interval for the software “automatically” to switch over to the other lanes display after no input from the mouse cursor. </p>
+                                <p>&#160;</p>
+                            </td>
+                            <td>&#160;</td>
+                            <td>
+                                <p>
+                                    <img src="Resources/Images/image74.png" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <blockquote>
+                        <p><b>Note:</b> Automatic switching will only occur when both lanes are running a live VP.</p>
+                        <p>&#160;</p>
+                        <p><b>Note:</b> For Dual Lane Dual System installations, the settings in this configuration utility must be entered into both install directories – <span style="font-family: 'Courier New';">C:\RPI Front Rail</span> and <span style="font-family: 'Courier New';">C:\RPI Back Rail.</span></p>
+                    </blockquote>
+                    <p>On Dual Lane Dual Systems, when you select <i>User defined label for Lanes</i>, the selection chosen will display as a watermark on the Index, General, Description, Charts, and Troubleshooting screens. See example below:</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/image75.png" />
+                    </p>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Configuring to profile
+                    </h4>
+                    <table style="width: 100%;">
+                        <col style="width: 400px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>The profiler can only communicate with one lane at a time, so you must select which lane you want the profiler to connect to. Disconnect then reconnect the profiler (or Smart Dock/Base Station where applicable). A pop-up menu will display in the lower right of the screen allowing you to select which lane to connect to. Repeat these steps to change to the other lane.</p>
+                                </td>
+                                <td style="text-align: left;">&#160;&#160;&#160;&#160;&#160; <img src="Resources/Images/image135.png" style="width: 271px;height: 97px;" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Dual-Lane_DS_Barcode_Fuction"></a>Dual Lane Dual System Barcode Functions</h2>
+                    <p>The barcode features function the same way in a Dual Lane Dual System as they do for a single lane system. Please see Barcode section of this manual for more information.</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Dual-Lane_SS_Barcode_Fuction"></a>Dual Lane Single System Barcode Functions</h2>
+                    <p>This feature is adaptable to the two setup types specified below:</p>
+                    <p>&#160;</p>
+                    <ol>
+                        <li class="ListParagraph_14"><b>Single Scanner Configuration</b> - Single barcode scanner on the infeed conveyor that shuttles from the front lane to back lane.</li>
+                        <li class="ListParagraph_14"><b>Dual Scanner Configuration</b> - Two barcode scanners, one for the front lane infeed conveyor and one for the back lane infeed conveyor.</li>
+                    </ol>
+                    <h4 class="Heading4">&#160;</h4>
+                    <h4 class="Heading4">Single Scanner Configuration</h4>
+                    <table style="width: 100%;">
+                        <col>
+                        </col>
+                        <col>
+                        </col>
+                        <col>
+                        </col>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li class="li_10">Exit the software and run the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> located in the <i>C:\RPI </i>.
+
+</li>
+                                        <li class="li_10">Select the Barcode Tab, under <b style="font-style: italic;">Barcode Interface Method</b>, it will give you various methods for connecting your barcode sensor. <br></br><br></br>For Single Scanner configuration, either <i>eTPU</i>, <i>DAU Barcode Port</i>, or <i>PC COM</i> Port would typically be used. 
+</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00027.png">
+                                    </img>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="3">
+                                        <li>If <i style="font-weight: bold; font-style: normal;">PC COM Port</i> is selected, the <b style="text-decoration: underline; font-style: normal; font-weight: normal;">COM Port Configuration</b> section allows the user to configure the port settings. (See <a href="Monitoring_production_in_live_mode.htm#Barcodefunctions">Barcode section</a> for details)</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00028.png" style="width: 598px;height: 127px;">
+                                    </img>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="4">
+                                        <li>Additional configuration settings are available in <b style="font-style: normal;">Options</b> tab for further customization.</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00029.png" style="width: 595px;height: 111px;">
+                                    </img>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h4 class="Heading4">Dual Scanner Configuration</h4>
+                    <table style="width: 100%;">
+                        <col>
+                        </col>
+                        <col>
+                        </col>
+                        <col>
+                        </col>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Exit the software and run the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> located in the <span style="font-family: 'Courier New';">C:\RPI</span><i>directory</i>. <br /><![CDATA[
+
+]]></li>
+                                        <li>In the <i style="text-decoration: underline; font-style: normal;">Options</i> section, select <b style="font-style: italic;">Enable Front and Back Scanners</b>. This will allow the user to configure the two scanners for each lane.
+</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00030.png">
+                                    </img>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="3">
+                                        <li>The user can select the <b style="text-decoration: none; font-style: italic;">Use Scanner Prefix</b> option to define a custom name for both front and back lane scanner if they choose. </li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00031.png">
+                                    </img>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="4">
+                                        <li>When selecting <i>Enable Front and Back Scanners</i> this will default the <i><b>Barcode</b> Interface <b>Method</b></i> to <i>'PC COM Port'</i>. This is the only method available for connecting two separate scanners.</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00032.png">
+                                    </img>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="5">
+                                        <li>A drop-down in <i style="font-weight: bold;">COM Port Configuration</i> will allow you to configure a specific scanner for the specific lane.
+<br></br><br></br></li>
+                                        <li>After selecting a Lane, and selecting the applicable settings, click the <b>Apply</b> button at the bottom of the screen to save the settings.
+<br></br><![CDATA[
+]]></li>
+                                        <li>Repeat step 6 for the second lane configuration and click <b>Apply</b> again to save the settings.  
+
+</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00033.png">
+                                    </img>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

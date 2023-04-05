@@ -4,11 +4,11 @@
         <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
     </head>
     <body>
-        <table with="width: 1000px">
-            <col with="width: 1000px" />
+        <table with="width: 1200px">
+            <col with="width: 1200px" />
             <tr>
-                <td with="width: 505px">
-                    <h1 class="Heading1">Status Messages and Alarms With the Basic System
+                <td>
+                    <h1 class="Heading1">Status Messages and Alarms with the Basic System
                     </h1>
                     <p>&#160;</p>
                     <p>The software communicates system status through messages that it displays on the monitor.  Some, simply report an operating condition, some provide a warning that process parameters are changing, and still others, called <i>alarms</i>, announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.</p>
@@ -56,7 +56,7 @@
                         <tr>
                             <td>
                                 <p>&#160;</p>
-                                <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the KIC2000UserSettings.kiccfg file:
+                                <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the <span style="font-family: 'Courier New';">KIC2000UserSettings.kiccfg</span> file:
 </p>
                                 <p>&#160;</p>
                                 <p>[HOST]
@@ -80,7 +80,7 @@
                                 <p>&#160;</p>
                                 <p>&#160;</p>
                                 <p>
-                                    <img src="Resources/Images/image34.png" style="width: 309px;height: 59px;" />
+                                    <img src="Resources/Images/image34.png" style="width: 182px;height: 35px;" />
                                 </p>
                             </td>
                         </tr>
@@ -90,8 +90,9 @@
                         <img src="Resources/Images/image35.png" style="width: 351px;height: 226px;" />
                     </p>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> Password protection only applies to alarms.  A simple mouse click acknowledges and clears warning messages.</p>
+                    <blockquote>
+                        <p><b>Note:</b> Password protection only applies to alarms.  A simple mouse click acknowledges and clears warning messages.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
                     <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.  Below is a table the message that you might see during this process:  See Table 2.</p>
@@ -138,10 +139,10 @@
                     <p class="Caption">&#160;</p>
                     <p class="Caption">&#160;</p>
                     <p class="Caption">&#160;</p>
-                    <table with="width: 1000px">
+                    <table with="width: 1200px">
                         <col style="width: 1000px;" />
                         <tr>
-                            <td with="width: 505px">
+                            <td>
                                 <h2 class="Heading2"><a name="System_message_alarms"></a>System Messages and Alarms</h2>
                                 <h3 class="Heading3">Message, High PWI</h3>
                                 <table class="table_2">
@@ -158,7 +159,7 @@
                                         <td>&#160;</td>
                                         <td class="td_14">
                                             <p class="p_1" style="text-align: left;">
-                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000101.png" class="img_6" />
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000101.png" />
                                             </p>
                                             <p class="Figure">Figure 85: Message High PWI</p>
                                         </td>
@@ -172,7 +173,7 @@
                                         <td class="td_14">
                                             <p>&#160;</p>
                                             <p style="text-align: left;">
-                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000102.png" class="img_3" />
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000102.png" />
                                             </p>
                                             <p class="Figure">Figure 86: Alarm H2</p>
                                         </td>
@@ -187,7 +188,7 @@
                                         <td class="td_14">
                                             <p>&#160;</p>
                                             <p style="text-align: left;">
-                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000103.png" class="img_6" />
+                                                <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000103.png" />
                                             </p>
                                             <p class="Figure">Figure 87: Alarm H7</p>
                                         </td>
@@ -262,6 +263,17 @@
                                         </td>
                                         <td class="td_18">
                                             <p class="p_35">Maximum allowable back-to-back boards exceeded (When enabled)</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_20">Yes</p>
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Alarm # 18</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_35">Invalid board length detected from board sensor and cannot assign barcode in queue to board (w/Barcode feature enabled)</p>
                                         </td>
                                         <td class="td_18">
                                             <p class="p_20">Yes</p>
@@ -373,6 +385,18 @@
                                             <p class="p_36">No</p>
                                         </td>
                                     </tr>
+                                    <tr style="height: 13pt;">
+                                        <td class="td_17">
+                                            <p class="p_20">Warning # 5</p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p><span style="font-family: Arial;">Process is very close to the control limit</span>
+                                            </p>
+                                        </td>
+                                        <td class="td_18">
+                                            <p class="p_36">No</p>
+                                        </td>
+                                    </tr>
                                 </table>
                                 <p class="Caption">Table 5: Virtual Profiling – Warnings</p>
                                 <p>&#160;</p>
@@ -405,7 +429,7 @@
                                             </td>
                                             <td>&#160;</td>
                                             <td>
-                                                <img src="Resources/Images/FTM0008.png" style="width: 575px;height: 544px;" />
+                                                <img src="Resources/Images/FTM0008.png" style="width: 544px;height: 514px;" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -416,7 +440,7 @@
                                             </td>
                                             <td>&#160;</td>
                                             <td>
-                                                <img src="Resources/Images/FTM0009.png" style="width: 575px;height: 185px;" />
+                                                <img src="Resources/Images/FTM0009.png" style="width: 543px;height: 174px;" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -424,14 +448,12 @@
                                                 <p>&#160;</p>
                                                 <p>During <i>Virtual Profiling</i>, if more than the specified number of back-to-back boards are detected entering the oven, an alarm will be generated indicating the problem.</p>
                                                 <p>&#160;</p>
-                                                <p><![CDATA[
-
-													]]><b>NOTE</b>: This alarm setting can also be useful for identifying other hardware issues such as: products stuck in transition onto oven conveyor (when underneath the board sensor), misadjusted, dirty, or faulty board sensors, etc. 
+                                                <p><b>Note</b>: This alarm setting can also be useful for identifying other hardware issues such as: products stuck in transition onto oven conveyor (when underneath the board sensor), misadjusted, dirty, or faulty board sensors, etc. 
 												</p>
                                             </td>
                                             <td>&#160;</td>
                                             <td>
-                                                <img src="Resources/Images/FTM00010.png" style="width: 444px;height: 285px;" />
+                                                <img src="Resources/Images/FTM00010.png" />
                                             </td>
                                         </tr>
                                     </tbody>

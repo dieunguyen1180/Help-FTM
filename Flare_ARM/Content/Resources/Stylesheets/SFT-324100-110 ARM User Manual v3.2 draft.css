@@ -28,16 +28,17 @@ li
 {
 	font-family: 'Times New Roman';
 	font-size: 10pt;
-	padding-bottom: 0px;
-	padding-top: 0px;
 	margin-bottom: 2pt;
 	margin-top: 2pt;
+	padding-bottom: 3px;
+	padding-top: 2px;
 }
 
 td
 {
 	font-family: 'Times New Roman';
 	vertical-align: top;
+	font-size: 10pt;
 }
 
 p.Header
@@ -4932,5 +4933,11 @@ h4
 	font-family: Arial;
 	font-size: 10pt;
 	font-weight: bold;
+}
+
+p.p_05Inch
+{
+	margin-left: 59pt;
+	padding-left: 3px;
 }
 

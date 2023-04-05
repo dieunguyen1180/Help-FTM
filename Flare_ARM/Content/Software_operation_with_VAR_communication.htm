@@ -195,10 +195,10 @@
                     <p class="Caption">&#160;</p>
                     <p>Once you’ve installed the system on a communication-capable oven, your first task is to check the Hardware Status screen to see if the software recognizes the oven controller.</p>
                     <p>&#160;</p>
-                    <p>If the appropriate system isn’t identified in the <span class="span_12">Oven Controller</span> field check the following:</p>
+                    <p>If the appropriate system isn’t identified in the <span class="span_12" style="font-weight: bold;">Oven Controller</span> field check the following:</p>
                     <ul class="ul_2">
                         <li class="ListParagraph_3">Verify that the software is installed on the same PC and hard drive as the manufacturer’s oven controller software.</li>
-                        <li class="ListParagraph_3">Exit the software and run the <span class="span_12">ConfigurationProgram.exe</span> found in the software root directory folder.&#160; The Hardware tab lists a selection of ovens and oven models.</li>
+                        <li class="ListParagraph_3">Exit the software and run the <span class="span_12" style="font-family: 'Courier New';">ConfigurationProgram.exe</span> found in the software root directory folder.&#160; The Hardware tab lists a selection of ovens and oven models.</li>
                         <li class="ListParagraph_3">Contact supplier or the oven manufacturer to make sure the version of oven controller software and firmware is compatible for oven communications.</li>
                         <li class="ListParagraph_3">Make sure that the latest versions of the correct drivers are properly installed. (Contact supplier or the oven manufacturer for details.)</li>
                     </ul>
@@ -298,14 +298,14 @@
                                 <ul class="ul_2">
                                     <li class="ListParagraph_1">Next the system will take you to the Verify Minimum and Maximum Set point Temperature screen.&#160; This is to verify that we have not allowed the software to choose set point values that the oven is not capable of controlling to.</li>
                                 </ul>
-                                <li class="ListParagraph_1">&#160;</li>
+                                <p>&#160;</p>
                                 <ul class="ul_2">
                                     <li class="ListParagraph_1">Next the software will prompt you that it will calculate new set points.  When you click on <b>OK</b>, the screen will change to a profile graph that has calculated new oven set points for the oven to load in order to produce the optimized profile results.  This works the same even if you don’t have the <i>Navigator</i> option.</li>
                                 </ul>
                             </td>
                             <td class="td_32">
                                 <p class="p_8" style="text-align: center;">
-                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/030000A8.png" style="height: 275px;width: 336px;" class="img_2" />
+                                    <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/FTMSFT0000022.png" style="width: 480px;height: 393px;" />
                                 </p>
                                 <p class="p_59">Figure 91: Verify Setpoints</p>
                             </td>
@@ -314,7 +314,7 @@
                     <p class="ListParagraph">&#160;</p>
                     <p class="ListParagraph">If you entered the new set points manually the software will automatically find new set points like the Navigator would when you get to this point.&#160; Be patient you may have to go through this cycle of the oven not controlling to set point values a few times before the proper combination of acceptable set points and profile optimization can be found.&#160; In worst case scenarios you may have to change the 2.0 degrees delta between set point and actual because the oven is just simply not capable of getting within 2 degrees C of the set point no matter what the temperature.&#160; Please contact KIC Tech support if this is the case.</p>
                     <p class="ListParagraph">&#160;</p>
-                    <p class="p_23"><span class="span_11">Tip</span>: If you get into a situation where you are having to adjust too many times and are still not getting set points that the oven will control to, but you are or you will be in spec by manually changing predicted set points, then go into the Optimization Tab and turn off “Allow Zone Set points To Change”.  The next time around, the software will not change any of the zone values, but you can go in and change them manually to exactly what the actual values are and run the profile.</p>
+                    <p><span class="span_11">Tip</span>: If you get into a situation where you are having to adjust too many times and are still not getting set points that the oven will control to, but you are or you will be in spec by manually changing predicted set points, then go into the Optimization Tab and turn off “Allow Zone Set points To Change”.  The next time around, the software will not change any of the zone values, but you can go in and change them manually to exactly what the actual values are and run the profile.</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Starting_a_Virtual"></a>Start a Virtual Profile with Oven Communication</h2>
@@ -361,7 +361,7 @@
                         <tr>
                             <td class="td_32">
                                 <ol start="5" class="ol_3">
-                                    <li class="ListBullet2">If you have already loaded a VP and selected a Base Oven Recipe, then you will not see the <span class="span_12">Select the Base Oven Recipe to be Loaded</span> screen.&#160; Instead, you will see the screen shown at the right, verifying that you are loading the correct Base Oven Recipe.&#160; If you choose <span class="span_12">No</span> then the <span class="span_12">Select Base Oven Recipe to Be Loaded</span>: screen will appear.  </li>
+                                    <li class="ListBullet2">If you have already loaded a VP and selected a Base Oven Recipe, then you will not see the <span class="span_12">Select the Base Oven Recipe to be Loaded</span> screen.&#160; Instead, you will see the screen shown at the right, verifying that you are loading the correct Base Oven Recipe.&#160; If you choose <span class="span_12" style="font-weight: bold; font-style: normal;">No</span> then the <span class="span_12">Select Base Oven Recipe to Be Loaded</span>: screen will appear.  </li>
                                 </ol>
                             </td>
                             <td class="td_32">
@@ -401,7 +401,7 @@
                     </ol>
                     <p class="ListBullet">&#160;</p>
                     <ol start="6" class="ol_3">
-                        <li class="ListBullet2">On the Global Preferences screen Global tab, select the <span class="span_11">Use Oven Baseline Recipe</span> check box.&#160; </li>
+                        <li class="ListBullet2">On the Global Preferences screen <i>Global</i> tab, select the <span class="span_11">Use Oven Baseline Recipe</span> check box.&#160; </li>
                     </ol>
                     <p class="ListBullet">&#160;</p>
                     <table class="table_2">
@@ -579,7 +579,7 @@
                                 <p>&#160;</p>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
-                                <p>When <i>Dual Lane Dual System</i> is selected, as noted previously, there will be two separate software directories used – one for the “Front” and one for the “Back”. You will be able to choose whether you want to install the software for either one, or both directories.</p>
+                                <p>When <i style="font-weight: bold;">Dual Lane Dual System</i> is selected, as noted previously, there will be two separate software directories used – one for the “Front” and one for the “Back”. You will be able to choose whether you want to install the software for either one, or both directories.</p>
                             </td>
                             <td class="td_32">
                                 <img src="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/030000B4.png" style="width: 432px;height: 329px;" />
@@ -588,19 +588,19 @@
                     </table>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <p>Additional settings for a Dual Lane system configuration can be found in the <span class="span_12">ConfigurationProgram.exe</span> located in the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\Software Root directory</span>.</p>
+                    <p>Additional settings for a Dual Lane system configuration can be found in the <span class="span_12" style="font-family: 'Courier New';">ConfigurationProgram.exe</span> located in the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\Software Root directory</span>.</p>
                     <p>&#160;</p>
                     <table class="table_2">
                         <col style="width: 230pt;" />
                         <col style="width: 350pt;" />
                         <tr>
                             <td class="td_32">
-                                <p><span class="span_14">Lane Configuration</span> – For a Dual Lane-Single System, this section allows you to specify the position of the Board Tracking display in the software for each lane. </p>
-                                <p>&#160;</p>
-                                <p><span class="span_14">User defined label for Lanes</span> – By default, the software will label the lanes “Front” and “Back”. When the checkbox is checked, the drop-down menu allows you to select alternate designations for the lane names. </p>
-                                <p><span class="span_11">Note:</span> The Front Lane is always the lane closest to the front side of the machine.</p>
-                                <p>&#160;</p>
-                                <p><span class="span_14">Dual Lane – Dual System Only</span> – When a Dual System is in use, there are two instances of the automatic system software running – one for each lane. By default, a user must select the lane they want to see on the screen at any given time. </p>
+                                <p><span class="span_14" style="font-style: normal;">Lane Configuration</span> – For a Dual Lane-Single System, this section allows you to specify the position of the Board Tracking display in the software for each lane. </p>
+                                <p style="font-size: 6pt;">&#160;</p>
+                                <p><span class="span_14" style="font-style: normal;">User defined label for Lanes</span> – By default, the software will label the lanes “Front” and “Back”. When the checkbox is checked, the drop-down menu allows you to select alternate designations for the lane names. </p>
+                                <p class="ListBullet_2"><span class="span_11">Note:</span> The Front Lane is always the lane closest to the front side of the machine.</p>
+                                <p style="font-size: 6pt;">&#160;</p>
+                                <p><span class="span_14" style="font-style: normal;">Dual Lane – Dual System Only</span> – When a Dual System is in use, there are two instances of the automatic system software running – one for each lane. By default, a user must select the lane they want to see on the screen at any given time. </p>
                                 <p> When selecting this checkbox, the user can define an interval for the software “automatically” to switch over to the other lanes display after no input from the mouse cursor.</p>
                                 <p>&#160;</p>
                             </td>
@@ -610,10 +610,10 @@
                         </tr>
                     </table>
                     <p class="ListParagraph">&#160;</p>
-                    <p class="ListParagraph"><span class="span_11">Note</span>: <span class="span_12">Automatic switching will only occur when both lanes are running a live VP.</span></p>
-                    <p class="ListParagraph">&#160;</p>
+                    <p class="ListParagraph"><span class="span_11">Note:</span> Automatic switching will only occur when both lanes are running a live VP.</p>
+                    <p class="ListParagraph" style="font-size: 6pt;">&#160;</p>
                     <p class="ListParagraph"><b>Note:</b> For Dual Lane Dual System installations, the settings in this configuration utility must be entered into both install directories – <span style="font-family: 'Courier New'; font-size: 9pt;">C:\Software Root Directory Front Rail</span> and <span style="font-family: 'Courier New'; font-size: 9pt;">C:\Software Root Directory Back Rail</span>.</p>
-                    <p class="ListParagraph">&#160;</p>
+                    <p class="ListParagraph" style="font-size: 6pt;">&#160;</p>
                     <p>On Dual Lane Dual Systems, when you select <span class="span_12">User defined label for Lanes</span>, the selection chosen will display as a watermark on the Index, General, Description, Charts, and Troubleshooting screens. See example below:</p>
                     <p>&#160;</p>
                     <p class="p_20">

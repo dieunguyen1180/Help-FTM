@@ -1,7 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <UrlList>
-    <Url Source="Resources/Images/z80.png" />
-    <Url Source="Resources/Images/SFT-3241000-200 ARM User Manual v3.2 draft/03000061.png" />
-    <Url Source="Resources/Images/z79.png" />
-    <Url Source="Resources/Images/z70.png" />
+    <Url Source="Resources/Images/FTM00041.png" />
+    <Url Source="Resources/Images/FTM00036.png" />
+    <Url Source="Resources/Images/FTM00035.png" />
+    <Url Source="Resources/Images/FTM00034.png" />
+    <Url Source="Resources/Images/FTM00033.png" />
+    <Url Source="Resources/Images/FTM00032.png" />
+    <Url Source="Resources/Images/FTM00031.png" />
+    <Url Source="Resources/Images/FTM00030.png" />
+    <Url Source="Resources/Images/FTM00029.png" />
+    <Url Source="Resources/Images/FTM00028.png" />
+    <Url Source="Resources/Images/FTM00027.png" />
+    <Url Source="Resources/Images/FTM00026_SelectTC24ch.png" />
+    <Url Source="Resources/Images/FTM00025_Image24ch.png" />
+    <Url Source="Resources/Images/FTM00024_Image24ch.png" />
+    <Url Source="Resources/Images/FTM00023_HS24ch.png" />
+    <Url Source="Resources/Images/FTM00022_HS24ch.png" />
+    <Url Source="Resources/Images/FTM00021_24ch.png" />
+    <Url Source="Resources/Images/FTM00020_global24ch.png" />
+    <Url Source="Resources/Images/FTM00019_global24ch.png" />
+    <Url Source="Resources/Images/FTM00018_global24ch.png" />
 </UrlList>

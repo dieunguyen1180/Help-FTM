@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1"><a name="_Virtual_Profiling"></a>Pyrometer Profiling (PP)</h1>
+        <p><span class="span_10">Pyrometer Profiling</span> (PP) is a means of reliably measuring the temperature of every board directly during a production run<span class="span_6">. </span></p>
+        <p>&#160;</p>
+        <p>Once the baseline is established, the PRI software allows you to start monitoring mode, recording real-time belt speed and pyrometer temperature data as a production run of similar boards passing through the oven. PRI updates and saves the PP profile data to each board as it exits the oven, creating a valuable quality assurance record of each production unit.</p>
+        <p>&#160;</p>
+        <p>In monitoring mode, the software displays each board’s profile chart and a table of data based on its process window.&#160; Other screens show PWI and SPC control charts.&#160; When board temperature readings vary significantly from the baseline profile, PRI displays appropriate warnings to system operators. </p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note</span><span class="span_7">:</span>&#160; Before you start Pyrometer Profiling, ensure all the PRI system hardware is properly installed and configured.</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Getting_a_valid_baseline"></a>Establish A Valid Baseline Profile</h2>
+        <p>Pyrometer Profiling makes use of a special profile, called the <span class="span_6">baseline</span> profile, as the data model for its predictions.&#160; The software requires that you first establish this baseline before it enables Pyrometer Profiling. The baseline profile should represent your optimum oven recipe for your product and needs to meet the Pyrometer Profile criteria shown below: </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>The PWI must be below the Maximum PWI to allow the PP value as set in Global Preferences.</li>
+            <li>The conveyor speed measured by the encoder must be within 20% of the specified conveyor speed.</li>
+            <li>Pyrometer temperatures must be valid; if any pyrometer thermocouple reports a range of greater than 30<span class="span_11">°</span>C between adjacent readings (every 2.5 seconds), the PRI software will consider them invalid.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>If your profile meets the above criteria, it can work as a baseline profile.&#160; The baseline profile will display differently in the Profile Explorer screen—the profile’s icon will have an overlying green PP.  <img src="Resources/Images/SFT-324400-000 PRI User Manual/Note Double click any event.png" style="height: 26px;width: 27px;" class="img_11" /></p>
+        <p>&#160;</p>
+        <p>If you suspect the current baseline profile needs replacement by a newer version that more closely matches current production conditions, the software lets you create a new baseline during ongoing production.&#160; If this <span class="span_6">verification profile</span> meets PP criteria, it can become the new baseline profile.&#160; </p>
+        <p style="font-size: 12pt;">&#160;</p>
+        <h5 class="Heading5"><a name="Integrate_Empty_Oven_Data"></a>Empty Oven</h5>
+        <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <span class="span_6">board present</span> and <span class="span_6">board absent</span> states at each pyrometer’s location.&#160; To obtain this data most efficiently, KIC recommends running the profile board with similar <span class="span_6">boards moving ahead of it and an empty conveyor behind it.</span>&#160; The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.&#160; As the profile board exits each oven zone, the pyrometers can measure the temperature when a board is not present.&#160; The software will integrate this comparative data for a more accurate predictive capability.&#160; The oven should remain empty until the profile board completely exits the process chamber.</p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note</span><span class="span_7">:</span> Be aware of the potential to put the system into a state where the software lacks enough empty oven data to make reliable PP predictions.&#160; The condition can occur during a verification profile run where you insert the profile board into an ongoing production flow.&#160; With other boards both ahead of and behind the profile board, no interval for gathering empty oven data occurs.&#160; A grey crystal ball indicates it will be unable to predict the empty oven state.&#160; See <a href="Monitoring_production_in_live_mode.htm" style="color: #0000ff; text-decoration: underline;">Monitoring production in live mode</a>.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load a Pyrometer Profile</h2>
+        <p>There are several ways to begin Pyrometer Profiling:</p>
+        <p>&#160;</p>
+        <ol start="1" class="ol_1">
+            <li>Open the Profile Explorer.&#160; Select your product folder in the upper-left corner.&#160; This will display the profiles and events for the selected product.&#160; If you have a profile that meets Pyrometer Profiling criteria, the profile icon is overlaid with a green PP.&#160; This qualifying profile (baseline) will always be the most recent profile that meets Pyrometer Profiling criteria (only one profile can qualify as the baseline).<br /><br />No need to highlight the baseline profile, simply click the Start Pyrometer Profiling button.&#160; This will start Pyrometer profiling for the selected product.</li>
+        </ol>
+        <p>&#160;</p>
+        <table class="table_7">
+            <col style="width: 677px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_3">
+                        <ol start="2" class="ol_1">
+                            <li style="text-align: left;">If you have run a profile that meets the Pyrometer Profile criteria, then the <span class="span_6">Start Pyrometer Profiling</span> button will appear once the profile has completed.&#160; Click the button to begin Pyrometer Profiling for the indicated product.</li>
+                        </ol>
+                    </th>
+                    <th class="th_3">
+                        <p>&#160;</p>
+                        <p>
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Profile Screen Buttons_4.png" style="width: 116px;height: 61px;" class="img_11" />
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <p><span class="span_48">C</span><span class="span_48">AUTION:</span> Your software security key must be connected prior to enabling Pyrometer Profile mode.&#160; If the key is removed from the computer while Pyrometer Profiling mode is enabled an alarm message appears.&#160; </p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/History Data Files_1.png" class="img_11" style="width: 656px;height: 356px;" />&#160; </p>
+        <p class="Caption">Figure 69: Profile Explorer – Start Pyrometer Profiling</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p class="p_18"><span class="span_7">Note</span>: If your oven can communicate with the software, a dialog box will appear notifying you that Pyrometer Profile is starting, and the oven recipe will be changed automatically. If the oven recipe is already set correctly for that product, a confirmation message will display. If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang.</p>
+        <p class="p_18">&#160;</p>
+        <p class="p_18">If your software is not communicating directly with the oven controller, the software will display the settings used during the Baseline profile.&#160; Make sure the oven is set to the exact recipe settings.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -4,10 +4,10 @@
         <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
     </head>
     <body>
-        <table with="width: 1000px">
-            <col with="width: 1000px" />
+        <table with="width: 1200px">
+            <col with="width: 1200px" />
             <tr>
-                <td with="width: 505px">
+                <td>
                     <h1 class="Heading1">Communicate with Oven Controllers</h1>
                     <p>Because the software can interface directly with the oven controllers on many reflow oven models, several leading manufactures act as Value Added Resellers (VARs) for the automatic software.  The software can automatically send setpoints and other recipe data to these oven-controlled systems, eliminating the need for separate data entry.  The table below lists the oven manufacturers that support communication:</p>
                     <p>&#160;</p>
@@ -173,15 +173,15 @@
                     <table>
                         <col style="width: 400px;" />
                         <col style="width: 20px;" />
-                        <col />
+                        <col style="width: 576px;" />
                         <tr>
                             <td>
                                 <p>&#160;</p>
-                                <p>There are <i>two</i> items you have to set in the Global Preferences screen when configuring the software for use with oven communications. See Figure 152.</p>
+                                <p>There are <i>two</i> items you have to set in the Global Preferences screen when configuring the software for use with oven communications. </p>
                                 <p>&#160;</p>
-                                <p>1.	Enter an oven name and zone lengths and zone limit data.</p>
+                                <p>1.	Enter an oven name, zone lengths, and zone limit data.</p>
                                 <p>&#160;</p>
-                                <p>2.	Check <b>Use Oven Base Recipe.</b>  (Optional.)</p>
+                                <p>2.	Click on the <b>Use Oven Base Recipe</b> check box. (Optional.)</p>
                             </td>
                             <td>&#160;</td>
                             <td>
@@ -211,7 +211,7 @@
                     </ul>
                     <p class="p_4">&#160;</p>
                     <p class="p_4">&#160;</p>
-                    <h2 class="Heading2"><a name="Baseline_recipe_explained"></a>Use a Base Oven Recipe With Oven Communication</h2>
+                    <h2 class="Heading2"><a name="Baseline_recipe_explained"></a>Use a Base Oven Recipe with Oven Communication</h2>
                     <p>The operating parameters of a reflow oven are specified by the manufacturer in the oven controller.  These parameters may include zone setpoint temperatures, conveyor speed, fan speed, Nitrogen On/Off, conveyor width, etc.  Taken together, these parameters form a <i>Base Oven Recipe</i>, which the software uses as a set of default values.</p>
                     <p>The software can set/load the zone setpoint temperatures and the conveyor speed parameters, adjusting them from the default values in the Base Oven Recipe.</p>
                     <p>&#160;</p>
@@ -254,17 +254,22 @@
                     <p class="ListNumber4">&#160;</p>
                     <p>Once you choose to run a profile <i>using the predicted setpoints and conveyor speed</i>, the software automatically sends these new settings to the oven controller software to be loaded.  When the new settings are loaded, watch for the following:</p>
                     <p class="ListBullet2_1">&#160;</p>
-                    <ul class="ul_3">
-                        <li class="ListBullet2_1">With some oven controllers there may be an audio warning, indicating that the oven is going to change settings.  Some of the audio indicators are also accompanied by a timer that will not allow the oven to load the new setpoints until the programmed time has elapsed.  These timers can be reduced or turned off at the customer’s discretion.</li>
-                    </ul>
                     <p class="ListBullet2_1">&#160;</p>
                     <table class="table_4">
                         <col style="width: 230pt;" />
                         <col style="width: 200pt;" />
                         <tr>
+                            <td colspan="2">
+                                <ul class="Square">
+                                    <li>With some oven controllers there may be an audio warning, indicating that the oven is going to change settings.  Some of the audio indicators are also accompanied by a timer that will not allow the oven to load the new setpoints until the programmed time has elapsed.  These timers can be reduced or turned off at the customer’s discretion.</li>
+                                </ul>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>
-                                <ul>
-                                    <li class="ListContinue">The software will display the message “Waiting for the oven controller to acknowledge recipe change”.  There will be a time delay displayed for an estimated period for the oven to acknowledge the changes and that all conditions are right to set the oven to these new set points.  See Figure 89.</li>
+                                <ul class="Square">
+                                    <li>The software will display the message “Waiting for the oven controller to acknowledge recipe change”.  There will be a time delay displayed for an estimated period for the oven to acknowledge the changes and that all conditions are right to set the oven to these new set points.</li>
                                 </ul>
                                 <p class="ListBullet2_2">&#160;</p>
                             </td>
@@ -277,8 +282,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <ul>
-                                    <li class="ListContinue">You may notice with some ovens that it takes longer than others, you’ll have to get a feel for this as you go but if you feel the change is taking too long then switch over to the oven software and try to ascertain if there is some kind of disturbance that would cause the oven controller not to load the new set points.</li>
+                                <ul class="Square">
+                                    <li>You may notice with some ovens that it takes longer than others, you’ll have to get a feel for this as you go but if you feel the change is taking too long then switch over to the oven software and try to ascertain if there is some kind of disturbance that would cause the oven controller not to load the new set points.</li>
                                 </ul>
                                 <p class="ListBullet2_2">&#160;</p>
                             </td>
@@ -296,44 +301,45 @@
                         <li class="ListBullet2">If you are starting a profile and the software tells you that the oven’s actual zone temperatures are not within 2 degrees of the of the set point value, and you know that you have waited long enough (possibly even answered that they are still changing), but now you know they are not, then you will have to answer “No” and follow the instructions.  This information is outlined in the user manual, but what happens next may be a little confusing to a first-time user.  Here is a list of what takes place and why:</li>
                     </ol>
                     <p class="ListBullet2_1">&#160;</p>
-                    <ul class="ul_3">
-                        <li class="ListBullet2_1">You answer <i>No</i> the temperatures are not getting closer and the system then asks you to change the Setpoint values to that of the Actual.  What the system is doing by this is finding out what the oven will actually control to in certain zones.  It then takes the differences and uses them to update the oven.ini file so the next time the system optimizes for a profile it will take the zone delta limitations that it learned and apply it to the next profile.  The software will use the new zone delta limits until the values change again by a set of oven setpoints that can’t be maintained by the oven are chosen. Remember that it is very important that you are sure that the oven can’t achieve the original setpoints before you answer <i>No</i>.  Once the new delta limits are established this will affect the capability of the Navigator to optimize your profiles.</li>
-                    </ul>
                     <p class="ListBullet2_1">&#160;</p>
                     <table class="table_4">
                         <col style="width: 230pt;" />
+                        <col style="width: 32pt;" />
                         <col style="width: 300pt;" />
                         <tr>
+                            <td colspan="3">
+                                <ul class="Square">
+                                    <li>You answer <i>No</i> the temperatures are not getting closer and the system then asks you to change the Setpoint values to that of the Actual.  What the system is doing by this is finding out what the oven will actually control to in certain zones.  It then takes the differences and uses them to update the oven.ini file so the next time the system optimizes for a profile it will take the zone delta limitations that it learned and apply it to the next profile.  The software will use the new zone delta limits until the values change again by a set of oven setpoints that can’t be maintained by the oven are chosen. Remember that it is very important that you are sure that the oven can’t achieve the original setpoints before you answer <i>No</i>.  Once the new delta limits are established this will affect the capability of the Navigator to optimize your profiles.</li>
+                                </ul>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
                             <td>
-                                <ul>
-                                    <li class="ListContinue">Next the system will take you to the Verify Minimum and Maximum Set point Temperature screen.  This is to verify that we have not allowed the software to choose set point values that the oven is not capable of controlling to.</li>
+                                <ul class="Square">
+                                    <li>Next the system will take you to the Verify Minimum and Maximum Set point Temperature screen.  This is to verify that we have not allowed the software to choose set point values that the oven is not capable of controlling to.</li>
                                 </ul>
                                 <p class="ListBullet2_1">&#160;</p>
-                                <ul>
-                                    <li class="ListContinue">Next the software will prompt you that it will calculate new set points.  When you click on OK, the screen will change to a profile graph that has calculated new oven set points for the oven to load in order to produce the optimized profile results.  This works the same even if you don’t have the <i>Navigator</i> option.  <br /><br /><br /></li>
+                                <ul class="Square">
+                                    <li>Next the software will prompt you that it will calculate new set points.  When you click on OK, the screen will change to a profile graph that has calculated new oven set points for the oven to load in order to produce the optimized profile results.  This works the same even if you don’t have the <i>Navigator</i> option.  <br /><br /><br /></li>
                                 </ul>
                             </td>
+                            <td>&#160;</td>
                             <td class="td_25">
                                 <p class="ListBullet2_2" style="text-align: center;">
-                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000094.png" style="width: 505px;height: 414px;" class="img_1" />
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000094.png" style="width: 459px;height: 376px;" class="img_1" />
                                 </p>
                                 <p class="ListBullet2_1_2"><span class="span_22">Figure 91</span><span class="span_22">: Verify Setpoints</span>
                                 </p>
                             </td>
                         </tr>
-                        <tr>
-                            <td colspan="2">
-                                <ul class="hh">
-                                    <li colspan="2">If you entered the new set points manually the software will automatically find new set points like the Navigator would when you get to this point.  Be patient you may have to go through this cycle of the oven not controlling to set point values a few times before the proper combination of acceptable set points and profile optimization can be found.  In worst case scenarios you may have to change the 2.0 degrees delta between set point and actual because the oven is just simply not capable of getting within 2 degrees C of the set point no matter what the temperature.  Please contact KIC Tech support if this is the case.</li>
-                                </ul>
-                                <p colspan="2">&#160;</p>
-                            </td>
-                        </tr>
                     </table>
-                    <p class="ListParagraph">&#160;</p>
+                    <p>&#160;</p>
+                    <p colspan="2">If you entered the new set points manually the software will automatically find new set points like the Navigator would when you get to this point.  Be patient you may have to go through this cycle of the oven not controlling to set point values a few times before the proper combination of acceptable set points and profile optimization can be found.  In worst case scenarios you may have to change the 2.0 degrees delta between set point and actual because the oven is just simply not capable of getting within 2 degrees C of the set point no matter what the temperature.  Please contact KIC Tech support if this is the case.</p>
+                    <p colspan="2">&#160;</p>
                     <p><b>Tip:</b> If you get into a situation where you are having to adjust too many times and are still not getting set points that the oven will control to, but you are or you will be in spec by manually changing predicted set points, then go into the Optimization Tab and turn off “Allow Zone Set points To Change”.  The next time around, the software will not change any of the zone values, but you can go in and change them manually to exactly what the actual values are and run the profile.</p>
                     <p>&#160;</p>
-                    <h2 class="Heading2"><a name="Starting_a_Virtual"></a>Start a Virtual Profile With Oven Communication</h2>
+                    <h2 class="Heading2"><a name="Starting_a_Virtual"></a>Start a Virtual Profile with Oven Communication</h2>
                     <p>Before running a Virtual Profile with oven communications, review the following:</p>
                     <p>&#160;</p>
                     <ol start="1">
@@ -387,7 +393,11 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p><b>Note:</b> If you feel that the system is taking too long to load the Base Oven Recipe or the setpoints, switch over to the oven control software and see if you can detect a reason why the oven is not accepting the changes.</p>
+                    <blockquote>
+                        <blockquote>
+                            <p><b>Note:</b> If you feel that the system is taking too long to load the Base Oven Recipe or the setpoints, switch over to the oven control software and see if you can detect a reason why the oven is not accepting the changes.</p>
+                        </blockquote>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Base_oven_recipe"></a>Base Oven Recipe Automatic Verification</h2>
                     <p>For Base Oven Recipe compatible ovens, users can automatically verify the correct Base Oven Recipe before beginning a Virtual Profile.&#160; This feature is especially useful for users that have multiple production products using multiple Base Oven Recipes.&#160; The system will allow you to select the Base Oven Recipe and if the selected recipe does not match, the Virtual Profile cannot begin.</p>
@@ -458,7 +468,7 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <h1 class="Heading1"><a name="Run_the_Software_Without_the_Board_Sensor"></a>Run the Software Without the Board Sensor</h1>
+                    <h1 class="Heading1"><a name="Run_the_Software_Without_the_Board_Sensor"></a>Run the Software without the Board Sensor</h1>
                     <p>For some applications, such as semi-conductor processes where product is positioned at various locations across a mesh conveyor belt, or other situations where you do not want to or cannot track each individual product entering the process, you have the ability to setup the system to calculate the Virtual Profile based on specified time frequency.</p>
                     <p>&#160;</p>
                     <p>When configured in this method, every “X” number of seconds, a VP will be calculated and displayed on the screen. There will be no board tracking across the top of the screen, and there will be no identification possible of whether there was product in the machine or not when each VP is calculated.</p>
@@ -504,9 +514,10 @@
                     </table>
                     <p>&#160;</p>
                     <p>In order to produce a profile that best represents the production conditions, it may be necessary to pre-load the oven with products, so that the collected profile data most resembles that of a production piece.</p>
+                    <p>&#160;</p>
                     <p>If the baseline profile is run without pre-loading the oven, you may see a rise in PWI, or even some alarms associated with oven change since the baseline profile, once Virtual Profiling is activated, and production has begun.</p>
                     <p>&#160;</p>
-                    <h1 class="Heading1"><a name="Dual_Lane_Systems_And_Functionality"></a>Dual Lane Systems And Functionality
+                    <h1 class="Heading1"><a name="Dual_Lane_Systems_And_Functionality"></a>Dual Lane Systems and Functionality
                     </h1>
                     <p>The automatic system can monitor production through dual lane reflow ovens. This section will define the unique capabilities of the dual lane configuration.</p>
                     <p>&#160;</p>
@@ -515,8 +526,9 @@
                     <p>The <i>Dual Lane-Single System</i> tracks two lanes of the same recipe with one instance of the software.</p>
                     <p>&#160;</p>
                     <p>A radio button display during the installation routine lets you choose between the standard configuration or one of the dual lane setups.</p>
-                    <p>&#160;</p>
-                    <p><b>Note</b>: For more information about the hardware components of the system, see the <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut>.</p>
+                    <blockquote>
+                        <p><b>Note</b>: For more information about the hardware components of the system, see the <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut>.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Dual_Lane_Dual_Systems"></a>Dual Lane Dual Systems
                     </h2>
@@ -557,7 +569,7 @@
                     <p>The single system uses the same recipe on both lanes but tracks two flows of product across the user interface.  When in Live Mode, the white rectangle icons track two boards through channels at the top of the Charts, Chart data, and Troubleshooting tab screens:</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/image129ss.png" />
+                        <img src="Resources/Images/image129ss.png" style="width: 1023px;height: 398px;" />
                     </p>
                     <p>&#160;</p>
                     <p>The system calculates a separate data set for each board.  It accumulates historical data in a manner just like a single lane oven. A “Lane Identifier” will be saved with the data from each board for identifying which lane the particular board was processed in.</p>
@@ -604,7 +616,7 @@
                         </tbody>
                     </table>
                     <p>&#160;</p>
-                    <p>Additional settings for a Dual Lane system configuration can be found in the <i>ConfigurationProgram.exe</i> located in the <i>C:\Software Root</i> directory.</p>
+                    <p>Additional settings for a Dual Lane system configuration can be found in the <i>ConfigurationProgram.exe</i> located in the <i>C:\software root</i> directory.</p>
                     <p>&#160;</p>
                     <table class="table_2">
                         <col style="width: 230pt;" />
@@ -619,22 +631,28 @@
                                     <p>&#160;</p>
                                     <p><b><i>User defined label for Lanes</i> –</b> By default, the software will label the lanes “Front” and “Back”. When the checkbox is checked, the drop-down menu allows you to select alternate designations for the lane names.
 </p>
-                                    <p><b>NOTE:</b> The Front Lane is always the lane closest to the front side of the machine.
+                                    <p><b>Note:</b> The Front Lane is always the lane closest to the front side of the machine.
 
 </p>
                                     <p>&#160;</p>
                                     <p><b><i>Dual Lane – Dual System Only</i> –</b> When a Dual System is in use, there are two instances of the automatic system software running – one for each lane. By default, a user must select the lane they want to see on the screen at any given time.
- When selecting this checkbox, the user can define an interval for the software “automatically” to switch over to the other lanes display after no input from the mouse cursor. <b>Note</b>: <i>Automatic switching will only occur when both lanes are running a live VP</i>.
-</p>
+ When selecting this checkbox, the user can define an interval for the software “automatically” to switch over to the other lanes display after no input from the mouse cursor. </p>
+                                    <blockquote>
+                                        <p>&#160;</p>
+                                    </blockquote>
                                 </td>
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/image133.png" />
+                                    <p style="font-size: 6pt;">&#160;</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <p>&#160;</p>
-                    <p><b>Note: For Dual Lane Dual System installations, the settings in this configuration utility must be entered into both install directories</b> – <b style="font-family: 'Courier New'; font-style: italic;">C:\ software root directory Front Rail</b> and <span style="font-family: 'Courier New'; font-weight: bold; font-style: italic;">C:\ software root directory Back Rail</span>.</p>
+                    <p style="text-indent: 0.5in;"><b>Note</b>: <i>Automatic switching will only occur when both lanes are running a live VP</i>.
+</p>
+                    <blockquote>
+                        <p><b>Note:</b> For Dual Lane Dual System installations, the settings in this configuration utility must be entered into both install directories – <i style="font-family: 'Courier New';">C:\ software root directory Front Rail</i> and <span style="font-family: 'Courier New'; font-style: italic;">C:\ software root directory Back Rail</span>.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>On Dual Lane Dual Systems, when you select <i>User defined label for Lanes</i>, the selection chosen will display as a watermark on the Index, General, Description, Charts, and Troubleshooting screens. See example below:</p>
                     <p>&#160;</p>

@@ -17,8 +17,8 @@
                     <p>&#160;</p>
                     <p>In monitoring mode, the software displays each board’s profile chart and a table of data based on its process window.&#160; Other screens show PWI and SPC control charts.&#160; When oven data varies significantly from the baseline profile, RPI displays appropriate warnings to system operators. </p>
                     <p>&#160;</p>
-                    <p class="p_6"><span class="span_7">Note</span>:&#160; Before you start Virtual Profiling, ensure all of the RPI system hardware is properly installed and configured:</p>
-                    <h2 class="Heading2"><a name="Getting_a_valid_baseline"></a>Get A Valid Baseline Profile</h2>
+                    <p class="ListContinue2"><span class="span_7">Note</span>:&#160; Before you start Virtual Profiling, ensure all of the RPI system hardware is properly installed and configured:</p>
+                    <h2 class="Heading2"><a name="Getting_a_valid_baseline"></a>Get a Valid Baseline Profile</h2>
                     <p>Virtual Profiling makes use of a special profile, called the <i>baseline</i> profile, as the data model for its predictions.  The software requires that you first establish this baseline before it enables Virtual Profiling. The baseline profile should represent your optimum oven recipe for your product and needs to meet the Virtual Profile criteria shown below.</p>
                     <p>&#160;</p>
                     <ul class="ul_3">
@@ -32,8 +32,9 @@
                     <h3 class="Heading3"><a name="Integrate_Empty_Oven_Data"></a>Integrate Empty Oven Data</h3>
                     <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <u>board present</u> and <span class="span_6">board absent</span> states along the length of the probes.&#160; To obtain this data most efficiently, KIC recommends running the profiler board with similar <span class="span_6">boards </span><span class="span_6">moving ahead</span> <span class="span_6">of it </span><span class="span_6">and an empty conveyor </span><span class="span_6">behind</span><span class="span_6"> it</span><span class="span_6">.</span>&#160; The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.&#160; As the profiler board exits each oven zone, the probes can measure the temperature when a board is not present.&#160; The software can integrate this comparative data for a more accurate predictive capability.&#160; The oven should remain empty until the profiler board completely exits the process chamber.</p>
                     <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs.  A grey crystal ball indicates an unable to predict state.&#160; See <a href="Monitoring_production_in_live_mode.htm" style="color: #0000ff; text-decoration: underline;">Monitoring production in live mode</a>.</p>
-                    <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load A Virtual Profile</h2>
+                    <p class="ListContinue2"><span class="span_7">Note</span>: Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs.  A grey crystal ball indicates an unable to predict state.&#160; See <a href="Monitoring_production_in_live_mode.htm" style="color: #0000ff; text-decoration: underline;">Monitoring production in live mode</a>.</p>
+                    <p class="ListContinue2">&#160;</p>
+                    <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load a Virtual Profile</h2>
                     <p>There are several ways to begin Virtual Profiling:</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_1">
@@ -74,46 +75,25 @@
                     </table>
                     <p class="ListNumber2">&#160;</p>
                     <p><span class="span_7">Caution</span>: Your software security key must be connected prior to enabling Virtual Profile mode.&#160; If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message appears.&#160; </p>
-                    <p>&#160;</p>
+                    <p style="font-size: 6pt;">&#160;</p>
                     <p><b>Tip:</b> If your oven is capable of communicating with the software, a dialog box will appear notifying you that Virtual Profile is starting and the oven recipe will be changed automatically.</p>
+                    <p style="font-size: 6pt;">&#160;</p>
                     <p>If your software is not communicating directly with the oven controller, the software will display the Baseline profile recipe.  Make sure the oven is set to the exact recipe settings.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000071a.png" />
                     </p>
-                    <p style="text-align: center;">Figure 68: Profile Explorer – Start Virtual Profiling</p>
+                    <p style="text-align: center;">Figure 67: Profile Explorer – Start Virtual Profiling</p>
                     <p style="text-align: center;">&#160;</p>
-                    <p>If your oven is capable of communicating with the software and the current oven recipe matches the Baseline profile recipe, a dialog box will appear telling you that the recipe is already set correctly.  See Figure 69.</p>
+                    <p>If your oven is capable of communicating with the software and the current oven recipe matches the Baseline profile recipe, a dialog box will appear telling you that the recipe is already set correctly.  </p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000071b.png" />
                     </p>
-                    <p style="text-align: center;">Figure 69: Virtual Profiling – Oven Recipe Set Correctly</p>
+                    <p style="text-align: center;">Figure 68: Virtual Profiling – Oven Recipe Set Correctly</p>
                     <p style="text-align: center;">&#160;</p>
                     <p><b>Tip:</b> Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang. </p>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <h3 class="Heading3">Virtual Profiling With Process Control Barcode Capability</h3>
-                    <p class="p_6">If you are using the Process Control barcode capability, you must start the Virtual Profile from the Profile Explorer.  You are prompted to enter the Process Control barcode string - the “*” being the rest of the sequential or changing data and the string is the common data for that product series:</p>
-                    <p class="p_3">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000082.png" style="width: 519px;height: 261px;" />
-                    </p>
-                    <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: If your oven is capable of communicating with the RPI software, a dialog box will appear notifying you that Virtual Profile is starting and the oven recipe is changed automatically.</p>
-                    <p>&#160;</p>
-                    <p class="p_6">If your RPI software is not communicating directly with the oven controller, the software will display the baseline profile recipe.&#160; Make sure the oven is set to the exact recipe settings.</p>
-                    <p class="p_6" style="text-align: center;">
-                        <img src="Resources/Images/image114.png" style="width: 893px;height: 482px;" />
-                    </p>
-                    <p class="Caption">Figure 70: Profile Explorer – Start Virtual Profiling</p>
-                    <p>&#160;</p>
-                    <p class="p_16">If your oven is capable of communicating with the RPI software and the current oven recipe matches the baseline profile recipe, a dialog box will appear telling you that the recipe is already set correctly.  See Figure 71:</p>
-                    <p class="p_16" style="text-align: center;">
-                        <img src="Resources/Images/image115.png" />
-                    </p>
-                    <p class="Caption">Figure 71: Virtual Profiling – Oven Recipe Set Correctly</p>
-                    <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang.</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Using_the_Profile_Grouping_utility"></a>Use the Profile Grouping Utility</h2>
                     <p class="p_6">RPI includes a utility that lets you identify and group together different products that share the same thermal profile.&#160; For example, one might use a physically identical printed circuit board to manufacture many distinct product models.&#160; The manufacturer needs to specifically identify and track all the different models, but the thermal process specifications used to solder or cure them is identical throughout the product range.&#160; Once a successful process window setup is identified for one model, RPI lets you <span class="span_6">link</span> that setup with other models that can use the same process and thus save the time and cost of entering the same setup specifications repeatedly.&#160; In Virtual Profile mode, the baseline profile of a <span class="span_6">parent</span> <span class="span_6">product </span>can be matched to multiple <span class="span_6">child</span><span class="span_6"> models</span>, permitting smooth production transitions between models.&#160; </p>
@@ -121,9 +101,10 @@
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000085a.png" />
                     </p>
                     <p>&#160;</p>
-                    <p class="p_6">You enable the <span class="span_6">Profile Grouping</span> functionality by adjusting settings in the <span class="span_7">KIC2000UserSettings</span><span class="span_7">.kiccfg</span> file.&#160; Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
+                    <p class="p_6">You enable the <span class="span_6">Profile Grouping</span> functionality by adjusting settings in the <span style="font-family: 'Courier New';">KIC2000UserSettings.kiccfg</span> file.&#160; Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
                     <p class="p_18"><span class="span_27">[</span>APPLICATION CONFIGURATIONS<span class="span_27">]</span></p>
-                    <p class="p_40">EnableProfieGrouping=1</p>
+                    <p class="p_40"><span style="font-family: 'Courier New';">EnableProfieGrouping=1</span>
+                    </p>
                     <p class="p_40">&#160;</p>
                     <h3 class="Heading3">Use Wildcard Characters to Identify Child Models</h3>
                     <p>Anticipating the need to group closely named product models, the software lets you substitute the asterisk (*) symbol as a universal <span class="span_6">wildcard</span> character when adding models to a group or linking them with a specific profile.&#160; You can use wildcards in any position within the model name string.</p>
@@ -149,7 +130,7 @@
                     <p class="ListParagraph_3">The <i>Profile Grouping Utility</i> screen appears.                    </p>
                     <p>&#160;</p>
                     <ol start="2" class="ol_2">
-                        <li class="ListNumber2">Select the Grouping tab.
+                        <li class="ListNumber2">Select the <b>Grouping</b> tab.
                     </li>
                     </ol>
                     <p class="ListParagraph_3">The Grouping tab screen appears, displaying a pull-down list of products that already have defined in-spec, baseline profiles:</p>
@@ -163,10 +144,8 @@
                     </ol>
                     <p>&#160;</p>
                     <ol start="4" class="ol_2">
-                        <li class="ListNumber2">In the <span class="span_7">Add New Model</span> field, type in a model name (using wildcards as appropriate), and click the <span class="span_7">Add</span> button. </li>
+                        <li class="ListNumber2">In the <span class="span_7">Add New Model</span> field, type in a model name (using wildcards as appropriate), and click the <span class="span_7">Add</span> button. <br /><br />The model name appears in the Linked Models list</li>
                     </ol>
-                    <p>&#160;</p>
-                    <p class="ListParagraph_3">The model name appears in the Linked Models list</p>
                     <p>&#160;</p>
                     <ol start="5" class="ol_2">
                         <li class="ListNumber2">Repeat the steps for any additional models that you want to link to that baseline.</li>
@@ -176,7 +155,7 @@
                     <p>&#160;</p>
                     <h3 class="Heading3">Use the Utility with Virtual Profiling</h3>
                     <p>When Profile Grouping is enabled, you can only start Virtual Profiling by using the utility to identify properly linked product/model pairs.&#160; The normal Virtual Profile<span class="span_6"> Start</span> button no longer appears on the Profile Explorer screen.</p>
-                    <h4 class="Heading4">Load A Specific Model</h4>
+                    <h4 class="Heading4">Load a Specific Model</h4>
                     <p>While many models can be grouped together in association with a baseline profile, <span class="span_6">only one at a time can be processed in Virtual Profiling.</span>&#160; The software provides an interface for <span class="span_6">loading</span> a specific model into VP, paired with a specific product baseline.&#160; The software does a search through the existing baseline profiles and grouped models to seek a matched pair.&#160; The search can yield results of <span class="span_6">match</span>, <span class="span_6">no match</span> and <span class="span_6">multiple matches</span>.&#160; The procedure below describes how to resolve all possible outcomes into a product baseline/single model pairing that can run in VP.</p>
                     <p class="Proctitle"><a name="Select_the_VP_Load_tab"></a>
                     </p>
@@ -251,7 +230,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>If there is no match, the software displays a message about the model and a Link button.</p>
+                                <p>If there is no match, the software displays a message about the model and a <b>Link</b> button.</p>
                                 <p>&#160;</p>
                             </td>
                             <td>
@@ -278,7 +257,7 @@
                     </ol>
                     <p class="p_7">&#160;</p>
                     <ol start="7" class="ol_2">
-                        <li class="ListNumber2">Click the green check (OK) button.</li>
+                        <li class="ListNumber2">Click the <b>green check</b> (OK) button.</li>
                     </ol>
                     <p>&#160;</p>
                     <p class="ListParagraph_3">The VP Load screen reappears with the newly linked product/model pair displayed:</p>
@@ -287,10 +266,10 @@
                     </p>
                     <p>&#160;</p>
                     <ol start="8" class="ol_2">
-                        <li class="ListNumber2">Click the VP Start button to begin Virtual Profiling with the selected model.</li>
+                        <li class="ListNumber2">Click the <b>VP Start</b> button to begin Virtual Profiling with the selected model.</li>
                     </ol>
                     <p>&#160;</p>
-                    <h4 class="Heading4">View The Linked Model On Other Screens</h4>
+                    <h4 class="Heading4">View the Linked Model on Other Screens</h4>
                     <p class="p_6">During Virtual Profiling, the name of the linked model appears in several places in the user interface.&#160; On the Profile Explorer screen, all linked models for a selected profile appear at the top of the screen and in the Child Model column:</p>
                     <p class="p_6">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008D1.png" style="width: 624px;height: 216px;" />

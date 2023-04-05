@@ -68,7 +68,7 @@
                     <p>&#160;</p>
                     <p class="ListBullet_2"><span class="span_11">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
                     <h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
-                    <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.&#160; Below is a table of messages that you might see during this process: See Table 2.</p>
+                    <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.&#160; Below is a table of messages that you might see during this process:</p>
                     <p>&#160;</p>
                     <table align="center" class="table_1">
                         <col style="width: 150pt;" />
@@ -202,6 +202,40 @@
                         </tr>
                         <tr style="height: 13pt;">
                             <td class="td_22">
+                                <p class="p_52">Alarm # 5</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">No Barcode read for this board.  –or–</p>
+                                <p class="p_53">No Barcode read for xxx boards. (w/Barcode feature enabled)</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">No</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_52">Alarm # 5A</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">Process Traceability barcode scan failed (w/Barcode feature enabled)</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_52">Alarm # 5C</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">Process Control barcode scan failed (w/Barcode feature enabled)</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
                                 <p class="p_52">Alarm # 8</p>
                             </td>
                             <td class="td_23">
@@ -235,10 +269,43 @@
                         </tr>
                         <tr style="height: 13pt;">
                             <td class="td_22">
+                                <p class="p_52">Alarm # 12</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">Incorrect Process Control String (w/Barcode feature enabled)</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_52">Alarm # 13</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">One or more probes have exceeded the Footprint limits specified (w/Footprint option)</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
                                 <p class="p_52">Alarm # 16</p>
                             </td>
                             <td class="td_23">
                                 <p class="p_53">Maximum allowable back-to-back boards exceeded (When enabled)</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_52">Yes</p>
+                            </td>
+                        </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_52">Alarm # 18</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">Invalid board length detected from board sensor and cannot assign barcode in queue to board (w/Barcode feature enabled)</p>
                             </td>
                             <td class="td_23">
                                 <p class="p_52">Yes</p>
@@ -268,7 +335,7 @@
                                 <p class="p_52">Alarm H1</p>
                             </td>
                             <td class="td_23">
-                                <p><span class="span_27">e</span><span class="span_27">TPU Communication Failure (happened after Alarm H2)</span>
+                                <p class="p_53">eTPU Communication Failure (happened after Alarm H2)
                                 </p>
                             </td>
                             <td class="td_23">
@@ -280,13 +347,11 @@
                                 <p class="p_52">Alarm H2</p>
                             </td>
                             <td class="td_23">
-                                <p><span class="span_27">e</span><span class="span_27">TPU Lost Communication with PC.</span>
-                                </p>
-                                <p><span class="span_27">Note: This Alarm condition </span><span class="span_27">can</span><span class="span_27"> activate the </span><span class="span_27">Alarm Relay that </span><span class="span_27">is controlled by </span><span class="span_27">e</span><span class="span_27">TPU</span><span class="span_27">.</span>
+                                <p class="p_53">eTPU Lost Communication with PC.
                                 </p>
                             </td>
                             <td class="td_23">
-                                <p class="p_52">Yes or No</p>
+                                <p class="p_52">Yes</p>
                             </td>
                         </tr>
                         <tr style="height: 13pt;">
@@ -352,6 +417,17 @@
                                 <p class="p_54">No</p>
                             </td>
                         </tr>
+                        <tr style="height: 13pt;">
+                            <td class="td_22">
+                                <p class="p_52">Warning # 5</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_53">Process is very close to the control limit.</p>
+                            </td>
+                            <td class="td_23">
+                                <p class="p_54">No</p>
+                            </td>
+                        </tr>
                     </table>
                     <p class="Caption">Table 5: Virtual Profiling – Warnings</p>
                     <p>&#160;</p>
@@ -379,7 +455,7 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li>Exit the software, browse to the <i style="font-family: 'Courier New';">C:\ARM</i> directory and run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i>. Select the <i style="font-weight: bold;">Hardware</i> tab.</li>
+                                        <li>Exit the software, browse to the <i style="font-family: 'Courier New';">C:\ARM</i> directory and run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i>. Select the <i style="font-weight: normal;">Hardware</i> tab.</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>
@@ -390,7 +466,7 @@
                             <tr>
                                 <td>
                                     <ol start="2">
-                                        <li>Under the <i>Product Board Sensor</i> section, select the <i>Alarm on Continuous Boards</i> checkbox. Enter the <i>Maximum</i> number of back-to-back boards that you want to allow before the alarm is generated.</li>
+                                        <li>Under the <i>Product Board Sensor</i> section, select the <i style="font-weight: bold;">Alarm on Continuous Boards</i> checkbox. Enter the <i>Maximum</i> number of back-to-back boards that you want to allow before the alarm is generated.</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>

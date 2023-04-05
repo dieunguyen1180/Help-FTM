@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324000-000 PRI User Manual.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1"><a name="Using_dual_lane_systems"></a>Dual Lane Systems and Functionality</h1>
+        <p>The PRI system can monitor production through dual lane reflow ovens. This section will define the unique capabilities of the dual lane configuration. </p>
+        <p>&#160;</p>
+        <p>A <span class="span_6">Dual Lane-Dual System</span> configuration uses two instances of the software application to track different recipes through the oven.&#160; </p>
+        <p>&#160;</p>
+        <p>The <span class="span_6">Dual Lane-Single System</span> tracks two lanes of the same recipe with one instance of the software.&#160; </p>
+        <p>&#160;</p>
+        <p>A radio button display during the installation routine lets you choose between the standard configuration or one of the dual lane setups. </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h2 class="Heading2"><a name="Dual_lane_dual_systems"></a>Dual Lane Dual Systems</h2>
+        <p>A dual system installation features two distinct instances of the PRI software and a complete duplication of the thermal management hardware.&#160; Dual systems include <span class="span_6">two</span>:</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Pairs of pyrometers</li>
+            <li>Encoders</li>
+            <li>DAU</li>
+            <li>Board sensors</li>
+        </ul>
+        <table class="table_1">
+            <col style="width: 437px;" />
+            <col />
+            <thead>
+                <tr>
+                    <th class="th_6">
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                        <p style="text-align: left;">Each PRI instance receives data from its own associated DAU.&#160; Each stores its logged data and executable subroutines in separate folders identified as either <span class="span_6">front rail</span> or <span class="span_6">back rail</span>.&#160; (The front rail designates the lane closest to the lifting cover of the oven—the back rail designated the lane closest to the hinge of the oven cover.)&#160; </p>
+                    </th>
+                    <th class="th_6">
+                        <p class="p_3">
+                            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Dual Lane Systems and Functionality.jpg" style="height: 233px;width: 304px;" class="img_11" />
+                        </p>
+                        <p class="Caption_2">
+                            <div style="height: 11.2pt;width: 101.1pt;" class="div_230">
+                                <p class="Caption">Figure 119</p>
+                            </div>
+                            <div style="height: 11.2pt;width: 101.1pt;" class="div_230">
+                                <p class="Caption">&#160;</p>
+                            </div>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p class="Caption">&#160;</p>
+        <p>The two instances of the software permit using different recipes in each lane.&#160; In the desktop toolbar, each PRI instance is represented by its own icon – F for Front Rail and B for Back Rail.</p>
+        <p>
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Dual Lane Systems and Functionality.png" style="width: 168px;height: 62px;" class="img_11" />
+            <p class="Caption" style="text-align: left;text-indent: 0.5in;">Figure 120</p>
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p class="p_104"><a name="Configure_Dual_Lane_Systems"></a>Configure Dual Lane Systems </p>
+        <p>During the software installation, you will have the option to select what type of system will be in use:</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems.png" class="img_11" style="width: 478px;height: 360px;" />
+        </p>
+        <p class="Caption">Figure 121: Dual Lane install </p>
+        <p>&#160;</p>
+        <p>You would select “<span class="span_6">Dual Lane Dual System</span>” if there is a complete system installed on <span class="span_13">each</span> lane of the oven.</p>
+        <p class="p_101">&#160;</p>
+        <p class="p_101">&#160;</p>
+        <p class="p_3">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_1.png" class="img_11" style="width: 469px;height: 354px;" />
+        </p>
+        <p class="Caption">Figure 122: Dual lane - directory</p>
+        <p class="p_101">&#160;</p>
+        <p class="p_101">&#160;</p>
+        <p>When “<span class="span_6">Dual Lane Dual System</span>” is selected, as noted previously, there will be two separate software directories used – one for the “Front” and one for the “Back”. You will be able to choose whether you want to install the software for either one, or both directories. </p>
+        <p>&#160;</p>
+        <h3 class="Heading3">Dual Lane Configuration </h3>
+        <p>Additional settings for a Dual Lane system configuration can be found in the <span class="span_46">ConfigurationProgram.exe</span> located in the <span class="PlainTextChar_1">C:\PRI directory</span>.</p>
+        <p>&#160;</p>
+        <table style="width: 100%;">
+            <col style="width: 401px;" />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="font-size: 10pt;">
+                        <br /><span class="span_7">Lane Configuration</span> – For a Dual Lane-Single System, this section allows you to specify the position of the Board Tracking display in the software for each lane. <p>&#160;</p><p><span class="span_7">User defined label for Lanes</span> – By default, the software will label the lanes “Front” and “Back”. When the checkbox is checked, the drop-down menu allows you to select alternate designations for the lane names. </p><p><span class="span_7">Note:</span> The Front Lane is always the lane closest to the front side of the machine.</p><p>&#160;</p><p><span class="span_7">Dual Lane – Dual System Only</span> – When a Dual System is in use, there are two instances of the PRI software running – one for each lane. By default, a user must select the lane they want to see on the screen at any given time. </p><p>&#160;</p><p>When selecting this checkbox, the user can define an interval for the software “automatically” to switch over to the other lanes display after no input from the mouse cursor.</p></td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_2.png" style="width: 468px;height: 393px;" />
+                        <p class="Caption">Figure 123: Dual Lane Config</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <p>&#160;</p>
+        </p>
+        <p class="p_18"><span class="span_7">Note:</span> For Dual Lane Dual System installations, the settings in this configuration utility must be entered into both install directories – <span class="PlainTextChar_1">C:\PRI Front Rail</span> and <span class="PlainTextChar_1">C:\PRI Back Rail.</span></p>
+        <p>&#160;</p>
+        <p>On Dual Lane Dual Systems, when you select <span class="span_6">User defined label for Lanes</span>, the selection chosen will display as a watermark on the Index, General, Description, Charts, and Troubleshooting screens. See example below:</p>
+        <p>&#160;</p>
+        <p class="p_3" style="text-align: center;">
+            <img src="Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_3.png" class="img_11" style="width: 643px;height: 148px;" />
+        </p>
+        <p>
+            <p class="Caption" style="text-align: center;">Figure 124</p>
+        </p>
+        <h4 class="Heading4">Configuring to profile</h4>
+        <table style="width: 100%;">
+            <col style="width: 507px;" />
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <br />The profiler can only communicate with one lane at a time, so you must select which lane you want the profiler to connect to. Disconnect then reconnect the profiler (or Smart Dock/Base Station where applicable). A pop-up menu will display in the lower right of the screen allowing you to select which lane to connect to. Repeat these steps to change to the other lane.</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>&#160;</td>
+                    <td>
+                        <img src="Resources/Images/SFT-324400-000 PRI User Manual/Configure Dual Lane Systems_4.png" style="width: 377px;height: 139px;" />
+                        <p class="Caption">Figure 125: Profiler connect</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="p_3">&#160;</p>
+        <p>
+            <p>&#160;</p>
+        </p>
+    </body>
+</html>

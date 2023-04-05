@@ -5,9 +5,9 @@
     </head>
     <body>
         <p>&#160;</p>
-        <h1 class="Heading1"><a name="Vacuum_Reflow_Oven_Systems"></a>Vacuum Reflow Oven Systems And Functionality</h1>
+        <h1 class="Heading1"><a name="Vacuum_Reflow_Oven_Systems"></a>Vacuum Reflow Oven Systems and Functionality</h1>
         <p>Vacuum reflow ovens typically include an extra chamber in between the heated and cooling sections of the oven. During production, the PCB travels into the vacuum zone, the chamber is sealed off from the rest of the process tunnel, and a vacuum is drawn. The chamber is opened, and then the PCB continues into the cooling section and exits the oven. The purpose of adding a vacuum chamber to the process is to reduce voiding in the formation of the solder joints. The RPI system can be integrated into select* vacuum reflow ovens. This section outlines the unique capabilities of the <i>RPI Vacuum</i> system.</p>
-        <p>* <i>Contact KIC to check for compatibility with your machine</i></p>
+        <p>* <i><a href="Contacting_KIC.htm">Contact KIC to check for compatibility with your machine</a></i></p>
         <p>&#160;</p>
         <p>In addition to the other functionality described in this manual, the <i>RPI Vacuum</i> system includes:</p>
         <ul>
@@ -16,7 +16,10 @@
             <li>Time duration PCB spent in vacuum zone automatically saved for each PCB during production</li>
             <li>A dynamic graphical display of the vacuum zone for each PCB (based on the time each PCB spent in the chamber)</li>
         </ul>
-        <p>Note: Software communication with the applicable oven controller software may be required for the <i>RPI Vacuum system</i>.</p>
+        <blockquote>
+            <p><b>Note:</b> Software communication with the applicable oven controller software may be required for the <i>RPI Vacuum system</i>.</p>
+            <p>&#160;</p>
+        </blockquote>
         <h2 class="Heading2"><a name="Vacuum_System_Hardware"></a>RPI Vacuum System Hardware</h2>
         <p>The <i>RPI Vacuum</i> system incorporates custom built thermal probes unique to the vacuum ovens which allow for monitoring the heated zones, vacuum chamber, and cooling section to provide complete monitoring of the PCB through the process.</p>
         <h2 class="Heading2"><a name="Display_Vacuum_Reflow_profile"></a>RPI Vacuum System Functionality</h2>
@@ -54,7 +57,7 @@
                 <tr>
                     <td style="font-size: 10pt;">
                         <p>&#160;</p>
-                        <p>To enable this feature, access the <i>Global Preferences/Control Limits</i> tab and select the checkbox for – ‘<i>Trigger Warning if vacuum time varies from baseline by more than</i>’.
+                        <p>To enable this feature, access the <i>Global Preferences/Control Limits</i> tab and select the checkbox for – <i style="font-weight: bold;">Trigger Warning if vacuum time varies from baseline by more than</i>.
 </p>
                         <p>&#160;</p>
                         <p>
@@ -63,14 +66,14 @@ Enter the percentage of variation in time you will allow before the system shoul
                     </td>
                     <td>&#160;</td>
                     <td style="text-align: left;">
-                        <img src="Resources/Images/FTM0003.png" style="width: 515px;height: 423px;" />
+                        <img src="Resources/Images/FTM0003.png" style="width: 533px;height: 436px;" />
                     </td>
                 </tr>
                 <tr>
                     <td style="font-size: 10pt;">
-                        <p>Additionally, you can select the <i>Disable Alarm</i> tab to further customize what happens if this warning occurs. 
-</p>
-                        <p><b>NOTE</b>: Selecting a checkbox on this screen DISABLES the particular function.
+                        <p>Additionally, you can select the <i>Disable Alarm</i> tab to further customize what happens if this warning occurs. </p>
+                        <p>&#160;</p>
+                        <p><b>Note</b>: Selecting a checkbox on this screen DISABLES the particular function.
 </p>
                         <p>&#160;</p>
                         <p>
@@ -83,7 +86,7 @@ By default, the warning message will appear on the screen (checkbox not selected
                     </td>
                     <td>&#160;</td>
                     <td style="text-align: left;">
-                        <img src="Resources/Images/FTM0004.png" style="width: 520px;height: 421px;" />
+                        <img src="Resources/Images/FTM0004.png" />
                     </td>
                 </tr>
                 <tr>
@@ -113,23 +116,24 @@ By default, the warning message will appear on the screen (checkbox not selected
                 <tr>
                     <td style="font-size: 10pt;">
                         <p>&#160;</p>
-                        <p>To enable this feature, shut down the software and open the <i style="text-decoration: underline;">C:\RPI\ConfigurationProgram.exe</i> application.
+                        <p>To enable this feature, shut down the software and open the <i style="font-family: 'Courier New'; text-decoration: none;">C:\RPI\ConfigurationProgram.exe</i> application.
 
 </p>
                         <p>&#160;</p>
-                        <p>On the Hardware Tab, select the Enable Fixed Board Length Logic checkbox. When this feature is enabled, you can also enable an alarm notification to alert you if the board sensor is triggered too long (board stuck, improper sensor function, etc.). <i>Select the Alarm if Board Sensor On for “x” seconds</i> checkbox and then enter the amount time delay before the alarm should be generated. Click <i>Apply</i> and <i>OK</i> to save your changes and exit the Configuration utility.
+                        <p>On the <i>Hardware</i> Tab, select the <i style="font-weight: bold;">Enable Fixed Board Length Logic</i> checkbox. When this feature is enabled, you can also enable an alarm notification to alert you if the board sensor is triggered too long (board stuck, improper sensor function, etc.). <i>Select the <b>Alarm if Board Sensor On for “x” seconds</b></i> checkbox and then enter the amount time delay before the alarm should be generated. Click <i style="font-weight: bold; font-style: normal;">Apply</i> and <i style="font-weight: bold; font-style: normal;">OK</i> to save your changes and exit the Configuration utility.
 
 </p>
                     </td>
                     <td>&#160;</td>
                     <td style="font-size: 10pt;text-align: left;">
-                        <img src="Resources/Images/FTM0006.png" style="width: 515px;height: 491px;" />
+                        <img src="Resources/Images/FTM0006.png" />
                     </td>
                 </tr>
                 <tr>
                     <td style="font-size: 10pt;">
                         <p>&#160;</p>
-                        <p><b>Example of Alarm Message</b></p>
+                        <p><b>Example of Alarm Message</b>
+                        </p>
                         <p>When this feature is enabled, and the board sensor is triggered longer that the limit set, the following alarm message will be displayed:
 </p>
                     </td>
