@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="Resources/Stylesheets/SFT-324100-101 Profiling System User Manual v3.2 draft.css" rel="stylesheet" />
+    </head>
+    <body>
+        <table style="width: 1000px;">
+            <col style="width: 1000px;" />
+            <tr>
+                <td>
+                    <h1 class="Heading1">Dual Profiling Mode</h1>
+                    <p><i>Dual Profiling</i> is an <i>optional</i> hardware and software capability that allows you to record profiles using up to 24 thermocouples. It utilizes two (2) standard 12 channel SPS Smart profilers which will be ‘paired’ to each other and are run using a ‘<i>dual</i>’ thermal shield which accommodates both units. It is designed for applications where a larger number of TCs are required, but still offers the flexibility to run a single 12 channel unit by itself as needed.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Global_Tab_24ch"></a>Configuration</h3>
+                    <p>When a USB dongle or license is detected with this optional capability, an additional selection for <i>Dual Profiling Mode</i> will be available in Global Preferences. To run in <i>Dual Profiling</i> mode, the two (2) 12 channel profilers need to be programmed to be designated for Primary and Secondary functionality respectively.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/FTM00018_global24ch.png" style="width: 555px;height: 456px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <ul>
+                        <li><b>Primary</b> – This unit will perform the typical functions of a standard profiler. It will wirelessly communicate with the Secondary unit, and it will be connected, via a USB download cable, to the PC during profiling setup and then to download the profile data.</li>
+                        <li><b>Secondary</b> – This unit will only operate from commands received wirelessly from the Primary unit.</li>
+                    </ul>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Change_Standard_DualProfiling"></a>Steps to change from standard to Dual Profiling operation:</h3>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col style="width: 450px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ol>
+                                        <li>Turn on and connect a 12ch SPS unit via the USB download cable<br /><br style="font-size: 6pt;" /></li>
+                                        <li>Click the drop-down menu and select <b>Secondary</b><br /><br style="font-size: 6pt;" /></li>
+                                        <li>Click <b>OK</b> to change the profiling mode</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/FTM00019_global24ch.png" style="width: 353px;height: 174px;" />
+                                    <p>&#160;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ol start="4">
+                                        <li>Click <b>OK</b> to acknowledge the change to <i>Dual Secondary</i> mode<br /><br /></li>
+                                        <li>Unplug the unit<br /><br /></li>
+                                        <p><b>Note:</b> the unit will be automatically powered off in order to change modes</p>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/FTM00020_global24ch.png" style="width: 370px;height: 128px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <ol start="6">
+                                        <li>Turn on and connect the other 12ch SPS unit via the USB download cable<br /><br style="font-size: 6pt;" /></li>
+                                        <li>Click the drop-down menu and select Primary<br /><br style="font-size: 6pt;" /></li>
+                                        <li>Click OK to change the profiling mode<br /><br style="font-size: 6pt;" /></li>
+                                        <li>Click OK the acknowledge the change to <i>Dual Primary</i> mode<br /><br style="font-size: 6pt;" /></li>
+                                        <p><b>Note:</b> the unit will be automatically powered off in order to change modes<br /><br style="font-size: 6pt;" /></p>
+                                        <li>Leave the Primary unit connected to the PC and press the power button to turn on the unit</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <ol start="11">
+                                        <li>Once the two units are programmed as Primary and Secondary, with both units turned on, tap the case of both units. This will put them into ‘pairing mode’. The blue ANT light will flash on each, and once paired, the amber Wi-Fi light will flash indicating the units are paired.
+</li>
+                                    </ol>
+                                </td>
+                                <td>
+                                    <img src="Resources/Images/FTM00021_24ch.png" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Change_DualProfiling_Standard"></a>Steps to change from Dual Profiling to standard operation:</h3>
+                    <ol>
+                        <li>Turn on and connect one of the units via the USB download cable</li>
+                        <li>Uncheck the <b style="font-style: italic;">Dual Profiling</b> checkbox</li>
+                        <li>Click <b>OK</b> to the messages to change the profiling mode from <i>Dual Primary</i> or <i>Secondary</i> back to standard configuration</li>
+                        <li>Repeat steps 1-3 for the second unit</li>
+                    </ol>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Hardware_Status_Dual_Profiling_mode"></a>Hardware Status – Dual Profiling mode</h3>
+                    <p>When configured for <i>Dual Profiling</i> operation, and the <i>Primary</i> unit is connected, you will see the data from both the <i>Primary and Secondary</i> units:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/FTM00022_HS24ch.png" style="width: 688px;height: 263px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>In the example above, there are no TCs connected to the Primary unit (channels displaying ‘opn’), whereas there are 12 TCs connected to the Secondary unit (channels displaying 26.0, 26.1, etc.). You can also see the battery percentage, and internal temperature of each unit.</p>
+                    <p>&#160;</p>
+                    <p><b>IMPORTANT:</b> If a unit is configured for <i>Secondary</i> and is directly connected to the PC via the USB download cable, it will display erratic or invalid values for the TC channels and the Internal Temperature as shown below. When in <i>Dual Profiling</i> mode, the only way to see valid information is when connecting the <i>Primary</i> unit.</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/FTM00023_HS24ch.png" style="width: 677px;height: 263px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Run_Profile_DualProfiling"></a>Run a Profile – Dual Profiling Mode</h2>
+                    <p>See the Run a Profile earlier in this manual for general information about running profiles.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Attach_the_Air_TC_24ch"></a>Attaching the Air TC</h3>
+                    <p>Follow the on-screen instructions for attaching the Air TC:</p>
+                    <table style="width: 100%;">
+                        <col style="width: 450px;" />
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>&#160;</p>
+                                    <p>&#160;</p>
+                                    <ol>
+                                        <li>It must be attached at the leading edge of the board, extending one inch (25  mm) in front of the leading edge of the board.<br /><br /><br /></li>
+                                        <li>It <b style="text-decoration: underline;">MUST</b> be plugged into <b>channel 1</b> on the <b>PRIMARY</b> profiler.</li>
+                                    </ol>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00024_Image24ch.png" style="width: 459px;height: 346px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Attach_Standard_TCs_24ch"></a>Attaching product TCs</h3>
+                    <table style="width: 100%;">
+                        <col style="width: 451px;" />
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Attach the product TCs at selected sites on the board, and plug them into the remaining connectors on the <i>Primary</i> and <i>Secondary</i> profilers.  Order is not important, unless you plan on labeling where each TC is attached.</p>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/FTM00025_Image24ch.png" style="width: 461px;height: 346px;" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Selecting_Thermocouples_24ch"></a>Selecting Thermocouples for the Profile</h3>
+                    <p>Select the number of TCs you are using by checking the box for the channel. Select the checkbox at the top of the screen the add custom labels for each TC.</p>
+                    <blockquote>
+                        <p class="ListBullet_2"><b>Note:</b> When units are configured for <i>Dual Profiling</i> mode, they can ONLY be run in Dual mode. Both the <i>Primary</i> and <i>Secondary</i> units need to be in use. To profile with 12 or fewer channels, reconfigure a unit for ‘standard’ operation.</p>
+                    </blockquote>
+                    <p class="ListBullet_2">&#160;</p>
+                    <p class="ListBullet_2" style="text-align: center;">
+                        <img src="Resources/Images/FTM00026_SelectTC24ch.png" style="width: 584px;height: 498px;" />
+                    </p>
+                    <p>&#160;</p>
+                    <p><b>Important</b> – When operating in <i>Dual Profiling</i> mode, always use the Dual thermal shield. Running with the profilers in separate shields can result in errors in profiling and/or data loss.</p>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

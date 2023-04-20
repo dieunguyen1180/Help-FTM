@@ -18,19 +18,18 @@
                     <p>Once the baseline is established, the software goes into monitoring mode, recording real-time belt speed and probe temperature data at the specified interval as the production run passes through the oven.  Comparing real-time data to the baseline profile, the automatic system algorithms accurately extrapolate a simulated thermal profile. When oven data varies significantly from the baseline profile, the software displays appropriate warnings to system operators. The software saves the data from each profile/virtual profile, creating a valuable quality assurance record.</p>
                     <p>&#160;</p>
                     <p>If you’ve purchased the option, the software can display a chart and table of profile data based on the process window and also Statistical Process Control (SPC) charts.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b>  Before you start Virtual Profiling, make sure all hardware is properly installed and configured.</p>
+                    <blockquote>
+                        <p><b>Note:</b>  Before you start Virtual Profiling, make sure all hardware is properly installed and configured.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Getting_a_valid_baseline_profile"></a>Get a Valid Baseline Profile </h2>
                     <p>Virtual Profiling makes use of a special profile, called the baseline profile, as the data model for its predictions.  The software requires that you first establish this baseline before it enables Virtual Profiling. The baseline profile should represent your optimum oven recipe for your product and needs to meet the Virtual Profile criteria shown below:</p>
                     <p>&#160;</p>
-                    <ul>
-                        <li>The PWI must be below the Maximum PWI to allow the VP value as set in Global Preferences.</li>
+                    <ul style="list-style-type: square;">
                         <li>
-                            <p>The conveyor speed measured by the encoder must be within 20% of the specified conveyor speed.</p>
+                            <p>The PWI must be below the Maximum PWI to allow the VP value as set in Global Preferences.</p>
                         </li>
-                    </ul>
-                    <ul>
+                        <li>The conveyor speed measured by the encoder must be within 20% of the specified conveyor speed.</li>
                         <li>
                             <p>Probe temperatures must be valid; if any probe thermocouple reports a range of greater than 30°C between adjacent readings (every 2.5 seconds), the software will consider them invalid.</p>
                         </li>
@@ -41,8 +40,9 @@
                     <h3 class="Heading3"><a name="Integrate_Empty_Oven_Data"></a>Integrate Empty Oven Data
                                 </h3>
                     <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <i>board present</i> and <i>board absent</i> states along the length of the probes.  To obtain this data most efficiently, it may be necessary to run the profiler board with similar <i>boards moving ahead of it and an empty conveyor behind it</i>.  The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.  As the profiler board exits each oven zone, the probes can measure the temperature when a board is not present.  The software can integrate this comparative data for a more accurate predictive capability.  The oven should remain empty until the profiler board completely exits the process chamber.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs  and Virtual Profiling will not be able to be used.</p>
+                    <blockquote>
+                        <p><b>Note:</b> Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs  and Virtual Profiling will not be able to be used.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load a Virtual Profile</h2>
                     <p>There are two ways to begin Virtual Profiling:</p>
@@ -60,7 +60,7 @@
                         <tr>
                             <td class="td_10">
                                 <ol start="2">
-                                    <li class="ListNumber2">If you have run a profile that meets the Virtual profile criteria, then the Start Virtual profiling button will appear once the profile has completed.  Click the Start Virtual Profiling button to begin Virtual Profiling for this product. A message will display asking you to confirm if you want to proceed. </li>
+                                    <li class="ListNumber2">If you have run a profile that meets the Virtual profile criteria, then the <b>Start Virtual profiling</b> button will appear once the profile has completed.  Click the <b>Start Virtual Profiling</b> button to begin Virtual Profiling for this product. A message will display asking you to confirm if you want to proceed. </li>
                                 </ol>
                             </td>
                             <td class="td_10">
@@ -71,12 +71,11 @@
                             </td>
                         </tr>
                     </table>
-                    <p class="ListNumber2">&#160;</p>
-                    <p class="Important"><span class="span_21">Caution: </span><span class="span_18">Your </span><span class="span_18">software</span><span class="span_18"> security</span><span class="span_18"> key must be connected prior to enabling Virtual Profile mode.&#160; If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message will</span><span class="span_18"> be displayed</span><span class="span_18">.</span><span class="span_21">&#160; </span>
-                    </p>
-                    <p> </p>
-                    <p class="Important"><span class="span_21">Tip: </span><span class="span_18">If your oven is capable of communicating with the software, a dialog box will appear notifying </span><span class="span_18">you</span><span class="span_18"> that Virtual Profile is starting, and the oven recipe</span><span class="span_18"> will be changed automatically.</span>
-                    </p>
+                    <blockquote>
+                        <p><b>Caution:</b> Your software security key must be connected prior to enabling Virtual Profile mode.  If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message will be displayed.</p>
+                        <p>&#160;</p>
+                        <p><b>Tip:</b> If your oven is capable of communicating with the software, a dialog box will appear notifying you that Virtual Profile is starting, and the oven recipe will be changed automatically.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>If your software is not communicating directly with the oven controller, the software will display the Baseline profile recipe.&#160; Make sure the oven is set to the exact recipe settings.</p>
                     <p>&#160;</p>
@@ -87,9 +86,10 @@
                     <p>&#160;</p>
                     <p style="text-align: center;">&#160; <img src="Resources/Images/SFT-321000-151 e-APS User Manual/0300006Aa.png"></img></p>
                     <p class="Caption">Figure 56: Virtual Profiling – Oven Recipe set correctly</p>
-                    <p>&#160;</p>
-                    <p><b>Tip:</b> Oven Controller: If nothing happens within several seconds, check the oven controller software to make sure there are no error messages or errors that will cause the system to hang.
+                    <blockquote>
+                        <p><b>Tip:</b> Oven Controller: If nothing happens within several seconds, check the oven controller software to make sure there are no error messages or errors that will cause the system to hang.
 </p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Virtual_Profiling_Live1"></a>Live Mode - General Tab</h2>
                     <p style="text-align: center;">
@@ -98,8 +98,9 @@
                     <p class="Caption">Figure 57: General Tab Screen</p>
                     <p>&#160;</p>
                     <p>On the <i>Live-Mode General tab</i> screen, the software displays both the baseline and virtual profile.  To distinguish between the two, the baseline profile appears in a solid line format, while the virtual profile appears in dashed lines.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> To enlarge the graph portion of the screen, double click on the graph.  To enlarge the statistics portion of this screen, double click on the statistics.</p>
+                    <blockquote>
+                        <p><b>Note:</b> To enlarge the graph portion of the screen, double click on the graph.  To enlarge the statistics portion of this screen, double click on the statistics.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p><b style="font-family: Arial; font-size: 14pt;"><a name="Profile_Statistics"></a>Profile Statistics</b>
@@ -122,7 +123,7 @@
                             </td>
                             <td class="td_10">
                                 <p style="text-align: center;">
-                                    <img src="Resources/Images/image126.png" style="width: 504px;height: 358px;" />
+                                    <img src="Resources/Images/image126.png" />
                                     <p class="Caption">	Figure 58: Graph Controller</p>
                                 </p>
                             </td>
@@ -207,8 +208,9 @@
                     <p>The verification profile updates the Baseline profile for the current Virtual Profile, ensuring that its prediction model yields the most accurate possible results, using the most recent profile.  The software always recognizes the latest in spec profile as the Baseline for any Virtual Profile.</p>
                     <p>&#160;</p>
                     <p>The software recognizes when the process temperatures change significantly as compared to the current Baseline profile, and then prompts you to run a verification profile.  You can intentionally run a verification profile at any time during Virtual Profiling Live Mode.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b>The software will only accept a verification profile as a new baseline if meets the standard VP criteria.  See <span style="color: #0000ff; text-decoration: underline;"><a href="#Getting_a_valid_baseline_profile">Get a Valid Baseline Profile</a></span>.</p>
+                    <blockquote>
+                        <p><b>Note:</b>The software will only accept a verification profile as a new baseline if meets the standard VP criteria.  See <span style="color: #0000ff; text-decoration: underline;"><a href="#Getting_a_valid_baseline_profile">Get a Valid Baseline Profile</a></span>.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Starting_a_Verification"></a>Start A Verification Profile</h3>
                     <table class="table_2">
@@ -219,7 +221,7 @@
                                 <p>A Verification Profile can run only when Virtual Profiling is running in live mode.</p>
                                 <p>&#160;</p>
                                 <ol>
-                                    <li>With Virtual Profiling running in live mode, select the Run Profile button at the bottom of the Virtual Profiling-live screen. </li>
+                                    <li>With Virtual Profiling running in live mode, select the <b>Run Profile</b> button at the bottom of the Virtual Profiling-live screen. </li>
                                 </ol>
                                 <p>&#160;</p>
                             </td>
@@ -239,10 +241,10 @@
                                 </ol>
                                 <p>&#160;</p>
                                 <ul>
-                                    <li class="ListBullet2_1">If you choose “<b>No</b>”, the software will return to the previous screen.</li>
+                                    <li class="ListBullet2_1">If you choose <b>No</b>, the software will return to the previous screen.</li>
                                 </ul>
                                 <ul>
-                                    <li class="ListBullet2_1">If you choose “<b>Yes</b>”, the software will begin stepping through the run profile routine.</li>
+                                    <li class="ListBullet2_1">If you choose <b>Yes</b>, the software will begin stepping through the run profile routine.</li>
                                 </ul>
                                 <p>&#160;</p>
                             </td>
@@ -258,26 +260,28 @@
                     <p>&#160;</p>
                     <p>Before profiling, make sure:</p>
                     <p>&#160;</p>
-                    <ul class="cube">
+                    <ul style="list-style-type: square;">
                         <li class="ListBullet">The Profiler is on and ready to profile.</li>
-                        <li class="ListBullet2_7"><span class="span_7">Transmit </span><span class="span_7">model</span><span class="span_19"> – Receiver </span><span class="span_19">or Base Station</span><span class="span_19">is plugged into computer</span><span class="span_19">.</span>
+                    </ul>
+                    <ul style="list-style-type: circle;">
+                        <li class="li_3"><span class="span_7">Transmit </span><span class="span_7">model</span><span class="span_19"> – Receiver </span><span class="span_19">or Base Station</span><span class="span_19">is plugged into computer</span><span class="span_19">.</span>
                         </li>
-                        <li class="ListBullet2_7"><span class="span_7">Datalog </span><span class="span_7">model</span><span class="span_19"> – </span><span class="span_19">The profiler is</span><span class="span_19"> plugged into the download cable and download cable is plugged into the computer.</span>
+                        <li class="li_3"><span class="span_7">Datalog </span><span class="span_7">model</span><span class="span_19"> – </span><span class="span_19">The profiler is</span><span class="span_19"> plugged into the download cable and download cable is plugged into the computer.</span>
                         </li>
                     </ul>
                     <p>&#160;</p>
-                    <ul class="cube">
+                    <ul style="list-style-type: square;">
                         <li><span class="span_19">P</span><span class="span_19">rofiler </span><span class="span_19">batteries</span><span class="span_19"> and internal temp</span><span class="span_19">erature</span><span class="span_19"> are at the proper levels to profile.</span>
                         </li>
                     </ul>
                     <p>&#160;</p>
-                    <ul class="cube">
+                    <ul style="list-style-type: square;">
                         <li><span class="span_19">All thermocouples attached to the</span><span class="span_19"> profiler</span><span class="span_19"> are below the defined product start temperature.</span>
+                            <br />
                             <br /><b>Note:</b> Depending on the settings on your profiler and in the software, you may have to initialize the profiler.  The software will let you know when this is necessary. To initialize the profiler, connect it with the supplied cable to the computer, and turn on the power. Click <b>OK</b> when the software displays the message that the initialization was successful</li>
                     </ul>
-                    <p>&#160;</p>
                     <ol start="3">
-                        <li>Click the <b>Profile Start</b> button (green traffic light).</li>
+                        <li>Click the <b>Green traffic light</b> button.</li>
                     </ol>
                     <p>&#160;</p>
                     <p>Once the Verification Profile is complete, the profiler has downloaded the profile data that meets Virtual Profile criteria, the software will display the dialog box shown below: </p>
@@ -299,16 +303,19 @@
                     <p class="Caption">Figure 64: Out of Spec Verification profile</p>
                     <p>&#160;</p>
                     <p class="p_24">The dialog box will present two choices:</p>
-                    <ol start="1" class="ol_1">
-                        <li class="ListBullet2"><span class="span_9">Continue Virtual Profiling –</span> If the Verification Profile meets Virtual Profiling criteria, it will automatically be used as the new Baseline profile.&#160; If you choose this option, the software will update the Baseline and continue Virtual Profiling, using the Verification Profile as a new Baseline profile.</li>
+                    <ol>
+                        <li><span class="span_9">Continue Virtual Profiling –</span> If the Verification Profile meets Virtual Profiling criteria, it will automatically be used as the new Baseline profile.&#160; If you choose this option, the software will update the Baseline and continue Virtual Profiling, using the Verification Profile as a new Baseline profile.</li>
                     </ol>
                     <p>&#160;</p>
-                    <ol start="2" class="ol_1">
-                        <li class="ListBullet2"><span class="span_9">Unload Virtual Profile and go to Prediction mode</span> – If the Verification Profile does not meet Virtual Profiling criteria or is out of spec, it can’t be used for Virtual Profiling.&#160; If you choose this option, you can predict changes to the profile in order to bring the profile back within its process specification.&#160; You will have to run at least one more profile in order to produce a profile that meets Virtual Profiling criteria.</li>
+                    <ol start="2">
+                        <li><span class="span_9">Unload Virtual Profile and go to Prediction mode</span> – If the Verification Profile does not meet Virtual Profiling criteria or is out of spec, it can’t be used for Virtual Profiling.&#160; If you choose this option, you can predict changes to the profile in order to bring the profile back within its process specification.&#160; You will have to run at least one more profile in order to produce a profile that meets Virtual Profiling criteria.</li>
                     </ol>
-                    <p>&#160;</p>
-                    <p class="Important"><span class="span_21">Tip: </span><span class="span_18">For an explanation of Virtual Profile criteria, see the <span style="color: #0000ff; text-decoration: underline;"><a href="Virtual_Profiling_VP.htm#Understanding_Virtual_Profiling">Virtual Profiling</a></span> Section of this manual</span>
-                    </p>
+                    <blockquote>
+                        <blockquote>
+                            <p class="Important"><span class="span_21">Tip: </span><span class="span_18">For an explanation of Virtual Profile criteria, see the <span style="color: #0000ff; text-decoration: underline;"><a href="Virtual_Profiling_VP.htm#Understanding_Virtual_Profiling">Virtual Profiling</a></span> Section of this manual</span>
+                            </p>
+                        </blockquote>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Historical_Mode"></a>Historical Mode</h2>
@@ -347,7 +354,7 @@
                     <p>&#160;</p>
                     <p style="font-size: 14pt;"><a name="Viewing_Historical_Profiles"></a><b>Viewing Historical Profiles</b><![CDATA[
                     ]]></p>
-                    <p>To view the Virtual Profiles for this product, use the <b>Green arrow</b> buttons to either go forward in history or go backwards in history.  Each time the arrow button is selected the software will display the next record in chronological order.</p>
+                    <p>To view the <i>Virtual Profiles</i> for this product, use the <b>Green arrow</b> buttons to either go forward in history or go backwards in history.  Each time the arrow button is selected the software will display the next record in chronological order.</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="VP_Historical_Graph_Controller"></a>Graph Controller</h3>
                     <table class="table_2">
@@ -369,7 +376,6 @@
                             </td>
                         </tr>
                     </table>
-                    <p>&#160;</p>
                     <p class="ListBullet2_2">&#160;</p>
                     <p><span class="span_9">TCs Line Thickness –</span> The pull-down menu lets you select five different thicknesses for the TC lines drawn on the graph.</p>
                     <p>&#160;</p>
@@ -392,7 +398,7 @@
                     <p><b>Slope Between/Time Between Peak Between –</b> These selections control which calculations will be displayed in the <i>Pointer Slopes</i> tab of the Statistics table when pointers are added onto a profile graph.</p>
                     <p class="ListBullet2_2">&#160;</p>
                     <p class="ListBullet2_2">&#160;</p>
-                    <h3 class="Heading3"><a name="Automatic_calculation_of1"></a>Automatic Calculation Of Delta T + Delta (Or Range) For All Statistics</h3>
+                    <h3 class="Heading3"><a name="Automatic_calculation_of1"></a>Automatic Calculation of Delta T + Delta (Or Range) for all Statistics</h3>
                     <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.   This is the range of the highest to the lowest value for any given specification.  This information is strictly being displayed and is not factored in to the PWI value and is not used in the Navigator or Auto-Focus calculations.&#160; </p>
                     <h3 class="Heading3">Examine Tool</h3>
                     <table class="table_2">
@@ -432,7 +438,7 @@
                     </p>
                     <p class="Caption">Figure 70: Virtual Profiling History – Description Tab</p>
                     <p>&#160;</p>
-                    <p>In Historical mode the Description tab displays the Baseline profile description notes.  You can edit these notes by clicking in the description area.  Below the description area, the Virtual Profile and Baseline statistics, and recipes are displayed.  The PWI for the selected board appears in the bottom-left corner.</p>
+                    <p>In Historical mode the Description tab displays the Baseline profile description notes.  You can edit these notes by clicking in the description area.  Below the description area, the Virtual Profile and Baseline statistics, and recipes are displayed.  </p>
                     <p>&#160;</p>
                 </td>
             </tr>

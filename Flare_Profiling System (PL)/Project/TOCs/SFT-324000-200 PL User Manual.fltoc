@@ -33,9 +33,6 @@
       Title="DISABLE ALARM TAB"
       Link="/Content/Global_Preferences.htm#Disable_Alarm_Tab" />
     <TocEntry
-      Title="BARCODE OPTION TAB"
-      Link="/Content/Global_Preferences.htm#Barcode_Tab" />
-    <TocEntry
       Title="OUTPUTS TAB"
       Link="/Content/Global_Preferences.htm#Outputs_tab" />
   </TocEntry>
@@ -160,7 +157,7 @@
       Link="/Content/Printing.htm#Print_Format_2" />
   </TocEntry>
   <TocEntry
-    Title="WRITE DATA TO AND VIEW DATA OVER A NETWORK"
+    Title="WRITING DATA TO A NETWORK AND VIEWING"
     Link="/Content/Writing_data_to_and_viewing_data_over_a_network.htm">
     <TocEntry
       Title="WRITE DATA TO A NETWORK DRIVE"
@@ -372,10 +369,7 @@
   </TocEntry>
   <TocEntry
     Title="USING BARCODES"
-    Link="/Content/Using_barcodes.htm">
-    <TocEntry
-      Title="BARCODE OPTION TAB"
-      Link="/Content/Using_barcodes.htm#Barcode_tab" />
+    Link="/Content/Using_barcodes.htm#Using_Barcodes">
     <TocEntry
       Title="BARCODE FUNCTIONS"
       Link="/Content/Using_barcodes.htm#Barcode_Functions">
@@ -437,6 +431,15 @@
       <TocEntry
         Title="REMOVE BARCODE"
         Link="/Content/Using_barcodes.htm#Remove_Barcode" />
+    </TocEntry>
+    <TocEntry
+      Title="DUAL LANE SYSTEMS AND BARCODING">
+      <TocEntry
+        Title="DUAL LANE DUAL SYSTEM BARCODE FUNCTIONS"
+        Link="/Content/Using_barcodes.htm#Dual-Lane_DS_Barcode_Fuction" />
+      <TocEntry
+        Title="DUAL LANE SINGLE SYSTEM BARCODE FUNCTIONS"
+        Link="/Content/Using_barcodes.htm#Dual-Lane_SS_Barcode_Fuction" />
     </TocEntry>
     <TocEntry
       Title="VIEW BARCODE TRACEABILITY INFORMATION FOR PREVIOUSLY RUN BARCODES"
@@ -569,10 +572,43 @@
     Link="/Content/Footprint.htm">
     <TocEntry
       Title="LIVE VIEWING"
-      Link="/Content/Footprint.htm#Live_Viewing" />
+      Link="/Content/Footprint.htm#Live_Viewing">
+      <TocEntry
+        Title="FOOTPRINT SETTINGS"
+        Link="/Content/Footprint.htm#Footprint_Settings" />
+    </TocEntry>
     <TocEntry
       Title="HISTORICAL VIEWING"
       Link="/Content/Footprint.htm#Historical_Viewing"></TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="DUAL PROFILING MODE"
+    Link="/Content/Dual_Profiling_Mode.htm">
+    <TocEntry
+      Title="CONFIGURATION"
+      Link="/Content/Dual_Profiling_Mode.htm#Global_Tab_24ch" />
+    <TocEntry
+      Title="STEPS TO CHANGE FROM STANDARD TO DUAL PROFILING OPERATION"
+      Link="/Content/Dual_Profiling_Mode.htm#Change_Standard_DualProfiling" />
+    <TocEntry
+      Title="STEPS TO CHANGE FROM DUAL PROFILING TO STANDARD OPERATION"
+      Link="/Content/Dual_Profiling_Mode.htm#Change_DualProfiling_Standard" />
+    <TocEntry
+      Title="HARDWARE STATUS – DUAL PROFILING MODE"
+      Link="/Content/Dual_Profiling_Mode.htm#Hardware_Status_Dual_Profiling_mode" />
+    <TocEntry
+      Title="RUN A PROFILE – DUAL PROFILING MODE"
+      Link="/Content/Dual_Profiling_Mode.htm#Run_Profile_DualProfiling">
+      <TocEntry
+        Title="ATTACHING THE AIR TC"
+        Link="/Content/Dual_Profiling_Mode.htm#Attach_the_Air_TC_24ch" />
+      <TocEntry
+        Title="ATTACHING PRODUCT TCS"
+        Link="/Content/Dual_Profiling_Mode.htm#Attach_Standard_TCs_24ch" />
+      <TocEntry
+        Title="SELECTING THERMOCOUPLES FOR THE PROFILE"
+        Link="/Content/Dual_Profiling_Mode.htm#Selecting_Thermocouples_24ch" />
+    </TocEntry>
   </TocEntry>
   <TocEntry
     Title="STATUS MESSAGES AND ALARMS WHEN USING OPTIONAL FEATURES"
@@ -599,23 +635,23 @@
         Title="ALARMS AND MESSAGES FOR VIRTUAL PROFILING"
         Link="/Content/System_message_alarms.htm#Virtual_Profiling1" />
       <TocEntry
-        Title="ACTIVATE ALARM #5A"
-        Link="/Content/System_message_alarms.htm#Activate_Alarm_5a" />
+        Title="DETAILED ALARM INFORMATION"
+        Link="/Content/System_message_alarms.htm#Detailed_Alarm_Information" />
       <TocEntry
         Title="WHEN ALARM #5A OCCURS"
         Link="/Content/System_message_alarms.htm#When_5a_Occurs" />
       <TocEntry
-        Title="ACTIVATE ALARM #5C"
-        Link="/Content/System_message_alarms.htm#Activate_Alarm_5c" />
-      <TocEntry
         Title="WHEN ALARM #5C OCCURS"
         Link="/Content/System_message_alarms.htm#When_5c_Occurs" />
       <TocEntry
-        Title="ACTIVATE ALARM #12"
-        Link="/Content/System_message_alarms.htm#Activate_Alarm_12" />
-      <TocEntry
         Title="WHEN ALARM#12 OCCURS"
         Link="/Content/System_message_alarms.htm#When_12_Occurs" />
+      <TocEntry
+        Title="ALARM#16 – MAXIMUM ALLOWABLE BACK-TO-BACK BOARDS HAS BEEN EXCEEDED"
+        Link="/Content/System_message_alarms.htm#Alarm_16" />
+      <TocEntry
+        Title="WHEN ALARM #18 OCCURS"
+        Link="/Content/System_message_alarms.htm#When_Alarm_18_Occurs"></TocEntry>
     </TocEntry>
   </TocEntry>
   <TocEntry
@@ -730,11 +766,11 @@
       Title="ALARM TAB"
       Link="/Content/Appendix_C.htm#AR_Matrix_Settings_Tab">
       <TocEntry
-        Title="ALARM RELAY MATRIX CONFIGURATION"
-        Link="/Content/Appendix_C.htm#Alarm" />
-      <TocEntry
         Title="USB LIGHT TOWER CONFIGURATION"
         Link="/Content/Appendix_C.htm#USB" />
+      <TocEntry
+        Title="ALARM RELAY CONFIGURATION"
+        Link="/Content/Appendix_C.htm#Alarm" />
     </TocEntry>
     <TocEntry
       Title="BARCODE TAB"

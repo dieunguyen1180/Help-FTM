@@ -9,7 +9,9 @@
   DisableAutoSync="false"
   GetLatestBeforeCompile="false"
   Skin="/Project/Skins/Default.flskn"
-  MasterPage="/Content/Resources/MasterPages/NewPage.flmsp">
+  MasterPage="/Content/Resources/MasterPages/NewPage.flmsp"
+  MasterToc="/Project/TOCs/SFT-321000-100 Vision2 User Manual.fltoc"
+  MasterStylesheet="/Content/Resources/Stylesheets/SFT-321000-100 Vision2 User Manual.css">
   <PrintedOutput
     CollapseMargins="true"
     GenerateTOCProxy="true"

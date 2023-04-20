@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title></title>
-        <link href="Resources/Stylesheets/SFT-324000-200 ProBot User Manual.css" rel="stylesheet" />
+        <link href="Resources/Stylesheets/SFT-321000-100 Vision2 User Manual.css" rel="stylesheet" />
     </head>
     <body>
         <table style="width: 1000px">
@@ -12,8 +12,11 @@
                     </h1>
                     <p>&#160;</p>
                     <p>The system has many individual software settings that can be changed to suit the user’s process and or hardware set up. The configuration program tool facilitates quick and easy system setting changes, saving the user from the complications of manually editing the configuration files.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> Only persons with advanced training in the automatic system software should modify these settings. Changes using this tool will directly affect the data collected by the system. Configuration software tool location: <span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\ConfigurationProgram.exe</span></p>
+                    <blockquote>
+                        <p><b>Note:</b> Only persons with advanced training in the automatic system software should modify these settings. Changes using this tool will directly affect the data collected by the system. Configuration software tool location:</p>
+                        <p><span style="font-family: 'Courier New'; font-size: 10pt;">C:\software root directory\ConfigurationProgram.exe</span>
+                        </p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="User_Settings_Tab"></a>User Settings Tab
                     </h2>
@@ -32,24 +35,30 @@
                                 <p>&#160;</p>
                                 <p><b>Use Baseline Profile Expiration</b> – Automatically require new baseline profiles after specified number of days.</p>
                                 <p>&#160;</p>
-                                <p><b>Temperature Triggers and Sample Rates</b>
-                                </p>
+                                <p><b>Temperature Triggers and Sample Rates</b> –</p>
                                 <p>The temperature triggers dictate when the profile begins and ends allowing for more consistent data collection.  This area of the tool allows you to change the temperature trigger values as well as sample rate for each application type.</p>
                                 <p>&#160;</p>
-                                <p>There are three temperature triggers:</p>
-                                <p>&#160;&#160;&#160;&#160;<b>Start</b> -The profile Start temperature trigger is always 2C above the “Maximum Product Temperature at start of profile” setting in the Global tab of the Global Preferences screen.  This value can be changed as needed from as low as 15C to as high as 40C.</p>
-                                <p>&#160;&#160;&#160;&#160;<b>Mid Point</b> – The midpoint temperature trigger must be higher than the Start trigger, and the Stop trigger.  Be sure the temperature in your heated process will achieve this setting or the profile will fail.</p>
-                                <p>&#160;&#160;&#160;&#160;<b>End</b> – The profile will end when all of the thermocouples attached to the profiler have cooled to below the End-Temperature trigger setting.</p>
-                                <p>&#160;</p>
-                                <p><b>Sample rate</b> – Set the sample rate for each application type.</p>
                             </td>
                             <td>
                                 <p style="text-align: left;">
                                     <img src="Resources/Images/vis_4.png" />
                                 </p>
+                                <p>&#160;</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p>There are three temperature triggers:</p>
+                                <blockquote>
+                                    <p style="margin-top: 3px;margin-bottom: 5px;"><b>Start</b> – The profile Start temperature trigger is always 2C above the “Maximum Product Temperature at start of profile” setting in the Global tab of the Global Preferences screen.  This value can be changed as needed from as low as 15C to as high as 40C.</p>
+                                    <p style="margin-top: 3px;margin-bottom: 5px;"><b>Mid Point</b> – The midpoint temperature trigger must be higher than the Start trigger, and the Stop trigger.  Be sure the temperature in your heated process will achieve this setting or the profile will fail.</p>
+                                    <p style="margin-top: 3px;margin-bottom: 5px;"><b>End</b> – The profile will end when all of the thermocouples attached to the profiler have cooled to below the End-Temperature trigger setting.</p>
+                                </blockquote>
+                                <p><b>Sample rate</b> – Set the sample rate for each application type.</p>
                             </td>
                         </tr>
                     </table>
+                    <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Use_Baseline_Profile_Expiration"></a>Use Baseline Profile Expiration
                     </h3>
@@ -60,9 +69,11 @@
                         <col style="width: 300pt;" />
                         <tr>
                             <td>
-                                <p><b>Global Preferences/KIC Vision2 Tab</b> – When it is enabled in the Configuration Program, it adds an additional selection at the bottom of this tab. Selecting the checkbox allows you to define the number of days after a baseline profile is run that it will automatically expire. This feature can be used to ensure that the system is always using an up to date profile as the baseline.</p>
                                 <p>&#160;</p>
-                                <p>Note: When expired, the profile will still be viewable. However, it will not be able to be used as the baseline for automatic profiling.</p>
+                                <p><b>Global Preferences/KIC Vision2 Tab</b> – When it is enabled in the Configuration Program, it adds an additional selection at the bottom of this tab. Selecting the checkbox allows you to define the number of days after a baseline profile is run that it will automatically expire. This feature can be used to ensure that the system is always using an up to date profile as the baseline.</p>
+                                <blockquote>
+                                    <p><b>Note:</b> When expired, the profile will still be viewable. However, it will not be able to be used as the baseline for automatic profiling.</p>
+                                </blockquote>
                             </td>
                             <td style="text-align: left;">
                                 <img src="Resources/Images/vis_5.png" />
@@ -83,10 +94,10 @@
                         <tr>
                             <td>
                                 <ol>
-                                    <li>Click this button to access a search window which will allow you to easily identify when each of your baseline profiles will expire.</li>
-                                    <li>Enter the number of days (window of time remaining until profiles will expire), and then click Search.</li>
+                                    <li>Click the <b>Search</b> button to access a search window which will allow you to easily identify when each of your baseline profiles will expire.</li>
+                                    <li>Enter the number of days (window of time remaining until profiles will expire), and then click <b>Search</b>.</li>
                                     <li>All products with a baseline profile set to expire within the specified time-frame will be displayed.</li>
-                                    <li>Selecting a particular product and clicking on the Run New Baseline Profile will automatically take you to the RUN A PROFILE screen and will select that product name.</li>
+                                    <li>Selecting a particular product and clicking on the <b>Run New Baseline Profile</b> will automatically take you to the <i>RUN A PROFILE</i> screen and will select that product name.</li>
                                 </ol>
                             </td>
                             <td style="text-align: left;">
@@ -104,10 +115,10 @@
                             <td>
                                 <p>In the event that the software does not properly shift (align) the profile it may be necessary to manually enter measurements to correct any profile display/shifting issues.</p>
                                 <p>&#160;</p>
-                                <p>Select the check box and then enter the required measurements.  Contact supplier of system for assistance. </p>
+                                <p>Select the <b style="font-style: italic;">Calculate Shifting of Setpoints and Probes with User Entered Lengths</b> check box and then enter the required measurements.  Contact supplier of system for assistance.</p>
                             </td>
                             <td>
-                                <img src="Resources/Images/vis_8.png" style="width: 517px;height: 271px;" />
+                                <img src="Resources/Images/vis_8.png" style="width: 503px;height: 263px;" />
                             </td>
                         </tr>
                     </table>
@@ -175,7 +186,7 @@
                     </h3>
                     <p>By default, the Multi User Control is disabled. When this password function is enabled, it will require entering the default Administrator password before the Configuration Utility can be accessed. The Password Control tab can only be used by the Administrator, or the Engineer/Tech user types if specified. </p>
                     <p>&#160;</p>
-                    <p>If the Multi User Control is enabled and a user starts the utility, the utility will not launch until they enter the correct password (Default Administrator password is Admin). If the user does not have the password they can Cancel and close the utility.</p>
+                    <p>If the Multi User Control is enabled and a user starts the utility, the utility will not launch until they enter the correct password (Default Administrator password is Admin). If the user does not have the password they can cancel and close the utility.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/vis_12.png" style="width: 511px;height: 483px;" />
@@ -183,9 +194,10 @@
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Multi_User_Control"></a>Multi User Control
                     </h3>
-                    <p>To apply Multi User Control, Administrators will click the Enable radio button and then click OK. </p>
+                    <p>To apply Multi User Control, Administrators will select <b style="font-style: italic;">Enable</b> then click <b>OK</b>.</p>
                     <p>&#160;</p>
                     <p>The confirmation dialog is answered, and then the utility must be restarted. </p>
+                    <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/vis_13.png" style="width: 511px;height: 485px;" />
                     </p>
@@ -195,23 +207,23 @@
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Password_Control_Tab"></a>Password Control Tab
                     </h3>
-                    <p>The <b>Password Control</b> tab allows administrators to manage passwords and permissions for each user type. The image below represents the Password Control tab when Multi User Control is disabled. This tab displays a <b>Password Control Chart</b>, highlighted, which contains a list of every area in the software. </p>
+                    <p>The <i>Password Control</i> tab allows administrators to manage passwords and permissions for each user type. The image below represents the Password Control tab when Multi User Control is disabled. This tab displays a Password Control Chart, highlighted, which contains a list of every area in the software.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/vis_14.png" />
+                        <img src="Resources/Images/vis_14.png" style="width: 557px;height: 527px;" />
                     </p>
                     <p>&#160;</p>
                     <p><b>Stop VP Selections</b>
                     </p>
                     <p>&#160;</p>
                     <p>There are three different available options for controlling when a VP can be stopped:</p>
-                    <ul>
+                    <ul style="list-style-type: square;">
                         <li>Stop VP – All Conditions: This is the default setting. An authorized user can stop the VP at any time.</li>
                         <li>Stop VP with Oven Empty: User can stop the VP only when there is no product in the oven.</li>
                         <li>Stop VP with Product in Oven: When user clicks Stop button, they have a choice to wait for products to exit the oven, or they can force a stop even if there is still product in the oven.</li>
                     </ul>
                     <p>&#160;</p>
-                    <p>NOTE: To enable use of either of the second two options, the Stop VP – All Conditions selection must be unchecked.</p>
+                    <p class="ListBullet2_1"><b>Note:</b> To enable use of either of the second two options, the <b style="font-style: italic;">Stop VP – All Conditions</b> selection must be unchecked.</p>
                     <p>&#160;</p>
                     <p><b>Examples of Stop VP Selections</b>
                     </p>
@@ -222,12 +234,14 @@
                             <td>
                                 <p><b>Stop VP with Oven Empty:</b>
                                 </p>
-                                <p>OK – Clicking OK will acknowledge this message window and the VP will stop automatically once the last board exits the oven.</p>
-                                <p>Cancel – The Stop request will be cancelled, and the VP will continue to run.</p>
+                                <p>&#160;</p>
+                                <p><b>OK</b> – Clicking OK will acknowledge this message window and the VP will stop automatically once the last board exits the oven.</p>
+                                <p>&#160;</p>
+                                <p><b>Cancel</b> – The <i>Stop</i> request will be cancelled, and the VP will continue to run.</p>
                                 <p>&#160;</p>
                             </td>
                             <td>
-                                <img src="Resources/Images/vis_15.png" />
+                                <img src="Resources/Images/vis_15.png" style="width: 406px;height: 109px;" />
                                 <p>&#160;</p>
                             </td>
                         </tr>
@@ -235,19 +249,22 @@
                             <td>
                                 <p><b>Stop VP with Product in Oven: </b>
                                 </p>
-                                <p>OK – Clicking OK will acknowledge this message window and the VP will stop automatically once the last board exits the oven.</p>
-                                <p>Cancel – The Stop request will be cancelled, and the VP will continue to run.</p>
-                                <p>Force Stop – The VP will stop immediately and return to the Profile Explorer screen.</p>
+                                <p> </p>
+                                <p><b>OK</b> – Clicking OK will acknowledge this message window and the VP will stop automatically once the last board exits the oven.</p>
+                                <p>&#160;</p>
+                                <p><b>Cancel</b> – The <i>Stop</i> request will be cancelled, and the VP will continue to run.</p>
+                                <p>&#160;</p>
+                                <p><b>Force Stop</b> – The VP will stop immediately and return to the Profile Explorer screen.</p>
                                 <p>&#160;</p>
                             </td>
                             <td>
-                                <img src="Resources/Images/vis_16.png" />
+                                <img src="Resources/Images/vis_16.png" style="width: 409px;height: 110px;" />
                                 <p>&#160;</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p>If the ‘Force Stop’ selection is used, additional notes will be automatically added into the Description column in Profile Explorer. It will note which user level stopped the VP, and how many products were still in the oven when the stop occurred.</p>
+                                <p>If the ‘Force Stop’ selection is used, additional notes will be automatically added into the <i>Description</i> column in Profile Explorer. It will note which user level stopped the VP, and how many products were still in the oven when the stop occurred.</p>
                                 <p>&#160;</p>
                             </td>
                             <td>
@@ -259,7 +276,7 @@
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="User_Type_Area"></a>User Type Area
                     </h3>
-                    <p>The <b>User Type</b> pick list allows the Administrator to select and enable the password function by user type. </p>
+                    <p>The <i>User Type</i> pick list allows the Administrator to select and enable the password function by user type. </p>
                     <p>&#160;</p>
                     <p>By default, each user in the menu will be unchecked/disabled. By selecting a user type, you not only enable or disable the password entry field and the Password Timer, but also select the type of user to enable and configure.</p>
                     <p>&#160;</p>
@@ -277,8 +294,8 @@
                     </h3>
                     <p>The Password entry fields are disabled until a user type is selected. </p>
                     <p>&#160;</p>
-                    <p>When a user type is selected, the <b>Enter Password</b> fields will display as ‘XXXXX” if a password had previously been entered. When a user enters a password ‘X’s will show to indicate an entry, but not show the actual password.</p>
-                    <p>After entering a password in the two fields, click the Apply button before changing to another User Type.</p>
+                    <p>When a user type is selected, the <b style="font-style: italic;">Enter Password</b> fields will display as ‘XXXXX” if a password had previously been entered. When a user enters a password ‘X’s will show to indicate an entry, but not show the actual password.</p>
+                    <p>After entering a password in the two fields, click the <b>Apply</b> button before changing to another User Type.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/vis_19.png" />
@@ -289,7 +306,7 @@
                     </h3>
                     <p>The <b>Password Timer</b> is configurable and represents the amount of time before the user is automatically logged out due to being idle.</p>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Main_Screen_With_Password_Control"></a>Main Screen With Password Control
+                    <h3 class="Heading3"><a name="Main_Screen_With_Password_Control"></a>Main Screen with Password Control
                     </h3>
                     <p>With Password Control enabled, the software Main Screen with display a Log In button with a letter on it.</p>
                     <p>&#160;</p>
@@ -302,17 +319,21 @@
                         <img src="Resources/Images/vis_20.png" style="width: 497px;height: 372px;" />
                     </p>
                     <p>&#160;</p>
-                    <p>Note that the Operator user type is the default, and typically has the least access privileges.</p>
+                    <blockquote>
+                        <p><b>Note</b>: that the Operator user type is the default, and typically has the least access privileges.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Main_Screen_Log_In"></a>Main Screen Log In
                     </h3>
-                    <p>When the Log in button is clicked, the software displays a drop down menu, as shown here.</p>
+                    <p>When the <b>Log In</b> button is clicked, the software displays a drop down menu, as shown here.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/vis_21.png" style="width: 502px;height: 376px;" />
                     </p>
                     <p>&#160;</p>
-                    <p>Note that you can log in from most screens, such as from the Log in button in the lower left of the Graph screen.</p>
+                    <blockquote>
+                        <p><b>Note:</b> that you can log in from most screens, such as from the Log in button in the lower left of the Graph screen.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/vis_22.png" />

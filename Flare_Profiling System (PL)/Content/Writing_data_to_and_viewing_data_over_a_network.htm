@@ -7,7 +7,7 @@
         <table with="width: 505px">
             <tr>
                 <td with="width: 505px">
-                    <h1 class="Heading1">Write Data to and View Data Over a Network</h1>
+                    <h1 class="Heading1">Writing Data to a Network and Viewing</h1>
                     <h2 class="Heading2"><a name="Writing_data_to_a"></a>Write Data to a Network Drive</h2>
                     <p>The software can be configured to write the collected data (profiles and historical VP data) to a network drive location.&#160; This would allow data from one or even multiple systems to be stored in one centralized location (Server/Shared Hard Drive).</p>
                     <p>&#160;</p>
@@ -20,10 +20,8 @@
                     <p>Once you have mapped the drive, create a folder on the network drive and copy in the following folders from the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root folder directory</span> – Log, Ovens, Process Specs, and Profiles.&#160; Once completed, follow the steps below on the PC where the automatic system software is installed:</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_3">
-                        <li class="ListNumber4">Ensure the automatic system software is closed, open Windows Explorer, and locate the file:</li>
+                        <li class="ListNumber4">Ensure the automatic system software is closed, open Windows Explorer, and locate the file:<br /><span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root folder\Log\KIC2000DataPath.kiccfg</span></li>
                     </ol>
-                    <p><span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root folder\Log\KIC2000DataPath.kiccfg</span>
-                    </p>
                     <p>&#160;</p>
                     <ol start="2" class="ol_3">
                         <li class="ListBullet2_5">The <span class="span_16">KIC2000DataPath.kiccfg</span> file will open up in Notepad:</li>
@@ -42,8 +40,13 @@
                     <p class="Caption">Figure 80</p>
                     <p>&#160;</p>
                     <ol start="4" class="ol_3">
-                        <li class="ListBullet2_5">Change all of the lines shown below to <span class="span_30">=</span> the desired network location. <br /><span class="span_24">Note:</span> This will be the main network folder you created and copied the Log, Ovens, Process Spec, and Profiles folders into.</li>
+                        <li class="ListBullet2_5">Change all of the lines shown below to <span class="span_30">=</span> the desired network location. </li>
                     </ol>
+                    <blockquote>
+                        <blockquote>
+                            <p><span class="span_24" style="text-decoration: none;">Note:</span> This will be the main network folder you created and copied the Log, Ovens, Process Spec, and Profiles folders into.<br /></p>
+                        </blockquote>
+                    </blockquote>
                     <p class="p_21">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300009A.png" style="width: 460px;height: 169px;" class="img_1" />
                     </p>
@@ -66,12 +69,14 @@
                     <p class="Caption">Figure 82</p>
                     <p class="Caption">&#160;</p>
                     <p>Your new network drive should be displayed in the upper right-hand corner of the screen as the Current Data Path.</p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: The Network path will be grayed out and cannot be changed from inside of Profile Explorer.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: The Network path will be grayed out and cannot be changed from inside of Profile Explorer.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>All data collected in this software application will now be written to the network folder chosen.&#160; </p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: If you have multiple automatic systems, you will need to create a separate folder on the Network drive for each system – e.g. Line 1, Line 2, etc.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: If you have multiple automatic systems, you will need to create a separate folder on the Network drive for each system – e.g. Line 1, Line 2, etc.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>If the network is unavailable when accessing various areas of the software (Define/Edit Process Window, Run A Profile, Profile Explorer), a message will appear alerting you to the issue:</p>
                     <p>&#160;</p>
@@ -88,10 +93,11 @@
                     <p>To view historical data over the network:</p>
                     <p>&#160;</p>
                     <ol start="1">
-                        <li>From your <span class="span_15">remote </span>computer, start the software and click on the “I am not going to run profiles or live Virtual Profiling” button.</li>
+                        <li>From your <span class="span_15">remote </span>computer, start the software and click on the <b>I am not going to run profiles or live Virtual Profiling</b> button.</li>
                     </ol>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Caution</span>: Do not choose this button when working at the PC where the system hardware is installed.</p>
+                    <blockquote>
+                        <p style="text-indent: 0.5in;"><span class="span_11">Caution</span>: Do not choose this button when working at the PC where the system hardware is installed.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p class="p_19"> <img src="Resources/Images/z25.png" class="img_1" style="width: 479px;height: 273px;" /></p>
                     <p class="Caption">Figure 83</p>
@@ -101,12 +107,12 @@
                     </ol>
                     <p>&#160;</p>
                     <p class="p_19">
-                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300009D.png" />
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300009D.png" style="width: 694px;height: 383px;" />
                     </p>
                     <p class="Caption">Figure 84</p>
                     <p>&#160;</p>
                     <ol start="3">
-                        <li class="ListBullet2">A <span class="span_11">Browse</span> button will be enabled in the upper right-hand corner of the screen:<br />You can now click the <span class="span_11">Browse</span> button and point to the directory where your profiles are.&#160; Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.<br />For example:  If the profiles are in the folder <i style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\Profiles\Board A</i> <p>you would direct it only to the folder <i style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\</i>.</p></li>
+                        <li class="ListBullet2">A <span class="span_11">Browse</span> button will be enabled in the upper right-hand corner of the screen:<br /><br />You can now click the <span class="span_11">Browse</span> button and point to the directory where your profiles are.&#160; Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.<br /><br />For example:  If the profiles are in the folder <i style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\Profiles\Board A</i> <p>you would direct it only to the folder <i style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\</i>.</p></li>
                     </ol>
                     <p>
                         <br />

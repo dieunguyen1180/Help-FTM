@@ -4,7 +4,7 @@
         <Link Value="O:\Help for KIC\HELP FTM\Flare_Profiling System (PL)\Content\Resources\Images\SFT-324100-101 Profiling System User Manual v3.2 draft\03000185.png" />
     </Dialog>
     <Dialog Name="B3.XmlTextKit.InsertHyperlinkDialog">
-        <Link Value="O:\Help for KIC\HELP FTM\Flare_Profiling System (PL)\Content\Virtual_Profiling_VP.htm" />
+        <Link Value="O:\Help for KIC\HELP FTM\Flare_Profiling System (PL)\Content\Appendix_B.htm" />
     </Dialog>
     <Dialog Name="B3.XmlTextKit.InsertCrossReferenceDialog" />
 </RecentLinks>

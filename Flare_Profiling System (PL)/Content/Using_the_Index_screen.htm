@@ -29,7 +29,7 @@
                         </tbody>
                     </table>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/z29.png" style="width: 647px;height: 498px;" />
+                        <img src="Resources/Images/z29.png" />
                     </p>
                     <p>&#160;</p>
                     <p>The screen shows the statistics for the ongoing reflow operation, including Defects Per Million Opportunities (DPMO).&#160; It displays panels for index and production details and shows capacity and defect data in charts.&#160; Values, calculations, and chart displays update automatically as boards exit the oven.</p>
@@ -125,7 +125,7 @@
                     <p>&#160;</p>
                     <p>Move the mouse pointer over the chart data, a display box will appear.&#160; This display box data includes barcode number, PWI, Cpk, date, and time for each board.&#160; The date and time for the last board to exit the oven appears at the bottom of the full screen chart in Blue text.&#160; </p>
                     <p>&#160;</p>
-                    <p>Click in the chart area to return to the regular Chart tab view:</p>
+                    <p>Click in the chart area to return to the regular <b style="font-style: italic;">Chart</b> tab view:</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000DD.png" style="width: 550px;height: 376px;" class="img_1" />
@@ -164,7 +164,7 @@
                     <p>&#160;</p>
                     <p><span class="span_11">Point </span><span class="span_11">p</span><span class="span_11">rotector –</span> When this feature is enabled, the software will display individual data points for each board.&#160; A small square shaped data point represents a production board.&#160; A small circle shaped data point represents a profile board.&#160; To activate this feature right click anywhere in the full screen chart area.&#160; A menu will appear, select Point Protector.&#160; This will display the individual data points on each control chart.&#160; De-selecting this feature will remove the data points from the control chart, showing only a plot of the same data.&#160; By default, the Point Protector is enabled for charts containing 20 boards or less.&#160; Click in the full screen chart area again to return to the regular Chart tab view.</p>
                     <p>&#160;</p>
-                    <p><span class="span_11">Event </span><span class="span_11">H</span><span class="span_11">istory-</span> This feature is enabled as a default setting in the software.&#160; When viewing the charts tab while in History mode an Event History dialog box appears.&#160; The Event History dialog box will contain a list of all alarms and alarm related events that happened during the (selected) Virtual Profile.&#160; </p>
+                    <p><span class="span_11">Event </span><span class="span_11">H</span><span class="span_11">istory –</span> This feature is enabled as a default setting in the software.&#160; When viewing the charts tab while in History mode an Event History dialog box appears.&#160; The Event History dialog box will contain a list of all alarms and alarm related events that happened during the (selected) Virtual Profile.&#160; </p>
                     <p class="ListBullet">&#160;</p>
                     <p class="ListBullet_5">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000E0.png" style="width: 518px;height: 156px;" class="img_1" />
@@ -175,12 +175,13 @@
                     <p>&#160;</p>
                     <h4 class="Heading4"><a name="Buttons"></a>Buttons</h4>
                     <p>The Charts tab will have two extra buttons found only on this screen.</p>
-                    <ul class="ul_2">
-                        <li class="ListParagraph_2"><span class="span_11">Scroll backwards in time</span> – Clicking on the green left arrowhead will result in displaying the <span class="span_11">previous</span> set of virtually profiled boards.</li>
-                        <li class="ListParagraph_2"><span class="span_11">Scroll forward in time</span> – Clicking on the green right arrowhead will result in displaying the <span class="span_11">next</span> set of Virtually Profiled boards.</li>
+                    <ul style="list-style-type: square;">
+                        <li><span class="span_11">Scroll backwards in time</span> – Clicking on the green left arrowhead will result in displaying the <span class="span_11">previous</span> set of virtually profiled boards.</li>
+                        <li><span class="span_11">Scroll forward in time</span> – Clicking on the green right arrowhead will result in displaying the <span class="span_11">next</span> set of Virtually Profiled boards.</li>
                     </ul>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Each chart can display a maximum of 200 data points at any given time.&#160; Every 200 data points are considered a set of data.&#160; A set of data can contain up to 200 data points, or if the production run was stopped before 200 boards were processed, a data set may contain less than 200 data points.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: Each chart can display a maximum of 200 data points at any given time.&#160; Every 200 data points are considered a set of data.&#160; A set of data can contain up to 200 data points, or if the production run was stopped before 200 boards were processed, a data set may contain less than 200 data points.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h1 class="Heading1"><a name="Troubleshooting_in_Live_Mode"></a><a name="Live_Mode_Troubleshooting_tab"></a>Troubleshoot in Live Mode</h1>
                     <p class="p_21">
@@ -189,8 +190,11 @@
                     <p class="Caption">Figure 108: Virtual Profiling – Troubleshooting Tab</p>
                     <p>&#160;</p>
                     <p>The Troubleshooting tab will display the probe and conveyor speed deviation on charts.&#160; The probe deviation is measured against the baseline profile – probe data.&#160; This data is updated for every board, or every 25 Seconds.&#160; In the bottom-left corner, the current PWI appears.&#160; </p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Tool </span><span class="span_11">t</span><span class="span_11">ips –</span> Moving the mouse pointer over the deviation chart data will enable tool tips that show the deviation value for each of the probes.&#160; Moving the mouse pointer over the conveyor speed chart will show the baseline profile conveyor speed, and the conveyor speed for the last board to exit.&#160; </p>
+                    <blockquote>
+                        <blockquote>
+                            <p><span class="span_11">Tool </span><span class="span_11">t</span><span class="span_11">ips –</span> Moving the mouse pointer over the deviation chart data will enable tool tips that show the deviation value for each of the probes.&#160; Moving the mouse pointer over the conveyor speed chart will show the baseline profile conveyor speed, and the conveyor speed for the last board to exit.&#160; </p>
+                        </blockquote>
+                    </blockquote>
                     <p>&#160;</p>
                     <p class="p_21">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000E2.png" style="height: 217px;width: 194px;" class="img_2" />
@@ -215,8 +219,9 @@
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h1 class="Heading1"><a name="O2_Live"></a>O2 Live</h1>
-                    <p><span class="span_11">Note</span>: The software key must remain connected at all times during use for <span class="span_12">O2 Live</span> capabilities to function.</p>
-                    <p>&#160;</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: The software key must remain connected at all times during use for <span class="span_12">O2 Live</span> capabilities to function.</p>
+                    </blockquote>
                     <p><span class="span_12">O2 Live</span> is an optional feature that allows you to display an O2 PPM measured value on a profile, or Virtual Profile data. <span class="span_12">O2 Live</span> is not an oxygen analyzer, but an option that allows for the output from a user’s existing analyzer to be read in and displayed by the software. An external interface device connects between the output of the oxygen analyzer, and the PC (USB port) running the automatic system software (<span class="span_12">See <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters=""><span class="span_12">TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual</span></MadCap:shortcut> for additional details about installing the interface device)</span>. This O2 PPM value is available in the following areas of the software:</p>
                     <p>&#160;</p>
                     <ul class="ul_2">
@@ -230,38 +235,38 @@
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Configuration"></a>Configuration</h2>
                     <p class="p_19">
-                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000E3.png" />
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000E3.png" style="width: 577px;height: 187px;" />
                     </p>
                     <p class="Caption">Figure 110: O2 Live Configuration</p>
                     <p>&#160;</p>
                     <ol>
-                        <li class="li_1">With the automatic system software shut down, in the <i>C:\ software root</i> directory, run the <i>ConfigurationProgram.exe</i> application and select the <i>O2 PPM</i> tab.</li>
-                        <li class="li_1">Select “<i>Enable O2 PPM Monitor</i>”</li>
+                        <li class="li_1">With the automatic system software shut down, in the <span style="font-family: 'Courier New'; font-style: italic;">C:\ software root directory</span>, run the <span style="font-family: 'Courier New'; font-style: italic;">ConfigurationProgram.exe</span> application and select the <i>O2 PPM</i> tab.</li>
+                        <li class="li_1">Select <b>Enable O2 PPM Monitor</b></li>
                         <li class="li_1">From the <i>Input Source</i> drop-down menu, choose the option that corresponds with your hardware.</li>
                         <li class="li_1">From the <i>Input Type</i> drop-down menu, choose the option that corresponds with the type of output used on the customer’s oxygen analyzer.</li>
                         <li class="li_1">The Low and High values will correspond to the minimum and maximum range of the output; e.g. a Low of 0=0 volts, and a High of 500 equals 5 volts.</li>
-                        <li class="li_1">Click the <b style="font-style: italic;">Apply</b> and <b style="font-style: italic;">OK</b> buttons at the bottom of the Configuration Program to save changes and close</li>
+                        <li class="li_1">Click the <b style="font-style: normal;">Apply</b> and <b style="font-style: normal;">OK</b> buttons at the bottom of the Configuration Program to save changes and close</li>
                         <li class="li_1">Restart the software and access the Global Preferences screen.</li>
                     </ol>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000E4.png" style="width: 487px;height: 228px;" class="img_1" />
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000E4.png" />
                     </p>
                     <p class="Caption">Figure 111: O2 Sample Port Entry</p>
                     <p>&#160;</p>
                     <ol start="8">
-                        <li class="li_1">Select the measurement from the automatic system Board Sensor to the point inside the oven tunnel where the O2 sampling port is located.</li>
+                        <li class="li_1">Enter the measurement from the automatic system Board Sensor to the point inside the oven tunnel where the O2 sampling port is located.</li>
                         <li class="li_1">Select the <i>Control Limits</i> tab to specify the <i>Warning/Alarm</i> limits for the O2 PPM.</li>
                     </ol>
                     <ol style="list-style-type: lower-alpha;">
-                        <li class="ListParagraph_10">You are able to set both minimum and maximum value limits for Warning and Alarm conditions</li>
-                        <li class="ListParagraph_10">When the measured value is withing the Warning limit range, the O2 display window will be <b>Green</b> in color</li>
-                        <li class="ListParagraph_10">When the measured value is outside of the Warning limit range but within the Alarm range, the O2 display window will be <b>Yellow</b> in color</li>
-                        <li class="ListParagraph_10">When the measured value is outside of the Alarm limit range, the O2 display window will be <b>Red</b> in color and will trigger the <i>optional Alarm Rela</i>y where applicable.</li>
+                        <li class="ListParagraph">You are able to set both minimum and maximum value limits for Warning and Alarm conditions</li>
+                        <li class="ListParagraph">When the measured value is withing the Warning limit range, the O2 display window will be Green in color</li>
+                        <li class="ListParagraph">When the measured value is outside of the Warning limit range but within the Alarm range, the O2 display window will be Yellow in color</li>
+                        <li class="ListParagraph">When the measured value is outside of the Alarm limit range, the O2 display window will be Red in color and will trigger the <i>optional Alarm Relay</i> where applicable.</li>
                     </ol>
                     <p>&#160;</p>
                     <p class="p_19">
-                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000E5.png" style="width: 508px;height: 140px;" class="img_1" />
+                        <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000E5.png" />
                     </p>
                     <p class="Caption">Figure 112: O2 PPM Control Limits</p>
                     <p>&#160;</p>
@@ -307,14 +312,15 @@
                     <p class="p_19">Figure 117: O2 PPM display-KIC Host screen</p>
                     <p>&#160;</p>
                     <h1 class="Heading1"><a name="VP_Idle_Mode"></a>VP Idle Mode</h1>
-                    <p><span class="span_11">Note</span>: The software key must remain connected at all times during use for <span class="span_12">VP Idle Mode </span>capabilities to function.</p>
-                    <p>&#160;</p>
-                    <p><i>VP Idle Mode</i> is an <i>optional</i> feature that allows the software to automatically go into a type of “sleep –mode” during Virtual Profiling when the energy saving function of some newer ovens is in use. When energy savings features are enabled on the oven, the oven control software will typically modify several of the process parameters – such as belt speed, blower fan speed, and even zone setpoint temperatures. When this occurs, the software would normally alarm on the detected changes to the process. Using <i>VP Idle Mode</i> allows the software to ignore those changes during energy saving periods, thus eliminating unnecessary warnings/alarms from being activated.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: The software key must remain connected at all times during use for <span class="span_12">VP Idle Mode </span>capabilities to function.</p>
+                    </blockquote>
+                    <p><i>VP Idle Mode</i> is an <i>optional</i> feature that allows the software to automatically go into a type of “sleep–mode” during Virtual Profiling when the energy saving function of some newer ovens is in use. When energy savings features are enabled on the oven, the oven control software will typically modify several of the process parameters – such as belt speed, blower fan speed, and even zone setpoint temperatures. When this occurs, the software would normally alarm on the detected changes to the process. Using <i>VP Idle Mode</i> allows the software to ignore those changes during energy saving periods, thus eliminating unnecessary warnings/alarms from being activated.</p>
                     <p>During <i>VP Idle Mode</i>, the crystal ball will be grey, the statistics chart will be blank, no VP data will be calculated, and no process related alarms or warnings will display or be recorded. When the entrance board sensor is triggered, the system will automatically exit Idle Mode and return to normal VP operation.</p>
                     <p>Configuration</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Configuration2"></a>Configuration</h2>
-                    <p>The feature is enabled by shutting down the software, running the <i>ConfigurationProgram.exe</i> (in the <i>C:\ software root</i> directory) and selecting “<i>Use VP Idle Mode</i>” in the area shown below, and entering the amount of time the oven should be empty before entering Idle Mode:</p>
+                    <p>The feature is enabled by shutting down the software, running the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i> (in the <i style="font-family: 'Courier New';">C:\ software root directory</i> ) and selecting <i style="font-weight: bold;">Use VP Idle Mode</i> in the area shown below, and entering the amount of time the oven should be empty before entering Idle Mode:</p>
                     <p>&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000EB.png" style="height: 384px;width: 458px;" class="img_1" />

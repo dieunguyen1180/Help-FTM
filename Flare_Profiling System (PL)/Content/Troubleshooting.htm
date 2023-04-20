@@ -50,7 +50,8 @@
                             <td class="td_15">
                                 <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the <span style="font-family: 'Courier New'; font-size: 9pt;">KIC2000UserSettings.kiccfg</span> file:</p>
                                 <p class="p_15">&#160;</p>
-                                <p class="p_15">[HOST]</p>
+                                <p class="p_15"><span style="font-family: 'Courier New'; font-size: 9pt;">[HOST]</span>
+                                </p>
                                 <p class="p_17"><span style="font-family: 'Courier New'; font-size: 9pt;">UsingPasswordwithRedAlarm=1</span>
                                 </p>
                                 <p class="p_17">Next, you need to specify a password on the Global Preferences screen <span class="span_12">Engineer Password</span> option.&#160; Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.</p>
@@ -71,7 +72,9 @@
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/030000A1.png" style="height: 194px;width: 301px;" class="img_1" />
                     </p>
                     <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
                     <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.  Below is a table of messages that you might see during this process:  See Table 2.</p>
@@ -375,7 +378,7 @@
                         <li>Save and close the file, then restart the software</li>
                     </ol>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum allowable back-to-back boards has been exceeded</h3>
+                    <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum Allowable Back-to-Back Boards has been exceeded</h3>
                     <p>This is alarm in disabled by default. You may want to enable this optional alarm if you want to be alerted when too many products are being loaded back-to-back into the oven, which can sometimes lead to other process related issues. It will allow you to specify how many consecutive back-to-back boards are allowed. If that number is exceeded, an alarm will be generated.</p>
                     <h4 class="Heading4">To enable:</h4>
                     <table>
@@ -386,7 +389,7 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li>Exit the software, browse to the <i style="font-family: 'Courier New'; font-size: 9pt;">C:\ software root directory</i>  and run the <i>ConfigurationProgram.exe</i>. Select the <i>Hardware</i> tab.</li>
+                                        <li>Exit the software, browse to the <i style="font-family: 'Courier New'; font-size: 9pt;">C:\ software root directory</i>  and run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i>. Select the <i style="font-weight: bold;">Hardware</i> tab.</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>
@@ -412,7 +415,7 @@
                                     <p>&#160;</p>
                                     <p><![CDATA[
 
-										]]><b>NOTE</b>: This alarm setting can also be useful for identifying other hardware issues such as: products stuck in transition onto oven conveyor (when underneath the board sensor), misadjusted, dirty, or faulty board sensors, etc. 
+										]]><b>Note</b>: This alarm setting can also be useful for identifying other hardware issues such as: products stuck in transition onto oven conveyor (when underneath the board sensor), misadjusted, dirty, or faulty board sensors, etc. 
 									</p>
                                 </td>
                                 <td>&#160;</td>

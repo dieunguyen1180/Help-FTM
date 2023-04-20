@@ -12,7 +12,7 @@
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300000A.png" style="width: 161px;height: 86px;" class="img_1" />
                     </p>
                     <p>&#160;</p>
-                    <p>The Profile Explorer is a powerful and simple data file management tool.  For each unique product name you use when profiling, the software will create a folder with the same name.  See Figure 53. The software saves all the profiles run using that product name in that folder.</p>
+                    <p>The Profile Explorer is a powerful and simple data file management tool.  For each unique product name you use when profiling, the software will create a folder with the same name. The software saves all the profiles run using that product name in that folder.</p>
                     <p>&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/z15.png" />
@@ -28,7 +28,7 @@
                     <ul style="list-style-type: square;">
                         <li><span class="span_11">View</span><span class="span_11"> a profile </span>- Click on a product folder to display the profiles that have previously been run for any product.&#160; Highlight the profile you wish to view and then select the Graph button at the bottom of the screen or double-click the profile to display it.&#160;
                         
-                            <p>&#160;</p><p><b>Note:</b> Once the profile appears on screen, you can use the Control + Up Arrow to view the next profile, and Control + Down Arrow to display the previous profile. </p></li>
+                            <blockquote><p><b>Note:</b> Once the profile appears on screen, you can use the Control + Up Arrow to view the next profile, and Control + Down Arrow to display the previous profile. </p></blockquote></li>
                     </ul>
                     <p>&#160;</p>
                     <ul style="list-style-type: square;">
@@ -38,8 +38,9 @@
                     <ul style="list-style-type: square;">
                         <li>Double-click the profile to display the graph and statistics for that profile. Clicking the “Display Graph…” button can also do this.</li>
                     </ul>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: If the profile is labeled as “Bad” or if, for any reason, the automatic system software cannot display it, the profile is automatically copied to the Clipboard so that you can use a third-party app such as MS-Excel to view the data.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: If the profile is labeled as “Bad” or if, for any reason, the automatic system software cannot display it, the profile is automatically copied to the Clipboard so that you can use a third-party app such as MS-Excel to view the data.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Browsing_for_Historical"></a>Browse for Historical Data</h2>
                     <p>The current Data Path for the data viewed in the Profile Explorer appears in the upper-right corner.&#160; The data path appears grayed out if running in production mode.&#160; It will be active, if you clicked on the, I am not going to Profile or Virtual Profile button (enabling History mode), when first launching the software.</p>
@@ -47,8 +48,9 @@
                     <p>The data path can be changed but must be done so through the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\Log\KIC2000DataPath.kiccfg</span> file.</p>
                     <p>&#160;</p>
                     <p>To view historical Virtual Profile data from the same PC while Virtual Profiling is live, you launch a separate Host.exe file located: C<span style="font-family: 'Courier New'; font-size: 9pt;">:\software root directory\APPforViewer\KICHost.exe</span>.  This will open a separate Profile Explorer that will allow you to browse through the history of any product including the one currently running VP.  Historical data will be available for any boards that have already exited the oven.</p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: This feature was designed to allow you to view historical data stored in a different directory on the same computer or on remote PC over a network.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: This feature was designed to allow you to view historical data stored in a different directory on the same computer or on remote PC over a network.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Viewing_Historical_Data"></a>View Historical Data Over a Network (History Mode)</h2>
@@ -63,7 +65,7 @@
                             <td class="td_2">
                                 <ol start="1">
                                     <li>
-                                        <p>From your remote PC, start the software and click on the “<i>I am not going to run profiles or live Virtual Profile</i>” button.</p>
+                                        <p>From your remote PC, start the software and click on the <b>I am not going to run profiles or live Virtual Profile</b> button.</p>
                                         <p>&#160;</p>
                                         <p>The software will open up normally.</p>
                                     </li>
@@ -98,7 +100,7 @@
                             <p>Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.</p>
                             <p>&#160;</p>
                             <p>For example: if the profiles are stored in a directory named</p>
-                            <p><span style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\Profiles\Board A</span>, you would direct it only to the <br /><span style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\</span> folder.</p>
+                            <p><span style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\Profiles\Board A,</span> you would direct it only to the <br /><span style="font-family: 'Courier New'; font-size: 9pt;">F:\software root directory\</span> folder.</p>
                         </li>
                     </ol>
                     <p>&#160;</p>
@@ -192,7 +194,9 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p><b>Note:</b> Double click any event to view the details including alarm event history.  If two alarm/alert acknowledgements appear at the same time, only one will appear in Profile Explorer.</p>
+                    <blockquote>
+                        <p><b>Note:</b> Double click any event to view the details including alarm event history.  If two alarm/alert acknowledgements appear at the same time, only one will appear in Profile Explorer.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Profile_Explorer_Virtual_Profiling"></a>Profile Explorer – Virtual Profiling</h2>
@@ -308,8 +312,9 @@
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Renaming_profiles"></a>Rename Profiles</h2>
                     <p>In situations that require it, you have the ability to edit the profile name. This can be especially useful when products are very similar but have different names.&#160; Once the profile has been optimized, it can be renamed and used as a baseline profile for similar products if the need arises.&#160; This eliminates the need to re-profile similar products unnecessarily.</p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Renaming a profile includes the name that is embedded in the profile that shows up on the printout</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: Renaming a profile includes the name that is embedded in the profile that shows up on the printout</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <ol start="1">
                         <li>Manually create a new folder in the <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory \Profiles</i> folder using the new product name.</li>
@@ -317,12 +322,12 @@
                         <li>A folder with that new Product Name will appear in Profile Explorer.</li>
                         <li>
                             <p>When you open that profile, it will display in the software with the new Product Name</p>
-                            <ul>
-                                <li>The new profile name will appear on all the screens (Profile Explorer, General Tab, Charts Tab, and Troubleshooting Tab).&#160; The new name will also appear in the data that is copied to the Clipboard.</li>
-                                <li>None of the files on the PC are actually renamed, when viewing the profiles in Profile Explorer, they all look the same.&#160; However, profiles run after the name has been changed will use the new product name as part of their file names </li>
-                            </ul>
                         </li>
                     </ol>
+                    <ul style="list-style-type: square;">
+                        <li class="ListBullet2_1">The new profile name will appear on all the screens (Profile Explorer, General Tab, Charts Tab, and Troubleshooting Tab).&#160; The new name will also appear in the data that is copied to the Clipboard.</li>
+                        <li class="ListBullet2_1">None of the files on the PC are actually renamed, when viewing the profiles in Profile Explorer, they all look the same.&#160; However, profiles run after the name has been changed will use the new product name as part of their file names </li>
+                    </ul>
                     <p>&#160;</p>
                     <p><span class="span_11">Note</span>: Virtual Profiling will be most accurate for products that have their own baseline profile.</p>
                     <p>&#160;</p>
@@ -335,13 +340,14 @@
                     <p>Once the baseline is established, the software goes into monitoring mode, recording real-time belt speed and probe temperature data as a production run of similar boards passes through the oven.&#160; Comparing real-time data to the baseline profile, the automatic system algorithms accurately extrapolate a simulated thermal profile for each board.&#160; The automatic system updates and saves the VP profile data as each board exits the oven, creating a valuable quality assurance record of each production unit.</p>
                     <p>&#160;</p>
                     <p>In monitoring mode, the software displays each board’s profile chart and a table of data based on its process window.&#160; Other optional screens can show PWI and SPC control charts.&#160; When oven data varies significantly from the baseline profile, the software displays appropriate warnings to system operators. </p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Before you start Virtual Profiling, make sure all hardware is properly installed and configured. </p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: Before you start Virtual Profiling, make sure all hardware is properly installed and configured. </p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Getting_a_valid_baseline_profile"></a>Get a Valid Baseline Profile</h2>
                     <p>Virtual Profiling makes use of a special profile, called the <span class="span_12">baseline</span> profile, as the data model for its predictions.&#160; The software requires that you first establish this baseline before it enables Virtual Profiling. The baseline profile should represent your optimum oven recipe for your product and needs to meet the Virtual Profile criteria shown below:</p>
                     <p>&#160;</p>
-                    <ul>
+                    <ul class="Square">
                         <li>The PWI must be below the Maximum PWI to allow the VP value as set in Global Preferences.</li>
                         <li>The conveyor speed measured by the encoder must be within 20% of the specified conveyor speed.</li>
                         <li>Probe temperatures must be valid; if any probe thermocouple reports a range of greater than 30<span class="span_17">°</span>C between adjacent readings (every 2.5 seconds), the software will consider them invalid.</li>
@@ -351,8 +357,9 @@
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Integrate_Empty_Oven_Data"></a>Integrate Empty Oven Data</h3>
                     <p>For a baseline to work as a good predictive model, it needs to use temperature data that reflect both <span class="span_12">board present</span> and <span class="span_12">board absent</span> states along the length of the probes.&#160; To obtain this data most efficiently, it may be necessary to run the profiler board with similar <i>boards moving ahead of it and an empty conveyor behind it</i>. The downstream flow of boards stabilizes the oven temperature and gives a good approximation of normal production conditions.&#160; As the profiler board exits each oven zone, the probes can measure the temperature when a board is not present.&#160; The software can integrate this comparative data for a more accurate predictive capability.&#160; The oven should remain empty until the profiler board completely exits the process chamber.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs.  A grey crystal ball indicates an unable to predict state.  See <a href="Virtual_Profiling_VP.htm#Monitor_Production">Monitoring Production In Live Mode</a>.</p>
+                    <blockquote>
+                        <p><b>Note:</b> Be aware of the potential to put the system into a state where the software lacks sufficient empty oven data to make reliable VP predictions.  The condition can occur during a verification profile run where you insert the profiler board into an ongoing production flow.  With other boards both ahead of and behind the profiler board, no interval for gathering empty oven data occurs.  A grey crystal ball indicates an unable to predict state.  See <a href="Virtual_Profiling_VP.htm#Monitor_Production">Monitoring Production In Live Mode</a>.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Creating_Loading_a"></a>Create/Load a Virtual Profile</h2>
                     <p>There are several ways to begin Virtual Profiling:</p>
@@ -393,10 +400,11 @@
                             </td>
                         </tr>
                     </table>
-                    <p class="ListNumber2">&#160;</p>
-                    <p><span class="span_11">Caution</span>: Your software security key must be connected prior to enabling Virtual Profile mode.&#160; If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message will be displayed.&#160; </p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Tip</span>: If your oven is capable of communicating with the software, a dialog box will appear notifying you that Virtual Profile is starting and the oven recipe will be changed automatically.</p>
+                    <blockquote>
+                        <p><span class="span_11" style="text-decoration: underline;">Caution</span>: Your software security key must be connected prior to enabling Virtual Profile mode.&#160; If the key is removed from the computer while Virtual Profiling mode is enabled an alarm message will be displayed.&#160; </p>
+                        <p>&#160;</p>
+                        <p><span class="span_11">Tip</span>: If your oven is capable of communicating with the software, a dialog box will appear notifying you that Virtual Profile is starting and the oven recipe will be changed automatically.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>If your software is not communicating directly with the oven controller, the software will display the Baseline profile recipe.&#160; Make sure the oven is set to the exact recipe settings.</p>
                     <p>&#160;</p>
@@ -411,8 +419,9 @@
                         <img src="Resources/Images/z19.png" class="img_1" />
                     </p>
                     <p class="Caption">Figure 57: Virtual Profiling – Oven Recipe set correctly</p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Tip</span>: Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang.</p>
+                    <blockquote>
+                        <p><span class="span_11">Tip</span>: Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Using_the_Profile_Grouping_utility"></a>Use the Profile Grouping Utility</h2>
@@ -422,10 +431,10 @@
                         <img src="Resources/Images/z20.png" class="img_1" />
                     </p>
                     <p>&#160;</p>
-                    <p>You enable the <i>Profile Grouping</i> functionality by adjusting settings in the K<b>IC2000UserSettings.kiccfg</b> file, <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\Log\KIC2000UserSettings</i>.  Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
+                    <p>You enable the <i>Profile Grouping</i> functionality by adjusting settings in the <span style="font-family: 'Courier New';">KIC2000UserSettings.kiccfg</span> file, <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory\Log\KIC2000UserSettings</i>.  Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
                     <p>&#160;</p>
-                    <p class="p_7"><span class="span_27">[</span>APPLICATION CONFIGURATIONS<span class="span_27">]</span></p>
-                    <p class="p_41">EnableProfieGrouping=1</p>
+                    <p class="p_7" style="font-family: 'Courier New';">[APPLICATION CONFIGURATIONS]</p>
+                    <p class="p_41" style="font-family: 'Courier New';">EnableProfieGrouping=1</p>
                     <p class="p_41">&#160;</p>
                     <h3 class="Heading3"><a name="Use_Wildcard_Characters_to_Identify_Child_Models"></a>Use Wildcard Characters to Identify Child Models</h3>
                     <p>Anticipating the need to group closely named product models, the software lets you substitute the asterisk (*) symbol as a universal <span class="span_12">wildcard</span> character when adding models to a group or linking them with a specific profile.&#160; You can use wildcards in any position within the model name string.</p>
@@ -461,7 +470,7 @@
                     <p>&#160;</p>
                     <ol start="4">
                         <li>
-                            <p>In the <b>Add New Model</b> field, type in a model name (using wildcards as appropriate) and click the <b>Add</b> button.<br /><br /></p>
+                            <p>In the <b>Add New Model</b> field, type in a model name (using wildcards as appropriate) and click the <b>Add</b> button.<br /></p>
                             <p>The model name appears in the Linked Models list</p>
                         </li>
                     </ol>
@@ -557,7 +566,7 @@
                         <tr>
                             <td class="td_2">
                                 <p>&#160;</p>
-                                <p>If there is no match, the software displays a message about the model and a Link button.</p>
+                                <p>If there is no match, the software displays a message about the model and a <b>Link</b> button.</p>
                                 <p>&#160;</p>
                             </td>
                             <td class="td_2">
@@ -585,7 +594,7 @@
                     </ol>
                     <p class="p_16">&#160;</p>
                     <ol start="7">
-                        <li>Click the green check (OK) button.<br />The VP Load screen reappears with the newly linked product/model pair displayed.</li>
+                        <li>Click the <b>Green check</b> button.<br />The VP Load screen reappears with the newly linked product/model pair displayed.</li>
                     </ol>
                     <p>&#160;</p>
                     <p class="p_19">
@@ -593,10 +602,10 @@
                     </p>
                     <p>&#160;</p>
                     <ol start="8">
-                        <li>Click the VP Start button to begin Virtual Profiling with the selected model.</li>
+                        <li>Click the <b>VP Start</b> button to begin Virtual Profiling with the selected model.</li>
                     </ol>
                     <p>&#160;</p>
-                    <h4 class="Heading4"><a name="View_the_Linked_Model_On_Other_Screens"></a>View the Linked Model On Other Screens</h4>
+                    <h4 class="Heading4"><a name="View_the_Linked_Model_On_Other_Screens"></a>View the Linked Model on Other Screens</h4>
                     <p>During Virtual Profiling, the name of the linked model appears in several places in the user interface.&#160; On the Profile Explorer screen, all linked models for a selected profile appear at the top of the screen and in the Child Model column:</p>
                     <p>&#160;</p>
                     <p class="p_19">

@@ -11,19 +11,20 @@
                     <h1 class="Heading1">Using Live Data Output</h1>
                     <p>The Live Data Output (LDO) feature outputs Virtual Profile (VP) data in real time for use by third-party applications such as Line Balancing/Production Monitoring Host or SPC software.  This data includes all relevant process information, profile data, Virtual Profile data, statistics, and limits.  There are several different LDO formats that can be chosen from. Examples of these formats will be shown later in this section.</p>
                     <p>&#160;</p>
-                    <p><b>Output of the LDO file data –</b>When the VP is running, the statistical data from each newly completed Virtual Profile  is written to the LDO file.</p>
+                    <p><b>Output of the LDO File Data –</b>When the VP is running, the statistical data from each newly completed Virtual Profile  is written to the LDO file.</p>
                     <p>&#160;</p>
-                    <p><b>Viewing LDO data –</b> LDO is designed to output data only and is not meant as a historical database.  It is intended to be used with third party software that collects the LDO data while the Virtual Profile is running-live.  If you are not running third party software to collect the LDO data, and wish you to view historical data, this can be accomplished from within the actual automatic system software in use.</p>
+                    <p><b>Viewing LDO Data –</b> LDO is designed to output data only and is not meant as a historical database.  It is intended to be used with third party software that collects the LDO data while the Virtual Profile is running-live.  If you are not running third party software to collect the LDO data, and wish you to view historical data, this can be accomplished from within the actual automatic system software in use.</p>
                     <p>&#160;</p>
-                    <p><b>LDO destination –</b> The location where the LDO output file is written to can be specified by the user in the ConfigurationProgram.exe utility.</p>
-                    <p>&#160;</p>
-                    <p><b>Note:</b> For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.  You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.</p>
-                    <p>&#160;</p>
-                    <p><b>An LDO output file example</b>
+                    <p><b>LDO Destination –</b> The location where the LDO output file is written to can be specified by the user in the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> utility.</p>
+                    <blockquote>
+                        <p><b>Note:</b> For the Live Data output to function, the appropriately programmed USB dongle key must remain connected to the PC at all times during use.  You can verify whether or not you have the LDO feature by viewing the Software Key panel in the Hardware Status screen.</p>
+                    </blockquote>
+                    <p><b>An LDO Output File Example</b>
                     </p>
                     <p>Below is an example of the type of data included in the LDO output file:</p>
-                    <p class="Caption" style="text-align: left;">
-                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/030000D7aa.png" style="width: 705px;height: 450px;" />
+                    <p>&#160;</p>
+                    <p class="Caption" style="text-align: center;">
+                        <img src="Resources/Images/SFT-321000-151 e-APS User Manual/030000D7aa.png" style="width: 743px;height: 474px;" />
                     </p>
                     <p class="Caption" style="text-align: center;">Figure 105: Live Data Output text file</p>
                     <p>&#160;</p>
@@ -49,7 +50,7 @@
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Details_Of_Output_Files"></a>Details Of Output Files
                     </h2>
-                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_WordPad"></a>TSV And CSV for WordPad</h3>
+                    <h3 class="Heading3"><a name="LDO_Standard_TSV_And_CSV_For_WordPad"></a>TSV and CSV for WordPad</h3>
                     <ul style="list-style-type: square;">
                         <li style="margin-top: 3px;margin-bottom: 3px;">The output file type is a .TXT</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">TSV format is Tab delimited</li>
@@ -72,11 +73,11 @@
                         <li style="margin-top: 3px;margin-bottom: 3px;">The default output file name is e-APS_LiveDataOutput.txt</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">The user can choose to define their own specific output file name</li>
                         <li class="li_3" style="margin-top: 3px;margin-bottom: 3px;">When default or user defined naming is selected, output file is overwritten at product changeover</li>
-                        <li style="margin-top: 3px;margin-bottom: 3px;">File name format can also be set to:  PRODUCT_YYMMDD_HH-MM-SS.txt</li>
-                        <li class="li_3" style="margin-top: 3px;margin-bottom: 3px;">When this naming is selected, a new file is generated when product changeover occurs</li>
+                        <li class="li_3">File name format can also be set to:  PRODUCT_YYMMDD_HH-MM-SS.txt</li>
+                        <li class="ListBullet2_7">When this naming is selected, a new file is generated when product changeover occurs</li>
                     </ul>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="LDO_1_Board_1_File"></a>One board per file (TXT format)</h3>
+                    <h3 class="Heading3"><a name="LDO_1_Board_1_File"></a>One Board per File (TXT format)</h3>
                     <ul style="list-style-type: square;">
                         <li style="margin-top: 3px;margin-bottom: 3px;">The output file type is a .TXT</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">Separate individual file is generated when the VP is calculated</li>
@@ -84,15 +85,18 @@
                         <li style="margin-top: 3px;margin-bottom: 3px;">User cannot change file name</li>
                     </ul>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="LDO_XML"></a>One board per file (XML format)</h3>
+                    <h3 class="Heading3"><a name="LDO_XML"></a>One Board per File (XML format)</h3>
                     <ul style="list-style-type: square;">
                         <li style="margin-top: 3px;margin-bottom: 3px;">The output file type is a .XML file</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">Separate individual file is generated when the VP is calculated</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">File name is ProductName_OvenName_YYMMDD_HH-MM-SS</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">User cannot change file name</li>
                     </ul>
+                    <blockquote>
+                        <p><b>Note:</b> Examples of each of the available output file types can be found in the <span style="font-family: 'Courier New';">C:\Software Root Directory\Sample LDO files</span> folder.</p>
+                    </blockquote>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="LDO_CSV"></a>One board per file - (CSV format)</h3>
+                    <h3 class="Heading3"><a name="LDO_CSV"></a>One Board per File - (CSV format)</h3>
                     <ul style="list-style-type: square;">
                         <li style="margin-top: 3px;margin-bottom: 3px;">The output file type is a .CSV file</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">Separate individual file is generated when the VP is calculated</li>
@@ -100,19 +104,20 @@
                         <li style="margin-top: 3px;margin-bottom: 3px;">User cannot change file name</li>
                     </ul>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="One_board_per_file_TXT_Alternate"></a>One board per file – TXT - Alternate</h3>
+                    <h3 class="Heading3"><a name="One_board_per_file_TXT_Alternate"></a>One Board per File – TXT - Alternate</h3>
                     <ul style="list-style-type: square;">
                         <li style="margin-top: 3px;margin-bottom: 3px;">Similar to ‘standard’ one board per file TXT output</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">Adds lines for ‘customer name’ (taken from Profile Description); which TC had highest PWI</li>
                     </ul>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="One_board_per_file_TXT_Custom"></a>One board per file – TXT - Custom</h3>
+                    <h3 class="Heading3"><a name="One_board_per_file_TXT_Custom"></a>One Board per File – TXT - Custom</h3>
                     <ul style="list-style-type: square;">
                         <li style="margin-top: 3px;margin-bottom: 3px;">Similar to ‘standard’ one board per file TXT output</li>
                         <li style="margin-top: 3px;margin-bottom: 3px;">Does not include temperature specs in specifications (Reflow_Time instead of Reflow_Time_/218)</li>
                     </ul>
-                    <p class="p_16">&#160;</p>
-                    <p><b style="text-decoration: underline;">Note:</b> Examples of each of the available output file types can be found in the C:\Software Root Directory\Sample LDO files folder.</p>
+                    <blockquote>
+                        <p><b style="text-decoration: none;">Note:</b> Examples of each of the available output file types can be found in the <span style="font-family: 'Courier New';">C:\Software Root Directory\Sample LDO files</span> folder.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Configure_LDO"></a>Configure LDO</h2>
@@ -124,18 +129,18 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li style="margin-top: 6px;margin-bottom: 6px;">With the automatic system software shut down, browse to the <span style="font-family: 'Courier New'; font-style: italic;">C:\Software Root Directory</span> folder and run the ConfigurationProgram.exe application, and select the LDO tab.</li>
-                                        <li style="margin-top: 6px;margin-bottom: 6px;">Check the “Enable Live Data Output” checkbox</li>
+                                        <li style="margin-top: 6px;margin-bottom: 6px;">With the automatic system software shut down, browse to the <span style="font-family: 'Courier New'; font-style: italic;">C:\Software Root Directory</span> folder and run the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> application, and select the LDO tab.<br /><br /></li>
+                                        <li style="margin-top: 6px;margin-bottom: 6px;">Check the <b style="font-style: italic;">Enable Live Data Output</b> checkbox</li>
                                         <li style="margin-top: 6px;margin-bottom: 6px;">Select the desired Format</li>
                                         <li style="margin-top: 6px;margin-bottom: 6px;">The type of Format chosen will affect what naming structure for file will be used (See Details of Output Files above).</li>
-                                        <li style="margin-top: 6px;margin-bottom: 6px;">Select the destination path for the output file by clicking on the Browse button. This needs to be a location on the local drive.</li>
-                                        <li style="margin-top: 6px;margin-bottom: 6px;">“Max File Size” lets you specify how large the LDO output file can get before a new one is started.</li>
-                                        <li style="margin-top: 6px;margin-bottom: 6px;">Select ‘Include Alarm Events’ to record into the output file any warnings or alarms</li>
+                                        <li style="margin-top: 6px;margin-bottom: 6px;">Select the destination path for the output file by clicking on the <b>Browse</b> button. This needs to be a location on the local drive.</li>
+                                        <li style="margin-top: 6px;margin-bottom: 6px;"><b>Max File Size</b> drop-down lets you specify how large the LDO output file can get before a new one is started.</li>
+                                        <li style="margin-top: 6px;margin-bottom: 6px;">Select <b>Include Alarm Events</b> to record into the output file any warnings or alarms</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <img src="Resources/Images/image156.png" style="width: 551px;height: 522px;" />
+                                    <img src="Resources/Images/image156.png" style="width: 479px;height: 453px;" />
                                 </td>
                             </tr>
                         </tbody>
@@ -150,14 +155,14 @@
                     </h3>
                     <p>In time, accumulating LDO files can take up too much hard disk space and need to be deleted.  The software provides an <i>Auto Delete</i> function that lets you specify time intervals for automated file purging.  You can specify a maximum number of days–up to 1827 (five years)–that the system retains the files before automatic purging.  You can also select a time in the 24-hour cycle for the system to automatically check for files that exceed the maximum day limit.</p>
                     <ol>
-                        <li>In the automatic system folder, double-click on the <b>AutoDelete</b> icon. <img src="Resources/Images/e9.png" /><br />The Auto Delete LDO files screen appears:</li>
+                        <li>In the automatic system folder, double-click on the <b>AutoDelete</b> icon. <img src="Resources/Images/e9.png" /><br />The <i>Auto Delete LDO files</i> screen appears:</li>
                     </ol>
                     <p style="text-align: center;">
                         <img src="Resources/Images/image158.png" />
                     </p>
                     <p>&#160;</p>
                     <ol start="2">
-                        <li>Click in the <i>Max days to exist</i> field, and type in a new value.<br /><img src="Resources/Images/image159.png" /></li>
+                        <li>Click in the <i style="font-weight: bold;">Max days to exist</i> field, and type in a new value.<br /><img src="Resources/Images/image159.png" /></li>
                     </ol>
                     <p>&#160;</p>
                     <table style="width: 70%;">
@@ -179,6 +184,38 @@
                                 <td>
                                     <img src="Resources/Images/image161.png" />
                                 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Include_Alarm_Events"></a>Include Alarm Events in the Output File</h3>
+                    <p>When <i>Include Alarm Events</i> is selected, any alarm and/or warning events that occurred while a board was in the oven will be saved into the output file along with the board data.</p>
+                    <p>&#160;</p>
+                    <p><b>Alarm Event LDO Output File Examples</b>
+                    </p>
+                    <p>Below are examples of the Tab Separated and One Board per File outputs with the <i>Include Alarm Events</i> enabled:</p>
+                    <p>&#160;</p>
+                    <table style="width: 100%;">
+                        <col>
+                        </col>
+                        <col>
+                        </col>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/FTM0001.png" style="width: 418px;height: 210px;">
+                                    </img>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/FTM0002.png" style="width: 413px;height: 217px;">
+                                    </img>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;font-size: 8pt;font-family: Arial;">
+									Tab Separated
+								</td>
+                                <td style="text-align: center;font-size: 8pt;font-family: Arial;">One Board per File</td>
                             </tr>
                         </tbody>
                     </table>

@@ -10,19 +10,22 @@
                     <h1 class="Heading1"><a name="Use"></a>Use Remote Process Monitoring</h1>
                     <p>Remote Process Monitoring (RPM) enables customers to view real-time thermal process data and process status from the automatic profiling system on their reflow or cure ovens from any authorized computer on the network.</p>
                     <p>&#160;</p>
-                    <ul class="">
-                        <li class="">The software provides valuable thermal process information in real-time.&#160; The RPM can supply this information to all relevant decision makers wherever they happen to be in the factory.&#160; The results are better data management, efficient process management and oversight, and faster reaction to thermal process issues in the factory.</li>
+                    <ul class="Square">
+                        <li>The software provides valuable thermal process information in real-time.&#160; The RPM can supply this information to all relevant decision makers wherever they happen to be in the factory.&#160; The results are better data management, efficient process management and oversight, and faster reaction to thermal process issues in the factory.</li>
                     </ul>
                     <p>&#160;</p>
-                    <ul class="">
-                        <li class="">RPM provides superior information sharing for the factory as a whole.&#160; The software monitors, controls, and displays the thermal process information <span class="span_12">for a single oven, at that oven</span>.&#160; In contrast, RPM displays the pertinent data for<span class="span_12"> all your ovens</span> on any authorized network computer <span class="span_12">on a single screen</span>.</li>
+                    <ul class="Square">
+                        <li>RPM provides superior information sharing for the factory as a whole.&#160; The software monitors, controls, and displays the thermal process information <span class="span_12">for a single oven, at that oven</span>.&#160; In contrast, RPM displays the pertinent data for<span class="span_12"> all your ovens</span> on any authorized network computer <span class="span_12">on a single screen</span>.</li>
                     </ul>
                     <p>&#160;</p>
-                    <ul class="">
-                        <li class="">RPM translates complex process issues into an easy to understand format.&#160; With RPM, line supervisors and quality, production, or engineering managers, can access factory-wide, real-time quality and productivity data without staff meetings, reports, or trips to the factory floor.</li>
+                    <ul class="Square">
+                        <li>RPM translates complex process issues into an easy to understand format.&#160; With RPM, line supervisors and quality, production, or engineering managers, can access factory-wide, real-time quality and productivity data without staff meetings, reports, or trips to the factory floor.</li>
                     </ul>
-                    <p>&#160;</p>
-                    <p>Note: <span class="span_11">The software key must remain connected at all times during use for barcode capabilities to function.</span>&#160; </p>
+                    <blockquote>
+                        <blockquote>
+                            <p><b>Note:</b> The software key must remain connected at all times during use for barcode capabilities to function.</p>
+                        </blockquote>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>RPM is comprised of three main software applications, and one optional software component:</p>
                     <p>&#160;</p>
@@ -36,22 +39,25 @@
                     <p>&#160;</p>
                     <ol start="2" class="">
                         <li class="">
-                            <p>KIC Server software:</p>
+                            <p><b>KIC Server software:</b>
+                            </p>
                             <p class="">The KIC Server software is installed onto a computer or drive on the network and acts as a host for all automatic system software instances running on the network with the RPM output.&#160; It automatically connects to all the systems that are running RPM and passes on the data to any authorized computer on the LAN that is properly logged on.&#160; A maximum of 100 ovens per Server is possible.&#160; The KIC Server has a setup menu for creating and editing user names and passwords for KIC Viewer users.</p>
                         </li>
                     </ol>
                     <p>&#160;</p>
                     <ol start="3" class="">
                         <li class="">
-                            <p>KIC Viewer software:</p>
-                            <p class="">The KIC Viewer resides on your desk or any remote computer on the network.&#160; Once logged on to the KIC Server, Viewer lets you see the data from all automatic system software connected to the Server.&#160; </p>
+                            <p><b>KIC Viewer software:</b>
+                            </p>
+                            <p class="">The KIC Viewer resides on your desk or any remote computer on the network.&#160;Once logged on to the KIC Server, Viewer lets you see the data from all automatic system software connected to the Server.&#160; </p>
                         </li>
                     </ol>
                     <p>&#160;</p>
                     <ol start="4" class="">
                         <li class="">
-                            <p>Win VNC:</p>
-                            <p class="">Win VNC is an optional third-party software application that allows you to remotely control, or view the history for any system software client PC on the same LAN.&#160; Win VNC lets you clear alarms, load recipes, and perform system administration tasks.</p>
+                            <p><b>Win VNC:</b>
+                            </p>
+                            <p class="">Win VNC is an optional third-party software application that allows you to remotely control or view the history for any system software client PC on the same LAN.&#160; Win VNC lets you clear alarms, load recipes, and perform system administration tasks.</p>
                             <p>&#160;</p>
                             <p>In full operation, the combined software and systems function as shown below.</p>
                         </li>
@@ -62,19 +68,19 @@
                     </p>
                     <p class="Caption">Figure 124: RPM functional diagram</p>
                     <p>&#160;</p>
-                    <ul class="">
+                    <ul class="Square">
                         <li class="">Each system at the reflow or cure oven runs in Virtual Profiling mode, monitoring the process and giving real-time profile/process data for each production board.&#160; The Virtual Profile data is stored locally on the client PC.</li>
                     </ul>
                     <p>&#160;</p>
-                    <ul class="">
+                    <ul class="Square">
                         <li class="">The Oven Name, Product Name, Process Window Index (PWI), Real-Time Cpk, and current Alarm State (green, yellow, red: with alarm text) are sent to the KIC Server as each board exits the oven.</li>
                     </ul>
                     <p>&#160;</p>
-                    <ul class="">
+                    <ul class="Square">
                         <li class="">The KIC Server accepts the data from all systems configured to send data, acting as a host for all the data.</li>
                     </ul>
                     <p>&#160;</p>
-                    <ul class="">
+                    <ul class="Square">
                         <li class="">The KIC Viewer logs on to the KIC Server and displays the pertinent data for all ovens, on one screen, updating each one as boards exit and new data is sent.</li>
                     </ul>
                     <p>&#160;</p>
@@ -89,14 +95,16 @@
                                 <td>
                                     <p>To enable the RPM feature:</p>
                                     <ol start="1" class="">
-                                        <li class="">Close the automatic software if open.</li>
-                                        <li class="">Using Windows Explorer, browse to the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory</span> and run the ConfigurationProgram.exe application.</li>
-                                        <li class="">Select the RPM tab</li>
-                                        <li class="">Check the “LON in use” checkbox</li>
-                                        <li class="">Enter the IP address of the PC that will be running the <span class="span_12">KIC Server</span> application.</li>
-                                        <li class="">LON Oven ID can be left blank, as the <span class="span_12">KIC Server</span> software will automatically assign it a position.</li>
-                                        <li class="">Click Apply, then OK to close the Configuration Program.</li>
+                                        <li class="ListBullet2_1">Close the automatic software if open.</li>
+                                        <li class="ListBullet2_1">Using Windows Explorer, browse to the <span style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory</span> and run the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> application.</li>
+                                        <li class="ListBullet2_1">Select the RPM tab</li>
+                                        <li class="ListBullet2_1">Check the <b>LON in use</b> checkbox</li>
+                                        <li class="ListBullet2_1">Enter the IP address of the PC that will be running the <span class="span_12">KIC Server</span> application.</li>
+                                        <li class="ListBullet2_1"><b>LON Oven ID</b> can be left blank, as the <span class="span_12">KIC Server</span> software will automatically assign it a position.</li>
+                                        <li class="ListBullet2_1">Click <b>Apply</b>, then <b>OK</b> to close the Configuration Program.</li>
+                                        <li class="ListBullet2_1">Restart the automatic system software.</li>
                                     </ol>
+                                    <p>&#160;</p>
                                 </td>
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000102.png" style="width: 331px;height: 292px;" />
@@ -107,14 +115,12 @@
                         </tbody>
                     </table>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p>After editing the file, be sure to save it before exiting.&#160; Next, launch the system software.&#160; </p>
-                    <p>&#160;</p>
                     <p>When the software launches, you see the following two icons in the notification area:</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000103.png" />. <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000104.png" style="width: 42px;height: 42px;" /></p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: The appearance of the system software icon changes based on its connection status with the KIC Server:</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: The appearance of the system software icon changes based on its connection status with the KIC Server:</p>
+                    </blockquote>
                     <table style="width: 25%;margin-left: auto;margin-right: auto;">
                         <col style="width: 125px" />
                         <col />
@@ -141,19 +147,18 @@
                     </table>
                     <p style="text-align: center;">&#160;</p>
                     <p>View the icon in the notification area.&#160; If the system software is not connected to a KIC Server, check to make sure the KIC Server:</p>
-                    <ul class="">
-                        <li class="">Hosting mode is enabled (KIC Server-click the Start to Host button)</li>
-                    </ul>
-                    <ul class="ul_2">
-                        <li class="">Displays the communication status of the systemsoftware instances that are connected.</li>
+                    <ul style="list-style-type: square;">
+                        <li>Hosting mode is enabled (KIC Server-click the Start to Host button)</li>
+                        <li>Displays the communication status of the systemsoftware instances that are connected.</li>
                     </ul>
                     <p>&#160;</p>
                     <p>For more details, see <a href="#KIC_Server"><span class="Hyperlink">KIC Server</span></a>. </p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="KIC_Watchdog"></a>KIC Watchdog</h3>
                     <p>The KIC Watch Dog is a software program that runs in the background when RPM is enabled.&#160; Its main function is to continuously monitor communication between the system software client PC and the KIC Server PC.</p>
-                    <p>&#160;</p>
-                    <p>Note: <span class="span_11">The KIC Watch Dog software is not user configurable.</span></p>
+                    <blockquote>
+                        <p><b>Note:</b> The KIC Watch Dog software is not user configurable.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p>KIC Watch Dog automatically starts up when the system software launches with RPM enabled (DO NOT CLOSE IT).&#160; The KIC Watch Dog’s Icon displays on the bottom right corner as seen below:</p>
                     <p>&#160;</p>
@@ -181,9 +186,8 @@
                         <tr>
                             <td class="td_34">
                                 <ol start="1" class="">
-                                    <li>Double Click on the VNC icon.</li>
+                                    <li>Double Click on the VNC icon.<br />The Current User Properties screen  appears.</li>
                                 </ol>
-                                <p class="p_16">The Current User Properties screen  appears.</p>
                                 <p>&#160;</p>
                                 <ol start="2" class="">
                                     <li class="">Enter a password for other computers to access this client PC.&#160; (You are asked to enter this password each time any KIC Viewer attempts either Viewing History, or Remotely Controlling this client PC)</li>
@@ -210,21 +214,24 @@
                     <p>You must install the software on a LAN-connected PC.  This PC cannot simultaneously serve as a system software client, but it can run the Viewer application.  The KIC Server can manage up to 100 ovens and has a menu for creating and editing usernames and passwords for KIC Viewer-users.  Your system software installation media includes the KIC Server software, but the application requires the continuous connection of an appropriate software key.</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="To_install_the_KIC_Server"></a>Install the KIC Server</h3>
-                    <p><span class="span_11">Note</span>: You must install the KIC Server manually.&#160; </p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: You must install the KIC Server manually.&#160; </p>
+                    </blockquote>
                     <p>&#160;</p>
-                    <ol start="1" class="ol_3">
+                    <ol start="1">
                         <li class="ListNumber4">Browse the system software installation media for the KIC Server folder.</li>
                     </ol>
                     <li class="ListNumber4">&#160;</li>
-                    <ol start="2" class="ol_3">
+                    <ol start="2">
                         <li class="ListNumber4">In the KIC Server folder, run the file Setup.exe.&#160; <br />The installation begins automatically.&#160;</li>
                     </ol>
                     <li class="ListNumber4"> </li>
-                    <ol start="3" class="ol_3">
+                    <ol start="3">
                         <li class="ListNumber4">Follow the on-screen directions.</li>
                     </ol>
-                    <p>&#160;</p>
-                    <p class="ListNumber4">Tip: <span class="span_11">It may be helpful to copy the KIC Server shortcut to the Windows-Startup folder especially for dedicated-KIC Servers.</span></p>
+                    <blockquote>
+                        <p><b>Tip:</b> It may be helpful to copy the KIC Server shortcut to the Windows-Startup folder especially for dedicated-KIC Servers.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="To_launch_the_KIC_Server"></a>Launch the KIC Server</h3>
                     <p>From the Windows desktop, click on: Start » Programs » KIC » KIC Server</p>
@@ -240,22 +247,22 @@
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/03000109.png" style="width: 46px;height: 46px;" />
                     </p>
                     <p class="Caption">Figure 128</p>
-                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server.&#160;See Figure 128.</p>
+                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server.&#160;</p>
                     <p>&#160;</p>
                     <p class="p_19">
                         <img src="Resources/Images/SFT-324100-101 Profiling System User Manual v3.2 draft/0300010A.png" style="width: 45px;height: 45px;" />
                     </p>
                     <p class="Caption">Figure 129</p>
-                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections.&#160;See Figure 129.</p>
+                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections.&#160;</p>
                     <p>&#160;</p>
                     <p>The KIC Server window is shown in Figure 130.&#160; The screen permits the following six functions:</p>
-                    <ol start="1" class="ol_1">
-                        <li class="ListNumber4"><span class="span_11">Add</span> new users and passwords for KIC Viewers to connect.</li>
-                        <li class="ListNumber4"><span class="span_11">Edit/delete</span> users and Passwords</li>
-                        <li class="ListNumber4"><span class="span_11">Maximum number of Ovens</span> - Enter the number of ovens you wish to display in the KIC Viewer window.</li>
-                        <li class="ListNumber4"><span class="span_11">Start to host</span> – Enables/disables the KIC Servers’ connection mode.</li>
-                        <li class="ListNumber4">View the connection time and IP address for each system software client PC that is connected</li>
-                        <li class="ListNumber4">View the KIC Viewer-User name and connection time.</li>
+                    <ol start="1">
+                        <li class="ListNumber2"><span class="span_11">Add</span> new users and passwords for KIC Viewers to connect.</li>
+                        <li class="ListNumber2"><span class="span_11">Edit/delete</span> users and Passwords</li>
+                        <li class="ListNumber2"><span class="span_11">Maximum number of Ovens</span> - Enter the number of ovens you wish to display in the KIC Viewer window.</li>
+                        <li class="ListNumber2"><span class="span_11">Start to host</span> – Enables/disables the KIC Servers’ connection mode.</li>
+                        <li class="ListNumber2">View the connection time and IP address for each system software client PC that is connected</li>
+                        <li class="ListNumber2">View the KIC Viewer-User name and connection time.</li>
                     </ol>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -273,7 +280,7 @@
                                         <li class="">Enter the new password.</li>
                                     </ol>
                                     <ol start="3" class="">
-                                        <li class="">Select the Add button.</li>
+                                        <li class="">Select the <b>Add</b> button.</li>
                                     </ol>
                                     <p>&#160;</p>
                                     <p>You are added to the list of users. To access a list of users, select the List of Users dropdown menu..</p>
@@ -304,8 +311,9 @@
                                         <li class="">Select the user that you wish to modify.</li>
                                     </ol>
                                     <ol start="3" class="">
-                                        <li class="">Select the Delete button.</li>
+                                        <li class="">Select the <b>Delete</b> button.</li>
                                     </ol>
+                                    <p>&#160;</p>
                                     <p>The user account deletes immediately.</p>
                                     <p>&#160;</p>
                                 </td>
@@ -320,12 +328,14 @@
                     <p>&#160;</p>
                     <p><span class="span_11">Maximum number of ovens</span> – This value controls the number of oven boxes displayed on the KIC Viewer screen the maximum number of ovens is 100, minimum 1.</p>
                     <p>&#160;</p>
-                    <p>&#160;</p>
                     <p><span class="span_11">Start to Host</span> – The KIC Server will not accept connections until this button is selected.&#160; You must manually select this button to enable hosting by the KIC Server application.</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="KIC_Viewer"></a>KIC Viewer</h2>
                     <p>KIC Viewer software lets you remotely view production data from all automatic systems connected to the KIC Server.&#160; The software is included on the software installation media and can be installed on a desktop PC or any computer on the network. It can be installed on a separate PC or on the same PC with the KIC Server or the automatic system Client.</p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: Once installed, you first need to <span class="span_12">enable</span> the application in the configuration file and <span class="span_12">connect</span> to the KIC Server before you can launch the application.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: Once installed, you first need to <span class="span_12">enable</span> the application in the configuration file and <span class="span_12">connect</span> to the KIC Server before you can launch the application.</p>
+                        <p>&#160;</p>
+                    </blockquote>
                     <h3 class="Heading3"><a name="Installing_the_KIC_Viewer"></a>Install the KIC Viewer</h3>
                     <p>You must install the KIC Viewer manually.&#160; </p>
                     <p>&#160;</p>
@@ -413,7 +423,9 @@
                     <h3 class="Heading3"><a name="Connecting_to_the_KIC_Server"></a>Connect to the KIC Server</h3>
                     <p>To connect to a KIC Server, enter a valid user name and password from the KIC Viewer machine.&#160; See <a href="#KIC_Server"><span class="Hyperlink">KIC Server</span></a> for details.</p>
                     <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: It is very helpful to have the IP address of the PC running the KIC Server application as this information is required each time a KIC Viewer connects to a KIC Server.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: It is very helpful to have the IP address of the PC running the KIC Server application as this Information is required each time a KIC Viewer connects to a KIC Server.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <table>
                         <col style="width: 350px;" />
@@ -489,8 +501,8 @@
                     <h4 class="Heading4"><a name="Configuration"></a>Configuration</h4>
                     <p>Reload the configuration – This feature manually reloads the configuration in the event you change the configuration without exiting the KIC Viewer software.</p>
                     <p>&#160;</p>
-                    <ul class="ul_2">
-                        <li class="ListBullet2_2">Oven selection – Allows you to turn On/Off the ovens to view.</li>
+                    <ul style="list-style-type: square;">
+                        <li>Oven selection – Allows you to turn On/Off the ovens to view.</li>
                     </ul>
                     <p>&#160;</p>
                     <p class="p_19">
@@ -508,12 +520,8 @@
                     <p>A grey oven box can indicate there is a problem with the oven:</p>
                     <p>&#160;</p>
                     <ol start="1" class="">
-                        <li class="">The system software client PC is no longer connected to the KIC Server application.</li>
+                        <li class="">The system software client PC is no longer connected to the KIC Server application.<br />As soon as the client PC begins running Virtual Profiling again, the oven box will return either red, yellow, or red based on the current conditions in that oven.<br /><br />If the KIC Server application was closed, each KIC Viewer will wait until the KIC Server is launched again.  If for any reason the KIC Viewer does not automatically reconnect, select Connect from the main menu, and enter a valid username and password to reconnect.</li>
                     </ol>
-                    <p class="p_16">As soon as the client PC begins running Virtual Profiling again, the oven box will return either red, yellow, or red based on the current conditions in that oven.<br /></p>
-                    <p class="p_16">&#160;</p>
-                    <p class="p_16">
-                        <br />If the KIC Server application was closed, each KIC Viewer will wait until the KIC Server is launched again.  If for any reason the KIC Viewer does not automatically reconnect, select Connect from the main menu, and enter a valid username and password to reconnect.</p>
                     <p class="p_16">&#160;</p>
                     <ol start="2" class="">
                         <li class="">The client PC is no longer running Virtual Profiling</li>
@@ -525,8 +533,9 @@
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Viewing_historical_data3"></a>View Historical Data</h3>
                     <p>Right-click an oven box in the Icon View to view the history for any oven via the Profile Explorer.&#160; </p>
-                    <p>&#160;</p>
-                    <p><span class="span_11">Note</span>: In order to use this feature, WinVNC software program must be installed and configured.</p>
+                    <blockquote>
+                        <p><span class="span_11">Note</span>: In order to use this feature, WinVNC software program must be installed and configured.</p>
+                    </blockquote>
                     <h4 class="Heading4"><a name="View_History_Display"></a>View History Display</h4>
                     <table>
                         <col style="width: 230pt;" />
@@ -539,7 +548,7 @@
                                 <p>&#160;</p>
                                 <p>Click <span class="span_11">OK</span> in the pop up box asking to select a working folder.&#160; Then all of product names appears as shown.</p>
                                 <p>&#160;</p>
-                                <p>Click on the main screen button to exit View History mode.</p>
+                                <p>Click on the <b>Main screen</b> button to exit View History mode.</p>
                                 <p>&#160;</p>
                             </td>
                             <td class="td_35">

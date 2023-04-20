@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultToc
   Version="1"
   sourceDocument="D:\SFT-321000-151 e-APS User Manual.doc">
@@ -62,7 +62,7 @@
       Link="/Content/Running_a_Profile.htm#Specifying_oven"></TocEntry>
     <TocEntry
       Title="ATTACH THERMOCOUPLES"
-      Link="/Content/Running_a_Profile.htm#Verifying_the_Zone"></TocEntry>
+      Link="/Content/Running_a_Profile.htm#Attach_Thermocouples"></TocEntry>
     <TocEntry
       Title="ATTACH THERMOCOUPLES TO SEMICONDUCTOR WAFERS"
       Link="/Content/Running_a_Profile.htm#Attach_Thermocouples_Semi" />
@@ -82,7 +82,7 @@
       Title="MANUAL PROFILE PREDICTION"
       Link="/Content/Running_a_Profile.htm#Manual_profile_prediction"></TocEntry>
     <TocEntry
-      Title="SET DIFFERENT TOP AND BOTTOM SET POINT TEMPERATURES"
+      Title="SET DIFFERENT TOP AND BOTTOM SETPOINT TEMPERATURES"
       Link="/Content/Running_a_Profile.htm#Setting_different_top"></TocEntry>
   </TocEntry>
   <TocEntry
@@ -216,6 +216,9 @@
       Title="SWEET SPOT"
       Link="/Content/Software_options.htm#Sweet_Spot" />
     <TocEntry
+      Title="DUAL PROFILING MODE"
+      Link="/Content/Software_options.htm#Dual_Profiling_Mode" />
+    <TocEntry
       Title="STATISTICAL PROCESS CONTROL CHARTS"
       Link="/Content/Software_options.htm#Statistical_Process_Control_Charts" />
     <TocEntry
@@ -271,6 +274,35 @@
   <TocEntry
     Title="USE SWEET SPOT TARGET"
     Link="/Content/Use_Sweet_Spot_Target.htm"></TocEntry>
+  <TocEntry
+    Title="DUAL PROFILING MODE"
+    Link="/Content/Dual_Profiling_Mode.htm">
+    <TocEntry
+      Title="CONFIGURATION"
+      Link="/Content/Dual_Profiling_Mode.htm#Global_Tab_24ch" />
+    <TocEntry
+      Title="STEPS TO CHANGE FROM STANDARD TO DUAL PROFILING OPERATION"
+      Link="/Content/Dual_Profiling_Mode.htm#Change_Standard_DualProfiling" />
+    <TocEntry
+      Title="STEPS TO CHANGE FROM DUAL PROFILING TO STANDARD OPERATION"
+      Link="/Content/Dual_Profiling_Mode.htm#Change_DualProfiling_Standard" />
+    <TocEntry
+      Title="HARDWARE STATUS – DUAL PROFILING MODE"
+      Link="/Content/Dual_Profiling_Mode.htm#Hardware_Status_Dual_Profiling_mode" />
+    <TocEntry
+      Title="RUN A PROFILE – DUAL PROFILING MODE"
+      Link="/Content/Dual_Profiling_Mode.htm#Run_Profile_DualProfiling">
+      <TocEntry
+        Title="ATTACHING THE AIR TC"
+        Link="/Content/Dual_Profiling_Mode.htm#Attach_the_Air_TC_24ch" />
+      <TocEntry
+        Title="ATTACHING PRODUCT TCS"
+        Link="/Content/Dual_Profiling_Mode.htm#Attach_Standard_TCs_24ch" />
+      <TocEntry
+        Title="SELECTING THERMOCOUPLES FOR THE PROFILE"
+        Link="/Content/Dual_Profiling_Mode.htm#Selecting_Thermocouples_24ch" />
+    </TocEntry>
+  </TocEntry>
   <TocEntry
     Title="USE STATISTICAL PROCESS CONTROL CHARTS"
     Link="/Content/Using_the_Index_screen.htm">
@@ -332,6 +364,9 @@
       <TocEntry
         Title="DELETE ACCUMULATED LDO FILES"
         Link="/Content/Outputting_live_data.htm#Delete_Accumulated_LDO_Files" />
+      <TocEntry
+        Title="INCLUDE ALARM EVENTS IN THE OUTPUT FILE"
+        Link="/Content/Outputting_live_data.htm#Include_Alarm_Events" />
     </TocEntry>
   </TocEntry>
   <TocEntry
@@ -345,17 +380,18 @@
       Link="/Content/Centralized Process Window Control.htm#Configuration_of_RPI_software"></TocEntry>
     <TocEntry
       Title="OPERATION OF SOFTWARE"
-      Link="/Content/Centralized Process Window Control.htm#Operation_of_RPI_software" />
-  </TocEntry>
-  <TocEntry
-    Title="HARDWARE OPTIONS"
-    Link="/Content/Alarm_Relay_Light_Tower.htm#Hardware_Options">
-    <TocEntry
-      Title="ALARM RELAY"
-      Link="/Content/Alarm_Relay_Light_Tower.htm#Alarm_Relay"></TocEntry>
-    <TocEntry
-      Title="LIGHT TOWER"
-      Link="/Content/Alarm_Relay_Light_Tower.htm#Light_Tower"></TocEntry>
+      Link="/Content/Centralized Process Window Control.htm#Operation_of_RPI_software">
+      <TocEntry
+        Title="HARDWARE OPTIONS"
+        Link="/Content/Alarm_Relay_Light_Tower.htm#Hardware_Options">
+        <TocEntry
+          Title="ALARM RELAY"
+          Link="/Content/Alarm_Relay_Light_Tower.htm#Alarm_Relay"></TocEntry>
+        <TocEntry
+          Title="LIGHT TOWER"
+          Link="/Content/Alarm_Relay_Light_Tower.htm#Light_Tower"></TocEntry>
+      </TocEntry>
+    </TocEntry>
   </TocEntry>
   <TocEntry
     Title="APPENDIX A: THE PROCESS WINDOW INDEX"
@@ -438,6 +474,6 @@
     </TocEntry>
   </TocEntry>
   <TocEntry
-    Title="CONTACT KIC"
+    Title="CONTACT US"
     Link="/Content/Contac_Us.htm"></TocEntry>
 </CatapultToc>
