@@ -11,31 +11,37 @@
                     <p style="font-family: Arial;font-size: 20pt;color: #00008b;"><b style="font-weight: bold; color: #4682b4;">Part 1: The Basic System</b>
                     </p>
                     <h2 class="Heading1">The Hardware</h2>
-                    <p class="p_4">There are five major hardware components to the basic system:</p>
+                    <p class="p_4">There major hardware components to the basic system:</p>
                     <ul>
-                        <li class="li_1">Ethernet Thermocouple Processing Unit (eTPU)</li>
+                        <li>
+                            <p>DAU (Data Acquisition Unit)</p>
+                        </li>
                         <li class="li_1">Probes</li>
-                        <li class="li_1">Board sensor</li>
-                        <li class="li_1">Conveyor speed encoder</li>
-                        <li class="li_1">Profiler</li>
+                        <li>
+                            <p>Conveyor speed encoder</p>
+                        </li>
+                        <li>
+                            <p>Board sensor</p>
+                        </li>
                     </ul>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="eTPU"></a><span class="span_8">e</span>TPU</h3>
-                    <p class="ListBullet2">The eTPU interfaces with the computer using an Ethernet cross-over cable that connects from the UpLink port on the eTPU directly to a USB to Ethernet adapter (or to an installed Network Interface Card (NIC)).&#160; Please follow manufacturers’ instructions to install the USB adapter or NIC.</p>
-                    <p class="ListBullet2">&#160;</p>
-                    <p class="ListBullet2">The computer used with the system can be a machine that is dedicated to only supporting the software or it can also serve as the oven controller PC.  The software can interface directly with the oven controller on selected models from oven manufacturers.&#160; If you have an oven that is capable of communication with the software, you will want to connect the software to the oven controller computer.</p>
-                    <p class="ListBullet2">&#160;</p>
-                    <p class="ListBullet2">The eTPU must be plugged into an AC power source.  The eTPU utilizes a universal A/C transformer power supply.  The eTPU ships from the factory with multiple AC connectors to accommodate any connector/voltage requirement.</p>
+                    <h3 class="Heading3"><a name="DAU"></a>DAU</h3>
+                    <p>The DAU interfaces with the computer using an Ethernet cross-over cable that connects from the UpLink port on the device directly to a USB to Ethernet adapter (or to an installed Network Interface Card (NIC)).  Please follow manufacturers’ instructions to install the USB adapter or NIC.</p>
+                    <p>&#160;</p>
+                    <p>The computer used with the WPI system can be a machine that is dedicated to only supporting WPI or it can also serve as the machine controller PC.</p>
+                    <p>&#160;</p>
+                    <p>The DAU must be plugged into an AC power source.  It utilizes a universal A/C transformer power supply and ships from the factory with multiple AC connectors to accommodate any connector/voltage requirement.</p>
                     <p class="ListBullet2">&#160;</p>
                     <h3 class="Heading3"><a name="Probes"></a>Probes</h3>
-                    <p class="ListBullet2">The probes are mounted in the oven process chamber.&#160; They are usually suspended from the conveyor rails by oven manufacturer approved brackets.&#160; The probes are connected to the eTPU - Odd/Even ports.&#160; Each probe connector is stamped with an <span class="span_9">E </span>or <span class="span_9">O</span> in order to designate <span class="span_9">Odd</span> or <span class="span_9">Even</span>.&#160; See the <a href="Understanding_the_hardware.htm#Hardware_diagram">Hardware Diagram</a>.</p>
+                    <p>The probes are mounted in the oven process chamber.  They are usually suspended from the conveyor rails by oven manufacturer approved brackets.  The probes are connected to the DAU – EVEN/ODD ports, and each probe connector is stamped with an <b>E</b> or <b>O</b> in order to designate the <b>EVEN</b> or <b>ODD</b> numbered probe TCs.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Conveyor_speed_encoder"></a>Conveyor Speed Encoder</h3>
+                    <p>The conveyor speed encoder is mounted to read pulses from a gear that turns while the conveyor is operating.  The conveyor speed encoder connects by default to channel #1 of the DAU Sensor ports.</p>
                     <p class="ListBullet2">&#160;</p>
                     <h3 class="Heading3"><a name="Board_sensor"></a>Board Sensor</h3>
-                    <p class="ListBullet2">The Board Sensor is mounted near the entrance of the oven.  It can be mounted further into the oven if necessary.  The Board Sensor is usually mounted to the fixed conveyor rail.  The Board sensor is connected to any of the eTPU  Sensor ports.  Dual lane systems use a board sensor for each lane.&#160; </p>
+                    <p>The board sensor is mounted near the entrance of the machine, typically on the fixed rail, and provides for product tracking.  It is connected by default to channel #2 of the DAU Sensor ports. Dual lane systems use a separate board sensor for each lane.</p>
                     <p class="ListBullet2">&#160;</p>
-                    <h3 class="Heading3"><a name="Conveyor_speed_encoder"></a>Conveyor Speed Encoder</h3>
-                    <p class="ListBullet2">The Conveyor Speed Encoder is mounted to read pulses from a gear that turns while the oven is operating.&#160; The Conveyor Speed Encoder connects to any of the eTPU Sensor ports.</p>
-                    <p class="ListBullet2">&#160;</p>
+                    <h3 class="Heading3">Additional Hardware</h3>
                     <h3 class="Heading3"><a name="Using_a_profiler"></a>Profiler </h3>
                     <p class="p_4">The profiler is the data acquisition component of the system.&#160; It provides the on-board, through-the-process temperature data.&#160; The software analyzes this data together with oven zone temperature and conveyor speed factors to display the thermal profile graphically. </p>
                     <p class="p_4">You can use software with several profiler models such as:</p>
@@ -67,16 +73,16 @@
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Hardware_diagram"></a>Hardware Diagram</h2>
-                    <p class="p_4">The hardware diagram below illustrates the interconnection of the hardware components (including some optional hardware):</p>
+                    <p>The interconnection of the hardware components (including some optional hardware) is shown below:</p>
+                    <p class="p_4">&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000002.png" style="width: 638px;height: 599px;" />
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/HardwareDiagram.png" />
                     </p>
                     <p class="Caption">Figure 1: Hardware Configuration Diagram</p>
                     <p>&#160;</p>
                     <p>It is critical that all system hardware be installed and configured properly.  Any malfunctioning or incorrectly setup component may prevent the system from providing accurate data or from running Virtual Profiling.</p>
                     <p>&#160;</p>
                     <h2 class="Heading2">Dual Lane Systems</h2>
-                    <p>&#160;</p>
                     <p>The automatic system can monitor production through dual lane reflow ovens. Dual lane functionality supports two control configurations:</p>
                     <p>&#160;</p>
                     <ol>
@@ -84,9 +90,9 @@
                         <li>Dual Lane <i>Single System</i></li>
                     </ol>
                     <p>&#160;</p>
-                    <p>A <i>Dual Lane-Dual System</i> configuration uses two instances of the software application to track different recipes through the oven.</p>
+                    <p>A <i>Dual Lane-Dual System</i> configuration uses two instances of the software application and hardware to track different recipes through the oven.</p>
                     <p>&#160;</p>
-                    <p>The <i>Dual Lane-Single System</i> tracks two lanes of the same recipe with one instance of the software.</p>
+                    <p>The <i>Dual Lane-Single System</i> tracks two lanes of the same recipe with one instance of the software. A separate license is required for Dual Lane Single System use.</p>
                     <p>&#160;</p>
                     <p>See <a href="Software_operation_with_VAR_communication.htm#Dual_Lane_Systems_And_Functionality">Dual Lane Systems and Functionality</a> for details on installation and configuration.</p>
                     <p>&#160;</p>

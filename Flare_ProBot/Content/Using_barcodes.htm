@@ -15,7 +15,7 @@
                         <col style="width: 109pt;" />
                         <tr>
                             <td class="td_25">
-                                <p>The software has two main barcode functions, <i>Process Traceability</i>, and <i>Process Control</i>.&#160; For either barcode function, the barcode scanners will connect directly to the eTPU-Alarm/Barcode port or to the pigtail connector of the Alarm Relay-cable if an Alarm Relay is also being used.&#160; The Alarm Relay is required for use of the Process Control barcode function. Alternatively, a Serial or USB scanner can also be connected directly to the PC running the KIC software. See <a href="Appendix_C.htm#Barcode_Tab"><i style="color: #0000ff; text-decoration: underline;">Appendix C – Barcode</i></a> for more information.</p>
+                                <p>The software has two main barcode functions, <i>Process Traceability</i>, and <i>Process Control</i>.&#160; For either barcode function, the barcode scanners will connect directly to the DAU-Alarm/Barcode port or to the pigtail connector of the Alarm Relay-cable if an Alarm Relay is also being used.&#160; The Alarm Relay is required for use of the Process Control barcode function. Alternatively, a Serial or USB scanner can also be connected directly to the PC running the KIC software. See <a href="Appendix_C.htm#Barcode_Tab"><i style="color: #0000ff; text-decoration: underline;">Appendix C – Barcode</i></a> for more information.</p>
                             </td>
                             <td class="td_25">
                                 <p>
@@ -29,7 +29,7 @@
                     <p>The <i>Process Traceability</i> function enables process traceability with profile data for every product linked to its barcode number.  The software will match the barcode number and complete process data to every single production board recorded by the system.  The <i>Process Traceability</i> barcode function can be used with or without the <i>Process Control</i> function.</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Process_Control_PC"></a>Process Control (PC)</h3>
-                    <p>The <i>Process Control</i> function enables process control by reading the product barcode label before the product enters the oven and confirms that a specific area of the barcode correlates to a specified product.  If the barcode string value matches the current process string value, production continues as normal.  If the incoming barcode string value differs from your defined string value, an alarm is activated, and the process can be stopped until the operator acknowledges the alarm and takes the proper action. In order to utilize the Process Control feature, your barcode strings need to contain at least one character (referred to as a “String”) that is common to all boards in a production run. For example, when running “Product A”, all barcode labels for “Product A” would be “ABCxxxx”, where “ABC” would represent the common characters (String) on each barcode label, and “xxxx” would represent the rest of the barcode characters, which would typically be unique to each individual board. The common character string can fall anywhere within the barcode. The <i>Process Control</i> barcode function can be used with or without the <i>Process Traceability</i> barcode function.</p>
+                    <p>The <i>Process Control</i> function enables process control by reading the product barcode label before the product enters the oven and confirms that a specific area of the barcode correlates to a specified product.  If the barcode string value matches the current process string value, production continues as normal.  If the incoming barcode string value differs from your defined string value, an alarm is activated, and the process can be stopped until the operator acknowledges the alarm and takes the proper action. In order to utilize the Process Control feature, your barcode strings need to contain at least one character (referred to as a Product ID) that is common to all boards in a production run. For example, when running “Product A”, all barcode labels for “Product A” would be “ABCxxxx”, where “ABC” would represent the common characters (Product ID string) on each barcode label, and “xxxx” would represent the rest of the barcode characters, which would typically be unique to each individual board. The common character string can fall anywhere within the barcode. The <i>Process Control</i> barcode function can be used with or without the <i>Process Traceability</i> barcode function.</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Trigger_sensors"></a>Trigger Sensors</h3>
                     <p>Additional control/functionality can be implemented through the use of a separate product sensor and software configuration. Only one of the following two methods below can be configured at a time. The configuration for these is set in the ConfigurationProgram.exe. See <a href="Appendix_C.htm#Barcode_Tab" style="font-style: italic;">Appendix C – Barcode</a> for more information.</p>
@@ -92,9 +92,10 @@
                     </ol>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Configuring_and_testing"></a>Configure and Test the System</h3>
-                    <p>There are multiple ways to determine if the barcode scanner(s) hardware is configured properly and communicating with your system.  The first is using the Hardware Status screen, and the second is using the eTPU Utility, the third is viewing the Barcode-Log file.</p>
+                    <p>There are multiple ways to determine if the barcode scanner(s) hardware is configured properly and communicating with your system.  The first is using the Hardware Status screen, and the second is using the DAU Utility, the third is viewing the Barcode-Log file.</p>
                     <p>&#160;</p>
-                    <p><b>Tip:</b> To properly test your barcode hardware, the system must first be properly installed and configured for use.</p>
+                    <p style="text-indent: 0.5in;"><b>Tip:</b> To properly test your barcode hardware, the system must first be properly installed and configured for use.</p>
+                    <p style="text-indent: 0.5in;">&#160;</p>
                     <h4 class="Heading4">Configuration</h4>
                     <p>Start by ensuring that the Barcode software key is properly connected to your PC.&#160; Verify the software key is correctly installed by viewing the Hardware Status screen.&#160; Confirmation appears in the Software Key field.&#160; </p>
                     <p>&#160;</p>
@@ -115,8 +116,8 @@
                     <p>There are several possible barcode hardware configurations.  The correct barcode configuration will depend on the KIC hardware and barcode labeling technique</p>
                     <p>&#160;</p>
                     <ul>
-                        <li><b>Process Traceability</b> – Enables or disable the <i>Process Traceability</i> barcode feature.  This feature links each product’s profile data with its barcode.</li>
-                        <li><b>Process Control</b> – Enables or disable the <i>Process Control</i> barcode feature.  The feature allows control of the process by comparing the barcode string of a product to the corresponding process currently running.  It ensures that the product matches the process.</li>
+                        <li><b>Process Traceability</b> – Enables or disables the <i>Process Traceability</i> barcode feature.  This feature links each product’s profile data with its barcode.</li>
+                        <li><b>Process Control</b> – Enables or disables the <i>Process Control</i> barcode feature.  The feature allows control of the process by comparing the barcode string of a product to the corresponding process currently running.  It ensures that the product matches the process.</li>
                     </ul>
                     <blockquote>
                         <blockquote>
@@ -135,25 +136,25 @@
                     <p>In the Barcode section, the last barcode read will be displayed.&#160; In order to view the barcode value, the conveyor must be moving.&#160; The barcode information will not display until the encoder begins pulsing.</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Test_Sensor_Inputs"></a>Test Sensor Inputs With eTPU Utility</h3>
-                    <p>The <i>eTPU Utility</i>, located in the <i>C:\ software root \Flash and Test eTPU</i> folder, is a program that will allow you to test all of the sensor inputs, including the BPS (Barcode Product Sensor) and the Barcode scanner itself.  Click “Start eTPU” to begin reading the BPS sensor input and the Barcode Reader scan.</p>
+                    <h3 class="Heading3"><a name="Test_Sensor_Inputs"></a>Test Sensor Inputs With DAU Utility</h3>
+                    <p>The <i>DAU Utility</i>, located in the <i>C:\ software root \DAU</i> folder, is a program that will allow you to test all of the sensor inputs, including the BPS (Barcode Product Sensor) and the Barcode scanner itself.  Click <i>Start DAU</i> to begin reading the BPS sensor input and the Barcode Reader scan.</p>
                     <p>&#160;</p>
-                    <p><b>Barcode Product Sensor:</b>  Activate the Barcode Product Sensor.  The <i>Barcode Product Sensor</i> display will change from “OPEN” to “CLOSED” when activated.</p>
-                    <p class="ListBullet2_1">If Sensor fails to change, there may be a problem with a sensor or its wiring.  Check to make sure the eTPU is properly communicating with the eTPU Utility software.</p>
+                    <p><b>Barcode Product Sensor/Barcode Stop Sensor</b>:  Activate the Barcode Product Sensor or Barcode Stop Sensor.  The B<i>arcode Product Sensor</i> display will change from “OPEN” to “CLOSED” when activated.</p>
+                    <p class="ListBullet2_1">If Sensor fails to change, there may be a problem with a sensor or its wiring. </p>
                     <p>&#160;</p>
-                    <p><b>Barcode Reader:</b>  With the Barcode reader powered ON and connected to the eTPU, scan a barcode.  The scan results will be displayed in the “<i>Last Barcode Read</i>” field.</p>
+                    <p><b>Barcode Reader:</b>  With the Barcode reader powered ON and connected to the DAU, scan a barcode.  The scan results will be displayed in the <i>Last Barcode Read</i> field.</p>
                     <p>If the Barcode read fails, check the connections and verify the barcode reader setting as previously described.</p>
                     <p class="ListBullet2">&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000A4.png" style="width: 527px;height: 226px;" />
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000A4.png" />
                     </p>
-                    <p class="Figure">Figure 120: eTPU Hardware Test</p>
+                    <p class="Figure">Figure 120: DAU Hardware Test</p>
                     <p style="text-align: center;">&#160;</p>
                     <p style="text-align: center;">&#160;</p>
                     <h4><a name="Barcode_testing_using2"></a>Test The Barcode Using the Log Configuration File</h4>
                     <p><span class="ListBullet2Char" style="font-weight: bold;">Barcode Log</span> - You can also verify the barcode feature is configured properly or for troubleshooting purposes by viewing the Barcode-Log file.&#160; If the barcode scanner hardware is connected and functioning properly, a log file will be generated.&#160; Every barcode value read by the system is logged and viewable.</p>
                     <p>&#160;</p>
-                    <p>To view the barcode-log file go to C<i style="font-family: 'Courier New'; font-size: 9pt;">:\software root directory \Log\barcodeLog.txt</i>.  This file will list the date, time, and barcode value for each barcode read through the eTPU.  </p>
+                    <p>To view the barcode-log file go to <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory \Log\barcodeLog.txt</i>.  This file will list the date, time, and barcode value for each barcode read.</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Scanner_Installation"></a>Scanner Installation</h3>
@@ -178,7 +179,7 @@
                     <p>There are two methods for defining the characters of a barcode string that will be used for Process Control – Wildcard (default) and Parsing. See <a href="Appendix_C.htm#Barcode_Tab" style="font-style: italic; color: #0000cd;">Appendix C – Barcode</a>  for how to change between methods.</p>
                     <p>&#160;</p>
                     <p><b>Wildcard</b> - When Virtual Profiling is started, the system produces the Barcode Process Control dialog box which gives you the opportunity to: Enter the Process Control String, Change the Process Control String, or Disable Process Control for this Virtual Profile run.</p>
-                    <p>If the Process Control function is enabled (Global Preferences) and the Wildcard method is selected (Configuration Program), this dialog box will appear every time Virtual Profiling is enabled. Enter the barcode control string that is specific to the product family that is running.  The software reads the incoming string and compares it to that of the specified Process Control String, for every product.  If the string values differ, an alarm is activated, and the process is stopped via the <i>optional Alarm Relay</i> device.</p>
+                    <p>If the Process Control function is enabled and the Wildcard method is selected, this dialog box will appear every time Virtual Profiling is enabled. Enter the barcode control string that is specific to the product family that is running.  The software reads the incoming string and compares it to that of the specified Process Control String, for every product.  If the string values differ, an alarm is activated, and the process is stopped via the <i>optional Alarm Relay</i> device.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;"> <img src="Resources/Images/SFT-324000-200 ProBot User Manual/image2233.png" /></p>
                     <p style="text-align: center;">Barcode Process Control dialog</p>
@@ -293,12 +294,8 @@
                     </table>
                     <p>&#160;</p>
                     <h2><a name="Process_Traceability"></a>Reading Barcodes with a Product Traceability Scanner</h2>
-                    <p>If you use a Product Traceability Scanner (PTS) to read barcode labels while running VP, you will get a barcode recorded along with a PWI for every board that passes thru the oven.  You enable this function by selecting Traceability under Barcode tab in the Global Preferences and installing a PTS at the oven entrance on the load conveyor.&#160; </p>
+                    <p>If you use a Product Traceability Scanner (PTS) to read barcode labels while running VP, you will get a barcode recorded along with a PWI for every board that passes through the oven.  You enable this function by selecting <i>Enable Barcode Traceability</i> in the Barcode Tab of the ConfigurationProgram.exe.  When installed on a load conveyor, the PTS reads barcode labels before the products enter the oven.  If the barcode label is not read, the process is stopped before the product enters the oven.  This method requires an alarm relay and load conveyor.</p>
                     <p class="p_4">&#160;</p>
-                    <h3><a name="Use_a_PTS_at_the_Oven_Entrance"></a>Use a PTS at the Oven Entrance
-                    </h3>
-                    <p>When installed on a load conveyor, the PTS reads barcode labels as the products enter the oven.  If the barcode label is not read, the process is stopped before the product enters the oven.  This method requires an eTPU, and load conveyor in front of the oven in order to function properly.</p>
-                    <p>&#160;</p>
                     <p>Systems using a BPS or BSS and a PTS at the oven entrance will have the ability to activate an alarm if a products barcode label is not read or is damaged.</p>
                     <p>&#160;</p>
                     <table class="table_2">
@@ -307,11 +304,17 @@
                         <tr>
                             <td>
                                 <p>&#160;</p>
-                                <p>When the BPS or BSS detects a product whose barcode label has not been read, or the sensor is tripped accidentally, an alarm is activated and the process is stopped via the alarm relay.  Alarm 5A, shown at the right, appears.</p>
+                                <p>Control buttons on the screen let you:</p>
+                                <ul style="list-style-type: square;">
+                                    <li>Manually reenter the barcode, using the keyboard or a handheld scanner</li>
+                                    <li>Rescan the barcode with a mounted scanner</li>
+                                    <li>Continue production without the barcode</li>
+                                    <li>Remove the board from the line.</li>
+                                </ul>
                             </td>
                             <td>
                                 <p style="text-align: center;">
-                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/alarm5a.png" class="img_3" />
+                                    <img src="Resources/Images/SFT-324000-200 ProBot User Manual/alarm5a.png" class="img_3" style="width: 308px;height: 198px;" />
                                 </p>
                                 <p class="Caption">Alarm #5A</p>
                             </td>

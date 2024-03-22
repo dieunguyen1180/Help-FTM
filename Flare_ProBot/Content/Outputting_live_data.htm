@@ -135,8 +135,12 @@
                                         <li class="li_4">Select the desired Format<br /></li>
                                         <li class="li_4">The type of Format chosen will affect what naming structure for file will be used (See Details of Output Files above).<br /></li>
                                         <li class="li_4">Select the destination path for the output file by clicking on the <b>Browse</b> button. This needs to be a location on the local drive.<br /></li>
-                                        <li class="li_4"><b>Max File Size</b> lets you specify how large the LDO output file can get before a new one is started.<br /></li>
-                                        <li class="li_4">Select <b>Include Alarm Events</b> to record into the output file any warnings or alarms.</li>
+                                        <li class="li_4"><i>Max File Size</i> lets you specify how large the LDO output file can get before a new one is started (see details below)</li>
+                                        <li class="li_4"><i>Number of Boards per File</i> allows you to limit how many boards go into one output file. This is only compatible with TSV or CSV for WordPad, or TSV for Excel outputs.<br /></li>
+                                        <li class="li_4">Select <i>Include Alarm Events</i> to record into the output file any warnings or alarms. (see details below)</li>
+                                        <li>
+                                            <p>The <i>Include Temperature in Spec Name</i> is selected by default. Uncheck to not include temperature ranges in the specification names in the output. (For example, Soak Time 150C to 170C would display only as Soak Time).</p>
+                                        </li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>
@@ -147,12 +151,13 @@
                         </tbody>
                     </table>
                     <p>&#160;</p>
-                    <p>If a VP is running for an extended amount of time, once the maximum file size is reached, a new file will be generated, and the new file name will be appended with a _# as shown in the example below:</p>
+                    <p><b>Max File Size and Number of Boards per File Example</b>
+                    </p>
+                    <p>Once the maximum file size is reached, a new file will be generated, and the new file name will be appended with a _# as shown in the example below:</p>
+                    <p style="font-size: 6pt;">&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/image157.png" style="width: 683px;height: 95px;" />
                     </p>
-                    <h3 class="Heading3"><a name="Include_Alarm_Events"></a>Include Alarm Events in the Output File</h3>
-                    <p>When <i>Include Alarm Events</i> is selected, any alarm and/or warning events that occurred while a board was in the oven will be saved into the output file along with the board data.</p>
                     <p>&#160;</p>
                     <p><b>Alarm Event LDO Output File Examples</b>
                     </p>

@@ -421,11 +421,7 @@
     </TocEntry>
     <TocEntry
       Title="READING BARCODES WITH A PRODUCT TRACEABILITY SCANNER"
-      Link="/Content/Using_barcodes.htm#Process_Traceability">
-      <TocEntry
-        Title="USE A PTS AT THE OVEN ENTRANCE"
-        Link="/Content/Using_barcodes.htm#Use_a_PTS_at_the_Oven_Entrance" />
-    </TocEntry>
+      Link="/Content/Using_barcodes.htm#Process_Traceability"></TocEntry>
     <TocEntry
       Title="ENABLE BARCODING PER PRODUCT"
       Link="/Content/Using_barcodes.htm#Enable_Barcoding_Per_Product" />
@@ -553,9 +549,6 @@
     <TocEntry
       Title="CONFIGURE LDO"
       Link="/Content/Outputting_live_data.htm#Configure_LDO">
-      <TocEntry
-        Title="INCLUDE ALARM EVENTS IN THE OUTPUT FILE"
-        Link="/Content/Outputting_live_data.htm#Include_Alarm_Events" />
       <TocEntry
         Title="DELETE ACCUMULATED LDO FILES"
         Link="/Content/Outputting_live_data.htm#Delete_Accumulated_LDO_Files" />
