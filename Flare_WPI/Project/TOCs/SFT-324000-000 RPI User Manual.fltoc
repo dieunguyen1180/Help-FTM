@@ -338,13 +338,13 @@
     </TocEntry>
     <TocEntry
       Title="SHIFTING TAB"
-      Link="/Content/Appendix_B.htm#Shifting"></TocEntry>
+      Link="/Content/Appendix_B.htm#Shifting_Tab"></TocEntry>
     <TocEntry
       Title="MACHINE CONFIGURATION&#x9;137"
-      Link="/Content/Appendix_B.htm#Machine" />
+      Link="/Content/Appendix_B.htm#Machine_Configuration" />
     <TocEntry
       Title="DECIMAL TAB"
-      Link="/Content/Appendix_B.htm#Decimal" />
+      Link="/Content/Appendix_B.htm#Decimal_Tab" />
     <TocEntry
       Title="HARDWARE TAB"
       Link="/Content/Appendix_B.htm#Hardware_Tab"></TocEntry>
@@ -359,10 +359,10 @@
       Link="/Content/Appendix_B.htm#RPM_Tab" />
     <TocEntry
       Title="MESSAGE CONFIG TAB"
-      Link="/Content/Appendix_B.htm#Message" />
+      Link="/Content/Appendix_B.htm#Message_Config_Tab" />
     <TocEntry
       Title="PASSWORD CONTROL – MULTI USER"
-      Link="/Content/Appendix_B.htm#Password4">
+      Link="/Content/Appendix_B.htm#Password_Control_Multi_User">
       <TocEntry
         Title="Access to the Password Control Tab"
         Link="/Content/Appendix_B.htm#Access" />
@@ -396,13 +396,13 @@
     </TocEntry>
     <TocEntry
       Title="ALARM TAB"
-      Link="/Content/Appendix_B.htm#Alarm2">
+      Link="/Content/Appendix_B.htm#AR_Matrix_Settings_Tab">
       <TocEntry
         Title="Alarm Relay Matrix configuration"
-        Link="/Content/Appendix_B.htm#Alarm" />
+        Link="/Content/Appendix_B.htm#Alarm_Relay_Matrix_Configuration" />
       <TocEntry
         Title="USB Light Tower configuration"
-        Link="/Content/Appendix_B.htm#USB" />
+        Link="/Content/Appendix_B.htm#USB_Light_Tower_Configuration" />
     </TocEntry>
     <TocEntry
       Title="BARCODE TAB"

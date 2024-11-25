@@ -16,24 +16,32 @@
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000028.png" style="width: 476px;height: 470px;" />
                     </p>
-                    <p class="Caption">Figure 10: Hardware Status Screen</p>
+                    <p class="Caption">Figure 22: Hardware Status Screen</p>
                     <p>&#160;</p>
-                    <p><b>Profiler</b> – Shows the status of the profiler.  This box displays the following information:</p>
+                    <h3 class="Heading3">Profile </h3>
+                    <p>Shows the status of the profiler.  This box displays the following information:</p>
                     <ul>
                         <li>Profiler communication status</li>
                         <li>Temperature display – for all connected thermocouples</li>
-                        <li>Battery Voltage</li>
-                        <li>Internal Temperature – Temperature inside the profiler</li>
-                        <li>Maximum Temperature Capability – The maximum temperature the profiler can read</li>
-                        <li>&#160;</li>
+                        <li>Battery Voltage, Internal Temperature, Maximum Temperature Capability</li>
                     </ul>
-                    <p><b>Software Key</b> – Displays all the features currently programmed on the USB Dongle key.</p>
+                    <h3 class="Heading3">Software Key </h3>
+                    <p>Displays all the features currently programmed on the USB Dongle key</p>
+                    <h3 class="Heading3">Probes</h3>
+                    <p>This box displays data for:</p>
+                    <ul>
+                        <li>Current live temperatures from the Odd and Even probes</li>
+                        <li>The Board Sensor, Barcode Product Sensor, and Conveyor Speed Encoder.<br /><b>Note:</b> If there is no data displayed in this field, the WPI software is not communicating properly with the DAU hardware.</li>
+                    </ul>
+                    <h3 class="Heading3">Barcode</h3>
+                    <p>If the user has purchased and enabled Barcoding, this section will display:</p>
+                    <ul>
+                        <li>Any Barcode features enabled</li>
+                        <li>Last barcode read</li>
+                    </ul>
                     <p>&#160;</p>
-                    <p><b>Probes</b> – The current live temperatures for the probes are displayed. A third line displays hardware information regarding the Board Sensor, Barcode Product Sensor, and Conveyor Speed Encoder. If you do not see any data displayed in this field, the WPI software is not communicating properly with the <i>DAU/eTPU</i> hardware.</p>
-                    <p style="margin-left: 20px;margin-top: 6px;"><b>Note:</b> If you are using the barcode capabilities, an additional section will display showing the last barcode read.</p>
-                    <p>&#160;</p>
-                    <p><b>Test Alarm Rela</b>y – Use this button to test the alarm relay function of the software. The alarm relay hardware must be properly connected.  You can also use this button to manually disable the alarm, should it stay active after Virtual Profiling has been stopped.  The button appears only when the software is detecting the <i>DAU/eTPU</i> hardware.</p>
-                    <p style="margin-left: 20px;margin-top: 6px;"> <b>Note:</b> The alarm relay is not energized until VP is first running and then goes out of spec. To learn more about this see the alarm relay section.</p>
+                    <p><b>Test Alarm Relay</b> – Allows the user to activate/deactivate the external Alarm Relay device for testing or troubleshooting purposes. The Alarm Relay hardware must be properly connected, and the buttons appear only when the software is detecting the <i>DAU</i> hardware.</p>
+                    <p style="margin-left: 20px;margin-top: 6px;"> <b>Note:</b> The alarm relay is not energized until VP is first running and then goes out of spec, see <a href="Appendix_B.htm#AR_Matrix_Settings_Tab">Alarm Relay</a>.</p>
                     <p>&#160;</p>
                 </td>
             </tr>

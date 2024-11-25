@@ -11,53 +11,52 @@
                     <h1 class="Heading1"><a name="Introducing_the_RPI_system"></a>Introducing the RPI system</h1>
                     <p>The RPI (Reflow Process Index) system is a comprehensive suite of thermal process management tools designed to give you the ultimate in PCB soldering quality control. KIC RPI can monitor the entire thermal process, giving advanced warning before a product drifts out of specification.  Its barcode control features can prevent costly product/recipe mismatches, and its power management features enable efficient operation at the lowest energy cost.</p>
                     <p>&#160;</p>
-                    <p>RPI combines software and hardware components into an integrated system. The software supplements its thermal profile analysis core with special tools for performance optimization, changed variable prediction, and data file management. The RPI hardware includes the probes that measure oven temperature, sensors to track product movement and conveyor speed, a profiler to move through the process accumulating thermal data, an Ethernet communication hub, and alarm system.</p>
+                    <p>RPI combines software and hardware components into an integrated system. The software supplements its thermal profile analysis core with special tools for performance optimization, changed variable prediction, and data file management. The RPI hardware includes thermocouple probes that measure oven temperature, sensors to track product movement and conveyor speed, a profiler to move through the process accumulating thermal data, an Ethernet communication hub, and alarm system.</p>
                     <h2 class="Heading2"><a name="Understanding_the1"></a>The hardware</h2>
-                    <p class="p_6">The six major hardware components to an RPI system are:</p>
+                    <p class="p_6">The major hardware components to an RPI system are:</p>
                     <ul class="ul_3">
-                        <li class="li_1">Ethernet Thermocouple Processing Unit (eTPU)</li>
+                        <li>
+                            <p>DAU (Data Acquisition Unit)</p>
+                        </li>
                         <li class="li_1">Probes</li>
-                        <li class="li_1">Board sensor</li>
                         <li class="li_1">Conveyor speed encoder</li>
+                        <li class="li_1">Board sensor</li>
                         <li class="li_1">Alarm Relay/Light Tower</li>
-                        <li class="li_1">Profiler</li>
                     </ul>
-                    <h3 class="Heading3"><span class="span_6">e</span>TPU</h3>
-                    <p class="ListBullet">The eTPU interfaces with the computer using an Ethernet cross-over cable that connects from the UpLink port on the eTPU directly to a USB to Ethernet adapter (or to an installed Network Interface Card (NIC)).&#160; Please follow manufacturers’ instructions to install the USB adapter or NIC.</p>
-                    <p class="ListBullet">&#160;</p>
-                    <p class="ListBullet">The computer used with the RPI system can be a machine that is dedicated to only supporting RPI or it can also serve as the oven controller PC.  RPI can interface directly with the oven controller on selected models from oven manufacturers.&#160; If you have an oven that is capable of communication with the RPI software, you will want to connect RPI to the oven controller computer.</p>
-                    <p class="ListBullet">&#160;</p>
-                    <p class="ListBullet">The eTPU must be plugged into an AC power source.  The eTPU utilizes a universal A/C transformer power supply.  The eTPU ships from the factory with multiple AC connectors to accommodate any connector/voltage requirement.</p>
-                    <h3 class="Heading3">Probes</h3>
-                    <p class="ListBullet">The probes are mounted in the oven process chamber.  They are usually suspended from the conveyor rails by oven manufacturer approved brackets.  The probes are connected to the eTPU - Odd/Even ports.  Each probe connector is stamped with an <b>E</b> or <b>O</b> in order to designate <b>Odd</b> or <b>Even</b>.&#160;See the <a href="Install_the_Software.htm#Hardware_diagram">Hardware diagram</a>.</p>
-                    <h3 class="Heading3">Board sensor</h3>
-                    <p class="ListBullet">The board sensor is mounted near the entrance of the oven.  It can be mounted further into the oven if necessary.  The board sensor is usually mounted to the fixed conveyor rail.  The Board sensor is connected to any of the eTPU  Sensor ports.  Dual lane systems use a board sensor for each lane.&#160;</p>
-                    <h3 class="Heading3">Conveyor speed encoder</h3>
-                    <p class="ListBullet">The conveyor speed encoder is mounted to read pulses from a gear that turns while the oven is operating.&#160; The conveyor speed encoder connects to any of the eTPU Sensor ports.</p>
-                    <h3 class="Heading3">Alarm Relay/Light Tower </h3>
-                    <p>The Alarm Relay connects to the Alarm/Barcode port of the eTPU, and provides an external notification to the user when an alarm condition occurs. It allows for a KIC supplied audible light tower to be powered and triggered; can include SMEMA interface connections; and it allows a user to hardwire in an external device of their choosing. The Alarm Relay is required to have an external AC power source.</p>
+                    <h3 class="Heading3">DAU</h3>
+                    <p>The DAU interfaces with the computer using an Ethernet cross-over cable that connects from the UpLink port on the device directly to a USB to Ethernet adapter (or to an installed Network Interface Card (NIC)).  Please follow manufacturers’ instructions to install the USB adapter or NIC.</p>
                     <p>&#160;</p>
-                    <p>There are two audible light towers available – one model connects directly to the Alarm Relay device; the other model connects directly to the USB port of the PC. See the <a href="Troubleshooting.htm#Light_Tower">Light Tower section</a>.</p>
+                    <p>The computer used with the WPI system can be a machine that is dedicated to only supporting WPI or it can also serve as the machine controller PC.</p>
+                    <p>&#160;</p>
+                    <p>The DAU must be plugged into an AC power source.  It utilizes a universal A/C transformer power supply and ships from the factory with multiple AC connectors to accommodate any connector/voltage requirement.</p>
+                    <h3 class="Heading3">Probes</h3>
+                    <p>The probes are mounted in the oven process chamber.  They are usually suspended from the conveyor rails by oven manufacturer approved brackets.  The probes are connected to the DAU – EVEN/ODD ports, and each probe connector is stamped with an <b>E</b> or <b>O</b> in order to designate the <b>EVEN</b> or <b>ODD</b> numbered probe TCs.</p>
+                    <h3 class="Heading3">Conveyor speed encoder</h3>
+                    <p>The conveyor speed encoder is mounted to read pulses from a gear that turns while the conveyor is operating.  The conveyor speed encoder connects by default to channel #1 of the DAU Sensor ports.</p>
+                    <h3 class="Heading3">Board Sensor</h3>
+                    <p>The board sensor is mounted near the entrance of the machine, typically on the fixed rail, and provides for product tracking.  It is connected by default to channel #2 of the DAU Sensor ports. Dual lane systems use a separate board sensor for each lane.</p>
+                    <h3 class="Heading3">Alarm Relay</h3>
+                    <p>The Alarm Relay connects to the Alarm/Barcode port of the DAU and allows for integration to an infeed conveyor (available with SMEMA interface connections) to prevent products from entering machine when an alarm condition occurs or hardwiring to an external device of your choosing. Additionally, it allows for a standard KIC supplied audible light tower to be powered and triggered. The Alarm Relay is required to have an external AC power source</p>
+                    <h3 class="Heading3">Light Tower </h3>
+                    <p>There are two audible light towers available – one model connects directly to the Alarm Relay device; the other model connects directly to the USB port of the PC.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">Additional Hardware</h3>
                     <h3 class="Heading3">Profiler
                     </h3>
-                    <p>The profiler is the data acquisition component of the RPI system.  It provides the on-board, through-the-process temperature data.  RPI analyzes this data together with oven zone temperature and conveyor speed factors to graphically display the thermal profile.&#160; </p>
-                    <h3 class="Heading3">Profiler Models </h3>
-                    <p>You can use RPI software with several profiler models:</p>
+                    <p>The profiler is the data acquisition component of the RPI system.  It provides the on-board, through-the-process temperature data.  RPI analyzes this data together with oven zone temperature and conveyor speed factors to graphically display the thermal profile. The following profiler models are compatible with the system:</p>
                     <ol start="1" class="ol_2">
                         <li class="li_2">SPS Smart Profiler</li>
                         <li class="li_2">X<sup>5</sup></li>
                         <li>
                             <p>K<sup>2</sup></p>
                         </li>
-                        <li>
-                            <p>EK7</p>
-                        </li>
                     </ol>
                     <p>&#160;</p>
-                    <p>The software works the same with any of the profilers.  Once you have the software running, you indicate your specific profiler model.  The program then displays the text and graphics that reflect the model you chose.  (The artwork that appears throughout this manual reflects a variety of profiler models.)</p>
+                    <p>The software works the same with any of the profilers.  Once you have the software running, you indicate your specific profiler model.  (The artwork that appears throughout this manual reflects a variety of profiler models.)</p>
                     <p>&#160;</p>
-                    <p class="p_6">Profilers can operate in either of two modes—datalog and wireless.  In standard datalog mode, the profiler records temperature data as it moves through the thermal process.  A cable then transfers the data to your KIC software computer.  In wireless mode, the profiler transmits data directly to the computer by radio signals or Wi-Fi instead of an attached cable.  KIC software can then display the accumulating data in real-time.</p>
-                    <p class="Important_1">For specific information regarding your profiler, consult one of the following KIC publications:</p>
+                    <p>Profilers can operate in either of two modes—datalog and wireless.  In standard datalog mode, the profiler records temperature data as it moves through the thermal process.  A cable then transfers the data to your KIC software computer.  In wireless mode, the profiler transmits data directly to the computer by radio signals or Wi-Fi instead of an attached cable.  KIC software can then display the accumulating data in real-time.</p>
+                    <p>&#160;</p>
+                    <p>For specific information regarding your profiler, consult one of the following KIC publications:</p>
                     <ul class="ul_4">
                         <li>
                             <MadCap:shortcut path="PTG-330310-000 SPS Smart Profiler Hardware Guide.pdf" parameters="" class="shortcut_1"> SPS Smart Profiler Hardware Guide, (Publication Number PTG-330310-000)</MadCap:shortcut>
@@ -70,22 +69,24 @@
                         </li>
                     </ul>
                     <h3 class="Heading3">Barcode Reader</h3>
-                    <p>The user-supplied, serial port barcode reader connects to the eTPU Alarm/Barcode port.  When used in conjunction with the alarm relay, the barcode reader hardware is connected to the alarm relay Y- cable.  The barcode reader should be mounted in front of the oven on an infeed conveyor when using <i>Process Traceability</i> or <i>Process Control</i>.  A USB scanner can also be utilized, by connecting to the PC where the software is installed. For additional information about using USB scanners, see <a href="Appendix_C.htm#Barcode_Tab"><i>Appendix C – Barcode Tab.</i></a></p>
+                    <p>A user-supplied, serial port barcode reader connects to the DAU Alarm/Barcode port.  When both the Alarm Relay and a serial port barcode reader are used, the barcode reader hardware can be connected using the Alarm Relay Y- cable. Alternately, a USB barcode reader can connect through one of the DAUs built-in USB ports. For additional information about using scanners, see <a href="Appendix_C.htm#Barcode_Tab"><i>Appendix C – Barcode Tab.</i></a></p>
                     <h3 class="Heading3">Dual Lane Functionality
                  </h3>
-                    <p class="p_6">RPI software can now monitor production through dual lane reflow ovens.  A <i>Dual System</i> configuration uses two instances of the software application to track different recipes through the oven.  The <i>Single System</i> tracks two lanes of the same recipe with one instance of the software.  A radio button display during the installation routine lets you choose between the standard configuration or one of the dual lane setups.  For more information, see the section titled <a href="Dual_Lane_Systems_and_Functionality.htm#Using_dual_lane_systems">Dual Lane Systems</a>.</p>
+                    <p class="p_6">The RPI system can monitor production through dual lane reflow ovens.  A <i>Dual Lane Dual System</i> configuration uses two instances of the software and hardware application with the ability to track different recipes through the two lanes of the oven.  The <i>Dual Lane Single System</i> tracks two lanes of the same recipe with one instance of the software and hardware.  A radio button selection during the installation routine lets you choose between the standard configuration or one of the dual lane setups (a separate license is required for <i>Dual Lane Single System</i> use).  For more information, see the section titled <a href="Dual_Lane_Systems_and_Functionality.htm#Using_dual_lane_systems">Dual Lane Systems</a>.</p>
+                    <p class="p_6" style="font-size: 6pt;">&#160;</p>
                     <p><b>Note:</b> For more information about the hardware components of the system, see the <i><MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut></i></p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Hardware_diagram"></a>Hardware diagram</h2>
                     <p class="p_6">The interconnection of the hardware components is illustrated in the hardware diagram below:</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000003.png" style="width: 624px;height: 576px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000003.png" />
                     </p>
                     <p class="Caption">Figure 1: Hardware Configuration Diagram</p>
                     <p>&#160;</p>
                     <p>It is critical that all RPI hardware is properly installed and configured.  If one of the system components is setup incorrectly or is malfunctioning, the RPI system will not allow you to run Virtual Profiling or provide accurate data.  If you have any questions or are unsure about any of the following, contact KIC Technical Support for assistance: <u style="color: #0000cd;"><a href="mailto:tech@kicmail.com">tech@kicmail.com</a></u></p>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <h2 class="Heading2"><a name="Installing_the_software"></a>The software
+                    <h2 class="Heading2"><a name="Installing_the_software"></a>The Software
                     </h2>
                     <p>The RPI optimization tools include <i>Navigator, Auto-Focus</i>, and <i>Power</i>.  Data management tools include <i>Live Data Output and Remote Process Monitoring</i>.</p>
                     <h3 class="Heading3">Navigator
@@ -107,15 +108,32 @@
                     <p>The Remote Process Monitoring (RPM) system distributes real-time thermal process information for display on a server anywhere on your network. When a software system installed at an oven includes RPM, it monitors the process and transmits real-time data for each production board as an output. Each output includes the oven name, product name, <i>Process Window Index</i> (PWI), real-time <i>Process Capability Index</i> (Cpk), and the current alarm status, including the text and light bar state.  As each board exists the oven, its data output is sent to a computer provisioned with <i>RPM server software</i>. This RPM server can display the data and act as the distribution hub for a network of viewing terminals. With the appropriate software installed, these additional networked computers can access the data from the main RPM server and display it on their own monitors. RPM software can display data as an iconic status overview of the whole production floor, individual oven process histories, or graphs charting the last 100 production units.</p>
                     <h2 class="Heading2"><a name="Installing_the_software_2"></a>Install The Software
                     </h2>
-                    <h3 class="Heading3">Minimum PC system requirements</h3>
-                    <ul class="ul_1">
-                        <li class="ListBullet2_1">Dual Core / 1GHz processor PC with 2GB RAM </li>
-                        <li class="ListBullet2_1">2GB available storage </li>
-                        <li class="ListBullet2_1">Video 1024 x 768 / 16-bit color</li>
-                        <li class="ListBullet2_1">1 available USB port for data download </li>
-                        <li class="ListBullet2_1">1 available USB port (for software key)</li>
-                        <li class="ListBullet2_1">1 available Ethernet port or 1 available USB port with Ethernet-to-USB adapter</li>
-                        <li class="ListBullet2_1">For product compatibility with Windows® operating systems, visit our website at <MadCap:shortcut path="https://kicthermal.com/support-download/os-compatibility-chart/" parameters="" class="shortcut_1">http://kicthermal.com/support-download/os-compatibility-chart</MadCap:shortcut></li>
+                    <h3 class="Heading3">Minimum PC System Requirements</h3>
+                    <ul style="list-style-type: square;">
+                        <li>
+                            <p>2GHz processor PC with 4GB RAM</p>
+                        </li>
+                        <li>
+                            <p>10GB available storage</p>
+                        </li>
+                        <li>
+                            <p>Video 1024 x 768 / 16-bit color</p>
+                        </li>
+                        <li>
+                            <p>1 available USB port for Profiler</p>
+                        </li>
+                        <li>
+                            <p>1 available USB port for Dongle key</p>
+                        </li>
+                        <li>
+                            <p>1 available USB port for USB Light Tower</p>
+                        </li>
+                        <li>
+                            <p>1 available Ethernet port or 1 available USB port with Ethernet-to-USB adapter</p>
+                        </li>
+                        <li>
+                            <p>Microsoft Windows 7, 8, 10, 11</p>
+                        </li>
                     </ul>
                     <p>&#160;</p>
                     <p><span class="span_7">Note</span>: Additional powered USB ports may be needed for additional accessories.</p>

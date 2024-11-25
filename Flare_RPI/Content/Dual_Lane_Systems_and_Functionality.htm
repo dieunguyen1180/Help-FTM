@@ -18,7 +18,7 @@
                     <p>&#160;</p>
                     <p>A radio button display during the installation routine lets you choose between the standard configuration or one of the dual lane setups.</p>
                     <blockquote>
-                        <p><b>Note:</b> For more information about the hardware components of the system, see the <MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut></p>
+                        <p><b>Note:</b> For more information about the hardware components of the system, see the <i><MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut></i></p>
                         <p>&#160;</p>
                     </blockquote>
                     <h2 class="Heading2"><a name="Dual_lane_dual_systems"></a>Dual Lane Dual Systems
@@ -28,7 +28,9 @@
                     <ul>
                         <li>Pairs of probes</li>
                         <li>Encoders</li>
-                        <li>eTPUs</li>
+                        <li>
+                            <p>DAU’s</p>
+                        </li>
                         <li>Board sensors</li>
                     </ul>
                     <p>&#160;</p>
@@ -39,7 +41,7 @@
                             <td>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
-                                <p>Each RPI instance receives data from its own associated eTPU.  Each stores its logged data and executable subroutines in separate folders identified as either <i>front rail or back rail</i>.  (The front rail designates the lane closest to the lifting cover of the oven—the back rail designated the lane closest to the hinge of the oven cover.)</p>
+                                <p>Each RPI instance receives data from its own associated hardware.  Each stores its logged data and executable subroutines in separate folders identified as either <i>front rail or back rail</i>.  (The front rail designates the lane closest to the lifting cover of the oven—the back rail designated the lane closest to the hinge of the oven cover.)</p>
                             </td>
                             <td>
                                 <p>
@@ -174,8 +176,8 @@
                     <p>This feature is adaptable to the two setup types specified below:</p>
                     <p>&#160;</p>
                     <ol>
-                        <li class="ListParagraph_14"><b>Single Scanner Configuration</b> - Single barcode scanner on the infeed conveyor that shuttles from the front lane to back lane.</li>
-                        <li class="ListParagraph_14"><b>Dual Scanner Configuration</b> - Two barcode scanners, one for the front lane infeed conveyor and one for the back lane infeed conveyor.</li>
+                        <li class="ListParagraph_14"><b>Single Scanner Configuration</b> – Single barcode scanner on the infeed conveyor that shuttles from the front lane to back lane.</li>
+                        <li class="ListParagraph_14"><b>Dual Scanner Configuration</b> – Two barcode scanners, one for the front lane infeed conveyor and one for the back lane infeed conveyor.</li>
                     </ol>
                     <h4 class="Heading4">&#160;</h4>
                     <h4 class="Heading4">Single Scanner Configuration</h4>
@@ -190,10 +192,10 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li class="li_10">Exit the software and run the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> located in the <i>C:\RPI </i>.
+                                        <li class="li_10">Exit the software and run the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span> located in the <i>C:\RPI </i>directory.
 
 </li>
-                                        <li class="li_10">Select the Barcode Tab, under <b style="font-style: italic;">Barcode Interface Method</b>, it will give you various methods for connecting your barcode sensor. <br></br><br></br>For Single Scanner configuration, either <i>eTPU</i>, <i>DAU Barcode Port</i>, or <i>PC COM</i> Port would typically be used. 
+                                        <li class="li_10">Select the Barcode Tab, under <b style="font-style: italic;">Barcode Interface Method</b>, it will give you various methods for connecting your barcode sensor. <br /><br />For Single Scanner configuration, either <i> eTPU/ DAU Barcode Port</i>, or <i>PC COM</i> Port would typically be used. 
 </li>
                                     </ol>
                                 </td>
@@ -206,7 +208,7 @@
                             <tr>
                                 <td>
                                     <ol start="3">
-                                        <li>If <i style="font-weight: bold; font-style: normal;">PC COM Port</i> is selected, the <b style="text-decoration: underline; font-style: normal; font-weight: normal;">COM Port Configuration</b> section allows the user to configure the port settings. (See <a href="Monitoring_production_in_live_mode.htm#Barcodefunctions">Barcode section</a> for details)</li>
+                                        <li>If <i style="font-weight: bold; font-style: normal;">PC COM Port</i> is selected, the <b style="text-decoration: underline; font-style: normal; font-weight: normal;">COM Port Configuration</b> section allows the user to configure the port settings.(See Barcode section for details)</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>

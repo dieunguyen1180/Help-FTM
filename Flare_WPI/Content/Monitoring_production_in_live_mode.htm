@@ -16,39 +16,43 @@
                         <col style="width: 100pt;" />
                         <tr>
                             <td class="td_17">
-                                <p>During live mode, it also displays a crystal ball indicator that shows the current Virtual PWI, and Cpk values for your process as measured by the software.  The crystal ball indicator appears continuously while VP is enabled.  You can move the crystal ball, but not close or minimize it.  See Figure 22.</p>
+                                <p>During live mode, it also displays a crystal ball indicator that shows the current Virtual PWI, and Cpk values for the process as measured by the software.  The crystal ball indicator appears continuously while VP is enabled.  The user can move the crystal ball, but not close or minimize it.</p>
                                 <p>&#160;</p>
                                 <p>The crystal ball color will indicate the current Virtual Profiling status: </p>
-                                <p><span class="span_30">Green</span><span class="span_31">......Ready</span>
-                                </p>
-                                <p><span class="span_30">Yellow</span><span class="span_31">.....Warning</span>
-                                </p>
-                                <p><span class="span_30">Red</span><span class="span_31">..........Alarm</span>
-                                </p>
-                                <p><span class="span_30">Grey</span><span class="span_31">........U</span><span class="span_31">nable to P</span><span class="span_31">redict</span>
-                                </p>
+                                <ul>
+                                    <li style="margin-top: 5px;margin-bottom: 6px;">Green – Ready</li>
+                                    <li style="margin-top: 5px;margin-bottom: 6px;">Yellow – Warning</li>
+                                    <li style="margin-top: 5px;margin-bottom: 6px;">Red – Alarm</li>
+                                    <li style="margin-top: 5px;margin-bottom: 6px;">Grey – Unable to Predict</li>
+                                </ul>
                             </td>
                             <td class="td_17">
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008F.png" style="width: 103px;height: 149px;" />
                                 </p>
-                                <p class="Caption">Figure 22: Virtual Profile Crystal Ball indicator</p>
+                                <p class="Caption">Figure 82: Virtual Profile Crystal Ball indicator</p>
                             </td>
                         </tr>
                     </table>
-                    <p><span class="span_7">Note</span>: A VP status message appears when you place the mouse pointer over the crystal ball.</p>
-                    <h2 class="Heading2"><a name="How_to_Avoid_The_Grey_Crystal_Ball"></a>How to Avoid a Grey Crystal Ball</h2>
-                    <p>While a green crystal ball reports the system as VP-capable, and yellow/red alert you to problems, the grey color indicates that the software has insufficient data to make useful VP predictions.  The condition can occur during a verification profile run where you introduce the profiler into an ongoing production flow.  With boards both downstream and upstream of the profile board, the system lacks necessary data obtained by sampling empty machine conditions.  To avoid the grey status KIC recommends running the profile with no boards following behind.  For more information, see <a href="Understanding_Virtual_Profiling.htm#Integrate_Empty_Oven_Data" style="color: #0000cd; text-decoration: underline;">Integrating Empty Oven Data</a>.</p>
+                    <blockquote>
+                        <p><span class="span_7">Note</span>: A VP status message appears when the cursor is placed over the crystal ball.</p>
+                        <p>&#160;</p>
+                    </blockquote>
+                    <h2 class="Heading2"><a name="How_to_Avoid_The_Grey_Crystal_Ball"></a>How to avoid a Grey Crystal Ball</h2>
+                    <p>A green crystal ball reports the system as VP-capable, yellow/red alert indicates problems, and grey indicates that the software has insufficient data to make useful VP predictions.  The condition can occur during a verification profile run where the user has introduced the profiler into an ongoing production flow.  With boards both downstream and upstream of the profile board, the system lacks necessary data obtained by sampling empty machine conditions.  To avoid the grey status KIC recommends running the profile with no boards following behind.  For more information, see <a href="Understanding_Virtual_Profiling.htm#Integrate_Empty_Oven_Data" style="color: #0000cd; text-decoration: underline;">Integrating Empty Oven Data</a>.</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Virtual_Profiling_Live1"></a>Live Mode - General Tab</h2>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000096.png" style="width: 623px;height: 482px;" />
                     </p>
-                    <p class="Caption">Figure 23: Virtual Profiling – General Tab</p>
+                    <p class="Caption">Figure 83: Virtual Profiling – General Tab</p>
                     <p>&#160;</p>
-                    <p>On the live-mode screen, the software displays both the baseline and virtual profile.  To distinguish between the two, the baseline profile appears in a solid line format, while the virtual profile appears in dashed lines.</p>
+                    <p>On the <i>Live-mode</i> screen, the software displays both the baseline and virtual profile.  To distinguish between the two, the baseline profile appears in a solid line format, while the virtual profile appears in dashed lines.</p>
                     <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: To enlarge the graph portion of the General Tab, simply double click on the graph. To enlarge the statistics portion of this screen, double click on the statistics.</p>
+                    <div class="div_11">
+                        <p style="text-indent: 0.5in;"><span class="span_7">Note</span>: To enlarge the graph portion of the General Tab, simply double click on the graph. To enlarge the statistics portion of this screen, double click on the statistics.</p>
+                        <p style="text-indent: 0.5in;">&#160;</p>
+                    </div>
                     <h3 class="Heading3">Board Sensor Indicator</h3>
                     <table class="table_1">
                         <col style="width: 239pt;" />
@@ -64,15 +68,7 @@
                                 <p>
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000097a.png" />
                                 </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="vertical-align: middle;"><span style="font-size: 10pt;">When using a dual lane single system, a triangle icon sensor indicator appears next to each tracking lane.</span>
-                            </td>
-                            <td>
-                                <p>
-                                    <img src="Resources/Images/1ah.png" />
-                                </p>
+                                <p class="Caption">Figure 84: Board Sensor Indicator</p>
                             </td>
                         </tr>
                     </table>
@@ -80,30 +76,35 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image150.png" />
                     </p>
+                    <p class="Caption">Figure 85: Profile Statistics</p>
+                    <p>&#160;</p>
                     <p>As described in the profiling section, any process specifications defined will appear in the statistics table in the center of the screen. The rows marked <i>BL</i> indicate the statistical calculations from the <i>Baseline Profile</i>. The rows marked <i>VP</i> indicate the current statistical calculations made during the current live <i>VP</i>.</p>
                     <h3 class="Heading3">Recipe and Overall PWI</h3>
+                    <p>The bottom of the screen shows the recipe currently loaded, the <i>Baseline</i> and <i>Current PWI</i> for the Preheat and Wave sections of the profile.</p>
+                    <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/image151.png" style="width: 703px;height: 83px;" />
                     </p>
-                    <p>The bottom of the screen shows the recipe currently loaded, the <i>Baseline</i> and <i>Current PWI</i> for the Preheat and Wave sections of the profile.</p>
+                    <p class="Caption">Figure 86: Recipe and Overall PWI Section</p>
+                    <p>&#160;</p>
                     <h3 class="Heading3"><a name="VP_Live_Graph_Controller"></a>Graph Controller</h3>
                     <table class="table_1">
                         <col style="width: 237pt;" />
                         <col style="width: 242pt;" />
                         <tr>
                             <td class="td_17">
-                                <p>The Graph Controller allows you to modify the view of the WPI profile graph.  See Figure 24.  To open the Graph Controller, Left-click on the TC column header in the Statistics table or Double Left-click, anywhere just outside the profile graph.</p>
+                                <p>The Graph Controller allows the user    to modify the view of the WPI profile graph.  To open the Graph Controller, Left-click on the TC column header in the Statistics table or Double Left-click, anywhere just outside the profile graph.</p>
                                 <p>&#160;</p>
-                                <p><span class="span_7">Auto scale</span> – The Auto Scale feature will automatically adjust the X and Y axis scales to fit all of the data in the profile graph.&#160; When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y axis scale of the profile graph.</p>
+                                <p><b>Auto scale</b> – The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.  When the Auto Scale feature is disabled, the user must manually input the minimum and maximum scale settings for the X and Y-axis scales of the profile graph.</p>
                                 <p>&#160;</p>
-                                <p><b>TCs</b> – You cannot disable or rename a TC in a live Virtual Profile. You can only perform this function on the Baseline Profile. Those changes would then be reflected in the Virtual Profile display</p>
+                                <p><b>TCs</b> – the user cannot disable or rename a TC in a live Virtual Profile. The user can only perform this function on the Baseline Profile. Those changes would then be reflected in the Virtual Profile display.</p>
                                 <p>.</p>
                             </td>
                             <td class="td_17">
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/image110.png" style="width: 464px;height: 330px;" />
                                 </p>
-                                <p class="Caption">Figure 24: Graph Controller</p>
+                                <p class="Caption">Figure 87: Graph Controller</p>
                                 <p class="Caption">&#160;</p>
                             </td>
                         </tr>
@@ -121,28 +122,28 @@
                     <p class="ListBullet_1">&#160;</p>
                     <p class="ListBullet_1"><span class="span_7">Internal </span><span class="span_7">t</span><span class="span_7">emp</span> – Enables the view of the profiler’s internal temperature profile plot on the graph.&#160; </p>
                     <p class="ListBullet_1">&#160;</p>
-                    <p><b>Display Detailed PWI</b> – With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values.</p>
+                    <p><b>Display Detailed PWI</b> – With this unchecked, the user will only see the “overall” PWI for the profile. It will not display the individual TC PWI values.</p>
                     <p>&#160;</p>
-                    <p><b>Floating O2 PPM display</b> – When the <i>O2 Live</i> option is purchased, you can enable/disable a window on the graph that shows the O2 measurement recorded during that profile.</p>
+                    <p><b>Floating O2 PPM display</b> – When the <i>O2 Live</i> option is purchased, the user can enable/disable a window on the graph that shows the O2 measurement recorded during that profile.</p>
                     <p>&#160;</p>
-                    <p><b>Display of Pointers</b> – Allows you to control which information is displayed when the <i>Pointer Slopes</i> tab in the Statistics table is selected (see below for additional details on pointers).</p>
+                    <p><b>Display of Pointers</b> – Allows the user to control which information is displayed when the <i>Pointer Slopes</i> tab in the Statistics table is selected (see below for additional details on pointers).</p>
                     <p>&#160;</p>
                     <h3 class="Heading3">Automatic Calculation of Delta T + Delta (Or Range) For All Statistics</h3>
-                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.  See Figure 25. This is the range of the highest to the lowest value for any given specification.  This information is strictly being displayed and is not factored in to the PWI value and is not used in predictions.</p>
+                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.  This is the range of the highest to the lowest value for any given specification.  This information is strictly being displayed and is not factored in to the PWI value and is not used in predictions.</p>
                     <h3 class="Heading3">Examine Tool</h3>
                     <table class="table_1" style="width: 70%;">
                         <col style="width: 426px;" />
                         <col />
                         <tr>
                             <td class="td_17">
-                                <p>You can also view the Delta T (∆T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.  This will bring up a pointer and a chart will appear in the upper left corner of the graph.  See Figure 25.</p>
+                                <p>This tool allows for view of the Delta T (∆T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.  This will bring up a pointer and a chart will appear in the upper left corner of the graph.</p>
                                 <p>&#160;</p>
                             </td>
                             <td class="td_17">
                                 <p class="p_3">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300004A1.png" style="height: 94px;width: 115px;" class="img_2" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">25</span><span class="span_20">: Examine Tool Display</span>
+                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">88</span><span class="span_20">: Examine Tool Display</span>
                                 </p>
                             </td>
                         </tr>
@@ -167,7 +168,7 @@
                     <p>&#160;</p>
                     <p class="p_11">If the board length as determined by the system differs by more than 15% from the baseline-product length while Virtual Profiling –live, an alarm will appear after five boards.</p>
                     <p class="p_11">&#160;</p>
-                    <p class="p_11">The number of boards to trigger an alarm on can be changed if needed, contact KIC Technical Support for help, <a href="mailto:tech@kicmail.com" style="color: #0000cd; text-decoration: underline;">tech@kicmail.com</a>.</p>
+                    <p>The number of boards to trigger an alarm on can be changed if needed, contact your system supplier for assistance.</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Virtual_Profiling_Live2"></a>Live Mode - Description Tab</h2>
@@ -178,16 +179,16 @@
                             <td class="td_17">
                                 <p>The Description tab displays the profile Description notes for the baseline profile.  See Figure 26.</p>
                                 <p>&#160;</p>
-                                <p>You can edit these notes by clicking in the description area.</p>
+                                <p>Notes can be edited by clicking in the description area.</p>
                                 <p>&#160;</p>
                                 <p>Below the description area, the Virtual Profile and Baseline Statistics, and recipes are displayed.  In the bottom-left corner, the current PWI appears.  Enlarging the description area and statistics are not possible while viewing this tab.</p>
                                 <p>&#160;</p>
                             </td>
                             <td class="td_17">
                                 <p style="text-align: center;">
-                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000098.png" style="width: 500px;height: 180px;" />
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000098.png" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">26</span><span class="span_20">: Virtual Profiling – Description Tab</span>
+                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">89</span><span class="span_20">: Virtual Profiling – Description Tab</span>
                                 </p>
                             </td>
                         </tr>
@@ -198,9 +199,9 @@
                         <col />
                         <tr>
                             <td class="td_17">
-                                <p>The Chart tab will display a control chart for the overall profile PWI, and statistics as defined in the Process Window setup. Select the <i>Preheat</i> tab to view the <i>Preheat</i> statistics; the <i>Wave</i> tab to view <i>Wave</i> statistics See Figure 27.</p>
+                                <p>The Chart tab will display a control chart for the overall profile PWI, and statistics as defined in the Process Window setup. Select the <i>Preheat</i> tab to view the <i>Preheat</i> statistics; the <i>Wave</i> tab to view Wave statistics.</p>
                                 <p>&#160;</p>
-                                <p>The alarm limits for each specification appears on each chart using red horizontal lines.</p>
+                                <p>The alarm limits for each specification appear on each chart using red horizontal lines.</p>
                                 <p>&#160;</p>
                                 <p>Each time a board is detected exiting the machine, the WPI software will plot a data point for each product thermocouple on each chart.  The chart data will coincide with the live Virtual Profile data.</p>
                                 <p>&#160;</p>
@@ -210,26 +211,31 @@
                                 <p>
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000099.png" style="width: 513px;height: 425px;" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">27</span><span class="span_20">: Virtual Profiling– Chart Tab, all charts</span>
+                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">90</span><span class="span_20">: Virtual Profiling– Chart Tab, all charts</span>
                                 </p>
                             </td>
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: You can enable or change the Cpk alarm values in the “Global Preferences” screen before you start Virtual Profiling.</p>
+                    <p style="text-indent: 0.5in;"><span class="span_7">Note</span>: The user can enable or change the Cpk alarm values in the <i>Global Preferences</i> screen before starting Virtual Profiling.</p>
                     <p>&#160;</p>
-                    <p>Above the control charts is a bar display showing the board sensor location.  Similar to the General tab, when a board is detected under the sensor, the indicator color will change from green to red as long as the sensor detects a board.  This display also shows the current location and number of boards in the machine.  In the bottom-left corner, the current PWI appears.  If the Barcode capabilities are enabled, the barcode number for the last board processed appears in the lower-left-corner as well.</p>
+                    <p>Above the control charts is a bar display showing the board sensor location. Similar to the General tab, when a board is detected under the sensor, the indicator color will change from green to red as long as the sensor detects a board.  This display also shows the current location and number of boards in the machine.  In the bottom-left corner, the current PWI appears.  If the Barcode capabilities are enabled, the barcode number for the last board processed appears in the lower-left-corner as well.</p>
                     <h3 class="Heading3">View Chart Data</h3>
-                    <p>To view individual chart data, click inside the chart area of your choice.  This will display that particular chart in a full screen view.</p>
+                    <p>Viewing Individual Chart Data:</p>
                     <p>&#160;</p>
-                    <p>Move the mouse pointer over the chart data, a display box will appear.  This display box data includes barcode number, PWI, Cpk, date, and time for each board.  See Figure 28.</p>
+                    <ol>
+                        <li style="margin-top: 7px;margin-bottom: 7px;">Click inside the chart area.<br />This will display that particular chart in a full screen view.<br /></li>
+                        <li style="margin-top: 7px;margin-bottom: 7px;">Moving the mouse pointer over the chart data, a display box will appear.<br />This display box data includes barcode number, PWI, Cpk, date, and time for each board.</li>
+                        <li>
+                            <p style="margin-top: 7px;margin-bottom: 7px;">Click in the chart area to return to the regular Chart tab view.</p>
+                        </li>
+                    </ol>
                     <p>&#160;</p>
-                    <p>Click in the chart area to return to the regular Chart tab view.</p>
                     <p>&#160;</p>
                     <p class="Figure">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300009A.png" style="width: 623px;height: 481px;" />
                     </p>
-                    <p class="Caption">Figure 28: Virtual Profiling – Chart Tab, zoom chart</p>
+                    <p class="Caption">Figure 91: Virtual Profiling – Chart Tab, zoom chart</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -238,15 +244,16 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300009B.png" style="width: 616px;height: 350px;" />
                     </p>
-                    <p class="Caption">Figure 29: Virtual Profiling – Troubleshooting Tab</p>
+                    <p class="Caption">Figure 92: Virtual Profiling – Troubleshooting Tab</p>
                     <p>&#160;</p>
-                    <p>The Troubleshooting tab will display the deviation of the various WPI sensors on bar charts.  The deviation data is measured against the baseline profile.  This data is updated for every board, or every 25 Seconds.  See Figure 29.</p>
-                    <p>&#160;</p>
-                    <p><span class="span_7">Tool </span><span class="span_7">t</span><span class="span_7">ips –</span> Moving the mouse pointer over the deviation chart data will enable tool tips that show the deviation value for each of the probes.  Moving the mouse pointer over the conveyor speed chart will show the baseline profile conveyor speed, and the conveyor speed for the last board to exit.  See Figure 30.</p>
+                    <p>The Troubleshooting tab will display the deviation of the various WPI sensors on bar charts.  The deviation data is measured against the baseline profile.  This data is updated for every board, or every 25 Seconds.</p>
+                    <blockquote>
+                        <p><b>Note:</b> Moving the mouse pointer over the deviation chart data will enable tool tips that show the deviation value for each of the probes.  Moving the mouse pointer over the conveyor speed chart will show the baseline profile conveyor speed, and the conveyor speed for the last board to exit.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p class="p_12">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300009C.png" style="width: 265px;height: 295px;" class="img_2" /> <img src="Resources/Images/image152.png" style="width: 278px;height: 298px;" /></p>
-                    <p class="Caption">Figure 30: Probe Deviation Value Display</p>
+                    <p class="Caption">Figure 93: Probe Deviation Value Display</p>
                     <h2 class="Heading2"><a name="Buttons"></a>VP Live Mode Buttons</h2>
                     <p>While in Virtual Profiling - live mode the software displays several buttons at the bottom of the screen.</p>
                     <p>&#160;</p>
@@ -260,7 +267,7 @@
                                 </p>
                             </td>
                             <td class="td_17">
-                                <p><b>Run Verification Profile</b> – Select this button to run a Virtual Profile Verification profile.  The software may require you to run a Verification profile if it has determined that the current process temperatures have changed significantly from the baseline.</p>
+                                <p><b>Run Verification Profile</b> – Select this button to run a Virtual Profile Verification profile.  The software may require the user to run a Verification profile if it has determined that the current process temperatures have changed significantly from the baseline.</p>
                             </td>
                         </tr>
                         <tr>
@@ -270,7 +277,7 @@
                                 </p>
                             </td>
                             <td class="td_17">
-                                <p class="p_27"><span class="span_7">View/Edit Process Window –</span> This lets you to view the Process Window specifications and limits in a read-only format.</p>
+                                <p class="p_27"><span class="span_7">View/Edit Process Window –</span> This lets the user to view the Process Window specifications and limits in a read-only format.</p>
                             </td>
                         </tr>
                         <tr>
@@ -291,7 +298,7 @@
                             </td>
                             <td class="td_17">
                                 <p class="p_27"><span class="span_7">Print –</span> This button will print the current profile.</p>
-                                <p class="p_27"><span class="span_7">Note</span>: If you wish to print a tab besides the General tab, pressing F9 on your keyboard will print the contents of any screen in the software.</p>
+                                <p class="p_27"><span class="span_7">Note</span>: If the user wishes to print a tab besides the General tab, pressing F9 on the keyboard will print the contents of any screen in the software.</p>
                             </td>
                         </tr>
                         <tr>
@@ -301,13 +308,13 @@
                                 </p>
                             </td>
                             <td class="td_17">
-                                <p class="p_27"><span class="span_7">Profiler Explorer –</span> This button will take you to the Profile Explorer screen.&#160; You can view profile and Virtual Profile event data.&#160; This feature is especially useful to ascertain which alarms have occurred and have been acknowledged during production.&#160; There is only one button at the bottom, which will return you back to Virtual Profiling - live mode.</p>
+                                <p class="p_27"><span class="span_7">Profiler Explorer –</span> This button will take the user to the Profile Explorer screen.  The user can view profile and Virtual Profile event data.  This feature is especially useful to ascertain which alarms have occurred and have been acknowledged during production.  There is only one button at the bottom, which will return the user back to the Virtual Profiling - live mode.</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="td_17">
                                 <p class="p_27">
-                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300009E.png" style="width: 98px;height: 53px;" />
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300009E.png" style="width: 97px;height: 51px;" />
                                 </p>
                             </td>
                             <td class="td_17">
@@ -317,7 +324,7 @@
                         <tr>
                             <td>
                                 <p>
-                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000130.png" />
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000130.png" style="width: 103px;height: 52px;" />
                                 </p>
                             </td>
                             <td>
@@ -326,14 +333,15 @@
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <h2 class="Heading2"><a name="Verifying_the_Virtual"></a>Verify The Virtual Profile</h2>
-                    <p>The <i>virtual profile</i> is a prediction of the process profile (inside the machine) generated from a model created when the Baseline profile was run.  A <i>verification profile</i> is a comparison run against the virtual profile model.  If you think the process has changed significantly or you have purposely changed the recipe, running a verification profile lets you verify the prediction model.  This comparison can either verify that the process profile is still within specification or create a new baseline profile based on the recent changes.&#160; </p>
+                    <h2 class="Heading2"><a name="Verifying_the_Virtual"></a>Verify the Virtual Profile</h2>
+                    <p>The <i>virtual profile</i> is a prediction of the process profile (inside the machine) generated from a model created when the Baseline profile was run.  A <i>verification profile</i> is a comparison run against the Virtual Profile model.  If the user thinks the process has changed significantly or has purposely changed the recipe, running a verification profile lets the user verify the prediction model.  This comparison can either verify that the process profile is still within specification or create a new baseline profile based on the recent changes.</p>
                     <p>&#160;</p>
                     <p>The verification profile updates the Baseline profile for the current Virtual Profile, ensuring that its prediction model yields the most accurate possible results, using the most recent profile.  The software always recognizes the latest in spec profile as the Baseline for any Virtual Profile.</p>
                     <p>&#160;</p>
-                    <p>The software recognizes when the process temperatures change significantly as compared to the current Baseline profile, and then prompts you to run a verification profile.  You can intentionally run a verification profile at any time during Virtual Profiling Live Mode.</p>
-                    <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: The software will only accept a verification profile as a new baseline if meets the standard VP criteria.&#160; See <a href="Understanding_Virtual_Profiling.htm#Getting_a_valid_baseline" style="color: #0000ff; text-decoration: underline;">Get A Valid Baseline Profile</a>.</p>
+                    <p>The software recognizes when the process temperatures change significantly as compared to the current Baseline profile, and then prompts to run a verification profile.  The user can intentionally run a verification profile at any time during Virtual Profiling Live Mode.</p>
+                    <blockquote>
+                        <p><span class="span_7">Note</span>: The software will only accept a verification profile as a new baseline if meets the standard VP criteria.&#160; See <a href="Understanding_Virtual_Profiling.htm#Getting_a_valid_baseline" style="color: #0000ff; text-decoration: underline;">Get A Valid Baseline Profile</a>.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <table class="table_1">
                         <col style="width: 275pt;" />
@@ -342,11 +350,11 @@
                             <td class="td_17">
                                 <p>&#160;</p>
                                 <ol start="1" class="ol_2">
-                                    <li>Verify that VP is running in live mode</li>
+                                    <li>Verify that VP is running in live mode.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <ol start="2" class="ol_2">
-                                    <li>Select the Run Profile button at the bottom of the VP live screen.  See Figure 31.</li>
+                                    <li>Select the <b>Run Profile</b> button at the bottom of the VP live screen.  </li>
                                 </ol>
                                 <p>&#160;</p>
                             </td>
@@ -354,8 +362,7 @@
                                 <p class="p_3">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300000D1.png" style="height: 76px;width: 140px;" class="img_2" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">31</span><span class="span_20">: Run Profile Button, VP Live Mode Screen</span>
-                                </p>
+                                <p class="Caption">Figure 94: Run Verification Profile</p>
                                 <p class="p_3">&#160;</p>
                             </td>
                         </tr>
@@ -363,21 +370,15 @@
                             <td class="td_17">
                                 <p>&#160;</p>
                                 <ol start="3" class="ol_2">
-                                    <li class="li_5">The software displays a message asking if you want to run a verification profile with:  See Figure 32.</li>
+                                    <li class="li_5" style="margin-top: 6px;margin-bottom: 6pt;">The software displays a message asking if the user wants to run a verification profile with:<br />•	Selecting <b>No</b>, the software will return to the previous screen.<br />•	Selecting <b>Yes</b>, the software will begin stepping through the run profile routine.</li>
                                 </ol>
-                                <ul class="ul_3">
-                                    <li class="ListBullet2_5">If you choose <span class="span_7">No</span>, the software will return to the previous screen.</li>
-                                </ul>
-                                <ul class="ul_3">
-                                    <li class="ListBullet2_6">If you choose <span class="span_7">Yes</span>, the software will begin stepping through the run profile routine.</li>
-                                </ul>
                             </td>
                             <td class="td_17">
                                 <p class="p_3">&#160;</p>
                                 <p class="p_3">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A3.png" style="width: 285px;height: 110px;" />
                                 </p>
-                                <p class="Caption">Figure 32</p>
+                                <p class="Caption">Figure 95</p>
                                 <p>&#160;</p>
                             </td>
                         </tr>
@@ -387,57 +388,55 @@
                         <li class="li_6">Verify the following before profiling:</li>
                     </ol>
                     <ul class="ul_3">
-                        <li class="ListBullet3_1"><span class="span_18">The </span><span class="span_18">p</span><span class="span_18">rofiler is o</span><span class="span_18">n and ready to profile.</span>
-                        </li>
+                        <li class="ListBullet3_1">The profiler is on and ready to profile.</li>
                     </ul>
                     <ul class="ul_5">
-                        <li class="ListBullet3_1"><span class="span_5">If a </span><span class="span_5">Transmit </span><span class="span_5">model</span><span class="span_18"> – Receiver </span><span class="span_18">or Base Station</span><span class="span_18">is plugged into computer</span><span class="span_18">.</span>
+                        <li>
+                            <p>If a Transmit model – Receiver or Base Station is plugged into computer.</p>
                         </li>
-                        <li class="ListBullet3_2"><span class="span_5">If a </span><span class="span_5">Datalog</span><span class="span_5">ger</span><span class="span_5">model</span><span class="span_18"> – </span><span class="span_18">The profiler is</span><span class="span_18"> plugged into the download cable and download cable is plugged into the computer.</span>
-                            <br />
-                            <br />
-                        </li>
+                        <li class="ListBullet3_2">If a Datalogger model – The profiler is plugged into the download cable and download cable is plugged into the computer.</li>
                     </ul>
+                    <p style="font-size: 6pt;">
+                        <br />
+                    </p>
                     <ul class="ul_3">
                         <li>
                             <p>Profiler batteries and internal temperature are at the proper levels to profile</p>
                         </li>
-                        <li class="ListBullet3_3"><span class="span_18">All thermocouples attached to the profiler are below the defined product start temperature</span>
-                        </li>
+                        <li class="ListBullet3_3">All thermocouples attached to the profiler are below the defined product start. </li>
                     </ul>
                     <p class="ListParagraph">&#160;</p>
                     <ol start="5" class="ol_2">
-                        <li class="li_6">To begin profiling, click the Profile Start button (green traffic light).</li>
+                        <li class="li_6">To begin profiling, click the <b>Green traffic light</b> button.</li>
                     </ol>
                     <p class="ListContinue_1">&#160;</p>
-                    <p>Once the verification profile is complete, and the KIC profiler has downloaded the profile data that meets Virtual Profile criteria, the software will display the dialog box shown below.  See Figure 33.</p>
+                    <p>Once the verification profile is complete, and the KIC profiler has downloaded the profile data that meets Virtual Profile criteria, the software will display the dialog box shown below. </p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A4.png" style="height: 192px;width: 347px;" class="img_2" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A4.png" />
                     </p>
-                    <p style="text-align: center;">Figure 33: This dialog box will display the PWI and the</p>
-                    <p style="text-align: center;">predicted PWI for the verification profile.</p>
+                    <p class="Caption">Figure 96: This dialog box will display the PWI and the</p>
+                    <p class="Caption">predicted PWI for the verification profile.</p>
                     <p>&#160;</p>
-                    <p>Alternatively, if the profile is out of spec, the dialog box shown below will appear stating that the PWI is too high.  See Figure 34.</p>
+                    <p>Alternatively, if the profile is out of spec, the dialog box shown below will appear stating that the PWI is too high.  </p>
                     <p>&#160;</p>
-                    <p>If you choose to continue running Virtual Profiling, you will receive WARNING #2, “The last profile was out of spec”.  In which case, you would need to run profiles until an in-spec profile is achieved before the software lets you continue Virtual Profiling.</p>
+                    <p>If <b>Continue Virtual Profiling</b> is chosen, the user will receive WARNING #2, “The last profile was out of spec”.  In which case, the user would need to run profiles until an in-spec profile is achieved before the software lets them continue Virtual Profiling.</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A5.png" style="height: 192px;width: 349px;" class="img_2" />
                     </p>
-                    <p class="Caption">Figure 34: Out of Spec Verification profile</p>
+                    <p class="Caption">Figure 97: Out of Spec Verification profile</p>
                     <p class="Caption">&#160;</p>
                     <p class="p_36">The dialog box will present two choices:</p>
-                    <ol start="1" class="ol_1">
-                        <li class="ListBullet2"><span class="span_7">Continue Virtual Profiling –</span> If the verification profile meets Virtual Profiling criteria, it will automatically be used as the new baseline profile.&#160; If you choose this option, the software will update the baseline and continue Virtual Profiling, using the verification profile as a new baseline profile.</li>
-                    </ol>
+                    <p class="ListBullet2"><span class="span_7">Continue Virtual Profiling –</span> If the verification profile meets Virtual Profiling criteria, it will automatically be used as the new baseline profile.  If this option is chosen, the software will update the baseline and continue Virtual Profiling, using the verification profile as a new baseline profile.</p>
                     <p>&#160;</p>
-                    <ol start="2" class="ol_1">
-                        <li class="ListBullet2"><span class="span_7">Unload Virtual Profile and go to Prediction mode</span> – If the verification profile does not meet Virtual Profiling criteria or is out of spec, it can’t be used for Virtual Profiling.&#160; If you choose this option, you can predict changes to the profile in order to bring the profile back within its process specification.&#160; You will have to run at least one more profile in order to produce a profile that meets Virtual Profiling criteria.</li>
-                    </ol>
-                    <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: For an explanation of VP criteria, see <a href="Understanding_Virtual_Profiling.htm#Virtual" style="color: #0000ff; text-decoration: underline;">Virtual Profiling</a>.</p>
+                    <p class="ListBullet2"><span class="span_7">Unload Virtual Profile and go to Prediction mode</span> – If the verification profile does not meet Virtual Profiling criteria or is out of spec, it can’t be used for Virtual Profiling.  If this option is chosen, the user can predict changes to the profile in order to bring the profile back within its process specification.  At least one more profile will have to be run in order to produce a profile that meets Virtual Profiling criteria.</p>
+                    <blockquote>
+                        <p><span class="span_7">Note</span>: For an explanation of VP criteria, see <a href="Understanding_Virtual_Profiling.htm#Virtual" style="color: #0000ff; text-decoration: underline;">Virtual Profiling</a>.</p>
+                        <p>&#160;</p>
+                    </blockquote>
                     <h2 class="Heading2"><a name="Historical_mode"></a>Historical Mode</h2>
-                    <p class="p_6">The WPI software has an historical mode feature. This feature allows you to view Virtual Profile data for any board processed when the Virtual Profiling has been running.  Open the Profile Explorer and select any event other than a profile. The <i>Display the Graph and Statistics for this profile</i> button will change from a single graph button display to a HISTORY button display, indicating there is Historical data associated with selected event. See Figure 35 and Figure 36.</p>
+                    <p>The WPI software has a historical mode feature. This feature allows for the viewing of Virtual Profile data for any board processed when the Virtual Profiling has been running.  Open the Profile Explorer and select any event other than a profile. The <b>Display the Graph and Statistics for this profile</b> button will change from a single graph button display to a <b>HISTORY</b> button display, indicating there is Historical data associated with selected event.</p>
+                    <p>&#160;</p>
                     <table align="center" class="table_2">
                         <col style="width: 144pt;" />
                         <col style="width: 144pt;" />
@@ -446,27 +445,27 @@
                                 <p class="Figure_1">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A6.png" style="height: 51px;width: 91px;" class="img_2" />
                                 </p>
-                                <p class="Caption">Figure 35: Profile Explorer–Display Graph and Statistics for this profile</p>
+                                <p class="Caption">Figure 98: Profile Explorer–Display Graph and Statistics for this profile</p>
                             </td>
                             <td class="td_23">
                                 <p class="p_3">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A7.png" style="width: 92px;height: 50px;" />
                                 </p>
-                                <p class="Caption">Figure 36: Profile Explorer–Display Historical Graph and Statistics</p>
+                                <p class="Caption">Figure 99: Profile Explorer–Display Historical Graph and Statistics</p>
                             </td>
                         </tr>
                     </table>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Viewing_historical_data1"></a>View Historical Data While Running a Live Virtual Profile</h2>
-                    <p>To view historical Virtual Profile data from the same PC while Virtual Profiling - live, you launch a separate KIC Host.exe file located in: <span style="font-family: 'Courier New';">C:\WPI\AppForViewer\KICHost.exe</span>.  This opens a separate Profile Explorer that lets you to browse through the history of any product including the one currently running VP.  Historical data will be available for any boards that have already exited the machine.</p>
+                    <p>To view historical Virtual Profile data from the same PC while Virtual Profiling - live, launch a separate KIC Host.exe file located in: <span style="font-family: 'Courier New';">C:\WPI\AppforViewer\KICHost.exe</span>.  This opens a separate Profile Explorer that allows the user to browse through the history of any product including the one currently running VP.  Historical data will be available for any boards that have already exited the machine.</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Virtual_Profiling1"></a>Historical Mode - General Tab</h2>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A8.png" style="width: 438px;height: 317px;" />
                     </p>
-                    <p class="Caption">Figure 37: Virtual Profiling History – General Tab</p>
+                    <p class="Caption">Figure 100: Virtual Profiling History – General Tab</p>
                     <p>&#160;</p>
-                    <p>The WPI software will display the baseline profile on the profile graph in a solid line format.  Also on the profile graph is the Virtual Profile for the selected board, date/time.  The Virtual Profile appears on the profile graph in a dashed-line format.  This display method allows you to easily distinguish between the baseline and Virtual profiles.</p>
+                    <p>The WPI software will display the baseline profile on the profile graph in a solid line format.  Also on the profile graph is the Virtual Profile for the selected board, date/time.  The Virtual Profile appears on the profile graph in a dashed-line format.  This display method allows for easy distinguishment between the baseline and Virtual profiles.</p>
                     <p>&#160;</p>
                     <p>Below the profile graph, the Virtual Profile and baseline profile statistics are displayed.  Below the statistics, the Virtual Profile and baseline profile PWI values, machine recipes, and Solder Pot setpoint and measured values are displayed.</p>
                     <h3 class="Heading3"><a name="VP_Historical_Graph_Controller"></a>Graph Controller</h3>
@@ -475,18 +474,18 @@
                         <col style="width: 242pt;" />
                         <tr>
                             <td class="td_23">
-                                <p>The Graph Controller allows you to modify the view of the WPI profile graph.  See Figure 38.  To open the Graph Controller, Left-click on the TC column header in the Statistics table or Double Left-click, anywhere just outside the profile graph.</p>
+                                <p>The Graph Controller allows the user to modify the view of the WPI profile graph.  To open the Graph Controller, Left-click on the TC column header in the Statistics table or Double Left-click, anywhere just outside the profile graph.</p>
                                 <p>&#160;</p>
-                                <p><span class="span_7">Auto scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.  When the Auto Scale feature is disabled, you must manually input the minimum and maximum scale settings for the X and Y-axis scales of the profile graph.</p>
+                                <p><span class="span_7">Auto scale –</span> The Auto Scale feature will automatically adjust the X and Y-axis scales to fit all of the data in the profile graph.  When the Auto Scale feature is disabled, the user must manually input the minimum and maximum scale settings for the X and Y-axis scales of the profile graph.</p>
                                 <p>&#160;</p>
-                                <p><b>TCs</b> – The TCs section is a list of the thermocouples used for the profile.  In the event that you wish to view the profile without a particular or multiple thermocouples, you can deselect individual thermocouples, or deselect the “All” check box, and choose only the thermocouples you wish to view. The software recalculates the PWI and updates the profile statistics based on the remaining thermocouples selected.  You must select at least one product thermocouple. You can also update the distance measurement if a value was input incorrectly when the profile was started.</p>
+                                <p><b>TCs</b> – The TCs section is a list of the thermocouples used for the profile.  If the user wishes to view the profile without a particular or multiple thermocouples, they can deselect individual thermocouples, or deselect the “All” check box, and choose only the thermocouples wished to view. The software recalculates the PWI and updates the profile statistics based on the remaining thermocouples selected.  The user must select at least one product thermocouple. The user can also update the distance measurement if a value was input incorrectly when the profile was started.</p>
                                 <p>.</p>
                             </td>
                             <td class="td_23">
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/image110.png" style="width: 497px;height: 355px;" />
                                 </p>
-                                <p class="Caption">Figure 38: Graph Controller</p>
+                                <p class="Caption">Figure 101: Graph Controller</p>
                                 <p class="Caption">&#160;</p>
                             </td>
                         </tr>
@@ -504,13 +503,13 @@
                     <p>&#160;</p>
                     <p class="ListBullet_1"><span class="span_7">Internal </span><span class="span_7">t</span><span class="span_7">emp </span>– Enables the view of the profiler’s internal temperature profile plot on the graph.</p>
                     <p class="ListBullet_1">&#160;</p>
-                    <p><b>Display Detailed PWI</b> – With this unchecked, you will only see the “overall” PWI for the profile. It will not display the individual TC PWI values.</p>
+                    <p><b>Display Detailed PWI</b> – With this unchecked, only the “overall” PWI for the profile will be seen. It will not display the individual TC PWI values.</p>
                     <p>&#160;</p>
-                    <p><b>Floating O2 PPM display</b>  – When the <i>O2 Live</i> option is purchased, you can enable/disable a window on the graph that shows the O2 measurement recorded during that profile.</p>
+                    <p><b>Floating O2 PPM display</b>  – When the <i>O2 Live</i> option is purchased, the user can enable/disable a window on the graph that shows the O2 measurement recorded during that profile.</p>
                     <p>&#160;</p>
-                    <p><b>Display of Pointers</b> – Allows you to control which information is displayed when the <i>Pointer Slopes</i> tab in the Statistics table is selected (see below for additional details on pointers).</p>
-                    <h3 class="Heading3">Automatic Calculation of Delta T + Delta (Or Range) For All Statistics</h3>
-                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.  See Figure 39.  This is the range of the highest to the lowest value for any given specification.  This information is strictly being displayed and is not factored in to the PWI value and is not used in the Navigator or Auto-focus calculations.</p>
+                    <p><b>Display of Pointers</b> – Allows for control of which information is displayed when the <i>Pointer Slopes</i> tab in the Statistics table is selected (see below for additional details on pointers).</p>
+                    <h3 class="Heading3">Automatic Calculation of Delta T + Delta (Or Range) for all Statistics</h3>
+                    <p>The software will automatically calculate, and display in the statistical chart, the Delta for both the original and predicted profile data for all TCs for all Statistics.  This is the range of the highest to the lowest value for any given specification.  This information is strictly displayed and is not factored in to the PWI value and is not used in the Navigator or Auto-focus calculations.</p>
                     <h3 class="Heading3">Examine Tool</h3>
                     <table class="table_1" style="width: 70%">
                         <col style="width: 420px;" />
@@ -518,69 +517,64 @@
                         <tr>
                             <td class="td_23">
                                 <p>&#160;</p>
-                                <p>You can also view the Delta T (∆T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.  This will bring up a pointer and a chart will appear in the upper left corner of the graph.  See Figure 39.</p>
+                                <p>The user can also view the Delta T (∆T), or Delta Temperature, at specific points across the profile by right mouse clicking on the graph.  This will bring up a pointer and a chart will appear in the upper left corner of the graph.</p>
                             </td>
                             <td class="td_23">
                                 <p class="p_3">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300004A1.png" style="width: 143px;height: 116px;" class="img_2" />
                                 </p>
-                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">39</span><span class="span_20">: Examine Tool Display</span>
+                                <p class="p_3"><span class="span_20">Figure </span><span class="span_20">102</span><span class="span_20">: Examine Tool Display</span>
                                 </p>
                             </td>
                         </tr>
                     </table>
                     <p>&#160;</p>
-                    <p class="p_6">Wherever the pointer moves across the profile, the following data appears:</p>
-                    <ul class="ul_3">
-                        <li class="ListBullet2_1">The first column is the actual temperature for each TC, Original.</li>
-                    </ul>
-                    <ul class="ul_3">
-                        <li class="ListBullet2_1">The second column is the temperature of the predicted profile data – based on setpoint or belt speed changes.</li>
-                    </ul>
-                    <ul class="ul_3">
-                        <li class="ListBullet2_1">The Delta T for both actual and predicted TC data.</li>
-                    </ul>
-                    <ul class="ul_3">
-                        <li class="ListBullet2_1">The time during the profile at which the pointer is placed</li>
+                    <p>Wherever the pointer moves across the profile, the following data appears:</p>
+                    <ul>
+                        <li style="margin-top: 6px;margin-bottom: 6px;">The first column is the actual temperature for each TC, Original.</li>
+                        <li style="margin-top: 6px;margin-bottom: 6px;">The second column is the temperature of the predicted profile data – based on setpoint or belt speed changes.</li>
+                        <li style="margin-top: 6px;margin-bottom: 6px;">The Delta T for both actual and predicted TC data.</li>
+                        <li style="margin-top: 6px;margin-bottom: 6px;">The time during the profile at which the pointer is placed</li>
                     </ul>
                     <h2 class="Heading2"><a name="Virtual_Profiling5"></a>Historical Mode - Description Tab</h2>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A9.png" style="width: 512px;height: 350px;" />
                     </p>
-                    <p class="Caption">Figure 40: Virtual Profiling History – Description Tab</p>
+                    <p class="Caption">Figure 103: Virtual Profiling History – Description Tab</p>
                     <p>&#160;</p>
-                    <p>In Historical mode the Description tab displays the Baseline profile description notes.  See Figure 40.  You can edit these notes for a specific board by entering in the description area.  Below the description area, the Virtual Profile and baseline statistics, and recipes are displayed.  In the bottom-left corner, the PWI (and the barcode number, if enabled) for the selected board appears.</p>
+                    <p>In <i>Historical mode</i> the Description tab displays the Baseline profile description notes. The user can edit these notes for a specific board by entering in the description area.  Below the description area, the Virtual Profile and baseline statistics, and recipes are displayed.  In the bottom-left corner, the PWI (and the barcode number, if enabled) for the selected board appears.</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Virtual_Profiling2"></a>Historical Mode - Chart Tab</h2>
                     <p>&#160;</p>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000AA.png" style="width: 518px;height: 311px;" />
                     </p>
-                    <p style="text-align: center;">Figure 41: Virtual Profiling History – Chart Tab</p>
+                    <p style="text-align: center;">Figure 104: Virtual Profiling History – Chart Tab</p>
                     <p>&#160;</p>
-                    <p>The Chart tab will display a control chart for the overall profile PWI and for each individual process specification with alarm limits as defined in the Process Window setup.  See Figure 41.  The chart data will coincide with the Virtual Profile data for the selected board, date, and time.</p>
+                    <p>The <i>Chart tab</i> will display a control chart for the overall profile PWI and for each individual process specification with alarm limits as defined in the Process Window setup.  The chart data will coincide with the Virtual Profile data for the selected board, date, and time.</p>
                     <h3 class="Heading3">View Control Charts</h3>
-                    <p>The data is separated into two parts – Preheat and Wave. A tab in the upper left corner allows you to select which data to view. Each tab displays the applicable charts for that part of the process, based on the specifications chosen in the Process Window, as well as an overall PWI and Cpk chart for that section of the profile.</p>
+                    <p>The data is separated into two parts – Preheat and Wave. A tab in the upper left corner allows for selection of which data to view. Each tab displays the applicable charts for that part of the process, based on the specifications chosen in the Process Window, as well as an overall PWI and Cpk chart for that section of the profile.</p>
                     <p>&#160;</p>
-                    <p>Depending on the screen resolution setting of the computer not all charts may fit within the screen area.  Use the buttons in the upper-right corner of the Chart tab to select the number of charts to display and toggle between then.</p>
+                    <p>Depending on the screen resolution setting of the computer not all charts may fit within the screen area.  Using the buttons in the upper-right corner of the Chart tab selects the number of charts to display and toggle between then.</p>
                     <p>&#160;</p>
-                    <p>The control charts hold all the historical Virtual Profile data for your product as selected in the Profile Explorer.  Each data point on each chart represents a board that has passed through your machine.</p>
+                    <p>The control charts hold all the historical Virtual Profile data for the product selected in the Profile Explorer.  Each data point on each chart represents a board that has passed through the machine.</p>
                     <p>&#160;</p>
-                    <p><b>Board selector line</b> - Each chart has a Board Selector Line.  The board # appears at the top of the screen, along with the date and time that board # was entered into the WPI system.  You can move the Board Selector line position by clicking and dragging the small triangle at the bottom of the Board Selector line.</p>
+                    <p><b>Board selector line</b> - Each chart has a Board Selector Line.  The board number appears at the top of the screen, along with the date and time that board number was entered into the WPI system.  The user can move the Board Selector line position by clicking and dragging the small triangle at the bottom of the Board Selector line.</p>
                     <p>&#160;</p>
                     <p>The Maximum PWI and Cpk for the selected board, date and time are highlighted above the corresponding chart(s).</p>
                     <p>&#160;</p>
-                    <p>Each chart contains data for every product thermocouple used during the profile.  Below the charts you can de-select the TCs that you wish to remove from the control chart display.  De-selecting a TC will remove the data for that TC from each control chart.  Click the check box again to display the data for that TC.  In the bottom-left corner, the PWI (and the barcode number, if enabled) for the selected board appears.</p>
+                    <p>Each chart contains data for every product thermocouple used during the profile.  Below the charts the user can de-select the TCs that YOU wish to remove from the control chart display.  De-selecting a TC will remove the data for that TC from each control chart.  Click the check box again to display the data for that TC.  In the bottom-left corner, the PWI (and the barcode number, if enabled) for the selected board appears.</p>
                     <h3 class="Heading3">View Chart Data</h3>
-                    <p>To view individual chart data, click inside the chart area of your choice.  This will display that particular chart in a full screen format.  Move the mouse pointer over the chart data, and a display box will appear.  This display box data includes barcode number, PWI, Cpk, date, and time for each board.  The date and time stamp for that board is displayed at the top of the screen.</p>
+                    <p>To view individual chart data, click inside the chart area.  This will display that particular chart in full screen format.  Move the mouse pointer over the chart data, and a display box will appear.  This display box data includes barcode number, PWI, Cpk, date, and time for each board.  The date and time stamp for that board is displayed at the top of the screen.</p>
+                    <p>&#160;</p>
                     <h3 class="Heading3">History Mode Chart Options Menu</h3>
                     <p class="ListBullet_3">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000AB.png" style="width: 95px;height: 48px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000AB.png" />
                     </p>
-                    <p style="text-align: center;">Figure 42: History mode-Chart Options Menu</p>
+                    <p class="Caption">Figure 105: History mode-Chart Options Menu</p>
                     <p>&#160;</p>
                     <ul class="ul_2">
-                        <li class="ListBullet2_1"><b>Meter window –</b> Right click anywhere in the full screen chart area.  The Chart Options menu will appear, select Meter Window.  This will display a small data box in the upper-left corner of the profile graph.  This data box will display the historical – statistic data for any selected board.  To select a board move your mouse pointer along the chart data, at each data point the historical – statistic data for that board appears.  Right-click in the chart area again and de-select Meter Window to disable this feature.</li>
+                        <li class="ListBullet2_1"><b>Meter window –</b> Right click anywhere in the full screen chart area.  The Chart Options menu will appear, select Meter Window.  This will display a small data box in the upper-left corner of the profile graph.  This data box will display the historical – statistic data for any selected board.  To select a board move the cursor along the chart data, at each data point the historical – statistic data for that board appears.  Right-click in the chart area again and de-select Meter Window to disable this feature.</li>
                     </ul>
                     <p>&#160;</p>
                     <ul class="ul_2">
@@ -588,17 +582,18 @@
                     </ul>
                     <p class="ListBullet">&#160;</p>
                     <ul class="ul_2">
-                        <li class="ListBullet2_1"><b>Event History-</b> This feature is enabled as a default setting in the software.  When viewing the charts tab while in History mode an Event History dialog box appears.  The Event History dialog box will contain a list of all alarms and alarm related events that happened during the (selected) Virtual Profile.&#160; </li>
+                        <li class="ListBullet2_1"><b>Event History-</b> This feature is enabled as a default setting in the software.  When viewing the charts tab while in History mode an Event History dialog box appears.  The Event History dialog box will contain a list of all alarms and alarm related events that happened during the (selected) Virtual Profile.</li>
                     </ul>
                     <p class="ListBullet">&#160;</p>
                     <p class="ListBullet_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000AC.png" style="width: 294px;height: 89px;" />
                     </p>
-                    <p class="Caption">Figure 43: Event History dialog box</p>
+                    <p class="Caption">Figure 106: Event History dialog box</p>
                     <p class="ListBullet">&#160;</p>
                     <ul class="ul_2">
                         <li class="ListBullet2_1"><b>Disabling Event History Display -</b> Right click anywhere in the full screen chart area.  The Chart Options menu will appear, select the Event History option.&#160; </li>
                     </ul>
+                    <p>&#160;</p>
                     <h4 class="Heading4">Charts Tab Buttons</h4>
                     <p class="p_6">The Charts tab will have two extra buttons found only on this screen:</p>
                     <table class="table_1">
@@ -625,18 +620,19 @@
                             </td>
                         </tr>
                     </table>
-                    <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: Each chart can display a maximum of 200 data points at any given time.&#160; Every 200 data points are considered a set of data.&#160; A set of data can contain up to 200 data points, or if the production run was stopped before 200 boards were processed, a data set may contain less than 200 data points.</p>
-                    <p>&#160;</p>
+                    <blockquote>
+                        <p>&#160;</p>
+                        <p><span class="span_7">Note</span>: Each chart can display a maximum of 200 data points at any given time.&#160; Every 200 data points are considered a set of data.&#160; A set of data can contain up to 200 data points, or if the production run was stopped before 200 boards were processed, a data set may contain less than 200 data points.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Virtual_Profiling3"></a>Historical Mode - Troubleshooting Tab</h2>
                     <p>&#160;</p>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000AF.png" style="width: 600px;height: 342px;" />
                     </p>
-                    <p class="Caption">Figure 44: Virtual Profiling History – Troubleshooting Tab</p>
+                    <p class="Caption">Figure 107: Virtual Profiling History – Troubleshooting Tab</p>
                     <p>&#160;</p>
-                    <p>TThe Troubleshooting tab shows historical probe temperature, dwell time, and conveyor speed deviation.  The Board number, date, and time appears at the top of the screen.  See Figure 44.  To change the board #, go to the Charts tab and move the Board Selector Line to a different board (#) number.  The PWI for the selected board appears in the bottom-left corner.</p>
+                    <p>The Troubleshooting tab shows historical probe temperature, dwell time, and conveyor speed deviation.  The Board number, date, and time appears at the top of the screen.  To change the board number, go to the Charts tab and move the Board Selector Line to a different board number.  The PWI for the selected board appears in the bottom-left corner.</p>
                     <p>&#160;</p>
                     <p>There is a total of 30 probe thermocouples inside the machine – the first 28 are installed in the preheat area.  On the left side of the screen, the temperature deviation from the baseline of each of these 28 are shown. Each zone displays a different color for the probe TCs that are inside that zone. The right side shows deviation of the other sensors.</p>
                     <h3 class="Heading3">Historical Mode Buttons</h3>
@@ -652,7 +648,7 @@
                                 </p>
                             </td>
                             <td class="td_23">
-                                <p class="ListBullet_1_3"><span class="span_7">View/Edit Process Window –</span> This lets you view and edit the process window specifications and limits.</p>
+                                <p class="ListBullet_1_3"><span class="span_7">View/Edit Process Window –</span> TThis lets the user view and edit the process window specifications and limits.</p>
                             </td>
                         </tr>
                         <tr>
@@ -673,8 +669,9 @@
                             </td>
                             <td class="td_23">
                                 <p class="ListBullet_1_3"><span class="span_7">Print –</span> This button will print the current profile as displayed on the General Tab.</p>
-                                <p>&#160;</p>
-                                <p class="p_7"><span class="span_7">Note</span>: If you wish to print a tab besides the General tab, pressing F9 on your keyboard will print the contents of any screen in the software.</p>
+                                <p class="ListBullet_1_3" style="font-size: 6pt;">&#160;</p>
+                                <p class="ListBullet_1_3"><span class="span_7">Note</span>: If the user wishes to print a tab besides the General tab, pressing F9 will print the contents of any screen in the software.</p>
+                                <p class="p_7">&#160;</p>
                             </td>
                         </tr>
                         <tr>
@@ -684,69 +681,71 @@
                                 </p>
                             </td>
                             <td class="td_23">
-                                <p class="ListBullet_1_3"><span class="span_7">Profile Explorer –</span> This button will return you to the Profile Explorer.&#160; Click this button when finished viewing historical Virtual Profile data.</p>
+                                <p class="ListBullet_1_3"><span class="span_7">Profile Explorer –</span> This button will return the user to the Profile Explorer.  Click this button when finished viewing historical Virtual Profile data.</p>
                             </td>
                         </tr>
                     </table>
                     <p style="text-align: center;">&#160;</p>
                     <h2 class="Heading2"><a name="Barcodefunctions"></a>Barcode Functions<br /></h2>
                     <table class="table_1">
-                        <col style="width: 230pt;" />
-                        <col style="width: 100pt;" />
+                        <col style="width: 430pt;" />
+                        <col style="width: 150pt;" />
                         <tbody>
                             <tr>
                                 <td>
-                                    <p>WPI software has two main barcode functions, <i>Process Traceability</i>, and <i>Process Control</i>.  For either barcode function, a serial barcode scanner would connect directly to the <i>DAU/eTPU-Alarm/Barcode port</i> or to the pigtail connector of the alarm relay-cable if an alarm relay is also being used.  The alarm relay is required for use of the Process Control barcode function. Alternatively, a USB scanner can also be connected directly to the <i>DAU</i> through one of the USB ports. See <a href="Appendix_B.htm#Barcode_Tab"><i style="color: #0000ff; text-decoration: underline;">Appendix B – Barcode</i></a> for more information.</p>
+                                    <p>WPI software has two main barcode functions, <i>Process Traceability</i>, and <i>Process Control</i>.  For either barcode function, a serial barcode scanner would connect directly to the <i>DAU Alarm/Barcode port</i> or to the pigtail connector of the alarm relay-cable if an alarm relay is also being used.  The alarm relay is required for use of the Process Control barcode function. Alternatively, a USB scanner can also be connected directly to the <i>DAU</i> through one of the USB ports. See <a href="Appendix_B.htm#Barcode_Tab"><i style="color: #0000ff; text-decoration: underline;">Appendix B – Barcode</i></a> for more information.</p>
                                     <p>&#160;</p>
                                 </td>
-                                <td> <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000C6.png" style="width: 133px;height: 71px;" /></td>
+                                <td style="text-align: center;"> <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000C6.png" style="width: 133px;height: 71px;" /></td>
                             </tr>
                         </tbody>
                     </table>
                     <h3 class="Heading3">Process Traceability (PT)</h3>
-                    <p>The Process Traceability function enables process traceability with profile data for every product linked to its barcode number.  The software will match the barcode number and complete process data to every single production board recorded by the system.  The Process Traceability Barcode function can be used with or without the Process Control function.</p>
+                    <p>The <i>Process Traceability</i> function enables process traceability with profile data for every product linked to its barcode number.  The software will match the barcode number and complete process data to every single production board recorded by the system.  The Process Traceability Barcode function can be used with or without the Process Control function.</p>
                     <h3 class="Heading3">Process Control (PC)</h3>
-                    <p>The Process Control function enables process control by reading the product barcode label before the product enters the oven and confirms that a specific area of the barcode correlates to a specified product. If the barcode string value matches the current process string value, production continues as normal.  If the incoming barcode string value differs from your defined string value, an alarm is activated and the process can be stopped until the operator acknowledges the alarm and takes the proper action. In order to utilize the Process Control feature, your barcode strings need to contain at least one character (referred to as a “String”) that is common to all boards in a production run. For example, when running “Product A”, all barcode labels for “Product A” would be “ABCxxxx”, where “ABC” would represent the common characters (String) on each barcode label, and “xxxx” would represent the rest of the barcode characters, which would typically be unique to each individual board. The common character string can fall anywhere within the barcode. The Process Control Barcode function can be used with or without the Process Traceability function.</p>
+                    <p>The <i>Process Control</i> function enables process control by reading the product barcode label before the product enters the machine and confirms that a specific area of the barcode correlates to a specified product.  If the barcode string value matches the current process string value, production continues as normal.  If the incoming barcode string value differs from user defined string value, an alarm is activated, and the process can be stopped until the operator acknowledges the alarm and takes the proper action. In order to utilize the Process Control feature, the barcode strings need to contain at least one character (referred to as a Control String or Product ID) that is common to all boards in a production run. For example, when running “Product A”, all barcode labels for Product A would be “ABCxxxx”, where “ABC” would represent the common characters (control string) on each barcode label, and “xxxx” would represent the rest of the barcode characters, which would typically be unique to each individual board. The common character string can fall anywhere within the barcode. The Process Control Barcode function can be used with or without the Process Traceability function.</p>
                     <h3 class="Heading3">Barcode Product Sensor</h3>
-                    <p>The Barcode Product Sensor (BPS) is an optional product sensor used exclusively with the barcode option for improved functionality. Using the BPS, the WPI system can determine if any given product has had its barcode label successfully scanned.  If the product passes the sensor and there are no barcode strings that have been read into the software, then the system will give a NO READ alarm.  (Alarm 5C) </p>
+                    <p>The <i>Barcode Product Senso</i>r (BPS) is an available product sensor used exclusively with the barcode option for added functionality. Using a BPS, the WPI system can determine if any given product has had its barcode label successfully scanned.  If the product passes the sensor and there are no barcode strings that have been read into the software, then the system will give a NO READ alarm.</p>
                     <h3 class="Heading3">Scanner settings</h3>
-                    <p>The WPI barcode option is offered as a <span class="span_13">software only</span> option.&#160; You must provide the serial port or USB  barcode scanner, support/ utility software, all communication cabling, and mounting hardware.</p>
+                    <p>The WPI barcode function is offered as a software only feature.  The user must provide the serial port or USB barcode scanner, support/ utility software, all communication cabling, and mounting hardware. Here are some important points to consider when planning to use WPI with the barcode option:</p>
+                    <ul>
+                        <li>
+                            <p>The barcode reader must have either a 9-pin D-Sub serial connector (RS-232) for communication or a USB model that can be programmable for Serial Port interface.</p>
+                        </li>
+                        <li>
+                            <p>Barcode readers with Raster scan (multi-scan) are recommended.</p>
+                        </li>
+                        <li>
+                            <p>Barcode reader must be capable of the following communication settings:<br /><br />Baud Rate: 9600 bits/sec, Data Bits: 8, Parity: None, Stop Bits: 1</p>
+                        </li>
+                    </ul>
                     <p>&#160;</p>
-                    <p class="p_16">Here are some important points to consider when planning to use WPI with the barcode option:</p>
-                    <ol start="1" class="ol_2">
-                        <li class="ListNumber2_2">The barcode reader must have either a 9-pin D-Sub serial connector (RS-232) for communication or be a USB model that can be programmable for Serial Port interface.</li>
-                    </ol>
-                    <ol start="2" class="ol_2">
-                        <li class="ListNumber2_2">Barcode readers with Raster scan (multi-scan) are recommended.</li>
-                    </ol>
-                    <ol start="3" class="ol_2">
-                        <li class="ListNumber2_2">Barcode reader must be capable of the following communication settings:</li>
-                    </ol>
-                    <p class="p_49">Baud Rate: 9600 bits/sec, Data Bits: 8, Parity: None, Stop Bits: 1</p>
-                    <ol start="4" class="ol_2">
-                        <li class="ListNumber2_2">The scanner(s) must be programmed to have both a “Line Feed” and “Carriage Return” after each string is scanned.</li>
-                    </ol>
-                    <ol start="5" class="ol_2">
-                        <li class="ListNumber2_2">The scanner must be programmed for a single output for each board scanned.</li>
-                    </ol>
-                    <ol start="6" class="ol_2">
-                        <li class="ListNumber2_2">You will need the barcode reader utility software in order to configure the barcode reader.</li>
-                    </ol>
-                    <ol start="7" class="ol_2">
-                        <li class="ListNumber2_2">Non-standard cabling may be required for multiple barcode applications.</li>
-                    </ol>
-                    <ol start="8" class="ol_2">
-                        <li class="ListNumber2_2">When using multiple barcode scanners, the use of prefixes is required.</li>
-                    </ol>
+                    <ul>
+                        <li>
+                            <p>The scanner(s) must be programmed to have both a “Line Feed” and “Carriage Return” after each string is scanned.</p>
+                        </li>
+                        <li>
+                            <p>The scanner must be programmed for a single output for each board scanned.</p>
+                        </li>
+                        <li>
+                            <p>The user will need the barcode reader utility software to configure the barcode reader.</p>
+                        </li>
+                        <li>
+                            <p>Non-standard cabling may be required for multiple barcode applications.</p>
+                        </li>
+                        <li>
+                            <p>When using multiple barcode scanners, the use of prefixes is required.</p>
+                        </li>
+                    </ul>
                     <h2 class="Heading2"><a name="Barcode_types"></a>Barcode Types</h2>
-                    <p>Since the software does not actually read the barcode labels, you can use any barcode type that your barcode scanner is capable of reading.&#160; Verify your barcode scanner can read the barcode type prior to KIC installation.&#160; Use the manufactures utility, or Windows-HyperTerminal for verification.</p>
+                    <p>Since the software does not actually read the barcode labels, the user can use any barcode type that the barcode scanner is capable of reading.  Verify the barcode scanner can read the barcode type prior to KIC installation.  Use the manufacture’s utility, or Windows-HyperTerminal for verification.</p>
                     <h3 class="Heading3">Configuration Overview</h3>
                     <ol start="1" class="ol_2">
-                        <li class="ListNumber2">Program the barcode scanner settings using the software utility that is provided by the scanner manufacturer to configure the barcode scanner.  If you do not have it, contact the scanner manufacturer or their website.</li>
+                        <li class="ListNumber2">Program the barcode scanner settings using the software utility that is provided by the scanner manufacturer to configure the barcode scanner.  If the user doesn’t have it, contacting the scanner manufacturer or visiting their website is strongly recommended.</li>
                     </ol>
                     <p class="ListContinue">&#160;</p>
                     <ol start="2" class="ol_2">
-                        <li class="ListNumber2">Select desired functions/settings in the Barcode tab of the Configuration Program, and then enable the barcode option(s) in Global Preferences. The WPI Hardware Status screen will help you verify your barcode reader is connected properly.</li>
+                        <li class="ListNumber2">Select desired functions/settings in the <i>Barcode tab</i> of the <span style="font-family: 'Courier New';">Configuration Program.exe</span>, and then enable the barcode option(s) in Global Preferences.  The WPI Hardware Status screen will help to verify if the barcode reader is connected properly.</li>
                     </ol>
                     <p class="ListContinue">&#160;</p>
                     <ol start="3" class="ol_2">
@@ -754,18 +753,20 @@
                     </ol>
                     <p> </p>
                     <h3 class="Heading3">Configure and Test the System</h3>
-                    <p>There are multiple ways to determine if the barcode scanner(s) hardware is configured properly and communicating with your WPI system.  One is using the Hardware Status screen, another is using the DAU or eTPU Utility, and the another is using the Barcode-Log file.</p>
-                    <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: Make sure your system is properly installed and configured before you attempt to test your barcode hardware.</p>
+                    <p>There are multiple ways to determine if the barcode scanner(s) hardware is configured properly and communicating with the WPI system.  One is using the Hardware Status screen, another is using the DAU Utility, and the other is using the Barcode-Log file.</p>
+                    <blockquote>
+                        <p><b>Note:</b> Make sure the system is properly installed and configured before attempting to test the barcode hardware.</p>
+                    </blockquote>
                     <h4 class="Heading4">Configuration</h4>
-                    <p>Start by ensuring that the WPI software key is properly connected to your PC.  Verify the software key is correctly installed by viewing the Hardware Status screen.  Confirmation appears in the Software Key field.</p>
+                    <p>Start by ensuring that the WPI software key is properly connected to the PC.  Verify the software key is correctly installed by viewing the Hardware Status screen.  Confirmation appears in the Software Key field.</p>
                     <p>&#160;</p>
-                    <p class="p_6">If you do not see confirmation displayed, check the following:</p>
+                    <p>If there is no confirmation displayed, check the following:</p>
+                    <p>&#160;</p>
                     <ul class="ul_3">
                         <li class="ListBullet2_4">Check to make sure software key is properly installed and correctly seated.</li>
                     </ul>
                     <ul class="ul_3">
-                        <li class="ListBullet2_4">Check to make sure the key you have is programmed for Barcodes.</li>
+                        <li class="ListBullet2_4">Check to make sure the key is programmed for Barcodes.</li>
                     </ul>
                     <ul class="ul_3">
                         <li>Check to make sure the USB port is functional.</li>
@@ -774,217 +775,251 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image118.png" style="width: 591px;height: 486px;" />
                     </p>
-                    <p class="Caption">Figure 45: Global Preference – Barcode Option Tab</p>
+                    <p class="Caption">Figure 108: Global Preference – Barcode Option Tab</p>
                     <p>&#160;</p>
-                    <p>Open the WPI software.&#160; From the main menu, select the Global Preferences button, and then select the Barcode tab.&#160; Select the Barcode option(s) that apply.</p>
+                    <p>Open the WPI software.  From the main menu, select the <b>Global Preferences</b> button, and then select the <i>Barcode tab</i>.  Select the Barcode option(s) that apply.</p>
                     <p>&#160;</p>
-                    <p>There are several possible barcode hardware configurations.  The correct barcode configuration will depend on the KIC hardware and barcode labeling technique.  For barcode type configuration details, see the section titled <a href="Monitoring_production_in_live_mode.htm#Barcode_types" style="color: #0000ff; text-decoration: underline;">Barcode Types</a>.  For testing purposes, select any barcode option.</p>
+                    <p>There are several possible barcode hardware configurations.  The correct barcode configuration will depend on the KIC hardware and barcode labeling technique.  For barcode type configuration details, see the section titled <a href="Monitoring_production_in_live_mode.htm#Barcode_types" style="color: #0000ff; text-decoration: underline;">Barcode Types</a>.  </p>
                     <p>&#160;</p>
-                    <p>Select your barcode function(s) and enter any measurements that apply.&#160; The Missing barcode Alarm feature is only for the Process Traceability function.</p>
+                    <p>Select the barcode function(s) and enter any measurements that apply.  The Missing Barcode Alarm feature is only for the Process Traceability function.</p>
+                    <p>Note: For the Traceability configuration, only <i>Traceability (Entrance)</i> is supported.</p>
                     <p>&#160;</p>
-                    <p>Choose the green check button to save your settings and return to the main screen.</p>
-                    <h3 class="Heading3">View Barcode Data On The Hardware Status Screen</h3>
+                    <p>Choose the <b>Green check</b> button to save any settings and return to the main screen.</p>
+                    <p>&#160;</p>
+                    <h3 class="Heading3">View Barcode Data on The Hardware Status Screen</h3>
                     <p><span class="span_7">Hardware Status</span> – Once a barcode function is enabled, a barcode field is added to the Hardware Status screen as seen below.</p>
                     <p>&#160;</p>
                     <p class="Figure">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000C8a.png" style="width: 600px;height: 480px;" />
                     </p>
-                    <p class="Caption">Figure 46: Hardware Status</p>
+                    <p class="Caption">Figure 109: Hardware Status</p>
                     <p>&#160;</p>
-                    <p>In the Barcode section, the last barcode read appears.&#160; In order to view the barcode value, the conveyor must be moving.&#160; The barcode information will not display until the encoder begins pulsing.</p>
-                    <h3 class="Heading3">Test Sensor Inputs With DAU or eTPU Utility</h3>
-                    <p>The DAU and eTPU Utility are programs that lets you verify the sensor inputs, including Product Sensor, Encoder and the barcode scanner itself when connected to the DAU or eTPU.  Click “Start DAU” (or “Start eTPU”) to begin reading the connected device.</p>
+                    <p>In the Barcode section, the last barcode read appears.  To view the barcode value, the conveyor must be moving.  The barcode information will not display until the encoder begins pulsing.</p>
+                    <h3 class="Heading3">Test Sensor Inputs with DAU Utility</h3>
+                    <p>The DAU Utility is a program that verifies the sensor inputs, including Product Sensor, Encoder, and the Barcode Scanner itself when connected to the DAU.  Click <b>Start DAU</b> to begin reading the connected device.</p>
                     <p class="ListContinue">&#160;</p>
-                    <p class="ListBullet"><span class="span_7">Barcode Reader:</span>&#160; With the Barcode reader powered ON and connected to the DAU/eTPU, scan a barcode.  The scan results appear in the “Last Barcode Read” field.</p>
+                    <p class="ListBullet"><span class="span_7">Barcode Reader:</span>&#160; With the Barcode reader powered ON and connected to the DAU, scan a barcode.  The scan results appear in the “Last Barcode Read” field.</p>
                     <p>If the Barcode read fails, check the connections, and verify the barcode reader setting as previously described.</p>
                     <p class="ListBullet">&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000C9.png" style="width: 824px;height: 197px;" />
                     </p>
-                    <p class="Caption">Figure 47: DAU Hardware Test</p>
-                    <h3 class="Heading3">Test With The Barcode Log Configuration File</h3>
-                    <p><span class="ListBullet2Char" style="font-weight: bold;">Barcode Log</span> - You can also verify that the barcode feature is configured properly or for troubleshooting purposes by viewing the Barcode-Log file.&#160; If the barcode scanner hardware is connected and functioning properly, the system generates a log file.&#160; Every barcode value read by the system is logged and viewable.</p>
+                    <p class="Caption">Figure 110: DAU Hardware Test</p>
+                    <p class="Caption">&#160;</p>
+                    <h3 class="Heading3">Test with the Barcode Log Configuration File</h3>
+                    <p><span class="ListBullet2Char" style="font-weight: bold;">Barcode Log</span> - The user can also verify that the barcode feature is configured properly or for troubleshooting purposes by viewing the Barcode-Log file.  If the barcode scanner hardware is connected and functioning properly, the system generates a log file.  Every barcode value read by the system is logged and viewable.</p>
                     <p>&#160;</p>
-                    <p>To view the barcode-log file go to <span class="PlainTextChar_1">C:\</span><span class="PlainTextChar_1">WPI</span><span class="PlainTextChar_1">\Log\barcodeLog.txt</span>.&#160; This file will list the date, time, and barcode value for each barcode read through the DAU or eTPU.  This information will also be displayed in the KIC Host screen.</p>
+                    <p>To view the barcode-log file go to <span style="font-family: 'Courier New';">C:\WPI\Log\barcodeLog.txt</span>.  This file will list the date, time, and barcode value for each barcode read through the DAU.  This information will also be displayed on the KIC Host screen.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Scanner"></a>Scanner Installation</h2>
-                    <p>There are several ways to configure the system for use with barcodes.  The correct configuration will depend on the infeed conveyor layout, scanner hardware, and barcode labeling techniques used in your process.  Contact KIC Technical Support for more information.</p>
+                    <p>There are several ways to configure the system for use with barcodes.  The correct configuration will depend on the infeed conveyor layout, scanner hardware, and barcode labeling techniques used in the process.  Contact KIC Technical Support for more information.</p>
+                    <p>&#160;</p>
                     <h3 class="Heading3">Install Scanners on the Load Conveyor</h3>
                     <p>For the Process Control barcode function, it is required to install the barcode scanner(s) on the load conveyor.  The load conveyor-power or SMEMA is connected to the alarm relay.  The alarm relay controls the load conveyor, thereby controlling the flow of product into the machine.  When a Process Control or any other critical alarm is activated, the power or SMEMA to the load conveyor is cut, stopping the flow of product into the machine.  This ensures that no products enter under alarm conditions.</p>
                     <p>&#160;</p>
-                    <p>The installation positions of the Scanner(s) and BPS are determined by your hardware set up.  Below are some guidelines for installation of barcode scanners and BPS.  See Figure 48</p>
+                    <p>The installation positions of the Scanner(s) and BPS are determined by the hardware set up.  Below is a guideline for installation of barcode scanners and BPS.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/image119.png" />
                     </p>
-                    <p class="Caption">Figure 48: Barcode Scanner Installation Guidelines</p>
+                    <p class="Caption">Figure 111: Barcode Scanner Installation Guidelines</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Caption">&#160;</p>
                     <h2 class="Heading2"><a name="Virtual_Profiling_and"></a>Virtual Profiling and Barcodes</h2>
-                    <p><span class="span_7">Note</span>: The USB software key must always remain connected during use.</p>
+                    <p style="text-indent: 0.5in;"><span class="span_7">Note</span>: The USB software key must always remain connected during use.</p>
+                    <p style="text-indent: 0.5in;">&#160;</p>
                     <h3 class="Heading3">Process Control</h3>
                     <p>There are two methods for defining the characters of a barcode string that will be used for Process Control – Wildcard (default) and Parsing. See <span style="color: #0000ff; font-style: italic; font-weight: normal;"><a href="Appendix_B.htm#Barcode_Tab">Appendix B – Barcode</a></span> for how to change between methods.</p>
                     <p>&#160;</p>
-                    <p><b>Wildcard</b> - When Virtual Profiling is started, the system produces the Barcode Process Control dialog box which gives you the opportunity to: Enter the Process Control String, Change the Process Control String, or Disable Process Control for this Virtual Profile run.</p>
-                    <p>&#160;</p>
-                    <p>If the Process Control function is enabled (Global Preferences) and the Wildcard method is selected (Configuration Program), this dialog box will appear every time Virtual Profiling is enabled.  See Figure 49. Enter the barcode control string that is specific to the product family that is running.  The software reads the incoming string and compares it to that of the specified Process Control String, for every product.  If the string values differ, an alarm is activated, and the process is stopped via the alarm relay device.</p>
+                    <p><b>Wildcard</b> - When Virtual Profiling is started, the system produces the Barcode Process Control dialog box. This dialog box gives the opportunity to: Enter the Process Control String, Change the Process Control String, or Disable Process Control for this Virtual Profile run. If the Process Control function is enabled in <a href="Global_Preferences.htm#Barcode_tab">Global Preferences</a> and the Wildcard method is selected (Configuration Program), this dialog box will appear every time Virtual Profiling is enabled.  Enter the barcode control string that is specific to the product family that is running.  The software reads the incoming string and compares it to that of the specified Process Control String, for every product.  If the string values differ, an alarm is activated, and the process is stopped via the alarm relay device.</p>
                     <p style="font-weight: bold;">&#160;</p>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300009F.png" style="height: 144px;width: 275px;" class="img_2" />
                     </p>
-                    <p class="Caption">Figure 49: Barcode Process Control dialog</p>
+                    <p class="Caption">Figure 112: Barcode Process Control dialog</p>
                     <p>&#160;</p>
-                    <p><b>Parsing</b> – Whereas with the Wildcard method, the Control String characters must be sequential, using the Parsing method allows you to specify characters in any position of the string to be the Control String.</p>
-                    <p>In Profile Explorer, right click in the <i>Control String</i> column for a given product and choose <i>Add Control string</i>:</p>
+                    <p><b>Parsing</b> – Whereas with the Wildcard method, the Control String characters must be sequential, using the Parsing method allows the user to specify characters in any position of the string to be the Control String.</p>
+                    <p>In Profile Explorer, right click in the Control String column for a given product and choose <b>Add Control String</b>.</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014012.png" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014012.png" style="width: 778px;height: 170px;" />
                     </p>
+                    <p class="Caption">Figure 113: Add Control String</p>
+                    <p>&#160;</p>
                     <p>&#160;</p>
                     <p>A window will open for selecting defining the characters of the control string:</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014013.png" /> </p>
-                    <p>Scan a barcode for the selected product and the full string will be displayed in the window. You can then select the individual characters that will be the <i>Control String</i> for this product family. Click <i>Add</i> to save this <i>Control String</i> to the product:</p>
-                    <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014014.png" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014013.png" style="width: 715px;height: 274px;" />
                     </p>
+                    <p class="Caption">Figure 114: Add Control String tab </p>
+                    <p class="Caption">&#160;</p>
+                    <p>Scan a barcode for the selected product and the full string will be displayed in the window. The user can then select the individual characters that will be the <i>Control String</i> for this product family. Click <b>Add</b> to save this <i>Control String</i> to the product.</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014014.png" style="width: 666px;height: 269px;" />
+                    </p>
+                    <p class="Caption">Figure 115: Scan Barcode to add Control String</p>
+                    <p class="Caption">&#160;</p>
                     <p>The <i>Control String</i> column will now display the defined string for that product name:</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014015.png" style="width: 605px;height: 119px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014015.png" style="width: 794px;height: 156px;" />
                     </p>
-                    <p>With the Parsing method, you also have the ability to add more than one <i>Control String</i> for a given product by repeating the same steps above. You can remove a <i>Control String</i> for a product by right-clicking and choosing the <i>Edit Control String</i> selection.</p>
+                    <p class="Caption">Figure 116: Profile Explorer - Control String</p>
+                    <p class="Caption">&#160;</p>
+                    <p>With the Parsing method, the user has the ability to add more than one <i>Control String</i> for a given product by repeating the same steps above. The user can remove a <i>Control String</i> for a product by right-clicking and choosing the <b>Edit Control String</b> selection.</p>
+                    <p>&#160;</p>
                     <h3 class="Heading3">Barcode Product Sensor (BPS)</h3>
                     <p>WPI systems using the optional BPS and Process Control barcode function will have the ability to activate an alarm if a products barcode label is not read.</p>
-                    <p class="p_6">&#160;</p>
-                    <p class="p_6">When the BPS detects a product whose barcode label has not been read, or the BPS is tripped accidentally, an alarm is activated and the process is stopped via the alarm relay.  Alarm 5C appears.  See Figure 50.</p>
+                    <p>&#160;</p>
+                    <p>When the BPS detects a product whose barcode label has not been read, or the BPS is tripped accidentally, an alarm is activated, and the process is stopped via the alarm relay.  Alarm 5C appears:</p>
                     <p class="Figure">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A0.png" style="width: 355px;height: 226px;" />
                     </p>
-                    <p class="Caption">Figure 50: Alarm 5C</p>
-                    <p class="p_6">Control buttons on the screen let you:</p>
-                    <ul style="list-style-type: square;">
+                    <p class="Caption">Figure 117: Alarm 5C</p>
+                    <p class="Caption">&#160;</p>
+                    <p>Control buttons on the screen let the user:</p>
+                    <ul>
                         <li>Manually reenter the barcode, using the keyboard or a handheld scanner</li>
                         <li>Rescan the barcode with a mounted scanner</li>
                         <li>Continue production without the barcode</li>
                         <li>Remove the board from the line.</li>
                     </ul>
-                    <h3 class="Heading3">Reading barcodes with a Product Traceability Scanner</h3>
-                    <p>If you use a Product Traceability Scanner (PTS) to read barcode labels while running VP, you will get a barcode recorded along with a PWI for every board that passes thru the machine.&#160; You enable this function by selecting <span class="span_6">Traceability</span> under Barcode tab in the Global Preferences.  </p>
-                    <h4 class="Heading4">Use a PTS at the Machine Exit</h4>
-                    <p>When installed on the machine exit, the PTS reads barcode labels as the product exits the machine.  If the barcode label is not read, Alarm 5 appears.  With this configuration, there is no ability to add a barcode string to the data if this alarm was generated. See Figure 51.  You can disable the Missing Barcode Alarm in the Global Preferences screen.</p>
+                    <h3 class="Heading3">Reading Barcodes with a Product Traceability Scanner</h3>
+                    <p>When using a Product Traceability Scanner (PTS) to read barcode labels while running VP, the user will get a barcode recorded along with a PWI for every board that passes through the machine. This can be enabled by selecting <b>Traceability</b> under Barcode tab in the Global Preferences.</p>
+                    <h4 class="Heading4">Use a PTS</h4>
+                    <p>When installed on a load conveyor, the PTS reads barcode labels before the products enter the machine.  If the barcode label is not read, the process is stopped before the product enters the machine.  This method requires an Alarm Relay, and load conveyor.</p>
+                    <p>&#160;</p>
+                    <p>WPI systems using a BPS and Process traceability barcode function will have the ability to activate an alarm if a products barcode label is not read or is damaged. When the BPS detects a product whose barcode label has not been read, or the BPS is tripped accidentally, an alarm is activated, and the process is stopped via the alarm relay.  Alarm 5A appears:</p>
+                    <p>&#160;</p>
+                    <p>Control buttons on the screen lets the user:</p>
+                    <table style="width: 100%;">
+                        <col />
+                        <col />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul class="ul_3">
+                                        <li class="ListParagraph_3">Manually reenter the barcode, using the keyboard or a handheld scanner</li>
+                                        <li class="ListParagraph_3">Rescan the barcode with a mounted scanner</li>
+                                        <li class="ListParagraph_3">Continue production without the barcode</li>
+                                        <li class="ListParagraph_3">Remove the board from the line.</li>
+                                    </ul>
+                                </td>
+                                <td>&#160;</td>
+                                <td>
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A2.png" style="width: 364px;height: 233px;">
+                                    </img>
+                                    <p class="Caption">Figure 118: Alarm 5A</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>&#160;</p>
+                    <h2 class="Heading2"><a name="Enable"></a>Enable Barcoding per Product</h2>
+                    <p>The user can turn on or off the Process Control and Traceability functions on a per product basis. When the Barcode feature is active, in Profile Explorer the user will find checkboxes for the two different functions to the right of each product folder. These checkboxes allow for the toggling the feature on and off independently, for each product:</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A2a.png" style="width: 358px;height: 230px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014027.png" style="width: 781px;height: 128px;" />
                     </p>
-                    <p class="Caption">Figure 51: Alarm 5</p>
-                    <h4 class="Heading4">Use a PTS at the Machine Entrance</h4>
-                    <p>When installed on a load conveyor, the PTS reads barcode labels before the products enter the machine.  If the barcode label is not read, the process is stopped before the product enters the machine.  This method requires an alarm relay, and load conveyor.</p>
-                    <p>&#160;</p>
-                    <p>WPI systems using a BPS and Process traceability barcode function (PTS at machine entrance) will have the ability to activate an alarm if a products barcode label is not read or is damaged. When the BPS detects a product whose barcode label has not been read, or the BPS is tripped accidentally, an alarm is activated, and the process is stopped via the alarm relay.  Alarm 5a appears.  See Figure 52.</p>
-                    <p class="p_6">&#160;</p>
-                    <p class="p_6">Control buttons on the screen let you:</p>
-                    <ul class="ul_3">
-                        <li class="ListParagraph_3">Manually reenter the barcode, using the keyboard or a handheld scanner</li>
-                        <li class="ListParagraph_3">Rescan the barcode with a mounted scanner</li>
-                        <li class="ListParagraph_3">Continue production without the barcode</li>
-                        <li class="ListParagraph_3">Remove the board from the line.</li>
-                    </ul>
-                    <p>&#160;</p>
-                    <p class="p_3">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000A2.png" style="width: 364px;height: 233px;" />
-                    </p>
-                    <p class="Caption">Figure 52: Alarm 5a</p>
-                    <h2 class="Heading2"><a name="Enable"></a>Enable Barcoding Per Product</h2>
-                    <p>You have the ability to turn on or off the Process Control and Traceability functions on a per product basis. When the Barcode feature is active, in Profile Explorer you will find checkboxes for the two different functions to the right of each product folder. These checkboxes allow you turn on/off the feature independently for each product:</p>
-                    <p>&#160;</p>
-                    <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014027.png" style="width: 700px;height: 115px;" />
-                    </p>
+                    <p class="Caption">Figure 119: Enable Barcoding: Profile Explorer Screen</p>
+                    <p class="Caption">&#160;</p>
                     <h2 class="Heading2"><a name="Display_the_Current_Barcode_Queue"></a>Display the Current Barcode Queue</h2>
                     <p>A button for the barcode queue is available on the Graph, Description, Charts, and Troubleshooting screens during a live VP. This allows a user to remove a product and its associated barcode string from the line before the product enters the machine. The software will display this button even if all barcode options are disabled.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000131.png" style="width: 690px;height: 130px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000131.png" style="width: 831px;height: 156px;" />
                     </p>
-                    <p>&#160;</p>
+                    <p class="Caption">Figure 120: Barcode Queue - During VP</p>
                     <p style="text-align: center;">&#160;</p>
                     <p>&#160;</p>
-                    <p>When hovering the mouse over the button, a tool tip “Display Barcode Queue” will display.</p>
+                    <p>When hovering the cursor over the button, a tool tip “Display Barcode Queue” will display.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000133.png" />
                     </p>
+                    <p class="Caption">Figure 121: Barcode Button</p>
                     <p>&#160;</p>
+                    <h3 class="Heading3">Barcode Queue Dialog
+                    </h3>
                     <p>&#160;</p>
-                    <p><b style="font-size: 15pt;">Barcode Queue Dialog</b>
-                    </p>
-                    <p>&#160;</p>
-                    <p>Click the button to open the <b>Barcode Queue</b> dialog that displays a list of all the barcodes currently in the queue in order. The next barcode to be assigned to a board appears at the top of the list. A barcode is automatically removed from the list after the board has completely passed the entrance board sensor.</p>
-                    <p style="text-align: center;">&#160;</p>
+                    <p>Click the <b>Display Barcode Queue</b> button to open the Barcode Queue dialog that displays a list of all the barcodes currently in the queue in order. The next barcode to be assigned to a board appears at the top of the list. A barcode is automatically removed from the list after the board has completely passed the entrance board sensor.</p>
                     <p style="text-align: center;">&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000134.png" style="width: 461px;height: 258px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000134.png" style="width: 528px;height: 295px;" />
                     </p>
+                    <p class="Caption">Figure 122: Barcode Queue tab</p>
                     <p>&#160;</p>
-                    <p>Notice that the <b>Remove</b> button is disabled as default. When the user clicks a barcode, the <b>Remove</b> button becomes active.</p>
+                    <p>Notice that the Remove button is disabled as default. When the user clicks a barcode, the <b>Remove</b> button becomes active.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000135.png" style="width: 464px;height: 260px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000135.png" style="width: 534px;height: 296px;" />
                     </p>
+                    <p class="Caption">Figure 123: Barcode Queue - Remove Button</p>
                     <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p><b style="font-size: 15pt;">Remove Barcode</b>
-                    </p>
+                    <h3 class="Heading3">Remove Barcode
+                    </h3>
                     <p>&#160;</p>
                     <p>Follow these steps to remove a barcode:</p>
                     <p>&#160;</p>
                     <ol>
                         <li>Click the barcode that matches the board to be removed</li>
                         <li>Click the <b>Remove</b> button</li>
-                        <li>Click <b>Yes</b> on the KIC dialog that asks you to <i>“Confirm you want to delete this barcode string from the queue?”</i><br />Clicking <b>No</b> returns the user to the Barcode queue window.<br /><br /></li>
+                        <li>Click <b>Yes</b> on the KIC dialog that asks to <i>“Confirm you want to delete this barcode string from the queue?”</i><br />Clicking <b>No</b> returns the user to the Barcode queue window.</li>
                     </ol>
-                    <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000136.png" style="width: 512px;height: 299px;" />
+                    <p>
+                        <br />
                     </p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000136.png" style="width: 628px;height: 370px;" />
+                    </p>
+                    <p class="Caption">Figure 124: Remove Barcode - Confirmation Dialogue Box</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>The software then removes that string from the queue and the next string in line will be assigned to the next board.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000137.png" style="width: 490px;height: 275px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000137.png" style="width: 554px;height: 310px;" />
                     </p>
+                    <p class="Caption">Figure 125: Removal if Barcode in Queue</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000138.png" style="width: 506px;height: 254px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000138.png" style="width: 558px;height: 280px;" />
                     </p>
-                    <h2 class="Heading2"><a name="Viewing_barcode"></a>View Barcode Traceability Information For Boards Previously Run</h2>
-                    <p>Barcode information is collected for all the boards that pass through the machine.  Barcode information is stored only when Virtual Profiling is running.  After the barcode is read, the software will display the barcode value in the bottom-Left corner of the Virtual Profile screen until the next board’s barcode is read.  When viewing historical VP data, the selected board’s barcode number is also displayed in the bottom left corner of the screen.  See Figure 53.</p>
+                    <p class="Caption">Figure 126: Removed Barode - Charts Tab</p>
+                    <p class="Caption">&#160;</p>
+                    <h2 class="Heading2"><a name="Viewing_barcode"></a>View Barcode Traceability Information for Boards Previously Run</h2>
+                    <p>Barcode information is collected for all the boards that pass through the machine.  Barcode information is stored only when Virtual Profiling is running.  After the barcode is read, the software will display the barcode value in the bottom-Left corner of the Virtual Profile screen until the next board’s barcode is read.  When viewing historical VP data, the selected board’s barcode number is also displayed in the bottom left corner of the screen.</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000CBa.png" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000CBa.png" style="width: 786px;height: 219px;" />
                     </p>
-                    <p class="Caption">Figure 53: Virtual Profiling – Chart Tab </p>
-                    <h2 class="Heading2"><a name="Searching_for_barcode"></a>Search For Barcode Entries</h2>
+                    <p class="Caption">Figure 127: Virtual Profiling – Chart Tab </p>
+                    <p class="Caption">&#160;</p>
+                    <h2 class="Heading2"><a name="Searching_for_barcode"></a>Search for Barcode Entries</h2>
                     <p>In the Profile Explorer screen, there is a Barcode button located at the bottom of the page.  Select this button to search for specific barcoded products and view their profile information for the date/time they were processed.</p>
                     <p>&#160;</p>
-                    <p>Click on the product folder you want to search and then click on the Barcode button.  A dialog box appears with a field to enter the barcode value with a Search button next to it.  See Figure 54.  You can enter the value using the keyboard, or by selecting the scanner check box and then using the barcode scanner to scan the actual barcode eliminating the need to enter the value manually.</p>
+                    <p>Click on the desired product folder to search, then click on the <b>Barcode</b> button.  A dialog box appears with a field to enter the barcode value with a Search button next to it.  Enter the value using the keyboard, or by selecting the scanner check box and then using the barcode scanner to scan the actual barcode eliminating the need to enter the value manually.</p>
                     <p>&#160;</p>
-                    <p>Below this is a field that will list the time, date and PWI for that barcode, if it exists for the chosen product.  Either double-click the particular listing or highlight it and then click the View Selected Profile button.  This will bring you to the Historical Virtual Profile graph for that particular board.  If you click on the Charts tab, the Pointer Line will coincide with that particular board for all the charts as well.</p>
+                    <p>Below this is a field that will list the time, date and PWI for that barcode, if it exists for the chosen product.  Either double-click the particular listing or highlight it and then click the <b>View Selected Profile</b> button.  This will then bring the user to the Historical Virtual Profile graph for that particular board.  If  the Charts tab is selected, the Pointer Line will coincide with that particular board for all the charts as well.</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000CC.png" style="width: 435px;height: 275px;" class="img_2" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/030000CC.png" style="width: 566px;height: 357px;" class="img_2" />
                     </p>
-                    <p class="Caption">Figure 54: Barcode Search</p>
+                    <p class="Caption">Figure 128: Barcode Search</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <h2 class="Heading2"><a name="Live_Data_Output_and"></a>Live Data Output And Barcodes</h2>
+                    <h2 class="Heading2"><a name="Live_Data_Output_and"></a>Live Data Output and Barcodes</h2>
                     <p>The Live Data Output (LDO) function will output the thermal process data to a file.  The thermal process data will include barcode information for every board when the Barcode-Traceability and Live Data Output features are both enabled. See the <a href="Live_Data_Output.htm" style="color: #0000cd; text-decoration: underline;">Live Data Output</a> section in this manual for more information.</p>
                     <p>&#160;</p>
-                    <p>Below is an example of the <span style="font-family: Arial;">KIC_WPI_LiveDataOutput.txt</span> file that is generated by the system when LDO is active.  See Figure 55.</p>
-                    <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: the tables below were created by importing the LDO data file into Microsoft Excel.</p>
+                    <p>Below is an example of the <span style="font-family: 'Courier New';">KIC_WPI_LiveDataOutput.txt</span> file that is generated by the system when LDO is active.</p>
+                    <blockquote>
+                        <p><span class="span_7">Note</span>: The tables below were created by importing the LDO data file into Microsoft Excel.</p>
+                    </blockquote>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/080000CDa.png" style="width: 700px;height: 444px;" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/080000CDa.png" style="width: 834px;height: 528px;" />
                     </p>
-                    <p class="Caption">Figure 55: Example Live Data Output text file</p>
+                    <p class="Caption">Figure 129: Example Live Data Output text file</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
