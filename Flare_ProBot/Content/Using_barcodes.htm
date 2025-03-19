@@ -32,7 +32,7 @@
                     <p>The <i>Process Control</i> function enables process control by reading the product barcode label before the product enters the oven and confirms that a specific area of the barcode correlates to a specified product.  If the barcode string value matches the current process string value, production continues as normal.  If the incoming barcode string value differs from your defined string value, an alarm is activated, and the process can be stopped until the operator acknowledges the alarm and takes the proper action. In order to utilize the Process Control feature, your barcode strings need to contain at least one character (referred to as a Product ID) that is common to all boards in a production run. For example, when running “Product A”, all barcode labels for “Product A” would be “ABCxxxx”, where “ABC” would represent the common characters (Product ID string) on each barcode label, and “xxxx” would represent the rest of the barcode characters, which would typically be unique to each individual board. The common character string can fall anywhere within the barcode. The <i>Process Control</i> barcode function can be used with or without the <i>Process Traceability</i> barcode function.</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Trigger_sensors"></a>Trigger Sensors</h3>
-                    <p>Additional control/functionality can be implemented through the use of a separate product sensor and software configuration. Only one of the following two methods below can be configured at a time. The configuration for these is set in the ConfigurationProgram.exe. See <a href="Appendix_C.htm#Barcode_Tab" style="font-style: italic;">Appendix C – Barcode</a> for more information.</p>
+                    <p>Additional control/functionality can be implemented through the use of a separate product sensor and software configuration. Only one of the following two methods below can be configured at a time. The configuration for these is set in the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i>. See <a href="Appendix_C.htm#Barcode_Tab" style="font-style: italic;">Appendix C – Barcode</a> for more information.</p>
                     <h4 class="Heading4">Barcode Product Sensor</h4>
                     <p>The <i>Barcode Product Sensor</i> (BPS) configuration uses an optional product sensor to identify that a product is passing by the barcode scanner.  If the product passes the sensor and no barcode or an invalid barcode ID have been read into the software, then the system will post an alarm (Alarm 5c), and when applicable, stop the infeed conveyor. If a valid barcode ID was received, the product will continue moving into the oven.</p>
                     <h4 class="Heading4">Barcode Stop Sensor</h4>
@@ -84,7 +84,7 @@
                     </ol>
                     <p class="ListBullet2_1">&#160;</p>
                     <ol start="2" class="ol_2">
-                        <li class="ListNumber2">Select desired functions/settings in the Barcode tab of the <i>Configuration Program</i>.  The Hardware Status screen will help you verify your barcode reader is connected properly.</li>
+                        <li class="ListNumber2">Select desired functions/settings in the Barcode tab of the <i style="font-family: 'Courier New';">Configuration Program.exe</i>.  The Hardware Status screen will help you verify your barcode reader is connected properly.</li>
                     </ol>
                     <p class="ListBullet2_1">&#160;</p>
                     <ol start="3" class="ol_2">
@@ -109,9 +109,9 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image148.png" style="width: 625px;height: 591px;" />
                     </p>
-                    <p class="Caption"> Figure 165: Configuration Program – Barcode Tab</p>
+                    <p class="Caption"> Figure 167: Configuration Program – Barcode Tab</p>
                     <p>&#160;</p>
-                    <p>Open the <span style="font-family: 'Courier New';">ConfigurationProgram.exe</span>, from there select the <i>Barcode</i> Tab.  Select the Barcode option(s) that apply.</p>
+                    <p>Open the <span style="font-family: 'Courier New'; font-style: italic;">ConfigurationProgram.exe</span>, from there select the <i>Barcode</i> Tab.  Select the Barcode option(s) that apply.</p>
                     <p>&#160;</p>
                     <p>There are several possible barcode hardware configurations.  The correct barcode configuration will depend on the KIC hardware and barcode labeling technique</p>
                     <p>&#160;</p>
@@ -126,20 +126,20 @@
                     </blockquote>
                     <p>Select the <b>Apply</b> and then the <b>OK</b> button to save your settings.</p>
                     <p>&#160;</p>
-                    <h4 class="Heading4"><a name="Barcode_testing_using"></a>Test the Barcode Using the Hardware Status Screen</h4>
+                    <h4 class="Heading4"><a name="Barcode_testing_using"></a>Test the Barcode using the Hardware Status Screen</h4>
                     <p class="p_10"><span class="span_9">Hardware Status</span> – Once a barcode function is enabled, a barcode field appears on the Hardware Status screen as shown below:</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000090b.png" />
                     </p>
-                    <p class="Caption">Hardware Status Screen</p>
+                    <p class="Caption">Figure 188: Hardware Status Screen</p>
                     <p>&#160;</p>
                     <p>In the Barcode section, the last barcode read will be displayed.&#160; In order to view the barcode value, the conveyor must be moving.&#160; The barcode information will not display until the encoder begins pulsing.</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Test_Sensor_Inputs"></a>Test Sensor Inputs With DAU Utility</h3>
-                    <p>The <i>DAU Utility</i>, located in the <i>C:\ software root \DAU</i> folder, is a program that will allow you to test all of the sensor inputs, including the BPS (Barcode Product Sensor) and the Barcode scanner itself.  Click <i>Start DAU</i> to begin reading the BPS sensor input and the Barcode Reader scan.</p>
+                    <h3 class="Heading3"><a name="Test_Sensor_Inputs"></a>Test Sensor Inputs with DAU Utility</h3>
+                    <p>The <i>DAU Utility</i>, located in the <i>C:\ software root directory\DAU</i> folder, is a program that will allow you to test all of the sensor inputs, including the BPS (Barcode Product Sensor) and the Barcode scanner itself.  Click <i style="font-weight: bold;">Start DAU</i> to begin reading the BPS sensor input and the Barcode Reader scan.</p>
                     <p>&#160;</p>
-                    <p><b>Barcode Product Sensor/Barcode Stop Sensor</b>:  Activate the Barcode Product Sensor or Barcode Stop Sensor.  The B<i>arcode Product Sensor</i> display will change from “OPEN” to “CLOSED” when activated.</p>
+                    <p><b>Barcode Product Sensor/Barcode Stop Sensor</b>:  Activate the Barcode Product Sensor or Barcode Stop Sensor.  The <i>Barcode Product Sensor</i> display will change from “OPEN” to “CLOSED” when activated.</p>
                     <p class="ListBullet2_1">If Sensor fails to change, there may be a problem with a sensor or its wiring. </p>
                     <p>&#160;</p>
                     <p><b>Barcode Reader:</b>  With the Barcode reader powered ON and connected to the DAU, scan a barcode.  The scan results will be displayed in the <i>Last Barcode Read</i> field.</p>
@@ -148,13 +148,13 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000A4.png" />
                     </p>
-                    <p class="Figure">Figure 120: DAU Hardware Test</p>
+                    <p class="Figure">Figure 189: DAU Hardware Test</p>
                     <p style="text-align: center;">&#160;</p>
                     <p style="text-align: center;">&#160;</p>
-                    <h4><a name="Barcode_testing_using2"></a>Test The Barcode Using the Log Configuration File</h4>
+                    <h4><a name="Barcode_testing_using2"></a>Test The Barcode Using t he Log Configuration File</h4>
                     <p><span class="ListBullet2Char" style="font-weight: bold;">Barcode Log</span> - You can also verify the barcode feature is configured properly or for troubleshooting purposes by viewing the Barcode-Log file.&#160; If the barcode scanner hardware is connected and functioning properly, a log file will be generated.&#160; Every barcode value read by the system is logged and viewable.</p>
                     <p>&#160;</p>
-                    <p>To view the barcode-log file go to <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory \Log\barcodeLog.txt</i>.  This file will list the date, time, and barcode value for each barcode read.</p>
+                    <p>To view the barcode-log file go to <i style="font-family: 'Courier New'; font-size: 10pt;">C:\software root directory\Log\barcodeLog.txt</i>.  This file will list the date, time, and barcode value for each barcode read.</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Scanner_Installation"></a>Scanner Installation</h3>
@@ -167,14 +167,13 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/080000A5.png" style="width: 623px;height: 349px;" class="img_3" />
                     </p>
-                    <p style="text-align: center;">Figure 121: Barcode Scanner Installation Guidelines</p>
+                    <p style="text-align: center;">Figure 190: Barcode Scanner Installation Guidelines</p>
                     <p style="text-align: center;">&#160;</p>
                     <p style="text-align: center;">&#160;</p>
                     <h2 class="Heading2"><a name="VP_and_Barcode"></a>Virtual Profiling and Barcodes</h2>
                     <blockquote>
                         <p><b>Note:</b> The barcode option requires a software key in order to function.  The software key must always remain connected during use.</p>
                     </blockquote>
-                    <p>&#160;</p>
                     <h3><a name="Process_Control"></a>Process Control</h3>
                     <p>There are two methods for defining the characters of a barcode string that will be used for Process Control – Wildcard (default) and Parsing. See <a href="Appendix_C.htm#Barcode_Tab" style="font-style: italic; color: #0000cd;">Appendix C – Barcode</a>  for how to change between methods.</p>
                     <p>&#160;</p>
@@ -182,12 +181,13 @@
                     <p>If the Process Control function is enabled and the Wildcard method is selected, this dialog box will appear every time Virtual Profiling is enabled. Enter the barcode control string that is specific to the product family that is running.  The software reads the incoming string and compares it to that of the specified Process Control String, for every product.  If the string values differ, an alarm is activated, and the process is stopped via the <i>optional Alarm Relay</i> device.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;"> <img src="Resources/Images/SFT-324000-200 ProBot User Manual/image2233.png" /></p>
-                    <p style="text-align: center;">Barcode Process Control dialog</p>
+                    <p style="text-align: center;">Figure 191: Barcode Process Control dialog</p>
                     <p style="text-align: center;">&#160;</p>
                     <p><b>Parsing</b> – Whereas with the Wildcard method, the Control String characters must be sequential, using the Parsing method allows you to specify characters in any position of the string to be the Control String.</p>
                     <p>In Profile Explorer, right click in the <i>Control String</i> column for a given product and choose <i>Add Control string</i>:</p>
                     <p>&#160;</p>
                     <p style="text-align: center;"> <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0800014012.png" style="width: 784px;height: 162px;" /></p>
+                    <p class="Caption">Figure 192: Add Control String</p>
                     <p>&#160;</p>
                     <table style="width: 100%;">
                         <col style="width: 400px;" />
@@ -214,10 +214,12 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0800014013.png" />
+                                    <p class="Caption">Figure 193: Scan / Manual Entry</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                    <p>&#160;</p>
                     <p style="text-align: center;"> </p>
                     <p>&#160;</p>
                     <table style="width: 100%;">
@@ -231,12 +233,13 @@
 									]]></p>
                                     <p><![CDATA[
 									]]></p>
-                                    <p>Scan a barcode for the selected product and the full string will be displayed in the window. Hold down the Ctrl or Shift key and select the individual characters that will be the <i>Control String</i> for this product family. Click <i>Add</i> to save this <i>Control String</i> to the product:
+                                    <p>Scan a barcode for the selected product and the full string will be displayed in the window. Hold down the Ctrl or Shift key and select the individual characters that will be the <i>Control String</i> for this product family. Click <i style="font-weight: bold; font-style: normal;">Add</i> to save this <i>Control String</i> to the product:
 									</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/0800014014.png" style="width: 491px;height: 332px;" />
+                                    <p class="Caption">Figure 194: Add Control String - Scanned Entry</p>
                                 </td>
                             </tr>
                             <tr>
@@ -245,12 +248,13 @@
 									]]></p>
                                     <p><![CDATA[
 									]]></p>
-                                    <p>Enter the number of total characters in the barcode string. Then type in <b>ONLY</b> the characters that will be the <i>Control String</i> for this product family. Click <i>Add</i> to save this <i>Control String</i> to the product:
+                                    <p>Enter the number of total characters in the barcode string. Then type in <b>ONLY</b> the characters that will be the <i>Control String</i> for this product family. Click <i style="font-weight: bold; font-style: normal;">Add</i> to save this <i>Control String</i> to the product:
 									</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/FTM00011.png" style="width: 484px;height: 408px;" />
+                                    <p class="Caption">Figure 195: Add Control String - Manual Entry</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -258,6 +262,7 @@
                     <p>&#160;</p>
                     <p>The <i>Control String</i> column will now display the defined string for that product name:</p>
                     <p style="text-align: center;"> <img src="Resources/Images/SFT-324000-200 ProBot User Manual/image2237.png" /></p>
+                    <p class="Caption">Figure 196: Displayed Control String in Profile Explorer</p>
                     <p>&#160;</p>
                     <p>With the Parsing method, you also have the ability to add more than one <i>Control String</i> for a given product by repeating the same steps above. You can remove a <i>Control String</i> for a product by right-clicking and choosing the <i>Edit Control String</i> selection.</p>
                     <p>&#160;</p>
@@ -273,13 +278,11 @@
                                 <p>When the BPS or BSS detects a product whose barcode label has not been read, or the sensor is tripped accidentally, an alarm is activated, and the process is stopped via the alarm relay.  Alarm 5C, shown at the right, appears.</p>
                                 <p>&#160;</p>
                                 <p>Control buttons on the screen let you:</p>
-                                <ul class="Square">
+                                <ul>
                                     <li>Manually reenter the barcode, using the keyboard or a handheld scanner</li>
                                     <li>Rescan the barcode with a mounted scanner</li>
                                     <li>Continue production without the barcode</li>
                                     <li>Remove the board from the line.</li>
-                                </ul>
-                                <ul>
                                     <p>&#160;</p>
                                 </ul>
                             </td>
@@ -288,7 +291,7 @@
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000A7.png" style="height: 203px;width: 319px;" class="img_3" />
                                 </p>
-                                <p style="text-align: center;">Alarm #5C</p>
+                                <p style="text-align: center;">Figure 197: Alarm #5C</p>
                             </td>
                         </tr>
                     </table>
@@ -305,7 +308,7 @@
                             <td>
                                 <p>&#160;</p>
                                 <p>Control buttons on the screen let you:</p>
-                                <ul style="list-style-type: square;">
+                                <ul>
                                     <li>Manually reenter the barcode, using the keyboard or a handheld scanner</li>
                                     <li>Rescan the barcode with a mounted scanner</li>
                                     <li>Continue production without the barcode</li>
@@ -316,25 +319,18 @@
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/alarm5a.png" class="img_3" style="width: 308px;height: 198px;" />
                                 </p>
-                                <p class="Caption">Alarm #5A</p>
+                                <p class="Caption">Figure 198: Alarm #5A</p>
                             </td>
                         </tr>
                     </table>
                     <p class="Figure_1">
                         <p>&#160;</p>
                     </p>
-                    <p>You can either:</p>
-                    <ol>
-                        <li>Enter the product barcode string manually using the keyboard, and then press the <b>Confirm</b> button.</li>
-                        <li>Click the <b>Use Rescanning Method</b> checkbox, use the scanner to read the barcode labels, and then press the <b>Confirm</b> button.</li>
-                    </ol>
-                    <p>&#160;</p>
-                    <p>Alternatively, if the BPS/BSS was tripped accidentally, you can select <b>Delete</b>.  The Delete function cancels the barcode string entry altogether.</p>
-                    <p>&#160;</p>
                     <h2><a name="Enable_Barcoding_Per_Product"></a>Enable Barcoding Per Product</h2>
                     <p>You have the ability to turn on or off the Process Control and Traceability functions on a per product basis. When the Barcode feature is active, in Profile Explorer you will find checkboxes for the two different functions to the right of each product folder. These checkboxes allow you turn on/off the feature independently for each product:</p>
                     <p>&#160;</p>
                     <p style="text-align: center;"> <img src="Resources/Images/SFT-324000-200 ProBot User Manual/image2238.png" style="width: 747px;height: 135px;" /></p>
+                    <p class="Caption">Figure 199:  Enabling Barcoding</p>
                     <p>&#160;</p>
                     <h2><a name="Display_the_Current_Barcode_Queue"></a>Display the Current Barcode Queue
                     </h2>
@@ -343,12 +339,14 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000117.png" style="width: 559px;height: 249px;" />
                     </p>
+                    <p class="Caption">Figure 200: Barcode Queue Button</p>
                     <p>&#160;</p>
                     <p>When hovering the mouse over the button, a tool tip “Display Barcode Queue” will display.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000118.png" />
                     </p>
+                    <p class="Caption">Figure 201: Display Barcode Queue Button</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3><a name="Barcode_Queue_Dialog"></a>Barcode Queue Dialog
@@ -358,6 +356,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000119.png" />
                     </p>
+                    <p class="Caption">Figure 202: Barcode Queue List</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>Notice that the <b>Remove</b> button is disabled as default. When the user clicks a barcode, the <b>Remove</b> button becomes active.</p>
@@ -365,6 +364,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000120.png" />
                     </p>
+                    <p class="Caption">Figure 203: Barcode Queue Remove Barcode Button</p>
                     <p>&#160;</p>
                     <h3><a name="Remove_Barcode"></a>Remove Barcode
                     </h3>
@@ -379,6 +379,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000121.png" style="width: 866px;height: 343px;" />
                     </p>
+                    <p class="Caption">Figure 204: Deleting Barcode from Queue</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>The software then removes that string from the queue and the next string in line will be assigned to the next board.</p>
@@ -386,10 +387,12 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000122.png" />
                     </p>
+                    <p class="Caption">Figure 205: Removed Barcode from the Queue List</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/08000123.png" style="width: 794px;height: 326px;" />
                     </p>
+                    <p class="Caption">Figure 206: Removed Barcode shown from the Charts Tab</p>
                     <h2 class="Heading2">&#160;</h2>
                     <h2 class="Heading2"><a name="Dual-Lane_Systems_and_Barcoding"></a>Dual Lane Systems and Barcoding</h2>
                     <h3 class="Heading3"><a name="Dual-Lane_DS_Barcode_Fuction"></a>Dual Lane Dual System Barcode Functions</h3>
@@ -413,20 +416,21 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li class="li_10">Exit the software and run the <span style="font-style: italic; font-family: 'Times New Roman';">ConfigurationProgram.exe</span> located in the <i style="font-family: 'Courier New'; font-size: 9pt;">C:\PROBOT directory</i>.
+                                        <li class="li_10">Exit the software and run the <span style="font-style: italic; font-family: 'Courier New';">ConfigurationProgram.exe</span> located in the <i style="font-family: 'Courier New'; font-size: 10pt;">C:\PROBOT directory</i>.
 </li>
                                     </ol>
                                     <p>
                                         <br />
                                     </p>
                                     <ol start="2">
-                                        <li class="li_10">Select the Barcode Tab, under <b style="font-style: italic;">Barcode Interface Method</b>, it will give you various methods for connecting your barcode sensor. <br /><br />For Single Scanner configuration, either <i>eTPU</i>, <i>DAU Barcode Port</i> or <i>PC COM Port</i>  would typically be used. </li>
+                                        <li class="li_10">Select the Barcode Tab, under <b style="font-style: italic;">Barcode Interface Method</b>, it will give you various methods for connecting your barcode sensor. <br /><br />For Single Scanner configuration, either <i>eTPU</i>/<i>DAU Barcode Port</i> or <i>PC COM Port</i>  would typically be used. </li>
                                     </ol>
                                     <p>&#160;</p>
                                 </td>
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM00027.png" />
+                                    <p class="Caption" style="text-align: left;">Figure 207: Barcode Interface Method</p>
                                 </td>
                             </tr>
                             <tr>
@@ -438,6 +442,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM00028.png" style="width: 598px;height: 127px;" />
+                                    <p class="Caption" style="text-align: left;">Figure 208: COM Port Configuration</p>
                                 </td>
                             </tr>
                             <tr>
@@ -449,6 +454,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM00029.png" style="width: 595px;height: 111px;" />
+                                    <p class="Caption" style="text-align: left;">Figure 209: Barcode Options</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -463,7 +469,7 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li>Exit the software and run the <span style="font-style: italic; font-family: 'Times New Roman';">ConfigurationProgram.exe</span> located in the <span style="font-style: italic; font-family: 'Times New Roman';">C:\PROBOT directory</span>. <br /><![CDATA[
+                                        <li>Exit the software and run the <span style="font-style: italic; font-family: 'Courier New';">ConfigurationProgram.exe</span> located in the <span style="font-style: italic; font-family: 'Courier New';">C:\PROBOT directory</span>. <br /><![CDATA[
 
 ]]></li>
                                         <li>In the <i style="font-weight: bold;">Options</i> section, select <b style="font-style: italic; font-weight: normal;">Enable Front and Back Scanners</b>. This will allow the user to configure the two scanners for each lane.
@@ -473,6 +479,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM00030.png" />
+                                    <p class="Caption" style="text-align: left;">Figure 210: Barcode Scanner - Dual Scanner</p>
                                 </td>
                             </tr>
                             <tr>
@@ -484,6 +491,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM00031.png" />
+                                    <p class="Caption" style="text-align: left;">Figure 211: Dual Scanner - Scanner Prefix's</p>
                                 </td>
                             </tr>
                             <tr>
@@ -495,6 +503,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM00032.png" />
+                                    <p class="Caption" style="text-align: left;">Figure 212: Barcode Interface Method -PC COM Port</p>
                                 </td>
                             </tr>
                             <tr>
@@ -516,6 +525,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM00033.png" />
+                                    <p class="Caption" style="text-align: left;">Figure 213: Barcode Lane ID</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -527,7 +537,7 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000A8a.png" class="img_3" style="width: 806px;height: 442px;" />
                     </p>
-                    <p class="Caption">Figure 122: Virtual Profiling – Chart Tab </p>
+                    <p class="Caption">Figure 214: Virtual Profiling – Chart Tab </p>
                     <p class="Caption">&#160;</p>
                     <h2 class="Heading2"><a name="Searching_for_Barcode_Entries"></a>Search for Barcode Entries</h2>
                     <p>In the Profile Explorer screen, there is a Barcode button located at the bottom of the page.  Select this button to search for specific bar-coded products and view their profile information for the date/time they were processed. </p>
@@ -535,9 +545,9 @@
                     <p>Click on the product folder you want to search and then click on the Barcode button.  A dialog box appears with a field to enter the barcode value and a Search button next to it. You can enter the value manually with the keyboard  or, you can select the Scanner check box and then use the scanner to read the actual barcode.</p>
                     <p>&#160;</p>
                     <p class="Figure_1">
-                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000A9a.png" style="width: 636px;height: 403px;" />
+                        <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000A9a.png" style="width: 542px;height: 342px;" />
                     </p>
-                    <p class="Caption">Figure 123:Barcode Searching Screen</p>
+                    <p class="Caption">Figure 215:Barcode Searching Screen</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>A table lists the time, date and PWI for any barcode that exists for the chosen product.  Either double-click the particular listing, or highlight it, and then click the View Selected Profile button.  This will bring you to the Historical Virtual Profile graph for that particular board.  If you click on the Charts tab, the Pointer Line will coincide with that particular board for all the charts as well.</p>

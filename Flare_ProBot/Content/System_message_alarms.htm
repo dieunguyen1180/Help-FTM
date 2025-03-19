@@ -32,6 +32,7 @@
                                             <p>
                                                 <img src="Resources/Images/image32.png" style="width: 369px;height: 235px;" />
                                             </p>
+                                            <p class="Caption">Figure 273: Status Message - Alarm 8</p>
                                         </td>
                                     </tr>
                                 </table>
@@ -47,23 +48,25 @@
                                         <td>
                                             <p>&#160;</p>
                                             <p>Once displayed on the monitor, an operator needs to acknowledge the alarm, clicking on it to notify the software that the message has been received and make the displayed panel disappear.</p>
-                                            <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the KIC2000UserSettings.kiccfg file:
+                                            <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the <i style="font-family: 'Courier New';">KIC2000UserSettings.kiccfg</i> file:
 </p>
                                             <p>&#160;</p>
+                                            <p>&#160;</p>
+                                            <p style="font-family: 'Courier New';font-style: italic;">[HOST]
+</p>
+                                            <p style="font-family: 'Courier New';font-style: italic;">UsingPasswordwithRedAlarm=1
+</p>
                                         </td>
                                         <td>&#160;</td>
                                         <td>
                                             <p>
                                                 <img src="Resources/Images/image33.png" />
                                             </p>
+                                            <p class="Caption">Figure 274: Alarm Acknowledgement</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <p style="font-family: 'Courier New';">[HOST]
-</p>
-                                            <p style="font-family: 'Courier New';">UsingPasswordwithRedAlarm=1
-</p>
                                             <p>&#160;</p>
                                             <p>Next, you need to specify a password on the Global Preferences screen <i>Engineer Password</i> option.  Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.
 </p>
@@ -84,12 +87,13 @@
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/image35.png" style="width: 351px;height: 226px;" />
                                 </p>
+                                <p class="Caption">Figure 275: Acknowledge Alarm – Password</p>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
-                                <p><b>Note:</b> Password protection only applies to alarms.  A simple mouse click acknowledges and clears warning messages.</p>
+                                <p style="text-indent: 0.5in;"><b>Note:</b> Password protection only applies to alarms.  A simple mouse click acknowledges and clears warning messages.</p>
                                 <p>&#160;</p>
                                 <h2 class="Heading2"><a name="Messages_for_baseline_profiling_option"></a>Messages During Profiling and Baseline Profiling</h2>
-                                <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.  Below is a table the message that you might see during this process:  See Table 2.</p>
+                                <p>During the profiling portion of getting your software ready to monitor and record production real-time and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.  Below is a table the message that you might see during this process:</p>
                                 <p>&#160;</p>
                                 <table align="center" class="table_1">
                                     <col style="width: 104pt;" />
@@ -129,10 +133,10 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <p class="Caption">Table 6: Profiling System Alarms</p>
+                                <p class="Caption">Table 7: Profiling System Alarms</p>
                                 <p class="Caption">&#160;</p>
                                 <p class="Caption">&#160;</p>
-                                <h2><a name="System_message_alarms_option"></a>System Messages and Alarms</h2>
+                                <h3 class="Heading3"><a name="System_message_alarms_option"></a>System Messages and Alarms</h3>
                                 <h3><a name="Message_High_PWI"></a>Message, High PWI</h3>
                                 <table class="table_2">
                                     <col style="width: 450px;" />
@@ -148,7 +152,7 @@
                                             <p class="p_1" style="text-align: center;">
                                                 <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000101.png" />
                                             </p>
-                                            <p class="Figure">Message High PWI</p>
+                                            <p class="Figure">Figure 276: Message High PWI</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -162,7 +166,7 @@
                                             <p style="text-align: center;">
                                                 <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000102.png" />
                                             </p>
-                                            <p class="Figure">Alarm H2</p>
+                                            <p class="Figure">Figure 277: Alarm H2</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -177,7 +181,7 @@
                                             <p style="text-align: center;">
                                                 <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000103.png" />
                                             </p>
-                                            <p class="Figure">Alarm H7</p>
+                                            <p class="Figure">Figure 278: Alarm H7</p>
                                         </td>
                                     </tr>
                                 </table>
@@ -323,7 +327,7 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <p class="Caption">Table 7: Virtual Profiling – Process Alarms</p>
+                                <p class="Caption">Table 8: Virtual Profiling – Process Alarms</p>
                                 <p>&#160;</p>
                                 <table align="center" class="table_1">
                                     <col style="width: 85pt;" />
@@ -345,7 +349,7 @@
                                             <p class="p_20">Alarm H1</p>
                                         </td>
                                         <td class="td_18">
-                                            <p class="p_35">DAU Communication Failure (happened after Alarm H2)
+                                            <p class="p_35">eTPU/DAU Communication Failure (happened after Alarm H2)
                                             </p>
                                         </td>
                                         <td class="td_18">
@@ -357,7 +361,7 @@
                                             <p class="p_20">Alarm H2</p>
                                         </td>
                                         <td class="td_18">
-                                            <p class="p_35">DAU Lost Communication with PC.</p>
+                                            <p class="p_35">eTPU/DAU Lost Communication with PC.</p>
                                         </td>
                                         <td class="td_18">
                                             <p class="p_20">Yes or No</p>
@@ -375,7 +379,7 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <p class="Caption">Table 8: Virtual Profiling – Hardware Alarms</p>
+                                <p class="Caption">Table 9: Virtual Profiling – Hardware Alarms</p>
                                 <p>&#160;</p>
                                 <table align="center" class="table_1">
                                     <col style="width: 85pt;" />
@@ -426,7 +430,7 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <p class="Caption">Table 9: Virtual Profiling – Warnings</p>
+                                <p class="Caption">Table 10: Virtual Profiling – Warnings</p>
                             </td>
                         </tr>
                     </table>
@@ -440,9 +444,9 @@
                     <p>To change to this operation:</p>
                     <ol>
                         <li>Exit the software</li>
-                        <li>Using Windows Explorer, browse to the C:\Probot\Log directory and open the <i style="font-family: 'Courier New';">KIC2000ReadOnly.kiccfg</i></li>
+                        <li>Using Windows Explorer, browse to the <i style="font-family: 'Courier New';">C:\Probot\Log</i> directory and open the <i style="font-family: 'Courier New';">KIC2000ReadOnly.kiccfg</i></li>
                         <li>Modify the line <i style="font-family: 'Courier New';">AROnUntilAcknowledge=0</i> to <i style="font-family: 'Courier New';">=1</i></li>
-                        <li>Save and close the file, then restart the software</li>
+                        <li>Save and Close the file, then restart the software</li>
                     </ol>
                     <p>&#160;</p>
                     <h3><a name="When_Alarm_5a_Occurs"></a>When Alarm #5a Occurs
@@ -479,6 +483,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image167.png" style="width: 384px;height: 246px;" />
+                                    <p class="Caption">Figure 279: Alarm 5a Manual Entry</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -492,6 +497,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image169.png" style="width: 383px;height: 246px;" />
+                                    <p class="Caption">Figure 280: Alarm 5a Manual Entry – Example</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -504,6 +510,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image170.png" style="width: 609px;height: 347px;" />
                     </p>
+                    <p class="Caption">Figure 281: Alarm 5a Manual Entry - Added in VP</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h4 class="Heading4">Rescan Using Fixed Mount Scanner
@@ -529,6 +536,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image171.png" style="width: 386px;height: 248px;" />
+                                    <p class="Caption">Figure 282: Alarm 5a Rescan Barcode</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -542,6 +550,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image173.png" />
+                                    <p class="Caption">Figure 283: Alarm 5a Rescan Barcode - Example</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -554,6 +563,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image174.png" style="width: 609px;height: 347px;" />
                     </p>
+                    <p class="Caption">Figure 284: Alarm 5a Rescan Barcode – Added in VP</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h4 class="Heading4">Proceed Without a Barcode
@@ -579,6 +589,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image176.png" style="width: 354px;height: 228px;" />
+                                    <p class="Caption">Figure 285: Alarm 5a Proceed without Barcode</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -588,9 +599,10 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image177.png" />
                     </p>
+                    <p class="Caption">Figure 286: Alarm 5a Proceed without Barcode - Removed Barcode from VP</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <h4 class="Heading4">Remove this board from Line
+                    <h4 class="Heading4">Remove this Board from Line
                     </h4>
                     <p>The software will display an alarm message <i>“Please remove this board from the line now &amp; click on the “OK” button.”</i></p>
                     <p>&#160;</p>
@@ -613,22 +625,24 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image179.png" style="width: 370px;height: 237px;" />
+                                    <p class="Caption">Figure 287: Alarm 5a Remove Board from the Line</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <ol start="3">
-                                        <li>Click the green OK check button  .
+                                        <li>Click the <b>Green  check</b> button  .
 
 <br /><br />The software clears the alarm message and deactivates the Alarm relay to get ready for the next board.
 
-<br /><br />If user clicks the “Cancel” button, the software  returns to alarm #5A.</li>
+<br /><br />If user clicks the <b>Red X</b> button, the software  returns to alarm #5A.</li>
                                     </ol>
                                     <p>&#160;</p>
                                 </td>
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image180.png" style="width: 370px;height: 238px;" />
+                                    <p class="Caption">Figure 288: Alarm 5a Remove Board from the Line - Confirm</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -669,6 +683,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image184.png" style="width: 345px;height: 221px;" />
+                                    <p class="Caption">Figure 289: Alarm 5c Manual Entry</p>
                                 </td>
                             </tr>
                             <tr>
@@ -681,6 +696,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image185.png" style="width: 346px;height: 222px;" />
+                                    <p class="Caption">Figure 290: Alarm 5c Manual Entry - Example</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -693,9 +709,10 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image186.png" />
                     </p>
+                    <p class="Caption">Figure 291: Alarm 5c Manual Entry - Added in VP</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <h4 class="Heading4">Rescan Using Fixed Mount Scanner
+                    <h4 class="Heading4">Rescan using Fixed Mount Scanner
                     </h4>
                     <p>Click this button when you want to scan the barcode again by using the fixed mounted Barcode scanner.</p>
                     <p>&#160;</p>
@@ -718,6 +735,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image188.png" style="width: 360px;height: 231px;" />
+                                    <p class="Caption">Figure 292: Alarm 5c Rescan Barcode</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -731,6 +749,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image189.png" style="width: 361px;height: 232px;" />
+                                    <p class="Caption">Figure 293: Alarm 5c Rescan Barcode - Example</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -744,6 +763,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image190.png" />
                     </p>
+                    <p class="Caption">Figure 294: Alarm 5c Rescan Barcode - Removed in VP</p>
                     <p>&#160;</p>
                     <h4 class="Heading4">Process without a Barcode
                     </h4>
@@ -767,6 +787,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image191.png" style="width: 356px;height: 229px;" />
+                                    <p class="Caption">Figure 295: Alarm 5c Proceed without Barcode</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -775,8 +796,9 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image193.png" />
                     </p>
+                    <p class="Caption">Figure 296: Alarm 5c Proceed without Barcode - Removed in VP</p>
                     <p>&#160;</p>
-                    <h4 class="Heading4">Remove this board from Line.
+                    <h4 class="Heading4">Remove this Board from Line.
                     </h4>
                     <p>The software will display an alarm message <i>“Please remove this board from the line now &amp; click on the “OK” button.”</i></p>
                     <p>&#160;</p>
@@ -797,16 +819,17 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image194.png" style="width: 364px;height: 234px;" />
+                                    <p class="Caption">Figure 297: Alarm 5c Remove Board from Line</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <ol start="3">
-                                        <li>Click the green OK check button <img src="Resources/Images/image196.png" /> .
+                                        <li>Click the <b>Green check</b> button <img src="Resources/Images/image196.png" /> .
 
 <br /><br />The software clears the alarm message and deactivates the Alarm relay to get ready for the next board.
-<br /><br />If user clicks the “Cancel” button, the software  returns to alarm #5C.
+<br /><br />If user clicks the <b>Red X</b> button, the software  returns to alarm #5C.
 </li>
                                     </ol>
                                     <p>&#160;</p>
@@ -814,6 +837,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image197.png" style="width: 365px;height: 235px;" />
+                                    <p class="Caption">Figure 298: Alarm 5c Remove Board from Line - Confirmation</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -846,38 +870,41 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image205.png" style="width: 340px;height: 217px;" />
+                                    <p class="Caption">Figure 299: Alarm 12 Stop Virtual Profiling</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <ol start="2">
-                                        <li>Click the green check button <img src="Resources/Images/image206.png" />  to stop virtual profiling.</li>
+                                        <li>Click the <b>Green check</b> button <img src="Resources/Images/image206.png" />  to stop virtual profiling.</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image207.png" style="width: 342px;height: 207px;" />
+                                    <p class="Caption">Figure 300: Alarm 12 Stop Virtual Profiling - Confirmation</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <blockquote>
-                                        <p>Note: Users must wait for all boards to be removed from the oven.</p>
+                                        <p><b>Note:</b> Users must wait for all boards to be removed from the oven.</p>
                                     </blockquote>
                                     <p>&#160;</p>
                                 </td>
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/image208.png" style="width: 342px;height: 204px;" />
+                                    <p class="Caption">Figure 301: Alarm 12 Stop Virtual Profiling - Shutting down VP</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <h4 class="Heading4">Process with current Barcode
+                    <h4 class="Heading4">Process with Current Barcode
                     </h4>
                     <p>Users may deactivate the alarm relay to allow a board into the oven even if the barcode is in incorrect. Use this button to stop the alarm when you want to use the barcode that is on the label.</p>
                     <p>&#160;</p>
@@ -897,6 +924,7 @@
                                 <td>
                                     <img src="Resources/Images/image210.png" style="width: 343px;height: 220px;">
                                     </img>
+                                    <p class="Caption">Figure 302: Alarm 12 Process Current Barcode</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -909,6 +937,7 @@
                                 <td>
                                     <img src="Resources/Images/image211.png">
                                     </img>
+                                    <p class="Caption">Figure 303: Alarm 12 Process Current Barcode - Example</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -927,7 +956,7 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li>Click the Remove this board from Line button <img src="Resources/Images/image212.png"></img> .</li>
+                                        <li>Click the <b>Remove this board from Line</b> button <img src="Resources/Images/image212.png" /> .</li>
                                     </ol>
                                     <p>&#160;</p>
                                 </td>
@@ -935,13 +964,14 @@
                                 <td>
                                     <img src="Resources/Images/image213.png" style="width: 369px;height: 237px;">
                                     </img>
+                                    <p class="Caption">Figure 304: Alarm 12 Remove Board from Line</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <ol start="2">
-                                        <li>Remove the board from the line and then click the green check button <img src="Resources/Images/image214.png"></img> .</li>
+                                        <li>Remove the board from the line and then click the <b>Green check</b> button <img src="Resources/Images/image214.png" /> .</li>
                                     </ol>
                                     <p>&#160;</p>
                                 </td>
@@ -949,15 +979,16 @@
                                 <td>
                                     <img src="Resources/Images/image215.png" style="width: 370px;height: 238px;">
                                     </img>
+                                    <p class="Caption">Figure 305: Alarm 12 Remove Board from Line - Confirmation</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                     <p>&#160;</p>
                     <p>&#160;</p>
-                    <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum allowable back-to-back boards has been exceeded</h3>
+                    <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum Allowable back-to-back Boards has been Exceeded</h3>
                     <p>This is alarm in disabled by default. You may want to enable this optional alarm if you want to be alerted when too many products are being loaded back-to-back into the oven, which can sometimes lead to other process related issues. It will allow you to specify how many consecutive back-to-back boards are allowed. If that number is exceeded, an alarm will be generated.</p>
-                    <h4 class="Heading4">To enable:</h4>
+                    <h4 class="Heading4">To Enable:</h4>
                     <table>
                         <col style="width: 400px;" />
                         <col style="width: 20px;" />
@@ -966,12 +997,13 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li>Exit the software, browse to the <i style="font-family: 'Courier New';">C:\Probot</i> directory and run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i>. Select the <i>Hardware</i> tab.</li>
+                                        <li>Exit the software, browse to the <i style="font-family: 'Courier New';">C:\Probot</i> and run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i>. Select the <i style="font-weight: bold;">Hardware</i> tab.</li>
                                     </ol>
                                 </td>
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM0008.png" style="width: 575px;height: 544px;" />
+                                    <p class="Caption">Figure 306: Configuration Program - Hardware Tab</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -984,6 +1016,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM0009.png" style="width: 575px;height: 185px;" />
+                                    <p class="Caption">Figure 307: Configuration Program - Alarm on Continuous Boards</p>
                                 </td>
                             </tr>
                             <tr>
@@ -999,6 +1032,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM00010.png" style="width: 444px;height: 285px;" />
+                                    <p class="Caption">Figure 308: Alarm 16</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -1007,7 +1041,7 @@
                     <h3 class="Heading3"><a name="When_Alarm_18_Occurs"></a>When Alarm #18 Occurs</h3>
                     <p>&#160;</p>
                     <p>While the Barcode Traceability option is enabled, and at least 1 barcode is in the queue, whenever the board sensor detects an invalid board length – such as accidental trigger by user or mis-adjustment, the software will display Alarm #18 with two buttons for the user to specify what action is to be taken.</p>
-                    <h4 class="Heading4">OK remove barcode</h4>
+                    <h4 class="Heading4">OK Remove Barcode</h4>
                     <p>Select this button if you want to remove the barcode from the queue. This could occur if a real board entered the oven, but the software/sensor did not properly detect the board. No VP would be calculated for that board, so the barcode string that would have been assigned to that board would be removed.</p>
                     <p>&#160;</p>
                     <table class="table_2">
@@ -1024,13 +1058,14 @@
                                 <p class="p_77" style="text-align: center;">
                                     <img src="Resources/Images/FTM00038.png" />
                                 </p>
+                                <p class="Caption">Figure 309: Alarm 8a Remove Barcode</p>
                                 <p class="p_17">&#160;</p>
                                 <p class="p_17">&#160;</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="td_34" colspan="2">
-                                <h4 colspan="2" class="Heading4">Keep Barcode in queue.
+                                <h4 colspan="2" class="Heading4">Keep Barcode in Queue.
 </h4>
                                 <p colspan="2">Click this button if this was an accidental trigger of the board sensor and to keep the barcode in the queue.
 </p>
@@ -1047,6 +1082,7 @@
                                 <p class="p_20">
                                     <img src="Resources/Images/FTM00040.png" style="width: 417px;height: 268px;" class="img_1" />
                                 </p>
+                                <p class="Caption">Figure 310: Alarm 8a Keep Barcode in Queue</p>
                                 <p class="p_20">&#160;</p>
                             </td>
                         </tr>
@@ -1121,6 +1157,7 @@
                                 </td>
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/image220.png" />
+                                    <p class="Caption">Figure 311: Buzzer OFF/ON</p>
                                 </td>
                             </tr>
                         </tbody>

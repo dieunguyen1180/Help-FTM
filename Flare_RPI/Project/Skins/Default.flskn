@@ -20,7 +20,8 @@
     ShowMenuBar="False"
     TopmostWindowStyle="False"
     Buttons="Hide,Locate,Back,Forward,Stop,Refresh,Home,Font,Print"
-    EnableButtonCaptions="True" />
+    EnableButtonCaptions="True"
+    AdvancedSearch="false" />
   <Stylesheet />
   <Toc
     LinesBetweenItems="true"

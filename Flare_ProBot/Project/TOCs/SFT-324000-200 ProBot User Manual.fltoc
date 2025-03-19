@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultToc
-  Version="1"
-  sourceDocument="D:\SFT-324000-200 ProBot User Manual.doc">
+  Version="1">
   <TocEntry
     Title="PROBOT USER MANUAL"
     Link="/Content/User_Manual.htm"></TocEntry>
@@ -64,7 +63,7 @@
       Link="/Content/Running_a_Profile.htm#Specifying_oven_Characteristics" />
     <TocEntry
       Title="ATTACH THERMOCOUPLES"
-      Link="/Content/Running_a_Profile.htm#Verifying_the_Zone" />
+      Link="/Content/Running_a_Profile.htm#Attach_Thermocouples" />
     <TocEntry
       Title="ATTACH THERMOCOUPLES TO SEMICONDUCTOR WAFERS"
       Link="/Content/Running_a_Profile.htm#Attach_thermocouples_Semi" />
@@ -119,7 +118,7 @@
       Title="CREATE/LOAD A VIRTUAL PROFILE"
       Link="/Content/Profile_Explorer.htm#Creating_Loading_a" />
     <TocEntry
-      Title="USE THE PROFILE GROUPING UTILITY"
+      Title="USING THE PROFILE GROUPING UTILITY"
       Link="/Content/Profile_Explorer.htm#Using_the_Profile_Grouping_utility" />
   </TocEntry>
   <TocEntry
@@ -158,7 +157,7 @@
       Link="/Content/Printing.htm#Print_Format_2" />
   </TocEntry>
   <TocEntry
-    Title="WRITE DATA TO AND VIEW DATA OVER A NETWORK"
+    Title="WRITE DATA TO A NETWORK AND VIEWING"
     Link="/Content/Writing_data_to_and_viewing_data_over_a_network.htm">
     <TocEntry
       Title="WRITE DATA TO A NETWORK DRIVE"
@@ -173,6 +172,9 @@
     <TocEntry
       Title="ACKNOWLEDGE ALARMS"
       Link="/Content/Troubleshooting.htm#Acknowledging_alarms" />
+    <TocEntry
+      Title="CHANGE ALARM TEXT"
+      Link="/Content/Troubleshooting.htm#Change" />
     <TocEntry
       Title="MESSAGES DURING PROFILING AND BASELINE PROFILING"
       Link="/Content/troubleshooting.htm#Messages_for_baseline_profiling" />
@@ -307,7 +309,7 @@
       Link="/Content/Using_Auto_Focus.htm#Auto_Focus_Confirm" />
   </TocEntry>
   <TocEntry
-    Title="SAVE ENERGY WITH NAVIGATOR AND AUTO-FOCUS POWER"
+    Title="SAVE ENERGY WITH NAVIGATOR AND AUTO-FOCUS"
     Link="/Content/Saving_energy_with_Navigator_and_Auto_Focus.htm">
     <TocEntry
       Title="ENABLE THE POWER FEATURE IN AUTO-FOCUS"
@@ -323,7 +325,7 @@
     Title="USING THE LIVE INDEX SCREEN"
     Link="/Content/Using_the_Index_screen.htm">
     <TocEntry
-      Title="ACCESS THE LIVE PROFILE DATA FROM THE INDEX SCREEN:"
+      Title="ACCESS THE LIVE PROFILE DATA FROM THE INDEX SCREEN"
       Link="/Content/Using_the_Index_screen.htm#To_access_the_live" />
   </TocEntry>
   <TocEntry
@@ -436,7 +438,8 @@
         Link="/Content/Using_barcodes.htm#Remove_Barcode" />
     </TocEntry>
     <TocEntry
-      Title="DUAL LANE SYSTEMS AND BARCODING">
+      Title="DUAL LANE SYSTEMS AND BARCODING"
+      Link="/Content/Using_barcodes.htm#Dual-Lane_Systems_and_Barcoding">
       <TocEntry
         Title="DUAL LANE DUAL SYSTEM BARCODE FUNCTIONS"
         Link="/Content/Using_barcodes.htm#Dual-Lane_DS_Barcode_Fuction" />
@@ -548,11 +551,7 @@
     </TocEntry>
     <TocEntry
       Title="CONFIGURE LDO"
-      Link="/Content/Outputting_live_data.htm#Configure_LDO">
-      <TocEntry
-        Title="DELETE ACCUMULATED LDO FILES"
-        Link="/Content/Outputting_live_data.htm#Delete_Accumulated_LDO_Files" />
-    </TocEntry>
+      Link="/Content/Outputting_live_data.htm#Configure_LDO"></TocEntry>
   </TocEntry>
   <TocEntry
     Title="CENTRALIZED PROCESS WINDOW CONTROL"
@@ -578,11 +577,15 @@
       Link="/Content/Centralized Process Window Control.htm#Operation_of_RPI_software" />
   </TocEntry>
   <TocEntry
-    Title="FOOTPRINT"
+    Title="FOOTPRINT (OPTIONAL)"
     Link="/Content/Footprint.htm">
     <TocEntry
       Title="LIVE VIEWING"
-      Link="/Content/Footprint.htm#Live_Viewing" />
+      Link="/Content/Footprint.htm#Live_Viewing">
+      <TocEntry
+        Title="FOOTPRINT SETTINGS"
+        Link="/Content/Footprint.htm#Footprint_Settings" />
+    </TocEntry>
     <TocEntry
       Title="HISTORICAL VIEWING"
       Link="/Content/Footprint.htm#Historical_Viewing"></TocEntry>
@@ -624,10 +627,10 @@
       Link="/Content/System_message_alarms.htm#Acknowledging_alarms_option" />
     <TocEntry
       Title="MESSAGES DURING PROFILING AND BASELINE PROFILING"
-      Link="/Content/System_message_alarms.htm#Messages_for_baseline_profiling_option" />
-    <TocEntry
-      Title="SYSTEM MESSAGES AND ALARMS"
-      Link="/Content/System_message_alarms.htm#System_message_alarms_option">
+      Link="/Content/System_message_alarms.htm#Messages_for_baseline_profiling_option">
+      <TocEntry
+        Title="SYSTEM MESSAGES AND ALARMS"
+        Link="/Content/System_message_alarms.htm#System_message_alarms_option"></TocEntry>
       <TocEntry
         Title="MESSAGE, HIGH PWI"
         Link="/Content/System_message_alarms.htm#Message_High_PWI" />
@@ -800,21 +803,5 @@
   </TocEntry>
   <TocEntry
     Title="CONTACT KIC"
-    Link="/Content/Contacting_KIC.htm">
-    <TocEntry
-      Title="ON THE WEB"
-      Link="/Content/Contacting_KIC.htm#On_the_Web" />
-    <TocEntry
-      Title="KIC TECHNICAL SUPPORT"
-      Link="/Content/Contacting_KIC.htm#KIC_Technical_Support" />
-    <TocEntry
-      Title="KIC PRODUCT TRAINING"
-      Link="/Content/Contacting_KIC.htm#KIC_Product_Training" />
-    <TocEntry
-      Title="KIC SALES"
-      Link="/Content/Contacting_KIC.htm#KIC_Sales" />
-    <TocEntry
-      Title="FIND THE KIC REPRESENTATIVE IN YOUR AREA"
-      Link="/Content/Contacting_KIC.htm#Find_the_KIC" />
-  </TocEntry>
+    Link="/Content/Contacting_KIC.htm"></TocEntry>
 </CatapultToc>

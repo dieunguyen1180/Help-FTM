@@ -215,9 +215,10 @@
     <TocEntry
       Title="HISTORICAL MODE - TROUBLESHOOTING TAB"
       Link="/Content/Monitoring_production_in_live_mode.htm#Virtual_Profiling3" />
-    <TocEntry
-      Title="BARCODE FUNCTIONS"
-      Link="/Content/Monitoring_production_in_live_mode.htm#Barcode_functions" />
+  </TocEntry>
+  <TocEntry
+    Title="BARCODE FUNCTIONS"
+    Link="/Content/Monitoring_production_in_live_mode.htm#Barcode_functions">
     <TocEntry
       Title="BARCODE TYPES"
       Link="/Content/Monitoring_production_in_live_mode.htm#Barcode_types"></TocEntry>
@@ -278,6 +279,9 @@
       Title="DUAL LANE SINGLE SYSTEM BARCODE FUNCTIONS"
       Link="/Content/Dual_Lane_Systems_and_Functionality.htm#Dual-Lane_SS_Barcode_Fuction" />
   </TocEntry>
+  <TocEntry
+    Title="MULTI-LANE SYSTEM"
+    Link="/Content/Multi_Lane_System.htm"></TocEntry>
   <TocEntry
     Title="VACUUM REFLOW OVEN SYSTEMS AND FUNCTIONALITY"
     Link="/Content/Vacuum_Reflow_Oven.htm">
@@ -372,7 +376,7 @@
       Link="/Content/Profile_printing.htm#Format_2_landscape_mode" />
   </TocEntry>
   <TocEntry
-    Title="WRITE DATA TO AND VIEW RPI DATA OVER A NETWORK"
+    Title="WRITING RPI DATA TO A NETWORK AND VIEWING"
     Link="/Content/Writing_data_to_and_viewing_RPI_data_over_a_network.htm">
     <TocEntry
       Title="WRITE DATA TO A NETWORK DRIVE"
@@ -415,7 +419,10 @@
     Link="/Content/Troubleshooting.htm#Understanding_status_messages_and_alarms">
     <TocEntry
       Title="ACKNOWLEDGE ALARMS"
-      Link="/Content/Troubleshooting.htm#Acknowledging_alarms" />
+      Link="/Content/Troubleshooting.htm#Acknowledging_alarms"></TocEntry>
+    <TocEntry
+      Title="CHANGE ALARM TEXT"
+      Link="/Content/Troubleshooting.htm#Change_Alarm_Text" />
     <TocEntry
       Title="MESSAGES DURING PROFILING AND BASELINE PROFILING"
       Link="/Content/Troubleshooting.htm#Profiling_and_baseline" />
@@ -435,9 +442,6 @@
     <TocEntry
       Title="3 COLOR USB LIGHT TOWER"
       Link="/Content/Troubleshooting.htm#3_Color_USB_Light_Tower" />
-    <TocEntry
-      Title="ALARM TAB"
-      Link="/Content/Appendix_C.htm#AR_Matrix_Settings_Tab" />
   </TocEntry>
   <TocEntry
     Title="APPENDIX A: THE PROCESS WINDOW INDEX"
@@ -473,7 +477,11 @@
     Link="/Content/Appendix_C.htm">
     <TocEntry
       Title="USER SETTINGS TAB"
-      Link="/Content/Appendix_C.htm#User_Settings_Tab"></TocEntry>
+      Link="/Content/Appendix_C.htm#User_Settings_Tab">
+      <TocEntry
+        Title="Use Baseline Profile Expiration"
+        Link="/Content/Appendix_C.htm#Use_Baseline_Profile_Expiration" />
+    </TocEntry>
     <TocEntry
       Title="SHIFTING TAB"
       Link="/Content/Appendix_C.htm#Shifting_Tab" />
@@ -494,13 +502,64 @@
       Link="/Content/Appendix_C.htm#Message_Config_Tab" />
     <TocEntry
       Title="PASSWORD CONTROL – MULTI USER"
-      Link="/Content/Appendix_C.htm#Password_Control_Multi_User"></TocEntry>
+      Link="/Content/Appendix_C.htm#Password_Control_Multi_User">
+      <TocEntry
+        Title="Access to the Password Control Tab"
+        Link="/Content/Password_protection.htm#Password_Protection"></TocEntry>
+      <TocEntry
+        Title="Multi User Control"
+        Link="/Content/Appendix_C.htm#Multi_User_Control" />
+      <TocEntry
+        Title="Password Control Tab"
+        Link="/Content/Appendix_C.htm#Password_Control_Tab"></TocEntry>
+      <TocEntry
+        Title="User Type Area"
+        Link="/Content/Appendix_C.htm#User_Type_Area"></TocEntry>
+      <TocEntry
+        Title="Password Area"
+        Link="/Content/Appendix_C.htm#Password_Area"></TocEntry>
+      <TocEntry
+        Title="Password Timer Area"
+        Link="/Content/Appendix_C.htm#Password_Timer_Area"></TocEntry>
+      <TocEntry
+        Title="Main Screen with Password Control"
+        Link="/Content/Appendix_C.htm#Main_Screen_with_Password_Control"></TocEntry>
+      <TocEntry
+        Title="Main Screen Log In"
+        Link="/Content/Appendix_C.htm#Main_Screen_Log_In"></TocEntry>
+      <TocEntry
+        Title="Responding to an Alarm"
+        Link="/Content/Appendix_C.htm#Responding_to_an_Alarm" />
+    </TocEntry>
     <TocEntry
       Title="ALARM TAB"
-      Link="/Content/Appendix_C.htm#AR_Matrix_Settings_Tab"></TocEntry>
+      Link="/Content/Appendix_C.htm#AR_Matrix_Settings_Tab">
+      <TocEntry
+        Title="USB Light Tower configuration"
+        Link="/Content/Appendix_C.htm#USB_Light_Tower_configuration" />
+      <TocEntry
+        Title="Alarm Relay Configuration"
+        Link="/Content/Appendix_C.htm#AR_Matrix_Configuration" />
+    </TocEntry>
     <TocEntry
       Title="BARCODE TAB"
-      Link="/Content/Appendix_C.htm#Barcode_Tab"></TocEntry>
+      Link="/Content/Appendix_C.htm#Barcode_Tab">
+      <TocEntry
+        Title="Barcode Interface Method Area"
+        Link="/Content/Appendix_C.htm#Barcode_Interface_Method_Area" />
+      <TocEntry
+        Title="Missing Barcode Trigger Area"
+        Link="/Content/Appendix_C.htm#Missing_Barcode_Trigger_Area"></TocEntry>
+      <TocEntry
+        Title="Process Control String Area"
+        Link="/Content/Appendix_C.htm#Process_Control_String_Area"></TocEntry>
+      <TocEntry
+        Title="Disable Missing Barcode Option Area"
+        Link="/Content/Appendix_C.htm#Disable_Missing_Barcode_Option"></TocEntry>
+      <TocEntry
+        Title="Options"
+        Link="/Content/Appendix_C.htm#Options" />
+    </TocEntry>
   </TocEntry>
   <TocEntry
     Title="CONTACT KIC"

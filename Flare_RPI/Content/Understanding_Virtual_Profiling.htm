@@ -81,27 +81,38 @@
                     <p>If your software is not communicating directly with the oven controller, the software will display the Baseline profile recipe.  Make sure the oven is set to the exact recipe settings.</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
-                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000071a.png" />
+                        <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000071a.png" style="width: 766px;height: 177px;" />
                     </p>
-                    <p style="text-align: center;">Figure 67: Profile Explorer – Start Virtual Profiling</p>
+                    <p style="text-align: center;">Figure 102: Profile Explorer – Start Virtual Profiling</p>
                     <p style="text-align: center;">&#160;</p>
                     <p>If your oven is capable of communicating with the software and the current oven recipe matches the Baseline profile recipe, a dialog box will appear telling you that the recipe is already set correctly.  </p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000071b.png" />
                     </p>
-                    <p style="text-align: center;">Figure 68: Virtual Profiling – Oven Recipe Set Correctly</p>
+                    <p style="text-align: center;">Figure 103: Virtual Profiling – Oven Recipe Set Correctly</p>
                     <p style="text-align: center;">&#160;</p>
                     <p><b>Tip:</b> Oven Controller: If nothing happens within several seconds, check the oven control software to make sure there are no error messages or errors that will cause the system to hang. </p>
                     <p>&#160;</p>
+                    <h3 class="Heading3"><a name="Use_Lot_ID"></a>Use Lot ID</h3>
+                    <p>&#160;</p>
+                    <p>When starting Virtual Profiling, you can assign a Lot ID for that production run:</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/FTM00046.png" />
+                    </p>
+                    <p class="Caption">Figure 104: Lot ID entry</p>
+                    <p class="Caption">&#160;</p>
+                    <p>The ID will be saved with the historical data, which can then be used when searching for specific production runs at a later data. Selecting the OK button without entering an ID will continue the normal VP load sequence and no ID will be saved. If a user does not utilize Lot ID’s for production runs, selecting the <i>Do not show this again</i> checkbox will stop this window from appearing.</p>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Using_the_Profile_Grouping_utility"></a>Use the Profile Grouping Utility</h2>
                     <p class="p_6">RPI includes a utility that lets you identify and group together different products that share the same thermal profile.&#160; For example, one might use a physically identical printed circuit board to manufacture many distinct product models.&#160; The manufacturer needs to specifically identify and track all the different models, but the thermal process specifications used to solder or cure them is identical throughout the product range.&#160; Once a successful process window setup is identified for one model, RPI lets you <span class="span_6">link</span> that setup with other models that can use the same process and thus save the time and cost of entering the same setup specifications repeatedly.&#160; In Virtual Profile mode, the baseline profile of a <span class="span_6">parent</span> <span class="span_6">product </span>can be matched to multiple <span class="span_6">child</span><span class="span_6"> models</span>, permitting smooth production transitions between models.&#160; </p>
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000085a.png" />
                     </p>
+                    <p class="Caption">Figure 105: Profile Grouping Functions</p>
                     <p>&#160;</p>
-                    <p class="p_6">You enable the <span class="span_6">Profile Grouping</span> functionality by adjusting settings in the <span style="font-family: 'Courier New';">KIC2000UserSettings.kiccfg</span> file.&#160; Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
+                    <p class="p_6">You enable the <span class="span_6">Profile Grouping</span> functionality by adjusting settings in the <span class="ConfigFile">KIC2000UserSettings.kiccfg</span> file.&#160; Once accessing the APPLICATION CONFIGURATIONS section of the file, make sure the settings are as shown below:</p>
                     <p class="p_18"><span class="span_27">[</span>APPLICATION CONFIGURATIONS<span class="span_27">]</span></p>
                     <p class="p_40"><span style="font-family: 'Courier New';">EnableProfieGrouping=1</span>
                     </p>
@@ -138,6 +149,7 @@
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000087.png" style="height: 222px;width: 353px;" class="img_1" />
                     </p>
+                    <p class="Caption">Figure 106: Profile Grouping Utility Window</p>
                     <p class="p_3">&#160;</p>
                     <ol start="3" class="ol_2">
                         <li class="ListNumber2">From the <span class="span_7">Baseline Profile</span> list, select the product to which you want to link models.&#160; </li>
@@ -186,6 +198,7 @@
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000088.png" style="height: 218px;width: 346px;" class="img_1" />
                     </p>
+                    <p class="Caption">Figure 107: Profile Grouping Utility - VP Load Tab</p>
                     <p>&#160;</p>
                     <ol start="3" class="ol_2">
                         <li class="ListNumber2">In the <span class="span_7">Load and Start VP for</span> field, either type in a model number or use an HID barcode scanner to input an identification string.</li>
@@ -205,6 +218,7 @@
                                 <p>
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000089.png" style="height: 177px;width: 282px;" class="img_1" />
                                 </p>
+                                <p class="Caption">Figure 108: Profile Grouping Utility – VP Start Button</p>
                                 <p>&#160;</p>
                             </td>
                             <td>
@@ -222,6 +236,7 @@
                                 <p>
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/3000090.png" style="height: 113px;width: 283px;" class="img_1" />
                                 </p>
+                                <p class="Caption">Figure 109: Matched Model Links Window</p>
                             </td>
                             <td>
                                 <p>5b. Select a product/model pair from the pull-down lists and click the <span class="span_7">green check</span> (OK) button to return to the VP&#160;Load tab screen and start Virtual Profiling with the selected model.</p>
@@ -236,6 +251,7 @@
                                 <p>
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008A1.png" style="height: 126px;width: 285px;" class="img_1" />
                                 </p>
+                                <p class="Caption">Figure 110: Link Feature</p>
                             </td>
                             <td>
                                 <p class="p_6">5c. Click the <span class="span_7">Link</span> button. </p>
@@ -250,6 +266,7 @@
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008B1.png" style="height: 211px;width: 527px;" class="img_1" />
                     </p>
+                    <p class="Caption">Figure 111: Matched Model Links Screen</p>
                     <p>&#160;</p>
                     <ol start="6" class="ol_2">
                         <li class="ListNumber2">Input the model number and select a product baseline profile from the <span class="span_7">Product Name</span> pull-down list.</li>
@@ -263,20 +280,23 @@
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008C1.png" style="height: 201px;width: 318px;" class="img_1" />
                     </p>
-                    <p>&#160;</p>
+                    <p class="Caption">Figure 112: VP Load Tab - Linked Product</p>
+                    <p class="Caption">&#160;</p>
                     <ol start="8" class="ol_2">
                         <li class="ListNumber2">Click the <b>VP Start</b> button to begin Virtual Profiling with the selected model.</li>
                     </ol>
                     <p>&#160;</p>
                     <h4 class="Heading4">View the Linked Model on Other Screens</h4>
                     <p class="p_6">During Virtual Profiling, the name of the linked model appears in several places in the user interface.&#160; On the Profile Explorer screen, all linked models for a selected profile appear at the top of the screen and in the Child Model column:</p>
-                    <p class="p_6">
+                    <p class="p_6" style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008D1.png" style="width: 624px;height: 216px;" />
                     </p>
+                    <p class="Caption">Figure 113: Child Model</p>
                     <p class="p_6">The name also appears at the top of the profile data screen:</p>
                     <p class="p_42">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300008E.png" style="height: 246px;width: 596px;" class="img_1" />
                     </p>
+                    <p class="Caption">Figure 114</p>
                 </td>
             </tr>
         </table>

@@ -24,35 +24,43 @@
         <p>The <i>RPI Vacuum</i> system incorporates custom built thermal probes unique to the vacuum ovens which allow for monitoring the heated zones, vacuum chamber, and cooling section to provide complete monitoring of the PCB through the process.</p>
         <h2 class="Heading2"><a name="Display_Vacuum_Reflow_profile"></a>RPI Vacuum System Functionality</h2>
         <p>During profiling, the system identifies the duration that the PCB spent in the vacuum chamber, and the graphical display of the vacuum zone is drawn to match this time. A window is also displayed (and saved with the profile) showing how much time, in seconds, the PCB spent in the chamber.</p>
-        <p>
+        <p style="text-align: center;">
             <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014016.png" />
         </p>
+        <p class="Caption">Figure 193:  Vacuum zone – active</p>
+        <p class="Caption">&#160;</p>
         <p>On vacuum ovens, even if the vacuum chamber is not in use, the software will still display the vacuum zone on the graph, and show the time spent in that zone (based on length of zone defined and conveyor speed setpoint).</p>
-        <p>
+        <p style="text-align: center;">
             <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014017.png" />
         </p>
+        <p class="Caption">Figure 194: Vacuum zone – inactive</p>
         <p><a name="Display_Vacuum_Reflow_VP"></a>During production, as with systems installed on non-vacuum ovens, the live-mode screen displays both the baseline and virtual profile information.  To distinguish between the two, the baseline profile appears in a solid line format, while the virtual profile appears in dashed lines.</p>
         <p>&#160;</p>
         <p>The window showing the <i>Time in Vacuum Chamber</i> includes both the time from the baseline profile as well as the time the current production PCB spent in the chamber:</p>
-        <p>
+        <p style="text-align: center;">
             <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014018.png" />
         </p>
+        <p class="Caption">Figure 195: Time in Vacuum Comparison</p>
+        <p class="Caption">&#160;</p>
         <p>Additionally, a green line (<i>End of Vacuum Zone Indicator</i>) appears on the graph representing the calculated end of the vacuum zone. Depending on the time a given PCB spends in the chamber, this green line will shift forward or back to show the relative ‘size’ of the zone. More time in the chamber equates to a ‘longer’ zone, and less time a ‘shorter’ zone.</p>
         <p>&#160;</p>
         <p>As you can see in the example below, this PCB spent approximately 26 seconds less in the chamber than the baseline, so the green <i>End of Vacuum Zone</i> indicator is shifted forward to represent this ‘shorter’ zone size. Due to this, you can also see the VP (dotted lines) shows an earlier drop in the TC temperatures compared to the baseline:</p>
-        <p>
+        <p style="text-align: center;">
             <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014019.png" />
         </p>
+        <p class="Caption">Figure 196: Vacuum Zone Shifting</p>
+        <p class="Caption">&#160;</p>
         <p>In this example, the baseline profile spent much more time in the chamber, so the display of the vacuum zone is extended to represent a ‘longer’ zone:</p>
-        <p>
+        <p style="text-align: center;">
             <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014020.png" />
         </p>
+        <p class="Caption">Figure 197: Longer Vacuum Zone Example</p>
         <h3 class="Heading3">Additional Warning for Vacuum Process</h3>
         <p>On <i>RPI Vacuum</i> systems, an additional warning can be enabled for users who want to be notified if the time that production boards spend in the vacuum chamber varies too much from their baseline profile setup.</p>
         <table style="width: 100%;">
             <col style="width: 300px;" />
             <col style="width: 20px;" />
-            <col />
+            <col style="width: 676px;" />
             <tbody>
                 <tr>
                     <td style="font-size: 10pt;">
@@ -65,15 +73,16 @@ Enter the percentage of variation in time you will allow before the system shoul
 </p>
                     </td>
                     <td>&#160;</td>
-                    <td style="text-align: left;">
+                    <td style="text-align: center;">
                         <img src="Resources/Images/FTM0003.png" style="width: 533px;height: 436px;" />
+                        <p class="Caption">Figure 198: Enabling Warning</p>
                     </td>
                 </tr>
                 <tr>
                     <td style="font-size: 10pt;">
                         <p>Additionally, you can select the <i>Disable Alarm</i> tab to further customize what happens if this warning occurs. </p>
                         <p>&#160;</p>
-                        <p><b>Note</b>: Selecting a checkbox on this screen DISABLES the particular function.
+                        <p class="Note1tab"><b>Note</b>: Selecting a checkbox on this screen DISABLES the particular function.
 </p>
                         <p>&#160;</p>
                         <p>
@@ -85,8 +94,9 @@ By default, the warning message will appear on the screen (checkbox not selected
 </p>
                     </td>
                     <td>&#160;</td>
-                    <td style="text-align: left;">
+                    <td style="text-align: center;">
                         <img src="Resources/Images/FTM0004.png" />
+                        <p class="Caption">Figure 199: Disabling Crystal Ball</p>
                     </td>
                 </tr>
                 <tr>
@@ -100,8 +110,10 @@ By default, the warning message will appear on the screen (checkbox not selected
 </p>
                     </td>
                     <td>&#160;</td>
-                    <td style="text-align: left;">
+                    <td style="text-align: center;">
                         <img src="Resources/Images/FTM0005.png" />
+                        <p class="Caption">Figure 200: RPI Vacuum Warning</p>
+                        <p>&#160;</p>
                     </td>
                 </tr>
             </tbody>
@@ -125,8 +137,9 @@ By default, the warning message will appear on the screen (checkbox not selected
 </p>
                     </td>
                     <td>&#160;</td>
-                    <td style="font-size: 10pt;text-align: left;">
+                    <td style="font-size: 10pt;text-align: center;">
                         <img src="Resources/Images/FTM0006.png" />
+                        <p class="Caption">Figure 201: Enabling Fixed Board Length Logic</p>
                     </td>
                 </tr>
                 <tr>
@@ -138,8 +151,9 @@ By default, the warning message will appear on the screen (checkbox not selected
 </p>
                     </td>
                     <td>&#160;</td>
-                    <td style="font-size: 10pt;text-align: left;">
+                    <td style="font-size: 10pt;text-align: center;">
                         <img src="Resources/Images/FTM0007.png" style="width: 362px;height: 233px;" />
+                        <p class="Caption" style="text-align: center;">Figure 202: Alarm 17</p>
                     </td>
                 </tr>
             </tbody>

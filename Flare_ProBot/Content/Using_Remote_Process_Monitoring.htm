@@ -10,15 +10,13 @@
                 <td>
                     <h1 class="Heading1">Use Remote Process Monitoring</h1>
                     <p>Remote Process Monitoring (RPM) enables customers to view real-time thermal process data and process status for the software on their reflow or cure ovens from any authorized computer on the network.</p>
-                    <p>&#160;</p>
-                    <ul style="list-style-type: square;">
-                        <li>The software provides valuable thermal process information in real-time.  The RPM can supply this information to all relevant decision makers wherever they happen to be in the factory.  The results are better data management, efficient process management and oversight, and faster reaction to thermal process issues in the factory.<br /><br /></li>
-                        <li>RPM provides superior information sharing for the factory as a whole.  The software monitors, controls, and displays the thermal process information <i>for a single oven, at that oven</i>.  In contrast, RPM displays the pertinent data for <i>all your ovens</i> on any authorized network computer <i>on a single screen</i>.<br /><br /></li>
-                        <li>RPM translates complex process issues into an easy to understand format.  With RPM, line supervisors and quality, production, or engineering managers, can access factory-wide, real-time quality and productivity data without staff meetings, reports, or trips to the factory floor.</li>
-                    </ul>
-                    <p>&#160;</p>
-                    <p>Note: <b>The software key must remain connected at all times during use for barcode capabilities to function.</b><![CDATA[
-                    ]]></p>
+                    <blockquote>
+                        <p>The software provides valuable thermal process information in real-time.  The RPM can supply this information to all relevant decision makers wherever they happen to be in the factory.  The results are better data management, efficient process management and oversight, and faster reaction to thermal process issues in the factory.<br /><br /></p>
+                        <p>RPM provides superior information sharing for the factory as a whole.  The software monitors, controls, and displays the thermal process information <i>for a single oven, at that oven</i>.  In contrast, RPM displays the pertinent data for <i>all your ovens</i> on any authorized network computer <i>on a single screen</i>.<br /><br /></p>
+                        <p>RPM translates complex process issues into an easy to understand format.  With RPM, line supervisors and quality, production, or engineering managers, can access factory-wide, real-time quality and productivity data without staff meetings, reports, or trips to the factory floor.</p>
+                    </blockquote>
+                    <p style="text-indent: 1in;"><b>Note:</b> The software key must remain connected at all times during use for barcode capabilities to function.
+                    </p>
                     <p>&#160;</p>
                     <p class="p_4">RPM is comprised of three main software applications, and one optional software component:</p>
                     <ol start="1" class="ol_1">
@@ -26,7 +24,7 @@
                     </ol>
                     <p class="ListBullet2_1">&#160;</p>
                     <ol start="2" class="ol_1">
-                        <li class="ListNumber" style="font-size: 10pt;">KIC Server software:<br /><span style="font-weight: normal; font-size: 10pt;">The KIC Server software is installed onto a computer or drive on the network and acts as a host for all automatic system software instances running on the network with the RPM output.&#160; It automatically connects to all the systems that are running RPM and passes on the data to any authorized computer on the LAN that is properly logged on.&#160; A maximum of 100 ovens per Server is possible.&#160; The KIC Server has a setup menu for creating and editing user names and passwords for KIC Viewer users.</span></li>
+                        <li class="ListNumber" style="font-size: 10pt;">KIC Server software:<br /><span style="font-weight: normal; font-size: 10pt;">The KIC Server software is installed onto a computer or drive on the network and acts as a host for all automatic system software instances running on the network with the RPM output.&#160; It automatically connects to all the systems that are running RPM and passes on the data to any authorized computer on the LAN that is properly logged on.&#160; A maximum of 100 ovens per Server is possible.&#160; The KIC Server has a setup menu for creating and editing usernames and passwords for KIC Viewer users.</span></li>
                     </ol>
                     <p class="ListBullet2_1">&#160;</p>
                     <ol start="3" class="ol_1">
@@ -35,14 +33,14 @@
                     <p class="ListBullet2_1">&#160; </p>
                     <p class="ListBullet2_1">&#160;</p>
                     <ol start="4" class="ol_1">
-                        <li class="ListNumber" style="font-size: 10pt;">Win VNC:<br /><span style="font-weight: normal; font-size: 10pt;">Win VNC is an optional third-party software application that allows you to remotely control, or view the history for any system software client PC on the same LAN.  Win VNC lets you clear alarms, load recipes, and perform system administration tasks.</span></li>
+                        <li class="ListNumber" style="font-size: 10pt;">Win VNC:<br /><span style="font-weight: normal; font-size: 10pt;">Win VNC is an optional third-party software application that allows you to remotely control or view the history for any system software client PC on the same LAN.  Win VNC lets you clear alarms, load recipes, and perform system administration tasks.</span></li>
                     </ol>
                     <p>&#160;</p>
                     <p class="p_4">In full operation, the combined software and systems function as shown below.</p>
                     <p class="p_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000AE.png" style="width: 434px;height: 322px;" />
                     </p>
-                    <p class="Caption">Figure 124: RPM functional diagram</p>
+                    <p class="Caption">Figure 219: RPM functional diagram</p>
                     <p style="text-align: center;">&#160;</p>
                     <ul style="list-style-type: square;">
                         <li>Each system at the reflow or cure oven runs in Virtual Profiling mode, monitoring the process and giving real-time profile/process data for each production board.  The Virtual Profile data is stored locally on the client PC.<br /><br /></li>
@@ -64,7 +62,7 @@
                                     <ol>
                                         <li>Close the automatic software if open.
 </li>
-                                        <li>Using Windows Explorer, browse to the <span style="font-family: 'Courier New'; font-style: italic;">C:\software root directory</span>  and run the ConfigurationProgram.exe application.
+                                        <li>Using Windows Explorer, browse to the <span style="font-family: 'Courier New'; font-style: italic;">C:\software root directory</span>  and run the <i style="font-family: 'Courier New';">ConfigurationProgram.exe</i> application.
 </li>
                                         <li>Select the RPM tab
 </li>
@@ -83,9 +81,9 @@
                                     <p>&#160;</p>
                                 </td>
                                 <td>
-                                    <p class="Caption" style="text-align: left;">
+                                    <p class="Caption" style="text-align: center;">
                                         <img src="Resources/Images/image149.png" />
-                                        <br />Figure 125: KIC2000ReadOnly.kiccfg file</p>
+                                        <br />Figure 220: KIC2000ReadOnly.kiccfg file</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -153,6 +151,7 @@
                     <p class="p_4" style="text-align: center;">
                         <img src="Resources/Images/image151.png" style="width: 665px;height: 70px;" />
                     </p>
+                    <p class="Caption">Figure 221: KIC Watchdog</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="WinVNC"></a>WinVNC</h3>
                     <p>Virtual Network Computing (VNC) is remote control software that allows you to view and interact with another computer anywhere on a local network.&#160; The two computers do not even have to be the same type or have the same operating system.&#160; VNC also has the capability to remotely control any system software client PC.</p>
@@ -161,11 +160,11 @@
                     <p>&#160;</p>
                     <p>VNC software contains multiple applications including VNC Server.&#160; Run VNC Server on the client PC while Virtual Profiling is running in order to view historical data or remotely control any system software client PC via the KIC Viewer application.</p>
                     <p>&#160;</p>
-                    <p class="p_4">A VNC’s icon appears on the bottom right corner of the monitor.  See Figure 126.</p>
+                    <p class="p_4">A VNC’s icon appears on the bottom right corner of the monitor.  See Figure 222.</p>
                     <p class="Figure">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000B4a.png" style="width: 257px;height: 61px;" />
                     </p>
-                    <p class="Caption">Figure 126: VNC task tray icon</p>
+                    <p class="Caption">Figure 222: VNC task tray icon</p>
                     <p>To modify VNC properties:</p>
                     <table class="table_2">
                         <col style="width: 230pt;" />
@@ -189,7 +188,7 @@
                                 <p class="p_1">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000B5.png" />
                                 </p>
-                                <p class="Caption">Figure 127: VNC Properties</p>
+                                <p class="Caption">Figure 223: VNC Properties</p>
                             </td>
                         </tr>
                     </table>
@@ -201,10 +200,10 @@
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="To_install_the_KIC_Server"></a>Install the KIC Server
                     </h3>
-                    <p><span class="span_9">Note</span>: You must install the KIC Server manually.&#160; </p>
+                    <p style="text-indent: 0.9in;"><span class="span_9">Note</span>: You must install the KIC Server manually.&#160; </p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_2">
-                        <li>Browse the system software installation media for the KIC Server folder.</li>
+                        <li>Browse the system software installation media for the KIC Server folder.<br /></li>
                     </ol>
                     <p>&#160;</p>
                     <ol start="2" class="ol_2">
@@ -223,11 +222,11 @@
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="To_launch_the_KIC_Server"></a>Launch the KIC Server
                     </h3>
-                    <p>From the Windows desktop, click on: Start » Programs » KIC » KIC Server</p>
+                    <p>From the Windows desktop, click on: <span style="font-family: 'Courier New';">Start » Programs » KIC » KIC Server</span></p>
                     <p>&#160;</p>
                     <p class="p_54">Or </p>
                     <p>&#160;</p>
-                    <p>From Windows Explorer open <span style="font-family: 'Courier New'; font-size: 9pt;">C:\KIC Server\KICServer.exe</span></p>
+                    <p>From Windows Explorer open <span style="font-family: 'Courier New'; font-style: italic; font-size: 10pt;">C:\KIC Server\KICServer.exe</span></p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="KIC_Server_Icons"></a>KIC Server Icons</h3>
                     <table style="width: 50%;">
@@ -242,12 +241,12 @@
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/image152.png">
                                     </img>
-                                    <p class="Caption">Figure 128</p>
+                                    <p class="Caption">Figure 224</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>When first launched, the KIC Server application is idle; you must select the Start to Host button in order to enable hosting by the KIC Server.</p>
+                                    <p>When first launched, the KIC Server application is idle; you must select the <b>Start to Host</b> button in order to enable hosting by the KIC Server.</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -255,13 +254,13 @@
                                 <td style="text-align: center;">
                                     <img src="Resources/Images/image153.png" style="width: 70px;height: 70px;">
                                     </img>
-                                    <p class="Caption">Figure 129</p>
+                                    <p class="Caption">Figure 225</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                     <p>&#160;</p>
-                    <p>Once you select the Start to Host button, the icon will change indicating the KIC Server can accept connections.</p>
+                    <p>Once you select the <b>Start to Host</b> button, the icon will change indicating the KIC Server can accept connections.</p>
                     <p>&#160;</p>
                     <p>The KIC Server window is shown below.  The screen permits the following six functions:</p>
                     <ol start="1" class="ol_2">
@@ -297,15 +296,15 @@
                                     <li class="ListNumber2">Enter the new password.</li>
                                 </ol>
                                 <ol start="3" class="ol_2">
-                                    <li class="ListNumber2_3">Select the Add button.</li>
+                                    <li class="ListNumber2_3">Select the <b>Add</b> button.</li>
                                 </ol>
-                                <p>You are added to the list of users. To access a list of users select the List of Users dropdown menu.<br /><br />The user’s password is updated immediately.</p>
+                                <p>You are added to the list of users. To access a list of users select the <b style="font-style: italic;">List of Users</b> dropdown menu.<br /><br />The user’s password is updated immediately.</p>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
                                 <h3 class="Heading3"><a name="To_change_a_password"></a>Change a Password
                                 </h3>
                                 <ol start="1" class="ol_2">
-                                    <li class="ListNumber2">Click on the List of Users dropdown menu.</li>
+                                    <li class="ListNumber2">Click on the <b style="font-style: normal;">List of Users</b> dropdown menu.</li>
                                 </ol>
                                 <ol start="2" class="ol_2">
                                     <li class="ListNumber2">Select the user that you wish to modify.</li>
@@ -314,17 +313,17 @@
                                     <li class="ListNumber2">Enter the new password for that user.&#160; </li>
                                 </ol>
                                 <ol start="4" class="ol_2">
-                                    <li class="ListNumber2_3">Select the Change Password button.</li>
+                                    <li class="ListNumber2_3">Select the <b>Change Password</b> button.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <h3 class="Heading3"><a name="To_delete_a_user"></a>Delete a User
                                 </h3>
                                 <ol start="1" class="ol_2">
-                                    <li class="ListNumber2">Click on the List of Users dropdown menu.</li>
+                                    <li class="ListNumber2">Click on the <i style="font-weight: bold; font-style: normal;">List of Users</i> dropdown menu.</li>
                                 </ol>
                                 <ol start="2" class="ol_2">
                                     <li class="ListNumber2">Select the user that you wish to modify.</li>
-                                    <li class="ListNumber2">Select the Delete button.</li>
+                                    <li class="ListNumber2">Select the <b>Delete</b> button.</li>
                                 </ol>
                                 <p>
                                     <br />The user account deletes immediately.</p>
@@ -334,7 +333,7 @@
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000B8.png" style="width: 465px;height: 496px;" />
                                 </p>
-                                <p class="Caption">Figure 130: KIC Server Window</p>
+                                <p class="Caption">Figure 226: KIC Server Window</p>
                                 <p class="Caption">&#160;</p>
                             </td>
                         </tr>
@@ -347,14 +346,14 @@
                     <h2 class="Heading2"><a name="KIC_Viewer"></a>KIC Viewer</h2>
                     <p>KIC Viewer software lets you remotely view production data from all automatic systems connected to the KIC Server.  The software is included on the software installation media and can be installed on a desktop PC or any computer on the network. It can be installed on a separate PC or on the same PC with the KIC Server or the automatic system Client.</p>
                     <p>&#160;</p>
-                    <p><span class="span_9">Note</span>: Once installed, you first need to <span class="span_8">enable</span> the application in the configuration file and <span class="span_8">connect</span> to the KIC Server before you can launch the application.</p>
+                    <p style="text-indent: 0.5in;"><span class="span_9">Note</span>: Once installed, you first need to <span class="span_8">enable</span> the application in the configuration file and <span class="span_8">connect</span> to the KIC Server before you can launch the application.</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Installing_the_KIC_Viewer"></a>Install the KIC Viewer</h3>
                     <p>You must install the KIC Viewer manually.&#160; </p>
                     <p>&#160;</p>
                     <ol>
                         <li>Browse the automatic software installation media for the folder named <i>KIC Viewer</i>.&#160; </li>
-                        <li>In the folder, run the file <span class="span_9" style="font-weight: normal; font-family: 'Courier New';">Setup.exe</span>.&#160; </li>
+                        <li>In the folder, run the file <span class="span_9" style="font-weight: normal; font-family: 'Courier New'; font-style: italic;">Setup.exe</span>.&#160; </li>
                         <li>When the instillation begins, follow the on-screen directions.</li>
                     </ol>
                     <p>&#160;</p>
@@ -373,15 +372,15 @@
                             <td>
                                 <p>&#160;</p>
                                 <ol>
-                                    <li>Close the KIC Viewer application and then&#160; open the configuration file at the following location:<br /><span style="font-family: 'Courier New'; font-size: 9pt;">C:\Kicviewer\Configure\ kwConfigure.kcfg</span>  file – setup</li>
+                                    <li>Close the KIC Viewer application and then&#160; open the configuration file at the following location:<br /><span style="font-family: 'Courier New'; font-style: italic; font-size: 10pt;">C:\Kicviewer\Configure\ kwConfigure.kcfg</span>  file – setup</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <ol start="2">
-                                    <li>Set <span class="span_9" style="font-weight: normal; font-family: 'Courier New';">EnableRemoteControl</span> flag to = <span class="span_9">0</span>.</li>
+                                    <li>Set <span class="span_9" style="font-weight: normal; font-family: 'Courier New'; font-style: italic;">EnableRemoteControl</span> flag to = <span class="span_9" style="font-weight: normal; font-style: italic; font-family: 'Courier New';">0</span>.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <ol start="3">
-                                    <li>Set <span style="font-family: 'Courier New';">[RemoteControlPC] Enable</span> flag to = <b>1</b>. Search Mode for Optimization</li>
+                                    <li>Set <span style="font-family: 'Courier New'; font-style: italic;">[RemoteControlPC] Enable</span> flag to = <i style="font-family: 'Courier New';">1</i>. </li>
                                 </ol>
                                 <p>&#160;</p>
                                 <ol start="4">
@@ -393,6 +392,7 @@
                                 <p>
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000B9.png" style="width: 339px;height: 317px;" class="img_3" />
                                 </p>
+                                <p class="Caption" style="text-align: left;">Figure 227: Configuring Viewer Network Path</p>
                             </td>
                         </tr>
                     </table>
@@ -406,17 +406,17 @@
                             <td>
                                 <p>&#160;</p>
                                 <ol>
-                                    <li>Close the KIC Viewer application and then&#160; open the configuration file at the following location:<br /><span style="font-family: 'Courier New'; font-size: 9pt;">C:\Kicviewer\Configure\ kwConfigure.kcfg</span> file – setup:</li>
+                                    <li>Close the KIC Viewer application and then&#160; open the configuration file at the following location:<br /><span style="font-family: 'Courier New'; font-size: 10pt; font-style: italic;">C:\Kicviewer\Configure\ kwConfigure.kcfg</span> file – setup:</li>
                                 </ol>
                                 <p>
                                     <br />
                                 </p>
                                 <ol start="2">
-                                    <li>Set <span class="span_9" style="font-weight: normal; font-family: 'Courier New';">EnableRemoteControl</span> flag to = <span class="span_9">1</span>.</li>
+                                    <li>Set <span class="span_9" style="font-weight: normal; font-family: 'Courier New'; font-style: italic;">EnableRemoteControl</span> flag to = <span class="span_9" style="font-style: italic; font-weight: normal; font-family: 'Courier New';">1</span>.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <ol start="3">
-                                    <li>Set <span class="span_9" style="font-weight: normal; font-family: 'Courier New';">[RemoteControlPC] Enable</span> flag to = <span class="span_9">1</span>.</li>
+                                    <li>Set <span class="span_9" style="font-weight: normal; font-family: 'Courier New'; font-style: italic;">[RemoteControlPC] Enable</span> flag to = <span class="span_9" style="font-style: italic; font-weight: normal; font-family: 'Courier New';">1</span>.</li>
                                 </ol>
                                 <p>&#160;</p>
                                 <ol start="4">
@@ -428,6 +428,7 @@
                                 <p>
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000BA.png" />
                                 </p>
+                                <p class="Caption" style="text-align: left;">Figure 228: Viewer VNC Configuration</p>
                             </td>
                         </tr>
                     </table>
@@ -435,7 +436,7 @@
                     <h3 class="Heading3"><a name="Connecting_to_the_KIC_Server"></a>Connect to the KIC Server</h3>
                     <p>To connect to a KIC Server, enter a valid username and password from the KIC Viewer machine.  See <a href="Using_Remote_Process_Monitoring.htm#KIC_Server" style="color: #0000ff; text-decoration: underline;">KIC Server</a> for details.</p>
                     <p>&#160;</p>
-                    <p><span class="span_9">Note</span>: It is very helpful to have the IP address of the PC running the KIC Server application as this information is required each time a KIC Viewer connects to a KIC Server.</p>
+                    <p style="text-indent: 0.5in;"><span class="span_9">Note</span>: It is very helpful to have the IP address of the PC running the KIC Server application as this information is required each time a KIC Viewer connects to a KIC Server.</p>
                     <p>&#160;</p>
                     <p>To launch the application:</p>
                     <table class="table_2">
@@ -445,14 +446,15 @@
                             <tr>
                                 <td>
                                     <ol>
-                                        <li>From the Windows desktop, click Start » Programs » KIC » KIC Viewer<br /><br /></li>
-                                        <li>From Windows Explorer: Open <span style="font-family: 'Courier New'; font-size: 9pt;">C:\KIC Viewer\KICViewer.exe</span><br /><br /></li>
+                                        <li>From the Windows desktop, click <span style="font-family: 'Courier New';">Start » Programs » KIC » KIC Viewer</span><br /><br /></li>
+                                        <li>From Windows Explorer: Open <span style="font-family: 'Courier New'; font-style: italic; font-size: 10pt;">C:\KIC Viewer\KICViewer.exe</span><br /><br /></li>
                                         <li>Enter the KIC Server IP address, a valid username and password.</li>
                                     </ol>
                                     <p>&#160;</p>
                                 </td>
                                 <td>
                                     <img src="Resources/Images/image154.png" />
+                                    <p class="Caption">Figure 229: KIC Viewer</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -462,7 +464,7 @@
                     <p class="Figure">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000BB.png" />
                     </p>
-                    <p class="Caption">Figure 131: KIC Viewer – Main Screen</p>
+                    <p class="Caption">Figure 230: KIC Viewer – Main Screen</p>
                     <h3 class="Heading3">The KIC Viewer Toolbar Button Menu</h3>
                     <table align="center" class="table_1">
                         <col style="width: 216pt;" />
@@ -506,21 +508,19 @@
                     <p>
                         <br />
                     </p>
-                    <ul style="list-style-type: square;">
-                        <li>Oven selection – Allows you to turn On/Off the ovens to view.</li>
-                    </ul>
+                    <p>Oven selection – Allows you to turn On/Off the ovens to view.</p>
                     <p>&#160;</p>
                     <p class="Figure">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000CA.png" style="width: 384px;height: 324px;" />
                     </p>
-                    <p class="Caption">Figure 132: KIC Viewer – Activate/Deactivate Ovens</p>
+                    <p class="Caption">Figure 231: KIC Viewer – Activate/Deactivate Ovens</p>
                     <p>&#160;</p>
                     <h3 class="Heading3">Icon View</h3>
                     <p class="p_4">The Icon view provides the oven name, product name, Process Window Index (PWI) value, Cpk value, and alarm state for each product as they exit the oven with system software.  The alarm states are color-coded (green, yellow, red) in accordance with the standard system software alarm categories.  This information is organized as a box per oven.  </p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000CB.png" style="width: 699px;height: 529px;" />
                     </p>
-                    <p class="Caption">Figure 133: KIC Viewer – Icon View</p>
+                    <p class="Caption">Figure 232: KIC Viewer – Icon View</p>
                     <p>&#160;</p>
                     <p>A grey oven box can indicate there is a problem with the oven:</p>
                     <p>&#160;</p>
@@ -553,7 +553,7 @@
                                 <p>&#160;</p>
                                 <p>If you want to see all products profiled on this oven, then click on the “Browse” button (top right corner).  </p>
                                 <p>&#160;</p>
-                                <p>Click <b>OK</b> in the pop up box asking to select a working folder.  Then all of product names appears as shown.</p>
+                                <p>Click <b>OK</b> in the pop-up box asking to select a working folder.  Then all of product names appears as shown.</p>
                                 <p>&#160;</p>
                                 <p>Click on the main screen button to exit View History mode.</p>
                                 <p>&#160;</p>
@@ -562,7 +562,7 @@
                                 <p style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000CC.png" style="width: 582px;height: 410px;" />
                                 </p>
-                                <p class="Caption">Figure 134: Profiler Explorer via AppForViewer</p>
+                                <p class="Caption">Figure 233: Profiler Explorer via AppForViewer</p>
                             </td>
                         </tr>
                     </table>
@@ -576,7 +576,7 @@
                                 <p class="Figure">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000CDa.png" />
                                 </p>
-                                <p class="Caption">Figure 135: Profile Explorer</p>
+                                <p class="Caption">Figure 234: Profile Explorer</p>
                             </td>
                             <td class="td_35">
                                 <p class="Figure" style="text-align: center;">
@@ -585,7 +585,7 @@
                                     </div>
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000CEa.png" />
                                 </p>
-                                <p style="text-align: center;">Figure 136: Profile Graph – General Tab</p>
+                                <p style="text-align: center;">Figure 235: Profile Graph – General Tab</p>
                             </td>
                         </tr>
                         <tr>
@@ -596,7 +596,7 @@
                                     </div>
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000CFa.png" />
                                 </p>
-                                <p class="Caption">Figure 137: Profile Graph – Chart Tab</p>
+                                <p class="Caption">Figure 236: Profile Graph – Chart Tab</p>
                             </td>
                             <td class="td_35">
                                 <p class="Figure">
@@ -605,7 +605,7 @@
                                     </div>
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000D0a.png" />
                                 </p>
-                                <p class="Caption">Figure 138: Profile Graph – Troubleshooting Tab</p>
+                                <p class="Caption">Figure 237: Profile Graph – Troubleshooting Tab</p>
                             </td>
                         </tr>
                     </table>
@@ -630,7 +630,7 @@
                                 <p class="p_1">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000D1.png" style="width: 304px;height: 111px;" />
                                 </p>
-                                <p class="Caption">Figure 139: VNC Authentication</p>
+                                <p class="Caption">Figure 238: VNC Authentication</p>
                                 <p class="p_1">&#160;</p>
                             </td>
                         </tr>
@@ -643,7 +643,7 @@
                                 <p class="p_1">
                                     <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000D2.png" />
                                 </p>
-                                <p class="Caption">Figure 140</p>
+                                <p class="Caption">Figure 239</p>
                             </td>
                         </tr>
                     </table>
@@ -652,7 +652,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/020000D3.png" style="width: 764px;height: 561px;" />
                     </p>
-                    <p class="Caption">Figure 141: Remote Control screen Shot</p>
+                    <p class="Caption">Figure 240: Remote Control screen Shot</p>
                     <p>&#160;</p>
                     <p>To end Remote Control, and return to the KIC Viewer application, manually close the VNC Viewer software application.</p>
                     <p>&#160;</p>
@@ -661,14 +661,14 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000D4.png" style="width: 765px;height: 579px;" />
                     </p>
-                    <p class="Caption">Figure 142: KIC Viewer – Chart View</p>
+                    <p class="Caption">Figure 241: KIC Viewer – Chart View</p>
                     <p>&#160;</p>
                     <p>In the chart view, right click on an oven box to display a full-screen chart for that oven. </p>
                     <p>&#160;</p>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/030000D5.png" style="width: 765px;height: 578px;" />
                     </p>
-                    <p class="Caption">Figure 143: KIC Viewer – Full-screen oven chart view</p>
+                    <p class="Caption">Figure 242: KIC Viewer – Full-screen oven chart view</p>
                     <p>&#160;</p>
                 </td>
             </tr>

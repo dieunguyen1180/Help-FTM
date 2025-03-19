@@ -28,6 +28,7 @@
                                 <p style="text-align: left;">
                                     <img src="Resources/Images/image32.png" style="width: 319px;height: 203px;" />
                                 </p>
+                                <p class="Caption" style="text-align: left;">Figure 123: Alarm 8</p>
                             </td>
                         </tr>
                     </table>
@@ -51,18 +52,18 @@
                                 <p style="text-align: left;">
                                     <img src="Resources/Images/image33.png" style="width: 316px;height: 197px;" />
                                 </p>
+                                <p class="Caption" style="text-align: left;">Figure 124: Acknowledging Alarms</p>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <p>&#160;</p>
-                                <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the <span style="font-family: 'Courier New';">KIC2000UserSettings.kiccfg</span> file:
+                                <p>You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the <span style="font-family: 'Courier New'; font-style: italic;">KIC2000UserSettings.kiccfg</span> file:
 </p>
                                 <p>&#160;</p>
-                                <p>[HOST]
+                                <p style="font-family: 'Courier New';font-style: italic;">[HOST]
 </p>
-                                <p><span style="font-family: 'Courier New'; font-size: 9pt;">UsingPasswordwithRedAlarm=1
-</span>
+                                <p style="font-family: 'Courier New';font-style: italic;"><span style="font-family: 'Courier New'; font-size: 10pt;">UsingPasswordwithRedAlarm=1</span>
                                 </p>
                                 <p>&#160;</p>
                                 <p>Next, you need to specify a password on the Global Preferences screen <i>Engineer Password</i> option.  Once password protection is in place, clicking a red alarm message displays a prompt that requires you to enter the password to acknowledge the alarm and remove the message.
@@ -89,9 +90,24 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image35.png" style="width: 351px;height: 226px;" />
                     </p>
+                    <p class="Caption">Figure 125: Alarm Condition - Engineer Password</p>
                     <p>&#160;</p>
                     <blockquote>
                         <p><b>Note:</b> Password protection only applies to alarms.  A simple mouse click acknowledges and clears warning messages.</p>
+                        <p>&#160;</p>
+                        <h2 class="Heading2"><a name="Change"></a>Change Alarm Text</h2>
+                        <p>A utility is available to modify the text in the Alarm and Warning message boxes. This can be used to customize the text, or to change the language displayed in the message. With the software closed, browse to the <i>C:\RPI</i> directory and double-click the <i>ChangeAlarmText.exe</i> to open the utility:</p>
+                        <p>&#160;</p>
+                        <p style="text-align: center;">
+                            <img src="Resources/Images/image2272.png" />
+                        </p>
+                        <p class="Caption">Figure 126: Change Alarm Text</p>
+                        <p class="Caption">&#160;</p>
+                        <p>To change the text for one (1) or more messages, select the check box at the top of the screen. The left side of the screen is read-only and shows the default text for each message. The right side of the screen is where a user can update the text to be displayed.</p>
+                        <p>After changes are completed, click the <i>Save</i> button to save any changes, then the <i>Exit</i> button to close the utility.</p>
+                        <p>&#160;</p>
+                        <p style="text-indent: 0.5in;"><b>IMPORTANT:</b> Do not remove or reposition any of the ‘X_VALUES’ or ‘&lt;CR&gt;’ entries. These must remain in the edited message.</p>
+                        <p>&#160;</p>
                     </blockquote>
                     <p>&#160;</p>
                     <h2 class="Heading2"><a name="Messages_for_baseline_profiling"></a>Messages During Profiling and Baseline Profiling</h2>
@@ -161,7 +177,7 @@
                                             <p class="p_1" style="text-align: left;">
                                                 <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000101.png" />
                                             </p>
-                                            <p class="Figure">Figure 85: Message High PWI</p>
+                                            <p class="Figure">Figure 127: Message High PWI</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -175,7 +191,7 @@
                                             <p style="text-align: left;">
                                                 <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000102.png" />
                                             </p>
-                                            <p class="Figure">Figure 86: Alarm H2</p>
+                                            <p class="Figure">Figure 128: Alarm H2</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -190,7 +206,7 @@
                                             <p style="text-align: left;">
                                                 <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000103.png" />
                                             </p>
-                                            <p class="Figure">Figure 87: Alarm H7</p>
+                                            <p class="Figure">Figure 129: Alarm H7</p>
                                         </td>
                                     </tr>
                                 </table>
@@ -302,7 +318,8 @@
                                             <p class="p_20">Alarm H1</p>
                                         </td>
                                         <td class="td_18">
-                                            <p> <span class="span_25"> DAU Communication Failure (happened after Alarm H2)</span></p>
+                                            <p><span class="span_25"> eTPU/DAU Communication Failure (happened after Alarm H2)</span>
+                                            </p>
                                         </td>
                                         <td class="td_18">
                                             <p class="p_20">Yes</p>
@@ -313,7 +330,7 @@
                                             <p class="p_20">Alarm H2</p>
                                         </td>
                                         <td class="td_18">
-                                            <p><span class="span_25">DAU Lost Communication with PC.</span>
+                                            <p><span class="span_25">eTPU/DAU Lost Communication with PC.</span>
                                             </p>
                                             <p><span class="span_25">Not</span><span class="span_25">This Alarm condition can activate the Alarm Relay.</span>
                                             </p>
@@ -407,14 +424,14 @@
                                 <p>To change to this operation:</p>
                                 <ol>
                                     <li>Exit the software</li>
-                                    <li>Using Windows Explorer, browse to the <span style="font-family: 'Courier New'; font-style: italic;">C:\ software root \Log</span> directory and open the <span style="font-family: 'Courier New'; font-style: italic;">KIC2000ReadOnly.kiccfg</span></li>
+                                    <li>Using Windows Explorer, browse to the <span style="font-family: 'Courier New'; font-style: italic;">C:\ software root directory\Log</span> directory and open the <span style="font-family: 'Courier New'; font-style: italic;">KIC2000ReadOnly.kiccfg</span></li>
                                     <li>Modify the line <i style="font-family: 'Courier New';">AROnUntilAcknowledge=0</i> to <i style="font-family: 'Courier New';">=1</i></li>
                                     <li>Save and Close the file, then restart the software</li>
                                 </ol>
                                 <p>&#160;</p>
-                                <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum allowable back-to-back boards has been exceeded</h3>
+                                <h3 class="Heading3"><a name="Alarm_16"></a>Alarm #16 – Maximum Allowable back-to-back boards has been exceeded</h3>
                                 <p>This is alarm in disabled by default. You may want to enable this optional alarm if you want to be alerted when too many products are being loaded back-to-back into the oven, which can sometimes lead to other process related issues. It will allow you to specify how many consecutive back-to-back boards are allowed. If that number is exceeded, an alarm will be generated.</p>
-                                <h4 class="Heading4">To enable:</h4>
+                                <h4 class="Heading4">To Enable:</h4>
                                 <table>
                                     <col style="width: 400px;" />
                                     <col style="width: 20px;" />
@@ -423,12 +440,13 @@
                                         <tr>
                                             <td>
                                                 <ol>
-                                                    <li>Exit the software, browse to the <i style="font-family: 'Courier New';">C:\ software root</i>  directory and run the <span style="font-family: 'Courier New'; font-style: italic;">ConfigurationProgram.exe</span>. Select the Hardware tab.</li>
+                                                    <li>Exit the software, browse to the <i style="font-family: 'Courier New';">C:\ software root directory</i>  directory and run the <span style="font-family: 'Courier New'; font-style: italic;">ConfigurationProgram.exe</span>. Select the <i style="font-weight: bold;">Hardware</i> tab.</li>
                                                 </ol>
                                             </td>
                                             <td>&#160;</td>
                                             <td>
                                                 <img src="Resources/Images/FTM0008.png" style="width: 544px;height: 514px;" />
+                                                <p class="Caption">Figure 130: Hardware Tab</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -440,6 +458,7 @@
                                             <td>&#160;</td>
                                             <td>
                                                 <img src="Resources/Images/FTM0009.png" style="width: 543px;height: 174px;" />
+                                                <p class="Caption">Figure 131: Hardware Tab - Product Board Sensor</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -453,6 +472,7 @@
                                             <td>&#160;</td>
                                             <td>
                                                 <img src="Resources/Images/FTM00010.png" />
+                                                <p class="Caption">Figure 132: Alarm 16</p>
                                             </td>
                                         </tr>
                                     </tbody>

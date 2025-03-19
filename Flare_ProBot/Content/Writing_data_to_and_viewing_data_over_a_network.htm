@@ -8,7 +8,7 @@
             <col with="width: 1200px" />
             <tr>
                 <td>
-                    <h1 class="Heading1">Write Data to and View Data Over a Network</h1>
+                    <h1 class="Heading1">Write Data to a Network and Viewing</h1>
                     <h2 class="Heading2"><a name="Writing_data_to_a_Network"></a>Write Data to a Network Drive</h2>
                     <p>The software can be configured to write the collected data (oven files, process windows, profiles and historical VP data) to a network drive location.  This would allow data from one or even multiple systems to be stored in one centralized location (Server/Shared Hard Drive).</p>
                     <p>&#160;</p>
@@ -16,29 +16,29 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000080.png" style="width: 528px;height: 271px;" />
                     </p>
-                    <p class="Caption">Figure 78: Example Network </p>
+                    <p class="Caption">Figure 115: Example Network </p>
                     <p>&#160;</p>
-                    <p>Once you have mapped the drive, create a folder on the network drive and copy in the following folders from the <i>C:\ software root  directory</i> – Log, Ovens, Process Specs, and Profiles.  Once completed, follow the steps below on the PC where the automatic system software is installed:</p>
+                    <p>Once you have mapped the drive, create a folder on the network drive and copy in the following folders from the <i style="font-family: 'Courier New';">C:\ software root  directory</i> – Log, Ovens, Process Specs, and Profiles.  Once completed, follow the steps below on the PC where the automatic system software is installed:</p>
                     <p>&#160;</p>
                     <ol start="1" class="ol_1">
-                        <li class="ListNumber4">Ensure the automatic system software is closed, open Windows Explorer, and locate the file: <i style="font-family: 'Courier New'; font-size: 9pt;">C:\software root directory \Log\KIC2000DataPath.kiccfg</i></li>
+                        <li class="ListNumber4">Ensure the automatic system software is closed, open Windows Explorer, and locate the file: <i style="font-family: 'Courier New'; font-size: 10pt;">C:\software root directory \Log\KIC2000DataPath.kiccfg</i></li>
                     </ol>
                     <p>&#160;</p>
                     <ol start="2" class="ol_1">
-                        <li class="ListBullet2_4">The <span style="font-family: 'Courier New'; font-size: 9pt;">KIC2000DataPath.kiccfg</span> file will open up in Notepad:</li>
+                        <li class="ListBullet2_4">The <span style="font-family: 'Courier New'; font-style: italic; font-size: 10pt;">KIC2000DataPath.kiccfg</span> file will open up in Notepad:</li>
                     </ol>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000081.png" style="height: 176px;width: 469px;" class="img_3" />
                     </p>
-                    <p class="Caption">Figure 79</p>
+                    <p class="Caption">Figure 116: KIC2000DataPath</p>
                     <p class="Caption">&#160;</p>
                     <ol start="3" class="ol_1">
-                        <li class="ListBullet2_4">Change the line <span style="font-family: 'Courier New';">AllowUserToManuallyChangeWorkingDataPathInThisIniFile=0</span> to the value <span style="font-family: 'Courier New';">=1</span>:  </li>
+                        <li class="ListBullet2_4">Change the line <span style="font-family: 'Courier New'; font-style: italic;">AllowUserToManuallyChangeWorkingDataPathInThisIniFile=0</span> to the value <span style="font-family: 'Courier New'; font-style: italic;">=1</span>:  </li>
                     </ol>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000082.png" style="height: 194px;width: 518px;" class="img_3" />
                     </p>
-                    <p class="Caption">Figure 80</p>
+                    <p class="Caption">Figure 117: Change Data Path</p>
                     <p>&#160;</p>
                     <ol start="4" class="ol_1">
                         <li class="ListBullet2_4">Change all of the lines shown below to = the desired network location. </li>
@@ -51,10 +51,10 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000083.png" style="height: 190px;width: 506px;" class="img_3" />
                     </p>
-                    <p class="Caption">Figure 81</p>
+                    <p class="Caption">Figure 118: Change Network Path</p>
                     <p>&#160;</p>
                     <ol start="5" class="ol_1">
-                        <li class="ListBullet2">Once the <span style="font-family: 'Courier New';">DataPath.kiccfg</span> file has been modified with the new locations, choose File/Save from the drop-down menu to save the changes.</li>
+                        <li class="ListBullet2">Once the <span style="font-family: 'Courier New'; font-style: italic;">DataPath.kiccfg</span> file has been modified with the new locations, choose File/Save from the drop-down menu to save the changes.</li>
                     </ol>
                     <p>&#160;</p>
                     <ol start="6" class="ol_1">
@@ -67,16 +67,14 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000084a.png" />
                     </p>
-                    <p class="Caption">Figure 82</p>
+                    <p class="Caption">Figure 119: Profile Explorer – Browse Button</p>
                     <p>&#160;</p>
                     <p>Your new network drive should be displayed in the upper right-hand corner of the screen as the Current Data Path.</p>
-                    <p>&#160;</p>
                     <blockquote>
                         <p><b>Note</b>: The Network path will be grayed out and cannot be changed from inside of Profile Explorer.</p>
                     </blockquote>
                     <p>&#160;</p>
                     <p>All data collected in this software application will now be written to the network folder chosen.&#160; </p>
-                    <p>&#160;</p>
                     <blockquote>
                         <p style="text-align: left;"><span class="span_9">Note</span>: If you have multiple automatic systems, you will need to create a separate folder on the Network drive for each system – e.g. Line 1, Line 2, etc.</p>
                     </blockquote>
@@ -86,8 +84,9 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image2244.png" style="width: 421px;height: 150px;" />
                     </p>
+                    <p class="Caption">Figure 120: Network Path Issue Pop-up</p>
                     <p>&#160;</p>
-                    <p>When this occurs, you are still able to use the software but only working with files (ovens, Process Windows, profiles) that are located in the local directory. It will temporarily reset back to the local install directory and any new files generated or updated will be saved in the local directory (C:\ProBot). If the network connection is re-established, the software must be restarted to begin writing directly to the network directory again.</p>
+                    <p>When this occurs, you are still able to use the software but only working with files (ovens, Process Windows, profiles) that are located in the local directory. It will temporarily reset back to the local install directory and any new files generated or updated will be saved in the local directory (<i style="font-family: 'Courier New';">C:\ProBot</i>). If the network connection is re-established, the software must be restarted to begin writing directly to the network directory again.</p>
                     <p>&#160;</p>
                     <p>Any data that was collected while the software was offline will be moved to the network directory after the connection has been re-established and the software is restarted.</p>
                     <p>&#160;</p>
@@ -95,17 +94,17 @@
                     <p>You can also view all collected data over the network from any computer that has the software installed.</p>
                     <p><a name="To_view_historical_data_over_the_network"></a>To view historical data over the network:</p>
                     <p>&#160;</p>
-                    <ol start="1" class="ol_1">
-                        <li class="ListBullet2">From your <u>remote</u> computer, start the software and click on the <i style="font-weight: bold; font-style: normal;">I am not going to run profiles or live Virtual Profiling</i> button.</li>
+                    <ol>
+                        <li>From your <i>remote</i> computer, start the software and click on the <i style="font-weight: bold; font-style: normal;">I am not going to run profiles or live Virtual Profiling</i> button.</li>
                     </ol>
-                    <blockquote>
-                        <p><b><u>Caution</u>:</b> Do not choose this button when working at the PC where the system hardware is installed.</p>
-                    </blockquote>
+                    <p>&#160;</p>
+                    <p class="ListBullet2_1"><b>Caution:</b> Do not choose this button when working at the PC where the system hardware is installed.</p>
+                    <p>&#160;</p>
                     <p>&#160;</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-200 ProBot User Manual/03000003a.png" style="width: 590px;height: 341px;" />
                     </p>
-                    <p class="Caption">Figure 83</p>
+                    <p class="Caption">Figure 121: I am not going to run profiles or live Virtual Profiling button</p>
                     <p>&#160;</p>
                     <ol start="2" class="ol_1">
                         <li class="ListBullet2">The software will open up normally.&#160; When the main screen appears, click on the <b>Profile Explorer</b> button.</li>
@@ -114,24 +113,15 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image229.png" />
                     </p>
-                    <p class="Caption">Figure 84</p>
+                    <p class="Caption">Figure 122: Profile Explorer – Browse Buttons</p>
                     <p>&#160;</p>
                     <ol start="3" class="ol_1">
                         <li class="ListBullet2">A <b>Browse</b> button will be enabled in the upper right-hand corner of the screen: <br /><br />You can now click the <b>Browse</b> button and point to the directory where your profiles are.  Keep in mind that you want to direct it to the root directory of the main “Profiles” folder.<br /><br />For example:  If the profiles are in the folder  <span style="font-family: 'Courier New'; font-style: italic;">F:\software root directory\Profiles\Board A</span><br />you would direct it only to the folder  <i style="font-family: 'Courier New';">F:\software root directory\</i>.</li>
                     </ol>
-                    <p> </p>
+                    <p> <br /></p>
                     <p>
                         <br />
-                        <br />
                     </p>
-                    <p>
-                        <br />
-                        <br />
-                    </p>
-                    <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p>&#160;</p>
-                    <p>&#160;</p>
                 </td>
             </tr>
         </table>

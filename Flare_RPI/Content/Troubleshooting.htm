@@ -5,7 +5,7 @@
     </head>
     <body>
         <table style="width: 1000px;">
-            <col style="width: 1000px;" />
+            <col style="width: 1034px;" />
             <tr>
                 <td>
                     <h1 class="Heading1"><a name="Troubleshoot_COM_Ports"></a>Troubleshoot COM Ports</h1>
@@ -15,21 +15,21 @@
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300010B.png" style="height: 271px;width: 381px;" class="img_2" />
                     </p>
-                    <p class="Caption">Figure 160: COMPort Test – Main Screen</p>
+                    <p class="Caption">Figure 280: COMPort Test – Main Screen</p>
                     <p>&#160;</p>
                     <p>Once the <span style="font-family: 'Courier New';">COMport.exe</span> software is open, select the COM port that you wish to test and click the <b>Run Test on Selected Ports</b> button.  A message appears in the main window.  </p>
                     <p>&#160;</p>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300010C.png" style="width: 384px;height: 273px;" class="img_2" />
                     </p>
-                    <p class="Caption">Figure 161: COMPort Test – Run Test successful</p>
+                    <p class="Caption">Figure 281: COMPort Test – Run Test successful</p>
                     <p>&#160;</p>
                     <p>If the COM port is not active or is in use by different software, you will see a message in the main window: </p>
                     <p>&#160;</p>
                     <p class="Figure_1">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0300010D.png" style="width: 378px;height: 267px;" class="img_2" />
                     </p>
-                    <p class="Caption">Figure 162 COM Port Test – Run Test failed</p>
+                    <p class="Caption">Figure 282: COM Port Test – Run Test failed</p>
                     <h3 class="Heading3">Comport.Exe Buttons</h3>
                     <p>&#160;</p>
                     <p>
@@ -50,7 +50,7 @@
                     <p>The software communicates system status through messages that it displays on the monitor.&#160; Some simply report an operating condition, some provide a warning that process parameters are changing, and still others, called <span class="span_6">alarms</span><span class="span_6">,</span> announce out-of-spec conditions, operational failures, lost communications, and other process critical problems that might require immediate corrective actions.&#160; </p>
                     <p>&#160;</p>
                     <table class="table_1">
-                        <col style="width: 299px;" />
+                        <col style="width: 421px;" />
                         <col style="width: 20px;" />
                         <col />
                         <tr>
@@ -60,9 +60,10 @@
                             </td>
                             <td>&#160;</td>
                             <td class="td_29">
-                                <p>
-                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/06000112.png" style="width: 366px;height: 231px;" class="img_1" />
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/06000112.png" style="width: 295px;height: 185px;" class="img_1" />
                                 </p>
+                                <p class="Caption">Figure 283: Alarm</p>
                             </td>
                         </tr>
                     </table>
@@ -80,15 +81,16 @@
                             </td>
                             <td>&#160;</td>
                             <td class="td_30">
-                                <p>
-                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000113.png" style="width: 368px;height: 234px;" class="img_1" />
+                                <p style="text-align: center;">
+                                    <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000113.png" style="width: 300px;height: 189px;" class="img_1" />
                                 </p>
+                                <p class="Caption">Figure 284: Acknowledging Alarms</p>
                             </td>
                         </tr>
                         <tr>
                             <td class="td_31">
                                 <p class="p_6">&#160;</p>
-                                <p class="p_6">You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the <span style="font-family: 'Courier New';">KIC2000UserSettings.kiccfg</span> file:</p>
+                                <p class="p_6">You can use password protection to limit the ability to acknowledge alarms.  To do so, you first need to specify the following value in the <span style="font-family: 'Courier New';" class="ConfigFile">KIC2000UserSettings.kiccfg</span> file:</p>
                                 <p class="p_10">[HOST]</p>
                                 <p class="p_6"><span style="font-family: 'Courier New';">UsingPasswordwithRedAlarm=1</span>
                                 </p>
@@ -99,7 +101,7 @@
                                 <p class="p_6">&#160;</p>
                                 <p class="p_6">&#160;</p>
                                 <p class="p_6">&#160;</p>
-                                <p class="p_6">
+                                <p class="p_6" style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000114.png" style="height: 29px;width: 150px;" class="img_1" />
                                 </p>
                             </td>
@@ -109,8 +111,24 @@
                     <p class="p_3">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000115.png" style="height: 230px;width: 356px;" class="img_1" />
                     </p>
+                    <p class="Caption">Figure 285: Alarm Password Popup</p>
                     <p>&#160;</p>
-                    <p><span class="span_7">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
+                    <p class="Note1tab"><span class="span_7">Note</span>: Password protection only applies to alarms.&#160; A simple mouse click acknowledges and clears warning messages.</p>
+                    <p class="Note1tab">&#160;</p>
+                    <h2 class="Heading2"><a name="Change_Alarm_Text"></a>Change Alarm Text</h2>
+                    <p>&#160;</p>
+                    <p>A utility is available to modify the text in the Alarm and Warning message boxes. This can be used to customize the text, or to change the language displayed in the message. With the software closed, browse to the <span class="ConfigFile">C:\RPI</span> directory and double-click the <span class="ConfigFile">ChangeAlarmText.exe</span> to open the utility:</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/FTM00051.png" />
+                    </p>
+                    <p class="Caption">Figure 286: Change Alarm Text</p>
+                    <p class="Caption">&#160;</p>
+                    <p>To change the text for one (1) or more messages, select the check box at the top of the screen. The left side of the screen is read-only and shows the default text for each message. The right side of the screen is where a user can update the text to be displayed.</p>
+                    <p>After changes are completed, click the <i>Save</i> button to save any changes, then the <i>Exit</i> button to close the utility.</p>
+                    <p>&#160;</p>
+                    <p class="Note1tab"><b>IMPORTANT:</b> Do not remove or reposition any of the ‘X_VALUES’ or ‘&lt;CR&gt;’ entries. These must remain in the edited message.</p>
+                    <p>&#160;</p>
+                    <p>&#160;</p>
                     <h2 class="Heading2"><a name="Profiling_and_baseline"></a>Messages During Profiling and Baseline Profiling</h2>
                     <p>During the profiling portion of getting your RPI ready to monitor and record real-time production and prior to starting a Virtual Profile, you may experience some conditions that cause the system to alert you to.  Below is a table of some of the messages that you might see during this process:  See Table 2.</p>
                     <p>&#160;</p>
@@ -169,7 +187,7 @@
                                 <p class="p_3" style="text-align: left;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000116.png" />
                                 </p>
-                                <p class="Figure" style="text-align: left;">Figure 159: Message High PWI
+                                <p class="Figure" style="text-align: left;">Figure 287: Message High PWI
                                 </p>
                             </td>
                         </tr>
@@ -184,7 +202,7 @@
                                 <p style="text-align: left;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000117.png" />
                                 </p>
-                                <p class="Figure" style="text-align: left;">Figure 160: Alarm H2</p>
+                                <p class="Figure" style="text-align: left;">Figure 288: Alarm H2</p>
                             </td>
                         </tr>
                         <tr>
@@ -199,7 +217,7 @@
                                 <p style="text-align: left;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/03000118.png" />
                                 </p>
-                                <p class="Figure" style="text-align: left;">Figure 161: Alarm H7</p>
+                                <p class="Figure" style="text-align: left;">Figure 289: Alarm H7</p>
                             </td>
                         </tr>
                     </table>
@@ -493,9 +511,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p style="text-align: center;">
                                         <img src="Resources/Images/image4.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 290: Alarm 5a Manual Entry Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -507,9 +526,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p style="text-align: center;">
                                         <img src="Resources/Images/image6.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 291: Manual Barcode Entry</p>
                                 </td>
                             </tr>
                         </table>
@@ -521,6 +541,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image7.png" style="width: 799px;height: 578px;" />
                     </p>
+                    <p class="Caption">Figure 292: Manual Entry Barcode Attached to Product</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h4 class="Heading4">Rescan Using Fixed Mount Scanner
@@ -540,9 +561,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image8.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 293: Alarm 5a Rescan Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -554,9 +576,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image10.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 294: Rescan Input</p>
                                 </td>
                             </tr>
                         </table>
@@ -570,6 +593,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image11.png" style="width: 692px;height: 500px;" />
                     </p>
+                    <p class="Caption">Figure 295: Rescanned Barcode Attached to Product</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -590,9 +614,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image12.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 296: Proceed without Barcode Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -602,6 +627,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image15.png" style="width: 643px;height: 464px;" />
                     </p>
+                    <p class="Caption">Figure 297: Barcode not Attached to Product</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -627,9 +653,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image16.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 298: Remove Board from Line Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -641,9 +668,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image18.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 299: Remove Board Confirmation</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -673,9 +701,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image22.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 300: Alarm 5c Manual Entry Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -687,9 +716,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image24.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 301: Barcode Manual Entry</p>
                                 </td>
                             </tr>
                         </table>
@@ -701,6 +731,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image25.png" style="width: 610px;height: 442px;" />
                     </p>
+                    <p class="Caption">Figure 302: Manually Attached Barcode</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -723,9 +754,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image26.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 303: Alarm 5c Rescan Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -737,9 +769,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image27.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 304: Rescan Barcode</p>
                                 </td>
                             </tr>
                         </table>
@@ -753,6 +786,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image29.png" style="width: 556px;height: 404px;" />
                     </p>
+                    <p class="Caption">Figure 305: Rescan Barcode Attached to Product</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -774,9 +808,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image30.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 306: Alarm 5c Proceed without Barcode Button</p>
                                 </td>
                             </tr>
                         </table>
@@ -786,6 +821,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image32.png" style="width: 605px;height: 439px;" />
                     </p>
+                    <p class="Caption">Figure 307: Removed Barcode</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -812,9 +848,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image33.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 308: Alarm 5c Remove Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -828,9 +865,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image34.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 309: Removed Barcode</p>
                                 </td>
                             </tr>
                         </table>
@@ -856,10 +894,11 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image43.png" style="width: 383px;height: 246px;" />
                                     </p>
-                                    <p>&#160;</p>
+                                    <p class="Caption">Figure 310: Alarm 12 Stop VP Button</p>
+                                    <p class="Caption">&#160;</p>
                                 </td>
                             </tr>
                             <tr>
@@ -870,9 +909,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image45.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 311: Stop VP Confirmation</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -882,9 +922,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image47.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 312</p>
                                 </td>
                             </tr>
                         </table>
@@ -907,9 +948,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image48.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 313: Alarm 12 Process with current Barcode Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -919,9 +961,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image50.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 314: Current Barcode Attached to Product</p>
                                 </td>
                             </tr>
                         </table>
@@ -943,9 +986,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image51.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 315: Alarm 12 Remove Board Button</p>
                                     <p>&#160;</p>
                                 </td>
                             </tr>
@@ -957,9 +1001,10 @@
                                 </td>
                                 <td>&#160;</td>
                                 <td>
-                                    <p>
+                                    <p class="Caption">
                                         <img src="Resources/Images/image53.png" style="width: 383px;height: 246px;" />
                                     </p>
+                                    <p class="Caption">Figure 316: Remove Confirmation</p>
                                 </td>
                             </tr>
                         </table>
@@ -982,6 +1027,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM0008.png" style="width: 608px;height: 577px;" />
+                                    <p class="Caption">Figure 317: Configuration Program - Hardware Tab</p>
                                 </td>
                             </tr>
                             <tr>
@@ -993,6 +1039,7 @@
                                 <td>&#160;</td>
                                 <td>
                                     <img src="Resources/Images/FTM0009.png" />
+                                    <p class="Caption">Figure 318: Enabling Alarm 16</p>
                                 </td>
                             </tr>
                             <tr>
@@ -1004,8 +1051,9 @@
 </p>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/FTM00010.png" style="width: 444px;height: 285px;" />
+                                    <p class="Caption">Figure 319: Alarm 16</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -1031,8 +1079,9 @@
                                     </ol>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/FTM00038.png" />
+                                    <p class="Caption">Figure 320: Alarm 18 Remove Barcode Button</p>
                                 </td>
                             </tr>
                             <tr>
@@ -1052,8 +1101,10 @@
                                     </ol>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/FTM00040.png" style="width: 423px;height: 271px;" class="img_1" />
+                                    <p class="Caption">Figure 321: Alarm 18 Keep Barcode in Queue Button</p>
+                                    <p>&#160;</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -1073,22 +1124,37 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image103.png" />
                     </p>
+                    <p class="Caption">Figure 322: Crystal Ball Audio Icon</p>
                     <h3 class="Heading3">LED Light Status
                     </h3>
                     <p>&#160;</p>
-                    <p>When VP is not running – All LEDs and buzzer are turned off</p>
+                    <ul>
+                        <li>When VP is not running – All LEDs and buzzer are turned off</li>
+                    </ul>
                     <p>&#160;</p>
-                    <p>When VP is running and the process is in-spec but the oven is empty – GREEN LED flashing</p>
+                    <ul>
+                        <li>When VP is running and the process is in-spec but the oven is empty – GREEN LED flashing</li>
+                    </ul>
                     <p>&#160;</p>
-                    <p>When VP is running and the process is in-spec with product in the oven – GREEN LED on solid</p>
+                    <ul>
+                        <li>When VP is running and the process is in-spec with product in the oven – GREEN LED on solid</li>
+                    </ul>
                     <p>&#160;</p>
-                    <p>When VP is running and the process is in a Warning condition – YELLOW LED on solid</p>
+                    <ul>
+                        <li>When VP is running and the process is in a Warning condition – YELLOW LED on solid</li>
+                    </ul>
                     <p>&#160;</p>
-                    <p>When VP is running and the process is in an Alarm condition – RED LED on solid</p>
+                    <ul>
+                        <li>When VP is running and the process is in an Alarm condition – RED LED on solid</li>
+                    </ul>
                     <p>&#160;</p>
-                    <p>When VP is running and the process is in an Alarm condition w/Buzzer muted – RED LED flashing</p>
+                    <ul>
+                        <li>When VP is running and the process is in an Alarm condition w/Buzzer muted – RED LED flashing</li>
+                    </ul>
                     <p>&#160;</p>
-                    <p>To customize the operation of either the USB Light Tower or the Alarm Relay, see the <a href="Appendix_C.htm#AR_Matrix_Settings_Tab" style="color: #0000ff; text-decoration: underline;">Alarm tab</a> section.</p>
+                    <ul>
+                        <li>To customize the operation of either the USB Light Tower or the Alarm Relay, see the <a href="Appendix_C.htm#AR_Matrix_Settings_Tab" style="color: #0000ff; text-decoration: underline;">Alarm tab</a> section.</li>
+                    </ul>
                     <p>&#160;</p>
                     <p><b>Note:</b> For more information about the Light Tower and Alarm Relay, see the <i><MadCap:shortcut path="TFS-330210-000 Automatic System Hardware Installation and Maintenance Manual.pdf" parameters="" class="shortcut_1">Automatic System Hardware Installation Manual (TFS-330210-000)</MadCap:shortcut></i></p>
                     <p>&#160;</p>

@@ -43,6 +43,7 @@
                             <td>&#160;</td>
                             <td>
                                 <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000140.png" />
+                                <p class="Caption">Figure 337: User Settings Tab</p>
                             </td>
                         </tr>
                     </table>
@@ -88,8 +89,9 @@
                                 </blockquote>
                             </td>
                             <td>&#160;</td>
-                            <td width="50%">
+                            <td width="50%" style="text-align: center;">
                                 <img src="Resources/Images/FTM00042.png" style="width: 551px;height: 453px;" />
+                                <p class="Caption" style="text-align: center;">Figure 338: Control Limits Tab</p>
                             </td>
                         </tr>
                         <tr>
@@ -113,8 +115,9 @@
                                 </ol>
                             </td>
                             <td>&#160;</td>
-                            <td>
+                            <td style="text-align: center;">
                                 <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001404.png" style="width: 549px;height: 348px;" />
+                                <p class="Caption">Figure 339: Baseline Profile Validity Search</p>
                             </td>
                         </tr>
                         <tr>
@@ -127,8 +130,9 @@
                                 <p>Select the check box and then enter the required measurements.  Contact supplier of system for assistance.</p>
                             </td>
                             <td>&#160;</td>
-                            <td>
+                            <td style="text-align: center;">
                                 <img src="Resources/Images/FTM00043.png" style="width: 581px;height: 386px;" />
+                                <p class="Caption">Figure 340: Shifting Tab</p>
                             </td>
                         </tr>
                         <tr>
@@ -139,8 +143,9 @@
                                 <p>This area controls the number of decimal places for the Conveyor Speed and Zone Setpoints displays in the software.</p>
                             </td>
                             <td>&#160;</td>
-                            <td>
+                            <td style="text-align: center;">
                                 <img src="Resources/Images/FTM00044.png" style="width: 578px;height: 289px;" />
+                                <p class="Caption">Figure 341: Decimal Tab</p>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
                                 <p>&#160;</p>
@@ -154,15 +159,50 @@
                                 <p>This area controls the configuration of the eTPU or DAU network address, allows for enabling or disabling of the oven communication when applicable, and for adjusting parameters for the board sensor operations.</p>
                             </td>
                             <td>&#160;</td>
-                            <td>
+                            <td style="text-align: center;">
                                 <img src="Resources/Images/FTM00045.png" style="width: 580px;height: 550px;" />
+                                <p class="Caption">Figure 342: Hardware Tab</p>
                             </td>
                         </tr>
                     </table>
                     <h2 class="Heading2"><a name="Auto-VP_Tab"></a>Auto-VP Tab
                     </h2>
                     <p><i>Auto-VP</i> is a specialized feature for product changeovers that is dependent on a wide variety of variables. There are multiple configurations of the Auto-VP feature depending on the capabilities and processes in place in the factory. Contact your systems supplier to identify if this functionality can be implemented with your system.</p>
+                    <table>
+                        <col style="width: 400px;" />
+                        <col />
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p><b>Disable/Enable:</b> turns on or off Auto-VP functionality.</p>
+                                    <p>&#160;</p>
+                                    <p><b>Auto-VP Interface:</b>
+                                    </p>
+                                    <ul>
+                                        <li>Internal: automatically changes over Virtual Profile to match the currently loaded oven recipe. NOTE: requires software communication between automatic system and oven control software.</li>
+                                        <li>Barcode: using a Product ID string from a products barcode to identify which VP should be loaded/running.</li>
+                                    </ul>
+                                    <p>&#160;</p>
+                                    <p><b>Product ID Format:</b> used only when Barcode is selected as the interface type.</p>
+                                    <p><b>Use Exclusion List:</b>
+                                    </p>
+                                    <ul>
+                                        <li><b>Recipe Name:</b> when the Internal interface is selected, VP will not be run when specified recipes are loaded.</li>
+                                        <li><b>Product ID:</b> when the Barcode interface is selected, VP will not be run when specified Product IDs and received.</li>
+                                    </ul>
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="Resources/Images/FTM00052.png" style="width: 569px;height: 542px;" />
+                                    <p class="Caption">Figure 343: Auto-VP Tab</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><b>VP Countdown Timers:</b> can be used when more time is needed for the machine to stabilize during the changeover process before starting VP.</p>
                     <p>&#160;</p>
+                    <p><b>Lot ID on Start:</b> will display the Lot ID entry window before starting a VP during the changeover process.</p>
+                    <p>&#160;</p>
+                    <p><b>Changeover Verification:</b> when a new Product ID is received, displays a message window that allows a user to confirm or cancel that the Auto-VP changeover process should continue.</p>
                     <h2 class="Heading2"><a name="RPM_Tab"></a>RPM Tab
                     </h2>
                     <p>&#160;</p>
@@ -186,8 +226,9 @@
                                 </blockquote>
                             </td>
                             <td>&#160;</td>
-                            <td width="50%">
+                            <td width="50%" style="text-align: center;">
                                 <img src="Resources/Images/image108.png" style="width: 580px;height: 550px;" />
+                                <p class="Caption">Figure 344: Message Configuration Tab</p>
                             </td>
                         </tr>
                     </table>
@@ -214,6 +255,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000002.png" style="width: 618px;height: 586px;" />
                     </p>
+                    <p class="Caption">Figure 345: Password Control Tab</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Multi_User_Control"></a>Multi User Control
@@ -226,6 +268,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000003.png" style="width: 628px;height: 545px;" />
                     </p>
+                    <p class="Caption">Figure 346: Multi User Control Prompt</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Password_Control_Tab"></a>Password Control Tab
@@ -236,6 +279,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000006.png" style="width: 642px;height: 609px;" />
                     </p>
+                    <p class="Caption">Figure 347: Password Control Chart</p>
                     <p>&#160;</p>
                     <p><b>Stop VP Selections</b>
                     </p>
@@ -269,8 +313,9 @@
                                 <p><b>Cancel</b> – The <i>Stop</i> request will be cancelled, and the VP will c<b>ontinue to run.</b></p>
                             </td>
                             <td>&#160;</td>
-                            <td width="50%">
+                            <td width="50%" style="text-align: center;">
                                 <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001405.png" />
+                                <p class="Caption" style="text-align: center;">Figure 348</p>
                             </td>
                         </tr>
                         <tr>
@@ -286,8 +331,9 @@
                                 <p>&#160;</p>
                             </td>
                             <td>&#160;</td>
-                            <td>
+                            <td style="text-align: center;">
                                 <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001405a.png" />
+                                <p class="Caption">Figure 349</p>
                             </td>
                         </tr>
                         <tr>
@@ -295,8 +341,9 @@
                                 <p>If the <i>Force Stop</i> selection is used, additional notes will be automatically added into the <i>Description</i> column in Profile Explorer. It will note which user level stopped the VP, and how many products were still in the oven when the stop occurred.</p>
                             </td>
                             <td>&#160;</td>
-                            <td>
+                            <td style="text-align: center;">
                                 <img src="Resources/Images/SFT-324000-000 RPI User Manual/080001406.png" />
+                                <p class="Caption">Figure 350</p>
                             </td>
                         </tr>
                     </table>
@@ -318,6 +365,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000007.png" style="width: 715px;height: 682px;" />
                     </p>
+                    <p class="Caption">Figure 351: Password Control User Type</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -331,6 +379,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000008.png" style="width: 686px;height: 658px;" />
                     </p>
+                    <p class="Caption">Figure 352: Password Control Timer</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Password_Timer_Area"></a>Password Timer Area
@@ -351,6 +400,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000146.png" />
                     </p>
+                    <p class="Caption">Figure 353: RPI Main Screen with Password Control Enabled</p>
                     <p>&#160;</p>
                     <p style="text-indent: 0.5in;"><b>Note:</b> The Operator user type is the default, and typically has the least access privileges.</p>
                     <p>&#160;</p>
@@ -362,11 +412,13 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000147.png" style="width: 614px;height: 461px;" />
                     </p>
+                    <p class="Caption">Figure 354: Log In Prompt</p>
                     <p>&#160;</p>
                     <p style="text-indent: 0.5in;"><b>Note:</b> that you can log in from most screens, such as from the Log in button in the lower left of the Graph screen.</p>
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000148.png" />
                     </p>
+                    <p class="Caption">Figure 355: Log In Button from Graph Screen</p>
                     <p>&#160;</p>
                     <h4 class="Heading4">Example of Limited Access to Functions
                     </h4>
@@ -375,6 +427,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000149.png" />
                     </p>
+                    <p class="Caption">Figure 356: Log In Button in the Process Window</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -384,6 +437,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000150.png" />
                     </p>
+                    <p class="Caption">Figure 357: Log In Prompt in an Alarm</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
@@ -404,8 +458,9 @@
                                     <p>To use the USB Light Tower, select the <b style="font-style: italic;">Enable USB Light Tower</b> checkbox. This will enable the default operation of the USB Light Tower as previously described.</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000009.png" style="width: 579px;height: 176px;" />
+                                    <p class="Caption">Figure 358: Enabling the USB Light Tower</p>
                                 </td>
                             </tr>
                             <tr>
@@ -414,8 +469,9 @@
                                     <p>When enabled, you will also have the ability to customize the operation of the USB Light Tower. Select the <b style="font-style: italic;">Use USB Light Tower Matrix</b> checkbox to activate the matrix functions.</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000010.png" style="width: 586px;height: 182px;" />
+                                    <p class="Caption">Figure 359: Enabling USB Light Tower Matrix</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -437,13 +493,14 @@
                                     <p>&#160;</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000011.png" style="width: 586px;height: 556px;" />
+                                    <p class="Caption">Figure 360: Light Tower Matrix</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <h3 class="Heading3"><a name="AR_Matrix_Configuration"></a>Alarm Relay configuration</h3>
+                    <h3 class="Heading3"><a name="AR_Matrix_Configuration"></a>Alarm Relay Configuration</h3>
                     <p>&#160;</p>
                     <table style="width: 100%;">
                         <col style="width: 400px;" />
@@ -456,8 +513,9 @@
                                     <p>&#160;</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td style="text-align: left;">
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000012.png" style="width: 582px;height: 149px;" />
+                                    <p class="Caption">Figure 361: Alarm Relay Configuration</p>
                                 </td>
                             </tr>
                             <tr>
@@ -477,7 +535,7 @@
                                     <p>&#160;</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td style="text-align: left;"> <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000013.png" style="width: 567px;height: 538px;" /></td>
+                                <td style="text-align: center;"> <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000013.png" style="width: 567px;height: 538px;" /><p class="Caption">Figure 362: Alarm Relay Matrix</p></td>
                             </tr>
                         </tbody>
                     </table>
@@ -491,6 +549,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000004.png" style="width: 602px;height: 570px;" />
                     </p>
+                    <p class="Caption">Figure 363: Barcode Tab</p>
                     <p>&#160;</p>
                     <p><b>Enable Barcode Traceability –</b>  this check box enables or disables the Traceability barcode feature. This feature links each product’s profile data with its barcode.</p>
                     <p>&#160;</p>
@@ -512,10 +571,13 @@
                                 <p><b>PC Com Port –</b> via 9 pin serial port or USB Port on PC. <b>NOTE</b>: To use a USB barcode scanner, it must be programmable for a USB Serial Port interface.</p>
                                 <p>&#160;</p>
                                 <p><b>OEM –</b> only available with specific oven manufacturers</p>
+                                <p>&#160;</p>
+                                <p><b>MES –</b> only available when one of the MES interface options has been purchased.</p>
                             </td>
                             <td>&#160;</td>
-                            <td width="50%">
+                            <td width="50%" style="text-align: center;">
                                 <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000005.png" />
+                                <p class="Caption">Figure 364: Barcode Hardware Interface Selection</p>
                             </td>
                         </tr>
                     </table>
@@ -525,6 +587,7 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/FTMSFT0000001.png" style="width: 701px;height: 139px;" />
                     </p>
+                    <p class="Caption">Figure 365: Barcode Com Port Configuration</p>
                     <p>&#160;</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Missing_Barcode_Trigger_Area"></a>Missing Barcode Trigger Area
@@ -544,7 +607,7 @@
                                     <p>&#160;</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td style="text-align: left;"> <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000157.png" /><p>&#160;</p></td>
+                                <td style="text-align: center;"> <img src="Resources/Images/SFT-324000-000 RPI User Manual/08000157.png" /><p class="Caption">Figure 366: Missing Barcode Trigger Configuration</p><p>&#160;</p><p>&#160;</p></td>
                             </tr>
                             <tr>
                                 <td colspan="3"><b style="font-size: 10pt;">No Read From Scanner</b> – some scanners can be programmed with a “No Read” output.  If “ No Read” is the string received, the  Missing Barcode Alarm is generated.<p>&#160;</p><p><b>Disable</b> – the software will never generate a Missing Barcode alarm. Typically used when some other process verification is in use and the alarm from KIC is not required/desired.</p><p>&#160;</p></td>
@@ -569,8 +632,9 @@
                                     <p>&#160;</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td style="text-align: left;">
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014026.png" style="width: 379px;height: 106px;" />
+                                    <p class="Caption">Figure 367: Process Control String Selection</p>
                                 </td>
                             </tr>
                             <tr>
@@ -596,8 +660,9 @@
                                     <p>The four selections listed represent buttons that a user can click on when a Barcode alarm appears on the screen. By selecting a particular checkbox, the software will no longer display that button on the alarm message dialog window.</p>
                                 </td>
                                 <td>&#160;</td>
-                                <td>
+                                <td style="text-align: center;">
                                     <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014010.png" style="width: 374px;height: 162px;" />
+                                    <p class="Caption">Figure 368: Missing Barcode Configuration</p>
                                 </td>
                             </tr>
                         </tbody>
@@ -607,11 +672,13 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/SFT-324000-000 RPI User Manual/0800014011.png" style="width: 439px;height: 282px;" />
                     </p>
+                    <p class="Caption">Figure 369</p>
                     <p>&#160;</p>
                     <h3 class="Heading3"><a name="Options"></a>Options</h3>
                     <p style="text-align: center;">
                         <img src="Resources/Images/image137.png" />
                     </p>
+                    <p class="Caption">Figure 370: Barcode Options</p>
                     <p>&#160;</p>
                     <p><b>Remove duplicate barcodes:</b> For situations where a barcode scanner always sends out multiple scans for each barcode read, enabling this function forces the software to ignore duplicate barcode strings. Once a given string is received, it will ignore any duplicate receipts of that same string. When a different string is received, the filter function resets.</p>
                     <p>&#160;</p>
@@ -633,7 +700,29 @@
                     <p style="text-align: center;">
                         <img src="Resources/Images/image152.png" />
                     </p>
+                    <p class="Caption">Figure 371: Com Port Configurations</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Caption">&#160;</p>
+                    <p><b>Enable Barcode Validation:</b> Enabling this logic will force the Alarm Relay to be ALWAYS energized. Only when a barcode has been determined valid (either through the RPI Process Control function, or via an optional MES interface operation) will the relay de-energize, releasing the product to be allowed into the oven.</p>
                     <p>&#160;</p>
+                    <p class="Note1tab"><b>Note:</b> Only Barcode Stop Sensor Logic OR Barcode Validation can be selected. If one is enabled, the other selection will automatically be greyed out (unavailable).</p>
+                    <p class="Note1tab">&#160;</p>
+                    <p class="Note1tab" style="text-align: center;">
+                        <img src="Resources/Images/FTM00053.png" />
+                    </p>
+                    <p class="Caption">Figure 372: Barcode Validation</p>
+                    <p class="Caption">&#160;</p>
+                    <p class="Note1tab"><b>Board Lead Edge/Board Trail Edge:</b> Defines which area of the product, when it reaches the Product Board Sensor, will cause the Alarm Relay to be re-energized.</p>
+                    <p>&#160;</p>
+                    <p class="Note1tab"><b>Extra Sensor:</b> Only used when long distance exists between infeed and Product Board Sensor, which could result in un-validated boards getting onto oven conveyor. A separate additional sensor would be installed closer to infeed, which will be used for the Lead Edge/Trail Edge function.</p>
+                    <p class="Note1tab">&#160;</p>
+                    <p>When the Barcode Validation feature is enabled, it also sets the Alarm Relay Matrix as shown below. Only At VP On – Yellow CB, At VP On – Grey CB, and At VP On – Yellow O2 are selectable. All other selections are fixed</p>
+                    <p>&#160;</p>
+                    <p style="text-align: center;">
+                        <img src="Resources/Images/FTM00054.png" />
+                    </p>
+                    <p class="Caption">Figure 373: AR Matrix with Barcode Validation</p>
+                    <p class="Caption">&#160;</p>
                 </td>
             </tr>
             <tr>

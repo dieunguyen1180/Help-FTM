@@ -3431,3 +3431,47 @@ ul.Square > li::marker
 	content: '▪';
 }
 
+li::marker
+{
+	font-weight: bold;
+}
+
+p.Note1tab
+{
+	margin-left: 36pt;
+	font-family: 'Times New Roman';
+}
+
+span.Filename
+{
+	font-family: 'Courier New';
+	font-style: italic;
+}
+
+span.ConfigFile
+{
+	font-family: 'Courier New';
+	font-style: italic;
+}
+
+span.KIC_FILE
+{
+	font-family: 'Courier New';
+	font-style: italic;
+}
+
+span.KIC_FILE_ITALIC
+{
+	font-style: italic;
+	font-family: 'Courier New';
+}
+
+p.Caption_Left
+{
+	margin-top: 1pt;
+	margin-bottom: 1pt;
+	font-family: Arial;
+	font-size: 8pt;
+	text-align: left;
+}
+
